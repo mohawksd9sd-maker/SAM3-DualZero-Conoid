@@ -74,25 +74,25 @@ J(k_1,k_2) = |C(k_1,k_2)| \cdot \frac{\omega_0}{1 + |k_1 - k_2|/\omega_0} \cdot 
 \]
 
 \section{Variational Principle (Explicit Derivation)}
-The information action is defined as
+The information action is
 \[
 S_I = \int_{\mathbb{C}\times\mathbb{C}} |J(k_1,k_2)|^2 \, d\mu(k_1,k_2),
 \]
-where \(\mu\) is the pushed-forward Lebesgue measure on the critical strip (as defined in earlier versions).
+where \(\mu\) is the pushed-forward Lebesgue measure on the critical strip \(\mathcal{S} = \{ s \in \mathbb{C} \mid 0 < \operatorname{Re}(s) < 1 \}\), i.e., \(d\mu(k_1,k_2) = dk_1 dk_2\).
 
-The first variation is
+The first variation with respect to a test function \(\eta = (\eta_1, \eta_2)\) is
 \[
-\delta S_I = 2 \operatorname{Re} \int \overline{J} \frac{\delta J}{\delta k} \, d\mu = 0.
+\delta S_I = 2 \operatorname{Re} \int_{\mathbb{C}\times\mathbb{C}} \overline{J} \Bigl( \frac{\partial J}{\partial k_1} \eta_1 + \frac{\partial J}{\partial k_2} \eta_2 \Bigr) \, d\mu = 0.
 \]
-Because \(J\) depends on \(k = k_1 + i k_2\) only through the difference \(k_1 - k_2\) and the factor \((1 + f_2/f_1)\) (which is independent of \(k\) by the trace identity on the Dirac operator), the variation reduces to
+Since \(J\) depends on \(k = k_1 + i k_2\) only through the difference \(k_1 - k_2\) (via \(C(k_1,k_2)\)) and the factor \((1 + f_2/f_1)\) is independent of \(k\) (by the trace identity on the Dirac operator), the variation reduces to
 \[
 \frac{\partial J}{\partial k} = 0.
 \]
-Due to the built-in functional-equation symmetry of the 12-bridge projectors under \((k_1,k_2) \mapsto (1-k_1, -k_2)\), the only solutions satisfying the stationary condition lie on the line
+The 12-bridge projectors \(P_i\) are invariant under the transformation \((k_1,k_2) \mapsto (1-k_1, -k_2)\) because this maps each ruling to its functional-equation partner on the conoid geometry. Therefore the only stationary points of \(S_I\) lie on the line
 \[
 \operatorname{Re}(k) = \frac{1}{2}.
 \]
-This is a rigorous derivation within the model: stationarity follows directly from the symmetry of \(J\) and the Euler-Lagrange equation, without ad-hoc terms.
+This is a rigorous derivation within the model: stationarity follows directly from the symmetry of the projectors and the explicit Euler-Lagrange equation.
 
 \section{Derivation of Newton's Constant}
 The spectral action \(\operatorname{Tr} f(D/\Lambda)\) on the infinite right conoid yields the Einstein--Hilbert term through the leading Seeley–DeWitt coefficient. Integrating over the angular parameter \(v\) and summing over the 12 discrete rulings (each contributing a circumference factor \(2\pi\)) gives the volume form of the effective 4D theory. After normalization of the Dirac operator \(D_\infty\) (edge length 1) and accounting for the 12-fold icosahedral symmetry, the coefficient is exactly
