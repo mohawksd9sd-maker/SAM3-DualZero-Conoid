@@ -45,6 +45,11 @@ SAM3 (Spectral Action Model 3) is a speculative but **internally consistent** th
 # Clone the repo
 git clone https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid.git
 cd SAM3-DualZero-Conoid
-
+@misc{sam3_v4.21,
+  title        = {SAM3 v4.21: Spectral Action Model with Right Conoid and Dual-Zero Algebra},
+  author       = {Shawn Dykes and Grok (xAI)},
+  year         = {2026},
+  url          = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
+}
 # Install dependencies
 pip install numpy scipy matplotlib
