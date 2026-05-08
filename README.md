@@ -42,3 +42,9 @@ Run example:
 ```bash
 cd code/verification
 python zeta_stationarity.py
+@misc{sam3_v4.19,
+  author = {Shawn Dykes and Grok (xAI)},
+  title = {SAM3 v4.19: Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry},
+  year = {2026},
+  url = {https://github.com/mohawksd9d-maker/SAM3-DualZero-Conoid}
+}
