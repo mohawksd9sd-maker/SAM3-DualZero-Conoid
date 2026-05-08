@@ -29,3 +29,5 @@ The model combines:
 ---
 
 ## Repository Structure
+## Full Paper
+- [Download full LaTeX paper](paper/SAM3_v4.19_full.tex)
