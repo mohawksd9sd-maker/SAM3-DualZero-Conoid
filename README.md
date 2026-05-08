@@ -30,4 +30,7 @@ The model combines:
 
 ## Repository Structure
 ## Full Paper
-- [Download full LaTeX paper](paper/SAM3_v4.19_full.tex)
+## 📄 Full Paper
+
+- [Download the full 8-page paper (LaTeX)](paper/SAM3_v4.19_full.tex)
+- [Download the short abstract](paper/SAM3_v4.19_abstract.tex)
