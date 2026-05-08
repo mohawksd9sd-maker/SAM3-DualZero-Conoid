@@ -1,8 +1,6 @@
 # SAM3-DualZero-Conoid
-A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry — Derivation of Gravity and the Standard Model
-# SAM3 v4.19 – Dual-Zero Hyperreal Spectral Triple on the Right Conoid
 
-**A novel geometric framework unifying gravity, the Standard Model, and the Riemann Hypothesis**
+**A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry — Derivation of Gravity and the Standard Model**
 
 **Status**: Theoretical framework – internally consistent, partially predictive, ready for further development and numerical verification.
 
@@ -12,7 +10,7 @@ A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symme
 
 ## Abstract
 
-SAM3 (Spectral Action Model 3) is a speculative but rigorously constructed non-commutative geometric framework that attempts to derive the Standard Model of particle physics and classical gravity from a single geometric object: the **right conoid surface** equipped with a custom **Dual-Zero hyperreal algebra** and 12-bridge icosahedral symmetry.
+SAM3 (Spectral Action Model 3) is a novel non-commutative geometric framework that attempts to derive the Standard Model of particle physics and classical gravity from a single geometric object: the **right conoid surface** equipped with a custom **Dual-Zero hyperreal algebra** and 12-bridge icosahedral symmetry.
 
 The model combines:
 - An infinite ruled conoid manifold \(M_c\) with 12 discrete bridges
@@ -28,19 +26,19 @@ The model combines:
 
 ---
 
-## Repository Structure
-## Full Paper
 ## 📄 Full Paper
+
+- [Complete paper (LaTeX)](paper/SAM3_v4.19_full.tex)
+- [Short abstract](paper/SAM3_v4.19_abstract.tex)
+
+---
+
 ## 🧪 Code & Verification
 
 - `code/verification/zeta_stationarity.py` → Checks stationarity at the first 20 zeta zeros
 - `code/visualization/conoid_bridges.py` → 3D plot of the right conoid with 12 bridges
 
-Run them with:
+Run example:
 ```bash
 cd code/verification
 python zeta_stationarity.py
-## 📄 Full Paper
-
-- [Download the complete paper (LaTeX)](paper/SAM3_v4.19_full.tex)
-- [Download the short abstract](paper/SAM3_v4.19_abstract.tex)
