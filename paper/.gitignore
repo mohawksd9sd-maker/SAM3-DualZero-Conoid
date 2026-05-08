@@ -1,1 +1,15 @@
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.pdf
 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
