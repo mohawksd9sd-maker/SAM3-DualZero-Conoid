@@ -31,6 +31,14 @@ The model combines:
 ## Repository Structure
 ## Full Paper
 ## 📄 Full Paper
+## 🧪 Code & Verification
 
+- `code/verification/zeta_stationarity.py` → Checks stationarity at the first 20 zeta zeros
+- `code/visualization/conoid_bridges.py` → 3D plot of the right conoid with 12 bridges
+
+Run them with:
+```bash
+cd code/verification
+python zeta_stationarity.py
 - [Download the full 8-page paper (LaTeX)](paper/SAM3_v4.19_full.tex)
 - [Download the short abstract](paper/SAM3_v4.19_abstract.tex)
