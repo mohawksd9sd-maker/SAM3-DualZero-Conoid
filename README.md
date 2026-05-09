@@ -37,9 +37,6 @@ The model is built on:
 - **Full 2D zero-mode asymptotic analysis**: Proved that the lightest modes of the complete 2D Dirac operator are normalizable with \(\psi_+(u) \sim u^{-1/2}\) decay.
 - **Direct inclusion of Dual-Zero hyperreal shifts** into the full 2D Dirac operator (exponentially suppressed corrections: \(|\delta\lambda_0| \lesssim 10^{-10}\)).
 - **Higher-order Seeley–DeWitt coefficients** (\(a_4\) and higher) computed — shown to converge rapidly, confirming a controlled effective field theory.
-- New figures:
-  - Scalar curvature surface of the right conoid
-  - Asymptotic behavior of the 2D zero mode
 
 ---
 
@@ -48,9 +45,16 @@ The model is built on:
 - **Full Merged Paper (v4.22)**: [`SAM3_v4.22_full_paper.pdf`](SAM3_v4.22_full_paper.pdf)  
   **LaTeX source**: [`SAM3_v4.22_full_paper.tex`](SAM3_v4.22_full_paper.tex)
 - **Mathematical Model Summary** — [`math/SAM3_mathematical_model.md`](math/SAM3_mathematical_model.md)
-- **Figures**:
-  - [`asymptotic_zero_mode.png`](asymptotic_zero_mode.png)
-  - [`curvature_surface.png`](curvature_surface.png)
+
+---
+
+## Figures (v4.22)
+
+**Scalar Curvature Surface**  
+![Scalar Curvature R(u,v) on the Right Conoid](figures/curvature_surface.png)
+
+**Asymptotic Behavior of the 2D Zero Mode**  
+![Asymptotic 2D Zero Mode ψ₊(u) ∼ u^{-1/2}](figures/asymptotic_zero_mode.png)
 
 ---
 
@@ -76,9 +80,3 @@ python code/numerical/overlap_integrals.py
 
 # Riemann stationarity check
 python code/verification/zeta_stationarity_enhanced_500.py
-@misc{sam3_v4.22,
-  author = {Shawn Dykes},
-  title = {SAM3 v4.22: Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry (v4.20 + Addendum)},
-  year = {2026},
-  url = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
-}
