@@ -76,3 +76,9 @@ python code/numerical/overlap_integrals.py
 
 # Riemann stationarity check
 python code/verification/zeta_stationarity_enhanced_500.py
+@misc{sam3_v4.22,
+  author = {Shawn Dykes},
+  title = {SAM3 v4.22: Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry (v4.20 + Addendum)},
+  year = {2026},
+  url = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
+}
