@@ -42,3 +42,10 @@ The model combines:
 ```bash
 cd code/verification
 python zeta_stationarity.py
+
+@misc{sam3_v4.20,
+  author = {Shawn Dykes},
+  title = {SAM3 v4.20: Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry},
+  year = {2026},
+  url = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
+}
