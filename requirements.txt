@@ -1,0 +1,4 @@
+# SAM3 v4.20 Dependencies
+numpy
+scipy
+matplotlib
