@@ -8,17 +8,17 @@
 
 ## Overview
 
-SAM3 v4.20 is a self-contained, internally consistent theoretical physics framework that derives gravity, the full Standard Model, and a variational characterization of the Riemann critical line from a single geometric object: the right conoid with Dual-Zero hyperreal algebra and 12-bridge icosahedral symmetry.
+SAM3 v4.20 is a self-contained, internally consistent theoretical physics framework that derives gravity, the full Standard Model, and a variational characterization of the Riemann critical line from the right conoid with Dual-Zero hyperreal algebra and 12-bridge icosahedral symmetry.
 
 ---
 
 ## Key Features
 
 - Right conoid manifold + 12 icosahedral bridges
-- Dual-Zero hyperreal algebra + Reg₂ regularization
+- Dual-Zero hyperreal algebra with Reg₂ regularization
 - Spectral action → Gravity + Standard Model
 - Variational Information Current → Critical line stationarity
-- Complete numerical verification scripts
+- Complete numerical verification
 
 ---
 
