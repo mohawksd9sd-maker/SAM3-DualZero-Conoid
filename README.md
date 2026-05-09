@@ -1,55 +1,49 @@
-# SAM3 v4.21 - Spectral Action Model 3  
+# SAM3 v4.20 - Spectral Action Model 3
+
 **A Non-Commutative Geometric Framework Unifying Gravity, the Standard Model, and a Variational Approach to the Riemann Hypothesis**
 
-![SAM3 Logo](https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid/blob/main/visualization/conoid_bridges.png)
+![Right Conoid with 12 Bridges](visualization/conoid_bridges.png)
 
 ## Overview
 
-SAM3 (Spectral Action Model 3) is a speculative but **internally consistent** theoretical framework that combines:
-- A **right conoid** manifold with 12 discrete bridges
-- **Dual-Zero hyperreal algebra** for regularization
-- **Binary icosahedral group (2I)** family symmetry
-- Non-commutative geometry (almost-commutative spectral triple)
-- Variational principle for the critical line of the Riemann zeta function
+SAM3 v4.20 is a self-contained, internally consistent theoretical physics framework that derives:
+- Classical gravity (Einstein–Hilbert + explicit Newton’s constant)
+- The full Standard Model (gauge group, chiral fermions, three generations)
+- A variational characterization of the Riemann zeta critical line Re(s) = 1/2
 
-**Core Claim**: Gravity + Full Standard Model + Stationarity on Re(s)=1/2 emerge naturally from the geometry.
+**Core Geometric Object**: The infinite right conoid with 12 discrete icosahedral bridges, equipped with Dual-Zero hyperreal regularization.
 
 ---
 
-## Features Implemented (v4.21)
+## Key Features (v4.20)
 
-### Core Mathematics
-- Right conoid geometry with 12 icosahedral bridges
-- Dual-Zero hyperreal regularization (`Reg₂`)
-- Spectral triple construction
-- Variational Information Current `J(k₁,k₂)` → critical line stationarity
-
-### Numerical Tools (in `code/verification/`)
-- `zeta_stationarity_enhanced.py` → Confirms 20/20 low-lying zeta zeros stationary
-- `overlap_integrals.py` → Geometric overlaps for Yukawa & mixing matrices
-- `newton_constant_fit.py` → Derives and fits ℓ₀ to observed Newton's constant
-- `lorentzian_spectral_action.py` → Lorentzian signature + higher Seeley–DeWitt terms
-- `sam3_demo.py` → **Main integrated demonstration** (recommended)
-
-### Key Results
-- Newton's constant: `G = 3π ℓ₀² / 2` exactly recovered
-- Fitted ℓ₀ ≈ 1.616 × 10⁻³⁵ m (near Planck scale)
-- 3 fermion generations from 2I irreps
-- Variational proof of critical line stationarity
+- Right conoid manifold + 12-bridge icosahedral symmetry (binary icosahedral group 2I)
+- Dual-Zero hyperreal algebra and Reg₂ regularization
+- Almost-commutative spectral triple
+- Spectral action → Gravity + Standard Model
+- Variational Information Current → Critical line stationarity
+- Full numerical implementation
 
 ---
 
-## Installation & Running
+## Numerical Tools (code/verification/)
+
+All major components are now implemented and runnable:
+
+- **`zeta_stationarity_enhanced.py`** — Confirms all 20 low-lying zeta zeros are stationary on Re(s)=1/2
+- **`overlap_integrals.py`** — Computes geometric overlaps for Yukawa couplings and CKM/PMNS matrices
+- **`newton_constant_fit.py`** — Derives \( G = \frac{3\pi \ell_0^2}{2} \) and fits \(\ell_0 \approx 1.616 \times 10^{-35}\) m
+- **`lorentzian_spectral_action.py`** — Lorentzian signature extension
+- **`sam3_demo.py`** — **Recommended**: Runs the full framework in one script
+
+---
+
+## Installation & Quick Start
 
 ```bash
-# Clone the repo
 git clone https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid.git
 cd SAM3-DualZero-Conoid
-@misc{sam3_v4.21,
-  title        = {SAM3 v4.21: Spectral Action Model with Right Conoid and Dual-Zero Algebra},
-  author       = {Shawn Dykes and Grok (xAI)},
-  year         = {2026},
-  url          = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
-}
-# Install dependencies
+
 pip install numpy scipy matplotlib
+cd code/verification
+python sam3_demo.py
