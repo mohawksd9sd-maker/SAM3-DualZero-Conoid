@@ -42,7 +42,7 @@ The model combines:
 
 ### Verification & Numerical Work
 - `code/verification/zeta_stationarity_enhanced_500.py` — Stationarity check for first 500 zeta zeros
-- `code/numerical/dirac_eigenmodes_conoid.py` — Computes effective Dirac spectrum and overlaps on the 12 bridges
+- `code/numerical/dirac_eigenmodes_conoid.py` — **New**: Computes effective Dirac spectrum and overlaps on the 12 bridges
 
 ### How to Run
 ```bash
