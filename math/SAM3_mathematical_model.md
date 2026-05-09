@@ -1,7 +1,8 @@
-# SAM3 v4.21 — Mathematical Model Summary
+# SAM3 v4.21 — Mathematical Model Summary (with v4.22 Black-Hole Extension)
+
 **Author:** Shawn Dykes  
-**Version:** 4.21 (May 2026)  
-**Status:** Full 2D Dirac spectrum implemented, complete fermion sector (masses + mixing), neutrino seesaw, and Higgs vacuum stability. All results derived from single geometric object with no tuning.
+**Version:** 4.22 (May 2026)  
+**Status:** Full 2D Dirac spectrum, complete fermion sector, neutrino seesaw, Higgs vacuum stability, **and black-hole spectral triple extension**. All results derived from single geometric object with no tuning.
 
 ## 1. Core Geometry — The Right Conoid
 The fundamental manifold is parametrized by
@@ -88,16 +89,28 @@ It possesses a stable minimum at
 \]
 The vacuum is stable; the quartic coupling remains positive due to conoid curvature and Dual-Zero UV damping.
 
-## 10. Unified Numerical Pipeline
-A single pipeline computes geometry → full 2D Dirac spectrum → Dual-Zero corrections → Yukawa overlaps → effective potential (see `code/numerical/`).
+## 10. Black-Hole Sector via Spectral Triple on Schwarzschild × Finite Space (v4.22)
+The model extends naturally to curved backgrounds using the product spectral triple
+\[
+D = D_{M_{\rm BH}} \otimes 1 + \gamma_5 \otimes D_F.
+\]
+Numerical computation on the near-horizon region (tortoise coordinates + redshift) yields a spectrum of light chiral modes together with excited states.
 
-## 11. Summary of Main Results (v4.21)
+The spectral action produces the Bekenstein–Hawking entropy plus **visible Dual-Zero corrections**. The information current \(J\) continues to enforce Riemann critical line stationarity across the horizon, offering a geometric resolution to the information paradox.
+
+See `code/numerical/black_hole_spectral_triple.py` for the full implementation and numerical results.
+
+## 11. Unified Numerical Pipeline
+A single pipeline computes geometry → full 2D Dirac spectrum → Dual-Zero corrections → Yukawa overlaps → effective potential → black-hole horizon analysis (see `code/numerical/`).
+
+## 12. Summary of Main Results (v4.22)
 - Unified gravity + Standard Model from one infinite right conoid.
 - Explicit \(G_N = 3\pi \ell_0^2 / 2\).
 - Hierarchical fermion masses and mixings from geometry alone.
 - Natural Type-I seesaw and stable Higgs vacuum.
+- Black-hole entropy with Dual-Zero corrections and geometric information preservation.
 - Variational enforcement of the Riemann critical line.
 - Fully predictive from the single scale \(\ell_0\).
 
 ---
-**This document is synchronized with the main paper** (`SAM3_v4.21_full_paper.tex`).
+**This document is synchronized with the main paper** (`SAM3_v4.22_full_paper.tex`).
