@@ -42,7 +42,7 @@ The model combines:
 
 ### Verification & Numerical Work
 - `code/verification/zeta_stationarity_enhanced_500.py` — Stationarity check for first 500 zeta zeros
-- `code/numerical/dirac_eigenmodes_conoid.py` — **New**: Computes effective Dirac spectrum and overlaps on the 12 bridges
+- `code/numerical/dirac_eigenmodes_conoid.py` — Computes effective Dirac spectrum and overlaps on the 12 bridges
 
 ### How to Run
 ```bash
@@ -54,9 +54,3 @@ python code/visualization/conoid_bridges.py
 
 # Dirac eigenmodes (new)
 python code/numerical/dirac_eigenmodes_conoid.py
-@misc{sam3_v4.20,
-  author       = {Shawn Dykes},
-  title        = {SAM3 v4.20: Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry},
-  year         = {2026},
-  url          = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
-}
