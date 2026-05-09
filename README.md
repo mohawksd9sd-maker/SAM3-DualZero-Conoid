@@ -4,25 +4,27 @@
 
 ![Right Conoid with 12 Bridges](visualization/conoid_bridges.png)
 
+![SAM3 v4.20 Full Demo](figures/sam3_demo.png)
+
 ## Overview
 
 SAM3 v4.20 is a self-contained, internally consistent theoretical physics framework that derives:
 - Classical gravity (Einstein–Hilbert term with explicit Newton’s constant \( G = \frac{3\pi \ell_0^2}{2} \))
-- The full Standard Model (gauge group, chiral fermions, three generations via 2I)
+- The full Standard Model (gauge group, chiral fermions, three generations via binary icosahedral group 2I)
 - A variational characterization of the Riemann zeta critical line Re(s) = 1/2
 
-**Core Geometry**: Infinite right conoid with 12 icosahedral bridge rulings + Dual-Zero hyperreal regularization.
+**Core Geometry**: Infinite right conoid manifold with 12 icosahedral bridge rulings + Dual-Zero hyperreal regularization.
 
 ---
 
 ## Key Features
 
-- Right conoid manifold + 12-bridge icosahedral symmetry (binary icosahedral group 2I)
+- Right conoid + 12-bridge icosahedral symmetry
 - Dual-Zero hyperreal algebra with Reg₂ regularization
 - Almost-commutative spectral triple
 - Spectral action → Gravity + Standard Model structure
 - Variational Information Current → Critical line stationarity
-- Full numerical implementation
+- Full numerical implementation (all scripts runnable)
 
 ---
 
