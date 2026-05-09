@@ -14,11 +14,11 @@ SAM3 v4.20 is a self-contained, internally consistent theoretical physics framew
 
 ## Key Features
 
-- Right conoid manifold + 12 icosahedral bridges
+- Right conoid + 12 icosahedral bridges
 - Dual-Zero hyperreal algebra with Reg₂ regularization
 - Spectral action → Gravity + Standard Model
 - Variational Information Current → Critical line stationarity
-- Complete numerical verification
+- Full numerical verification scripts
 
 ---
 
