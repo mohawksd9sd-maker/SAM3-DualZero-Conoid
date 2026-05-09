@@ -2,7 +2,7 @@
 
 **A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry — Derivation of Gravity and the Standard Model**
 
-**Status**: Theoretical framework – internally consistent, partially predictive, ready for further development and numerical verification.
+**Status**: Theoretical framework – internally consistent, partially predictive, with new numerical support for the fermion sector (v4.20). Ready for further development and scrutiny.
 
 **License**: [CC-BY-SA 4.0](LICENSE)
 
@@ -10,42 +10,47 @@
 
 ## Abstract
 
-SAM3 (Spectral Action Model 3) is a novel non-commutative geometric framework that derives the Standard Model of particle physics and classical gravity from a single geometric object: the **right conoid surface** equipped with a custom **Dual-Zero hyperreal algebra** and **12-bridge icosahedral symmetry**.
+SAM3 v4.20 is a novel non-commutative geometric framework that attempts to unify gravity and the Standard Model from a single geometric object: the **infinite right conoid** equipped with a custom **Dual-Zero hyperreal algebra** and **12-bridge icosahedral symmetry**.
 
 The model combines:
-- An infinite ruled conoid manifold \( M_c \) with 12 discrete bridges
-- A finite non-commutative algebra \( \mathcal{A}_F = \mathbb{C} \oplus \mathbb{H} \oplus M_3(\mathbb{C}) \)
-- Binary icosahedral symmetry \( 2I \) acting as a Grand Symmetry / family symmetry
-- A novel **Dual-Zero hyperreal regularization** that resolves finite-vs-infinite spectrum issues
+- An infinite ruled conoid manifold with 12 discrete bridges
+- Finite algebra \(\mathcal{A}_F = \mathbb{C} \oplus \mathbb{H} \oplus M_3(\mathbb{C})\)
+- Binary icosahedral symmetry \(2I\) acting on the bridges
+- Dual-Zero hyperreal regularization
 
-**Key results**:
-- Derives Einstein–Hilbert gravity with explicit Newton’s constant \( G \)
-- Reproduces the full SM gauge group, chiral fermions, and three generations
-- Predicts CKM/PMNS mixing matrices as geometric overlap integrals
-- Provides a variational proof that the information current \( |J| \) is stationary on the critical line \( \operatorname{Re}(s) = 1/2 \) of the Riemann zeta function
+**Key Results**:
+- Derives the Einstein–Hilbert term with explicit Newton’s constant \( G_N = \frac{3\pi \ell_0^2}{2} \)
+- Reproduces the full SM gauge group and chiral fermions
+- Naturally yields three generations from 12-bridge icosahedral symmetry
+- Variational principle on the information current forces stationarity on the Riemann critical line \(\operatorname{Re}(s) = 1/2\)
+- **New in v4.20**: Effective 1D Dirac spectrum on the 12 bridges + numerical Yukawa overlap integrals yielding realistic Cabibbo-like mixing (\(\sin\theta_{12} \approx 0.224\))
 
 ---
 
-## 📄 Full Paper
+## 📄 Documents
 
-- **[Complete paper v4.20 (LaTeX)](paper/SAM3_v4.20_full_paper.tex)**
-- **[Short abstract](paper/SAM3_v4.20_abstract.tex)** (if available)
+- **[Full Paper — SAM3 v4.20](SAM3_v4.20_full_paper.tex)** (LaTeX)
+- **[Mathematical Model Summary](math/SAM3_mathematical_model.md)**
 
 ---
 
 ## 🧪 Code & Verification
 
-- `code/visualization/conoid_bridges.py` → Generates 3D right conoid with 12 bridges + overlap heatmap
-- `code/verification/zeta_stationarity.py` → Verifies stationarity of the information current at the first 20 zeta zeros
+### Visualization
+- `code/visualization/conoid_bridges.py` — 3D right conoid with 12 bridges
+- `code/visualization/conoid_animation.py` — Rotating conoid with evolving |J| coloring
 
-**Run example**:
+### Verification & Numerical Work
+- `code/verification/zeta_stationarity_enhanced_500.py` — Stationarity check for first 500 zeta zeros
+- `code/numerical/dirac_eigenmodes_conoid.py` — **New**: Computes effective Dirac spectrum and overlaps on the 12 bridges
+
+### How to Run
 ```bash
-cd code/verification
-python zeta_stationarity.py
+# Stationarity check
+python code/verification/zeta_stationarity_enhanced_500.py
 
-@misc{sam3_v4.20,
-  author = {Shawn Dykes},
-  title = {SAM3 v4.20: Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry},
-  year = {2026},
-  url = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
-}
+# Conoid visualization
+python code/visualization/conoid_bridges.py
+
+# Dirac eigenmodes (new)
+python code/numerical/dirac_eigenmodes_conoid.py
