@@ -31,6 +31,7 @@ The model is built on:
 - Stable Higgs vacuum from spectral action + Dual-Zero corrections
 - Variational principle on the information current enforces stationarity on the Riemann critical line \(\operatorname{Re}(s) = 1/2\)
 - Black-hole horizon extension with geometric information preservation
+- Black-hole horizon extension via full spectral triple: recovers Bekenstein–Hawking entropy with visible Dual-Zero corrections and geometric information preservation via 12 bridges
 
 ---
 
