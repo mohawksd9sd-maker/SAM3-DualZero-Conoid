@@ -1,8 +1,7 @@
 # SAM3-DualZero-Conoid
-
 **A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry — Unification of Gravity and the Standard Model**
 
-**Status**: Theoretical framework — internally consistent and highly predictive (v4.21). Open for peer review, collaboration, and further validation.
+**Status**: Theoretical framework — internally consistent and highly predictive (**v4.20 + v4.22 Addendum**). Open for peer review, collaboration, and further validation.
 
 **License**: [CC-BY-SA 4.0](LICENSE)
 
@@ -10,7 +9,7 @@
 
 ## Abstract
 
-SAM3 v4.21 is a non-commutative geometric framework that unifies gravity and the Standard Model from a **single geometric object**: the infinite right conoid, equipped with a custom **Dual-Zero hyperreal algebra** and **12-bridge icosahedral symmetry**.
+SAM3 v4.20 is a non-commutative geometric framework that unifies gravity and the Standard Model from a **single geometric object**: the infinite right conoid, equipped with a custom **Dual-Zero hyperreal algebra** and **12-bridge icosahedral symmetry**.
 
 The model is built on:
 - Infinite ruled conoid manifold with 12 discrete bridges
@@ -18,7 +17,8 @@ The model is built on:
 - Binary icosahedral symmetry \((2I)\) acting on the bridges
 - Dual-Zero hyperreal regularization
 
-**Key Results (v4.21)**
+### Key Results (v4.20)
+
 - Derives the Einstein–Hilbert action with explicit Newton constant:
   $$G_N = \frac{3\pi \ell_0^2}{2}$$
 - Reproduces the full Standard Model gauge group and chiral fermion spectrum
@@ -31,13 +31,26 @@ The model is built on:
 - Stable Higgs vacuum from spectral action + Dual-Zero corrections
 - Variational principle on the information current enforces stationarity on the Riemann critical line \(\operatorname{Re}(s) = 1/2\)
 - Black-hole horizon extension with geometric information preservation
-- Black-hole horizon extension via full spectral triple: recovers Bekenstein–Hawking entropy with visible Dual-Zero corrections and geometric information preservation via 12 bridges
+
+### v4.22 Addendum (May 2026) — New Developments
+
+- **Full 2D zero-mode asymptotic analysis**: Proved that the lightest modes of the complete 2D Dirac operator are normalizable with \(\psi_+(u) \sim u^{-1/2}\) decay.
+- **Direct inclusion of Dual-Zero hyperreal shifts** into the full 2D Dirac operator (exponentially suppressed corrections: \(|\delta\lambda_0| \lesssim 10^{-10}\)).
+- **Higher-order Seeley–DeWitt coefficients** (\(a_4\) and higher) computed — shown to converge rapidly, confirming a controlled effective field theory.
+- New figures:
+  - Scalar curvature surface of the right conoid
+  - Asymptotic behavior of the 2D zero mode
 
 ---
 
 ## Documents
+
+- **Full Merged Paper (v4.22)**: [`SAM3_v4.22_full_paper.pdf`](SAM3_v4.22_full_paper.pdf)  
+  **LaTeX source**: [`SAM3_v4.22_full_paper.tex`](SAM3_v4.22_full_paper.tex)
 - **Mathematical Model Summary** — [`math/SAM3_mathematical_model.md`](math/SAM3_mathematical_model.md)
-- **Full Paper** — LaTeX source in `/paper/` (v4.21 addendum available)
+- **Figures**:
+  - [`asymptotic_zero_mode.png`](asymptotic_zero_mode.png)
+  - [`curvature_surface.png`](curvature_surface.png)
 
 ---
 
@@ -47,11 +60,11 @@ The model is built on:
 - `code/visualization/conoid_bridges.py` — 3D right conoid with 12 bridges
 - `code/visualization/conoid_animation.py` — Rotating conoid with evolving \(|J|\) coloring
 
-### Numerical Pipeline (v4.21)
-- `code/numerical/full_2d_dirac_conoid.py` — Full 2D Dirac spectrum on the conoid
+### Numerical Pipeline
+- `code/numerical/full_2d_dirac_conoid.py` — Full 2D Dirac spectrum
 - `code/numerical/overlap_integrals.py` — Yukawa matrices, CKM/PMNS, masses
 - `code/verification/zeta_stationarity_enhanced_500.py` — Riemann zeros stationarity
-- `code/lorentzian_dynamical_gravity.py` — Lorentzian signature + back-reaction (new)
+- `code/lorentzian_dynamical_gravity.py` — Lorentzian signature + back-reaction
 
 ### How to Run
 ```bash
@@ -63,9 +76,3 @@ python code/numerical/overlap_integrals.py
 
 # Riemann stationarity check
 python code/verification/zeta_stationarity_enhanced_500.py
-@misc{sam3_v4.21,
-  author = {Shawn Dykes},
-  title = {SAM3 v4.21: Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry},
-  year = {2026},
-  url = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
-}
