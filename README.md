@@ -8,42 +8,25 @@
 
 ## Overview
 
-SAM3 v4.20 is a self-contained, internally consistent theoretical physics framework that derives:
-- Classical gravity (Einstein–Hilbert term with explicit Newton’s constant \( G = \frac{3\pi \ell_0^2}{2} \))
-- The full Standard Model (gauge group, chiral fermions, three generations via binary icosahedral group 2I)
-- A variational characterization of the Riemann zeta critical line Re(s) = 1/2
-
-**Core Geometry**: Infinite right conoid manifold with 12 icosahedral bridge rulings + Dual-Zero hyperreal regularization.
+SAM3 v4.20 is a self-contained, internally consistent theoretical physics framework that derives gravity, the full Standard Model, and a variational characterization of the Riemann critical line from a single geometric object: the right conoid with Dual-Zero hyperreal algebra and 12-bridge icosahedral symmetry.
 
 ---
 
 ## Key Features
 
-- Right conoid + 12-bridge icosahedral symmetry
-- Dual-Zero hyperreal algebra with Reg₂ regularization
-- Almost-commutative spectral triple
-- Spectral action → Gravity + Standard Model structure
+- Right conoid manifold + 12 icosahedral bridges
+- Dual-Zero hyperreal algebra + Reg₂ regularization
+- Spectral action → Gravity + Standard Model
 - Variational Information Current → Critical line stationarity
-- Full numerical implementation (all scripts runnable)
+- Complete numerical verification scripts
 
 ---
 
-## Numerical Tools (`code/verification/`)
-
-- `zeta_stationarity_enhanced.py` — 20/20 low-lying zeta zeros confirmed stationary
-- `overlap_integrals.py` — Geometric overlaps for Yukawa, CKM & PMNS
-- `newton_constant_fit.py` — ℓ₀ fitting and Newton's constant derivation
-- `lorentzian_spectral_action.py` — Lorentzian signature extension
-- `sam3_demo.py` — **Recommended**: One-click full framework demo
-
----
-
-## Installation
+## Installation & Quick Start
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid.git
 cd SAM3-DualZero-Conoid
-
-# 2. Install dependencies
 pip install -r requirements.txt
+cd code/verification
+python sam3_demo.py
