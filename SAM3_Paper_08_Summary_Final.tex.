@@ -59,7 +59,7 @@ After applying the corrected value \(G_N = 64\pi \ell_0^2 / 45\), the model yiel
 \item Neutrino mass sum: \(0.0724\) eV (Planck upper bound: \(< 0.12\) eV)
 \end{itemize}
 
-\textbf{Selected BSM Predictions} (computed in the supplementary code using the full 3×3 Yukawa matrices from Paper 04 and the corrected \(\ell_0\)):
+\textbf{Selected BSM Predictions} (These are computed in the supplementary code using the full 3×3 Yukawa matrices from Paper 04 and the corrected \(\ell_0\)):
 
 \begin{itemize}
 \item Proton lifetime: \(1.48 \times 10^{35}\) years (Super-Kamiokande lower bound: \(> 1.0 \times 10^{34}\) years)
@@ -74,6 +74,14 @@ Fixing \(\ell_0\) from the observed Newton constant \(G_N\) and computing the to
 m_t \approx 172.8 \, \text{GeV}
 \]
 without any additional tuning, in excellent agreement with the experimental value.
+
+\section{Clarification of the Variational Approach to the Riemann Hypothesis Critical Line}
+
+The SAM3 framework contains a variational principle based on the information current \(J(k_1,k_2)\). The Euler–Lagrange equation derived from the information action \(S_I\) forces all critical points to satisfy \(\operatorname{Re}(s) = 1/2\). This is a **variational proof of stationarity on the critical line**, not a full proof of the Riemann Hypothesis (which would require showing that all non-trivial zeros lie on this line and that there are no zeros off the line). The explicit map between the information current and the zeta function variable is
+\[
+s = \frac{1}{2} + i(k_1 - k_2),
+\]
+with the functional equation symmetry enforced by the 2I projectors.
 
 \section{New Predictions}
 
