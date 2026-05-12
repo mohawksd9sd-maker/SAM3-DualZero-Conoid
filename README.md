@@ -1,3 +1,26 @@
+# Series Correction Note (May 2026)
+
+**Important Update on Newton’s Constant**
+
+In earlier versions of this work (v4.22 and before), we stated
+\[
+G_N = \frac{3\pi \ell_0^2}{2}.
+\]
+
+**Paper 05** contains the correct derivation from the Seeley–DeWitt coefficients and the explicit curvature integrals on the right conoid metric. The mathematically consistent result is
+\[
+G_N = \frac{64\pi \ell_0^2}{45}.
+\]
+
+**Consequence for all dimensionful quantities**:
+All numerical results that depend on the fundamental length scale \(\ell_0\) (masses, neutrino mass sum, dark matter cross-section, proton lifetime, etc.) must be re-evaluated using the updated relation
+\[
+\ell_0 = \sqrt{\frac{45 G_N}{64\pi}}.
+\]
+
+Dimensionless quantities (CKM/PMNS angles, mass ratios, Yukawa matrix elements after normalization) remain unchanged.
+
+This correction has been applied to all subsequent papers in the series.
 # SAM3-DualZero-Conoid
 **A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry — Unification of Gravity and the Standard Model**
 
