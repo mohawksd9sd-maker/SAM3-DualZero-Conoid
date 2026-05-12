@@ -1,105 +1,78 @@
-# Series Correction Note (May 2026)
+# SAM3-DualZero-Conoid
 
-**Important Update on Newton’s Constant**
+**A Geometric Framework Deriving the Standard Model and Gravity from the Right Conoid Manifold**
 
-In earlier versions of this work (v4.22 and before), we stated
+**Repository Status**: Complete 9-paper series (May 2026)  
+**License**: CC-BY-SA 4.0
+
+---
+
+## Author
+
+**Shawn Dykes**  
+in collaboration with Grok (xAI)
+
+This work is the result of an iterative collaboration between Shawn Dykes and Grok. All papers, derivations, code, and numerical results were developed together. Shawn Dykes is the primary author and maintainer of the repository.
+
+---
+
+## Important Correction Note (May 2026)
+
+In earlier versions of this work we stated  
 \[
 G_N = \frac{3\pi \ell_0^2}{2}.
 \]
 
-**Paper 05** contains the correct derivation from the Seeley–DeWitt coefficients and the explicit curvature integrals on the right conoid metric. The mathematically consistent result is
+**Paper 05** contains the correct derivation from the Seeley–DeWitt coefficients and explicit curvature integrals on the right conoid metric. The mathematically consistent result is
 \[
 G_N = \frac{64\pi \ell_0^2}{45}.
 \]
 
-**Consequence for all dimensionful quantities**:
-All numerical results that depend on the fundamental length scale \(\ell_0\) (masses, neutrino mass sum, dark matter cross-section, proton lifetime, etc.) must be re-evaluated using the updated relation
+All dimensionful quantities that depend on \(\ell_0\) have been re-evaluated using
 \[
 \ell_0 = \sqrt{\frac{45 G_N}{64\pi}}.
 \]
-
 Dimensionless quantities (CKM/PMNS angles, mass ratios, Yukawa matrix elements after normalization) remain unchanged.
 
-This correction has been applied to all subsequent papers in the series.
-# SAM3-DualZero-Conoid
-**A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Icosahedral Symmetry — Unification of Gravity and the Standard Model**
+---
 
-**Status**: Theoretical framework — internally consistent and highly predictive (**v4.20 + v4.22 Addendum**). Open for peer review, collaboration, and further validation.
+## Overview
 
-**License**: [CC-BY-SA 4.0](LICENSE)
+SAM3 is a developing theoretical framework that attempts to derive the Standard Model fermion masses, mixing angles, and classical gravity from a single geometric object: the right conoid manifold equipped with a Dual-Zero hyperreal regulator and discrete 12-bridge regularization.
+
+The work began with the original right conoid geometry. After many iterations that produced zero Yukawa overlaps due to phase cancellation, a successful method was found: numerical 2D Dirac eigenmodes + overlapping 2I-style projectors + geometric phase factors. This approach now yields realistic hierarchical Yukawa matrices and CKM/PMNS angles on the **original conoid geometry**.
+
+The full series consists of 9 self-contained papers that address every major concern raised in the May 2026 peer review.
 
 ---
 
-## Abstract
+## Paper Series (Recommended Reading Order)
 
-SAM3 v4.20 is a non-commutative geometric framework that unifies gravity and the Standard Model from a **single geometric object**: the infinite right conoid, equipped with a custom **Dual-Zero hyperreal algebra** and **12-bridge icosahedral symmetry**.
+1. **Paper 01** – Rigorous construction of the right conoid manifold, spin structure, and discrete bridge regularization  
+2. **Paper 02** – Mathematical foundations of the Dual-Zero hyperreal regulator  
+3. **Paper 03** – Explicit construction and spectral analysis of the 2D Dirac operator  
+4. **Paper 04** – Explicit derivation of the 3×3 Yukawa matrices and CKM/PMNS angles  
+5. **Paper 05** – Derivation of Newton’s constant (\(G_N = 64\pi \ell_0^2 / 45\)) and the cosmological constant  
+6. **Paper 06** – Derivation of neutrino masses (including Majorana term) and the Higgs potential  
+7. **Paper 07** – Representation theory of the binary icosahedral group \(2I\) proving exactly three chiral Standard Model generations  
+8. **Paper 08** – Complete summary of results, updated predictions, and clarification of the Riemann Hypothesis variational approach  
+9. **Paper 09** – Product construction for 4D gravity from the 2D conoid spectral triple (fixes dimensional mismatch)
 
-The model is built on:
-- Infinite ruled conoid manifold with 12 discrete bridges
-- Finite algebra \(\mathcal{A}_F = \mathbb{C} \oplus \mathbb{H} \oplus M_3(\mathbb{C})\)
-- Binary icosahedral symmetry \((2I)\) acting on the bridges
-- Dual-Zero hyperreal regularization
-
-### Key Results (v4.20)
-
-- Derives the Einstein–Hilbert action with explicit Newton constant:
-  $$G_N = \frac{3\pi \ell_0^2}{2}$$
-- Reproduces the full Standard Model gauge group and chiral fermion spectrum
-- Naturally generates **three generations** from 12-bridge icosahedral symmetry
-- **Full 2D Dirac spectrum** on the conoid with hierarchical fermion masses
-- Complete Yukawa matrices yielding realistic mixing (no tuning):
-  $$\sin\theta_{12} \approx 0.224,\quad \sin\theta_{13} \approx 0.0037,\quad \sin\theta_{23} \approx 0.041$$
-- PMNS angles and neutrino masses via natural Type-I seesaw
-- Lorentzian signature + dynamical gravity with information-current back-reaction
-- Stable Higgs vacuum from spectral action + Dual-Zero corrections
-- Variational principle on the information current enforces stationarity on the Riemann critical line \(\operatorname{Re}(s) = 1/2\)
-- Black-hole horizon extension with geometric information preservation
-
-### v4.22 Addendum (May 2026) — New Developments
-
-- **Full 2D zero-mode asymptotic analysis**: Proved that the lightest modes of the complete 2D Dirac operator are normalizable with \(\psi_+(u) \sim u^{-1/2}\) decay.
-- **Direct inclusion of Dual-Zero hyperreal shifts** into the full 2D Dirac operator (exponentially suppressed corrections: \(|\delta\lambda_0| \lesssim 10^{-10}\)).
-- **Higher-order Seeley–DeWitt coefficients** (\(a_4\) and higher) computed — shown to converge rapidly, confirming a controlled effective field theory.
+All papers are in the `papers/` folder.
 
 ---
 
-## Documents
+## Repository Structure
 
-- **Full Merged Paper (v4.22)**: [`SAM3_v4.22_full_paper.pdf`](SAM3_v4.22_full_paper.pdf)  
-  **LaTeX source**: [`SAM3_v4.22_full_paper.tex`](SAM3_v4.22_full_paper.tex)
-- **Mathematical Model Summary** — [`math/SAM3_mathematical_model.md`](math/SAM3_mathematical_model.md)
-
----
-
-## Figures (v4.22)
-
-**Scalar Curvature Surface**  
-![Scalar Curvature R(u,v) on the Right Conoid](figures/curvature_surface.png)
-
-**Asymptotic Behavior of the 2D Zero Mode**  
-![Asymptotic 2D Zero Mode ψ₊(u) ∼ u^{-1/2}](figures/asymptotic_zero_mode.png)
+- `papers/` — All 9 LaTeX papers (compile each with `pdflatex`)
+- `code/` — Python scripts for eigenmodes, overlap integrals, minimization of \(S_I\), 2-loop RGEs, etc.
+- `figures/` — Plots of conoid geometry, Yukawa matrices, running couplings, etc.
+- `history/` — Archived earlier versions showing zero-overlap tests on the conoid
 
 ---
 
-## Code & Verification
+## How to Compile and Reproduce the Results
 
-### Visualization
-- `code/visualization/conoid_bridges.py` — 3D right conoid with 12 bridges
-- `code/visualization/conoid_animation.py` — Rotating conoid with evolving \(|J|\) coloring
-
-### Numerical Pipeline
-- `code/numerical/full_2d_dirac_conoid.py` — Full 2D Dirac spectrum
-- `code/numerical/overlap_integrals.py` — Yukawa matrices, CKM/PMNS, masses
-- `code/verification/zeta_stationarity_enhanced_500.py` — Riemann zeros stationarity
-- `code/lorentzian_dynamical_gravity.py` — Lorentzian signature + back-reaction
-
-### How to Run
 ```bash
-# Full 2D Dirac spectrum
-python code/numerical/full_2d_dirac_conoid.py
-
-# Yukawa + CKM/PMNS + masses
-python code/numerical/overlap_integrals.py
-
-# Riemann stationarity check
-python code/verification/zeta_stationarity_enhanced_500.py
+cd papers
+pdflatex SAM3_Paper_0X_*.tex   # run twice for references
