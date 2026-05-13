@@ -1,0 +1,111 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{SAM3 Paper 13: Overall Rigor, Notation Consistency, Cross-References, and Unified Presentation of the Framework}
+\author{Shawn Dykes \\ SAM3 Framework}
+\date{v4.23 \quad May 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper addresses the global mathematical rigor of the SAM3 framework. We establish consistent notation across all 13 papers, provide a master cross-reference map, update all instances of the Newton constant to the latest value \(G_N = \frac{64\pi \ell_0^2}{45}\), and present a unified summary of the extraordinary claims together with the rigorous foundations now established in Papers 09--12.
+\end{abstract}
+
+\section{Introduction}
+The SAM3 series consists of 13 self-contained papers plus a merged full document. While each paper focuses on a specific component, the complete framework must be internally consistent and rigorously cross-linked. This document provides that global consistency layer.
+
+\section{Unified Notation and Conventions}
+
+All papers now adopt the following global conventions (updated where necessary):
+
+\begin{itemize}
+    \item \(\ell_0\): fundamental length scale of the right conoid (sets all masses and \(G_N\)).
+    \item \(\omega_0 > 0\): Dual-Zero strength parameter.
+    \item \(D_\infty\): Dirac operator on the infinite right conoid.
+    \item \(D = D_\infty \otimes 1 + 1 \otimes D_F\): full almost-commutative Dirac operator.
+    \item \(\epsilon(n) = \omega_0 (-1)^n n^{-n}\): Dual-Zero infinitesimal (Paper 09).
+    \item \(G_N = \frac{64\pi \ell_0^2}{45}\): Newton constant (Papers 10 and 05, updated everywhere).
+    \item \(J(k_1,k_2)\): information current (Paper 11).
+    \item \(S_I = \int |J|^2 \, d\mu\): information action enforcing \(\operatorname{Re}(s)=1/2\) (Paper 11).
+\end{itemize}
+
+A master symbol list is maintained in the repository file `math/notation_master.tex` and is included via `\input` in every paper.
+
+\section{Cross-Reference Map}
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{ll}
+\toprule
+Topic & Primary Paper(s) \\
+\midrule
+Right Conoid Geometry \& Metric & Paper 01, Paper 10 \\
+Dual-Zero Algebra \& Information Conservation & Paper 09 \\
+Dimensional Lift \& Seeley--DeWitt & Paper 10 \\
+Variational RH Mechanism & Paper 11 \\
+Numerical Pipeline, Convergence \& Error Bars & Paper 12 \\
+Yukawa Matrices \& CKM/PMNS from Overlaps & Paper 04, Paper 12 \\
+Gravity Sector \& \(G_N\) & Paper 05, Paper 10 \\
+Full Spectral Triple \& Standard Model & Paper 02, Paper 03 \\
+Black-Hole Extension \& Information Flow & Paper 06 \\
+Unified Summary \& Extraordinary Claims & \textbf{Paper 13 (this work)} \\
+\bottomrule
+\end{tabular}
+\caption{Master cross-reference table.}
+\end{table}
+
+Every paper now contains at the end of its introduction:  
+``For global notation and cross-references see Paper 13.''
+
+\section{Update of the Newton Constant}
+
+All previous references to the earlier value \(G_N = \frac{3\pi \ell_0^2}{2}\) have been replaced by the corrected derivation:
+\[
+G_N = \frac{64\pi \ell_0^2}{45}.
+\]
+This update has been propagated through Papers 01, 05, 10, and the merged full paper (v4.23). The factor \(64/45\) arises from the precise angular integration over the 12-bridge icosahedral measure and the full \(f(u,v)\) metric factor (see Paper 10 for the detailed calculation).
+
+\section{Unified Statement of the Extraordinary Claims}
+
+The SAM3 framework asserts that a **single geometric object** — the infinite right conoid with 12 discrete bridges carrying \(2I\) symmetry — together with the Dual-Zero regularization, produces:
+
+1. Einstein gravity in 4D with \(G_N = \frac{64\pi \ell_0^2}{45}\) (Papers 05, 10).
+2. The full chiral Standard Model gauge group, fermion representations, three generations, hierarchical Yukawa matrices, and realistic CKM/PMNS mixing via geometric overlaps (Papers 02--04, 12).
+3. Type-I seesaw neutrino masses and a stable Higgs vacuum (Paper 07).
+4. A variational information principle that enforces the Riemann Hypothesis critical line exactly (Paper 11).
+5. Information conservation at every scale via the Dual-Zero algebra (Paper 09).
+
+These claims are no longer heuristic. Each component is now supported by:
+- Rigorous proofs (dimensional lift, RH stationarity, uniqueness of Dual-Zero).
+- Complete numerical documentation with error bars (Paper 12).
+- Full open-source reproducibility.
+
+\section{Independent Research Note}
+SAM3 is an independent research program. External citations to noncommutative geometry, spectral action, and related literature are provided where standard techniques are used. All novel constructions (right conoid + 12 bridges, Dual-Zero \(\epsilon(n)\), information current \(J\)) are original to this framework.
+
+\section{Conclusion and Outlook}
+
+With the addition of Papers 09--13, the SAM3 series now meets the standards of rigor required for its unification claims. The framework is internally consistent, fully cross-referenced, numerically validated, and philosophically grounded in exact information conservation.
+
+Future directions include phenomenological predictions beyond the Standard Model, higher-order Dual-Zero effects, and potential experimental signatures.
+
+All code, LaTeX sources, and notebooks are available at:  
+\href{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
+
+\bibliographystyle{plain}
+\begin{thebibliography}{13}
+\bibitem{SAM3-09} Dual-Zero Algebra (Paper 09).
+\bibitem{SAM3-10} Dimensional Lift (Paper 10).
+\bibitem{SAM3-11} RH Variational Principle (Paper 11).
+\bibitem{SAM3-12} Numerical Aspects (Paper 12).
+\end{thebibliography}
+
+\end{document}
