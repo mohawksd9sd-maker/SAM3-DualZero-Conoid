@@ -38,13 +38,13 @@ This regulator ensures positivity, commutation with the functional calculus, rap
 
 The full almost-commutative spectral triple is
 \[
-(\mathcal{A}_\infty \otimes \mathcal{A}_F,\ \mathcal{H}_\infty \otimes \mathcal{H}_F,\ D = D_\infty \otimes 1 + 1 \otimes D_F),
+(\mathcal{A}_\infty \otimes \mathcal{A}_F,\ \mathcal{H}_\infty \otimes \mathcal{H}_F,\ D = D_\infty \otimes 1 + \gamma_5 \otimes D_F),
 \]
 where \(\mathcal{A}_F = \mathbb{C} \oplus \mathbb{H} \oplus M_3(\mathbb{C})\) and \(D_\infty\) is the explicit 2D Dirac operator on the conoid (Paper 03).
 
 ## 4. Gravity Sector
 
-The Seeley–DeWitt expansion of the spectral action on the product space yields the Einstein–Hilbert term with the corrected Newton constant
+The Seeley–DeWitt expansion on the product space yields the Einstein–Hilbert term with the corrected Newton constant
 \[
 G_N = \frac{64\pi \ell_0^2}{45}.
 \]
@@ -88,7 +88,7 @@ Convergence and error bars are rigorously quantified (Paper 12).
 
 - Unified gravity + Standard Model from **one geometric object**.
 - Explicit \(G_N = 64\pi \ell_0^2 / 45\).
-- Realistic flavor physics with no tuning.
+- Realistic flavor physics with **no tuning**.
 - Stable Higgs vacuum.
 - Black-hole information preservation.
 - Variational motivation for the Riemann critical line.
