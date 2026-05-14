@@ -17,8 +17,6 @@ __pycache__/
 .venv/
 env/
 
-# OS / editors
+# OS
 .DS_Store
 Thumbs.db
-*.swp
-*~
