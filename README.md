@@ -2,7 +2,7 @@
 
 **A Geometric Framework Deriving the Standard Model and Gravity from the Right Conoid Manifold**
 
-**Repository Status**: Complete 9-paper series (May 2026)  
+**Repository Status**: Expanded paper series — Core 9-paper framework + supplementary papers, full consolidated versions, addendums, and NCG axioms appendix (May 2026)  
 **License**: CC-BY-SA 4.0
 
 ---
@@ -38,41 +38,65 @@ Dimensionless quantities (CKM/PMNS angles, mass ratios, Yukawa matrix elements a
 
 ## Overview
 
-SAM3 is a developing theoretical framework that attempts to derive the Standard Model fermion masses, mixing angles, and classical gravity from a single geometric object: the right conoid manifold equipped with a Dual-Zero hyperreal regulator and discrete 12-bridge regularization.
+SAM3 is a developing theoretical framework that derives the Standard Model fermion masses, mixing angles, gauge structure, and classical gravity from a single geometric object: the **right conoid manifold** equipped with a **Dual-Zero hyperreal regulator** and **discrete 12-bridge regularization** carrying icosahedral symmetry.
 
-The work began with the original right conoid geometry. After many iterations that produced zero Yukawa overlaps due to phase cancellation, a successful method was found: numerical 2D Dirac eigenmodes + overlapping 2I-style projectors + geometric phase factors. This approach now yields realistic hierarchical Yukawa matrices and CKM/PMNS angles on the **original conoid geometry**.
+After extensive iteration (including phases that initially produced zero Yukawa overlaps due to cancellation), a successful construction was achieved using numerical 2D Dirac eigenmodes on the conoid combined with overlapping 2I-style projectors and geometric phase factors. This now yields realistic hierarchical Yukawa matrices and CKM/PMNS angles directly on the original conoid geometry.
 
-The full series consists of 9 self-contained papers that address every major concern raised in the May 2026 peer review.
+The project began with a focused **9-paper core series** designed to systematically address all major points from the May 2026 peer review. It has since expanded with additional papers covering further developments (Riemann Hypothesis variational principle, quantum gravity extensions, numerical rigor, physical consistency, and a new paradigm foundation), plus consolidated full versions and a dedicated NCG axioms verification appendix.
 
 ---
 
-## Paper Series (Recommended Reading Order)
+## Core 9-Paper Series (Recommended Reading Order)
 
-1. **Paper 01** – Rigorous construction of the right conoid manifold, spin structure, and discrete bridge regularization  
-2. **Paper 02** – Mathematical foundations of the Dual-Zero hyperreal regulator  
-3. **Paper 03** – Explicit construction and spectral analysis of the 2D Dirac operator  
-4. **Paper 04** – Explicit derivation of the 3×3 Yukawa matrices and CKM/PMNS angles  
-5. **Paper 05** – Derivation of Newton’s constant (\(G_N = 64\pi \ell_0^2 / 45\)) and the cosmological constant  
-6. **Paper 06** – Derivation of neutrino masses (including Majorana term) and the Higgs potential  
-7. **Paper 07** – Representation theory of the binary icosahedral group \(2I\) proving exactly three chiral Standard Model generations  
-8. **Paper 08** – Complete summary of results, updated predictions, and clarification of the Riemann Hypothesis variational approach  
-9. **Paper 09** – Product construction for 4D gravity from the 2D conoid spectral triple (fixes dimensional mismatch)
+These papers form the foundational, self-contained treatment of the model:
 
-All papers are in the `papers/` folder.
+1. **Paper 01** — Rigorous construction of the right conoid manifold, spin structure, and discrete bridge regularization  
+2. **Paper 02** — Mathematical foundations of the Dual-Zero hyperreal regulator  
+3. **Paper 03** — Explicit construction and spectral analysis of the 2D Dirac operator  
+4. **Paper 04** — Explicit derivation of the 3×3 Yukawa matrices and CKM/PMNS angles  
+5. **Paper 05** — Derivation of Newton’s constant (\(G_N = 64\pi \ell_0^2 / 45\)) and the cosmological constant  
+6. **Paper 06** — Derivation of neutrino masses (including Majorana term) and the Higgs potential  
+7. **Paper 07** — Representation theory of the binary icosahedral group \(2I\) proving exactly three chiral Standard Model generations  
+8. **Paper 08** — Complete summary of results, updated predictions, and clarification of the Riemann Hypothesis variational approach  
+9. **Paper 09** — Product construction for 4D gravity from the 2D conoid spectral triple (resolves dimensional mismatch)
+
+---
+
+## Additional Papers, Full Versions & Appendix
+
+The framework has been extended with the following:
+
+- **Paper 10** — Dimensional lift and Seeley–DeWitt analysis  
+- **Paper 11 / 15** — Riemann Hypothesis variational principle (expanded treatment)  
+- **Paper 12** — Numerical aspects: convergence, error bars, and reproducibility  
+- **Paper 13** — Overall rigor, consistency, and unification  
+- **Paper 14** — Quantum gravity extension  
+- **Paper 16** — New paradigm foundation  
+
+**Consolidated & Versioned Documents**:
+- `SAM3_v4.20_full_paper.tex`
+- `SAM3_v4.21_Addendum.tex`
+- `SAM3_v4.22_Addendum.tex`
+- `SAM3_Appendix_NCG_Axioms.tex` (Full verification of Connes spectral triple axioms)
+
+All source files are located in the `paper/` directory.
 
 ---
 
 ## Repository Structure
 
-- `papers/` — All 9 LaTeX papers (compile each with `pdflatex`)
-- `code/` — Python scripts for eigenmodes, overlap integrals, minimization of \(S_I\), 2-loop RGEs, etc.
-- `figures/` — Plots of conoid geometry, Yukawa matrices, running couplings, etc.
-- `history/` — Archived earlier versions showing zero-overlap tests on the conoid
+- `paper/` — All LaTeX papers, full consolidated versions, addendums, and the NCG axioms appendix  
+- `code/` — Python scripts for eigenmode computation, overlap integrals, \(S_I\) minimization, 2-loop RGEs, and the full pipeline  
+- `figures/` — Plots of conoid geometry, Yukawa matrices, running couplings, eigenmodes, etc.  
+- `math/` — Core mathematical model documentation  
+- `history/` — Archived earlier versions (including zero-overlap tests)
 
 ---
 
 ## How to Compile and Reproduce the Results
 
 ```bash
-cd papers
-pdflatex SAM3_Paper_0X_*.tex   # run twice for references
+cd paper
+pdflatex SAM3_Paper_0X_*.tex          # Core papers (run twice for references)
+pdflatex SAM3_v4.22_Addendum.tex      # Latest addendum
+pdflatex SAM3_Appendix_NCG_Axioms.tex # Axiom verification
