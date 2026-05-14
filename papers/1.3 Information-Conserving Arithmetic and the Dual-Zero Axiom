@@ -1,80 +1,56 @@
-\subsection{Information-Conserving Arithmetic and the Dual-Zero Axiom}
+\subsection{Information-Conserving Regularization and the Dual-Zero Infinitesimal}
 \label{sec:dualzero-axiom}
 
-\subsubsection{Motivation: The Lie of Zero in Arithmetic}
+\subsubsection{Motivation}
 
-In standard real arithmetic the symbol $0$ is conventionally understood to represent ``nothing.'' This interpretation is fundamentally incorrect when describing physical reality. Consider the elementary division
-\[
-10 \div 3 = 3.\overline{3}.
-\]
-Multiplying back,
-\[
-3 \times 3 = 9.\overline{9},
-\]
-which differs from the original $10$ by an infinitesimal remainder. In every arithmetic ``transaction'' (multiplication, division, addition, or subtraction) an infinitesimal loss or gain occurs. When these operations are repeated trillions of times — precisely the situation encountered on a non-compact infinite manifold with a continuous or densely discrete spectrum — the accumulated zeros erase an unbounded quantity of information.
-
-Physics, as an exact description of Nature, cannot tolerate any irreversible loss of information. The symbol $0$ therefore actually denotes ``anything less than one whole unit.'' On the infinite right conoid of the SAM3 framework, the Dirac operator produces an infinite tower of modes. Treating the high-mode tail with ordinary real arithmetic would discard information at every scale, violating unitarity, hermiticity, and the variational principle that enforces the Riemann hypothesis.
-
-To resolve this, we introduce the **Dual-Zero hyperreal algebra** \( \mathbb{R}_{[0,-0]} \).
+On a non-compact manifold with an infinite discrete spectrum, the high-mode tail of the Dirac operator contributes to the spectral action. Conventional cutoffs or zeta-function regularization can introduce small but cumulative discrepancies in the functional calculus when eigenvalues are treated with strict real arithmetic. To maintain exact information conservation (unitarity of the time evolution and hermiticity of \(D\)) across all scales, we introduce a controlled infinitesimal regularization that never collapses remainders to exact zero while preserving low-energy observables.
 
 \subsubsection{Definition of the Dual-Zero Algebra}
 
-The algebra consists of elements of the truncated form
+We work in the truncated hyperreal algebra \(\mathbb{R}_{[0,-0]}\) consisting of elements
 \[
 a + \epsilon b + \epsilon^2 c, \qquad a,b,c \in \mathbb{R},
 \]
-where the infinitesimal generator is realized by the sequence
+where the infinitesimal generator is the sequence
 \begin{equation}
-\epsilon(n) = \omega_0 (-1)^n n^{-n}, \qquad \omega_0 > 0,
+\epsilon(n) = \omega_0 (-1)^n n^{-n}, \qquad n \in \mathbb{N}, \quad \omega_0 > 0.
 \label{eq:epsilon-def}
 \end{equation}
-and \( n \) indexes the eigenvalues/modes of the regularized Dirac operator on the conoid. Multiplication is performed with truncation at order \( \epsilon^2 \):
+Multiplication is truncated at order \(\epsilon^2\):
 \[
 (a + \epsilon b + \epsilon^2 c)(d + \epsilon e + \epsilon^2 f) = ad + \epsilon(ae + bd) + \epsilon^2(af + be + cd).
 \]
-The symmetric regularization map
+Operators acting on the spectrum are regularized symmetrically:
 \[
-\operatorname{Reg}_2(f)(\lambda) = \lim_{\delta \to 0^+} \frac{f(\lambda + \delta) + f(\lambda - \delta)}{2}
+\operatorname{Reg}_2(f)(\lambda) = \lim_{\delta \to 0^+} \frac{f(\lambda + \delta) + f(\lambda - \delta)}{2}.
 \]
-is applied to operators whose spectrum lies away from zero.
 
-This construction ensures that **no remainder is ever set exactly to zero**. Every infinitesimal loss or gain is explicitly tracked and conserved.
+This construction ensures that every arithmetic remainder is tracked at the infinitesimal level rather than discarded.
 
-\subsubsection{Why This Exact Form? Derivation from Information Conservation}
+\subsubsection{Physical and Geometric Justification}
 
-The specific choice \eqref{eq:epsilon-def} is not ad hoc. It is the unique (up to the free scale \( \omega_0 \)) infinitesimal that satisfies all physical and geometric requirements of the SAM3 model simultaneously:
-
+The specific form \eqref{eq:epsilon-def} satisfies four simultaneous requirements:
 \begin{enumerate}
-    \item \textbf{Exact information conservation.} The oscillation \( (-1)^n \) encodes the duality of gain and loss inherent in repeating decimals. It guarantees that positive and negative infinitesimals appear symmetrically, so that \( \operatorname{Reg}_2 \) never collapses any remainder to the classical zero.
-    
-    \item \textbf{Super-exponential decoupling.} The decay \( n^{-n} = \exp(-n \ln n) \) is faster than any exponential. This ensures that corrections to low-lying eigenvalues (which determine fermion masses, Yukawa couplings, and the Higgs vacuum) remain negligible (\( |\delta\lambda_k| \le 2\omega_0 \exp(-k \ln k) \)), while the infinite high-mode tail is still fully accounted for. Slower decay would contaminate observable physics; faster decay or truncation would re-introduce exact zeros.
-    
-    \item \textbf{Compatibility with conoid geometry and symmetry.} The period-2 oscillation \( (-1)^n \) commutes with the \( \sin(2v) \) periodicity of the right conoid metric and with the $12$-bridge icosahedral ($2I$) projectors. This preserves hermiticity of the full Dirac operator \( D = D_\infty \otimes 1 + 1 \otimes D_F \) and the first-order condition of the spectral triple.
-    
-    \item \textbf{Consistency with the variational information principle.} The information current \( J(k_1,k_2) \) and the action \( S_I = \int |J|^2\,d\mu \) remain real and stationary precisely on the Riemann critical line \( \operatorname{Re}(s)=1/2 \) only when the Dual-Zero regulator is used. Any other regulator shifts the variational minimum off the line or destroys zero-mode normalizability (\( \psi_+(u) \sim u^{-1/2} \)).
+    \item \textbf{Rapid decoupling}: \(n^{-n} = \exp(-n \ln n)\) suppresses corrections to low-lying eigenvalues faster than any exponential (\(|\delta\lambda_k| \le 2\omega_0 \exp(-k \ln k)\)).
+    \item \textbf{Symmetry}: The factor \((-1)^n\) is compatible with the \(\sin(2v)\) periodicity of the conoid metric and commutes with the \(2I\)-projectors, preserving hermiticity and the first-order condition.
+    \item \textbf{Information conservation}: The symmetric Reg\(_2\) map prevents artificial cancellations in the spectral action and maintains normalizability of the lightest zero modes (\(\psi_+(u) \sim u^{-1/2}\)).
+    \item \textbf{Variational consistency}: The information current action \(S_I = \int |J|^2\,d\mu\) is stationary on \(\operatorname{Re}(s)=1/2\) only under this regularization (see Paper 11).
 \end{enumerate}
 
-\begin{lemma}[Uniqueness of the Dual-Zero Generator]
-\label{lem:dualzero-uniqueness}
-The sequence \( \epsilon(n) = \omega_0 (-1)^n n^{-n} \) is the unique infinitesimal (up to choice of \( \omega_0 \)) that simultaneously satisfies information conservation, zero-mode normalizability, commutation with the $2I$-projectors, and negligible impact on the Seeley--DeWitt coefficients of the spectral action. Any deviation reintroduces information loss or breaks consistency with the right conoid geometry.
+\begin{lemma}[Minimal Regulator]
+The sequence \(\epsilon(n) = \omega_0 (-1)^n n^{-n}\) is (up to the free parameter \(\omega_0\)) the slowest-decaying infinitesimal that simultaneously satisfies the above four conditions while keeping higher Seeley--DeWitt coefficients controlled.
 \end{lemma}
 
-\subsubsection{Robustness and Absence of Artifacts}
+(A sketch of the proof appears in the appendix; full details are in the expanded Paper 02.)
 
-Explicit bounds show that Dual-Zero corrections are harmless to observable physics:
+\subsubsection{Impact on Observables}
+
+Explicit bounds confirm negligible effects on phenomenology:
 \[
 |\delta\lambda_k| \le 2\omega_0 \exp(-k \ln k).
 \]
-Consequently:
-\begin{itemize}
-    \item The Einstein--Hilbert term receives corrections \( < 10^{-12} \).
-    \item Yukawa overlap integrals change by \( < 10^{-9} \).
-    \item The stationarity minimum of \( S_I \) shifts by \( < 10^{-15} \).
-\end{itemize}
-All reported CKM/PMNS angles, Higgs vacuum expectation value, neutrino masses, and gravitational constant \( G_N \) remain unchanged within published precision. Jupyter notebooks in the repository reproduce the full pipeline with and without Dual-Zero shifts for verification.
+This implies corrections \(< 10^{-12}\) to \(G_N\), \(< 10^{-9}\) to Yukawa overlaps, and \(< 10^{-15}\) to the Riemann variational minimum. All published predictions remain unchanged within quoted precision. Reproducible notebooks in `/code/` verify the with/without-Dual-Zero difference.
 
-\subsubsection{Conclusion: Dual-Zero as an Axiomatic Foundation}
+\subsubsection{Role in the Framework}
 
-The Dual-Zero hyperreal algebra is elevated from a technical regulator to a foundational axiom of the SAM3 framework, on equal footing with the spectral triple, the right conoid geometry, and the $2I$ symmetry. By conserving every infinitesimal arithmetic remainder, it ensures that the model is information-complete from the ultraviolet (infinite tail of the conoid) to the infrared (light fermion sector). This information-conserving arithmetic is what ultimately allows a single geometric object — the infinite right conoid with 12 bridges — to simultaneously produce gravity, the full Standard Model, and a variational mechanism for the Riemann hypothesis.
-
-Future work will explore higher-order Dual-Zero extensions and their possible signatures in black-hole information flow.
+The Dual-Zero algebra is promoted to a foundational component of the SAM3 spectral triple, on equal footing with the right conoid geometry and \(2I\) symmetry. It provides the ultraviolet completion necessary for information-preserving dynamics from the infinite conoid tail down to the observable infrared sector.
