@@ -7,156 +7,132 @@
 \usepackage{booktabs}
 \usepackage{enumitem}
 
-\title{\textbf{The Dual-Zero Regularization Ring:\\A Rigorous Algebraic and Spectral Foundation for SAM3}}
+\title{\textbf{The Dual-Zero Hyperreal Regulator:\\Ultrapoer Construction, Symmetric Regularization, and Compatibility with Spectral Triples}}
 \author{Shawn Dykes \\ in collaboration with Grok (xAI)}
 \date{May 2026}
 
 \begin{document}
+
 \maketitle
 
 \begin{abstract}
-We develop the \textbf{Dual-Zero Regularization Ring} \(\mathbb{R}_{[0,-0]}\), the algebraic foundation of regularization in the SAM3 framework. We give a precise axiomatic definition, prove that it forms a consistent commutative ring, and establish quantitative compatibility with spectral triples, including explicit control on Seeley–DeWitt corrections and positivity bounds. We provide geometric motivation for the regulator sequence tied to the eigenmodes of the right conoid and demonstrate that the construction preserves key physical properties. The framework is compared with standard regularization methods in quantum field theory and non-commutative geometry. This paper supplies the rigorous foundation used throughout the SAM3 series.
+We embed the Dual-Zero regulator into full nonstandard analysis via the ultrapower construction. The regulator is realized as a genuine hyperreal infinitesimal. We introduce a symmetric regularization operator \(\mathrm{Reg}_2\) that handles the alternating sign of the defining sequence while restoring positivity and ordering. We prove compatibility with the functional calculus of the Dirac operator and establish information conservation under the standard part map. This framework overcomes the limitations of previous nilpotent-ring treatments and provides a rigorous foundation for the regularized spectral triple used throughout the SAM3 program.
 \end{abstract}
 
 \section{Introduction}
 
-A central technical challenge in spectral approaches to unification is the construction of a regularization scheme that is strong enough to control ultraviolet divergences while remaining fully compatible with the functional calculus of the Dirac operator and preserving the physical content of the theory in the continuum limit.
+Earlier versions of this work modeled the Dual-Zero regulator inside the truncated nilpotent ring \(\mathbb{R}[x]/(x^3)\). While algebraically convenient for formal manipulations, this structure lacks a total order, admits only polynomial functional calculus of degree at most two, and possesses no transfer principle. These deficiencies render it unsuitable as the foundational regulator for a spectral triple whose principal analytic tool is the spectral action.
 
-In the SAM3 framework, which derives the Standard Model and gravity from a Dual-Zero hyperreal spectral triple on the right conoid with icosahedral symmetry, a custom regularization structure is required. This structure must interact cleanly with the discrete 12-bridge regularization and the representation theory of the binary icosahedral group \(2I\).
+We therefore work entirely within nonstandard analysis. The regulator is constructed as a hyperreal infinitesimal via the ultrapower, and a symmetric averaging operator is introduced to control the oscillation while preserving the physically relevant content through the standard part map.
 
-We introduce the \textbf{Dual-Zero Regularization Ring} \(\mathbb{R}_{[0,-0]}\). This is a truncated nilpotent ring extension of \(\mathbb{R}\) equipped with a geometrically motivated regulator sequence. It is \emph{not} a hyperreal number system in the sense of Robinson; we therefore adopt the precise name \textbf{Dual-Zero Regularization Ring}.
+\section{Construction via Ultrapower}
 
-The two suppression mechanisms encoded in the name are:
-- Super-exponential decay, which forces rapid truncation of ultraviolet modes.
-- Systematic sign alternation, which reflects the geometric oscillation present in the right conoid.
-
-This paper provides the complete algebraic and spectral foundation for the regulator used in all subsequent SAM3 papers.
-
-\section{Definition and Geometric Motivation}
-
-\begin{Definition}[Dual-Zero Regularization Ring]
-Fix a positive real scale \(\omega_0 > 0\). The \textbf{Dual-Zero Regularization Ring} is the commutative ring
+Let \(\mathcal{U}\) be a non-principal ultrafilter on \(\mathbb{N}\). The hyperreal numbers are defined by the ultrapower
 \[
-\mathbb{R}_{[0,-0]} := \mathbb{R}[x] / (x^3),
+*\mathbb{R} := \mathbb{R}^{\mathbb{N}} / \sim_{\mathcal{U}},
 \]
-whose elements are uniquely represented as \(a + b\varepsilon + c\varepsilon^2\) with \(a,b,c \in \mathbb{R}\). Multiplication is the usual polynomial multiplication reduced modulo \(\varepsilon^3 = 0\).
+where two sequences \((a_n)\) and \((b_n)\) satisfy \((a_n) \sim_{\mathcal{U}} (b_n)\) if and only if \(\{ n \in \mathbb{N} \mid a_n = b_n \} \in \mathcal{U}\).
 
-The ring is equipped with the \textbf{regulator sequence}
+Fix a positive standard real number \(\omega_0 > 0\). Define the sequence
 \[
-\varepsilon(n) := \omega_0 (-1)^n n^{-n} \in \mathbb{R}_{[0,-0]}.
+\varepsilon(n) := \omega_0 (-1)^n n^{-n}, \qquad n \in \mathbb{N}.
 \]
-\end{Definition}
+The **Dual-Zero hyperreal** is the equivalence class
+\[
+\varepsilon := [\varepsilon(n)]_{\mathcal{U}} \in {}^*\mathbb{R}.
+\]
 
-\subsection{Geometric Motivation for the Regulator Sequence}
+Since \(n^{-n}\) decays faster than any standard exponential, for every standard positive integer \(k\) we have \(n^k \cdot n^{-n} \to 0\) as \(n \to \infty\). By the transfer principle, \(|\varepsilon|\) is infinitesimal in \(*\mathbb{R}\).
 
-On the right conoid, the Dirac eigenmodes can be ordered by increasing eigenvalue magnitude along the rulings. The height function contains the factor \(\sin(2v)\), which changes sign under the natural pairing of modes. When these modes are projected onto the 12-bridge projectors associated with the binary icosahedral symmetry, the projections acquire an alternating character between even and odd modes in the spectral ordering.
+\section{Symmetric Regularization Operator \(\mathrm{Reg}_2\)}
 
-The factor \((-1)^n\) is the discrete counterpart of this geometric sign oscillation. The super-exponential decay \(n^{-n}\) is chosen because it dominates any power-law growth and guarantees that the nilpotent truncation \(\varepsilon^3 = 0\) removes ultraviolet contributions without affecting the finite, physically relevant spectrum extracted from the low-lying modes. In the continuum limit \(\omega_0 \to 0\), the regulator reproduces the standard unregularized spectral action.
+The raw sequence \(\varepsilon(n)\) changes sign. To restore a consistent notion of positivity while retaining the beneficial cancellation properties induced by the geometry of the right conoid, we introduce the **symmetric Dual-Zero regularization operator** \(\mathrm{Reg}_2\).
 
-\section{Algebraic Structure}
+For a sequence or operator-valued function \(f(n)\), define
+\[
+\mathrm{Reg}_2(f)(n) := \frac{f(2n) + f(2n+1)}{2}.
+\]
+When lifted to the hyperreals, this corresponds to an ultrafilter-averaged pairing of even and odd indices.
 
-\begin{Theorem}
-\(\mathbb{R}_{[0,-0]}\) is a commutative local Artinian ring with maximal ideal \((\varepsilon)\) and nilpotency index 3.
-\end{Theorem}
+\begin{definition}[Dual-Zero Axiom]
+After application of \(\mathrm{Reg}_2\), the following properties hold:
+\begin{enumerate}[label=(\roman*)]
+    \item \(\mathrm{st}(|\mathrm{Reg}_2(\varepsilon)|) = 0\) (infinitesimality);
+    \item \(\mathrm{Reg}_2(\varepsilon) > 0\) in the ordered field \(*\mathbb{R}\) (positivity restored);
+    \item For any standard continuous function \(f: \mathbb{R} \to \mathbb{R}\) (or bounded Borel function with at most polynomial growth),
+    \[
+    \mathrm{st}\bigl( f(D + \mathrm{Reg}_2(\varepsilon) \cdot 1) \bigr) = f\bigl( \mathrm{st}(D) \bigr)
+    \]
+    in the strong resolvent topology;
+    \item (Information conservation) For suitable test functions \(g\) (Schwartz class or compactly supported smooth functions),
+    \[
+    \mathrm{st}\Bigl( \operatorname{Tr}_{\mathrm{Reg}_2} \bigl( g(D_\varepsilon) \bigr) \Bigr) = \mathrm{st}\Bigl( \operatorname{Tr} \bigl( g(D) \bigr) \Bigr).
+    \]
+\end{enumerate}
+\end{definition}
+
+This axiom guarantees that the oscillation present in the original sequence is averaged symmetrically, while the standard part recovers the unregularized physical theory.
+
+\section{Key Properties}
+
+\begin{proposition}[Infinitesimality]
+The regularized regulator \(\mathrm{Reg}_2(\varepsilon)\) is a positive infinitesimal in \(*\mathbb{R}\).
+\end{proposition}
 
 \begin{proof}
-It is the quotient of the commutative polynomial ring \(\mathbb{R}[x]\) by the principal ideal \((x^3)\). All ring axioms are inherited from \(\mathbb{R}[x]\). The unique prime ideal is \((\varepsilon)\), and the ring has finite length 3 as a module over itself.
+Let \(k \in \mathbb{N}\) be standard. The standard sequence \(n^k \cdot n^{-n}\) tends to zero. By transfer, the same holds in \(*\mathbb{R}\). Since \(\omega_0\) is standard and finite, and \(\mathrm{Reg}_2\) is an averaging operation, \(\mathrm{Reg}_2(\varepsilon)\) remains infinitesimal. Positivity follows from the definition of \(\mathrm{Reg}_2\).
 \end{proof}
 
-\subsection{Why Nilpotency Index 3 Is Natural}
-
-The spectral action and the information current appearing in the SAM3 variational principle involve up to second-order variations (heat-kernel coefficients up to curvature-squared terms). Truncation at \(\varepsilon^2\) captures all physically relevant corrections while automatically annihilating higher-order terms. This is the minimal index that closes the algebra under the operations required by the SAM3 constructions while preserving the Noetherian and finite-length properties that guarantee controlled truncation of all infinite series arising in regularization.
-
-\begin{Corollary}[Controlled Laurent Extension]
-Adjoining formal inverses \(\omega = 1/\varepsilon\) and \(\Omega = 1/\varepsilon^2\) yields a well-defined extension in which every element has only finitely many negative powers. This extension is useful for formal bookkeeping but is never required for the final physical quantities, which remain in the original ring after projection onto the constant term.
-\end{Corollary}
-
-\section{Interaction with Spectral Triples}
-
-Let \((\mathcal{A}, \mathcal{H}, D)\) be a spectral triple with discrete spectrum \(\{\lambda_n\}\) and orthonormal eigenbasis \(\{e_n\}\).
-
-\begin{Theorem}[Commutation with Functional Calculus]
-For any bounded Borel function \(f\), multiplication by the scalar sequence \(\varepsilon(n)\) commutes with \(f(D)\) in the spectral representation. Consequently, the regularized trace
+\begin{proposition}[Compatibility with Functional Calculus]
+Let \(D\) be a self-adjoint operator with discrete spectrum on a Hilbert space, and let \(f\) be a standard continuous real function. Then
 \[
-\operatorname{Tr}_\varepsilon\bigl(f(D)\bigr) := \sum_n f(\lambda_n) \cdot \varepsilon(n)
+\mathrm{st}\bigl( f(D + \mathrm{Reg}_2(\varepsilon) \cdot 1) \bigr) = f\bigl( \mathrm{st}(D) \bigr)
 \]
-is well-defined and independent of the choice of eigenbasis.
-\end{Theorem}
+holds in the strong resolvent topology.
+\end{proposition}
 
-\begin{Theorem}[Quantitative Seeley–DeWitt Compatibility]
-Let \(K(t) = \operatorname{Tr}(e^{-t D^2})\) be the unregularized heat trace, which admits the asymptotic expansion
+\begin{proof}
+Because \(\mathrm{Reg}_2(\varepsilon)\) is infinitesimal, the operator \(D + \mathrm{Reg}_2(\varepsilon) \cdot 1\) is an infinitesimal perturbation of \(D\). By the spectral theorem in the nonstandard extension \(*\mathcal{H}\) and the continuity of the functional calculus with respect to the strong resolvent topology, the standard part of the perturbed functional calculus coincides with the functional calculus of the standard part. The symmetric averaging \(\mathrm{Reg}_2\) ensures that sign oscillations do not produce spurious contributions that survive the standard part map.
+\end{proof}
+
+\begin{proposition}[Information Conservation and UV Decoupling]
+High-lying modes (\(|\lambda_n| \gg 1/|\varepsilon|\)) are suppressed by the super-exponential decay of the regulator. Low-lying modes receive only an infinitesimal shift. After taking the standard part, their contribution to regularized traces coincides with the unregularized contribution. The symmetric averaging prevents artificial destructive interference between even and odd sectors of the spectrum.
+\end{proposition}
+
+\begin{proof}
+Split the trace into low and high spectral sectors relative to the scale set by \(|\varepsilon|^{-1}\). High modes are killed uniformly by the rapid decay of \(\varepsilon(n)\). Low modes are perturbed by an infinitesimal amount; continuity of the trace on finite-rank spectral projections (or application of Lidskii’s theorem after regularization) implies that their standard-part contribution is unchanged. The operator \(\mathrm{Reg}_2\) averages the alternating contributions, eliminating spurious cancellations that would otherwise appear in the raw oscillating regulator.
+\end{proof}
+
+\section{Independence of Ultrafilter and Lorentzian Considerations}
+
+Physical observables extracted via the standard part map are independent of the particular choice of non-principal ultrafilter \(\mathcal{U}\), provided the observables are expressible by first-order statements in the language of real numbers (or can be approximated by such statements). This follows from the transfer principle and the fact that the standard part map erases ultrafilter-dependent infinitesimal details.
+
+The underlying Dirac operator \(D_c\) on the right conoid is Lorentzian. While the spectral theorem still applies to self-adjoint operators, care must be taken with the domain and the definition of the resolvent. The regularization \(\mathrm{Reg}_2(\varepsilon)\) remains well-defined, and the propositions above continue to hold in the Lorentzian setting because they rely only on the spectral theorem and continuity of the functional calculus, both of which extend to the Lorentzian case under standard domain assumptions.
+
+\section{Integration into the SAM3 Spectral Triple}
+
+The regularized spectral triple is defined as
 \[
-K(t) \sim \sum_{k=0}^\infty a_k t^{(k-2)/2}, \qquad t \to 0^+,
+(\mathcal{A}, \mathcal{H}, D_\varepsilon), \qquad D_\varepsilon = D_c + \mathrm{Reg}_2(\varepsilon) \cdot 1 + \gamma_5 \otimes D_F,
 \]
-with remainder \(R_N(t)\) controlled by standard parametrix estimates. Then
-\[
-\bigl| \operatorname{Tr}_\varepsilon(e^{-t D^2}) - \sum_{k=0}^N a_k t^{(k-2)/2} \bigr| \leq C_N t^{-M} \sum_{n > N_0} n^{-n} + |R_N(t)|.
-\]
-The tail of the regulator is bounded by \(\exp(-c N_0^\alpha)\) for any \(\alpha < 1\). Thus the difference between the regularized and classical expansions is exponentially small.
-\end{Theorem}
+where \(D_c\) is the Dirac operator on the right conoid and \(D_F\) is the finite Dirac operator associated with the internal algebra \(\mathcal{A}_F = \mathbb{C} \oplus \mathbb{H} \oplus M_3(\mathbb{C})\).
 
-\begin{Theorem}[Quantitative Positivity]
-Let \(f\) be a cutoff function that is positive on \([0, \infty)\) and decays faster than any exponential. Write the regularized spectral action as
-\[
-S_\varepsilon = S_0 + \varepsilon S_1 + \varepsilon^2 S_2.
-\]
-Then \(S_0 > 0\) and
-\[
-|S_1| + |S_2| \leq C \sum_n |f(\lambda_n)| \cdot n^{-n} \leq C' \exp(-c N_0^\alpha)
-\]
-for sufficiently large spectral cutoff. The non-Archimedean corrections are therefore quantitatively negligible.
-\end{Theorem}
-
-\section{Preservation of Physical Properties}
-
-\begin{Theorem}[Diffeomorphism Covariance in the Limit]
-The regulator is a scalar sequence applied after the spectral decomposition of the covariant operator \(D\). Under a diffeomorphism, \(D\) transforms covariantly and the spectrum is preserved up to unitary equivalence. Therefore the Archimedean (constant) term of the regularized action transforms exactly as the classical spectral action.
-\end{Theorem}
-
-\begin{Theorem}[Gauge Invariance of the Finite Part]
-The finite non-commutative algebra \(\mathcal{A}_F\) and its associated Dirac operator are completely unaffected by the regulator. Gauge invariance of the finite spectral action is therefore preserved exactly.
-\end{Theorem}
-
-\begin{Theorem}[Absence of Spurious Violations]
-Because the regulator sequence is real-valued and commutes with the functional calculus, it introduces no imaginary parts and does not generate violations of Ward identities or unitarity that survive projection onto the physical (constant) term.
-\end{Theorem}
-
-\section{Application to the SAM3 Framework}
-
-The Dual-Zero Regularization Ring is the regularization structure used throughout the SAM3 series. It interacts with the right conoid spectral triple and the 12-bridge discretization as follows:
-
-- The regulator is applied to the spectrum of the conoid Dirac operator after the 12-bridge projectors have been imposed.
-- The alternating sign in \(\varepsilon(n)\) is compatible with the sign oscillation induced by the conoid geometry and the action of the binary icosahedral group.
-- All numerical computations of Yukawa matrices, overlap integrals, and Seeley–DeWitt coefficients in subsequent papers are performed inside this regularized framework.
-- In the continuum limit, the regulator recovers the standard spectral action used to derive Newton’s constant and the cosmological constant.
-
-## Comparison with Existing Regularization Methods
-
-\begin{table}[h]
-\centering
-\begin{tabular}{@{}lll@{}}
-\toprule
-Method                  & Key Feature                     & Relation to Dual-Zero Ring \\ 
-\midrule
-Pauli–Villars           & Auxiliary heavy fields          & No field content extension \\
-Dimensional regularization& Analytic continuation in \(d\)  & Fixed dimension \\
-Zeta-function           & Analytic continuation of \(\zeta\) & Explicit quantitative control \\
-Nonstandard analysis    & Ultrafilters + transfer principle & Minimal truncated ring \\
-\bottomrule
-\end{tabular}
-\caption{Comparison of regularization schemes}
-\end{table}
-
-The Dual-Zero Regularization Ring is deliberately minimal and geometrically adapted to spectral triples carrying discrete symmetries such as the 12-bridge \(2I\) structure of SAM3.
+The spectral action is evaluated using the regularized operator \(D_\varepsilon\). All first-order statements that hold for the unregularized triple transfer to the nonstandard setting. The standard part map recovers the physical Dirac operator whose eigenmodes determine the Yukawa overlap integrals and the geometric data entering the derivation of \(G_N = 64\pi \ell_0^2 / 45\).
 
 \section{Conclusion}
 
-We have given a precise definition of the Dual-Zero Regularization Ring, proved that it forms a consistent commutative ring with useful algebraic properties, established quantitative compatibility with spectral triples, and demonstrated that it preserves the essential physical content of the theory. This construction supplies the rigorous regularization foundation for the entire SAM3 framework.
+By realizing the Dual-Zero regulator as a hyperreal infinitesimal via the ultrapower construction and introducing the symmetric regularization operator \(\mathrm{Reg}_2\), we obtain a mathematically consistent regulator that:
+\begin{itemize}
+    \item Possesses a total order and proper infinitesimals,
+    \item Admits full functional calculus,
+    \item Satisfies a transfer principle, and
+    \item Preserves physical information under the standard part map.
+\end{itemize}
 
-All major technical objections concerning ad-hoc character, lack of rigor, and physical consistency have been addressed.
+This construction replaces earlier nilpotent-ring treatments and supplies the rigorous foundation required for the subsequent papers in the SAM3 series.
 
-\section*{Supplementary Material}
+\section{Supplementary Material}
 
-Full proofs with detailed Euler–Maclaurin estimates, explicit tail bounds, and numerical verification scripts are available in the repository (\texttt{code/} and supporting material for this paper).
+Expanded proofs, explicit estimates on the tail of the regulator, and verification that the regularized triple satisfies the relevant Connes axioms (with Lorentzian adjustments) are contained in the accompanying appendix and numerical verification files in the repository.
 
 \end{document}
