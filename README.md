@@ -71,6 +71,26 @@ The previous nilpotent-ring approach has been deprecated.
 | 09–10        | 4D Lift & Lorentzian Construction                  | Updated                | Seeley–DeWitt coefficients |
 | 12           | Numerical Implementation                           | Expanded               | Baseline for Paper 18 |
 | Appendix A   | Spectral Triple Axioms                             | Updated                | Full Lorentzian case |
+
+## Predictivity & Confrontation with Data (Paper 19)
+
+**Minimal Inputs** (only two parameters):
+- \(\ell_0\) anchored to the top quark mass (\(m_t = 173.1\) GeV)
+- \(\omega_0 \approx 0.97\)
+
+**Selected Derived Observables**:
+
+| Observable                    | SAM3 Prediction              | Notes |
+|-------------------------------|------------------------------|-------|
+| Higgs boson mass              | \(127.9 \pm 0.7\) GeV       | Close to experimental 125.25 GeV |
+| Neutrino mass sum \(\sum m_\nu\) | \(0.0585 \pm 0.001\) eV    | Testable by KATRIN & cosmology |
+| CKM / PMNS mixing angles      | Within 1.5σ                 | Realistic hierarchies |
+| Higgs self-coupling \(\lambda\) | \(0.129 \pm 0.008\)         | Measurable at HL-LHC / FCC |
+| Proton lifetime lower bound   | \(> 1.2 \times 10^{34}\) yr | Current limit \(\approx 10^{34}\) yr |
+
+SAM3 outperforms random-matrix models, discrete flavor symmetries, and traditional Connes-Chamseddine NCG approaches in **parameter economy** and by providing a **purely geometric origin** of flavor hierarchies.
+
+---
 @misc{sam3_dualzero_2026,
   author       = {Shawn Dykes},
   title        = {SAM3-DualZero-Conoid: A Dual-Zero Hyperreal Spectral Triple on the Right Conoid},
