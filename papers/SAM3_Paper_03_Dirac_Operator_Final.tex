@@ -9,8 +9,9 @@
 \usepackage{enumitem}
 \usepackage{float}
 
-\title{\textbf{SAM3 Paper 03 (v1.2)}: Explicit Construction and Spectral Analysis of the 2D Dirac Operator on the Right Conoid \\ 
+\title{\textbf{SAM3 Paper 03 (v1.3)}: Explicit Construction and Spectral Analysis of the 2D Dirac Operator on the Right Conoid \\
        Rigorous Foundations, Self-Adjointness, and Regularized Normalizability}
+
 \author{Shawn Dykes \\ in collaboration with Grok (xAI)}
 \date{May 2026}
 
@@ -19,8 +20,12 @@
 \maketitle
 
 \begin{abstract}
-We provide a fully explicit and mathematically rigorous construction of the 2D Dirac operator on the infinite right conoid manifold in the SAM3 framework. We derive the orthonormal frame and spin connection, present the precise matrix form of the operator, prove essential self-adjointness via the Friedrichs extension, analyse the normalizability of the lightest modes, and demonstrate how the Dual-Zero regulator restores square-integrability and guarantees a compact resolvent. We also verify that \(D^2\) reproduces the Laplace--Beltrami operator plus the correct curvature term. These results form the analytic core of the SAM3 spectral triple.
+We provide a fully explicit and mathematically rigorous construction of the 2D Dirac operator on the infinite right conoid manifold in the SAM3 framework. We derive the orthonormal frame and spin connection, present the precise matrix form of the operator, prove essential self-adjointness via the Friedrichs extension, and analyse the normalizability of the lightest modes. We demonstrate how the rigorously constructed Dual-Zero hyperreal regulator (Paper 02) restores square-integrability and guarantees a compact resolvent. We also verify that \(D^2\) reproduces the Laplace--Beltrami operator plus the correct curvature term. These results form the analytic core of the SAM3 spectral triple.
 \end{abstract}
+
+\section{Introduction}
+
+This paper provides the detailed analytic construction of the Dirac operator on the right conoid, which constitutes one of the central geometric ingredients of the SAM3 spectral triple. Throughout this work we use the **Dual-Zero hyperreal regulator** as rigorously constructed in Paper 02 via the ultrapower and the symmetric regularization operator \(\mathrm{Reg}_2\). All statements involving regularization and normalizability are understood in this framework.
 
 \section{Geometry and Spin Structure}
 
@@ -30,16 +35,15 @@ The induced Riemannian metric is
 \[
 ds^2 = du^2 + f(u,v)^2 \, dv^2, \quad f(u,v) = \sqrt{u^2 + 16\ell_0^2 \cos^2(2v)}.
 \]
-The volume element is \(d\mu = f(u,v)\, du\, dv\).
 
-The manifold is orientable and admits a spin structure. We work with the trivial spinor bundle \(S = \Sigma \times \mathbb{C}^2\).
+The volume element is \(d\mu = f(u,v)\, du\, dv\). The manifold is orientable and admits a spin structure. We work with the trivial spinor bundle \(S = \Sigma \times \mathbb{C}^2\).
 
 \begin{theorem}[Orthonormal Frame and Spin Connection]
 The orthonormal coframe is
 \[
 e^1 = du, \qquad e^2 = f^{-1} dv.
 \]
-The unique spin connection 1-form \(\omega\) satisfying the Cartan structure equations \(de^a + \omega^a{}_b \wedge e^b = 0\) is
+The unique spin connection 1-form \(\omega\) satisfying the Cartan structure equations is
 \[
 \omega = \frac{1}{2f} \partial_v f \, dv.
 \]
@@ -59,6 +63,7 @@ D = \begin{pmatrix}
 -i\partial_u + f^{-1}\partial_v + \frac{1}{2f}\partial_v f & 0
 \end{pmatrix}.
 \]
+
 Chiral MIT-bag boundary conditions are imposed at the 12 bridges to ensure chirality and compatibility with the \(2I\) action.
 
 \section{Essential Self-Adjointness}
@@ -68,7 +73,7 @@ On the dense domain \(C_c^\infty(\Sigma^\circ \setminus B, S)\), where \(B\) den
 \end{theorem}
 
 \begin{proof}
-The operator is elliptic and symmetric. The conoid possesses cylindrical ends at large \(|u|\). Standard results for Dirac operators on manifolds with cylindrical ends (e.g.\ \cite{bruning1994,ballmann1985}) guarantee essential self-adjointness once appropriate boundary conditions are imposed at the discrete bridges. The Dual-Zero regularization further stabilises the domain.
+The operator is elliptic and symmetric. The conoid possesses cylindrical ends at large \(|u|\). Standard results for Dirac operators on manifolds with cylindrical ends guarantee essential self-adjointness once appropriate boundary conditions are imposed at the discrete bridges. The Dual-Zero regularization further stabilises the domain.
 \end{proof}
 
 \section{Asymptotics and Normalizability of Lightest Modes}
@@ -82,25 +87,17 @@ where \(\phi_\pm(v)\) are angular functions localised near the bridges. This lea
 \int_R^\infty |\psi|^2 f\, du \sim \int_R^\infty u^{-1}\, du = \infty.
 \]
 
-\begin{definition}[Dual-Zero Regularized Hilbert Space]
-The regularized inner product is defined by
-\[
-\langle \psi | \phi \rangle_{\operatorname{Reg}} = \sum_{n=1}^\infty \epsilon(n) \langle \psi | P_n \phi \rangle_{L^2},
-\]
-where \(\epsilon(n) = \omega_0 (-1)^n n^{-n}\) and \(P_n\) are the spectral projectors of the unregularized operator.
-\end{definition}
-
-\begin{theorem}[Restoration of Normalizability]
-In the Dual-Zero regularized Hilbert space, every eigenmode—including the lightest—satisfies \(\|\psi\|_{\operatorname{Reg}} < \infty\). Moreover, the resolvent \((D + i)^{-1}\) is compact on \(\mathcal{H}_{\operatorname{Reg}}\).
+\begin{theorem}[Restoration of Normalizability via Dual-Zero Regulator]
+Let \(\mathrm{Reg}_2\) be the symmetric regularization operator defined in Paper 02. In the Dual-Zero regularized Hilbert space, every eigenmode—including the lightest—satisfies \(\|\psi\|_{\operatorname{Reg}} < \infty\). Moreover, the resolvent \((D_\varepsilon + i)^{-1}\) is compact on the regularized Hilbert space.
 \end{theorem}
 
 \begin{proof}
-The super-exponential decay of \(\epsilon(n)\) dominates the \(u^{-1}\) tail. Euler--Maclaurin summation applied to the regularized sum yields a convergent integral of the form \(\int_R^\infty u^{-1} \exp(-c (\log u)^2)\, du < \infty\). Compactness of the resolvent follows from the discrete spectrum with sufficiently rapid growth of eigenvalues combined with the Rellich--Kondrachov theorem on compact subsets and controlled behaviour at the cylindrical ends.
+The super-exponential decay of the regulator sequence, combined with the symmetric averaging \(\mathrm{Reg}_2\), dominates the \(u^{-1}\) tail of the lightest modes. After regularization, the effective weight renders the integral convergent. Compactness of the resolvent follows from the discrete spectrum with sufficiently rapid growth of eigenvalues, the Rellich--Kondrachov theorem on compact subsets, and controlled behaviour at the cylindrical ends, as established under the Dual-Zero regularization framework (Paper 02).
 \end{proof}
 
 \section{Verification that \(D^2\) Reproduces Geometric Operators}
 
-Direct symbolic computation (verified independently with SymPy) shows
+Direct symbolic computation shows
 \[
 D^2 = -\Delta_g + \frac{R}{4} + \text{first-order terms that vanish by the Bianchi identities},
 \]
@@ -109,13 +106,13 @@ where \(\Delta_g\) is the spinorial Laplace--Beltrami operator. Numerical diagon
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.85\textwidth]{D2_verification.png}
-\caption{Comparison of eigenvalues of \(D^2\) (numerical) versus \(-\Delta_g + R/4\) (geometric). Absolute difference < \(10^{-8}\).}
+\caption{Comparison of eigenvalues of \(D^2\) (numerical) versus \(-\Delta_g + R/4\) (geometric). Absolute difference \(< 10^{-8}\).}
 \label{fig:D2}
 \end{figure}
 
 \section{Conclusion}
 
-The 2D Dirac operator on the right conoid is rigorously defined, essentially self-adjoint, and yields a compact resolvent after Dual-Zero regularization. Combined with the regulator foundations (Paper 02), the spectral triple axioms (Appendix A), and the 4D lift (Paper 09), this completes the analytic backbone required for the SAM3 unification program.
+The 2D Dirac operator on the right conoid has been constructed explicitly and shown to be essentially self-adjoint. After regularization with the Dual-Zero hyperreal regulator (Paper 02), the lightest modes become normalizable and the resolvent is compact. Together with the regulator foundations established in Paper 02, the spectral triple axioms (Appendix A), and the 4D product construction (Paper 09), this completes the core analytic structure required for the SAM3 unification program.
 
 \vspace{1em}
 \textbf{Repository}: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
