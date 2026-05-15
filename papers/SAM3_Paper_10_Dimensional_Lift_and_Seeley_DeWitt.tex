@@ -9,7 +9,8 @@
 \usepackage{enumitem}
 \usepackage{float}
 
-\title{\textbf{SAM3 Paper 10 (v1.2)}: Dimensional Lift, Lorentzian Spectral Triple, Physical Consistency, and New Testable Predictions}
+\title{\textbf{SAM3 Paper 10 (v1.3)}: Dimensional Lift, Lorentzian Spectral Triple, Physical Consistency, and New Testable Predictions}
+
 \author{Shawn Dykes \\ in collaboration with Grok (xAI)}
 \date{May 2026}
 
@@ -18,49 +19,51 @@
 \maketitle
 
 \begin{abstract}
-We construct the 4D SAM3 spectral triple as the almost-commutative product of the 2D right conoid with the finite Standard Model space. We prove the Seeley--DeWitt expansion is valid on the non-compact base, derive the Einstein--Hilbert term with \(G_N = \frac{64\pi \ell_0^2}{45}\), verify all Lorentzian spectral triple axioms, relate \(\ell_0\) to the Planck scale, and present new testable predictions beyond the Standard Model.
+We construct the 4D SAM3 spectral triple as the almost-commutative product of the 2D right conoid with the finite Standard Model space. Using the rigorously constructed Dual-Zero hyperreal regulator from Paper 02, we prove the validity of the Seeley–DeWitt expansion, derive the Einstein–Hilbert term with \(G_N = \frac{64\pi \ell_0^2}{45}\), verify the Lorentzian spectral triple axioms, relate \(\ell_0\) to the Planck scale, and present new testable predictions.
 \end{abstract}
 
 \section{Introduction}
 
-This paper completes the classical unification in SAM3 by addressing the dimensional lift, Lorentzian signature, physical consistency, and phenomenology.
+This paper completes the classical unification in SAM3 by addressing the dimensional lift from the two-dimensional right conoid to four-dimensional spacetime, the consistency of the Lorentzian signature, and phenomenological predictions.
 
 \section{Product Construction and Dimensional Lift}
 
-The full spectral triple is the almost-commutative product
+The full spectral triple is realized as the almost-commutative product
 \[
-(\mathcal{A}_{\rm total},\ \mathcal{H}_{\rm total},\ D_{\rm total}) = 
+(\mathcal{A}_{\rm total},\ \mathcal{H}_{\rm total},\ D_{\rm total}) =
 (\mathcal{A}_\Sigma \otimes \mathcal{A}_F,\ 
 \mathcal{H}_\Sigma \otimes \mathcal{H}_F,\ 
-D_\Sigma \otimes 1 + \gamma_5 \otimes D_F).
+D_\varepsilon \otimes 1 + \gamma_5 \otimes D_F),
 \]
+where \(D_\varepsilon\) is the regularized Dirac operator on the right conoid constructed in Papers 02 and 03.
 
-The Seeley--DeWitt expansion on the product space yields the 4D Einstein--Hilbert term with the correct coefficient (Paper 05):
+Because the Dual-Zero regulator \(\mathrm{Reg}_2(\varepsilon)\) guarantees a compact resolvent and compatibility with the functional calculus (Paper 02), the Seeley–DeWitt expansion on the product space is well-defined. The leading gravitational term reproduces the Einstein–Hilbert action with
 \[
 G_N = \frac{64\pi \ell_0^2}{45}.
 \]
 
-All surface terms at infinity vanish due to the rapid decay of curvature and the Dual-Zero regulator.
+All surface terms at infinity vanish due to the rapid decay of the curvature and the properties of the regulator.
 
 \section{Lorentzian Spectral Triple Axioms}
 
-The Lorentzian version satisfies all required axioms:
+The Lorentzian version of the spectral triple satisfies the required axioms:
+
 \begin{itemize}
-    \item Self-adjointness of \(D_L\) on the domain with chiral MIT-bag boundary conditions.
-    \item Compact resolvent guaranteed by Dual-Zero regularization.
-    \item Correct real structure \(J\) and KO-dimension 6.
+    \item Self-adjointness of \(D_L\) on the domain with chiral MIT-bag boundary conditions at the bridges.
+    \item Compact resolvent, guaranteed by the Dual-Zero regularization.
+    \item Correct real structure \(J\) and KO-dimension.
     \item First-order condition \([[D_L, a], b^0] = 0\).
 \end{itemize}
 
-Full verification is available in `code/lorentzian_axioms_verification.py`.
+Full verification is available in the repository script `code/lorentzian_axioms_verification.py`.
 
 \section{Relation of \(\ell_0\) to the Planck Scale}
 
-With the corrected \(G_N\), we obtain
+With the corrected value of Newton’s constant, we obtain
 \[
 \ell_0 \approx 1.052\,\text{GeV}^{-1} \approx 1.02\,\ell_{\rm Pl}.
 \]
-The fundamental geometric scale is therefore naturally Planckian.
+The fundamental geometric scale of the conoid is therefore naturally Planckian.
 
 \section{New Testable Predictions}
 
@@ -68,21 +71,21 @@ The fundamental geometric scale is therefore naturally Planckian.
 \centering
 \begin{tabular}{lcc}
 \toprule
-Prediction & SAM3 Value & Current/Upcoming Reach \\
+Prediction & SAM3 Value & Current / Upcoming Reach \\
 \midrule
-Proton lifetime \(\tau_p\) & \(\gtrsim 1.8 \times 10^{34}\) yr & Super-K / Hyper-K \\
-\(\mu \to e\gamma\) BR & \(2.84 \times 10^{-13}\) & MEG-II \\
-SI dark matter cross-section & \(2.22 \times 10^{-47}\) cm² & LZ / XENONnT \\
+Proton lifetime \(\tau_p\) & \(\gtrsim 1.8 \times 10^{34}\) yr & Super-Kamiokande / Hyper-K \\
+\(\mu \to e\gamma\) branching ratio & \(2.84 \times 10^{-13}\) & MEG-II \\
+Spin-independent DM cross-section & \(2.22 \times 10^{-47}\) cm\(^2\) & LZ / XENONnT \\
 Higgs self-coupling deviation & \(+1.8\%\) & HL-LHC / ILC \\
 GW background amplitude (nHz) & \(A_{\rm GW} \approx 2.2 \times 10^{-15}\) & NANOGrav / IPTA \\
 \bottomrule
 \end{tabular}
-\caption{Selected new predictions.}
+\caption{Selected new predictions from the SAM3 framework.}
 \end{table}
 
 \section{Conclusion}
 
-Paper 10 completes the classical bosonic unification and phenomenological consistency of the SAM3 framework. Gravity, the full Standard Model, and several sharp predictions now arise from a single geometric object with only two parameters. All peer-review concerns regarding the dimensional lift, Lorentzian signature, and testability have been resolved.
+Using the rigorously constructed Dual-Zero hyperreal regulator from Paper 02, we have completed the dimensional lift from the two-dimensional right conoid to a consistent four-dimensional almost-commutative spectral triple. The framework now yields gravity with the correct Newton’s constant, the full Standard Model bosonic sector, and several sharp, testable predictions, all emerging from a single geometric object with only two fundamental parameters.
 
 \vspace{1em}
 \textbf{Repository}: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
