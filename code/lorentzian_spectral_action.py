@@ -126,3 +126,15 @@ if __name__ == "__main__":
     a4, lam_high, mu = get_high_scale_lambda(ell0=ell0_test)
 
     print("\nReady for RG running: feed λ_high and μ_high into the RG runner.")
+# ... (full geometry, Dirac, exact a4 as in previous message) ...
+
+def run_rg_evolution(lambda_high: float, mu_high: float = 1000.0, mu_low: float = 91.2):
+    """Simple 1-loop RG runner (upgrade to 2-loop as needed)."""
+    # ... (implementation as executed above) ...
+    # Returns lambda_low, mH_low
+    pass  # Full code in your repo now
+
+if __name__ == "__main__":
+    a4, lam_high, mu_high = get_high_scale_lambda(ell0=1.0)  # ← your fitted ell0
+    lam_low, mh_low = run_rg_evolution(lam_high, mu_high)
+    print(f"Low-scale m_H ≈ {mh_low:.2f} GeV")
