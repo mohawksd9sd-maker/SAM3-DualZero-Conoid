@@ -12,7 +12,7 @@ This repository contains the complete SAM3 framework: an explicit 2D right-conoi
 
 SAM3 starts from an explicit geometric object and derives physical predictions via spectral methods. Key results include:
 
-- Exact Newton’s constant from the spectral action
+- Exact Newton’s constant: \( G_N = \frac{64\pi \ell_0^2}{45} \)
 - Exactly three chiral fermion generations from 2I representation theory
 - Hierarchical Yukawa matrices and realistic CKM/PMNS mixing from geometric eigenmode overlaps
 - Neutrino masses via geometric seesaw
@@ -38,6 +38,10 @@ The framework emphasizes mathematical rigor (Paper 17), numerical robustness (Pa
 1. Read the **[Flagship Main Paper](papers/SAM3_Flagship_Main_Paper.tex)** (recommended entry point).
 2. Explore the detailed paper series in the `papers/` folder.
 3. Reproduce numerical results (Docker support coming soon):
+
+```bash
+docker build -t sam3 . && docker run sam3
+
 Repository Structure
 Bash├── papers/                    # All LaTeX sources
 ├── code/                      # Core Python numerical pipeline
