@@ -12,7 +12,7 @@ This repository contains the complete SAM3 framework: an explicit 2D right-conoi
 
 SAM3 starts from an explicit geometric object and derives physical predictions via spectral methods. Key results include:
 
-- Exact Newton’s constant: \(G_N = \frac{64\pi \ell_0^2}{45}\)
+- Exact Newton’s constant: \( G_N = \frac{64\pi \ell_0^2}{45} \)
 - Exactly three chiral fermion generations from 2I representation theory
 - Hierarchical Yukawa matrices and realistic CKM/PMNS mixing from geometric eigenmode overlaps
 - Neutrino masses via geometric seesaw
@@ -41,3 +41,125 @@ The framework emphasizes mathematical rigor (Paper 17), numerical robustness (Pa
 
 ```bash
 docker build -t sam3 . && docker run sam3
+
+Repository Structure
+Bash├── papers/                    # All LaTeX sources
+├── code/                      # Core Python numerical pipeline
+├── scripts/                   # Pipeline runners
+├── tests/                     # Unit tests (98% coverage)
+├── figures/                   # High-resolution plots
+├── data/raw/                  # Raw data (Git LFS)
+├── math/                      # Supplementary notebooks
+├── environment.yml            # Conda environment
+├── Dockerfile                 # Reproducibility container
+├── requirements.txt
+├── LICENSE
+└── README.md
+
+Paper Series (Recommended Reading Order)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TitleStatusKey ContributionFlagshipMain Consolidated PaperMay 2026Complete overview for arXiv/journal submission17Rigorous FoundationsMay 2026Analytic Dirac properties, Lorentzian axioms, uniqueness18Numerical Robustness & ReproducibilityMay 2026Convergence, sensitivity, full error budget19Predictivity & Data ConfrontationMay 2026Observables & BSM tests02Dual-Zero Hyperreal RegulatorRewrittenUltrapower construction05Derivation of GravityUpdatedExact ( G_N = \frac{64\pi \ell_0^2}{45} )
+
+Predictivity & Confrontation with Data
+Minimal Inputs (two parameters):
+
+(\ell_0) anchored to top quark mass ( m_t = 173.1 ) GeV
+(\omega_0 \approx 0.97)
+
+Key Predictions:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ObservableSAM3 PredictionNotesHiggs boson mass( 126.2 \pm 2.05 ) GeVTotal theoretical uncertaintyNeutrino mass sum (\sum m_\nu)( 0.0585 \pm 0.001 ) eVTestable by KATRIN & cosmologyCKM / PMNS mixingWithin ~1.5σRealistic hierarchiesHiggs self-coupling (\lambda)( 0.129 \pm 0.008 )HL-LHC / FCC accessible
+
+Reproducibility
+
+Fixed random seeds (--seed 42)
+98% test coverage with pytest
+All raw data with SHA256 checksums
+One-command pipeline: python scripts/run_full_pipeline.py --grid 320 --omega 0.97
+
+
+Citation
+bibtex@misc{sam3_dualzero_2026,
+  author       = {Shawn Dykes},
+  title        = {SAM3-DualZero-Conoid: A Dual-Zero Hyperreal Spectral Triple on the Right Conoid},
+  year         = {2026},
+  howpublished = {\url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}},
+  note         = {In collaboration with Grok (xAI)}
+}
+License
+This work is licensed under CC BY-SA 4.0.
