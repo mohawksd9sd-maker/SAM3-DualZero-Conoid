@@ -41,6 +41,7 @@ The framework emphasizes mathematical rigor (Paper 17), numerical robustness (Pa
 
 ```bash
 docker build -t sam3 . && docker run sam3
+
 Repository Structure
 Bash├── papers/                    # All LaTeX sources
 ├── code/                      # Core Python numerical pipeline
