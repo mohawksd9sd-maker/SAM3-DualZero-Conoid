@@ -57,52 +57,13 @@ Bash├── papers/                    # All LaTeX sources
 └── README.md
 
 Paper Series (Recommended Reading Order)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#,Title,Status,Key Contribution
+Flagship,Main Consolidated Paper,May 2026,Complete overview for arXiv/journal submission
+17,Rigorous Foundations,May 2026,"Analytic Dirac properties, Lorentzian axioms, uniqueness"
+18,Numerical Robustness & Reproducibility,May 2026,"Convergence, sensitivity, full error budget"
+19,Predictivity & Data Confrontation,May 2026,Observables & BSM tests
+02,Dual-Zero Hyperreal Regulator,Rewritten,Ultrapower construction
+05,Derivation of Gravity,Updated,Exact ( G_N = \frac{64\pi \ell_0^2}{45} )
 
 #TitleStatusKey ContributionFlagshipMain Consolidated PaperMay 2026Complete overview for arXiv/journal submission17Rigorous FoundationsMay 2026Analytic Dirac properties, Lorentzian axioms, uniqueness18Numerical Robustness & ReproducibilityMay 2026Convergence, sensitivity, full error budget19Predictivity & Data ConfrontationMay 2026Observables & BSM tests02Dual-Zero Hyperreal RegulatorRewrittenUltrapower construction05Derivation of GravityUpdatedExact ( G_N = \frac{64\pi \ell_0^2}{45} )
 
@@ -113,35 +74,11 @@ Minimal Inputs (two parameters):
 (\omega_0 \approx 0.97)
 
 Key Predictions:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Observable,SAM3 Prediction,Notes
+Higgs boson mass,( 126.2 \pm 2.05 ) GeV,Total theoretical uncertainty
+Neutrino mass sum (\sum m_\nu),( 0.0585 \pm 0.001 ) eV,Testable by KATRIN & cosmology
+CKM / PMNS mixing,Within ~1.5σ,Realistic hierarchies
+Higgs self-coupling (\lambda),( 0.129 \pm 0.008 ),HL-LHC / FCC accessible
 
 ObservableSAM3 PredictionNotesHiggs boson mass( 126.2 \pm 2.05 ) GeVTotal theoretical uncertaintyNeutrino mass sum (\sum m_\nu)( 0.0585 \pm 0.001 ) eVTestable by KATRIN & cosmologyCKM / PMNS mixingWithin ~1.5σRealistic hierarchiesHiggs self-coupling (\lambda)( 0.129 \pm 0.008 )HL-LHC / FCC accessible
 
