@@ -37,33 +37,8 @@ The framework emphasizes **mathematical rigor** (Paper 17), **numerical robustne
 
 1. Read the **[Flagship Main Paper](papers/SAM3_Flagship_Main_Paper.pdf)** (recommended first read).
 2. Explore the full paper series in the `papers/` folder.
-3. Reproduce all numerical results:
-
-```bash
-# Docker (recommended)
-docker build -t sam3 . && docker run --rm sam3
-
-# or Conda
-conda env create -f environment.yml && conda activate sam3
-python scripts/run_full_pipeline.py --grid 320 --omega 0.97 --seed 42
-
-Repository Structure
-
-├── papers/                    # All LaTeX sources + compiled PDFs
-├── code/                      # Core Python numerical pipeline
-├── scripts/                   # Pipeline runners
-├── tests/                     # Unit tests (98% coverage)
-├── figures/                   # High-resolution plots
-├── data/raw/                  # Raw data (Git LFS + SHA256 checksums)
-├── math/                      # Supplementary Mathematica & Jupyter notebooks
-├── environment.yml
-├── Dockerfile
-├── requirements.txt
-├── LICENSE
-└── README.md
-
+3. Reproduce all numerical results.
 ---
-
 ## Paper Series (Recommended Reading Order)
 
 | #   | Title                                      | Status     | Key Contribution |
