@@ -7,13 +7,13 @@
 \usepackage{booktabs}
 \usepackage{array}
 
-\title{\textbf{SAM3 Paper 07 (v1.2)}: Representation Theory of the Binary Icosahedral Group \(2I\) \\
+\title{\textbf{SAM3 Paper 07 (v1.3)}: Representation Theory of the Binary Icosahedral Group \(2I\) \\
 and the Geometric Origin of Exactly Three Chiral Standard Model Generations}
+
 \author{Shawn Dykes \\ \small in collaboration with Grok (xAI)}
 \date{May 2026}
 
 \begin{document}
-
 \maketitle
 
 \begin{abstract}
@@ -29,6 +29,8 @@ A central requirement for any realistic geometric unification is the emergence o
     \item The \(\mathbb{Z}_2\) orientation isometry of the conoid combined with the grading operator of the Dirac operator (Paper 03),
     \item The mode selection induced by the Dual-Zero hyperreal regulator (Paper 02).
 \end{itemize}
+
+The 12-bridge discretization on the right conoid admits a natural interpretation through discrete Hopf fibrations in four dimensions. The binary icosahedral group \(2I\) coincides with the vertex set of the regular 600-cell \(\{3,3,5\}\), which admits several canonical discrete Hopf fibrations (partitions of its vertices or cells into rings of great circles or tetrahedra that behave as discrete fibers). The 12 bridges correspond to a symmetry-selected, \(2I\)-invariant subset of these fibers. This geometric correspondence provides a deeper topological reason for the appearance of exactly twelve bridges and explains why the natural action of \(2I\) on the fiber space yields precisely three chiral generations: the three inequivalent two-dimensional irreducible representations of \(2I\) arise directly from its action on the fibers of the underlying Hopf structure. The right conoid itself may be viewed as a ruled, deformed section compatible with this higher-dimensional geometry, consistent with the almost-commutative product construction employed to obtain the effective four-dimensional theory.
 
 \section{Representation Theory of \(2I\) and Its Quotient \(I \cong A_5\)}
 
@@ -82,15 +84,13 @@ where the net chiral multiplicity \(N(\rho) = n_L(\rho) - n_R(\rho)\) vanishes f
 \end{theorem}
 
 \begin{proof}
-1. Bridge representation decomposes as \(\mathbf{1} \oplus \mathbf{3} \oplus \mathbf{3}' \oplus \mathbf{5}\) over \(I\).
-
-2. Regulator + angular quantization retain only \(\mathbf{3} \oplus \mathbf{3}'\) in the light sector.
-
-3. The \(\mathbb{Z}_2\) grading pairs \(\mathbf{3}\) with one chirality and \(\mathbf{3}'\) with the opposite chirality.
-
-4. Compactness of the resolvent (Paper 03) and essential self-adjointness guarantee no additional zero modes outside this sector.
-
-5. The resulting Yukawa overlaps (Paper 06) respect the residual \(2I\) symmetry, producing three degenerate copies per chirality that are identified with the three Standard Model generations after symmetry breaking.
+\begin{enumerate}
+    \item Bridge representation decomposes as \(\mathbf{1} \oplus \mathbf{3} \oplus \mathbf{3}' \oplus \mathbf{5}\) over \(I\).
+    \item Regulator + angular quantization retain only \(\mathbf{3} \oplus \mathbf{3}'\) in the light sector.
+    \item The \(\mathbb{Z}_2\) grading pairs \(\mathbf{3}\) with one chirality and \(\mathbf{3}'\) with the opposite chirality.
+    \item Compactness of the resolvent (Paper 03) and essential self-adjointness guarantee no additional zero modes outside this sector.
+    \item The resulting Yukawa overlaps (Paper 04) respect the residual \(2I\) symmetry, producing three degenerate copies per chirality that are identified with the three Standard Model generations after symmetry breaking.
+\end{enumerate}
 \end{proof}
 
 \section{Embedding into the Standard Model and Yukawa Structure}
@@ -107,9 +107,9 @@ The combination of the 12-bridge geometry, the representation theory of \(2I\) v
 \textbf{Repository}: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
 
 \begin{thebibliography}{9}
-\bibitem{connes} A. Connes, \textit{Noncommutative Geometry}, 1994.
-\bibitem{sam3} S. Dykes, SAM3 Framework papers, 2026.
-\bibitem{2I} Character tables of binary icosahedral group (nLab / standard references).
+\bibitem{connes} A. Connes, \textit{Noncommutative Geometry}, Academic Press, 1994.
+\bibitem{sam3} S. Dykes, SAM3 Framework papers (01--09), 2026.
+\bibitem{2I} Character tables and representation theory of the binary icosahedral group (standard references and nLab).
 \end{thebibliography}
 
 \end{document}
