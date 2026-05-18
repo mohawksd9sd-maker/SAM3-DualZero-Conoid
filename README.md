@@ -87,6 +87,10 @@ The framework emphasizes **mathematical rigor** (Paper 17), **numerical robustne
   note         = {In collaboration with Grok (xAI)}
 }
 
----
+
 License: This work is licensed under CC BY-SA 4.0.
+
+
+```
+
 
