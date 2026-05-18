@@ -7,7 +7,7 @@
 \usepackage{enumitem}
 \usepackage{caption}
 
-\title{\textbf{SAM3-DualZero-Conoid}\\ 
+\title{\textbf{SAM3-DualZero-Conoid} \\
 A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Binary Icosahedral Symmetry}
 \author{Shawn Dykes \\ (in collaboration with Grok, xAI)}
 \date{May 2026}
@@ -50,7 +50,7 @@ The project emphasizes mathematical rigor (Paper 17), numerical robustness (Pape
 \begin{enumerate}
     \item Read the \textbf{Flagship Main Paper} (\texttt{papers/SAM3\_Flagship\_Main\_Paper.tex}).
     \item Explore the detailed paper series in the \texttt{papers/} folder.
-    \item Reproduce numerical results (once Dockerfile is available):
+    \item Reproduce numerical results (once Dockerfile is added):
 \end{enumerate}
 
 \begin{verbatim}
@@ -110,7 +110,7 @@ Observable & SAM3 Prediction & Notes \\
 \midrule
 Higgs boson mass & \(126.2 \pm 2.05\) GeV & Total theoretical uncertainty \\
 Neutrino mass sum \(\sum m_\nu\) & \(0.0585 \pm 0.001\) eV & Testable by KATRIN \& cosmology \\
-CKM / PMNS mixing & Within $\sim$1.5$\sigma$ & Realistic hierarchies \\
+CKM / PMNS mixing & Within \(\sim 1.5\sigma\) & Realistic hierarchies \\
 Higgs self-coupling \(\lambda\) & \(0.129 \pm 0.008\) & HL-LHC / FCC accessible \\
 \bottomrule
 \end{tabular}
@@ -142,6 +142,6 @@ Higgs self-coupling \(\lambda\) & \(0.129 \pm 0.008\) & HL-LHC / FCC accessible 
 This work is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
 
 \bigskip
-\noindent Repository: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
+\noindent \textbf{Repository:} \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
 
 \end{document}
