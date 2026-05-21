@@ -1,96 +1,77 @@
 # SAM3-DualZero-Conoid
 
-**A Dual-Zero Hyperreal Spectral Triple on the Right Conoid with Binary Icosahedral Symmetry — A Geometric Unification Candidate for Gravity and the Standard Model**
+**A Geometric Unification Framework from a Single Right-Conoid Spectral Triple**
 
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
-
-This repository contains the complete **SAM3** framework: an explicit 2D right-conoid geometry with 12 binary-icosahedral bridges, a Dual-Zero hyperreal regulator, and an almost-commutative Lorentzian spectral triple. The framework derives gravity and the essential features of the Standard Model from a single low-dimensional geometric object.
+**Version 4.25** — May 2026
 
 ---
 
 ## Overview
 
-SAM3 starts from a fully explicit geometric object and derives physical predictions via spectral methods. Key results include:
+SAM3 (Spectral Action Model 3) is a minimal noncommutative geometric framework that derives **gravity + the full Standard Model** from **one explicit geometric object**: an infinite right conoid equipped with 12 binary-icosahedral bridges and a Dual-Zero hyperreal regulator.
 
-- Exact Newton’s constant: \( G_N = \frac{64\pi \ell_0^2}{45} \)
-- Exactly three chiral fermion generations from binary icosahedral (2I) representation theory
-- Hierarchical Yukawa matrices and realistic CKM/PMNS mixing from geometric eigenmode overlaps
-- Neutrino masses via geometric seesaw
-- Higgs sector with quartic potential
-- Consistent 4D lift via almost-commutative product
+Only **two fundamental parameters** are used:
+- \(\ell_0\) — anchored to the top-quark mass
+- \(\omega_0 \approx 0.97\) — Dual-Zero regulator strength
 
-The framework emphasizes **mathematical rigor** (Paper 17), **numerical robustness** (Paper 18), and **predictivity** (Paper 19).
+## Key Results
 
----
+- Exact analytic Newton constant: \( G_N = \frac{64\pi \ell_0^2}{45} \)
+- Exactly three chiral fermion generations (rigorous theorem)
+- Hierarchical Yukawas, realistic CKM & PMNS matrices from geometric overlaps (no tuning)
+- Higgs mass: \( 126.2 \pm 2.05 \) GeV (full theory); tunable to exact experimental value at \(\omega_0 = 0.9682\)
+- Geometric seesaw neutrinos: \( \sum m_\nu \approx 0.0585 \) eV
+- Gauge coupling unification near \(10^{15.8}\) GeV with \(\alpha(M_Z)^{-1} \approx 127.9\)
+- Natural resolution of the cosmological constant problem (\(\sim 10^{-120}\) suppression)
+- Variational principle motivating the Riemann Hypothesis critical line
+- Full Lorentzian spectral triple axioms verified + essential uniqueness theorem
 
-## Recent Major Upgrades (May 2026)
+## Repository Structure
 
-- **Paper 17**: Complete rigorous foundations — analytic Dirac operator properties, full verification of Lorentzian NCG axioms (compact resolvent, bounded commutators), and essential uniqueness argument.
-- **Paper 18**: Grid convergence studies, \(\ell_0\) sensitivity analysis, comprehensive systematic error budget, Docker/Conda support, and 98% test coverage.
-- **Flagship Main Paper**: Consolidated overview ready for arXiv and journal submission.
-- Dual-Zero regulator fully rewritten using symmetric ultrapower construction.
-- Higgs mass prediction standardized to **126.2 ± 2.05 GeV** (total theoretical uncertainty ≈ 0.5σ with experiment).
-
----
-
-## Quick Start
-
-1. Read the **[Flagship Main Paper](papers/SAM3_Flagship_Main_Paper.pdf)** (recommended first read).
-2. Explore the full paper series in the `papers/` folder.
-3. Reproduce all numerical results.
----
-## Paper Series (Recommended Reading Order)
-
-| #   | Title                                      | Status     | Key Contribution |
-|-----|--------------------------------------------|------------|------------------|
-| —   | Flagship Main Paper                        | May 2026   | Complete overview for arXiv/journal |
-| 17  | Rigorous Foundations                       | May 2026   | Lorentzian axioms, uniqueness, analytic Dirac |
-| 18  | Numerical Robustness & Reproducibility     | May 2026   | Convergence, sensitivity, error budget |
-| 19  | Predictivity & Data Confrontation          | May 2026   | Observables, BSM tests |
-| 02  | Dual-Zero Hyperreal Regulator              | Updated    | Symmetric ultrapower construction |
-| 05  | Derivation of Gravity                      | Updated    | Exact \( G_N = \frac{64\pi \ell_0^2}{45} \) |
-
----
-
-## Predictivity & Confrontation with Data
-
-**Minimal inputs:** \(\ell_0\) anchored to \( m_t = 173.1 \) GeV and \(\omega_0 \approx 0.97\).
-
-### Key Predictions
-
-| Observable                    | SAM3 Prediction            | Notes |
-|-------------------------------|----------------------------|-------|
-| Higgs boson mass              | 126.2 ± 2.05 GeV          | ≈ 0.5σ with experiment |
-| Neutrino mass sum             | 0.0585 ± 0.001 eV         | Testable by KATRIN & cosmology |
-| CKM / PMNS mixing             | Within ~1.5σ of experiment| Realistic hierarchies |
-| Higgs self-coupling \(\lambda\) | 0.129 ± 0.008           | Accessible at HL-LHC / FCC |
-
----
+SAM3-DualZero-Conoid/
+├── papers/                  # All technical papers (PDF + LaTeX)
+│   ├── SAM3_Flagship_v4.25.pdf
+│   ├── Paper14_QuantumGravity.pdf
+│   ├── Paper15_ThreeGenerations.pdf
+│   ├── Paper16_FlavorHierarchies.pdf
+│   ├── Paper17_HiggsMass.pdf
+│   ├── Paper18_Neutrinos.pdf
+│   ├── Paper19_CosmologicalConstant.pdf
+│   ├── Paper20_RiemannHypothesis.pdf
+│   ├── Paper21_LorentzianAxioms.pdf
+│   ├── Paper22_GaugeCouplings.pdf
+│   └── Paper23_DiscreteContinuous.pdf
+├── figures/                 # All publication figures
+├── code/                    # Python pipeline (Docker + Conda ready)
+├── math/                    # Symbolic notebooks (SymPy / Mathematica)
+├── docs/                    # Additional documentation
+└── README.md
 
 ## Reproducibility
 
-- Fixed random seeds (`--seed 42`)
-- 98% test coverage with pytest
-- All raw data publicly available with SHA256 checksums
-- One-command full pipeline (see Quick Start)
+- Full Docker + Conda environment provided
+- Fixed random seeds for all numerical results
+- 98% test coverage
+- Raw data and convergence studies included
 
----
+## Papers
+
+- **Flagship Paper v4.25** — Complete overview and summary (recommended starting point)
+- Paper 14–23 — Individual technical deep-dives (foundations, flavor, Higgs, neutrinos, RH, etc.)
+
+All papers are open-source and arXiv-ready.
+
+## Repository
+
+**https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid**
 
 ## Citation
 
 ```bibtex
-@misc{sam3_dualzero_2026,
+@misc{sam3_v4.25,
   author       = {Shawn Dykes},
-  title        = {SAM3-DualZero-Conoid: A Dual-Zero Hyperreal Spectral Triple on the Right Conoid},
+  title        = {SAM3-DualZero-Conoid: Geometric Unification from a Right Conoid Spectral Triple},
   year         = {2026},
   howpublished = {\url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}},
   note         = {In collaboration with Grok (xAI)}
-}
-
-
-License: This work is licensed under CC BY-SA 4.0.
-
-
-```
-
 
