@@ -1,29 +1,56 @@
+# SAM3-DualZero-Conoid
+
+**Geometric Unification of Gravity and the Standard Model**  
+*from a Right Conoid Spectral Triple with Dual-Zero Hyperreal Regulation*
+
+[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
+A minimal noncommutative geometric framework that derives gravity together with the complete Standard Model from a single explicit geometric object: an infinite right conoid equipped with twelve binary-icosahedral bridges and regulated by a Dual-Zero hyperreal construction.
+
+**Repository:** https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid
+
+---
+
 ## Overview
 
-**SAM3** (Spectral Action Model 3) is a minimal noncommutative geometric framework that derives **gravity + the full Standard Model** from **one explicit geometric object**: an infinite right conoid equipped with 12 binary-icosahedral bridges and a Dual-Zero hyperreal regulator.
+SAM3 (Spectral Action Model 3) is a minimal noncommutative geometric framework that derives gravity and the full Standard Model from one explicit geometric object — an infinite right conoid equipped with 12 binary-icosahedral bridges and a Dual-Zero hyperreal regulator.
 
-Only **two fundamental parameters** are used:
-- \(\ell_0\) — anchored to the top-quark mass
-- \(\omega_0 \approx 0.97\) — Dual-Zero regulator strength
+The framework is controlled by only two fundamental parameters:
+
+- \(\ell_0\): anchored to the top-quark mass  
+- \(\omega_0 \approx 0.97\): Dual-Zero regulator strength
+
+---
 
 ## Key Results
 
-- Exact analytic Newton constant: \( G_N = \frac{64\pi \ell_0^2}{45} \)
-- Exactly three chiral fermion generations (rigorous theorem)
-- Hierarchical Yukawas, realistic CKM & PMNS matrices from geometric overlaps (no tuning)
-- Higgs mass: \( 126.2 \pm 2.05 \) GeV (full theory); tunable to exact experimental value at \(\omega_0 = 0.9682 \pm 0.003\)
-- Geometric seesaw neutrinos: \( \sum m_\nu \approx 0.0585 \) eV
-- Gauge coupling unification near \(10^{15.8}\) GeV with \(\alpha(M_Z)^{-1} \approx 127.9\)
-- Natural resolution of the cosmological constant problem (\(\sim 10^{-120}\) suppression)
-- Variational principle motivating the Riemann Hypothesis critical line
-- Full Lorentzian spectral triple axioms verified + essential uniqueness theorem
+- **Newton’s Constant** — Exact analytic expression:  
+  \[ G_N = \frac{64\pi \ell_0^2}{45} \]
+
+- **Chiral Fermion Generations** — Exactly three generations, established by rigorous theorem arising from the binary icosahedral symmetry.
+
+- **Flavor Sector** — Hierarchical Yukawa couplings and realistic CKM and PMNS mixing matrices emerge naturally from geometric eigenmode overlaps, without ad-hoc tuning.
+
+- **Higgs Boson Mass** — \(126.2 \pm 2.05\) GeV in the complete theory. The value is tunable to the experimental central value at \(\omega_0 = 0.9682 \pm 0.003\).
+
+- **Neutrino Masses** — Geometric seesaw mechanism yields \(\sum m_\nu \approx 0.0585\) eV.
+
+- **Gauge Coupling Unification** — Occurs near \(10^{15.8}\) GeV, with \(\alpha(M_Z)^{-1} \approx 127.9\).
+
+- **Cosmological Constant Problem** — Natural resolution with an approximate \(10^{-120}\) suppression factor.
+
+- **Riemann Hypothesis** — A variational principle derived from the spectral action provides motivation for the location of the critical line.
+
+- **Foundational Consistency** — Full verification of the Lorentzian spectral triple axioms together with an essential uniqueness theorem.
+
+---
 
 ## Repository Structure
 
-```bash
+```text
 SAM3-DualZero-Conoid/
-├── papers/                  # All technical papers (PDF + LaTeX)
-│   ├── SAM3_Flagship_v4.25.pdf          ← Main overview (recommended first read)
+├── papers/                     # All technical papers (PDF + LaTeX sources)
+│   ├── SAM3_Flagship_v4.25.pdf     # Main overview (recommended first read)
 │   ├── Paper14_QuantumGravity.pdf
 │   ├── Paper15_ThreeGenerations.pdf
 │   ├── Paper16_FlavorHierarchies.pdf
@@ -34,12 +61,11 @@ SAM3-DualZero-Conoid/
 │   ├── Paper21_LorentzianAxioms.pdf
 │   ├── Paper22_GaugeCouplings.pdf
 │   └── Paper23_DiscreteContinuous.pdf
-├── figures/                 # All publication figures
-├── code/                    # Python pipeline (Docker + Conda ready)
-├── math/                    # Symbolic notebooks (SymPy / Mathematica)
-├── docs/                    # Additional documentation
+├── figures/                    # Publication-quality figures and plots
+├── code/                       # Python analysis pipeline (Docker + Conda ready)
+├── math/                       # Symbolic notebooks (SymPy / Mathematica)
+├── docs/                       # Supplementary documentation
 └── README.md
-
 ReproducibilityFull Docker + Conda environment provided
 Fixed random seeds for all numerical results
 98% test coverage
@@ -64,6 +90,4 @@ All papers are open-source and arXiv-ready.Repositoryhttps://github.com/mohawksd
 
 Contact & CollaborationOpen to discussions, independent verification, and collaboration.
 Feel free to open issues on GitHub.Built with curiosity and rigor.Last updated: May 2026
-
----
 
