@@ -65,13 +65,17 @@ All papers are open-source and arXiv-ready.
 
 **https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid**
 
-## Citation
-
-```bibtex
 @misc{sam3_v4.25,
   author       = {Shawn Dykes},
   title        = {SAM3-DualZero-Conoid: Geometric Unification from a Right Conoid Spectral Triple},
   year         = {2026},
+  month        = {May},
+  version      = {v4.25},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid},
+  note         = {In collaboration with Grok (xAI)},
+  institution  = {Independent}
+}
   howpublished = {\url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}},
   note         = {In collaboration with Grok (xAI)}
 
