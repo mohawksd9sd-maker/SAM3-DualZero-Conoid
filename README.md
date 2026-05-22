@@ -34,14 +34,19 @@ SAM3 (Spectral Action Model 3) is controlled by only two fundamental parameters:
 
 ```text
 SAM3-DualZero-Conoid/
-├── papers/                 # LaTeX sources (arXiv-ready)
+├── papers/                  # All LaTeX sources (arXiv-ready .tex files)
 │   ├── SAM3_Flagship_Paper_v4.25.tex     # Main overview — start here
-│   ├── SAM3_Paper_0*.tex                 # Technical deep-dives
-│   └── ... (see papers/ folder)
-├── figures/                # Publication-quality plots
-├── code/                   # Python verification & visualization scripts
-├── math/
-│   └── math/               # Symbolic computation (SymPy) — nested (will be flattened soon)
+│   ├── SAM3_Paper_0*.tex                 # Technical deep-dives (see folder)
+│   ├── SAM3_Consolidated_Proofs.tex
+│   └── ... (many versioned & topical papers)
+├── figures/                 # Publication-quality plots and visuals
+├── code/                    # Python verification & visualization scripts
+│   ├── sam3_demo.py
+│   ├── newton_constant_fit.py
+│   ├── lorentzian_spectral_action.py
+│   └── ... (verification/ and visualization/ subfolders)
+├── math/                    # Symbolic math documents (SymPy etc.)
+│   └── (flattening in progress)
 ├── requirements.txt
 ├── LICENSE
 └── README.md
