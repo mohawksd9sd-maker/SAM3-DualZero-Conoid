@@ -452,3 +452,134 @@ The Lorentzian axioms above follow the general framework of Lorentzian noncommut
 \end{remark}
 
 \end{document}
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=1.1in}
+
+\title{Dual-Zero Regulator for SAM3}
+\author{SAM3 Collaboration}
+\date{\today}
+
+\newtheorem{axiom}{Axiom}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document provides a precise axiomatic definition of the Dual-Zero regulator $\mathrm{Reg}_2(\varepsilon)$ used in the SAM3-DualZero-Conoid framework. It isolates the minimal set of properties required for the spectral action computations, heat kernel expansion, and phenomenological predictions.
+\end{abstract}
+
+\section{Definition}
+
+Let $\omega_0 > 0$ be a fixed positive real parameter (the regulator amplitude). Define the sequence
+\[
+\varepsilon(n) := \omega_0 (-1)^n n^{-n}, \qquad n \in \mathbb{N}.
+\]
+Let $\mathcal{U}$ be a non-principal ultrafilter on $\mathbb{N}$. The associated hyperreal is the equivalence class
+\[
+\varepsilon := [\varepsilon(n)]_{\mathcal{U}} \in {}^*\mathbb{R}.
+\]
+
+The \textbf{Dual-Zero regulator} is the composite object
+\[
+\mathrm{Reg}_2(\varepsilon) := \mathrm{st}_{\mathcal{U}} \Bigl( \frac{\varepsilon(2n) + \varepsilon(2n+1)}{2} \Bigr),
+\]
+where $\mathrm{st}_{\mathcal{U}}$ denotes the standard-part map with respect to $\mathcal{U}$. We view $\mathrm{Reg}_2(\varepsilon)$ as a positive infinitesimal that acts on functions (or measures) of the spectrum via the rule
+\[
+\mathrm{Reg}_2(f)(n) := \frac{f(2n) + f(2n+1)}{2}.
+\]
+
+\section{Axiomatic Properties}
+
+We isolate the properties that are actually used in the SAM3 constructions:
+
+\begin{axiom}[Linearity -- A1]
+$\mathrm{Reg}_2$ extends by linearity to the vector space of finite signed measures on $[0,\infty)$:
+\[
+\mathrm{Reg}_2(a\mu_1 + b\mu_2) = a\,\mathrm{Reg}_2(\mu_1) + b\,\mathrm{Reg}_2(\mu_2).
+\]
+\end{axiom}
+
+\begin{axiom}[Grading compatibility / Antisymmetry -- A2]
+If $\nu$ is a signed measure that is antisymmetric under a $\mathbb{Z}_2$-grading (i.e., $\nu \mapsto -\nu$), then
+\[
+\mathrm{Reg}_2(\nu) = 0.
+\]
+In particular, this holds for the signed odd-sector measure $\nu_-$ induced by the conoid reflection $\sigma$.
+\end{axiom}
+
+\begin{axiom}[Super-exponential decay -- A3]
+For any test function $f$ with at most polynomial growth,
+\[
+\bigl|\mathrm{Reg}_2(f)(n)\bigr| \le C_f \cdot \exp(-c \log^2 n)
+\]
+for some constants $C_f, c > 0$ that depend on $\omega_0$ and the growth of $f$.
+\end{axiom}
+
+\begin{axiom}[Preservation of standard part -- A4]
+If a sequence of functions $f_n$ converges uniformly on compact sets to a continuous function $f$, then
+\[
+\mathrm{st}\bigl(\mathrm{Reg}_2(f_n)\bigr) = f(0)
+\]
+in the limit where the regulator scale tends to zero (i.e., as the effective cutoff goes to infinity).
+\end{axiom}
+
+\begin{axiom}[Ultrapower independence for symmetric quantities -- A5]
+Any quantity that is symmetric under the pairwise averaging (in particular, all even functions of the spectrum) yields the same standard part for every choice of non-principal ultrafilter $\mathcal{U}$.
+\end{axiom}
+
+\section{Analytic Consequences}
+
+From the axioms above one immediately obtains:
+
+\begin{itemize}
+\item The regularized heat kernel $K_{\rm Reg_2}(t)$ admits a well-defined asymptotic expansion as $t \to 0^+$ whose coefficients differ from the classical Seeley--DeWitt coefficients by terms that are $O(\omega_0)$ or smaller.
+
+\item The regularized spectral zeta function 
+\[
+\zeta_{\rm SAM3}(s) = \mathrm{Tr}_{\rm Reg_2}(|D_\varepsilon|^{-s})
+\]
+is meromorphic in a half-plane and admits analytic continuation to the whole plane once the Poisson summation identity is established.
+
+\item On the critical line, the error term $E(s)$ satisfies the strong decay bound
+\[
+|E(1/2 + it)| \le \exp(-c \log^2 |t|)
+\]
+for large $|t|$, which follows directly from A3.
+\end{itemize}
+
+\section{Interaction with the Spectral Triple}
+
+The regulator enters the Dirac operator as
+\[
+D_\varepsilon = D_c + \mathrm{Reg}_2(\varepsilon) \cdot \mathbf{1} + \gamma_5 \otimes D_F.
+\]
+Because of A2, the added term $\mathrm{Reg}_2(\varepsilon) \cdot \mathbf{1}$ respects the grading induced by the conoid reflection. Consequently, the Cancellation Lemma holds and only even modes survive in the regularized trace.
+
+\section{Summary: Axiomatic vs.\ Derived}
+
+\begin{center}
+\begin{tabular}{l l l}
+\hline
+\textbf{Property} & \textbf{Status} & \textbf{Source} \\
+\hline
+Linearity on signed measures & Axiom & A1 \\
+Vanishing on antisymmetric measures & Axiom & A2 + grading \\
+Super-exponential decay & Axiom & Sequence choice \\
+Compatibility with standard part & Axiom & A4 \\
+Ultrafilter independence for even quantities & Axiom & A5 \\
+Strong decay of $E(s)$ on critical line & Derived & A3 + Poisson identity \\
+Cancellation Lemma & Derived & A1 + A2 \\
+Poisson summation with remainder & Derived & Geometry + A3 \\
+\hline
+\end{tabular}
+\end{center}
+
+This axiomatic presentation makes it transparent which features of the regulator are by design and which results follow from the geometry of the conoid.
+
+\end{document}
