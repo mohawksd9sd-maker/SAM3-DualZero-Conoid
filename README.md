@@ -41,18 +41,16 @@ SAM3-DualZero-Conoid/
 ├── figures/                # Publication-quality plots
 ├── code/                   # Python verification & visualization scripts
 ├── math/
-│   └── math/               # Symbolic computation (SymPy) — nested (will fix soon)
+│   └── math/               # Symbolic computation (SymPy) — nested (will be flattened soon)
 ├── requirements.txt
 ├── LICENSE
 └── README.md
 
-Notes  All papers are provided as .tex sources. Compile with pdflatex + bibtex.  
-Flagship paper: papers/SAM3_Flagship_Paper_v4.25.tex
-
-ReproducibilityPython environment defined in requirements.txt
-Fixed random seeds where applicable
-Numerical results include convergence checks and error estimates
-Full code for Dirac operator, spectral action, overlaps, RG running, and Newton constant fitting available
+Notes
+All papers are provided as .tex sources. Compile locally with pdflatex + bibtex.ReproducibilityPython environment in requirements.txt
+Fixed random seeds
+Convergence checks and error estimates included
+Full code for Dirac operator, spectral action, overlaps, RG running, and Newton constant available
 
 Citationbibtex
 
@@ -69,7 +67,7 @@ Citationbibtex
 }
 
 Contact & CollaborationOpen to discussions, independent verification, and collaboration.
-Feel free to open an Issue or Discussion on GitHub.Built with curiosity and rigor.
+Feel free to open an Issue or Discussion.Built with curiosity and rigor.
 Last updated: May 2026
 
 ---
