@@ -49,22 +49,16 @@ The framework is controlled by only two fundamental parameters:
 
 ```text
 SAM3-DualZero-Conoid/
-├── papers/                     # All technical papers (PDF + LaTeX sources)
-│   ├── SAM3_Flagship_v4.25.pdf     # Main overview (recommended first read)
-│   ├── Paper14_QuantumGravity.pdf
-│   ├── Paper15_ThreeGenerations.pdf
-│   ├── Paper16_FlavorHierarchies.pdf
-│   ├── Paper17_HiggsMass.pdf
-│   ├── Paper18_Neutrinos.pdf
-│   ├── Paper19_CosmologicalConstant.pdf
-│   ├── Paper20_RiemannHypothesis.pdf
-│   ├── Paper21_LorentzianAxioms.pdf
-│   ├── Paper22_GaugeCouplings.pdf
-│   └── Paper23_DiscreteContinuous.pdf
+├── papers/                     # LaTeX sources for all technical papers
+│   ├── SAM3_Flagship_Paper_v4.25.tex   # Main overview (recommended first read)
+│   ├── SAM3_Paper_0*.tex               # Individual deep-dive papers
+│   └── ... (see papers/ for full list)
 ├── figures/                    # Publication-quality figures and plots
-├── code/                       # Python analysis pipeline (Docker + Conda ready)
-├── math/                       # Symbolic notebooks (SymPy / Mathematica)
-├── docs/                       # Supplementary documentation
+├── code/                       # Python analysis, verification, and visualization scripts
+├── math/                       # Symbolic computation (SymPy notebooks)
+│   └── math/                   # (Note: nested folder — will be flattened)
+├── requirements.txt
+├── LICENSE
 └── README.md
 ReproducibilityFull Docker + Conda environment provided
 Fixed random seeds for all numerical results
