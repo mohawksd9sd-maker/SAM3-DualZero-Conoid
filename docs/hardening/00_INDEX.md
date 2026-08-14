@@ -19,8 +19,9 @@
 | [13_Seeley_DeWitt_GN_Higgs.md](13_Seeley_DeWitt_GN_Higgs.md) | **Locked:** G_N prefactor + m_H class |
 | [14_Light_Up_Mass_Intertwiner.md](14_Light_Up_Mass_Intertwiner.md) | **Locked:** light up mass via κ_u/κ_d = 1/2 |
 | [15_Lepton_Phase_PMNS.md](15_Lepton_Phase_PMNS.md) | **Locked:** lepton φ + large δ_PMNS |
+| [16_Frozen_Numerical_Archive.md](16_Frozen_Numerical_Archive.md) | **Locked:** full frozen number archive |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
 **Primary Priorities 1–6:** complete.  
-**Secondary:** 1 complete; 2 (frozen numerical archive) and 3 (Lorentzian / RH) remain.
+**Secondary:** 1–2 complete; 3 (Lorentzian / RH residual discipline) remains.
