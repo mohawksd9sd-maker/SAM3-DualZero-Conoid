@@ -15,7 +15,8 @@
 | [09_Casimir_Potentials_from_Geometry.md](09_Casimir_Potentials_from_Geometry.md) | **Locked:** C_g + V from geometry / 2I |
 | [10_Continuum_Dirac_Residual_Lock.md](10_Continuum_Dirac_Residual_Lock.md) | **Locked:** gap→0 + residual < 10^{-3} |
 | [11_Explicit_DF_and_CKM.md](11_Explicit_DF_and_CKM.md) | **Locked:** explicit D_F + complex CKM |
+| [12_Unification_Floor_Demotion.md](12_Unification_Floor_Demotion.md) | **Locked:** unification demoted to ~7% floor |
 
-Rule: derivation only, no experimental tuning.
+Rule: derivation only, no experimental tuning, no overclaim.
 
-**Progress toward grade 9:** Priorities 1–3 of 6 complete.
+**Progress toward grade 9:** Priorities 1–4 of 6 complete.
