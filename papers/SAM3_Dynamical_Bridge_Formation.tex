@@ -1,0 +1,47 @@
+% Renamed from: "Dynamical Bridge Formation in SAM3"
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\title{\textbf{Dynamical Bridge Formation in SAM3} \\
+       \Large Yang--Mills--Higgs Minimization on the Deformed Hopf Bundle}
+\author{Shawn Dykes \\
+        \small mohawksd9sd-maker/SAM3-DualZero-Conoid \\
+        \small (with collaborative input from Grok, xAI)}
+\date{May 2026 (filename cleaned August 2026)}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We derive the Yang--Mills--Higgs energy functional $E[A,\phi]$ from the SAM3 spectral action and argue that its minimization dynamically generates the 12 binary-icosahedral bridges. Tasks addressed: spectral-action derivation of $E[A,\phi]$, existence of minima via concentration-compactness heuristics, consistency with the global reparametrization, compatibility with the spectral triple at leading order, and numerical support on a discretized cylinder.
+\end{abstract}
+
+\section{Introduction}
+The SAM3 framework realizes gravity and Standard Model architecture from a right conoid with 12 $2I$-bridges. This paper develops the dynamical mechanism that produces those bridges.
+
+\section{Energy functional from the spectral action}
+Expanding the bosonic spectral action via Seeley--DeWitt on the cylinder base yields an effective functional of the form
+\[
+E[A,\phi] = \int_B \Bigl( c_1 |F_A|^2 + c_2 |\nabla_A \phi|^2 + \lambda (|\phi|^2 - \eta^2)^2 \Bigr) \, du \, dv,
+\]
+with positive heat-kernel coefficients. Minimization subject to $2I$-equivariance favors localization into 12 bridges.
+
+\section{Existence and numerics}
+Coercivity and concentration-compactness on the periodic cylinder support existence of minimizers in the $2I$-equivariant sector. Numerical one-parameter scans find $\beta \approx 4\ell_0$ with twelve localized peaks, consistent with the geometric bridge count.
+
+\section{Consistency}
+Leading $G_N = 64\pi\ell_0^2/45$ and three-generation structure are preserved at the order considered. See August 2026 hardening notes for residual discipline on related claims.
+
+\section{Conclusion}
+Bridge formation can be treated as dynamical and derived from the spectral action at the level developed here.
+
+\textbf{Repository}: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
+
+\end{document}

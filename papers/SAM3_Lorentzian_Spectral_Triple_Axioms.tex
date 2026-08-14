@@ -1,0 +1,57 @@
+% Renamed from: "\section{Verification of All Lorentzian Spectral Triple Axioms}"
+% Was a fragment filename starting with LaTeX \section{}; now a proper note.
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{hyperref}
+
+\title{Verification of Lorentzian Spectral Triple Axioms (SAM3 Note)}
+\author{Shawn Dykes}
+\date{May 2026 (filename cleaned August 2026)}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\textbf{Residual note.}
+Full Lorentzian reconstruction with proven causality is not claimed complete in the August 2026 hardening layer
+(\texttt{docs/hardening/17\_Lorentzian\_and\_RH\_Residual\_Discipline.md}).
+This note records the intended axiom checklist.}}
+\end{center}
+
+\vspace{1em}
+
+\section{Verification of Lorentzian Spectral Triple Axioms}
+
+The SAM3 framework is intended as a Lorentzian spectral triple in the Krein-space setting. Below is a checklist against standard Lorentzian NCG axioms (van den Dungen--Paschke--van Suijlekom and related works).
+
+\subsection{1. Krein-space structure on $\mathcal{H}$}
+Hilbert space equipped with indefinite inner product and fundamental symmetry $\beta$ with $\beta^2=1$. Satisfied by construction in the model definition.
+
+\subsection{2. $\beta$-self-adjointness of $D$}
+$D = D_{\mathrm{geo}} + D_{\mathrm{bridge}} + D_{\mathrm{DZ}}$ designed so $D^\dagger = \beta D \beta = D$.
+
+\subsection{3. Compact resolvent}
+Dual-Zero regulator supplies super-exponential decay intended to control the continuous spectrum of the non-compact conoid. This is the most technical item and remains part of the residual Lorentzian program.
+
+\subsection{4. First-order condition}
+$[[D,a],b]=0$ for $a,b\in\mathcal{A}$: geometric part on the conoid plus finite/bridge terms.
+
+\subsection{5. Bounded commutators}
+$[D,a]$ bounded for smooth $a$.
+
+\subsection{6. Real structure $J$}
+Anti-unitary $J$ with standard KO-dimension signs, compatible with $\beta$.
+
+\subsection{7. Grading $\gamma_5$}
+Anticommutes with $D$, compatible with algebra and $\beta$.
+
+\subsection{8. Poincar\'e duality / KO-dimension}
+Finite part $\mathcal{A}_F$ in KO-dimension 6 (SM convention); full duality check is residual.
+
+\begin{remark}
+Axiom satisfaction ``by construction'' is not a substitute for a complete operator-theoretic write-up. See the hardening residual discipline for the public claim level.
+\end{remark}
+
+\end{document}

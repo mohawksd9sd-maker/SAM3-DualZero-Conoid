@@ -1,0 +1,42 @@
+% Renamed from long space-filled RGE title
+% Note: digit-level m_H claims calibrated to 125 GeV class in hardening layer.
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{\textbf{Two-Loop RG Analysis and Uncertainty Quantification in SAM3} \\ (v4.26 baseline; calibrated August 2026)}
+
+\author{Shawn Dykes \\ SAM3 Collaboration}
+\date{May 2026 / August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\textbf{Supersession notice.}
+Digit-level $m_H=125.1\pm 0.4$\,GeV language is superseded by the hardening layer:
+Higgs mass in the 125\,GeV class with a wider theoretical band under present residuals.}}
+\end{center}
+
+\vspace{1em}
+
+\begin{abstract}
+We summarize two-loop renormalization-group analysis of the SAM3 framework with partial higher-order corrections and uncertainty propagation. $\omega_0$ is geometrically derived. The Higgs mass is reported in the 125\,GeV class consistent with the August 2026 residual map.
+\end{abstract}
+
+\section{Setup}
+Two-loop beta functions follow standard SM literature. High-scale boundary conditions are taken from the Dual-Zero spectral action at the geometric scale set by $\ell_0$, with $\omega_0\approx 0.927$.
+
+\section{Results (calibrated)}
+Running produces a Higgs mass in the 125\,GeV class. Monte-Carlo propagation of overlap, grid, and higher-order uncertainties supports a theoretical band of order a few GeV under present residuals; sub-GeV digit matching is not claimed.
+
+\section{Conclusion}
+RG analysis remains part of the predictive pipeline. Claim strength follows \texttt{docs/hardening/13\_Seeley\_DeWitt\_GN\_Higgs.md} and the repository status file.
+
+\textbf{Repository}: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
+
+\end{document}
