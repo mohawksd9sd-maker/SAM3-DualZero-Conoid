@@ -4,106 +4,62 @@
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{hyperref}
-\usepackage{graphicx}
 \usepackage{booktabs}
-\usepackage{longtable}
 \usepackage{enumitem}
 
-\title{\textbf{SAM3 Paper 08 (v4.26)}: A Geometric Derivation of the Standard Model and Gravity from the Right Conoid \\
-       Complete Results, Consistency Checks, and New Predictions}
+\title{\textbf{SAM3 Paper 08}: Geometric Derivation of the Standard Model and Gravity from the Right Conoid \\
+       Summary, Consistency, and Calibrated Predictions}
 
 \author{Shawn Dykes \\ in collaboration with Grok (xAI)}
-\date{May 2026}
+\date{May 2026 (calibrated August 2026)}
 
 \begin{document}
 \maketitle
 
-\begin{abstract}
-We present a comprehensive summary of the SAM3 framework, which derives the full Standard Model fermion content, gauge and Higgs sectors, and Einstein gravity from a single geometric object — the infinite right conoid — equipped with a Dual-Zero hyperreal spectral triple and 12-bridge icosahedral symmetry. 
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\textbf{Supersession notice (August 2026).}
+Exact flavor-table matches, digit-level $m_H=125.1$\,GeV, and RH ``enforcement'' language are superseded by
+\texttt{docs/hardening/} and \texttt{STATUS\_CLAIMS\_AND\_RESIDUALS.md}.}}
+\end{center}
 
-The Dual-Zero regulator strength \(\omega_0\) is no longer a free parameter. It is derived geometrically from the conoid structure. The model is controlled by only one fundamental input parameter \(\ell_0\) (anchored to the top-quark mass) and makes several sharp, testable predictions.
+\vspace{1em}
+
+\begin{abstract}
+We summarize the SAM3 framework: Standard Model architecture, gauge and Higgs sectors, and Einstein gravity from the right conoid with Dual-Zero regulation and 12-bridge icosahedral symmetry. $\omega_0$ is geometrically derived; the only fundamental input is $\ell_0$ (top mass). Predictions are stated at the precision of the August 2026 hardening locks, not as digit-perfect fits.
 \end{abstract}
 
-\section{Overview of the SAM3 Series}
-The framework is developed across the following papers:
-\begin{itemize}
-    \item \textbf{Paper 01}: Right conoid geometry and 12-bridge discretization.
-    \item \textbf{Paper 02}: Dual-Zero hyperreal regulator and information conservation.
-    \item \textbf{Paper 03}: Explicit 2D Dirac operator, self-adjointness, and normalizability.
-    \item \textbf{Paper 04}: 3×3 Yukawa matrices and CKM/PMNS mixing angles from eigenmode overlaps.
-    \item \textbf{Paper 05}: Rigorous derivation of \(G_N = 64\pi \ell_0^2 / 45\) and \(\Lambda\).
-    \item \textbf{Paper 06}: Neutrino masses (Dirac + Majorana), seesaw mechanism, and Higgs potential.
-    \item \textbf{Paper 07}: Binary icosahedral group \(2I\) representation theory and the origin of exactly three chiral generations.
-    \item \textbf{Paper 08}: This summary and global consistency (current paper).
-    \item Papers 09--16: 4D lift, bosonic sector, quantization, Riemann Hypothesis connection, and further extensions.
-\end{itemize}
+\section{Overview of the Series}
+Papers 01--07 develop geometry, Dual-Zero, Dirac operator, Yukawas, $G_N$, neutrinos/Higgs, and $2I$ generations. Papers 09--17 treat the 4D lift, rigor, numerics, and the RH variational proposal (not a proof). August 2026 hardening notes lock continuum defect, CKM angles/phase, residual control, and residual discipline.
 
-\section{Final Numerical Results}
-All dimensionful quantities use \(G_N = 64\pi \ell_0^2 / 45\) and \(\ell_0 \approx 1.052\) GeV$^{-1}$ (anchored to \(m_t = 173\) GeV). The regulator strength \(\omega_0\) is derived geometrically from the conoid as
+\section{Calibrated numerical status}
 \[
-\omega_0 = \left( \frac{R_{\rm curvature}}{D_{\rm bridge}} \right)^{4/13} \approx 0.927.
+\omega_0 = \left( \frac{R_{\rm curvature}}{D_{\rm bridge}} \right)^{4/13} \approx 0.927,\qquad
+G_N = 64\pi \ell_0^2 / 45.
 \]
 
 \begin{table}[ht]
 \centering
 \begin{tabular}{lcc}
 \toprule
-Observable & SAM3 Prediction & Experiment \\
+Observable & Hardened status & Experiment \\
 \midrule
-\(\sin\theta_{12}^{\rm CKM}\) & 0.2248 & 0.2250 \\
-\(\sin\theta_{13}^{\rm CKM}\) & 0.00371 & 0.0037 \\
-\(\sin\theta_{23}^{\rm CKM}\) & 0.0411 & 0.041 \\
-\(\sin\theta_{12}^{\rm PMNS}\) (solar) & 0.550 & 0.55 \\
-\(\sin\theta_{23}^{\rm PMNS}\) (atm.) & 0.707 & 0.707 \\
-Neutrino mass sum \(\sum m_\nu\) & 0.0587 eV & $< 0.12$ eV (cosm.) \\
-Higgs mass & 125.1 GeV & 125.11 $\pm$ 0.14 GeV \\
-Top quark mass (input) & 173 GeV & 173 GeV \\
+$\theta_{12}^{\rm CKM}$ & $\approx 12.85^\circ$ (locked) & $13.04^\circ$ \\
+$\theta_{23}^{\rm CKM}$ & $\approx 2.36^\circ$ (locked) & $2.38^\circ$ \\
+$\phi$ (CP) & $2\pi/5$ (locked) & --- \\
+Higgs mass & 125\,GeV class ($\sim\!124$--$127$\,GeV) & $125.1$\,GeV \\
+Unification residual & $\sim 7\%$ floor & --- \\
+$\sum m_\nu$ & $O(0.06)$\,eV class & $<0.12$\,eV \\
 \bottomrule
 \end{tabular}
-\caption{Flavor and electroweak observables.}
+\caption{Calibrated observables (not digit-tuned fits).}
 \end{table}
 
-\section{Global Consistency}
-Fixing the single fundamental parameter \(\ell_0\) from the top quark mass, together with the geometrically derived regulator strength \(\omega_0\), simultaneously reproduces:
-\begin{itemize}
-    \item Correct electroweak scale (\(\langle\phi\rangle \approx 246\) GeV)
-    \item Realistic gauge boson masses and Weinberg angle
-    \item Neutrino mass scale via seesaw
-    \item No additional free parameters beyond the geometrically determined \(\omega_0\)
-\end{itemize}
-
-\section{New Testable Predictions}
-
-\begin{table}[ht]
-\centering
-\begin{tabular}{lcc}
-\toprule
-Prediction & SAM3 Value & Current Limit / Reach \\
-\midrule
-Proton lifetime \(\tau_p\) & \(\gtrsim 1.8 \times 10^{34}\) yr & Super-K $> 2.4\times10^{34}$ yr \\
-\(\mu \to e\gamma\) BR & \(2.8 \times 10^{-13}\) & MEG-II sensitivity $\sim 10^{-13}$ \\
-SI dark matter cross-section & $2.2 \times 10^{-47}$ cm$^2$ & XENONnT / LZ reach \\
-Gravitational wave background (nHz) & $A_{\rm GW} \approx 2.2 \times 10^{-15}$ & NANOGrav / IPTA \\
-Higgs self-coupling deviation & $+3.8\%$ & HL-LHC / ILC \\
-\bottomrule
-\end{tabular}
-\caption{Selected new predictions.}
-\end{table}
-
-The 12-bridge discretization on the right conoid admits a natural interpretation in terms of discrete Hopf fibrations. The binary icosahedral group \(2I\) is the vertex set of the 600-cell, which admits multiple natural discrete Hopf fibrations. The 12 bridges correspond to a symmetry-selected discrete set of fibers in this structure. This provides a deeper topological reason for the appearance of exactly 12 bridges and explains why the \(2I\) action naturally produces three chiral generations.
-
-\section{Riemann Hypothesis Connection}
-A variational principle on the information current \(S_I = \int |J|^2 d\mu\) is stationary precisely when \(\operatorname{Re}(s) = 1/2\). This provides a geometric mechanism enforcing the critical line.
+\section{Riemann Hypothesis connection}
+A variational principle on an information current is stationary on the critical line for configurations internal to the SAM3 action. This is a geometric research direction. It is \textbf{not} a proof of the classical Riemann Hypothesis.
 
 \section{Conclusion}
-The SAM3 framework achieves a unified geometric derivation of gravity, the full Standard Model (including three generations, realistic flavor physics, and neutrino sector), and a natural explanation for the Riemann critical line from a single object — the right conoid — with only one fundamental input parameter \(\ell_0\). The Dual-Zero regulator strength is derived geometrically from the conoid, eliminating manual tuning.
-
-The series of Papers 01–16 places the model on rigorous mathematical foundations. All previous peer-review concerns have been addressed. The framework is now ready for detailed community scrutiny, independent verification, and further development.
+SAM3 derives SM architecture and several quantitative flavor relations from one geometric object. Older claims of perfect table matches and finished RH status are withdrawn in favor of the hardening residual map.
 
 \textbf{Repository}: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
-
-\begin{thebibliography}{9}
-\bibitem{sam3} S. Dykes, SAM3 Framework, GitHub repository, 2026.
-\end{thebibliography}
 
 \end{document}

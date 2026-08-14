@@ -1,133 +1,72 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsfonts,amsthm,physics}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{booktabs}
 \usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{siunitx}
-\usepackage{caption}
-\usepackage{float}
-\usepackage{enumitem}
-\usepackage{xcolor}
 
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{lemma}[theorem]{Lemma}
-
-\title{\textbf{SAM3-DualZero-Conoid Unification: Predictivity, Confrontation with Experiment, and Geometric Resolution of the Cosmological Constant} \\ 
-(v4.26 — May 2026)}
+\title{\textbf{SAM3 Predictivity and Experimental Confrontation} \\
+(v4.26 baseline; claims calibrated August 2026)}
 
 \author{Shawn Dykes \\ (in collaboration with Grok, xAI)}
-\date{May 2026}
+\date{May 2026 / August 2026}
 
 \begin{document}
 \maketitle
 
+\begin{center}
+\fbox{\parbox{0.92\linewidth}{\textbf{Supersession notice (August 2026).}
+Digit-level $m_H=125.1$\,GeV, theorem-level cosmological-constant magnitude lock, and percent-level unification claims are superseded by
+\texttt{docs/hardening/} and \texttt{STATUS\_CLAIMS\_AND\_RESIDUALS.md}.}}
+\end{center}
+
+\vspace{1em}
+
 \begin{abstract}
-The SAM3-DualZero-Conoid framework derives both gravity and the full Standard Model from a single 2D right conoid spectral triple with binary-icosahedral symmetry and Dual-Zero hyperreal regularization.
-
-The Dual-Zero regulator strength \(\omega_0\) is no longer a free parameter. It is derived geometrically from the conoid structure:
-\[
-\omega_0 = \left( \frac{R_{\rm curvature}}{D_{\rm bridge}} \right)^{4/13} \approx 0.927.
-\]
-
-\textbf{Analytic component:} Explicit geometry, Dirac operator, exact Seeley–DeWitt coefficient \(a_4\), full verification of Lorentzian spectral triple axioms, fermion doubling elimination, and essential uniqueness.
-
-\textbf{Numerical component:} Grid convergence, comprehensive sensitivity analysis, full systematic error budget, and complete reproducibility.
-
-\textbf{Key predictions:} Higgs mass \(125.1\) GeV, neutrino sum \(\sum m_\nu \approx 0.0585\) eV, and a geometric resolution of the cosmological constant problem. The model is controlled by only one fundamental input parameter \(\ell_0\) (anchored to \(m_t = 173.1\) GeV).
+SAM3 derives gravity and Standard Model architecture from a right-conoid spectral triple with binary-icosahedral symmetry and Dual-Zero regularization. $\omega_0$ is geometrically derived ($\approx 0.927$). The only fundamental input is $\ell_0$ (anchored to $m_t$). Higgs mass is predicted in the 125\,GeV class; gauge unification has a geometric residual floor $\sim 7\%$; the cosmological-constant mechanism is present but its magnitude is not claimed fully locked.
 \end{abstract}
 
-\section{Introduction}
-This paper unifies the analytic foundations, numerical validation, flavor and Higgs predictions, and the geometric resolution of the cosmological constant problem. All results are derived from a single minimal geometric object — the right conoid — with the Dual-Zero regulator strength determined geometrically from the conoid structure.
-
-\section{Input Parameter}
-The framework is controlled by a single fundamental parameter:
-\begin{itemize}
-    \item \(\ell_0\): geometric length scale of the right conoid (anchored to \(m_t = 173.1\) GeV).
-\end{itemize}
-
-The Dual-Zero regulator strength \(\omega_0\) is derived directly from the geometry of the right conoid:
+\section{Input parameter}
 \[
-\omega_0 = \left( \frac{R_{\rm curvature}}{D_{\rm bridge}} \right)^{4/13} \approx 0.927,
-\]
-where \(R_{\rm curvature}\) is the local axial curvature radius and \(D_{\rm bridge}\) is the mean angular spacing of the twelve icosahedral bridges.
-
-\section{Explicit Geometric Backbone}
-The base manifold is the right conoid:
-\[
-x = u\cos v,\quad y = u\sin v,\quad z = \ell_0 \sin(2v).
-\]
-The induced metric and scalar curvature are given explicitly. The 12 binary-icosahedral bridges at \(v_k = k\pi/6\) generate exactly three chiral generations and all Yukawa overlaps.
-
-The geometric Dirac operator is
-\[
-D_c = \gamma^1 \left( \partial_u + \frac{u}{2f^2} \right) + \frac{1}{f} \gamma^2 \partial_v.
+\omega_0 = \left( \frac{R_{\rm curvature}}{D_{\rm bridge}} \right)^{4/13} \approx 0.927,\qquad
+\ell_0\ \text{anchored to } m_t.
 \]
 
-\section{Exact Seeley–DeWitt Coefficient \(a_4\)}
+\section{Gravity}
 \[
-a_4 = \frac{32\pi \ell_0^3}{45} \quad \Rightarrow \quad G_N = \frac{64\pi \ell_0^2}{45}.
+G_N = \frac{64\pi \ell_0^2}{45}.
 \]
 
-\section{Higgs Sector}
-With the geometrically derived regulator strength \(\omega_0 \approx 0.927\), the predicted Higgs boson mass is
-\[
-m_H = 125.1\,\text{GeV},
-\]
-in excellent agreement with the experimentally measured value of \(125.11 \pm 0.14\) GeV.
+\section{Higgs sector}
+Geometric $a_4$ evaluation yields a Higgs mass in the 125\,GeV class (theoretical band of order $\pm 2$\,GeV under present residuals). Digit-level equality with $125.11$\,GeV is not claimed.
 
-\section{Geometric Resolution of the Cosmological Constant Problem}
-The Dual-Zero regulator and 12-bridge \(2I\) symmetry suppress vacuum energy by \(\sim 10^{-120}\).
+\section{Cosmological constant}
+Dual-Zero and geometric structure provide a suppression mechanism for residual vacuum energy. Matching the observed magnitude as a sharp theorem is \textbf{not} claimed; magnitude lock remains residual in the hardening status.
 
-\begin{theorem}[Geometric Cosmological Constant Resolution]
-The effective vacuum energy density satisfies
-\[
-\rho_\Lambda \approx (2.5 \times 10^{-3}~\text{eV})^4,
-\]
-matching observation without fine-tuning.
-\end{theorem}
+\section{Neutrinos}
+Geometric seesaw produces a light spectrum in the $O(0.06)$\,eV class for $\sum m_\nu$, consistent with cosmological bounds, with PMNS CP phase large once the module-wide phase $\phi=2\pi/5$ is included.
 
-\begin{proof}
-The Dual-Zero regulator causes near-perfect cancellation of vacuum fluctuations. The \(2I\) symmetry enforces additional pairing. After RG running, the residual is set by the geometric scale ratio \((\ell_0 / R_{\rm Hubble})^4\).
-\end{proof}
+\section{Unification}
+KK thresholds of order $\Delta\alpha^{-1}\sim O(10)$ arise. Residual relative mismatch after two-loop running is approximately $7\%$. Percent-level unification is not claimed.
 
-\section{Neutrino Sector (Geometric Seesaw)}
-Right-handed neutrinos emerge as \(2I\) singlets. The seesaw yields normal hierarchy with \(\sum m_\nu \approx 0.0585\) eV and realistic PMNS angles.
-
-\section{Numerical Validation and Reproducibility}
-All results use fixed-seed pipelines with high test coverage, Docker/Conda environments, full systematic error budgets, and Monte-Carlo propagation. Raw data and notebooks are publicly available.
-
-\section{Key Predictions Summary}
-
+\section{Summary table (hardened)}
 \begin{table}[ht]
 \centering
-\caption{Key Observables}
 \begin{tabular}{lcc}
 \toprule
-Observable & SAM3 Prediction & Experiment / Bound \\
+Observable & SAM3 status & Notes \\
 \midrule
-Newton’s constant \(G_N\) & \(64\pi \ell_0^2 / 45\) & Exact match to GR \\
-Higgs mass \(m_H\) & \(125.1\) GeV & \(125.11 \pm 0.14\) GeV \\
-Neutrino sum \(\sum m_\nu\) & \(0.0585 \pm 0.001\) eV & Consistent \\
-CKM/PMNS mixing & Within \(\sim 1.5\sigma\) & Good agreement \\
-Proton lifetime & \(> 1.2 \times 10^{34}\) yr & Consistent \\
-Dark energy density \(\rho_\Lambda\) & \((2.5 \times 10^{-3}~\text{eV})^4\) & Matches observation \\
+$G_N$ & $64\pi\ell_0^2/45$ & Locked structure \\
+$m_H$ & 125\,GeV class & Band, not digit fit \\
+$\sum m_\nu$ & $O(0.06)$\,eV & Seesaw \\
+Unification & $\sim 7\%$ floor & Not percent-level \\
+$\rho_\Lambda$ & Mechanism present & Magnitude residual \\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \section{Conclusion}
-The SAM3-DualZero-Conoid framework offers a minimal, predictive, and internally consistent geometric unification of gravity and the Standard Model from a single low-dimensional object. With only one fundamental input parameter \(\ell_0\), and the Dual-Zero regulator strength derived geometrically from the conoid, it derives \(G_N\), three generations, flavor hierarchies, Higgs mass, neutrino masses, and a natural solution to the cosmological constant problem.
+SAM3 remains a minimal geometric program with calibrated, falsifiable outputs. Over-precise May 2026 confrontation language is replaced by the August 2026 residual map.
 
-All components are fully reproducible and ready for detailed experimental confrontation.
-
-All papers, code, Docker images, and raw data are open-source at: \\
-\href{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}{github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
-
-\section*{Acknowledgments}
-Collaborative development with Grok (xAI).
-
-\bibliographystyle{plain}
-\bibliography{references}
+\textbf{Repository}: \url{https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid}
 
 \end{document}
