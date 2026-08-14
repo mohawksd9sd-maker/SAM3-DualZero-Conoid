@@ -3,6 +3,8 @@
 **Date:** August 2026  
 **Purpose:** Clear separation between geometrically derived results and remaining residuals after the continuum / flavor / unification stress-testing cycle.
 
+**Detailed technical write-ups:** see [`docs/hardening/`](docs/hardening/00_INDEX.md) (CKM/quark, continuum Dirac/APS, unification KK floor, neutrino/PMNS, localization/Casimir, cosmology/Higgs notes).
+
 ---
 
 ## 1. High-confidence geometric results
@@ -69,11 +71,11 @@
 
 ## 6. Recommended next public steps
 
-1. Keep this status file updated with every major numerical or geometric lock.
-2. Publish a short addendum locking the continuum defect + Cabibbo derivation.
-3. Release a frozen master + verification pipeline that regenerates the numbers in this document within stated tolerances.
+1. Keep this status file and `docs/hardening/` updated with every major numerical or geometric lock.
+2. Formalize the continuum defect + Cabibbo derivation (see `papers/SAM3_Addendum_Cabibbo_Defect_Operator.tex`).
+3. Expand the master verification pipeline so it regenerates the numbers in this document from live kernels within stated tolerances.
 4. Treat the ~7% unification floor as a prediction of the present geometry until a new geometric threshold is derived.
 
 ---
 
-*This document records the state after the August 2026 hardening cycle (continuum defect, APS/gap, Cabibbo geometric origin, KK unification floor, Claims vs Residuals discipline).*
+*This document records the state after the August 2026 hardening cycle (continuum defect, APS/gap, Cabibbo geometric origin, KK unification floor, Claims vs Residuals discipline). Detailed sector notes live in `docs/hardening/`.*
