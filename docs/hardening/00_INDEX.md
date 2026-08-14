@@ -11,8 +11,11 @@
 | [05_Continuum_Localization_Casimir.md](05_Continuum_Localization_Casimir.md) | Threshold modes vs Casimir localization |
 | [06_Cosmology_and_Higgs_Notes.md](06_Cosmology_and_Higgs_Notes.md) | Warp / vacuum; Higgs / Seeley |
 | [07_Geometric_Theta23_Casimir.md](07_Geometric_Theta23_Casimir.md) | **Locked:** θ₂₃ from Casimir-weighted defect |
-| [08_Geometric_CKM_Phase.md](08_Geometric_CKM_Phase.md) | **Locked:** φ = 2π/5; path to full δ_CKM |
+| [08_Geometric_CKM_Phase.md](08_Geometric_CKM_Phase.md) | **Locked:** φ = 2π/5 |
+| [09_Casimir_Potentials_from_Geometry.md](09_Casimir_Potentials_from_Geometry.md) | **Locked:** C_g + V_curv + V_tip from geometry / 2I |
 
 **Related:** `STATUS_CLAIMS_AND_RESIDUALS.md`, `papers/SAM3_Addendum_Cabibbo_Defect_Operator.tex`, `code/master_verification_pipeline.py`
 
 Rule in force: derivation only, no experimental tuning.
+
+**Progress toward grade 9:** Priority 1 of 6 complete.
