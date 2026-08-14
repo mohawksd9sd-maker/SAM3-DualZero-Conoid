@@ -25,42 +25,43 @@ where \( R_{\rm curvature} \) is the local curvature radius along the conoid axi
 
 ---
 
-## Key Results & Current Status (Hardened)
+## Key Results & Current Status (Hardened — August 2026)
 
 | Observable | Status | Notes |
 |------------|--------|-------|
-| **Newton's Constant** | \( G_N = 64\pi \ell_0^2 / 45 \) | Analytic derivation from spectral action |
-| **Chiral Generations** | Exactly 3 | Index / spectral asymmetry + continuum gap → 0 |
-| **Cabibbo angle** | \( \theta_{12} \approx \eta_{12} \times \pi/12 \approx 12.9^\circ \) | Derived from continuum defect + \( \mathcal{A}_F \) (\( \mathbb{H} \) vs \( \mathbb{C} \)) |
-| **Quark mass ratios** | Good (c, s, d) | Radial localization + Dual-Zero |
-| **CKM \( \theta_{23} \), \( \delta \)** | Residual | Still under geometric refinement |
-| **PMNS / \( m_{\beta\beta} \)** | Predictive | Continuum defect overlaps + seesaw |
-| **Higgs mass** | ~125 GeV class | Emerges under spectral-action approximations |
-| **Gauge unification** | Geometric floor ~7% | Full KK tower + two-loop; not percent-level |
-| **Cosmological constant** | Mechanism present | Warp modulus / residual vacuum; magnitude lock residual |
-| **Riemann Hypothesis** | Variational proposal | Information-current stationarity inside spectral action |
+| **Newton's Constant** | \( G_N = 64\pi \ell_0^2 / 45 \) | Locked from Seeley–DeWitt \(a_2\) |
+| **Chiral Generations** | Exactly 3 | Index + continuum gap \(\to 0\) under APS |
+| **Cabibbo \( \theta_{12} \)** | \( \approx 12.85^\circ \) | \( \eta_{12}\times\pi/12 \); continuum defect + \( \mathcal{A}_F \) |
+| **CKM \( \theta_{23} \)** | \( \approx 2.36^\circ \) | **Locked** — Casimir-weighted defect (no tuning) |
+| **CKM \( \delta \) / Jarlskog** | \( \phi=2\pi/5 \); \( \delta\sim 70^\circ \), \( J\sim 3\times 10^{-5} \) | **Locked** phase from \( E_3 \) + \( I^2=-1 \) + tip orientation |
+| **Quark mass ratios** | Good (c, s, d); light up resolved | Radial + Dual-Zero; \( \kappa_u/\kappa_d=1/2 \) |
+| **Continuum Dirac residual** | \( <10^{-3} \) | 4th-order FD; gap \( \propto 1/u_{\rm max}\to 0 \) |
+| **PMNS / \( m_{\beta\beta} \)** | Predictive; large \( \delta_{\rm PMNS} \) | Same \( \phi=2\pi/5 \) in lepton sector |
+| **Higgs mass** | 125 GeV class (\( \approx 124\)–\(127\) GeV band) | Geometric \(a_4\); not digit-tuned |
+| **Gauge unification** | Geometric floor **~7%** | O(10) KK thresholds; **percent-level not claimed** |
+| **Cosmological constant** | Mechanism present | Magnitude lock residual |
+| **Riemann Hypothesis** | Variational proposal | **Not** a proof — residual discipline |
 
-See **[STATUS_CLAIMS_AND_RESIDUALS.md](STATUS_CLAIMS_AND_RESIDUALS.md)** for the full honest map of what is derived vs. residual.
+Authoritative maps:
+- **[STATUS_CLAIMS_AND_RESIDUALS.md](STATUS_CLAIMS_AND_RESIDUALS.md)** — executive residual map
+- **[docs/hardening/](docs/hardening/00_INDEX.md)** — full lock notes (Priorities 1–6 + secondary 1–3)
+- **[docs/hardening/16_Frozen_Numerical_Archive.md](docs/hardening/16_Frozen_Numerical_Archive.md)** — frozen number archive
+
+**Rule in force:** derivation only, no experimental tuning, no overclaim.
 
 ---
 
-## Major Advances Incorporated (Post-v4.26 Hardening)
+## Major Advances (Post-v4.26 Hardening)
 
-1. **Continuum defect operator**  
-   Locus fixed at tip curvature maximum, width \( = a \Delta\theta \).  
-   Numerical overlaps: \( \eta_{12} \approx 0.861 \), \( \eta_{13} \approx 0.544 \), \( \eta_{23} \approx 0.479 \).
-
-2. **Geometric Cabibbo**  
-   \( \theta_{12} \approx \eta_{12} \times (\pi/12) \) realized via \( \mathcal{A}_F \) left rotation on the down sector (\( \mathbb{H} \) enhancement).
-
-3. **APS + zero-mode limit**  
-   Gap scales as \( \sim 1/u_{\rm max} \) and extrapolates to zero. Generation localization still requires Casimir radial potentials.
-
-4. **Unification realism**  
-   120-mode KK tower + two-loop running yields a geometric residual mismatch of order ~7%.
-
-5. **Claims vs Residuals discipline**  
-   Absolute “exact / fully derived” language replaced by calibrated status.
+1. **Continuum defect operator** — locus = tip curvature max, width \( = a\Delta\theta \); \( \eta_{12}\approx 0.861 \), \( \eta_{13}\approx 0.544 \), \( \eta_{23}\approx 0.479 \).
+2. **Geometric Cabibbo** — \( \theta_{12}\approx\eta_{12}\times(\pi/12) \) via \( \mathcal{A}_F \) (\( \mathbb{H} \) vs \( \mathbb{C} \)).
+3. **Casimir-weighted \( \theta_{23} \)** — bulk \( C_g \) + tip potential fixed by same curvature / \( \omega_0 \).
+4. **CP phase \( \phi=2\pi/5 \)** — unique from 2I-module \( E_3 \), quaternionic relation, tip orientation; applies to quarks and leptons.
+5. **APS + residual control** — gap \( \to 0 \); continuum residual \( <10^{-3} \) at moderate resolution.
+6. **Explicit \( D_F \) + complex CKM** — magnitudes and phase geometric outputs.
+7. **Unification demotion** — ~7% geometric floor; no percent-level claim.
+8. **Light up mass** — closed by intertwiner norm \( \kappa_u/\kappa_d=1/2 \).
+9. **Claims vs residuals discipline** — older paper language superseded where it conflicts with this layer.
 
 ---
 
@@ -78,15 +79,17 @@ See **[STATUS_CLAIMS_AND_RESIDUALS.md](STATUS_CLAIMS_AND_RESIDUALS.md)** for the
 
 ```bash
 SAM3-DualZero-Conoid/
-├── papers/          # LaTeX sources (arXiv-ready)
+├── docs/hardening/  # Authoritative lock notes (Priorities 1–6 + secondary)
+├── papers/          # LaTeX sources (May 2026; superseded where noted)
 ├── figures/         # Plots and geometry visuals
 ├── code/            # Python verification & visualization
-├── math/            # Symbolic / model summaries
-├── STATUS_CLAIMS_AND_RESIDUALS.md   # Honest status map (new)
+├── STATUS_CLAIMS_AND_RESIDUALS.md
 ├── requirements.txt
 ├── LICENSE
 └── README.md
 ```
+
+> **Note:** Claims in older `papers/` (Flagship, v4.22, Papers 08/19/22, etc.) that conflict with `docs/hardening/` — especially exact \( m_H=125.1 \) GeV, percent-level unification, and RH-as-proof language — are **superseded** by the August 2026 hardening layer.
 
 ---
 
@@ -99,7 +102,7 @@ SAM3-DualZero-Conoid/
   year         = {2026},
   howpublished = {GitHub repository},
   url          = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid},
-  note         = {In collaboration with Grok (xAI); includes continuum defect, Cabibbo derivation, APS/gap results, and calibrated residuals},
+  note         = {In collaboration with Grok (xAI); August 2026 hardening locks for continuum defect, CKM angles/phase, residual control, and calibrated residuals},
   institution  = {Independent}
 }
 ```
@@ -112,4 +115,4 @@ Open to discussions, independent verification, peer review, and collaboration.
 Feel free to open an Issue or start a Discussion.
 
 Built with curiosity and rigor.  
-**Last major status update: August 2026** (hardening layer added).
+**Last major status update: August 2026** (Priorities 1–6 + secondary 1–3 locked).
