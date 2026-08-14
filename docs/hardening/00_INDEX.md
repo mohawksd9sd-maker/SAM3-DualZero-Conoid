@@ -20,8 +20,9 @@
 | [14_Light_Up_Mass_Intertwiner.md](14_Light_Up_Mass_Intertwiner.md) | **Locked:** light up mass via κ_u/κ_d = 1/2 |
 | [15_Lepton_Phase_PMNS.md](15_Lepton_Phase_PMNS.md) | **Locked:** lepton φ + large δ_PMNS |
 | [16_Frozen_Numerical_Archive.md](16_Frozen_Numerical_Archive.md) | **Locked:** full frozen number archive |
+| [17_Lorentzian_and_RH_Residual_Discipline.md](17_Lorentzian_and_RH_Residual_Discipline.md) | **Locked:** Lorentzian + RH residual discipline |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
 **Primary Priorities 1–6:** complete.  
-**Secondary:** 1–2 complete; 3 (Lorentzian / RH residual discipline) remains.
+**Secondary items 1–3:** complete.
