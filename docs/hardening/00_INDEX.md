@@ -17,7 +17,8 @@
 | [11_Explicit_DF_and_CKM.md](11_Explicit_DF_and_CKM.md) | **Locked:** explicit D_F + complex CKM |
 | [12_Unification_Floor_Demotion.md](12_Unification_Floor_Demotion.md) | **Locked:** unification ~7% floor |
 | [13_Seeley_DeWitt_GN_Higgs.md](13_Seeley_DeWitt_GN_Higgs.md) | **Locked:** G_N prefactor + m_H class |
+| [14_Light_Up_Mass_Intertwiner.md](14_Light_Up_Mass_Intertwiner.md) | **Locked:** light up mass via κ_u/κ_d = 1/2 |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
-**Progress toward grade 9:** Priorities 1–5 of 6 complete.
+**Progress toward grade 9:** Priorities 1–6 of 6 **complete**. Secondary items next.
