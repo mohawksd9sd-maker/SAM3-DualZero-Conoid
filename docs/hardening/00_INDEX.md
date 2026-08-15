@@ -30,10 +30,8 @@
 | [24_Production_Dirac_P1_Lock.md](24_Production_Dirac_P1_Lock.md) | Production-path Dirac P1 |
 | [25_Section2_Complete_Lock_Status.md](25_Section2_Complete_Lock_Status.md) | **§2 complete lock** |
 | [26_Precision_Phenomenology_Residuals.md](26_Precision_Phenomenology_Residuals.md) | **§3 residual map locked** |
+| [27_RH_Variational_Residual_Lock.md](27_RH_Variational_Residual_Lock.md) | **§4 RH residual only — not a proof** |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
-**§1 Foundational:** complete.  
-**§2 Numerical production:** complete (P1–P4).  
-**§3 Precision phenomenology:** residual map locked.  
-**Next:** §4 RH direction.
+**Ordered program (§1–§4): COMPLETE.**
