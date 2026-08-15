@@ -18,10 +18,11 @@
 | [29_Priority_Stack_Results_Stress_Suggestions.md](29_Priority_Stack_Results_Stress_Suggestions.md) | Priority stack results + stress |
 | [30_Exhaustive_Precision_Continuation.md](30_Exhaustive_Precision_Continuation.md) | Exhaustive continuation summary |
 | [31_SingularVector_Theta13_and_2I_Eta.md](31_SingularVector_Theta13_and_2I_Eta.md) | Singular-vector θ13 + derived 2I η |
-| [32_Continuum_Eta_HeatKernel_Breakthrough.md](32_Continuum_Eta_HeatKernel_Breakthrough.md) | **Breakthrough: tip heat-kernel η law, mix=½−cos(2π/5), RMS 0.008** |
+| [32_Continuum_Eta_HeatKernel_Breakthrough.md](32_Continuum_Eta_HeatKernel_Breakthrough.md) | Continuum η heat-kernel law, mix=½−cos(2π/5), RMS 0.008 |
+| [33_Unification_VLQ_Precision_Path.md](33_Unification_VLQ_Precision_Path.md) | **Unification: VL_Q thresholds, residual ∼2.6%, M_X=Λ₀, proton-safe** |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
 **Ordered program (§1–§4): COMPLETE.**  
-**Precision continuation: docs 28–31.**  
-**Continuum η breakthrough: doc 32 (August 2026).**
+**Precision continuation: docs 28–32.**  
+**Unification precision path: doc 33 (August 2026).**
