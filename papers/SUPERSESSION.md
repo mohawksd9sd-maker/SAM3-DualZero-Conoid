@@ -1,46 +1,40 @@
 # Papers directory — SUPERSESSION BANNER
 
 **Effective:** August 2026  
-**Authority:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../STATUS_CLAIMS_AND_RESIDUALS.md) and [`docs/hardening/`](../docs/hardening/00_INDEX.md)
+**Authority:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 ---
 
 ## Rule
 
-Every `.tex` file in this folder is a **historical or expanded technical source**.  
-Where a claim conflicts with the STATUS file or the hardening locks, the **STATUS / hardening layer supersedes** the paper language.
+Every `.tex` file here is historical or expanded source.  
+**STATUS + `docs/hardening/` supersede** conflicting claims.
 
 ---
 
-## Specifically superseded slogans
+## Specifically superseded
 
-| Older paper language | Superseded by |
-|----------------------|---------------|
-| Exact $m_H=125.1$ GeV (digit) | 125 GeV **class** (124–127 GeV band) |
-| Percent-level gauge unification as established fact | ~$7\%$ geometric floor; research VL_Q path separate (docs 33–34) |
-| Riemann Hypothesis proved | Variational **proposal only** |
-| Free $\omega_0$ tuned to data | Geometric $\omega_0\approx 0.927$ (docs 18, 35) |
-| $M_X=\mu_{\rm meet}$ as derived | Not derived; $M_X=\Lambda_0$ under projective AF′ (doc 34) |
-| Fully locked CC magnitude | Mechanism only; magnitude residual |
-
----
-
-## How to read a paper in this folder
-
-1. Check STATUS for the claim class (locked vs residual).  
-2. Check the relevant `docs/hardening/` note.  
-3. Use the paper for derivations and context, not as the final claim list.
+| Older language | Superseded by |
+|----------------|---------------|
+| $f^2=u^2+16\ell_0^2\cos^2(\cdot)$ | **$4\ell_0^2$ only** (doc 35) |
+| Exact $m_H=125.1$ GeV | 125 GeV **class** |
+| Percent-level unification as fact | ~$7\%$ floor; research paths separate |
+| RH proved / theorem | **Proposal only** |
+| Free / fitted $\omega_0$ | Geometric $\omega_0\approx 0.927$ |
+| $M_X=\mu_{\rm meet}$ derived | Not derived |
+| Ultrafilter required for numerics | Constructive finite-$N$ (doc 39) |
 
 ---
 
-## Banner text (copy into paper preambles if desired)
+## Banner for paper preambles
 
 ```tex
-% SUPERSEDED CLAIMS: See STATUS_CLAIMS_AND_RESIDUALS.md and docs/hardening/
-% (August 2026). Digit m_H, percent-level unification, and RH-as-proof
-% language in this file are superseded where they conflict with STATUS.
+% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md
+% Metric: f=sqrt(u^2+4 ell0^2 cos^2(2v)) only (doc 35).
+% RH = variational proposal only — not a proof.
+% m_H = class not digit; unification percent-level not claimed.
 ```
 
 ---
 
-*Supersession control — August 2026.*
+*Supersession — August 2026.*

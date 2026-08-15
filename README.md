@@ -1,78 +1,50 @@
 # SAM3-DualZero-Conoid
 
 **Geometric Unification of Gravity and the Standard Model**  
-from a Right Conoid Spectral Triple with Dual-Zero Hyperreal Regulation
+from a Right Conoid Spectral Triple with Dual-Zero Regulation
 
 ---
 
 ## Single source of truth
 
-**[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — executive claims vs residuals.  
-If anything conflicts with STATUS, **STATUS wins**.
+**[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — if anything conflicts, **STATUS wins**.
 
-| Authority | File |
-|-----------|------|
-| Metric / curvature / ω₀ | [`docs/hardening/35_Metric_Curvature_Omega0_Authoritative.md`](docs/hardening/35_Metric_Curvature_Omega0_Authoritative.md) |
-| Dual-Zero definition | [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md) |
-| Production numbers + error budgets | [`docs/hardening/36_Production_Numerical_Archive.md`](docs/hardening/36_Production_Numerical_Archive.md) |
-| Regulator comparison | [`docs/hardening/37_Regulator_Comparison_DZ_vs_HeatKernel_Zeta.md`](docs/hardening/37_Regulator_Comparison_DZ_vs_HeatKernel_Zeta.md) |
-| Lepton oscillation / 0νββ | [`docs/hardening/38_Lepton_Predictions_Oscillation_0nubb.md`](docs/hardening/38_Lepton_Predictions_Oscillation_0nubb.md) |
-| Full hardening index | [`docs/hardening/00_INDEX.md`](docs/hardening/00_INDEX.md) |
-| Papers supersession | [`papers/SUPERSESSION.md`](papers/SUPERSESSION.md) |
+| Authority | Document |
+|-----------|----------|
+| **Metric (locked)** | $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ — [doc 35](docs/hardening/35_Metric_Curvature_Omega0_Authoritative.md) |
+| Dual-Zero + constructive numerics | [doc 18](docs/hardening/18_DualZero_Definition_Lock.md), [doc 39](docs/hardening/39_DualZero_Constructive_and_Scheme_Comparison.md) |
+| Production numbers | [doc 36](docs/hardening/36_Production_Numerical_Archive.md) |
+| Pipeline maturity | [doc 40](docs/hardening/40_Numerical_Pipeline_Maturity.md) |
+| Unification / cosmology residuals | [doc 41](docs/hardening/41_Unification_Cosmology_Residuals.md) |
+| Lepton tests | [doc 38](docs/hardening/38_Lepton_Predictions_Oscillation_0nubb.md) |
+| Paper supersession | [papers/SUPERSESSION.md](papers/SUPERSESSION.md) |
 
-**Rule:** derivation only, no experimental tuning, no overclaim.
-
----
-
-## Key locked results (summary)
-
-| Observable | Status |
-|------------|--------|
-| $G_N = 64\pi\ell_0^2/45$ | Locked ($a_2$) |
-| 3 chiral generations | Locked (APS index) |
-| $\omega_0\approx 0.927$ | Geometric (not a fit) |
-| $\theta_{12}\approx 12.85^\circ$, $\theta_{23}\approx 2.36^\circ$ | Locked |
-| $\phi=2\pi/5$ CP structure | Locked |
-| $m_H$ | 125 GeV **class** (not digit) |
-| Gauge unification | ~$7\%$ floor baseline; research paths separate |
-| RH | Proposal **not** proof |
-| $\delta_{\rm PMNS}$ | Large band $200^\circ$–$270^\circ$ |
+**Rule:** derivation only, no experimental tuning, no overclaim.  
+**RH:** variational proposal **only** — not a proof.
 
 ---
 
-## Regenerate locked numbers
+## Regenerate / checks
 
 ```bash
 pip install -r requirements.txt
 python code/production_regenerate_locked.py
+python code/dual_zero_constructive.py
+python code/pipeline_maturity_checks.py
 ```
 
 ---
 
-## Repository layout
+## Locked highlights
 
-```
-├── STATUS_CLAIMS_AND_RESIDUALS.md   # SSOT
-├── docs/hardening/                  # Locks 01–38
-├── papers/                          # Historical LaTeX (see SUPERSESSION.md)
-├── code/                            # Verification scripts
-├── README.md
-└── LICENSE
-```
+| Item | Status |
+|------|--------|
+| Metric tip coefficient | **$4\ell_0^2$ only** |
+| $\omega_0\approx 0.927$ | Geometric |
+| $G_N$, 3 generations, CKM $\theta_{12,23}$, $\phi=2\pi/5$ | Locked |
+| $m_H$ | Class, not digit |
+| Unification | ~$7\%$ floor baseline |
+| APS production solver | Prototype (STATUS flag) |
+| RH | Not a proof |
 
----
-
-## Citation
-
-```bibtex
-@misc{sam3_hardened_2026,
-  author       = {Shawn Dykes},
-  title        = {SAM3-DualZero-Conoid (Hardened Status)},
-  year         = {2026},
-  howpublished = {GitHub},
-  url          = {https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid},
-  note         = {STATUS file is authoritative for claims vs residuals}
-}
-```
-
-**Last major update: August 2026** (docs 35–38 + STATUS SSOT + paper supersession).
+**Last update: August 2026** (metric lock, constructive Dual-Zero, pipeline maturity, residual discipline).
