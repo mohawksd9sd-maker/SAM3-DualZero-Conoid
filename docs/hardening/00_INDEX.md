@@ -25,7 +25,9 @@
 | [19_Three_Generations_Expanded_Derivation.md](19_Three_Generations_Expanded_Derivation.md) | **Locked:** expanded 3-generation derivation |
 | [20_Seeley_DeWitt_Expanded_Derivation.md](20_Seeley_DeWitt_Expanded_Derivation.md) | **Locked:** expanded a₂/a₄ → G_N + Higgs class |
 | [21_Spectral_Triple_Axioms_Noncompact_DualZero.md](21_Spectral_Triple_Axioms_Noncompact_DualZero.md) | **Locked:** axioms C1–C8 + residual map |
+| [22_Lorentzian_Reconstruction_Expanded.md](22_Lorentzian_Reconstruction_Expanded.md) | **Locked:** Lorentzian residual + L1–L5 upgrade path |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
-**Foundational closure progress:** 1a–1c complete → next 1d Lorentzian reconstruction.
+**Foundational §1 (1a–1d):** complete.  
+**Next ordered block:** §2 Numerical production readiness.
