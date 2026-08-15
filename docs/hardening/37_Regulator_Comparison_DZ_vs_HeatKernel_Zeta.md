@@ -1,81 +1,57 @@
-# 37 — Regulator Comparison: Dual-Zero vs Heat-Kernel / Zeta
+# 37 — Regulator Comparison Tables (Dual-Zero vs Heat-Kernel / Zeta)
 
-**Status:** Side-by-side comparison for key observables  
+**Status:** Explicit scheme tables for key observables  
 **Date:** August 2026  
-**Canonical Dual-Zero:** docs 18 + 35
+**Canonical Dual-Zero:** docs 18, 35, 39
 
 ---
 
-## 1. What each regulator is
+## Table A — What each scheme is
 
-| Regulator | Definition (schematic) | Role in SAM3 |
-|-----------|------------------------|--------------|
-| **Dual-Zero** | $\varepsilon(n)=\omega_0(-1)^n n^{-n}$, $\operatorname{Reg}_2$ | UV / information-conserving spectral regulator |
-| **Heat kernel** | $\mathrm{Tr}\,e^{-tD^2}$; Seeley–DeWitt $a_{2k}$ | Spectral action, $G_N$, Higgs class, continuum $\eta$ law |
-| **Zeta** | $\zeta_D(s)=\mathrm{Tr}\,|D|^{-s}$; analytic continuation | Spectral asymptotics; optional alternative to heat kernel |
-
-They are **not** interchangeable slogans: Dual-Zero regulates the discrete/infinite mode sum; heat kernel / zeta implement the spectral action and continuum geometric densities.
-
----
-
-## 2. Observable-by-observable
-
-### 2.1 Newton constant $G_N$
-
-| Method | Result | Status |
-|--------|--------|--------|
-| Heat kernel / Seeley $a_2$ | $G_N=64\pi\ell_0^2/45$ | **Locked** |
-| Zeta (related Seeley) | Same leading $a_2$ physics | Consistent if same metric |
-| Dual-Zero alone | Does **not** replace $a_2$ | DZ enters mode weights, not the Einstein term by itself |
-
-### 2.2 Higgs mass class
-
-| Method | Result | Status |
-|--------|--------|--------|
-| Heat kernel $a_4$ | 125 GeV **class** (124–127 GeV band) | Locked class |
-| Dual-Zero | Suppresses / weights UV; **not** digit tuner | Must not be fit to 125.1 GeV |
-| Zeta | Equivalent spectral data with different presentation | No extra digit claim |
-
-### 2.3 Continuum defect overlaps $\eta_{ij}$
-
-| Method | Result | Status |
-|--------|--------|--------|
-| Heat-kernel tip split (doc 32) | Law with mix $\tfrac12-\cos(2\pi/5)$; RMS $\approx 0.008$ vs locked | Breakthrough path |
-| Direct continuum defect integrals | $\eta_{12}\approx 0.861$, $\eta_{13}\approx 0.544$, $\eta_{23}\approx 0.479$ | Locked archive |
-| Dual-Zero | Optional eigenvalue shifts; must not retune $\omega_0$ to force $\eta$ | Discipline |
-
-### 2.4 Yukawa hierarchy / radial weights
-
-| Method | Result | Status |
-|--------|--------|--------|
-| Casimir tip potential + geometry | $C_g$, tip amplitudes | Locked |
-| Dual-Zero mode weights $|\varepsilon(n)|$ | Super-exponential UV silence | Supports hierarchy, not a free lever |
-| Zeta spectral sums | Alternative packaging of same spectrum | Must agree on physical standard parts |
-
-### 2.5 Gauge unification residual
-
-| Method | Result | Status |
-|--------|--------|--------|
-| SM running + geometric thresholds | $\sim 7\%$ floor (doc 12 discipline) | Not percent-level claim |
-| VL_Q research path (doc 33) | $\sim 2.6\%$ two-loop with forced $M_*$ | Research; $M_X=\Lambda_0$ |
-| Dual-Zero reweight of towers | Does not by itself remove the floor | Scanned; no miracle |
-
-### 2.6 Riemann Hypothesis language
-
-| Method | Result | Status |
-|--------|--------|--------|
-| Variational / information-current (Dual-Zero motivated) | **Proposal only** | **Not a proof** |
-| Zeta of $D$ | Spectral zeta ≠ proof of classical RH | Discipline |
+| Scheme | Definition | Constructive production use |
+|--------|------------|-----------------------------|
+| **Dual-Zero** | $\varepsilon(n)=\omega_0(-1)^n n^{-n}$, Reg₂ | Finite-$N$ weights; no ultrafilter required (doc 39) |
+| **Heat kernel** | $\mathrm{Tr}\,e^{-tD^2}$; Seeley $a_{2k}$ | $G_N$, $m_H$ class, continuum $\eta$ |
+| **Zeta** | $\zeta_D(s)=\mathrm{Tr}\lvert D\rvert^{-s}$ | Equivalent spectral language to heat kernel |
+| Hard cutoff | $\theta(\Lambda-\lvert\lambda\rvert)$ | Benchmark only; not Dual-Zero philosophy |
 
 ---
 
-## 3. Policy
+## Table B — Key observables (scheme roles)
 
-1. Use **heat kernel / Seeley** for $G_N$, $m_H$ class, continuum $\eta$ derivation.  
-2. Use **Dual-Zero** as the UV regulator and information-conserving mode weight with **fixed** $\omega_0$.  
-3. Use **zeta** only as an equivalent spectral language, not a second free regulator.  
-4. Never retune $\omega_0$ or switch regulators to chase a single experimental digit.
+| Observable | Primary scheme | Dual-Zero role | Zeta role | Locked claim level |
+|------------|----------------|----------------|-----------|--------------------|
+| **$G_N$** | Heat kernel $a_2$ | Subleading mode weights only | Same $a_2$ physics if same metric | Formula $64\pi\ell_0^2/45$ |
+| **$m_H$** | Heat kernel $a_4$ | UV silence; **not** digit tuner | Same class | 125 GeV **class** |
+| **3 generations** | APS continuum spectrum | Not the carrier of the count | N/A | Locked schema |
+| **$\eta_{ij}$** | Continuum heat-kernel / defect | Optional shifts; $\omega_0$ fixed | Optional packaging | Archive centrals ± band |
+| **Yukawa hierarchy** | Tip Casimir + geometry | Super-exponential UV weights | Spectral sums must agree on standard parts | Ratio class locked |
+| **Unification residual** | β-functions + thresholds | Reweight only; no miracle | N/A | ~$7\%$ floor baseline |
+| **RH language** | — | Motivates information-current **proposal** | Spectral zeta ≠ classical RH proof | **Not a proof** |
 
 ---
 
-*Regulator comparison lock — August 2026.*
+## Table C — Scheme independence policy
+
+| Allowed | Forbidden |
+|---------|-----------|
+| Heat kernel ↔ zeta agreement on locked **classes** | Retuning $\omega_0$ to absorb scheme mismatch |
+| Finite-$N$ Dual-Zero for numerics | Requiring non-constructive ultrafilters in production |
+| Stating O(few %) scheme uncertainty on $G_N$ interpretation | Digit $m_H=125.1$ from any single scheme |
+| Keeping unification / RH secondary | Claiming percent-level unification from Dual-Zero alone |
+
+---
+
+## Table D — Numerical probe (constructive Dual-Zero)
+
+Run `python code/dual_zero_constructive.py`:
+
+| Check | Expected |
+|-------|----------|
+| $\lvert\varepsilon(n)\rvert$ decay | Super-exponential; negligible by $n\sim 20$ |
+| Reg₂ pairing | Well-defined finite list |
+| $\omega_0\pm 0.005$ | Weight sums move slightly; angles **not** retuned |
+
+---
+
+*Explicit scheme-comparison tables — August 2026.*

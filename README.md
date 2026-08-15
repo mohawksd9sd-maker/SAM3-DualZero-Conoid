@@ -1,50 +1,52 @@
 # SAM3-DualZero-Conoid
 
-**Geometric Unification of Gravity and the Standard Model**  
-from a Right Conoid Spectral Triple with Dual-Zero Regulation
+**Geometric / spectral research on a right conoid with Dual-Zero regulation**
 
 ---
 
-## Single source of truth
+## Start here (outsiders)
 
-**[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — if anything conflicts, **STATUS wins**.
+1. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — locked vs residual in one screen  
+2. **[`docs/math_notes/`](docs/math_notes/)** — three generations (APS+2I); metric + $G_N$  
+3. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — modest paper draft  
+4. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — full SSOT
 
-| Authority | Document |
-|-----------|----------|
-| **Metric (locked)** | $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ — [doc 35](docs/hardening/35_Metric_Curvature_Omega0_Authoritative.md) |
-| Dual-Zero + constructive numerics | [doc 18](docs/hardening/18_DualZero_Definition_Lock.md), [doc 39](docs/hardening/39_DualZero_Constructive_and_Scheme_Comparison.md) |
-| Production numbers | [doc 36](docs/hardening/36_Production_Numerical_Archive.md) |
-| Pipeline maturity | [doc 40](docs/hardening/40_Numerical_Pipeline_Maturity.md) |
-| Unification / cosmology residuals | [doc 41](docs/hardening/41_Unification_Cosmology_Residuals.md) |
-| Lepton tests | [doc 38](docs/hardening/38_Lepton_Predictions_Oscillation_0nubb.md) |
-| Paper supersession | [papers/SUPERSESSION.md](papers/SUPERSESSION.md) |
-
-**Rule:** derivation only, no experimental tuning, no overclaim.  
-**RH:** variational proposal **only** — not a proof.
+**Core-first policy:** unification and Riemann-hypothesis narratives are **secondary** until the two mathematical notes are externally checked.
 
 ---
 
-## Regenerate / checks
+## Locked metric (mandatory)
+
+$$
+f(u,v)=\sqrt{u^2+4\ell_0^2\cos^2(2v)}
+$$
+
+($4\ell_0^2$ only — not $16\ell_0^2$.)
+
+---
+
+## Reproduce
 
 ```bash
-pip install -r requirements.txt
-python code/production_regenerate_locked.py
+python code/reproduce_status_locked.py
 python code/dual_zero_constructive.py
 python code/pipeline_maturity_checks.py
 ```
 
 ---
 
-## Locked highlights
+## Authority table
 
-| Item | Status |
-|------|--------|
-| Metric tip coefficient | **$4\ell_0^2$ only** |
-| $\omega_0\approx 0.927$ | Geometric |
-| $G_N$, 3 generations, CKM $\theta_{12,23}$, $\phi=2\pi/5$ | Locked |
-| $m_H$ | Class, not digit |
-| Unification | ~$7\%$ floor baseline |
-| APS production solver | Prototype (STATUS flag) |
-| RH | Not a proof |
+| Topic | Document |
+|-------|----------|
+| Public summary | `PUBLIC_STATUS_SUMMARY.md` |
+| Metric / ω₀ | `docs/hardening/35_...` |
+| Dual-Zero + schemes | docs 18, 37, 39 |
+| Pipeline maturity | doc 40 |
+| Paper supersession | `papers/SUPERSESSION.md` |
+| Expert outreach draft | `docs/outreach/Expert_Outreach_Draft.md` |
 
-**Last update: August 2026** (metric lock, constructive Dual-Zero, pipeline maturity, residual discipline).
+**RH:** proposal only — not a proof.  
+**Unification:** ~7% floor baseline; percent-level not claimed.
+
+**Last update:** August 2026 (core math notes + public summary + modest paper).
