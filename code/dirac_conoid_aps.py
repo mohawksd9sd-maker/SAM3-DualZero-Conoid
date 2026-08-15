@@ -2,12 +2,6 @@
 """
 SAM3 — Production-path 2D Dirac on the right conoid (P1–P4)
 ===========================================================
-- Explicit metric + spin connection
-- 2-component spinor on (u,v)
-- APS boundary penalty (P1) + optional spectral APS projector (P2)
-- Residual diagnostics + gap-vs-u_max tables (P3)
-- 2I Fourier/isotype projectors and overlap matrix (P4)
-
 omega0 = 0.927 geometric only. No experimental retuning.
 
 Usage:
@@ -45,9 +39,9 @@ class DiracConfig:
     l0: float = 1.0
     omega0: float = OMEGA0_GEOMETRIC
     aps_strength: float = 25.0
-    spectral_aps: bool = True  # P2
+    spectral_aps: bool = True
     n_eigs: int = 8
-    fourth_order: bool = False  # default stable 2nd-order; 4th optional
+    fourth_order: bool = False
 
 
 def _metric_f(u: np.ndarray, v: np.ndarray, l0: float) -> np.ndarray:
@@ -56,15 +50,12 @@ def _metric_f(u: np.ndarray, v: np.ndarray, l0: float) -> np.ndarray:
 
 def _spin_connection_coeff(u: np.ndarray, v: np.ndarray, l0: float) -> np.ndarray:
     f = _metric_f(u, v, l0)
-    dlogf_du = u[:, None] / (f**2 + 1e-15)
-    return 0.5 * dlogf_du
+    return 0.5 * u[:, None] / (f**2 + 1e-15)
 
 
 def build_dirac_matrix(cfg: DiracConfig) -> Tuple[sparse.csr_matrix, np.ndarray, np.ndarray]:
     if abs(cfg.omega0 - OMEGA0_GEOMETRIC) > 0.02:
-        raise ValueError(
-            f"omega0={cfg.omega0} outside geometric lock ~{OMEGA0_GEOMETRIC}"
-        )
+        raise ValueError(f"omega0={cfg.omega0} outside geometric lock ~{OMEGA0_GEOMETRIC}")
 
     Nu, Nv = cfg.Nu, cfg.Nv
     u = np.linspace(-cfg.u_max, cfg.u_max, Nu)
@@ -111,11 +102,10 @@ def build_dirac_matrix(cfg: DiracConfig) -> Tuple[sparse.csr_matrix, np.ndarray,
 
             for off, w in zip(offsets_u, weights_u):
                 ii = i + off
-                if ii < 0 or ii >= Nu:
-                    continue
-                q = idx(ii, j)
-                add(r0, N + q, w)
-                add(r1, q, w)
+                if 0 <= ii < Nu:
+                    q = idx(ii, j)
+                    add(r0, N + q, w)
+                    add(r1, q, w)
 
             add(r0, N + p, om)
             add(r1, p, om)
@@ -130,7 +120,6 @@ def build_dirac_matrix(cfg: DiracConfig) -> Tuple[sparse.csr_matrix, np.ndarray,
             add(r0, r0, soft)
             add(r1, r1, soft)
 
-    # P1 quadratic APS penalty
     pen = cfg.aps_strength / max(du, 1e-12)
     for j in range(Nv):
         for i_b in (0, Nu - 1):
@@ -138,13 +127,10 @@ def build_dirac_matrix(cfg: DiracConfig) -> Tuple[sparse.csr_matrix, np.ndarray,
             add(p, p, pen)
             add(N + p, N + p, pen)
 
-    # P2 spectral APS: additional penalty on wrong-chirality combination at boundary
-    # (ψ0 - sign(u) ψ1) content suppressed — discrete proxy for APS spectral condition
     if cfg.spectral_aps:
         for j in range(Nv):
             for i_b, sgn in ((0, -1.0), (Nu - 1, +1.0)):
                 p = idx(i_b, j)
-                # penalty on (ψ0 - sgn ψ1)^2 expanded into matrix elements
                 s = 0.5 * pen
                 add(p, p, s)
                 add(N + p, N + p, s)
@@ -156,11 +142,8 @@ def build_dirac_matrix(cfg: DiracConfig) -> Tuple[sparse.csr_matrix, np.ndarray,
     return D, u, v
 
 
-def lowest_eigenpairs(
-    D: sparse.csr_matrix, k: int = 8
-) -> Tuple[np.ndarray, np.ndarray]:
+def lowest_eigenpairs(D: sparse.csr_matrix, k: int = 8) -> Tuple[np.ndarray, np.ndarray]:
     k = min(k, max(2, D.shape[0] - 2))
-    # Shift-invert at 0 targets smallest-magnitude eigenvalues (required for convergence)
     evals, evecs = eigsh(D, k=k, sigma=0.0, which="LM", tol=1e-8, maxiter=10000)
     order = np.argsort(np.abs(evals))
     return evals[order], evecs[:, order]
@@ -171,17 +154,16 @@ def residual_norms(D: sparse.csr_matrix, evals: np.ndarray, evecs: np.ndarray) -
     for n in range(evals.shape[0]):
         v = evecs[:, n]
         nv = np.linalg.norm(v) + 1e-30
-        r = np.linalg.norm(D @ v - evals[n] * v) / nv
-        res.append(float(r))
+        res.append(float(np.linalg.norm(D @ v - evals[n] * v) / nv))
     return np.asarray(res, dtype=float)
 
 
-def run_spectrum(cfg: DiracConfig) -> dict:
+def run_spectrum(cfg: DiracConfig):
     D, u, v = build_dirac_matrix(cfg)
     evals, evecs = lowest_eigenpairs(D, k=cfg.n_eigs)
     res = residual_norms(D, evals, evecs)
     abs_min = float(np.min(np.abs(evals))) if evals.size else None
-    return {
+    result = {
         "config": asdict(cfg),
         "evals": [float(x) for x in evals],
         "abs_min": abs_min,
@@ -193,9 +175,8 @@ def run_spectrum(cfg: DiracConfig) -> dict:
         "u_max": cfg.u_max,
         "matrix_size": int(D.shape[0]),
         "status": "production_path_P1_P2",
-        "_evecs_shape": list(evecs.shape),
-        # evecs not written to JSON by default (large); available in-process
-    }, D, u, v, evals, evecs
+    }
+    return result, D, u, v, evals, evecs
 
 
 def gap_scan(
@@ -203,25 +184,32 @@ def gap_scan(
     Nu_base: int = 32,
     Nv: int = 40,
     l0: float = 1.0,
+    residual_cut: float = 1e-4,
 ) -> dict:
     if u_max_list is None:
         u_max_list = [3.0, 4.0, 5.0, 6.0, 8.0]
     rows = []
     for um in u_max_list:
-        Nu = max(20, int(Nu_base * um / 6.0))
+        Nu = max(24, int(Nu_base * um / 6.0))
         cfg = DiracConfig(Nu=Nu, Nv=Nv, u_max=um, l0=l0, n_eigs=6, fourth_order=False)
-        out, *_ = run_spectrum(cfg)
-        rows.append(
-            {
-                "u_max": um,
-                "Nu": Nu,
-                "abs_min": out["abs_min"],
-                "max_residual": out["max_residual"],
-            }
-        )
+        try:
+            out, *_ = run_spectrum(cfg)
+            rows.append(
+                {
+                    "u_max": um,
+                    "Nu": Nu,
+                    "abs_min": out["abs_min"],
+                    "max_residual": out["max_residual"],
+                    "accepted": out["max_residual"] is not None
+                    and out["max_residual"] < residual_cut,
+                }
+            )
+        except Exception as e:
+            rows.append({"u_max": um, "Nu": Nu, "error": str(e), "accepted": False})
+
     xs, ys = [], []
     for r in rows:
-        if r["abs_min"] and r["abs_min"] > 0:
+        if r.get("accepted") and r.get("abs_min") and r["abs_min"] > 0:
             xs.append(math.log(r["u_max"]))
             ys.append(math.log(r["abs_min"]))
     slope = float(np.polyfit(xs, ys, 1)[0]) if len(xs) >= 2 else None
@@ -229,67 +217,47 @@ def gap_scan(
         "rows": rows,
         "log_log_slope_abs_min_vs_umax": slope,
         "expected_slope_near": -1.0,
-        "note": "slope ~ -1 supports gap ∝ 1/u_max (doc 10)",
+        "n_accepted": len(xs),
+        "note": "Only points with residual < cut enter the slope fit",
         "status": "P3_gap_table",
     }
 
 
-def bridge_isotype_projectors(Nv: int, n_bridges: int = N_BRIDGES) -> np.ndarray:
-    """Fourier projectors onto 12-fold bridge harmonics (proxy for 2I isotypes).
-
-    Returns array P[b, j] for bridge sector b=0..n_bridges-1 on angular grid j.
-    """
+def _angular_generation_windows(Nv: int) -> np.ndarray:
+    """Three overlapping continuous angular windows (generation proxies)."""
     j = np.arange(Nv)
-    P = np.zeros((n_bridges, Nv), dtype=float)
-    for b in range(n_bridges):
-        # localized angular window around bridge angle + discrete Fourier content
-        center = b * Nv / n_bridges
-        dist = np.minimum(np.abs(j - center), Nv - np.abs(j - center))
-        P[b] = np.exp(-0.5 * (dist / (Nv / (2 * n_bridges))) ** 2)
-        P[b] /= np.linalg.norm(P[b]) + 1e-15
-    return P
+    centers = [0.0, Nv / 3.0, 2.0 * Nv / 3.0]
+    width = Nv / 4.5
+    W = np.zeros((3, Nv))
+    for g, c in enumerate(centers):
+        dist = np.minimum(np.abs(j - c), Nv - np.abs(j - c))
+        W[g] = np.exp(-0.5 * (dist / width) ** 2)
+        W[g] /= np.linalg.norm(W[g]) + 1e-15
+    return W
 
 
-def overlap_matrix_from_evecs(
-    evecs: np.ndarray,
-    Nu: int,
-    Nv: int,
-    n_modes: int = 3,
-) -> dict:
-    """P4: project lowest modes onto bridge windows and form overlap matrix η_ij proxy."""
+def overlap_matrix_from_evecs(evecs: np.ndarray, Nu: int, Nv: int, n_modes: int = 6) -> dict:
     N = Nu * Nv
-    P = bridge_isotype_projectors(Nv)
-    # Use density summed over spinor components and radial coordinate
-    mode_bridge = np.zeros((n_modes, N_BRIDGES))
-    for m in range(min(n_modes, evecs.shape[1])):
+    W = _angular_generation_windows(Nv)
+    # Average angular density of lowest |λ| modes
+    dens = np.zeros(Nv)
+    n_use = min(n_modes, evecs.shape[1])
+    for m in range(n_use):
         psi0 = evecs[:N, m].reshape(Nu, Nv)
         psi1 = evecs[N:, m].reshape(Nu, Nv)
-        dens_v = np.mean(np.abs(psi0) ** 2 + np.abs(psi1) ** 2, axis=0)
-        dens_v /= np.linalg.norm(dens_v) + 1e-15
-        for b in range(N_BRIDGES):
-            mode_bridge[m, b] = float(np.dot(dens_v, P[b]))
+        dens += np.mean(np.abs(psi0) ** 2 + np.abs(psi1) ** 2, axis=0)
+    dens /= np.linalg.norm(dens) + 1e-15
 
-    # Generation proxies: three combinations of bridge clusters (0-3, 4-7, 8-11)
-    gen = np.zeros((3, N_BRIDGES))
-    gen[0, 0:4] = 1.0
-    gen[1, 4:8] = 1.0
-    gen[2, 8:12] = 1.0
-    for g in range(3):
-        gen[g] /= np.linalg.norm(gen[g]) + 1e-15
+    # Weighted generation vectors
+    gvec = np.zeros((3, Nv))
+    for i in range(3):
+        gvec[i] = W[i] * dens
+        gvec[i] /= np.linalg.norm(gvec[i]) + 1e-15
 
-    # Overlap between generation windows using mode-averaged bridge weights
-    w = np.mean(np.abs(mode_bridge), axis=0)
-    w /= np.linalg.norm(w) + 1e-15
     eta = np.zeros((3, 3))
     for i in range(3):
         for j in range(3):
-            eta[i, j] = float(np.dot(gen[i] * w, gen[j] * w))
-    # Normalize to diagonal 1
-    for i in range(3):
-        if eta[i, i] > 0:
-            eta[i, :] /= math.sqrt(eta[i, i])
-            eta[:, i] /= math.sqrt(eta[i, i] + 1e-30)
-            eta[i, i] = 1.0
+            eta[i, j] = float(np.dot(gvec[i], gvec[j]))
 
     return {
         "eta_matrix": eta.tolist(),
@@ -299,13 +267,16 @@ def overlap_matrix_from_evecs(
         "eta_12_locked": ETA_12,
         "eta_13_locked": ETA_13,
         "eta_23_locked": ETA_23,
-        "note": "P4 numerical bridge-window overlaps; locked η_ij remain the continuum reference",
+        "abs_diff_12": abs(float(eta[0, 1]) - ETA_12),
+        "abs_diff_13": abs(float(eta[0, 2]) - ETA_13),
+        "abs_diff_23": abs(float(eta[1, 2]) - ETA_23),
+        "note": "P4 continuous-window overlaps from evecs; locked η_ij remain continuum reference",
         "status": "P4_isotype_overlaps",
     }
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="SAM3 conoid Dirac P1–P4")
+    parser = argparse.ArgumentParser()
     parser.add_argument("--gap-scan", action="store_true")
     parser.add_argument("--overlaps", action="store_true")
     parser.add_argument("--Nu", type=int, default=40)
@@ -317,7 +288,6 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if args.gap_scan:
-        print("Running gap scan...")
         result = gap_scan()
         path = out_dir / "05_gap_scan.json"
         path.write_text(json.dumps(result, indent=2), encoding="utf-8")
@@ -326,10 +296,8 @@ def main() -> None:
         return
 
     cfg = DiracConfig(Nu=args.Nu, Nv=args.Nv, u_max=args.u_max)
-    print(f"Building Dirac Nu={cfg.Nu} Nv={cfg.Nv} u_max={cfg.u_max} spectral_aps={cfg.spectral_aps}")
+    print(f"Building Dirac Nu={cfg.Nu} Nv={cfg.Nv} u_max={cfg.u_max}")
     result, D, u, v, evals, evecs = run_spectrum(cfg)
-    # strip private
-    result.pop("_evecs_shape", None)
     path = out_dir / "05_dirac_aps_spectrum.json"
     path.write_text(json.dumps(result, indent=2), encoding="utf-8")
     print(f"|λ|_min = {result['abs_min']}")
