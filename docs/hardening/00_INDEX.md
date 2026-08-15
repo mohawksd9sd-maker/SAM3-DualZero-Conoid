@@ -21,10 +21,9 @@
 | [15_Lepton_Phase_PMNS.md](15_Lepton_Phase_PMNS.md) | **Locked:** lepton φ + large δ_PMNS |
 | [16_Frozen_Numerical_Archive.md](16_Frozen_Numerical_Archive.md) | **Locked:** full frozen number archive |
 | [17_Lorentzian_and_RH_Residual_Discipline.md](17_Lorentzian_and_RH_Residual_Discipline.md) | **Locked:** Lorentzian + RH residual discipline |
-| [18_DualZero_Definition_Lock.md](18_DualZero_Definition_Lock.md) | **Locked:** Dual-Zero rules, geometric ω₀, claim boundaries |
+| [18_DualZero_Definition_Lock.md](18_DualZero_Definition_Lock.md) | **Locked:** Dual-Zero rules, geometric ω₀ |
+| [19_Three_Generations_Expanded_Derivation.md](19_Three_Generations_Expanded_Derivation.md) | **Locked:** expanded 3-generation derivation + residual map |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
-**Primary Priorities 1–6:** complete.  
-**Secondary 1–3:** complete.  
-**Dual-Zero definition:** locked (doc 18).
+**Foundational closure progress:** 1a (three generations expanded) complete → next 1b Seeley–DeWitt line-by-line.
