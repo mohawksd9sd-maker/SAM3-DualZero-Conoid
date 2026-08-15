@@ -1,89 +1,61 @@
-# 38 — Lepton Predictions: Oscillation + $0\nu\beta\beta$ Confrontation
+# 38 — Lepton Predictions: Oscillation + $0\nu\beta\beta$
 
-**Status:** Sharpened confrontation note (bands, not overclaims)  
+**Status:** Sharpened confrontation (bands)  
 **Date:** August 2026  
-**SSOT:** `STATUS_CLAIMS_AND_RESIDUALS.md`
+**SSOT:** STATUS_CLAIMS_AND_RESIDUALS.md
 
 ---
 
-## 1. Locked lepton-structure inputs
+## 1. Locked inputs
 
-| Input | Value | Origin |
-|-------|-------|--------|
-| CP module phase | $\phi=+2\pi/5$ | Same 2I / tip orientation as quarks |
-| $\delta_{\rm PMNS}$ | **large** | $200^\circ$–$270^\circ$ band (doc 15/16) |
-| Three generations | exact | APS index |
-| RH sector | geometric radial hierarchy (partial) | residual |
-
-Charged-lepton / neutrino Yukawa architecture shares $\mathcal{A}_F$ and tip structure with quarks; numerical PMNS angles remain **less locked** than CKM $\theta_{12},\theta_{23}$.
+| Input | Value |
+|-------|-------|
+| $\phi=+2\pi/5$ | Module-wide CP structure |
+| $\delta_{\rm PMNS}$ | **$200^\circ$–$270^\circ$ band** |
+| Generations | 3 (APS) |
+| Tip weights | $C_g=(6/5,1,4/5)$ prefer **normal hierarchy** |
 
 ---
 
-## 2. Oscillation parameters — confrontation posture
+## 2. Oscillation confrontation
 
-| Observable | SAM3 posture | Experimental use |
-|------------|--------------|------------------|
-| $\Delta m^2_{21}$, $\lvert\Delta m^2_{31}\rvert$ | Not digit-predicted here; hierarchy direction tied to tip $C_g$ ordering | Input scale for light $m_\nu$ once $m_{\rm lightest}$ convention fixed |
-| $\theta_{12}^{\rm PMNS}$, $\theta_{23}^{\rm PMNS}$ | Same geometric toolkit as quarks; **not** frozen at CKM precision | Prefer qualitative large-mixing compatibility over fake digits |
-| $\theta_{13}^{\rm PMNS}$ | Residual-sensitive (analogous to CKM $\theta_{13}$) | Do not claim sub-degree lock |
-| $\delta_{\rm PMNS}$ | **$200^\circ$–$270^\circ$ band** | Confront with global fits favoring $\sim 200^\circ$–$250^\circ$ (large CP) |
-
-**Falsifiable claim (phase):** a true $\delta_{\rm PMNS}\approx 0$ or $\pi$ (CP-conserving) would tension the module-wide $\phi=2\pi/5$ story.
+| Observable | SAM3 | Test |
+|------------|------|------|
+| $\delta_{\rm PMNS}$ | Large CP band | CP-conserving $\delta\approx 0,\pi$ would **tension** the model |
+| $\theta_{13}^{\rm PMNS}$ | Residual (not sub-degree locked) | Do not fake CKM-level precision |
+| $\theta_{12,23}^{\rm PMNS}$ | Large-mixing compatible | Qualitative until RH sector frozen |
+| Ordering | **NH preferred** | IH discovery pressures tip ordering |
 
 ---
 
-## 3. Neutrino mass sum and ordering
+## 3. $\sum m_\nu$ and $m_{\beta\beta}$ (sharpened classes)
 
-| Quantity | Prediction class | Notes |
-|----------|------------------|-------|
-| Ordering | Prefer **normal** hierarchy from tip radial weights $C_1>C_2>C_3$ pattern | Inverted not excluded until RH sector fully frozen |
-| $\sum m_\nu$ | Light hierarchical sum; cosmology-compatible order $0.06$–$0.12$ eV class **if** $m_1\to 0$ limit | Width from unknown lightest mass and RH detail |
-| $m_{\rm lightest}$ | Not fixed digit | Open residual |
-
----
-
-## 4. $0\nu\beta\beta$ effective mass $m_{\beta\beta}$
-
-Schematic:
+**Normal hierarchy, $m_1\to 0$ reference:**
 
 $$
-m_{\beta\beta}
-=
-\left\lvert
-\sum_{k=1}^{3} U_{ek}^2\,m_k
-\right\rvert
+\sum m_\nu \simeq \sqrt{\Delta m^2_{31}}+\sqrt{\Delta m^2_{21}}
+\sim 0.06\,\mathrm{eV}
 $$
 
-with Majorana phases **not fully locked** (diagonal RH phases from $2I$ characters still residual).
+(order-of-magnitude class using standard solar/atmospheric scales as **external** $\Delta m^2$ inputs — not Dual-Zero fits).
 
-| Scenario | $m_{\beta\beta}$ class |
-|----------|---------------------|
-| Normal hierarchy, small $m_1$, partial phase cancellation | $\sim$ few meV – $O(10)$ meV |
-| Normal hierarchy, constructive Majorana phases | higher, still typically below inverted-hierarchy floor |
-| Inverted hierarchy | higher $m_{\beta\beta}$ floor — **disfavored** if ordering lock strengthens |
+| Quantity | NH class | Notes |
+|----------|----------|-------|
+| $\sum m_\nu$ | $\sim 0.06$–$0.12$ eV | Width from $m_1$ and RH residual |
+| $m_{\beta\beta}$ | few–$O(10)$ meV | Majorana phases not frozen |
+| IH $m_{\beta\beta}$ floor | higher | Disfavored if NH lock holds |
 
-**Confrontation:**
-
-- Current $0\nu\beta\beta$ limits ($m_{\beta\beta}\lesssim O(10^2)$ meV scale, experiment-dependent) **do not exclude** the normal-hierarchy band above.
-- A future definitive **inverted-hierarchy** discovery would pressure the tip-weight ordering assumption.
-- A sharp $m_{\beta\beta}$ digit is **not** claimed until Majorana phases are frozen.
+**Current $0\nu\beta\beta$ limits:** do not exclude the NH band.  
+**Digit $m_{\beta\beta}$:** not claimed.
 
 ---
 
-## 5. What to report in STATUS
+## 4. Cleanest near-term tests
 
-| Claim level | Content |
-|-------------|---------|
-| Locked | Large $\delta_{\rm PMNS}$ band; module $\phi$; 3 generations |
-| Predictive residual | NH preference; $m_{\beta\beta}$ in few–$O(10)$ meV class under NH |
-| Not claimed | Digit PMNS angles; digit $m_{\beta\beta}$; proof of NH |
+1. Persistently large $\delta_{\rm PMNS}$ (vs CP conservation).  
+2. Cosmology $\sum m_\nu$ compatible with NH light sum.  
+3. $0\nu\beta\beta$ remaining in few–$O(10)$ meV class under NH (not IH floor).
 
 ---
 
-## 6. Regeneration / updates
-
-When RH radial ODEs and Majorana phases are frozen, update this note and `STATUS_CLAIMS_AND_RESIDUALS.md` together — never update experimental targets by retuning $\omega_0$.
-
----
-
-*Lepton confrontation note — derivation only, no tuning.*
+*Lepton confrontation — no $\omega_0$ retuning.*
