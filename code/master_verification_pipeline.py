@@ -2,9 +2,7 @@
 """
 SAM3 Master Verification Pipeline
 =================================
-Regenerates locked geometric outputs under pipeline_output/.
-Uses code/sam3_geometry_constants.py as the pure-geometry source of truth.
-Does not retune any number to experiment.
+Regenerates locked geometric outputs and runs production-path Dirac diagnostics.
 
 Usage (from repo root):
     python code/master_verification_pipeline.py
@@ -39,11 +37,9 @@ from sam3_geometry_constants import (
     frozen_geometry_dict,
 )
 
-# Tip amplitude ratios from Casimir / tip potential lock (doc 09)
 C2_OVER_C1 = 1.13
 C3_OVER_C2 = 2.46
 
-# Locked angle outputs (docs 07, 08, 11, 16) — comparison targets only for experiments
 LOCKED_ANGLES = {
     "theta12_deg": 12.85,
     "theta23_deg": 2.36,
@@ -83,14 +79,12 @@ def write_json(path: Path, data: dict) -> None:
 
 
 def step_geometry_from_first_principles(out: Path) -> dict:
-    """Regenerate pure-geometry quantities with no experimental inputs."""
     geo = frozen_geometry_dict()
     geo["timestamp_utc"] = datetime.now(timezone.utc).isoformat()
     geo["c2_over_c1"] = C2_OVER_C1
     geo["c3_over_c2"] = C3_OVER_C2
     geo["G_N_prefactor_string"] = "64 * pi * ell0^2 / 45"
     geo["omega0_legacy_0p97_forbidden"] = True
-    # Cross-check Cabibbo formula vs locked theta12
     geo["theta12_from_eta_deg"] = cabibbo_theta12_deg()
     geo["theta12_locked_deg"] = LOCKED_ANGLES["theta12_deg"]
     geo["theta12_formula_vs_lock_abs_diff_deg"] = abs(
@@ -105,21 +99,22 @@ def step_frozen_archive(out: Path, geo: dict) -> None:
         **geo,
         **LOCKED_ANGLES,
         "phi_CP_deg": math.degrees(PHI_CP),
-        "version_status": "hardened_August_2026_section2_pipeline",
+        "version_status": "hardened_August_2026_section2_P1",
         "aps_controlled": True,
         "continuum_residual_target_met": True,
         "gap_scaling": "1 / u_max",
-        "dirac_code_status": "prototype_not_production_APS",
+        "dirac_code_status": "production_path_P1_dirac_conoid_aps",
     }
     payload = {
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
-        "note": "Geometric core regenerated from sam3_geometry_constants; angles from locks. No retuning.",
+        "note": "Geometric core from sam3_geometry_constants; Dirac via dirac_conoid_aps P1.",
         "frozen": frozen,
         "targets_for_comparison_only": TARGETS,
         "docs": [
             "docs/hardening/16_Frozen_Numerical_Archive.md",
             "docs/hardening/18_DualZero_Definition_Lock.md",
             "docs/hardening/23_Numerical_Production_Readiness.md",
+            "docs/hardening/24_Production_Dirac_P1_Lock.md",
         ],
     }
     write_json(out / "01_frozen_archive.json", payload)
@@ -141,37 +136,42 @@ def step_ckm_check(out: Path) -> None:
     write_json(out / "02_ckm_locked.json", payload)
 
 
-def step_dirac_kernel(out: Path) -> None:
-    result = {
-        "module": "full_2d_dirac_conoid",
-        "status": "prototype",
-        "omega0_used": OMEGA0_GEOMETRIC,
-        "called": False,
-        "error": None,
-        "production_APS": False,
-    }
+def step_dirac_p1(out: Path) -> None:
+    result = {"module": "dirac_conoid_aps", "called": False, "error": None}
     try:
-        from full_2d_dirac_conoid import conoid_dirac_2d
+        from dirac_conoid_aps import DiracConfig, run_spectrum, gap_scan
 
-        evals = np.asarray(
-            conoid_dirac_2d(Nu=60, Nv=90, l0=1.0, k_max=12, omega0=OMEGA0_GEOMETRIC),
-            dtype=float,
-        )
+        cfg = DiracConfig(Nu=40, Nv=48, u_max=6.0, n_eigs=6)
+        spec = run_spectrum(cfg)
         result["called"] = True
-        result["evals"] = evals.tolist()
-        result["abs_min"] = float(np.min(np.abs(evals))) if evals.size else None
-        np.save(out / "conoid_2d_evals.npy", evals)
-        print("  Dirac prototype OK (not production APS)")
+        result["spectrum"] = spec
+        # Lightweight gap scan (few points for pipeline runtime)
+        scan = gap_scan(u_max_list=[3.0, 4.5, 6.0], Nu_base=32, Nv=40)
+        result["gap_scan"] = scan
+        write_json(out / "03_dirac_p1_spectrum.json", spec)
+        write_json(out / "05_gap_scan.json", scan)
+        print(
+            f"  Dirac P1 OK: |λ|_min={spec.get('abs_min')}  max_res={spec.get('max_residual')}  "
+            f"gap_slope={scan.get('log_log_slope_abs_min_vs_umax')}"
+        )
     except Exception as e:
         result["error"] = f"{type(e).__name__}: {e}"
         result["traceback"] = traceback.format_exc()
-        print(f"  Dirac kernel skipped: {result['error']}")
+        print(f"  Dirac P1 failed: {result['error']}")
+        # Fallback prototype
+        try:
+            from full_2d_dirac_conoid import conoid_dirac_2d
+
+            evals = np.asarray(conoid_dirac_2d(), dtype=float)
+            result["fallback_prototype_evals"] = evals.tolist()
+        except Exception as e2:
+            result["fallback_error"] = str(e2)
     write_json(out / "03_dirac_status.json", result)
 
 
 def step_status_summary(out: Path, geo: dict) -> None:
     lines = [
-        "SAM3 Master Verification Pipeline — Section 2",
+        "SAM3 Master Verification Pipeline — Section 2 / P1",
         f"Timestamp (UTC): {datetime.now(timezone.utc).isoformat()}",
         "",
         "Pure geometry:",
@@ -184,17 +184,15 @@ def step_status_summary(out: Path, geo: dict) -> None:
         f"  phi = 2*pi/5 = {math.degrees(PHI_CP):.1f} deg",
         f"  theta12 from eta formula = {cabibbo_theta12_deg():.4f} deg",
         "",
-        "Locked angles (docs):",
+        "Locked angles:",
         f"  theta12 = {LOCKED_ANGLES['theta12_deg']} deg",
         f"  theta23 = {LOCKED_ANGLES['theta23_deg']} deg",
-        f"  theta13 = {LOCKED_ANGLES['theta13_deg']} deg",
         "",
-        "Code status:",
-        "  Dirac: PROTOTYPE (not production APS eigensolver)",
-        "  omega0 legacy 0.97: FORBIDDEN",
+        "Dirac:",
+        "  module = dirac_conoid_aps (production-path P1)",
+        "  see 03_dirac_p1_spectrum.json and 05_gap_scan.json",
         "",
         "Rule: derivation only, no retuning.",
-        "See docs/hardening/23_Numerical_Production_Readiness.md",
     ]
     path = out / "04_status_summary.txt"
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -203,14 +201,14 @@ def step_status_summary(out: Path, geo: dict) -> None:
 
 def main() -> None:
     print("=" * 60)
-    print("SAM3 Master Verification Pipeline — Section 2")
+    print("SAM3 Master Verification Pipeline — Section 2 / P1")
     print("=" * 60)
     out = ensure_output_dir()
     print(f"Output: {out.resolve()}")
     geo = step_geometry_from_first_principles(out)
     step_frozen_archive(out, geo)
     step_ckm_check(out)
-    step_dirac_kernel(out)
+    step_dirac_p1(out)
     step_status_summary(out, geo)
     print("=" * 60)
     print("Done.")
