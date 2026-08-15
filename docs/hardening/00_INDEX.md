@@ -26,10 +26,14 @@
 | [20_Seeley_DeWitt_Expanded_Derivation.md](20_Seeley_DeWitt_Expanded_Derivation.md) | **Locked:** expanded a₂/a₄ → G_N + Higgs class |
 | [21_Spectral_Triple_Axioms_Noncompact_DualZero.md](21_Spectral_Triple_Axioms_Noncompact_DualZero.md) | **Locked:** axioms C1–C8 + residual map |
 | [22_Lorentzian_Reconstruction_Expanded.md](22_Lorentzian_Reconstruction_Expanded.md) | **Locked:** Lorentzian residual + L1–L5 upgrade path |
-| [23_Numerical_Production_Readiness.md](23_Numerical_Production_Readiness.md) | **Partial lock:** pipeline + omega0 policy; APS production residual |
+| [23_Numerical_Production_Readiness.md](23_Numerical_Production_Readiness.md) | Pipeline + omega0 policy |
+| [24_Production_Dirac_P1_Lock.md](24_Production_Dirac_P1_Lock.md) | Production-path Dirac P1 |
+| [25_Section2_Complete_Lock_Status.md](25_Section2_Complete_Lock_Status.md) | **§2 complete lock** |
+| [26_Precision_Phenomenology_Residuals.md](26_Precision_Phenomenology_Residuals.md) | **§3 residual map locked** |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
-**Foundational §1 (1a–1d):** complete.  
-**§2 Numerical production readiness:** partial (constants + pipeline + omega0 cleanup done; production APS = residual P1–P4).  
-**Next:** §3 precision phenomenology residuals, or §4 RH (already disciplined).
+**§1 Foundational:** complete.  
+**§2 Numerical production:** complete (P1–P4).  
+**§3 Precision phenomenology:** residual map locked.  
+**Next:** §4 RH direction.
