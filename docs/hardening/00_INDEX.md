@@ -19,10 +19,10 @@
 | [30_Exhaustive_Precision_Continuation.md](30_Exhaustive_Precision_Continuation.md) | Exhaustive continuation summary |
 | [31_SingularVector_Theta13_and_2I_Eta.md](31_SingularVector_Theta13_and_2I_Eta.md) | Singular-vector θ13 + derived 2I η |
 | [32_Continuum_Eta_HeatKernel_Breakthrough.md](32_Continuum_Eta_HeatKernel_Breakthrough.md) | Continuum η heat-kernel law, mix=½−cos(2π/5), RMS 0.008 |
-| [33_Unification_VLQ_Precision_Path.md](33_Unification_VLQ_Precision_Path.md) | **Unification: VL_Q thresholds, residual ∼2.6%, M_X=Λ₀, proton-safe** |
+| [33_Unification_VLQ_Precision_Path.md](33_Unification_VLQ_Precision_Path.md) | Unification: VL_Q thresholds, residual ∼2.6%, M_X=Λ₀ |
+| [34_AF_Prime_Unified_Layer.md](34_AF_Prime_Unified_Layer.md) | **AF′=M₂(ℍ)⊕M₄(ℂ), projective break, v′, Seeley traces** |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
 **Ordered program (§1–§4): COMPLETE.**  
-**Precision continuation: docs 28–32.**  
-**Unification precision path: doc 33 (August 2026).**
+**Precision + unification + AF′ layer: docs 28–34 (August 2026).**
