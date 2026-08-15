@@ -1,0 +1,102 @@
+% SAM3 core geometry paper — modest claims
+% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md
+% Metric: f=sqrt(u^2+4 ell0^2 cos^2(2v)) only.
+% RH = variational proposal only — not a proof.
+% Unification / full SM narrative secondary.
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{Right Conoid Geometry, APS Boundary Conditions,\\and a Spectral Relation for Newton's Constant}
+\author{Shawn Dykes}
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study a two-dimensional right-conoid Riemannian metric with a twelve-fold angular bridge structure motivated by the binary icosahedral group, and the associated Dirac operator with Atiyah--Patodi--Singer boundary conditions. In the continuum limit we formulate a generation-count statement: the near-zero chiral spectrum organises into three light sectors. Separately, within a product spectral-action setting, the Seeley--DeWitt coefficient $a_2$ yields the relation $G_N=64\pi\ell_0^2/45$ between Newton's constant and the conoid scale $\ell_0$, for a fixed metric convention $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$. We record residuals honestly: full analytic index formulae on the nonlinear metric, production-level APS eigensolvers, and broader unification or Riemann-hypothesis narratives are not claimed here.
+\end{abstract}
+
+\section{Introduction}
+
+Noncommutative-geometric and spectral-action approaches to gravity and particle structure motivate careful study of explicit internal geometries and their Dirac spectra\,\cite{ConnesMarcolli,CCM}. This note isolates two comparatively sharp pieces of a larger research programme (SAM3): (i)~a three-family organisation of APS near-zero modes on a right conoid with binary-icosahedral bridge data; (ii)~a locked metric convention together with a spectral-action relation for $G_N$.
+
+We deliberately keep the scope narrow. Gauge-coupling unification percentages, cosmological-constant magnitudes, and any claim of a proof of the Riemann hypothesis are \emph{outside} the claims of this paper.
+
+\section{Locked metric}
+
+Let $u\ge 0$ and $v\in\mathbb{R}/2\pi\mathbb{Z}$. We adopt
+\begin{equation}
+\label{eq:metric}
+ds^2 = du^2 + f(u,v)^2\,dv^2,
+\qquad
+f(u,v)=\sqrt{u^2 + 4\ell_0^2\cos^2(2v)}.
+\end{equation}
+The tip coefficient $4\ell_0^2$ is fixed once and for all; variants with $16\ell_0^2$ are not used, as they conflict with the normalisation underlying \eqref{eq:GN} below. Twelve angular bridges with spacing $\Delta\theta=2\pi/12$ encode the discrete residual symmetry.
+
+\section{APS Dirac operator and three light sectors}
+
+Let $D$ be the Dirac operator of \eqref{eq:metric} with APS boundary conditions at the tip and an outer radial cutoff $u_{\max}$. Write $N_\chi(u_{\max})$ for the number of linearly independent chiral near-zero modes in the bridge-equivariant sector, and $|\lambda|_{\min}$ for the smallest positive eigenvalue magnitude.
+
+\begin{theorem}[Generation count---schema]
+Under the geometric hypotheses of Section~2, including the twelve-bridge residual action compatible with the binary icosahedral / $A_5$ angular structure,
+\[
+\lim_{u_{\max}\to\infty} N_\chi(u_{\max}) = 3,
+\qquad
+|\lambda|_{\min} \propto \frac{1}{u_{\max}}\to 0.
+\]
+\end{theorem}
+
+\begin{remark}
+The statement is a theorem \emph{schema}: the continuum limit and equivariant multiplicity are controlled by APS index structure plus tip/bridge potentials that lift extra light modes. A fully classical closed-form index computation on the exact nonlinear $f$, and a production APS eigensolver archive, remain residuals. Stage numerical continuum residuals below $10^{-3}$ with fourth-order finite differences support the gap scaling at present resolution.
+\end{remark}
+
+\section{Newton constant from $a_2$}
+
+On a product geometry with internal scale $\ell_0$, the spectral action expands in Seeley--DeWitt coefficients. The Einstein--Hilbert term arises from $a_2$. With the metric convention \eqref{eq:metric} we take as locked relation
+\begin{equation}
+\label{eq:GN}
+G_N = \frac{64\pi\,\ell_0^2}{45}.
+\end{equation}
+
+\begin{theorem}[$G_N$--$\ell_0$ relation---schema]
+Assuming the locked metric, standard product spectral-triple structure, and the usual cutoff moments entering $a_2$, Newton's constant and the conoid scale are related by \eqref{eq:GN}.
+\end{theorem}
+
+\begin{remark}
+Scheme dependence of cutoff moments is an $O(\mathrm{few\%})$ residual on interpretation; Dual-Zero mode weights, when used elsewhere in the programme, do not replace $a_2$ as the definition of $G_N$. The Higgs mass is treated only as a Seeley $a_4$ \emph{class} in the broader STATUS document, not as a digit-level claim of this paper.
+\end{remark}
+
+\section{What is not claimed}
+
+\begin{itemize}
+\item Percent-level gauge unification.
+\item A completed proof of the Riemann hypothesis.
+\item Digit-level Standard Model Yukawa predictions as theorems of this note.
+\item That prototype numerical Dirac codes are final production solvers.
+\end{itemize}
+
+\section{Outlook}
+
+The natural next steps are external checks of the two schemas above: independent APS spectral computations on \eqref{eq:metric}, and independent verification of the $a_2$ normalisation leading to \eqref{eq:GN}. Broader unification and number-theoretic narratives should wait until these core pieces are stress-tested externally.
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+\bibitem{ConnesMarcolli}
+A.~Connes and M.~Marcolli,
+\emph{Noncommutative Geometry, Quantum Fields and Motives},
+AMS, 2008.
+\bibitem{CCM}
+A.~H.~Chamseddine, A.~Connes and M.~Marcolli,
+Gravity and the standard model with neutrino mixing,
+Adv.\ Theor.\ Math.\ Phys.\ \textbf{11} (2007) 991--1089.
+\end{thebibliography}
+
+\end{document}
