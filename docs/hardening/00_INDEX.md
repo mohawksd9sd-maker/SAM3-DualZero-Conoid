@@ -22,8 +22,9 @@
 | [16_Frozen_Numerical_Archive.md](16_Frozen_Numerical_Archive.md) | **Locked:** full frozen number archive |
 | [17_Lorentzian_and_RH_Residual_Discipline.md](17_Lorentzian_and_RH_Residual_Discipline.md) | **Locked:** Lorentzian + RH residual discipline |
 | [18_DualZero_Definition_Lock.md](18_DualZero_Definition_Lock.md) | **Locked:** Dual-Zero rules, geometric ω₀ |
-| [19_Three_Generations_Expanded_Derivation.md](19_Three_Generations_Expanded_Derivation.md) | **Locked:** expanded 3-generation derivation + residual map |
+| [19_Three_Generations_Expanded_Derivation.md](19_Three_Generations_Expanded_Derivation.md) | **Locked:** expanded 3-generation derivation |
+| [20_Seeley_DeWitt_Expanded_Derivation.md](20_Seeley_DeWitt_Expanded_Derivation.md) | **Locked:** expanded a₂/a₄ → G_N + Higgs class |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
-**Foundational closure progress:** 1a (three generations expanded) complete → next 1b Seeley–DeWitt line-by-line.
+**Foundational closure progress:** 1a and 1b complete → next 1c spectral triple axioms (non-compact + Dual-Zero).
