@@ -24,7 +24,8 @@
 | [18_DualZero_Definition_Lock.md](18_DualZero_Definition_Lock.md) | **Locked:** Dual-Zero rules, geometric ω₀ |
 | [19_Three_Generations_Expanded_Derivation.md](19_Three_Generations_Expanded_Derivation.md) | **Locked:** expanded 3-generation derivation |
 | [20_Seeley_DeWitt_Expanded_Derivation.md](20_Seeley_DeWitt_Expanded_Derivation.md) | **Locked:** expanded a₂/a₄ → G_N + Higgs class |
+| [21_Spectral_Triple_Axioms_Noncompact_DualZero.md](21_Spectral_Triple_Axioms_Noncompact_DualZero.md) | **Locked:** axioms C1–C8 + residual map |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
-**Foundational closure progress:** 1a and 1b complete → next 1c spectral triple axioms (non-compact + Dual-Zero).
+**Foundational closure progress:** 1a–1c complete → next 1d Lorentzian reconstruction.
