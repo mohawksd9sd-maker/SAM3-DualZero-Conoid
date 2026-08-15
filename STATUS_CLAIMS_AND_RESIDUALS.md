@@ -1,11 +1,15 @@
-# SAM3 — Claims vs Residuals (Hardened Status)
+# SAM3 — Claims vs Residuals (SINGLE SOURCE OF TRUTH)
 
-**Date:** August 2026 (updated after Priorities 1–6 + secondary 1–3)  
-**Purpose:** Clear separation between geometrically derived results and remaining residuals.  
+**Date:** August 2026  
+**Role:** Executive claim map. If any paper or note conflicts with this file, **this file wins**.  
 **Rule:** Derivation only, no experimental tuning, no overclaim.
 
-**Authoritative detail:** [`docs/hardening/`](docs/hardening/00_INDEX.md)  
-**Frozen numbers:** [`docs/hardening/16_Frozen_Numerical_Archive.md`](docs/hardening/16_Frozen_Numerical_Archive.md)
+**Detail locks:** [`docs/hardening/`](docs/hardening/00_INDEX.md)  
+**Metric / ω₀ authority:** [`docs/hardening/35_Metric_Curvature_Omega0_Authoritative.md`](docs/hardening/35_Metric_Curvature_Omega0_Authoritative.md)  
+**Dual-Zero authority:** [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)  
+**Production numbers:** [`docs/hardening/36_Production_Numerical_Archive.md`](docs/hardening/36_Production_Numerical_Archive.md)  
+**Regulator comparison:** [`docs/hardening/37_Regulator_Comparison_DZ_vs_HeatKernel_Zeta.md`](docs/hardening/37_Regulator_Comparison_DZ_vs_HeatKernel_Zeta.md)  
+**Lepton confrontation:** [`docs/hardening/38_Lepton_Predictions_Oscillation_0nubb.md`](docs/hardening/38_Lepton_Predictions_Oscillation_0nubb.md)
 
 ---
 
@@ -13,84 +17,79 @@
 
 | Result | Origin | Confidence |
 |--------|--------|------------|
-| Dual-Zero regulator \( \varepsilon(n)=\omega_0 (-1)^n n^{-n} \) | Analytic + information conservation | High |
-| Geometric \( \omega_0 = (R_{\rm curv}/D_{\rm bridge})^{4/13}\approx 0.927 \) | Conoid curvature / bridge data | High |
-| Exactly three chiral generations | Index + continuum gap \( \to 0 \) under APS | High |
-| Continuum defect (locus = tip max, width \( = a\Delta\theta \)) | Tip geometry + bridge angle | High |
-| Defect overlaps \( \eta_{12}\approx 0.861 \), \( \eta_{13}\approx 0.544 \), \( \eta_{23}\approx 0.479 \) | Continuum integrals | High |
-| Cabibbo \( \theta_{12}\approx 12.85^\circ \) | \( \eta_{12}\times\pi/12 \) + \( \mathcal{A}_F \) | High |
-| CKM \( \theta_{23}\approx 2.36^\circ \) | Casimir-weighted defect (doc 07, 09) | **Locked** |
-| CP phase \( \phi=+2\pi/5 \) | \( E_3 \) + \( I^2=-1 \) + tip orientation (doc 08) | **Locked** |
-| \( \delta_{\rm CKM}\sim 70^\circ \), \( J\sim 3\times 10^{-5} \) | \( \phi \) + locked real angles (doc 11) | **Locked** (consistency precision) |
-| Casimir eigenvalues \( C_g=(6/5,1,4/5) \) and tip amplitudes | 2I-module + conoid potentials (doc 09) | **Locked** |
-| Continuum Dirac residual \( <10^{-3} \); gap \( \propto 1/u_{\rm max}\to 0 \) | 4th-order FD + APS (doc 10) | **Locked** |
-| Explicit \( D_F \) on \( E_3 \); complex CKM as geometric output | \( \mathcal{A}_F \) + locked magnitudes/phase (doc 11) | **Locked** |
-| Light up mass factor resolved | \( \kappa_u/\kappa_d=1/2 \) intertwiner norm (doc 14) | **Locked** |
-| \( G_N=64\pi\ell_0^2/45 \) | Seeley–DeWitt \( a_2 \) (doc 13) | **Locked** |
-| Higgs mass in 125 GeV class (\( \approx 124\)–\(127\) GeV band) | Geometric \( a_4 \) (doc 13) | **Locked** (class, not digit) |
-| Large \( \delta_{\rm PMNS} \) (\( \sim 200^\circ\)–\(270^\circ \) band) | Same module-wide \( \phi \) (doc 15) | **Locked** (band) |
+| Dual-Zero $\varepsilon(n)=\omega_0(-1)^n n^{-n}$ | Analytic + information conservation | High |
+| Geometric $\omega_0=(R_{\rm curv}/D_{\rm bridge})^{4/13}\approx 0.927$ | Doc 35 + 18 | High |
+| Exactly three chiral generations | Index + continuum gap $\to 0$ under APS | High |
+| Continuum defect $\eta_{12}\approx 0.861$, $\eta_{13}\approx 0.544$, $\eta_{23}\approx 0.479$ | Docs 32, 36 | High |
+| Cabibbo $\theta_{12}\approx 12.85^\circ$ | $\eta_{12}\times\pi/12$ + $\mathcal{A}_F$ | High |
+| CKM $\theta_{23}\approx 2.36^\circ$ | Casimir-weighted defect | **Locked** |
+| CP phase $\phi=+2\pi/5$ | $E_3$ + $I^2=-1$ + tip orientation | **Locked** |
+| $\delta_{\rm CKM}\sim 70^\circ$, $J\sim 3\times 10^{-5}$ | $\phi$ + locked angles | **Locked** (consistency) |
+| $C_g=(6/5,1,4/5)$ | 2I-module | **Locked** |
+| Continuum Dirac residual $<10^{-3}$ | 4th-order FD + APS | **Locked** |
+| $\kappa_u/\kappa_d=1/2$ | Intertwiner norm | **Locked** |
+| $G_N=64\pi\ell_0^2/45$ | Seeley $a_2$ | **Locked** |
+| Higgs mass 125 GeV **class** ($\approx 124$–$127$ GeV) | Geometric $a_4$ | **Locked class** |
+| Large $\delta_{\rm PMNS}$ ($\sim 200^\circ$–$270^\circ$ band) | Module-wide $\phi$ | **Locked band** |
 
 ---
 
 ## 2. Residual / approximate (not overclaimed)
 
-| Item | Current status | What remains open |
-|------|----------------|-------------------|
-| Sub-degree \( \delta_{\rm CKM} \) / percent-level \( J \) | Consistent at present angle precision | Limited by residual \( \theta_{13} \) and convention alignment |
-| Sub-GeV Higgs mass | Class prediction with \( \sim 2 \) GeV band | Full warped \( a_4 \) + radiative matching |
-| Gauge unification | Geometric floor **~7%** | New geometric threshold required for improvement; **percent-level not claimed** (doc 12) |
-| Cosmological constant magnitude | Mechanism (warp / residual vacuum) present | Final magnitude lock + modulus kinetic normalization |
-| Sharp degree-level \( \delta_{\rm PMNS} \) | Large phase locked; precise value band-only | RH hierarchy detail |
-| Production 2D APS eigensolver in `code/` | Continuum claims locked; kernels still prototype | Engineering pipeline archive |
-| Lorentzian spectral triple (full causality theorem) | Standard Wick + KO recovery | Full Lorentzian reconstruction not claimed complete (doc 17) |
-| Riemann Hypothesis | Variational / information-current proposal | **Not a proof** (doc 17) |
+| Item | Status | Open |
+|------|--------|------|
+| Sub-degree $\delta_{\rm CKM}$ / percent-level $J$ | Consistent at present precision | $\theta_{13}$ residual |
+| Sub-GeV Higgs digit | Class only | Warped $a_4$ + matching |
+| Gauge unification | Geometric floor **~$7\%$**; VL_Q research path ~$2.6\%$ (docs 33–34) | Percent-level **not** claimed as baseline |
+| $M_X=\mu_{\rm meet}$ | **Not derived** | AF′ layer uses projective break; $M_X=\Lambda_0$ if vectors exist |
+| Cosmological constant magnitude | Mechanism present | Magnitude lock |
+| Sharp $\delta_{\rm PMNS}$, digit $m_{\beta\beta}$ | Bands only (doc 38) | RH hierarchy + Majorana phases |
+| Riemann Hypothesis | Variational proposal | **Not a proof** |
+| Lorentzian full causality theorem | Wick + KO recovery | Full reconstruction residual |
 
 ---
 
-## 3. Continuum Dirac & zero-mode sector
+## 3. Unification (disciplined)
 
-- APS boundary conditions; \( |\lambda|_{\min}\propto 1/u_{\rm max}\to 0 \) ⇒ continuum \( L^2 \) zero modes.
-- Continuum residual of 4th-order FD below \( 10^{-3} \) at moderate resolution (manufactured residual tests).
-- Pure kinetic near-zero modes on large domains are threshold-like; generation localization uses derived Casimir radial potentials (doc 09).
+- Baseline geometric KK floor: **~$7\%$** (no percent-level claim).
+- Research path (doc 33): VL_Q at $M_*=\sqrt{\Lambda_0 m_H}$ and $12M_*$ → two-loop residual **~$2.6\%$**.
+- $M_X=\mu_{\rm meet}$ is **not** a SAM3 eigenvalue; forced UV vector scale is $\Lambda_0$ under projective AF′ reading (doc 34).
 
 ---
 
-## 4. Unification
+## 4. Lepton confrontation (doc 38)
 
-- KK thresholds of order \( \Delta\alpha^{-1}\sim O(10) \).
-- Residual relative mismatch after two-loop running ≈ **7%**.
-- **Percent-level unification is not claimed.**
+- $\delta_{\rm PMNS}$ large ($200^\circ$–$270^\circ$): falsifiable if data demand CP conservation.
+- Prefer normal hierarchy from tip weights; $m_{\beta\beta}$ few–$O(10)$ meV class under NH — **not** a digit claim.
+- Inverted hierarchy would pressure tip-ordering assumptions.
 
 ---
 
 ## 5. What the model is (and is not)
 
-**Is:**
-- A coherent geometric research program deriving SM *architecture* and quantitative flavor relations (Cabibbo, \( \theta_{23} \), CP phase structure, light-up resolution) from one conoid + Dual-Zero + \( \mathcal{A}_F \) object.
-- Falsifiable on lepton-sector observables (\( m_{\beta\beta} \), \( \delta_{\rm PMNS} \), \( \sum m_\nu \)).
+**Is:** Geometric research program for SM architecture + quantitative flavor (Cabibbo, $\theta_{23}$, CP structure) from conoid + Dual-Zero + $\mathcal{A}_F$.
 
-**Is not (yet):**
-- A finished percent-level Theory of Everything.
-- A proof of the Riemann Hypothesis.
-- Free of all residual uncertainty (unification floor, CC magnitude, sub-GeV Higgs, production code archive).
+**Is not (yet):** Finished percent-level TOE; RH proof; free of all residuals.
 
 ---
 
-## 6. Supersession note
+## 6. Supersession (mandatory)
 
-Older statements in `papers/` (Flagship, v4.22, Papers 08/19/22, etc.) that claim exact \( m_H=125.1 \) GeV, percent-level unification, RH-as-proof, or a fully locked cosmological constant magnitude are **superseded** by this status file and by `docs/hardening/`.
+Older statements in `papers/` claiming exact $m_H=125.1$ GeV, percent-level unification as baseline, RH-as-proof, or $M_X=\mu_{\rm meet}$ as derived are **superseded** by this file and `docs/hardening/`.
+
+See [`papers/SUPERSESSION.md`](papers/SUPERSESSION.md).
 
 ---
 
-## 7. Completion of planned hardening path
+## 7. Hardening path status
 
 | Block | Status |
 |-------|--------|
-| Primary Priorities 1–6 | Complete and locked |
-| Secondary 1 (lepton phase) | Complete and locked |
-| Secondary 2 (frozen archive) | Complete and locked |
-| Secondary 3 (Lorentzian + RH discipline) | Complete and locked |
+| Priorities 1–6 + secondary 1–3 | Complete |
+| Docs 28–32 precision / $\eta$ | Complete |
+| Docs 33–34 unification / AF′ | Research layer complete |
+| Docs 35–38 authority / archive / regulators / leptons | Complete (this update) |
 
 ---
 
-*Hardening rule in force: derivation only, no experimental tuning, no overclaim.*
+*SSOT — derivation only, no tuning, no overclaim.*
