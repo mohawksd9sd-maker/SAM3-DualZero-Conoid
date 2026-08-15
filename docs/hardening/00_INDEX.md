@@ -14,9 +14,12 @@
 | [23–25](23_Numerical_Production_Readiness.md) | Numerical production / §2 complete |
 | [26_Precision_Phenomenology_Residuals.md](26_Precision_Phenomenology_Residuals.md) | §3 residual map |
 | [27_RH_Variational_Residual_Lock.md](27_RH_Variational_Residual_Lock.md) | §4 RH residual only |
-| [28_Precision_Push_Derivation_Only.md](28_Precision_Push_Derivation_Only.md) | **Precision push: θ13 chain, CKM δ/J reconstruction** |
+| [28_Precision_Push_Derivation_Only.md](28_Precision_Push_Derivation_Only.md) | Precision push: θ13 chain, CKM δ/J |
+| [29_Priority_Stack_Results_Stress_Suggestions.md](29_Priority_Stack_Results_Stress_Suggestions.md) | Priority stack results + stress |
+| [30_Exhaustive_Precision_Continuation.md](30_Exhaustive_Precision_Continuation.md) | Exhaustive continuation summary |
+| [31_SingularVector_Theta13_and_2I_Eta.md](31_SingularVector_Theta13_and_2I_Eta.md) | **Singular-vector θ13 + derived 2I η** |
 
 Rule: derivation only, no experimental tuning, no overclaim.
 
 **Ordered program (§1–§4): COMPLETE.**  
-**Precision push (completable items): doc 28 + `code/ckm_from_geometry.py`.**
+**Precision continuation: docs 28–31 + `code/theta13_biunitary_derivation.py`, `eta_2I_derived.py`, `rh_hierarchy_freeze.py`.**
