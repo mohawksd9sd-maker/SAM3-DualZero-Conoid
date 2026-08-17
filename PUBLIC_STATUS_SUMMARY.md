@@ -1,43 +1,44 @@
 # SAM3 — Public Status Summary
 
 **Last update:** August 2026  
-**Pure math:** [`docs/math_notes/15_Pure_Math_Completion_Status.md`](docs/math_notes/15_Pure_Math_Completion_Status.md) · Notes XII–XXII
+**Pure math status:** [`docs/math_notes/15_Pure_Math_Completion_Status.md`](docs/math_notes/15_Pure_Math_Completion_Status.md)
 
 ---
 
-## Locked claims
+## Locked
 
 | Result | Statement |
 |--------|-----------|
 | Metric | $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ |
-| Continuous symmetry | **$C_4$ exact** (not $A_5$ isometries) |
-| 3 generations | APS + $m_\rho$ + **L4 package** (tip edge index) |
-| $G_N$ | $\propto\ell_0^2$ **proved**; $64\pi\ell_0^2/45$ convention-locked |
+| Symmetry | **$C_4$ exact** |
+| 3 generations | APS + $m_\rho$ + L4 package (Notes XII–XXIV) |
+| $G_N$ | $\propto\ell_0^2$ **proved**; prefactor convention-locked |
 | $\omega_0$ | $\approx 0.927$ geometric |
-| CKM structure | $\theta_{12}\approx 12.85^\circ$, $\phi=2\pi/5$ |
-| Higgs | 125 GeV **class** |
+| CKM / Higgs | structure / class as in STATUS |
 
 ---
 
-## Pure math (honest)
+## Pure math completeness
 
-**Proved in-repo:** tip geometry, $C_4$ equivariance, barriers, $m_\rho$ dictionary, link spectrum (anti-periodic invertible), volume $C_0$, $G_N\propto\ell_0^2$, H_spin construction.
+Internal structure for **generations** and **$G_N\propto\ell_0^2$** is complete at packaging level:
 
-**L4:** packaged theorem — model geometry + invertibility proved here; $\delta\to 0$ stability from Melrose $b$-calculus / classical APS / conical Dirac theory (cited).
+- Barriers, $m_\rho$, $P_{\mathrm{light/heavy}}$ verified  
+- Link spectrum invertible under APS spin choice  
+- L4 referee checklist maps every hypothesis to Melrose/APS/conic theory  
+- $G_N$ factor table makes $64\pi/45$ auditable  
 
-**Rejected:** $A_5$ as continuous isometries of the locked metric.
+**Not claimed:** a new edge-calculus monograph; production HPC Dirac solver; absolute uniqueness of the geometry.
 
 ---
 
 ## Still residual
 
-Production APS numerics · unification ~7% floor · CC magnitude · full QG · RH **proposal only**
+Unification ~7% floor · CC magnitude · full QG · RH proposal only · external peer review
 
 ---
 
-## Read order
+## Read
 
-1. This page  
-2. Math note 15 (status)  
-3. Notes XII–XXII  
-4. `python code/reproduce_status_locked.py`
+1. This page → note 15 → notes XII–XXIV  
+2. `python code/prho_projectors.py`  
+3. `python code/volume_regularisation.py`

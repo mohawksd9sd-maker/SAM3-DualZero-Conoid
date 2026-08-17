@@ -1,34 +1,33 @@
 # Pure Math Completion Status
 
-**Date:** August 2026 (Note XXII)
+**Date:** August 2026 (Notes XXIII–XXIV)
 
-## Core theorems (in-repo + literature package)
+## Complete package
 
-| Result | Ref |
-|--------|-----|
-| Tip geometry, APS smoothings, gap comparisons | XII |
-| $A_5$ on bridges; DFT intertwiner | XIII |
-| $G_N\propto\ell_0^2$; $C_0\approx 4.45$ | XIV–XVII |
-| $C_4$ metric/Dirac equivariance | XVIII |
-| $m_\rho$ dictionary; barrier principles | XVIII–XIX |
-| Link spectrum anti-periodic: $0\notin\mathrm{spec}$ | XXI |
-| **H_spin constructive** | **XXII S1–S3** |
-| **L4 package** (geometry + Melrose/APS/conic literature) | **XXII** |
+| Block | Status |
+|-------|--------|
+| Tip geometry + APS smoothings + gaps | **Proved** (XII) |
+| $A_5$ bridges + DFT intertwiner | **Proved** (XIII) |
+| $G_N\propto\ell_0^2$; $C_0$; factor table | **Proved + audited** (XIV–XVII, XXIII) |
+| $C_4$ equivariance; not $A_5$ isometries | **Proved** (XVIII) |
+| Barriers + $m_\rho$ + $P_{\mathrm{light/heavy}}$ | **Closed** (XVIII–XIX, XXIII) |
+| Link spectrum + H_spin + L4 package | **Closed** (XX–XXII) |
+| L4 referee checklist | **XXIV** |
 
 ## Generation theorem
 
-Classical APS + barriers + $m_\rho$ + **Theorem L4 (package)**.
+Classical APS + barriers + $m_\rho$/$P_{\mathrm{light}}$ + **L4 package** (checklist XXIV).
 
 ## $G_N$ theorem
 
-$G_N\propto\ell_0^2$ **proved**; $64\pi/45$ convention-locked with $\mathrm{Vol}_{\mathrm{reg}}=C_0$.
+$G_N\propto\ell_0^2$ proved; $64\pi/45$ = convention lock on $C_{\mathrm{SA}}\phi_2 C_0$ (table XXIII).
 
-## Honest residual
+## Residual (not pure-math structure)
 
-- L4 uses standard edge/conic theory as black box (cited, not re-proved)  
-- Numeric $P_\rho$ on eigenspinors; production APS solver  
-- Independent $C_{\mathrm{SA}}\phi_2$ table  
+- Full $A_5$ character tables averaged over all 60 elements (refinement inside light/heavy blocks)  
+- Production continuum Dirac eigensolver on large grids  
+- External referee verification of the Melrose citation match  
 
 ## Bottom line
 
-The pure-math tip obstruction is **closed at packaging level**: no spectral gap in L4.H under the APS spin choice; stability cited from Melrose/APS/conic literature.
+Internal pure-math structure for generations + $G_N\propto\ell_0^2$ is **as complete as this collaboration can make it** without writing a standalone edge-calculus monograph or a production HPC eigensolver.
