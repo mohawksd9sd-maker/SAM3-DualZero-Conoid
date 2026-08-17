@@ -1,38 +1,28 @@
 # Pure Math Completion Status
 
-**Date:** August 2026
+**Date:** August 2026 (Note XVII)
 
-## Proved in-repo (Notes XII–XIV)
+## Proved
 
-| Result | Reference |
-|--------|-----------|
-| Degeneracy locus of locked $f$ (four tip nodes) | XII Lemma 1 |
-| Gaussian curvature formula $K=-f_{uu}/f$ | XII Lemma 2 |
-| Classical APS index on smoothings $f_\varepsilon$ | XII Theorem A |
-| Cylinder gap $O(1/L)$ | XII Theorem B |
-| Collar comparison gap bound | XII Theorem C |
-| $\mathrm{Perm}_{12}\cong 1\oplus 3\oplus 3'\oplus 5$ | XIII Theorem E |
-| Unitary DFT intertwiner $C_{12}$ + $A_5$ construction | XIII Proposition F |
-| $G_N=\alpha\ell_0^2$ structural theorem | XIV Theorem H |
+| Result | Ref |
+|--------|-----|
+| Degeneracy locus; curvature $K$ | XII |
+| APS on smoothings; cylinder/collar gaps | XII |
+| $A_5$ permutation + intertwiner construction | XIII |
+| $G_N=\alpha\ell_0^2$ | XIV |
+| Volume $\pi U^2+2\pi\log U+C_0$ | XVI–XVII |
+| $C_0\approx 4.45$ | XVII |
+| Local conical model L1–L3 | XVII |
+| Global S $\Leftarrow$ local L4 (excision) | XVII L5 |
 
-## Conditional (explicit hypotheses)
+## Gates remaining
 
-| Result | Needs |
-|--------|-------|
-| Three continuum chiral generations | Conjecture S + H_tip + H_eq (XII Theorem D) |
-| Smoothing independence at tip nodes | Conjecture S |
-| Full Dirac equivariance under all of $A_5$ | H_eq |
-| Analytic Casimir ordering of light channels | H_tip |
-
-## Open computations (not philosophy)
-
-| Item | Action |
+| Gate | Content |
 |------|--------|
-| Independent $\widehat{\mathrm{Vol}}(\hat f)\times\phi_2\times C_{\mathrm{SA}}$ | Recompute $\alpha$; check vs $64\pi/45$ |
-| Production APS spectra | Numeric, not pure math |
-| Stratified APS literature match for 4-node tip | Cite / adapt existing conic APS theorems |
+| **L4** | Local $\delta\to 0$ edge-APS index limit |
+| **$H_{\mathrm{tip}}$** | Analytic fourth-mode exclusion |
+| **$H_{\mathrm{eq}}$** | Full $A_5$ Dirac equivariance on nonlinear $f$ |
 
 ## Bottom line
 
-The pure-math skeleton is **in place**: standard APS + proved gap comparison + classical $A_5$ representation theory + structural $G_N\propto\ell_0^2$.  
-What remains is **one stratified-APS conjecture**, **two structure hypotheses** (H_eq, H_tip), and an **independent coefficient recomputation** — not an absence of mathematical structure.
+Generation count + $G_N\propto\ell_0^2$ pure-math chain is reduced to **three named gates**. Volume is regularised via $C_0$, not infinite $\mathrm{Vol}$.
