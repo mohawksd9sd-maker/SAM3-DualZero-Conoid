@@ -1,28 +1,35 @@
 # Pure Math Completion Status
 
-**Date:** August 2026 (Note XVII)
+**Date:** August 2026 (Note XVIII)
 
-## Proved
+## Proved (selected)
 
 | Result | Ref |
 |--------|-----|
-| Degeneracy locus; curvature $K$ | XII |
-| APS on smoothings; cylinder/collar gaps | XII |
-| $A_5$ permutation + intertwiner construction | XIII |
-| $G_N=\alpha\ell_0^2$ | XIV |
-| Volume $\pi U^2+2\pi\log U+C_0$ | XVI–XVII |
-| $C_0\approx 4.45$ | XVII |
-| Local conical model L1–L3 | XVII |
-| Global S $\Leftarrow$ local L4 (excision) | XVII L5 |
+| Tip degeneracy, curvature, APS on smoothings, gap comparison | XII |
+| $A_5$ on 12 vertices; DFT intertwiner | XIII |
+| $G_N\propto\ell_0^2$ | XIV |
+| Volume $\pi U^2+2\pi\log U+C_0$; $C_0\approx 4.45$ | XVII |
+| Local conical model L1–L3; S reduced to L4 | XVII |
+| Casimir monotonicity of radial $E_0$ | XVIII T1 |
+| Angular-barrier comparison lifts heavies | XVIII T2 |
+| Metric isometry group contains $C_4$, not $C_{12}$/$A_5$ | XVIII E1 |
+| Exact Dirac equivariance under $C_4$ | XVIII E2 |
 
-## Gates remaining
+## Gates
 
-| Gate | Content |
+| Gate | Status |
 |------|--------|
-| **L4** | Local $\delta\to 0$ edge-APS index limit |
-| **$H_{\mathrm{tip}}$** | Analytic fourth-mode exclusion |
-| **$H_{\mathrm{eq}}$** | Full $A_5$ Dirac equivariance on nonlinear $f$ |
+| **L4** | Edge-APS $\delta\to 0$ — still conjectural |
+| **$H_{\mathrm{tip}}$** | Principles proved; $m_\rho$ assignment residual |
+| **$H_{\mathrm{eq}}$** | Strong form rejected; $C_4$ exact + $A_5$ on bridges |
+
+## Honesty upgrades this round
+
+- Pure Casimir tip **insufficient** for robust 4th-mode gap.  
+- Angular barriers do the lifting.  
+- $A_5$ is **not** an isometry group of the locked continuum metric.
 
 ## Bottom line
 
-Generation count + $G_N\propto\ell_0^2$ pure-math chain is reduced to **three named gates**. Volume is regularised via $C_0$, not infinite $\mathrm{Vol}$.
+Pure math is stricter and more accurate: fewer overclaims, clearer gates.
