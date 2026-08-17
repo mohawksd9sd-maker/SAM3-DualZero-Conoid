@@ -1,35 +1,33 @@
 # Pure Math Completion Status
 
-**Date:** August 2026 (Note XVIII)
+**Date:** August 2026 (Note XIX)
 
-## Proved (selected)
+## Proved / structurally closed
 
 | Result | Ref |
 |--------|-----|
-| Tip degeneracy, curvature, APS on smoothings, gap comparison | XII |
+| Tip geometry, APS smoothings, gap comparison | XII |
 | $A_5$ on 12 vertices; DFT intertwiner | XIII |
-| $G_N\propto\ell_0^2$ | XIV |
-| Volume $\pi U^2+2\pi\log U+C_0$; $C_0\approx 4.45$ | XVII |
-| Local conical model L1–L3; S reduced to L4 | XVII |
-| Casimir monotonicity of radial $E_0$ | XVIII T1 |
-| Angular-barrier comparison lifts heavies | XVIII T2 |
-| Metric isometry group contains $C_4$, not $C_{12}$/$A_5$ | XVIII E1 |
-| Exact Dirac equivariance under $C_4$ | XVIII E2 |
+| $G_N\propto\ell_0^2$; volume $C_0\approx 4.45$ | XIV–XVII |
+| Local conical L1–L3; S $\Leftarrow$ L4 | XVII |
+| Casimir monotonicity; angular barrier comparison | XVIII |
+| Metric $C_4$ isometry + Dirac equivariance | XVIII |
+| **$m_\rho$ dictionary (light $m\le 2$, heavy $m\ge 3$)** | **XIX** |
+| $H_{\mathrm{tip}}$ structural closure | XVIII–XIX |
 
-## Gates
+## Single major analytic gate left
 
-| Gate | Status |
+| Gate | Content |
 |------|--------|
-| **L4** | Edge-APS $\delta\to 0$ — still conjectural |
-| **$H_{\mathrm{tip}}$** | Principles proved; $m_\rho$ assignment residual |
-| **$H_{\mathrm{eq}}$** | Strong form rejected; $C_4$ exact + $A_5$ on bridges |
+| **L4** | Local edge-APS limit $\delta\to 0$ at tip nodes |
 
-## Honesty upgrades this round
+## Secondary residuals
 
-- Pure Casimir tip **insufficient** for robust 4th-mode gap.  
-- Angular barriers do the lifting.  
-- $A_5$ is **not** an isometry group of the locked continuum metric.
+- Explicit $P_\rho$ on numerical Dirac eigenspinors (engineering)  
+- Independent $C_{\mathrm{SA}}\phi_2$ table vs $C_0$  
+- Full edge-calculus citation packaging of L4  
 
 ## Bottom line
 
-Pure math is stricter and more accurate: fewer overclaims, clearer gates.
+Generation theorem is now: **classical APS + proved comparisons + $m_\rho$ dictionary + Conjecture L4**.  
+One analytic conjecture remains at the singular tip.
