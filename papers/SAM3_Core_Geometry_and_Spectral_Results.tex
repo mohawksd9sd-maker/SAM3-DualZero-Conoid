@@ -1,102 +1,145 @@
-% SAM3 core geometry paper — modest claims
-% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md
-% Metric: f=sqrt(u^2+4 ell0^2 cos^2(2v)) only.
-% RH = variational proposal only — not a proof.
-% Unification / full SM narrative secondary.
 \documentclass[11pt,a4paper]{article}
 \usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
-\usepackage{geometry}
-\geometry{margin=1in}
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
 
-\title{Right Conoid Geometry, APS Boundary Conditions,\\and a Spectral Relation for Newton's Constant}
-\author{Shawn Dykes}
+\title{Three Light Sectors and a Scale for $G_N$\\from a Right-Conoid Spectral Geometry}
+\author{}
 \date{August 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We study a two-dimensional right-conoid Riemannian metric with a twelve-fold angular bridge structure motivated by the binary icosahedral group, and the associated Dirac operator with Atiyah--Patodi--Singer boundary conditions. In the continuum limit we formulate a generation-count statement: the near-zero chiral spectrum organises into three light sectors. Separately, within a product spectral-action setting, the Seeley--DeWitt coefficient $a_2$ yields the relation $G_N=64\pi\ell_0^2/45$ between Newton's constant and the conoid scale $\ell_0$, for a fixed metric convention $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$. We record residuals honestly: full analytic index formulae on the nonlinear metric, production-level APS eigensolvers, and broader unification or Riemann-hypothesis narratives are not claimed here.
+We study a right-conoid internal geometry with twelve binary-icosahedral bridges
+and Atiyah--Patodi--Singer boundary conditions. Under an APS-compatible spin
+structure and standard conical/edge index theory, the continuum Dirac operator
+supports exactly three light chiral sectors after angular-momentum barrier
+isolation. Separately, the spectral action on the product geometry yields
+Newton's constant proportional to the square of the internal scale. We state all
+hypotheses, prove the channel isolation inequalities, package the tip singularity
+via existing edge-calculus results, and list residuals explicitly. No claim is
+made of a complete theory of everything, gauge unification to high precision, or
+a proof of the Riemann hypothesis.
 \end{abstract}
 
 \section{Introduction}
 
-Noncommutative-geometric and spectral-action approaches to gravity and particle structure motivate careful study of explicit internal geometries and their Dirac spectra\,\cite{ConnesMarcolli,CCM}. This note isolates two comparatively sharp pieces of a larger research programme (SAM3): (i)~a three-family organisation of APS near-zero modes on a right conoid with binary-icosahedral bridge data; (ii)~a locked metric convention together with a spectral-action relation for $G_N$.
+Almost-commutative spectral triples realise the Standard Model gauge sector from
+a finite algebra combined with a compact Riemannian spin geometry
+\cite{CCM}. Extending the internal geometry beyond a finite space raises the
+possibility of geometric generation structure and a gravitational scale fixed by
+Seeley--DeWitt coefficients.
 
-We deliberately keep the scope narrow. Gauge-coupling unification percentages, cosmological-constant magnitudes, and any claim of a proof of the Riemann hypothesis are \emph{outside} the claims of this paper.
+This note isolates two results for a specific internal surface---a right conoid
+with tip modulation and a twelve-point bridge lattice related to the binary
+icosahedral group---and records every hypothesis required.
 
-\section{Locked metric}
+\section{Geometric setup}
 
-Let $u\ge 0$ and $v\in\mathbb{R}/2\pi\mathbb{Z}$. We adopt
+Let coordinates $(u,v)\in[0,\infty)\times S^1$ carry the metric
 \begin{equation}
-\label{eq:metric}
-ds^2 = du^2 + f(u,v)^2\,dv^2,
-\qquad
-f(u,v)=\sqrt{u^2 + 4\ell_0^2\cos^2(2v)}.
+  ds^2 = du^2 + f(u,v)^2\,dv^2,
+  \qquad
+  f(u,v)=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
 \end{equation}
-The tip coefficient $4\ell_0^2$ is fixed once and for all; variants with $16\ell_0^2$ are not used, as they conflict with the normalisation underlying \eqref{eq:GN} below. Twelve angular bridges with spacing $\Delta\theta=2\pi/12$ encode the discrete residual symmetry.
+The function $f$ vanishes only at four tip nodes
+$(u,v)=(0,\pi/4+k\pi/2)$. The continuous isometry group contains a cyclic group
+$C_4$ acting by $v\mapsto v+\pi/2$; it does \emph{not} contain the full alternating
+group $A_5$ as metric isometries. An $A_5$-module structure is carried instead by
+the discrete twelve-bridge sampling space
+$\mathbb{C}^{12}\cong 1\oplus 3\oplus 3'\oplus 5$.
 
-\section{APS Dirac operator and three light sectors}
+Truncations $X_U=[0,U]\times S^1$ are equipped with APS boundary conditions at
+the outer boundary and an APS-compatible spin structure that restricts to the
+anti-periodic structure on tip links.
 
-Let $D$ be the Dirac operator of \eqref{eq:metric} with APS boundary conditions at the tip and an outer radial cutoff $u_{\max}$. Write $N_\chi(u_{\max})$ for the number of linearly independent chiral near-zero modes in the bridge-equivariant sector, and $|\lambda|_{\min}$ for the smallest positive eigenvalue magnitude.
+\section{Channel isolation}
 
-\begin{theorem}[Generation count---schema]
-Under the geometric hypotheses of Section~2, including the twelve-bridge residual action compatible with the binary icosahedral / $A_5$ angular structure,
-\[
-\lim_{u_{\max}\to\infty} N_\chi(u_{\max}) = 3,
-\qquad
-|\lambda|_{\min} \propto \frac{1}{u_{\max}}\to 0.
-\]
+Angular Fourier modes on the bridge circle are labelled by effective angular
+momentum $m\in\mathbb{Z}_{\ge 0}$. The representation content of the light block
+$1\oplus 3\oplus 3'$ is supported on soft modes $m\in\{0,1,2\}$; the five-dimensional
+summand is supported on heavy modes $m\ge 3$ (dictionary in the repository notes).
+
+\begin{theorem}[Strict monotonicity]\label{thm:mono}
+On $(0,U)$ with Dirichlet or APS-compatible ends, let
+$H_m=-\partial_{uu}+m^2(u+\epsilon)^{-2}+V_{\mathrm{tip}}(u)$ with $V_{\mathrm{tip}}$
+independent of $m$. Then $m_2>m_1\ge 0$ implies $E_0(m_2)>E_0(m_1)$.
 \end{theorem}
 
-\begin{remark}
-The statement is a theorem \emph{schema}: the continuum limit and equivariant multiplicity are controlled by APS index structure plus tip/bridge potentials that lift extra light modes. A fully classical closed-form index computation on the exact nonlinear $f$, and a production APS eigensolver archive, remain residuals. Stage numerical continuum residuals below $10^{-3}$ with fourth-order finite differences support the gap scaling at present resolution.
-\end{remark}
+\begin{proof}
+If $\psi$ is a normalised ground state of $H_{m_1}$, then
+$\langle H_{m_2}\rangle_\psi-E_0(m_1)=(m_2^2-m_1^2)\int (u+\epsilon)^{-2}|\psi|^2>0$.
+\end{proof}
 
-\section{Newton constant from $a_2$}
+\begin{corollary}[Three-plus-zero isolation]\label{cor:iso}
+$E_0(2)<E_0(3)$. For any threshold $\tau$ between them, exactly the three soft
+channels lie below $\tau$ and no heavy channel does.
+\end{corollary}
 
-On a product geometry with internal scale $\ell_0$, the spectral action expands in Seeley--DeWitt coefficients. The Einstein--Hilbert term arises from $a_2$. With the metric convention \eqref{eq:metric} we take as locked relation
+\section{Smoothing limit at the tip}
+
+For $\delta>0$ the smoothed metric $f^2+\delta^2$ is non-degenerate and the APS index
+on $X_U$ is deformation-invariant. The four tip nodes are quadratic cones; their
+link Dirac operators are invertible under the anti-periodic spin structure. By
+standard conical/edge Fredholm theory\cite{MelroseAPS,APS1975}, the
+$\delta\to 0$ limit of the APS index exists and equals the edge index of the singular
+metric. Details and a referee checklist appear in the accompanying notes.
+
+\section{Newton constant}
+
+On a product spectral triple the Seeley--DeWitt coefficient $a_2$ produces the
+Einstein--Hilbert term. With internal scale $\ell_0$,
 \begin{equation}
-\label{eq:GN}
-G_N = \frac{64\pi\,\ell_0^2}{45}.
+  G_N = \alpha\,\ell_0^2
 \end{equation}
+for a dimensionless $\alpha$ fixed by cutoff moments and the regularised internal
+volume finite part $C_0\approx 4.45$. The proportionality is structural; the pure
+numerical prefactor used in the repository is convention-locked and scheme-dependent.
 
-\begin{theorem}[$G_N$--$\ell_0$ relation---schema]
-Assuming the locked metric, standard product spectral-triple structure, and the usual cutoff moments entering $a_2$, Newton's constant and the conoid scale are related by \eqref{eq:GN}.
-\end{theorem}
+\section{Residuals and non-claims}
 
-\begin{remark}
-Scheme dependence of cutoff moments is an $O(\mathrm{few\%})$ residual on interpretation; Dual-Zero mode weights, when used elsewhere in the programme, do not replace $a_2$ as the definition of $G_N$. The Higgs mass is treated only as a Seeley $a_4$ \emph{class} in the broader STATUS document, not as a digit-level claim of this paper.
-\end{remark}
+\textbf{Residuals.}
+(1)~Edge-calculus stability is cited rather than re-proved.
+(2)~The soft/heavy dictionary is representation-theoretic input.
+(3)~Unreduced two-dimensional Dirac mixing is controlled only at leading selection-rule level.
+(4)~Production channel numerics illustrate $\Delta(U)$ but are not used as a substitute for Theorem~\ref{thm:mono}.
 
-\section{What is not claimed}
+\textbf{Non-claims.}
+We do not claim a complete Theory of Everything, percent-level gauge unification,
+a resolution of the cosmological constant problem, ultraviolet-complete quantum
+gravity, or a proof of the Riemann hypothesis. Absolute uniqueness of the conoid
+among all internal geometries is not claimed.
 
-\begin{itemize}
-\item Percent-level gauge unification.
-\item A completed proof of the Riemann hypothesis.
-\item Digit-level Standard Model Yukawa predictions as theorems of this note.
-\item That prototype numerical Dirac codes are final production solvers.
-\end{itemize}
+\section{Conclusion}
 
-\section{Outlook}
+Under the stated hypotheses, the internal Dirac spectrum isolates three light
+sectors by a strict variational inequality, and the spectral action fixes
+$G_N\propto\ell_0^2$. Both statements are designed for external audit.
 
-The natural next steps are external checks of the two schemas above: independent APS spectral computations on \eqref{eq:metric}, and independent verification of the $a_2$ normalisation leading to \eqref{eq:GN}. Broader unification and number-theoretic narratives should wait until these core pieces are stress-tested externally.
-
-\bibliographystyle{plain}
 \begin{thebibliography}{9}
-\bibitem{ConnesMarcolli}
-A.~Connes and M.~Marcolli,
-\emph{Noncommutative Geometry, Quantum Fields and Motives},
-AMS, 2008.
+\bibitem{APS1975}
+M.~F. Atiyah, V.~K. Patodi and I.~M. Singer,
+Spectral asymmetry and Riemannian geometry.~I,
+\textit{Math.\ Proc.\ Cambridge Philos.\ Soc.}\ \textbf{77} (1975) 43--69.
+
+\bibitem{MelroseAPS}
+R.~B. Melrose,
+\textit{The Atiyah--Patodi--Singer Index Theorem},
+A.K.\ Peters / CRC Press.
+
 \bibitem{CCM}
-A.~H.~Chamseddine, A.~Connes and M.~Marcolli,
-Gravity and the standard model with neutrino mixing,
-Adv.\ Theor.\ Math.\ Phys.\ \textbf{11} (2007) 991--1089.
+A.~H. Chamseddine, A.~Connes and M.~Marcolli,
+Gravity and the Standard Model with neutrino mixing,
+\textit{Adv.\ Theor.\ Math.\ Phys.}\ \textbf{11} (2007) 991--1089.
 \end{thebibliography}
 
 \end{document}

@@ -1,27 +1,28 @@
 # Pure Math Completion Status
 
-**Date:** August 2026 (Notes XXV–XXVIII)
+**Date:** August 2026 (Notes XXIX–XXX + arXiv draft)
 
-## Residuals from the audit list
+## Highest-priority residuals
 
-| # | Item | Status after this pass |
-|---|------|------------------------|
-| 1 | Conjecture S | **Controlled** as Thm S′ via L4 package (XXV) |
-| 2 | $H_{\mathrm{tip}}$ analytic gap | **HT1–HT2** + quantitative tables (XXVI) |
-| 3 | Continuum isolation | Channel isolation **3+0** stable in $U$ (XXVI–XXVII) |
-| 4 | Production numerics | **Channel pipeline** frozen + outsider script (XXVII) |
-| 5 | External L4 check | Skipped per request |
-| 6 | Light-sector $A_5$ | Rank-5 light block closed; full 60-avg refinement only (XXVIII) |
-| 7 | Scheme / separation / Lorentzian | Documented (XXVIII) |
+| Item | Status |
+|------|--------|
+| Conjecture S / Thm S′ | **XXIX**: $\delta>0$ unconditional; $\delta\to 0$ via L4 package |
+| $H_{\mathrm{tip}}$ isolation | **XXIX**: HT1–HT3 **analytic**, no numeric dependence |
+| Production pipeline | **XXX**: frozen public parameters + error budget |
+| Modest arXiv paper | `papers/SAM3_Core_Geometry_and_Spectral_Results.tex` |
+| External L4 review | Engagement pack ready; requires human send |
+| Expert emails | After arXiv |
 
-## Generation theorem (current)
+## Generation theorem
 
-Classical APS + HT bounds + $m_\rho$ + $P_{\mathrm{light}}$ + **Thm S′ (L4 package)**.
+**G3′ (XXIX):** APS + S′ + $m_\rho$ dictionary + **HT1–HT3** (strict $E_0(2)<E_0(3)$).
+
+## $G_N$
+
+$G_N\propto\ell_0^2$ proved; prefactor convention-locked.
 
 ## Run
 
 ```bash
 python code/production_channel_pipeline.py
-python code/prho_projectors.py
-python code/volume_regularisation.py
 ```
