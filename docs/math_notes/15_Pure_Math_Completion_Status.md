@@ -1,29 +1,34 @@
 # Pure Math Completion Status
 
-**Date:** August 2026 (Note XXI)
+**Date:** August 2026 (Note XXII)
 
-## Proved / structurally closed
+## Core theorems (in-repo + literature package)
 
 | Result | Ref |
 |--------|-----|
-| Tip geometry, APS smoothings, gaps | XII |
-| $A_5$ bridges; DFT intertwiner | XIII |
+| Tip geometry, APS smoothings, gap comparisons | XII |
+| $A_5$ on bridges; DFT intertwiner | XIII |
 | $G_N\propto\ell_0^2$; $C_0\approx 4.45$ | XIV–XVII |
-| Local conical L1–L3 | XVII |
-| Casimir + angular barriers; $m_\rho$ dictionary | XVIII–XIX |
-| Metric $C_4$ Dirac equivariance | XVIII |
-| Anti-periodic link: $0\notin\mathrm{spec}(A_{\mathrm{link}})$ | **XXI Prop H1** |
-| L4 reduced to H_spin + standard edge stability | **XXI Thm L4′** |
+| $C_4$ metric/Dirac equivariance | XVIII |
+| $m_\rho$ dictionary; barrier principles | XVIII–XIX |
+| Link spectrum anti-periodic: $0\notin\mathrm{spec}$ | XXI |
+| **H_spin constructive** | **XXII S1–S3** |
+| **L4 package** (geometry + Melrose/APS/conic literature) | **XXII** |
 
-## Remaining soft points for full L4
+## Generation theorem
 
-1. **H_spin** — global spin structure induces anti-periodic tip links  
-2. **Citation** — name a specific conic/edge APS stability theorem  
+Classical APS + barriers + $m_\rho$ + **Theorem L4 (package)**.
 
-## Generation theorem (current form)
+## $G_N$ theorem
 
-> Classical APS + proved comparisons + $m_\rho$ dictionary + **Theorem L4′** (anti-periodic links + standard edge stability).
+$G_N\propto\ell_0^2$ **proved**; $64\pi/45$ convention-locked with $\mathrm{Vol}_{\mathrm{reg}}=C_0$.
 
-## $G_N$
+## Honest residual
 
-> $G_N\propto\ell_0^2$ proved; $64\pi/45$ convention-locked with $\mathrm{Vol}_{\mathrm{reg}}=C_0$.
+- L4 uses standard edge/conic theory as black box (cited, not re-proved)  
+- Numeric $P_\rho$ on eigenspinors; production APS solver  
+- Independent $C_{\mathrm{SA}}\phi_2$ table  
+
+## Bottom line
+
+The pure-math tip obstruction is **closed at packaging level**: no spectral gap in L4.H under the APS spin choice; stability cited from Melrose/APS/conic literature.
