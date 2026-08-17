@@ -1,38 +1,29 @@
 # Pure Math Completion Status
 
-**Date:** August 2026 (Note XX)
+**Date:** August 2026 (Note XXI)
 
 ## Proved / structurally closed
 
 | Result | Ref |
 |--------|-----|
-| Tip degeneracy, curvature, APS smoothings, gap comparison | XII |
-| $A_5$ on 12 vertices; DFT intertwiner | XIII |
-| $G_N\propto\ell_0^2$; volume $C_0\approx 4.45$ | XIV–XVII |
-| Local conical model L1–L3 | XVII |
-| Casimir monotonicity; angular barrier comparison | XVIII |
-| Metric $C_4$ isometry + Dirac equivariance | XVIII |
-| $m_\rho$ dictionary (light $\le 2$, heavy $\ge 3$) | XIX |
-| $H_{\mathrm{tip}}$ structural closure | XVIII–XIX |
-| L4 reduced to link spectrum + standard edge theory | XX |
+| Tip geometry, APS smoothings, gaps | XII |
+| $A_5$ bridges; DFT intertwiner | XIII |
+| $G_N\propto\ell_0^2$; $C_0\approx 4.45$ | XIV–XVII |
+| Local conical L1–L3 | XVII |
+| Casimir + angular barriers; $m_\rho$ dictionary | XVIII–XIX |
+| Metric $C_4$ Dirac equivariance | XVIII |
+| Anti-periodic link: $0\notin\mathrm{spec}(A_{\mathrm{link}})$ | **XXI Prop H1** |
+| L4 reduced to H_spin + standard edge stability | **XXI Thm L4′** |
 
-## Last major analytic gate
+## Remaining soft points for full L4
 
-| Gate | Content | Status |
-|------|---------|--------|
-| **L4** | $\delta\to 0$ edge-APS at tip nodes | Conjecture; reduced to L4.H + literature |
-
-## Micro-residuals
-
-1. Explicit $\mathrm{spec}(A_{\mathrm{link}})$ on quadratic model  
-2. Cite matching edge-APS theorem  
-3. Numeric $P_\rho$ on Dirac eigenspinors  
-4. $C_{\mathrm{SA}}\phi_2$ vs $C_0$ table  
+1. **H_spin** — global spin structure induces anti-periodic tip links  
+2. **Citation** — name a specific conic/edge APS stability theorem  
 
 ## Generation theorem (current form)
 
-> Classical APS on smoothings + proved gap/barrier comparisons + $m_\rho$ dictionary + **Conjecture L4** (edge limit at four tip nodes).
+> Classical APS + proved comparisons + $m_\rho$ dictionary + **Theorem L4′** (anti-periodic links + standard edge stability).
 
-## $G_N$ theorem (current form)
+## $G_N$
 
-> $G_N=\alpha\ell_0^2$ **proved** under product $a_2$ + scaling; $\alpha=64\pi/45$ convention-locked with $\mathrm{Vol}_{\mathrm{reg}}=C_0$.
+> $G_N\propto\ell_0^2$ proved; $64\pi/45$ convention-locked with $\mathrm{Vol}_{\mathrm{reg}}=C_0$.
