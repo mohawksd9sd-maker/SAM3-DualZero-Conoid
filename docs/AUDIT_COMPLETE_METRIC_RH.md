@@ -2,62 +2,29 @@
 
 **Date:** August 18, 2026
 
-## What was wrong
+## Error
 
-Multiple historical `.tex` files under `papers/` still used
+Historical papers used $f=\sqrt{u^2+16\ell_0^2\cos^2(2v)}$ contrary to the induced metric of $\mathbf{r}=(u\cos v,u\sin v,\ell_0\sin 2v)$ (coefficient **4**) and locked notes.
+
+## Action
+
+1. Scanned all `.tex` under `papers/`.
+2. Corrected every metric-16 occurrence (or replaced file with corrected supersession stub).
+3. Bannered RH-overclaim and full-SM-overclaim files as **proposal / historical only**.
+4. Updated `SUPERSESSION.md`, `papers/README.md`, `PUBLIC_STATUS_SUMMARY.md`.
+
+## Locked metric
 
 $$
-f=\sqrt{u^2+16\ell_0^2\cos^2(2v)}
+f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}
 $$
-
-which contradicts the induced metric of the stated parametrization (coefficient **4**) and the locked docs.
-
-## Files scanned
-
-All 38+ `.tex` files under `papers/` were downloaded and scanned for:
-
-- metric coefficient `16\ell_0`
-- RH “proved / theorem” overclaim language
-- $A_5$ metric isometry overclaims
-
-## Files that had the metric-16 error (corrected 16→4, curvature 32→4)
-
-- SAM3_Complete_Mathematical_Foundations.tex (earlier fix)
-- SAM3_Complete_Mathematical_Foundations1.tex
-- SAM3_Consolidated_Proofs.tex
-- SAM3_Paper_03_Dirac_Operator_Final.tex
-- SAM3_Paper_04_Yukawa_Derivation_Final.tex
-- SAM3_Paper_05_Gravity_Final.tex
-- SAM3_Paper_17_Rigorous_Foundations.tex
-- SAM3_Paper_18_Numerical_Robustness_and_Reproducibility.tex
-- SAM3_v4.20_full_paper.tex
-- SAM3_v4.22_Addendum.tex
-- SAM3-DeformedHopfBundle.tex (induced form)
-- Plus supersession banners on the full remaining paper set
-
-## Policy
-
-Every historical paper now carries:
-
-```
-% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md / docs/math_notes/
-% LOCKED metric: coefficient 4, not 16
-% RH = proposal only; A5 is not a metric isometry
-```
 
 ## Authoritative sources
 
-| Topic | Source |
-|-------|--------|
-| Metric | math notes + core paper |
-| Generations / $G_N$ | Notes XII–XXXI + core paper |
-| Claims / residuals | STATUS_CLAIMS_AND_RESIDUALS.md |
-| Supersession list | papers/SUPERSESSION.md |
+- `docs/math_notes/` (esp. 15, 29–31)
+- `papers/SAM3_Core_Geometry_and_Spectral_Results.tex`
+- `STATUS_CLAIMS_AND_RESIDUALS.md`
 
-## Residual honesty
+## Honesty
 
-Older papers still contain phenomenological overclaims in body text (e.g. exact $m_H$ digits, “full SM derived”). Those are **not** deleted line-by-line in every paragraph; they are **superseded by policy**. The core public paper does not make those claims.
-
-## Dual-Zero Reg2
-
-For $\varepsilon(n)\propto n^{-n}$, $\mathrm{st}=0$ is immediate. Operational definition is constructive finite-$N$ (hardening doc 39).
+Earlier passes that only hardened `docs/math_notes/` while leaving `papers/` inconsistent were incomplete. This audit closes that gap for the metric coefficient and RH/SM overclaim banners.
