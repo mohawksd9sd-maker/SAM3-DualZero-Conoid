@@ -1,132 +1,93 @@
+% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md and docs/math_notes/
+% Metric LOCKED: f=sqrt(u^2+4 ell0^2 cos^2(2v)) ONLY — coefficient 4, not 16.
+% RH = variational proposal only — not a proof.
+% This file is a historical claims index; proofs live in docs/math_notes/ XII–XXXI.
+%
+% CORRECTED August 2026: induced metric from stated parametrization uses 4, not 16.
+
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{enumitem}
 \usepackage{xcolor}
-\usepackage{titlesec}
-
-\titleformat{\section}{\large\bfseries\color{blue!70!black}}{}{0em}{}[\titlerule]
-\titleformat{\subsection}{\normalsize\bfseries\color{blue!50!black}}{}{0em}{}
 
 \title{\textbf{SAM3 -- Complete Mathematical Foundations}\\[0.3em]
-\large Right Conoid Geometry, Dual-Zero Regulator, Spectral Triple, \\
-Cancellation Lemma, Error Control, Archimedean Limit, and Fermion Sector}
+\large (Historical index — see SUPERSESSION.md)\\[0.2em]
+Right Conoid Geometry, Dual-Zero Regulator, Spectral Triple}
 \author{Shawn Dykes (\texttt{@Pieces1121}) \\ in collaboration with Grok (xAI)}
-\date{May 22, 2026}
+\date{May 22, 2026; metric corrected August 2026}
 
 \begin{document}
 \maketitle
 
-\begin{abstract}
-This document consolidates every major rigorously derived mathematical component of the SAM3 framework. It includes the right conoid geometry, the axiomatic Dual-Zero regulator, the strengthened Cancellation Lemma, the Poisson summation identity with controlled remainder, full analytic control of the error term \(E(s)\), the Archimedean limit, the fermion sector with explicit CKM matrix, and semi-analytic Yukawa overlaps. All proven results are clearly labeled; numerical evidence and open questions are explicitly separated.
-\end{abstract}
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{\textbf{SUPERSESSION NOTICE.}\\
+This document is a historical claims index. Authoritative metric, generation,
+and $G_N$ results are in \texttt{docs/math\_notes/} and
+\texttt{STATUS\_CLAIMS\_AND\_RESIDUALS.md}.\\
+The metric coefficient below is \textbf{corrected to 4} (was wrongly 16).
+Riemann-hypothesis language here is \textbf{proposal only}, not a proof.}}
+\end{center}
 
-\section{Right Conoid Geometry}
+\section{Right Conoid Geometry (LOCKED)}
 
-The manifold is parametrized by
+Parametrization:
 \[
 \mathbf{r}(u,v) = (u \cos v,\ u \sin v,\ \ell_0 \sin(2v)).
 \]
-Induced metric:
+Induced metric (direct computation):
 \[
-ds^2 = du^2 + f(u,v)^2 dv^2, \quad f(u,v) = \sqrt{u^2 + 16\ell_0^2 \cos^2(2v)}.
+|\mathbf{r}_u|^2 = 1,\qquad
+|\mathbf{r}_v|^2 = u^2 + 4\ell_0^2\cos^2(2v),
 \]
-Scalar curvature:
+hence
 \[
-R(u,v) = -\frac{32\ell_0^2 \cos^2(2v)}{(u^2 + 16\ell_0^2 \cos^2(2v))^2}.
+ds^2 = du^2 + f(u,v)^2 dv^2, \quad
+f(u,v) = \sqrt{u^2 + 4\ell_0^2 \cos^2(2v)}.
+\]
+\textbf{Coefficient is 4, not 16.} (The factor 16 was an error: $r_v$ has
+$2\ell_0\cos(2v)$ in the $z$-component, so $4\ell_0^2\cos^2(2v)$ after squaring.)
+
+Gaussian curvature on the non-degenerate locus:
+\[
+K = -\frac{4\ell_0^2 \cos^2(2v)}{\bigl(u^2 + 4\ell_0^2 \cos^2(2v)\bigr)^2}.
 \]
 
 \section{Dual-Zero Hyperreal Regulator}
 
 \begin{definition}
-Fix \(\omega_0 > 0\). Define the sequence \(\varepsilon(n) = \omega_0 (-1)^n n^{-n}\). Let \(\mathcal{U}\) be a non-principal ultrafilter. The regulator is
-\[
-\mathrm{Reg}_2(\varepsilon) := \mathrm{st}_{\mathcal{U}}\Bigl( \frac{\varepsilon(2n) + \varepsilon(2n+1)}{2} \Bigr).
-\]
+Fix $\omega_0 > 0$. Define $\varepsilon(n) = \omega_0 (-1)^n n^{-n}$.
+The constructive finite-$N$ realization (preferred for numerics) is documented in
+\texttt{docs/hardening/39\_DualZero\_Constructive\_Realization.md}.
+Ultrafilter $\mathrm{Reg}_2$ language is historical; for the decaying sequence
+$n^{-n}$, $\mathrm{st}(\varepsilon)=0$ is immediate — the regulator is useful on
+\emph{divergent} mode sums, not as a non-triviality proof on an already
+super-exponentially small sequence.
 \end{definition}
 
-Axioms (A1)–(A5) as previously established: linearity on signed measures, grading compatibility (antisymmetry), super-exponential decay, preservation of standard part, and ultrafilter independence for even quantities.
+\section{Historical claims index}
 
-\section{Graded Cancellation Lemma}
-
-\begin{lemma}[Exact Cancellation of Non-Invariant Modes]
-Let \(\sigma: v \mapsto \pi - v\). Define the signed odd-sector measure \(\nu_-\). Then \(\mathrm{Reg}_2(\nu_-) = 0\), so
-\[
-K_{\rm Reg_2}(t)\Big|_{\mathcal{H}_-} = 0.
-\]
-\end{lemma}
-
-(Full proof with signed measure definition, concrete anticommutation on averaged pairs, and ultrapower preservation — as derived earlier.)
-
-\section{Poisson Summation Identity}
-
-\begin{theorem}
-\[
-K_{\rm Reg_2}(t) = t^{-1} \Xi_{\rm Reg_2}(t) K_{\rm Reg_2}(1/t) + R_{\rm bridge}(t),
-\]
-with \(|R_{\rm bridge}(t)| \ll \exp(-c \log^2(1/t))\).
-\end{theorem}
-
-(Full multi-step proof separating cylindrical, curvature, and bridge contributions.)
-
-\section{Control of the Error Term \(E(s)\)}
-
-\begin{theorem}[Strong Decay on Critical Line]
-For \(|t| \ge 1\), \(|E(1/2 + it)| \le \exp(-c \log^2 |t|)\).
-\end{theorem}
-
-\begin{theorem}[No Creation or Cancellation for Large \(|t|\)]
-There exists \(T_0 > 0\) such that for \(|t| > T_0\), zeros of \(\zeta_{\rm SAM3}(s)\) on the critical line arise only from the main term.
-\end{theorem}
-
-\begin{theorem}[Explicit Bound in Compact Disk]
-For any fixed \(R_0 > 0\), \(|E(s)| \le C(R_0, \omega_0)\) for \(|s| \le R_0\).
-\end{theorem}
-
-\section{Archimedean Limit}
-
-\begin{theorem}[Archimedean Recovery]
-As \(\omega_0 \to 1^-\),
-\[
-\mathrm{st}\bigl[\zeta_{\rm SAM3}(s)\bigr] = c \cdot \zeta_{\rm conoid}(s) \cdot G(s) + o(1),
-\]
-uniformly on compact subsets, where \(G(s)\) has only trivial zeros and poles.
-\end{theorem}
-
-\begin{remark}
-This recovers a geometric spectral zeta of the conoid, **not** automatically the classical Riemann zeta function \(\zeta(s)\). Identification remains open.
-\end{remark}
-
-\section{Full Fermion Sector}
-
-(Representation tables for left- and right-handed fields under \(\mathcal{A}_F\), plus explicit numerical CKM matrix from geometric overlaps after RG running — as previously developed.)
-
-\section{Semi-Analytic Yukawa Overlaps}
-
-\[
-Y_{ij} \approx C \exp\left( -\frac{d_{ij}}{\ell_{\rm reg}} \right)
-\Bigl(1 + \alpha \omega_0 + \beta \frac{d_{ij}}{\ell_{\rm reg}} \omega_0 + O(\omega_0^2)\Bigr).
-\]
-
-\section{Logical Chain (Proven Results)}
-
-\begin{enumerate}
-    \item Functional equation with error term \(E(s)\).
-    \item \(E(s)\) cannot create/cancel zeros on critical line for large \(|t|\).
-    \item \(E(s)\) bounded in any compact region (affects only finitely many zeros).
-    \item Archimedean limit recovers geometric spectral zeta.
-\end{enumerate}
-
-\section{Disclaimers and Scope}
+The following items were listed in the May 2026 draft as proven within SAM3.
+Their current status is governed by STATUS and math notes XII--XXXI:
 
 \begin{itemize}
-    \item All theorems/propositions above are rigorously proven within the SAM3 framework.
-    \item CKM values and low-lying zero alignment are numerical evidence only.
-    \item Identification of the limiting object with classical \(\zeta(s)\) remains open.
+\item Cancellation / graded odd sector --- see Dual-Zero constructive docs.
+\item Poisson / error-term bounds --- historical; not load-bearing for G3' or $G_N\propto\ell_0^2$.
+\item Archimedean limit --- recovers a geometric spectral zeta; \textbf{not}
+  identified with classical $\zeta(s)$ (open).
+\item Fermion / CKM / Yukawa --- phenomenology stack; not claimed as locked digits
+  in the core geometry paper.
+\item RH-adjacent theorems in older drafts --- \textbf{proposal only}, not proofs.
+\end{itemize}
+
+\section{Disclaimers}
+
+\begin{itemize}
+\item Metric coefficient 4 is mandatory.
+\item This file is not a self-contained proof archive.
+\item Read \texttt{papers/SUPERSESSION.md} and \texttt{docs/math\_notes/15\_Pure\_Math\_Completion\_Status.md}.
 \end{itemize}
 
 \end{document}
