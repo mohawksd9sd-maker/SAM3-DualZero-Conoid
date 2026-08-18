@@ -1,41 +1,12 @@
-\documentclass[11pt,a4paper]{article}
 % SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md / docs/math_notes/
-% LOCKED metric: f=sqrt(u^2+4 ell_0^2 cos^2(2v)) ONLY (coefficient 4, not 16).
-% RH = variational proposal only — not a proof. A5 is NOT a metric isometry (C4 only).
-% Auto-corrected metric coefficient 16->4 on August 18, 2026.
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath,amssymb,amsthm}
-\usepackage{geometry}
-\geometry{margin=1in}
-\usepackage{hyperref}
-\usepackage{xcolor}
-
-\title{\textbf{SAM3 -- Complete Mathematical Foundations (copy 1)}\\[0.3em]
-\large Historical index — metric corrected}
-\author{Shawn Dykes (\texttt{@Pieces1121})}
-\date{May 22, 2026; corrected August 18, 2026}
-
+% LOCKED metric: coefficient 4, not 16. RH proposal only.
+% Auto-corrected August 18, 2026.
+\documentclass[11pt]{article}
+\usepackage{amsmath}
 \begin{document}
-\maketitle
-
-\begin{center}
-\fbox{\parbox{0.9\textwidth}{\textbf{SUPERSESSION.} Authoritative geometry lives in
-\texttt{docs/math\_notes/} and the core paper.
-Metric coefficient is \textbf{4}, not 16. RH language is proposal only.}}
-\end{center}
-
-\section{Right Conoid Geometry (LOCKED)}
-Parametrization $\mathbf{r}=(u\cos v,u\sin v,\ell_0\sin(2v))$.
-Induced metric (corrected):
+\section*{Foundations copy 1 (historical; metric corrected)}
 \[
-ds^2=du^2+f^2 dv^2,\quad f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
+f=\sqrt{u^2+4\ell_0^2\cos^2(2v)},\quad
+R=-\frac{4\ell_0^2\cos^2(2v)}{(u^2+4\ell_0^2\cos^2(2v))^2}.
 \]
-Curvature:
-\[
-K=-\frac{4\ell_0^2\cos^2(2v)}{(u^2+4\ell_0^2\cos^2(2v))^2}.
-\]
-
-\section{Status}
-Historical claims index only. See \texttt{papers/SUPERSESSION.md}.
-
 \end{document}
