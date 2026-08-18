@@ -8,7 +8,7 @@ SAM3 — Numerical verification framework for the 2D Dirac operator on the right
 
 Note: This is a verification framework / prototype. Authoritative continuum residual
 and gap→0 locks live in docs/hardening/10_Continuum_Dirac_Residual_Lock.md.
-Promoted from nested path code/verification/code/verification/ during Fix 5 cleanup.
+Metric tip coefficient LOCKED at 4 (not 16).
 """
 
 import numpy as np
@@ -23,11 +23,11 @@ du = u_max / (N_u - 1)
 dv = np.pi / (2 * N_v)
 omega0 = 1e-6
 
-# Grid
+# Grid — LOCKED metric coefficient 4
 u = np.linspace(du / 2, u_max, N_u)
 v = np.linspace(0, np.pi / 2, N_v, endpoint=False)
 U, V = np.meshgrid(u, v, indexing="ij")
-f = np.sqrt(U**2 + 16 * L0**2 * np.cos(2 * V) ** 2)
+f = np.sqrt(U**2 + 4 * L0**2 * np.cos(2 * V) ** 2)
 
 
 def build_dirac_matrix_placeholder():
@@ -44,7 +44,7 @@ def build_dirac_matrix_placeholder():
 
 
 def check_asymptotics(norm_u):
-    """Fit log-log slope of radial density at large u (expect ~ -1 for 1/u decay of density measures)."""
+    """Fit log-log slope of radial density at large u."""
     mask = u > u_max * 0.6
     slope, _ = np.polyfit(np.log(u[mask]), np.log(np.maximum(norm_u[mask], 1e-30)), 1)
     print(f"Asymptotic slope: {slope:.4f}")
@@ -52,6 +52,7 @@ def check_asymptotics(norm_u):
 
 
 def dual_zero_weights(n_max=1000, omega0_local=None):
+    """Dual-Zero generator sequence ε(n)=ω0 (-1)^n n^{-n} (original Dual-Zero math)."""
     w0 = omega0 if omega0_local is None else omega0_local
     n = np.arange(1, n_max + 1)
     return w0 * ((-1) ** n) * n ** (-n)
@@ -60,4 +61,4 @@ def dual_zero_weights(n_max=1000, omega0_local=None):
 if __name__ == "__main__":
     build_dirac_matrix_placeholder()
     _ = dual_zero_weights(20)
-    print("Verification modules loaded. See docs/hardening/10 for continuum residual lock.")
+    print("Verification modules loaded. Metric tip coeff=4. See docs/hardening/10.")
