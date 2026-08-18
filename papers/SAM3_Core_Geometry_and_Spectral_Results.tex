@@ -6,6 +6,7 @@
 \newtheorem{theorem}{Theorem}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definition}
 \theoremstyle{remark}
@@ -19,127 +20,128 @@
 \maketitle
 
 \begin{abstract}
-We study a right-conoid internal geometry with twelve binary-icosahedral bridges
-and Atiyah--Patodi--Singer boundary conditions. Under an APS-compatible spin
-structure and standard conical/edge index theory, the continuum Dirac operator
-supports exactly three light chiral sectors after angular-momentum barrier
-isolation. Separately, the spectral action on the product geometry yields
-Newton's constant proportional to the square of the internal scale. We state all
-hypotheses, prove the channel isolation inequalities, package the tip singularity
-via existing edge-calculus results, and list residuals explicitly. No claim is
-made of a complete theory of everything, gauge unification to high precision, or
-a proof of the Riemann hypothesis.
+We study a right-conoid internal geometry with tip-modulated metric
+$f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$, APS boundary conditions, and a twelve-bridge
+lattice. We prove a strict variational ordering of radial channel energies in the
+angular momentum $m$, fix the soft set $\{0,1,2\}$ by Hardy energy together with
+the metric harmonic $\cos(2v)$ and the exact $C_4$ isometry (not by assuming
+$A_5$ isometries of the metric), and address self-adjointness at the tip via the
+Weyl limit-point classification. Under an APS-compatible spin structure and
+standard conical/edge index theory, these inputs yield three light channels.
+Separately, the spectral action implies $G_N\propto\ell_0^2$, with regularised
+internal volume finite part $C_0$ defined by an explicit integral. Residuals and
+non-claims are listed. We do not claim a derivation of the full Standard Model,
+percent-level unification, or a proof of the Riemann hypothesis.
 \end{abstract}
 
 \section{Introduction}
 
-Almost-commutative spectral triples realise the Standard Model gauge sector from
-a finite algebra combined with a compact Riemannian spin geometry
-\cite{CCM}. Extending the internal geometry beyond a finite space raises the
-possibility of geometric generation structure and a gravitational scale fixed by
-Seeley--DeWitt coefficients.
+This note isolates two structural results for a specific internal surface and
+records every hypothesis. The title refers only to three light sectors and a
+scale for $G_N$---not to a complete Standard Model derivation.
 
-This note isolates two results for a specific internal surface---a right conoid
-with tip modulation and a twelve-point bridge lattice related to the binary
-icosahedral group---and records every hypothesis required.
+\section{Geometry}
 
-\section{Geometric setup}
-
-Let coordinates $(u,v)\in[0,\infty)\times S^1$ carry the metric
+Coordinates $(u,v)\in[0,\infty)\times S^1$ carry
 \begin{equation}
-  ds^2 = du^2 + f(u,v)^2\,dv^2,
+  ds^2=du^2+f(u,v)^2\,dv^2,
   \qquad
-  f(u,v)=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
+  f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
 \end{equation}
-The function $f$ vanishes only at four tip nodes
-$(u,v)=(0,\pi/4+k\pi/2)$. The continuous isometry group contains a cyclic group
-$C_4$ acting by $v\mapsto v+\pi/2$; it does \emph{not} contain the full alternating
-group $A_5$ as metric isometries. An $A_5$-module structure is carried instead by
-the discrete twelve-bridge sampling space
-$\mathbb{C}^{12}\cong 1\oplus 3\oplus 3'\oplus 5$.
+The metric is invariant under $v\mapsto v+\pi/2$ (exact $C_4$ isometry). It is
+\emph{not} $A_5$-symmetric as a Riemannian metric. Four tip nodes occur where
+$f=0$. Truncations $X_U$ use APS conditions at the outer boundary and an
+APS-compatible spin structure with anti-periodic tip links.
 
-Truncations $X_U=[0,U]\times S^1$ are equipped with APS boundary conditions at
-the outer boundary and an APS-compatible spin structure that restricts to the
-anti-periodic structure on tip links.
+\section{Self-adjointness of radial channels}
+
+On $(0,U)$ set
+$H_m=-\partial_{uu}+m^2(u+\epsilon)^{-2}+V_{\mathrm{tip}}(u)$.
+By the Weyl classification for inverse-square potentials, $m\ge 1$ is
+limit-point at $u=0$ (unique self-adjoint extension), while $m=0$ is
+limit-circle. The $m=0$ realization is fixed by the APS/conic tip condition
+from the global spin structure. Variational comparisons below are on these
+realizations.
+
+\section{Soft set from geometry}
+
+\begin{proposition}[Geometric soft set]
+Hardy energy strictly increases with $m^2$. The metric harmonic $\cos(2v)$
+singles out angular momentum $m=2$. The exact $C_4$ isometry is compatible with
+the consecutive soft block $\{0,1,2\}$. Thus the soft set is preferred by the
+metric and Hardy theory, not by treating $A_5$ as an isometry group of $f$.
+\end{proposition}
+
+A discrete twelve-bridge $A_5$-module may organise labels \emph{inside} the soft
+sector; it is not used to choose which $m$ are soft.
 
 \section{Channel isolation}
 
-Angular Fourier modes on the bridge circle are labelled by effective angular
-momentum $m\in\mathbb{Z}_{\ge 0}$. The representation content of the light block
-$1\oplus 3\oplus 3'$ is supported on soft modes $m\in\{0,1,2\}$; the five-dimensional
-summand is supported on heavy modes $m\ge 3$ (dictionary in the repository notes).
-
-\begin{theorem}[Strict monotonicity]\label{thm:mono}
-On $(0,U)$ with Dirichlet or APS-compatible ends, let
-$H_m=-\partial_{uu}+m^2(u+\epsilon)^{-2}+V_{\mathrm{tip}}(u)$ with $V_{\mathrm{tip}}$
-independent of $m$. Then $m_2>m_1\ge 0$ implies $E_0(m_2)>E_0(m_1)$.
+\begin{theorem}[Strict monotonicity]
+For $m_2>m_1\ge 0$, on the self-adjoint realizations above,
+$E_0(m_2)>E_0(m_1)$.
 \end{theorem}
 
 \begin{proof}
 If $\psi$ is a normalised ground state of $H_{m_1}$, then
-$\langle H_{m_2}\rangle_\psi-E_0(m_1)=(m_2^2-m_1^2)\int (u+\epsilon)^{-2}|\psi|^2>0$.
+$\langle H_{m_2}\rangle_\psi-E_0(m_1)=(m_2^2-m_1^2)\int(u+\epsilon)^{-2}|\psi|^2>0$.
 \end{proof}
 
-\begin{corollary}[Three-plus-zero isolation]\label{cor:iso}
-$E_0(2)<E_0(3)$. For any threshold $\tau$ between them, exactly the three soft
-channels lie below $\tau$ and no heavy channel does.
+\begin{corollary}
+$E_0(2)<E_0(3)$. Any threshold between them isolates exactly the three soft
+channels.
 \end{corollary}
 
-\section{Smoothing limit at the tip}
+\section{Smoothing limit}
 
-For $\delta>0$ the smoothed metric $f^2+\delta^2$ is non-degenerate and the APS index
-on $X_U$ is deformation-invariant. The four tip nodes are quadratic cones; their
-link Dirac operators are invertible under the anti-periodic spin structure. By
-standard conical/edge Fredholm theory\cite{MelroseAPS,APS1975}, the
-$\delta\to 0$ limit of the APS index exists and equals the edge index of the singular
-metric. Details and a referee checklist appear in the accompanying notes.
+For $\delta>0$, $f^2+\delta^2$ is smooth and the APS index on $X_U$ is
+deformation-invariant. Invertibility of the anti-periodic link Dirac operator
+at each tip node places the $\delta\to 0$ limit under standard conical/edge
+Fredholm theory. We cite that theory rather than re-develop it.
 
-\section{Newton constant}
+\section{Newton constant and $C_0$}
 
-On a product spectral triple the Seeley--DeWitt coefficient $a_2$ produces the
-Einstein--Hilbert term. With internal scale $\ell_0$,
+Product spectral action yields $G_N=\alpha\ell_0^2$. The regularised internal
+volume admits
 \begin{equation}
-  G_N = \alpha\,\ell_0^2
+  \widehat{\mathrm{Vol}}(U)=\pi U^2+2\pi\log U+C_0+o(1),
 \end{equation}
-for a dimensionless $\alpha$ fixed by cutoff moments and the regularised internal
-volume finite part $C_0\approx 4.45$. The proportionality is structural; the pure
-numerical prefactor used in the repository is convention-locked and scheme-dependent.
+with
+\begin{equation}
+  C_0=\lim_{U\to\infty}\Big(\int_0^U\!\int_0^{2\pi}(\hat f-u)\,dv\,du-2\pi\log(U+1)\Big).
+\end{equation}
+Numerically $C_0\approx 4.43$--$4.45$ (convergent). The pure prefactor in any
+normalised form of $\alpha$ is scheme-dependent; the proportionality
+$G_N\propto\ell_0^2$ is not.
 
 \section{Residuals and non-claims}
 
 \textbf{Residuals.}
-(1)~Edge-calculus stability is cited rather than re-proved.
-(2)~The soft/heavy dictionary is representation-theoretic input.
-(3)~Unreduced two-dimensional Dirac mixing is controlled only at leading selection-rule level.
-(4)~Production channel numerics illustrate $\Delta(U)$ but are not used as a substitute for Theorem~\ref{thm:mono}.
+Edge-calculus stability is cited. Full limit-circle parametrix matching APS to a
+boundary parameter is packaged. Lorentzian signature is open. Yukawa eigenvalues
+and CKM digits are not derived in this note.
 
 \textbf{Non-claims.}
-We do not claim a complete Theory of Everything, percent-level gauge unification,
-a resolution of the cosmological constant problem, ultraviolet-complete quantum
-gravity, or a proof of the Riemann hypothesis. Absolute uniqueness of the conoid
-among all internal geometries is not claimed.
-
-\section{Conclusion}
-
-Under the stated hypotheses, the internal Dirac spectrum isolates three light
-sectors by a strict variational inequality, and the spectral action fixes
-$G_N\propto\ell_0^2$. Both statements are designed for external audit.
+We do not claim a full Standard Model derivation, percent-level unification,
+resolution of the cosmological constant, UV-complete quantum gravity, or a proof
+of the Riemann hypothesis. Absolute uniqueness of the conoid is not claimed.
+$A_5$ is not claimed as a continuous isometry group of the locked metric.
 
 \begin{thebibliography}{9}
 \bibitem{APS1975}
 M.~F. Atiyah, V.~K. Patodi and I.~M. Singer,
 Spectral asymmetry and Riemannian geometry.~I,
-\textit{Math.\ Proc.\ Cambridge Philos.\ Soc.}\ \textbf{77} (1975) 43--69.
+\textit{Math.\ Proc.\ Cambridge Philos.\ Soc.}\ \textbf{77} (1975).
 
 \bibitem{MelroseAPS}
 R.~B. Melrose,
 \textit{The Atiyah--Patodi--Singer Index Theorem},
 A.K.\ Peters / CRC Press.
 
-\bibitem{CCM}
-A.~H. Chamseddine, A.~Connes and M.~Marcolli,
-Gravity and the Standard Model with neutrino mixing,
-\textit{Adv.\ Theor.\ Math.\ Phys.}\ \textbf{11} (2007) 991--1089.
+\bibitem{ReedSimon}
+M.~Reed and B.~Simon,
+\textit{Methods of Modern Mathematical Physics II},
+Academic Press.
 \end{thebibliography}
 
 \end{document}
