@@ -1,93 +1,61 @@
 % SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md and docs/math_notes/
 % Metric LOCKED: f=sqrt(u^2+4 ell0^2 cos^2(2v)) ONLY — coefficient 4, not 16.
 % RH = variational proposal only — not a proof.
-% This file is a historical claims index; proofs live in docs/math_notes/ XII–XXXI.
+% Dual-Zero: see docs/hardening/18_DualZero_Definition_Lock.md (original Dual-Zero math).
 %
-% CORRECTED August 2026: induced metric from stated parametrization uses 4, not 16.
-
 \documentclass[11pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{hyperref}
-\usepackage{xcolor}
 
 \title{\textbf{SAM3 -- Complete Mathematical Foundations}\\[0.3em]
-\large (Historical index — see SUPERSESSION.md)\\[0.2em]
-Right Conoid Geometry, Dual-Zero Regulator, Spectral Triple}
-\author{Shawn Dykes (\texttt{@Pieces1121}) \\ in collaboration with Grok (xAI)}
-\date{May 22, 2026; metric corrected August 2026}
+\large (Historical index — metric corrected; Dual-Zero pointer locked)}
+\author{Shawn Dykes (\texttt{@Pieces1121})}
+\date{May 22, 2026; corrected August 2026}
 
 \begin{document}
 \maketitle
 
 \begin{center}
 \fbox{\parbox{0.9\textwidth}{\textbf{SUPERSESSION NOTICE.}\\
-This document is a historical claims index. Authoritative metric, generation,
-and $G_N$ results are in \texttt{docs/math\_notes/} and
-\texttt{STATUS\_CLAIMS\_AND\_RESIDUALS.md}.\\
-The metric coefficient below is \textbf{corrected to 4} (was wrongly 16).
-Riemann-hypothesis language here is \textbf{proposal only}, not a proof.}}
+Authoritative geometry: \texttt{docs/math\_notes/}.\\
+Authoritative Dual-Zero: \texttt{docs/hardening/18\_DualZero\_Definition\_Lock.md}
+(original Dual-Zero math — information-conserving dual averaging of spectral data).\\
+Metric coefficient \textbf{4}. RH language = proposal only.}}
 \end{center}
 
 \section{Right Conoid Geometry (LOCKED)}
 
-Parametrization:
+Parametrization $\mathbf{r}=(u\cos v,u\sin v,\ell_0\sin(2v))$.
+Induced metric:
 \[
-\mathbf{r}(u,v) = (u \cos v,\ u \sin v,\ \ell_0 \sin(2v)).
+ds^2=du^2+f^2 dv^2,\quad f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
 \]
-Induced metric (direct computation):
 \[
-|\mathbf{r}_u|^2 = 1,\qquad
-|\mathbf{r}_v|^2 = u^2 + 4\ell_0^2\cos^2(2v),
-\]
-hence
-\[
-ds^2 = du^2 + f(u,v)^2 dv^2, \quad
-f(u,v) = \sqrt{u^2 + 4\ell_0^2 \cos^2(2v)}.
-\]
-\textbf{Coefficient is 4, not 16.} (The factor 16 was an error: $r_v$ has
-$2\ell_0\cos(2v)$ in the $z$-component, so $4\ell_0^2\cos^2(2v)$ after squaring.)
-
-Gaussian curvature on the non-degenerate locus:
-\[
-K = -\frac{4\ell_0^2 \cos^2(2v)}{\bigl(u^2 + 4\ell_0^2 \cos^2(2v)\bigr)^2}.
+K=-\frac{4\ell_0^2\cos^2(2v)}{(u^2+4\ell_0^2\cos^2(2v))^2}.
 \]
 
-\section{Dual-Zero Hyperreal Regulator}
+\section{Dual-Zero (original math — not a trivial standard part)}
 
-\begin{definition}
-Fix $\omega_0 > 0$. Define $\varepsilon(n) = \omega_0 (-1)^n n^{-n}$.
-The constructive finite-$N$ realization (preferred for numerics) is documented in
-\texttt{docs/hardening/39\_DualZero\_Constructive\_Realization.md}.
-Ultrafilter $\mathrm{Reg}_2$ language is historical; for the decaying sequence
-$n^{-n}$, $\mathrm{st}(\varepsilon)=0$ is immediate — the regulator is useful on
-\emph{divergent} mode sums, not as a non-triviality proof on an already
-super-exponentially small sequence.
-\end{definition}
+Generator:
+\[
+\varepsilon(n)=\omega_0(-1)^n n^{-n},\qquad
+\omega_0=\Bigl(\frac{R_{\rm curvature}}{D_{\rm bridge}}\Bigr)^{4/13}\approx 0.927.
+\]
+Dual average on mode sequences:
+\[
+\operatorname{Reg}_2(a)_n=\frac{a_{2n}+a_{2n+1}}{2}.
+\]
+\textbf{Novelty:} information-conserving dual averaging of \emph{spectral data}
+(graded cancellation of odd sectors; even observables retained).\\
+\textbf{Not the claim:} $\mathrm{st}(\varepsilon)\neq 0$ (indeed $\mathrm{st}(\varepsilon)=0$).
+
+Canonical write-up: hardening doc 18.
 
 \section{Historical claims index}
 
-The following items were listed in the May 2026 draft as proven within SAM3.
-Their current status is governed by STATUS and math notes XII--XXXI:
-
-\begin{itemize}
-\item Cancellation / graded odd sector --- see Dual-Zero constructive docs.
-\item Poisson / error-term bounds --- historical; not load-bearing for G3' or $G_N\propto\ell_0^2$.
-\item Archimedean limit --- recovers a geometric spectral zeta; \textbf{not}
-  identified with classical $\zeta(s)$ (open).
-\item Fermion / CKM / Yukawa --- phenomenology stack; not claimed as locked digits
-  in the core geometry paper.
-\item RH-adjacent theorems in older drafts --- \textbf{proposal only}, not proofs.
-\end{itemize}
-
-\section{Disclaimers}
-
-\begin{itemize}
-\item Metric coefficient 4 is mandatory.
-\item This file is not a self-contained proof archive.
-\item Read \texttt{papers/SUPERSESSION.md} and \texttt{docs/math\_notes/15\_Pure\_Math\_Completion\_Status.md}.
-\end{itemize}
+Older RH / full-SM slogans in this file’s May draft are \textbf{not} current locks.
+See STATUS and core paper.
 
 \end{document}

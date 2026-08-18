@@ -1,62 +1,46 @@
-% Renamed from: "1.3 Information-Conserving Arithmetic and the Dual-Zero Axiom"
-% Note (Aug 2026): digit-level m_H=125.1 claims superseded by docs/hardening/ (125 GeV class).
+% SUPERSEDED where conflicting: docs/hardening/18_DualZero_Definition_Lock.md is canonical.
+% Dual-Zero = original information-conserving dual regularization of spectral data.
 \documentclass[11pt,a4paper]{article}
-
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
-\usepackage{hyperref}
-\usepackage{enumitem}
-
 \geometry{margin=1in}
+\usepackage{hyperref}
 
-\title{\textbf{Update: Geometric Derivation of the Dual-Zero Regulator}\\
-\large SAM3-DualZero-Conoid Framework}
-\author{Shawn Dykes (Pieces1121)}
-\date{May 2026 (filename cleaned August 2026)}
+\title{\textbf{Geometric Dual-Zero Regulator}\\[0.2em]
+\large (aligned to hardening doc 18 — original Dual-Zero math)}
+\author{Shawn Dykes (\texttt{@Pieces1121})}
+\date{May 2026; aligned August 2026}
 
 \begin{document}
-
 \maketitle
 
 \begin{abstract}
-We present an updated formulation of the Dual-Zero regulator in the SAM3 spectral triple. The regulator strength $\omega_0$ is derived geometrically from the right conoid structure rather than introduced as a free parameter. This yields $\omega_0 \approx 0.927$. Higgs-sector output is reported in the 125\,GeV class under the August 2026 hardening calibration (digit-level equality with experiment is not claimed here).
+Dual-Zero is an information-conserving dual regularization for spectral mode
+towers. The generator $\varepsilon(n)=\omega_0(-1)^n n^{-n}$ sets a graded residual
+scale with geometric $\omega_0\approx 0.927$. The dual average $\operatorname{Reg}_2$
+pairs modes so graded odd content cancels and even observables survive. This is
+\emph{not} a claim that $\mathrm{st}(\varepsilon)\neq 0$. Higgs output is a 125\,GeV
+\textbf{class}, not a locked digit.
 \end{abstract}
 
-\section{Information-Conserving Regularization and the Dual-Zero Infinitesimal}
-\label{sec:dualzero-axiom}
+\section{Definition (canonical)}
 
-\subsection{Motivation}
-On a non-compact manifold with an infinite discrete spectrum, the high-mode tail of the Dirac operator contributes to the spectral action. To maintain information conservation across scales, we introduce a controlled infinitesimal regularization that never collapses remainders to exact zero while preserving low-energy observables.
+See \texttt{docs/hardening/18\_DualZero\_Definition\_Lock.md}.
 
-\subsection{Definition of the Dual-Zero Algebra}
-We work in the truncated hyperreal algebra $\mathbb{R}_{[0,-0]}$ consisting of elements
 \[
-a + \epsilon b + \epsilon^2 c, \qquad a,b,c \in \mathbb{R},
-\]
-where the infinitesimal generator is the sequence
-\begin{equation}
-\epsilon(n) = \omega_0 (-1)^n n^{-n}, \qquad n \in \mathbb{N}, \quad \omega_0 > 0.
-\label{eq:epsilon-def}
-\end{equation}
-Operators acting on the spectrum are regularized symmetrically:
-\[
-\operatorname{Reg}_2(f)(\lambda) = \lim_{\delta \to 0^+} \frac{f(\lambda + \delta) + f(\lambda - \delta)}{2}.
+\varepsilon(n)=\omega_0(-1)^n n^{-n},\qquad
+\operatorname{Reg}_2(a)_n=\frac{a_{2n}+a_{2n+1}}{2},\qquad
+\omega_0=\Bigl(\frac{R_{\rm curv}}{D_{\rm bridge}}\Bigr)^{4/13}.
 \]
 
-The regulator strength $\omega_0$ is derived from the geometry of the right conoid:
-\begin{equation}
-\omega_0 = \left( \frac{R_{\rm curvature}}{D_{\rm bridge}} \right)^{4/13} \approx 0.927.
-\label{eq:omega0-derived}
-\end{equation}
+\section{Novelty}
 
-\subsection{Physical and Geometric Justification}
-The form \eqref{eq:epsilon-def} satisfies rapid decoupling, symmetry with the conoid metric, information conservation under $\operatorname{Reg}_2$, and variational consistency of the information current on the critical line (as a selection principle internal to SAM3, not a proof of RH).
+Information-conserving dual averaging of spectral data, with geometric strength,
+as in the original Dual-Zero math — distinct from hard UV cutoffs and from the
+trivial observation that $n^{-n}$ is infinitesimal.
 
-\subsection{Impact on Observables}
-With geometric $\omega_0$, the spectral action places the Higgs mass in the 125\,GeV class. Corrections to $G_N$ remain negligible at the level discussed in the hardening notes. Newton's constant continues to follow $G_N = 64\pi\ell_0^2/45$, and three chiral generations remain emergent from the $2I$ action.
+\section{Non-claims}
 
-\subsection{Role in the Framework}
-The Dual-Zero algebra is a foundational component of the SAM3 spectral triple, on equal footing with the right conoid geometry and $2I$ symmetry.
+Not a proof of RH. Not a free CKM/$m_H$ tuner.
 
 \end{document}

@@ -6,12 +6,13 @@
 
 ## Start here (outsiders)
 
-1. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — locked vs residual in one screen  
-2. **[`docs/math_notes/`](docs/math_notes/)** — three generations (APS+2I); metric + $G_N$  
-3. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — modest paper draft  
-4. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — full SSOT
+1. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — locked vs residual  
+2. **[`docs/math_notes/`](docs/math_notes/)** — generations; metric + $G_N$  
+3. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — modest paper  
+4. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — SSOT  
+5. **[`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)** — **original Dual-Zero math**
 
-**Core-first policy:** unification and Riemann-hypothesis narratives are **secondary** until the two mathematical notes are externally checked.
+**Core-first:** unification and RH narratives are secondary until core math is externally checked.
 
 ---
 
@@ -25,12 +26,23 @@ $$
 
 ---
 
+## Dual-Zero (novel — original math)
+
+- Generator $\varepsilon(n)=\omega_0(-1)^n n^{-n}$ with geometric $\omega_0$
+- Dual average $\operatorname{Reg}_2$ on **spectral mode data**
+- Information-conserving alternative to hard UV cutoffs
+- **Not** the claim $\mathrm{st}(n^{-n})\neq 0$
+
+Canonical: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)
+
+---
+
 ## Reproduce
 
 ```bash
 python code/reproduce_status_locked.py
 python code/dual_zero_constructive.py
-python code/pipeline_maturity_checks.py
+python code/production_channel_pipeline.py
 ```
 
 ---
@@ -41,12 +53,12 @@ python code/pipeline_maturity_checks.py
 |-------|----------|
 | Public summary | `PUBLIC_STATUS_SUMMARY.md` |
 | Metric / ω₀ | `docs/hardening/35_...` |
-| Dual-Zero + schemes | docs 18, 37, 39 |
-| Pipeline maturity | doc 40 |
+| **Dual-Zero (original)** | **`docs/hardening/18_...`** + doc 39 |
+| Pipeline | production channel pipeline |
 | Paper supersession | `papers/SUPERSESSION.md` |
-| Expert outreach draft | `docs/outreach/Expert_Outreach_Draft.md` |
+| Contradiction audit | `docs/AUDIT_CONTRADICTIONS.md` |
 
-**RH:** proposal only — not a proof.  
-**Unification:** ~7% floor baseline; percent-level not claimed.
+**RH:** proposal only.  
+**Unification:** ~7% floor; percent-level not claimed.
 
-**Last update:** August 2026 (core math notes + public summary + modest paper).
+**Last update:** August 18, 2026 (metric audit + Dual-Zero novelty lock).
