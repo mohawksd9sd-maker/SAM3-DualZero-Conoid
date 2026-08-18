@@ -1,13 +1,17 @@
 # Papers (LaTeX sources)
 
-**SUPERSESSION:** See [SUPERSESSION.md](SUPERSESSION.md).
+**SUPERSESSION:** See [SUPERSESSION.md](SUPERSESSION.md).  
+**Audit:** [docs/AUDIT_COMPLETE_METRIC_RH.md](../docs/AUDIT_COMPLETE_METRIC_RH.md)
 
-Authoritative claims live in:
+Authoritative claims:
 
 - [`../STATUS_CLAIMS_AND_RESIDUALS.md`](../STATUS_CLAIMS_AND_RESIDUALS.md)
-- [`../docs/hardening/`](../docs/hardening/00_INDEX.md)
+- [`../docs/math_notes/`](../docs/math_notes/15_Pure_Math_Completion_Status.md)
+- Core paper: [`SAM3_Core_Geometry_and_Spectral_Results.tex`](SAM3_Core_Geometry_and_Spectral_Results.tex)
 
-This directory retains expanded derivations and historical versions (v4.x, Papers 02–23, flagship, addenda).  
-Do **not** treat conflicting phenomenology slogans here as current locks.
+**Metric lock:** $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ only.
 
-**Last policy update:** August 2026
+Historical v4.x / Papers 02–23 / flagship files are retained for derivation history.  
+Do **not** treat conflicting phenomenology slogans in them as current locks.
+
+**Last policy update:** August 18, 2026 (full metric-16 audit)

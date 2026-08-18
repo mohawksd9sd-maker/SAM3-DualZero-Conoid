@@ -1,32 +1,32 @@
 # Papers directory — SUPERSESSION BANNER
 
-**Effective:** August 2026  
+**Effective:** August 18, 2026  
 **Authority:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../STATUS_CLAIMS_AND_RESIDUALS.md) + [`docs/math_notes/`](../docs/math_notes/)
 
 ---
 
 ## Rule
 
-Every `.tex` file here is historical or expanded source unless listed as current core.
+Every `.tex` file here is historical or expanded source unless listed as current core.  
 **STATUS + `docs/math_notes/` supersede** all conflicting claims.
 
 ---
 
 ## Current core paper (modest)
 
-- [`SAM3_Core_Geometry_and_Spectral_Results.tex`](SAM3_Core_Geometry_and_Spectral_Results.tex) — three light sectors + $G_N\propto\ell_0^2$ only
+- [`SAM3_Core_Geometry_and_Spectral_Results.tex`](SAM3_Core_Geometry_and_Spectral_Results.tex)
 
 ---
 
-## Known concrete errors corrected
+## Metric lock (mandatory)
 
-| File | Error | Correction |
-|------|-------|------------|
-| `SAM3_Complete_Mathematical_Foundations.tex` | Stated $f=\sqrt{u^2+16\ell_0^2\cos^2(2v)}$ | **Must be 4**, from own parametrization $\mathbf{r}=(u\cos v,u\sin v,\ell_0\sin 2v)$ |
-| Same + curvature | Used 16 in $R$ | $K=-4\ell_0^2\cos^2(2v)/(u^2+4\ell_0^2\cos^2(2v))^2$ |
-| Same | “All theorems rigorously proven” + RH language | Historical index only; RH = **proposal** |
+$$
+f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}
+$$
 
-Any other file still showing coefficient **16** is stale and wrong.
+Coefficient **4 only**. Any `16\ell_0` form is an error.
+
+**August 18, 2026 audit:** all historical papers scanned; metric-16 occurrences corrected; supersession banners added. See [`docs/AUDIT_COMPLETE_METRIC_RH.md`](../docs/AUDIT_COMPLETE_METRIC_RH.md).
 
 ---
 
@@ -35,25 +35,23 @@ Any other file still showing coefficient **16** is stale and wrong.
 | Older language | Superseded by |
 |----------------|---------------|
 | $f^2=u^2+16\ell_0^2\cos^2(\cdot)$ | **$4\ell_0^2$ only** |
-| Exact $m_H=125.1$ GeV | 125 GeV **class** |
+| Exact $m_H=125.1$ or $126.2$ GeV as theorem | 125 GeV **class** |
 | Percent-level unification as fact | ~$7\%$ floor |
 | RH proved / theorem | **Proposal only** |
-| Free / fitted $\omega_0$ | Geometric $\omega_0\approx 0.927$ |
-| $A_5$ isometries of the continuum metric | **False**; $C_4$ only |
+| $A_5$ isometries of continuum metric | **False**; $C_4$ only |
+| Full SM derived in foundations files | Not claimed in core paper |
 | Ultrafilter required for numerics | Constructive finite-$N$ |
-| Full SM derived in foundations file | Not claimed in core paper |
 
 ---
 
-## Banner for every paper preamble
+## Banner (on corrected papers)
 
 ```tex
-% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md
-% Metric: f=sqrt(u^2+4 ell0^2 cos^2(2v)) only.
-% RH = variational proposal only — not a proof.
-% A5 is NOT an isometry group of the locked metric (C4 only).
+% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md / docs/math_notes/
+% LOCKED metric: coefficient 4, not 16.
+% RH = proposal only. A5 is NOT a metric isometry (C4 only).
 ```
 
 ---
 
-*Supersession — August 2026 (metric error fix pass).*
+*Supersession — August 18, 2026 full audit.*
