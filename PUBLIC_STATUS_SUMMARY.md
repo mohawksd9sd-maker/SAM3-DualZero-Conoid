@@ -1,6 +1,6 @@
 # SAM3 — Public Status Summary
 
-**Last update:** August 18, 2026 (full papers/ metric audit)
+**Last update:** August 18, 2026 (full-repo audit)
 
 ---
 
@@ -10,28 +10,28 @@
 |--------|-----------|
 | Metric | $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ **only** |
 | Symmetry | $C_4$ exact (not $A_5$ isometries) |
-| Soft set | Hardy + metric harmonic + $C_4$ |
-| $E_0(2)<E_0(3)$ | Variational theorem |
-| Tip domain | Weyl limit-point/circle + APS |
-| $G_N$ | $\propto\ell_0^2$; $C_0$ explicit integral |
+| Soft set $\{0,1,2\}$ | Hardy + $\cos(2v)$ + $C_4$ |
+| $E_0(2)<E_0(3)$ | Variational |
+| Dual-Zero | **Original math** — doc 18 (info-conserving dual spectral regularization) |
+| $G_N$ | $\propto\ell_0^2$ structural |
 
 ---
 
 ## Audit
 
-All historical `papers/*.tex` scanned for coefficient **16** error. Corrected / bannered. Details: [`docs/AUDIT_COMPLETE_METRIC_RH.md`](docs/AUDIT_COMPLETE_METRIC_RH.md).
+[`docs/FULL_REPO_AUDIT.md`](docs/FULL_REPO_AUDIT.md) — full tree scan, remaining metric-16 fixed in hardening+code, Dual-Zero novelty preserved.
 
 ---
 
 ## Explicit non-claims
 
-Full SM · percent-level unification · RH proof · $A_5$ metric isometries · exact $m_H$ digit as theorem
+Full SM · percent-level unification (locked floor ~7%) · RH proof · exact $m_H$ digit theorem
 
 ---
 
 ## Read
 
 1. This page  
-2. `docs/math_notes/15_Pure_Math_Completion_Status.md`  
-3. `papers/SAM3_Core_Geometry_and_Spectral_Results.tex`  
-4. `papers/SUPERSESSION.md`
+2. `STATUS_CLAIMS_AND_RESIDUALS.md`  
+3. `docs/hardening/18_DualZero_Definition_Lock.md`  
+4. `papers/SAM3_Core_Geometry_and_Spectral_Results.tex`

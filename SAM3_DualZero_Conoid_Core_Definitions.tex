@@ -1,293 +1,42 @@
+% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md and docs/math_notes/
+% LOCKED metric: f=sqrt(u^2+4 ell_0^2 cos^2(2v)) ONLY.
+% Dual-Zero canonical: docs/hardening/18_DualZero_Definition_Lock.md (original Dual-Zero math).
+% RH = proposal only — not a proof. This file is a historical foundations index.
 \documentclass[11pt,a4paper]{article}
-\usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{enumitem}
-\usepackage{xcolor}
-\usepackage{titlesec}
-\usepackage{fancyhdr}
 
-\titleformat{\section}{\large\bfseries\color{blue!70!black}}{}{0em}{}[\titlerule]
-\titleformat{\subsection}{\normalsize\bfseries\color{blue!50!black}}{}{0em}{}
-
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\small\textit{SAM3-DualZero-Conoid Foundations}}
-\fancyhead[R]{\small Complete Mathematical Results}
-\fancyfoot[C]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-
-\title{\textbf{SAM3 -- Complete Mathematical Foundations}\\[0.3em]
-\large Right Conoid Geometry, Dual-Zero Regulator, Spectral Triple, \\
-Cancellation Lemma, Error Control, and Fermion Sector}
+\title{\textbf{SAM3 -- Core Definitions}\\[0.3em]
+\large Historical index — see STATUS and hardening doc 18}
 \author{Shawn Dykes}
-\date{May 2026}
-
-\newtheorem{axiom}{Axiom}
-\newtheorem{lemma}{Lemma}
-\newtheorem{theorem}{Theorem}
-\newtheorem{corollary}{Corollary}
-\newtheorem{remark}{Remark}
+\date{May 2026; banners August 2026}
 
 \begin{document}
-
 \maketitle
 
-\begin{abstract}
-This document collects every major rigorously derived mathematical component of the SAM3 framework, including the geometry of the right conoid, the axiomatic definition of the Dual-Zero regulator, the explicit construction of the Lorentzian spectral triple, the strengthened Graded Cancellation Lemma, the Poisson summation identity, full analytic control of the error term \(E(s)\), the Archimedean limit, the fermion sector, and semi-analytic Yukawa overlaps. Proven results are clearly separated from numerical evidence and open questions.
-\end{abstract}
-
-\section{Right Conoid Geometry}
-
-The manifold is parametrized by
-\[
-\mathbf{r}(u,v) = (u \cos v,\ u \sin v,\ \ell_0 \sin(2v)).
-\]
-The induced metric, volume form, scalar curvature, spin connection, and geometric Dirac operator \(D_{\mathrm{geo}}\) are defined as in the companion geometry note.
-
-\section{Dual-Zero Hyperreal Regulator}
-\label{sec:regulator}
-
-\begin{definition}
-Fix \(\omega_0 > 0\). Define \(\varepsilon(n) = \omega_0 (-1)^n n^{-n}\). Let \(\mathcal{U}\) be a non-principal ultrafilter on \(\mathbb{N}\). The Dual-Zero regulator is
-\[
-\mathrm{Reg}_2(\varepsilon) := \mathrm{st}_{\mathcal{U}}\Bigl( \frac{\varepsilon(2n) + \varepsilon(2n+1)}{2} \Bigr).
-\]
-It acts on functions/measures via \(\mathrm{Reg}_2(f)(n) := \frac{f(2n) + f(2n+1)}{2}\).
-\end{definition}
-
-\begin{axiom}[Linearity -- A1]
-\(\mathrm{Reg}_2\) extends linearly to finite signed measures on \([0,\infty)\).
-\end{axiom}
-
-\begin{axiom}[Grading Compatibility -- A2]
-Antisymmetric signed measures are annihilated: \(\mathrm{Reg}_2(\nu) = 0\) if \(\nu \mapsto -\nu\).
-\end{axiom}
-
-\begin{axiom}[Super-exponential Decay -- A3]
-\(|\mathrm{Reg}_2(f)(n)| \le C_f \exp(-c \log^2 n)\) for test functions with polynomial growth.
-\end{axiom}
-
-\begin{axiom}[Preservation of Standard Part -- A4]
-Symmetric averaging commutes with the standard part map.
-\end{axiom}
-
-\begin{axiom}[Ultrafilter Independence -- A5]
-Even quantities are independent of the choice of non-principal ultrafilter.
-\end{axiom}
-
-\section{Explicit Construction of the Spectral Triple \((\mathcal{A}, \mathcal{H}, D)\)}
-
-This section gives the precise definition of the spectral triple underlying the SAM3 framework in the Lorentzian setting using a Krein-space formulation.
-
-\subsection{Algebra \(\mathcal{A}\)}
-\[
-\mathcal{A} = C^\infty_{\mathrm{DZ}}(M) \otimes \mathbb{C}[2I] \otimes \mathcal{A}_F,
-\]
-where:
-\begin{itemize}
-    \item \(C^\infty_{\mathrm{DZ}}(M)\) is the algebra of smooth functions on the right conoid with values in the Dual-Zero hyperreals (see Section~\ref{sec:regulator}).
-    \item \(\mathbb{C}[2I]\) is the complex group algebra of the binary icosahedral group \(2I\) (order 120).
-    \item \(\mathcal{A}_F = \mathbb{C} \oplus \mathbb{H} \oplus M_3(\mathbb{C})\) is the finite Standard Model algebra.
-\end{itemize}
-
-\subsection{Hilbert Space \(\mathcal{H}\)}
-\[
-\mathcal{H} = L^2(M, S) \otimes \mathbb{C}^{120} \otimes {}^*\mathbb{C}_{\mathrm{DZ}},
-\]
-where \(S \to M\) is the spinor bundle and \(\mathbb{C}^{120}\) carries the regular representation of \(2I\).
-
-For Lorentzian signature, \(\mathcal{H}\) is a Krein space with indefinite inner product of signature \((\infty,\infty)\) and fundamental symmetry \(\beta\) (\(\beta^2=1\)) such that \(\langle \psi, \phi \rangle = (\beta \psi | \phi)_K\).
-
-\subsection{Dirac Operator \(D\)}
-\[
-D = D_{\mathrm{geo}} + D_{\mathrm{bridge}} + D_{\mathrm{DZ}},
-\]
-\begin{enumerate}
-    \item \(D_{\mathrm{geo}}\): Geometric Dirac operator on the right conoid (self-adjoint w.r.t.\ Krein product: \(D_{\mathrm{geo}}^\dagger = \beta D_{\mathrm{geo}} \beta = D_{\mathrm{geo}}\)).
-    \item \(D_{\mathrm{bridge}} = \sum_{k=1}^{12} \chi_k(v) \otimes B_k\), with \(B_k = \varepsilon \cdot \rho_k(g) + \delta \cdot \rho_k(g)^*\) and smooth cutoffs \(\chi_k\).
-    \item \(D_{\mathrm{DZ}} = \mathrm{Reg}_2(\varepsilon) \cdot \mathbf{1} + \gamma_5 \otimes D_F\).
-\end{enumerate}
-
-The full operator satisfies \(D^\dagger = \beta D \beta = D\).
-
-\subsection{Status of Spectral Triple Axioms}
-\begin{itemize}
-    \item Compact resolvent: Satisfied after Dual-Zero regularization (A3).
-    \item First-order condition: Holds by construction.
-    \item Reality operator \(J\): Exists with appropriate signs.
-    \item Grading: \(\gamma_5\) anticommutes with \(D_{\mathrm{geo}}\) and commutes with \(D_{\mathrm{DZ}}\) (A2).
-    \item Lorentzian adaptations follow Krein-space versions of the standard axioms.
-\end{itemize}
-
-\begin{remark}
-Full axiom verification and reconstruction theorem are in \texttt{SAM3\_Axioms\_Verification.tex}.
-\end{remark}
-
-\section{Graded Cancellation Lemma}
-
-\begin{lemma}[Exact Cancellation of Non-Invariant Modes]
-Let \(\sigma: v \mapsto \pi - v\) be the reflection isometry of the right conoid. This induces a \(\mathbb{Z}_2\)-grading \(\mathcal{H} = \mathcal{H}_+ \oplus \mathcal{H}_-\).
-
-Define the signed odd-sector measure \(\nu_-\) by equipping the positive spectral measure \(\mu_-\) with the sign induced by \(\sigma\). Then \(\nu_- \mapsto -\nu_-\) under the grading action.
-
-Since \(\mathrm{Reg}_2\) extends linearly to signed measures and satisfies \(\mathrm{Reg}_2(-\nu) = -\mathrm{Reg}_2(\nu)\), and this antisymmetry is preserved under the ultrapower, it follows that
-\[
-\mathrm{Reg}_2(\nu_-) = 0.
-\]
-Therefore,
-\[
-K_{\rm Reg_2}(t)\Big|_{\mathcal{H}_-} = 0.
-\]
-This cancellation is algebraic and independent of eigenvalue interleaving.
-\end{lemma}
-
-\section{Poisson Summation Identity}
-
-\begin{theorem}
-The regularized heat kernel satisfies
-\[
-K_{\rm Reg_2}(t) = t^{-1} \Xi_{\rm Reg_2}(t) \, K_{\rm Reg_2}(1/t) + R_{\rm bridge}(t),
-\]
-where \(|R_{\rm bridge}(t)| \ll \exp\bigl(-c \log^2 (1/t)\bigr)\) for small \(t > 0\).
-\end{theorem}
-
-\begin{proof}
-After the Cancellation Lemma, only even modes contribute. Decompose:
-\[
-K_{\rm Reg_2}(t) = K_{\rm cyl}(t) + K_{\rm curv}(t) + K_{\rm bridge}(t).
-\]
-
-\textbf{Cylindrical part:} Transforms exactly under \(t \to 1/t\).
-
-\textbf{Curvature part:} Transforms with signs compatible with the prefactor \(\Xi_{\rm Reg_2}(t)\).
-
-\textbf{Bridge part:} The non-modular remainder is suppressed by the super-exponential decay of the Dual-Zero regulator and finite support of the bridges, yielding the stated bound on \(R_{\rm bridge}(t)\).
-\end{proof}
-
-\section{Control of the Error Term \(E(s)\)}
-
-\begin{theorem}[Strong Decay on the Critical Line]
-For all \(|t| \ge 1\),
-\[
-|E(1/2 + it)| \le \exp(-c \log^2 |t|)
-\]
-for some explicit \(c > 0\).
-\end{theorem}
-
-\begin{theorem}[No Creation or Cancellation of Zeros for Large \(|t|\)]
-There exists \(T_0 > 0\) such that for \(|t| > T_0\), any zero of \(\zeta_{\rm SAM3}(1/2 + it)\) must arise from the main term \(\Phi(1/2 + it) \cdot \zeta_{\rm SAM3}(1/2 - it)\).
-\end{theorem}
-
-\begin{proof}[Sketch]
-From the functional equation, \(\Phi(1/2 + it) \cdot \zeta_{\rm SAM3}(1/2 - it) = -E(1/2 + it)\). The main term has a lower bound decaying slower than the error term. By reverse triangle inequality, \(E(s)\) cannot create or cancel zeros for large \(|t|\).
-\end{proof}
-
-\begin{theorem}[Explicit Bound in Compact Disk]
-For any fixed \(R_0 > 0\), \(|E(s)| \le C(R_0, \omega_0)\) for all \(|s| \le R_0\).
-\end{theorem}
-
-\begin{corollary}
-Combined with the large-\(|t|\) result, analytic control holds over the entire spectrum of \(\zeta_{\rm SAM3}(s)\).
-\end{corollary}
-
-\section{Archimedean Limit}
-
-\begin{theorem}[Archimedean Recovery]
-As \(\omega_0 \to 1^-\),
-\[
-\mathrm{st}\bigl[\zeta_{\rm SAM3}(s)\bigr] = c \cdot \zeta_{\rm conoid}(s) \cdot G(s) + o(1),
-\]
-uniformly on compact subsets of \(\mathbb{C}\), where \(G(s)\) has only trivial zeros and poles.
-\end{theorem}
-
-\begin{proof}[Outline]
-The Cancellation Lemma, Poisson identity, and error term all converge uniformly as \(\omega_0 \to 1^-\), recovering the geometric spectral zeta function of the conoid multiplied by the explicit factor \(G(s)\).
-\end{proof}
-
-\begin{remark}
-This recovers a geometric object \(\zeta_{\rm conoid}(s)\), not necessarily the classical Riemann zeta function \(\zeta(s)\). The identification remains open.
-\end{remark}
-
-\section{Semi-Analytic Yukawa Overlaps}
-
-After the Cancellation Lemma, Yukawa elements arise from overlaps of even eigenmodes localized on bridges. The leading behavior is
-\[
-Y_{ij} \approx C \exp\left( -\frac{d_{ij}}{\ell_{\rm reg}} \right), \qquad \ell_{\rm reg} \propto \frac{1}{\omega_0}.
-\]
-
-Including NLO corrections:
-\[
-Y_{ij} \approx C \exp\left( -\frac{d_{ij}}{\ell_{\rm reg}} \right)
-\Bigl(1 + \alpha \omega_0 + \beta \frac{d_{ij}}{\ell_{\rm reg}} \omega_0 + O(\omega_0^2)\Bigr).
-\]
-
-\section{Full Fermion Sector}
-
-The algebra \(\mathcal{A}_F\) together with the \(2I\)-action on the twelve bridges produces three chiral generations.
-
-\subsection{Left-Handed Representations}
-\begin{table}[h]
-\centering
-\caption{Left-handed fermion representations}
-\begin{tabular}{@{}ll@{}}
-\toprule
-Field & Representation \\
-\midrule
-\(q_L^i\) & \((2,3,1/6)\) \\
-\(\ell_L^i\) & \((2,1,-1/2)\) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\subsection{Right-Handed Representations}
-\begin{table}[h]
-\centering
-\caption{Right-handed fermion representations}
-\begin{tabular}{@{}ll@{}}
-\toprule
-Field & Representation \\
-\midrule
-\(u_R^i\) & \((1,3,2/3)\) \\
-\(d_R^i\) & \((1,3,-1/3)\) \\
-\(e_R^i\) & \((1,1,-1)\) \\
-\(\nu_R^i\) & \((1,1,0)\) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-The resulting CKM matrix after RG running (numerical) is consistent with experiment to within a few percent (see companion note for full matrices).
-
-\section{Scope and Status of Results}
-
-\begin{itemize}
-    \item \textbf{Proven}: Graded Cancellation Lemma, Poisson summation with remainder, all control results on \(E(s)\), Archimedean limit.
-    \item \textbf{Numerical evidence}: CKM values, low-lying zero alignment, Yukawa hierarchies.
-    \item \textbf{Open}: Identification of \(\zeta_{\rm conoid}(s)\) with classical \(\zeta(s)\), full analytic Yukawa derivation, complete Lorentzian axiom verification.
-\end{itemize}
-
-\section{Summary: Axiomatic vs.\ Derived Results}
-
 \begin{center}
-\begin{tabular}{@{}p{6.5cm} l l@{}}
-\toprule
-\textbf{Property / Result} & \textbf{Status} & \textbf{Source} \\
-\midrule
-Linearity, Grading compatibility, Decay, Standard part, Ultrafilter independence & Axiom & A1--A5 \\
-Graded Cancellation Lemma & Derived & A1 + A2 \\
-Poisson Summation with remainder & Derived & Geometry + A3 \\
-Control of \(E(s)\) (decay, no creation/cancellation, compact bounds) & Derived & A3 + estimates \\
-Archimedean Limit & Derived & A1--A5 + geometry \\
-Semi-analytic Yukawa overlaps (NLO) & Derived & Bridge geometry + regulator \\
-\bottomrule
-\end{tabular}
+\fbox{\parbox{0.9\textwidth}{
+\textbf{Authority.} Locks live in \texttt{STATUS\_CLAIMS\_AND\_RESIDUALS.md},
+\texttt{docs/math\_notes/}, and\n\texttt{docs/hardening/18\_DualZero\_Definition\_Lock.md}.\\
+Metric coefficient \textbf{4}. Dual-Zero novelty preserved (original math). RH = proposal only.
+}}
 \end{center}
 
-\begin{remark}
-Several important questions remain open, including full identification with the classical Riemann zeta function and complete analytic derivation of the Yukawa matrices.
-\end{remark}
+\section{Right Conoid Geometry (locked)}
+\[
+\mathbf{r}=(u\cos v,u\sin v,\ell_0\sin(2v)),\quad
+f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
+\]
+
+\section{Dual-Zero (original math)}
+Generator $\varepsilon(n)=\omega_0(-1)^n n^{-n}$, dual average
+$\operatorname{Reg}_2(a)_n=(a_{2n}+a_{2n+1})/2$, geometric $\omega_0$.\\
+Canonical: hardening doc 18. This is information-conserving dual regularization of
+\emph{spectral data}, not a claim that $\mathrm{st}(\varepsilon)\neq 0$.
+
+\section{Non-claims}
+Full SM derivation, percent-level unification, RH proof, $A_5$ metric isometries.
 
 \end{document}
