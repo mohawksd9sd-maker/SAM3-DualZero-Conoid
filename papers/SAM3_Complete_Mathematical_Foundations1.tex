@@ -1,168 +1,41 @@
 \documentclass[11pt,a4paper]{article}
+% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md / docs/math_notes/
+% LOCKED metric: f=sqrt(u^2+4 ell_0^2 cos^2(2v)) ONLY (coefficient 4, not 16).
+% RH = variational proposal only — not a proof. A5 is NOT a metric isometry (C4 only).
+% Auto-corrected metric coefficient 16->4 on August 18, 2026.
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{hyperref}
-\usepackage{booktabs}
-\usepackage{enumitem}
 \usepackage{xcolor}
-\usepackage{titlesec}
 
-\titleformat{\section}{\large\bfseries\color{blue!70!black}}{}{0em}{}[\titlerule]
-\titleformat{\subsection}{\normalsize\bfseries\color{blue!50!black}}{}{0em}{}
-
-\title{\textbf{SAM3 -- Complete Mathematical Foundations}\\[0.3em]
-\large Right Conoid Geometry, Dual-Zero Regulator, Spectral Triple, \\
-Cancellation Lemma, Error Control, Archimedean Limit, Fermion Sector}
-\author{Shawn Dykes (\texttt{@Pieces1121}) \\ in collaboration with Grok (xAI)}
-\date{May 22, 2026}
+\title{\textbf{SAM3 -- Complete Mathematical Foundations (copy 1)}\\[0.3em]
+\large Historical index — metric corrected}
+\author{Shawn Dykes (\texttt{@Pieces1121})}
+\date{May 22, 2026; corrected August 18, 2026}
 
 \begin{document}
 \maketitle
 
-\begin{abstract}
-This document consolidates every major rigorously derived mathematical component of the SAM3 framework: the right conoid geometry, the axiomatic Dual-Zero regulator, the strengthened Cancellation Lemma, the Poisson summation identity with controlled remainder, full analytic control of the error term \(E(s)\), the Archimedean limit, the fermion sector with explicit CKM matrix, and semi-analytic Yukawa overlaps. All proven results are clearly labeled; numerical evidence and open questions are explicitly separated.
-\end{abstract}
+\begin{center}
+\fbox{\parbox{0.9\textwidth}{\textbf{SUPERSESSION.} Authoritative geometry lives in
+\texttt{docs/math\_notes/} and the core paper.
+Metric coefficient is \textbf{4}, not 16. RH language is proposal only.}}
+\end{center}
 
-\section{Right Conoid Geometry}
-
-The manifold is parametrized by
+\section{Right Conoid Geometry (LOCKED)}
+Parametrization $\mathbf{r}=(u\cos v,u\sin v,\ell_0\sin(2v))$.
+Induced metric (corrected):
 \[
-\mathbf{r}(u,v) = (u \cos v,\ u \sin v,\ \ell_0 \sin(2v)).
+ds^2=du^2+f^2 dv^2,\quad f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
 \]
-Induced metric:
+Curvature:
 \[
-ds^2 = du^2 + f(u,v)^2 dv^2, \quad f(u,v) = \sqrt{u^2 + 16\ell_0^2 \cos^2(2v)}.
-\]
-Scalar curvature:
-\[
-R(u,v) = -\frac{32\ell_0^2 \cos^2(2v)}{(u^2 + 16\ell_0^2 \cos^2(2v))^2}.
+K=-\frac{4\ell_0^2\cos^2(2v)}{(u^2+4\ell_0^2\cos^2(2v))^2}.
 \]
 
-\section{Dual-Zero Hyperreal Regulator}
-
-\begin{definition}
-Fix \(\omega_0 > 0\). Define the sequence \(\varepsilon(n) = \omega_0 (-1)^n n^{-n}\). Let \(\mathcal{U}\) be a non-principal ultrafilter. The regulator is
-\[
-\mathrm{Reg}_2(\varepsilon) := \mathrm{st}_{\mathcal{U}}\Bigl( \frac{\varepsilon(2n) + \varepsilon(2n+1)}{2} \Bigr).
-\]
-\end{definition}
-
-Axioms A1–A5 (linearity on signed measures, grading compatibility/antisymmetry, super-exponential decay, preservation of standard part, ultrafilter independence for even quantities) are as established.
-
-\section{Graded Cancellation Lemma}
-
-\begin{lemma}[Exact Cancellation of Non-Invariant Modes]
-Let \(\sigma: v \mapsto \pi - v\). Define the signed odd-sector measure \(\nu_-\) by equipping \(\mu_-\) with the sign induced by \(\sigma\). Then \(\mathrm{Reg}_2(\nu_-) = 0\), so
-\[
-K_{\rm Reg_2}(t)\Big|_{\mathcal{H}_-} = 0.
-\]
-\end{lemma}
-
-\begin{proof}
-The relation \(\nu_- \mapsto -\nu_-\) follows from \(\sigma^* D_c = -D_c\) on the odd sector. \(\mathrm{Reg}_2\) extends linearly and satisfies \(\mathrm{Reg}_2(-\nu) = -\mathrm{Reg}_2(\nu)\) (verified by sign flip on each averaged pair). Antisymmetry is preserved under the ultrapower. Hence \(\mathrm{Reg}_2(\nu_-) = 0\).
-\end{proof}
-
-\section{Poisson Summation Identity}
-
-\begin{theorem}
-\[
-K_{\rm Reg_2}(t) = t^{-1} \Xi_{\rm Reg_2}(t) K_{\rm Reg_2}(1/t) + R_{\rm bridge}(t),
-\]
-with \(|R_{\rm bridge}(t)| \ll \exp(-c \log^2(1/t))\).
-\end{theorem}
-
-\begin{proof}
-After the Cancellation Lemma only even modes survive. Decompose into cylindrical + curvature + bridge parts. The first two transform modularly. The bridge part produces the modular term plus a remainder controlled by super-exponential decay of the regulator and finiteness of the bridges.
-\end{proof}
-
-\section{Control of the Error Term \(E(s)\)}
-
-\begin{theorem}[Strong Decay on Critical Line]
-For \(|t| \ge 1\), \(|E(1/2 + it)| \le \exp(-c \log^2 |t|)\).
-\end{theorem}
-
-\begin{theorem}[No Creation or Cancellation for Large \(|t|\)]
-There exists \(T_0 > 0\) such that for \(|t| > T_0\), zeros of \(\zeta_{\rm SAM3}(s)\) on the critical line arise only from the main term.
-\end{theorem}
-
-\begin{theorem}[Explicit Bound in Compact Disk]
-For any fixed \(R_0 > 0\), \(|E(s)| \le C(R_0, \omega_0)\) for \(|s| \le R_0\).
-\end{theorem}
-
-\begin{corollary}
-Inside any fixed compact disk, \(E(s)\) affects only finitely many zeros.
-\end{corollary}
-
-\section{Archimedean Limit}
-
-\begin{theorem}[Archimedean Recovery]
-As \(\omega_0 \to 1^-\),
-\[
-\mathrm{st}\bigl[\zeta_{\rm SAM3}(s)\bigr] = c \cdot \zeta_{\rm conoid}(s) \cdot G(s) + o(1),
-\]
-uniformly on compact subsets, where \(G(s)\) has only trivial zeros and poles.
-\end{theorem}
-
-\begin{remark}
-This recovers a geometric spectral zeta of the conoid, **not** automatically the classical Riemann zeta function \(\zeta(s)\). Identification remains open.
-\end{remark}
-
-\section{Full Fermion Sector}
-
-\begin{table}[h]
-\centering
-\caption{Left-handed representations}
-\begin{tabular}{@{}ll@{}}
-\toprule
-Field & Representation \\
-\midrule
-\(q_L^i\) & \((2,3,1/6)\) \\
-\(\ell_L^i\) & \((2,1,-1/2)\) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}[h]
-\centering
-\caption{Right-handed representations}
-\begin{tabular}{@{}ll@{}}
-\toprule
-Field & Representation \\
-\midrule
-\(u_R^i\) & \((1,3,2/3)\) \\
-\(d_R^i\) & \((1,3,-1/3)\) \\
-\(e_R^i\) & \((1,1,-1)\) \\
-\(\nu_R^i\) & \((1,1,0)\) \\
-\bottomrule
-\end{tabular}
-\end{table}
-
-Yukawa matrices arise from overlap integrals. After RG running, the resulting CKM matrix is consistent with experiment (numerical evidence).
-
-\section{Semi-Analytic Yukawa Overlaps}
-
-\[
-Y_{ij} \approx C \exp\left( -\frac{d_{ij}}{\ell_{\rm reg}} \right)
-\Bigl(1 + \alpha \omega_0 + \beta \frac{d_{ij}}{\ell_{\rm reg}} \omega_0 + O(\omega_0^2)\Bigr).
-\]
-
-\section{Explicit Spectral Triple Construction}
-
-\[
-\mathcal{A} = C^\infty_{\mathrm{DZ}}(M) \otimes \mathbb{C}[2I] \otimes \mathcal{A}_F,
-\]
-\[
-\mathcal{H} = L^2(M,S) \otimes \mathbb{C}^{120} \otimes {}^*\mathbb{C}_{\mathrm{DZ}} \quad (\text{Krein structure in Lorentzian case}),
-\]
-\[
-D = D_{\mathrm{geo}} + D_{\mathrm{bridge}} + D_{\mathrm{DZ}},
-\]
-with \(D_{\mathrm{bridge}} = \sum_k \chi_k(v) \otimes B_k\) and \(D_{\mathrm{DZ}} = \mathrm{Reg}_2(\varepsilon) \cdot \mathbf{1} + \gamma_5 \otimes D_F\).
-
-\section{Logical Chain and Scope}
-
-All theorems above are rigorously proven. Numerical results (CKM values, low-lying alignment) are supporting evidence only. Identification of the limiting object with classical \(\zeta(s)\) remains open.
+\section{Status}
+Historical claims index only. See \texttt{papers/SUPERSESSION.md}.
 
 \end{document}
