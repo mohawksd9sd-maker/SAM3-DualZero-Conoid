@@ -11,137 +11,372 @@
 \newtheorem{definition}[theorem]{Definition}
 \theoremstyle{remark}
 \newtheorem{remark}[theorem]{Remark}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{numobs}[theorem]{Numerical observation}
 
-\title{Three Light Sectors and a Scale for $G_N$\\from a Right-Conoid Spectral Geometry}
+\title{A Right-Conoid Spectral Geometry:\\Induced Metric, Channel Monotonicity, and Regularised Volume}
 \author{}
-\date{August 2026}
+\date{November 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We study a right-conoid internal geometry with tip-modulated metric
-$f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$, APS boundary conditions, and a twelve-bridge
-lattice. We prove a strict variational ordering of radial channel energies in the
-angular momentum $m$, fix the soft set $\{0,1,2\}$ by Hardy energy together with
-the metric harmonic $\cos(2v)$ and the exact $C_4$ isometry (not by assuming
-$A_5$ isometries of the metric), and address self-adjointness at the tip via the
-Weyl limit-point classification. Under an APS-compatible spin structure and
-standard conical/edge index theory, these inputs yield three light channels.
-Separately, the spectral action implies $G_N\propto\ell_0^2$, with regularised
-internal volume finite part $C_0$ defined by an explicit integral. Residuals and
-non-claims are listed. We do not claim a derivation of the full Standard Model,
-percent-level unification, or a proof of the Riemann hypothesis.
+We study the right conoid immersed by
+$r(u,v)=(u\cos v,\,u\sin v,\,\ell_0\sin(2v))$, with the induced metric
+$ds^2=du^2+f^2\,dv^2$ and $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$.
+We prove the induced-metric formulae, the exact $C_4$ isometry
+(and that $A_5$ is not an isometry of $f$), the Gaussian curvature,
+existence of a regularised volume finite part $C_0$, and a strict
+variational monotonicity of radial channel ground energies in the
+angular momentum $m$ (with a domain caveat at $m=0$).
+A numerical evaluation gives $C_0\approx 4.3551723$ on the unit metric
+$\ell_0=1$; an earlier draft band $4.43$--$4.45$ does not reproduce.
+Claims are labelled as theorem, proposition, numerical observation,
+heuristic, convention, or conjecture. We do not claim a derivation of
+the full Standard Model, a scheme-free formula for $G_N$, a derivation
+of $\omega_0\approx 0.927$ or of the exponent $4/13$, an APS index
+computation yielding three generations, or a proof of the Riemann
+hypothesis.
 \end{abstract}
 
-\section{Introduction}
+\section{Scope and labelling}
 
-This note isolates two structural results for a specific internal surface and
-records every hypothesis. The title refers only to three light sectors and a
-scale for $G_N$---not to a complete Standard Model derivation.
+This note isolates results that follow from the locked embedding, or
+that are explicitly numerical or conventional, and records every
+hypothesis. A statement is a \emph{theorem} or \emph{proposition} only
+if a proof is given from the stated definitions. Numerical values are
+labelled as such. Heuristics, conventions, and open claims are not
+promoted to theorems. All numbers in the text are reproduced by
+\texttt{code/core\_reproducibility.py} and the tests in \texttt{tests/}.
 
 \section{Geometry}
 
-Coordinates $(u,v)\in[0,\infty)\times S^1$ carry
+\begin{definition}[Locked embedding]
+\label{def:embedding}
+For $\ell_0>0$ and $(u,v)\in[0,\infty)\times\mathbb{R}/2\pi\mathbb{Z}$,
+\[
+  r(u,v)=\bigl(u\cos v,\; u\sin v,\; \ell_0\sin(2v)\bigr)\in\mathbb{R}^3.
+\]
+\end{definition}
+
+\begin{proposition}[Induced metric]
+\label{prop:metric}
+The induced Riemannian metric is
 \begin{equation}
   ds^2=du^2+f(u,v)^2\,dv^2,
   \qquad
   f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}.
 \end{equation}
-The metric is invariant under $v\mapsto v+\pi/2$ (exact $C_4$ isometry). It is
-\emph{not} $A_5$-symmetric as a Riemannian metric. Four tip nodes occur where
-$f=0$. Truncations $X_U$ use APS conditions at the outer boundary and an
-APS-compatible spin structure with anti-periodic tip links.
+In particular $g_{uu}=1$, $g_{uv}=0$, and the coefficient of
+$\ell_0^2\cos^2(2v)$ in $g_{vv}$ is $4$, not $16$.
+\end{proposition}
+
+\begin{proof}
+Differentiating the embedding gives
+$r_u=(\cos v,\sin v,0)$ and
+$r_v=(-u\sin v,\,u\cos v,\,2\ell_0\cos(2v))$.
+Hence $g_{uu}=r_u\cdot r_u=1$, $g_{uv}=r_u\cdot r_v=0$, and
+$g_{vv}=u^2+4\ell_0^2\cos^2(2v)$.
+\end{proof}
+
+\begin{proposition}[$C_4$ isometry; $A_5$ is not an isometry]
+\label{prop:c4}
+The map $v\mapsto v+\pi/2$ is an isometry of $ds^2$. A rotation of $v$
+by $2\pi/5$ is not: already $f(u,v)\neq f(u,v+2\pi/5)$ at
+$(u,v,\ell_0)=(0.3,0.2,1)$. Consequently $A_5$ is not a continuous
+isometry group of the locked metric.
+\end{proposition}
+
+\begin{proof}
+$\cos(2(v+\pi/2))=\cos(2v+\pi)=-\cos(2v)$, so $f$ is invariant, and the
+coordinate form of $ds^2$ is unchanged. The $2\pi/5$ counterexample is
+a direct evaluation.
+\end{proof}
+
+\begin{proposition}[Tip nodes]
+\label{prop:tips}
+On $u=0$, $f(0,v)=0$ if and only if $\cos(2v)=0$, i.e.\ at the four
+points $v=\pi/4+k\pi/2$ for $k=0,1,2,3$.
+\end{proposition}
+
+\begin{proposition}[Gaussian curvature]
+\label{prop:curvature}
+Away from $\{f=0\}$, the Gaussian curvature of $ds^2=du^2+f^2\,dv^2$ is
+\[
+  K=-\frac{f_{uu}}{f}=-\frac{4\ell_0^2\cos^2(2v)}{f^4}.
+\]
+In particular, at $u=0$ and $|\cos(2v)|=1$ one has
+$|K|_{\max}=1/(4\ell_0^2)$.
+\end{proposition}
+
+\begin{proof}
+With $v$ held fixed, $f^2=u^2+4\ell_0^2\cos^2(2v)$, so
+$f_u=u/f$ and $f_{uu}=4\ell_0^2\cos^2(2v)/f^3$. For an orthogonal
+metric of this form, $K=-f_{uu}/f$, which is the displayed formula.
+\end{proof}
+
+\section{Regularised volume}
+
+The area of the truncated surface $0\le u\le U$ is
+$\mathrm{Vol}(U)=\int_0^U\int_0^{2\pi} f\,dv\,du$.
+Write $I(u)=\int_0^{2\pi}(f-u)\,dv$, so that
+$\mathrm{Vol}(U)=\pi U^2+\int_0^U I(u)\,du$.
+
+\begin{proposition}[Existence of $C_0$]
+\label{prop:c0exists}
+Let $\ell_0=1$. Then $I(u)=2\pi/u+O(u^{-3})$ as $u\to\infty$, and the
+limit
+\begin{equation}
+  C_0=\lim_{U\to\infty}\Bigl(\int_0^U I(u)\,du-2\pi\log U\Bigr)
+\end{equation}
+exists and is finite. The same limit is obtained if $\log U$ is replaced
+by $\log(U+1)$.
+\end{proposition}
+
+\begin{proof}
+For $u>0$,
+$f-u=u\bigl(\sqrt{1+4\cos^2(2v)/u^2}-1\bigr)
+=2\cos^2(2v)/u+O(u^{-3})$,
+uniformly in $v$. Integrating in $v$ and using
+$\int_0^{2\pi}\cos^2(2v)\,dv=\pi$ gives $I(u)=2\pi/u+O(u^{-3})$.
+Thus $\int_1^\infty(I(u)-2\pi/u)\,du$ converges absolutely, and $C_0$
+exists. Finally $\log(U+1)-\log U\to 0$.
+\end{proof}
+
+Hence
+$\mathrm{Vol}(U)=\pi U^2+2\pi\log U+C_0+o(1)$.
+
+\begin{numobs}[Value of $C_0$]
+\label{obs:c0}
+Adaptive evaluation of the integral in Proposition~\ref{prop:c0exists}
+gives $C_0\approx 4.3551723$ (already $C_0(U=1000)\approx 4.3551745$ and
+$C_0(U=4000)\approx 4.3551723$). An earlier draft band $4.43$--$4.45$,
+obtained from coarser Riemann sums, does not reproduce and is withdrawn.
+\end{numobs}
 
 \section{Self-adjointness of radial channels}
 
-On $(0,U)$ set
-$H_m=-\partial_{uu}+m^2(u+\epsilon)^{-2}+V_{\mathrm{tip}}(u)$.
-By the Weyl classification for inverse-square potentials, $m\ge 1$ is
-limit-point at $u=0$ (unique self-adjoint extension), while $m=0$ is
-limit-circle. The $m=0$ realization is fixed by the APS/conic tip condition
-from the global spin structure. Variational comparisons below are on these
-realizations.
+On $(0,U)$ consider the radial operators
+$H_m=-\partial_{uu}+m^2(u+\varepsilon)^{-2}+V_{\mathrm{tip}}(u)$
+with $\varepsilon\ge 0$ a possible cutoff and $V_{\mathrm{tip}}$ a
+real, relatively bounded tip potential (including the case $V_{\mathrm{tip}}=0$).
 
-\section{Soft set from geometry}
-
-\begin{proposition}[Geometric soft set]
-Hardy energy strictly increases with $m^2$. The metric harmonic $\cos(2v)$
-singles out angular momentum $m=2$. The exact $C_4$ isometry is compatible with
-the consecutive soft block $\{0,1,2\}$. Thus the soft set is preferred by the
-metric and Hardy theory, not by treating $A_5$ as an isometry group of $f$.
+\begin{proposition}[Weyl classification]
+\label{prop:weyl}
+For the inverse-square potential $\kappa/u^2$ on $(0,1)$, the operator
+$-d^2/du^2+\kappa/u^2$ is limit-circle at $u=0$ if $\kappa<3/4$ and
+limit-point if $\kappa\ge 3/4$. Consequently, for $\kappa=m^2$, the
+channel $m=0$ is limit-circle at the tip, while every channel with
+$|m|\ge 1$ is limit-point (unique self-adjoint extension).
 \end{proposition}
 
-A discrete twelve-bridge $A_5$-module may organise labels \emph{inside} the soft
-sector; it is not used to choose which $m$ are soft.
+This is the standard Weyl criterion for inverse-square potentials; see
+Reed--Simon~\cite{ReedSimon}. For $m=0$ a self-adjoint realization must
+be chosen. In the numerical checks below we use a Dirichlet cutoff on a
+compact interval, which selects one such realization; an APS/conic tip
+condition would be another. Variational comparisons that include $m=0$
+are understood on a fixed common realization.
 
-\section{Channel isolation}
+\section{Channel monotonicity}
 
 \begin{theorem}[Strict monotonicity]
-For $m_2>m_1\ge 0$, on the self-adjoint realizations above,
-$E_0(m_2)>E_0(m_1)$.
+\label{thm:mono}
+Let $m_2>m_1\ge 1$, and let $H_{m_i}$ be the unique self-adjoint
+realizations on a finite interval $(0,U)$ (or on $(0,\infty)$ with a
+confining condition at infinity). Then the ground energies satisfy
+$E_0(m_2)>E_0(m_1)$. The same strict inequality holds for $m_1=0$ and
+$m_2\ge 1$ on any common form domain in which the quadratic form of
+$H_0$ is closed and $\int(u+\varepsilon)^{-2}|\psi|^2$ is finite and
+not identically zero for nonzero form-domain functions (in particular,
+on a Dirichlet cutoff).
 \end{theorem}
 
 \begin{proof}
-If $\psi$ is a normalised ground state of $H_{m_1}$, then
-$\langle H_{m_2}\rangle_\psi-E_0(m_1)=(m_2^2-m_1^2)\int(u+\epsilon)^{-2}|\psi|^2>0$.
+On the indicated form domain,
+$H_{m_2}=H_{m_1}+(m_2^2-m_1^2)(u+\varepsilon)^{-2}$
+as quadratic forms, and the added potential is nonnegative and not
+almost-everywhere zero. Hence $E_0(m_2)\ge E_0(m_1)$. If equality held,
+a ground state $\varphi$ of $H_{m_2}$ would satisfy
+$\langle H_{m_2}\rangle_\varphi=E_0(m_1)$, while
+\[
+  \langle H_{m_2}\rangle_\varphi
+  =\langle H_{m_1}\rangle_\varphi+(m_2^2-m_1^2)\int(u+\varepsilon)^{-2}|\varphi|^2
+  \ge E_0(m_1)+(m_2^2-m_1^2)\int(u+\varepsilon)^{-2}|\varphi|^2.
+\]
+The integral is strictly positive for $\varphi\not=0$, a contradiction.
+(The one-line comparison of $H_{m_2}$ against a ground state of $H_{m_1}$
+alone yields only $E_0(m_2)\le\langle H_{m_2}\rangle_{\psi_{m_1}}$, which
+is the wrong direction; the form inequality is what is needed.)
 \end{proof}
 
 \begin{corollary}
-$E_0(2)<E_0(3)$. Any threshold between them isolates exactly the three soft
-channels.
+\label{cor:e2e3}
+$E_0(2)<E_0(3)$ on these realizations. Any spectral threshold lying
+strictly between them isolates the three channels $m\in\{0,1,2\}$ among
+the radial model operators $H_m$.
 \end{corollary}
 
-\section{Smoothing limit}
+\begin{numobs}
+On a Dirichlet cutoff of $(0,20)$ with $400$ interior points one finds
+$E_0(0)\approx 0.02467$, $E_0(1)\approx 0.03980$, $E_0(2)\approx 0.06795$,
+$E_0(3)\approx 0.10339$, consistent with Theorem~\ref{thm:mono}. The $m=0$
+value is indicative of that cutoff.
+\end{numobs}
 
-For $\delta>0$, $f^2+\delta^2$ is smooth and the APS index on $X_U$ is
-deformation-invariant. Invertibility of the anti-periodic link Dirac operator
-at each tip node places the $\delta\to 0$ limit under standard conical/edge
-Fredholm theory. We cite that theory rather than re-develop it.
+\begin{remark}[Soft set, heuristic]
+The metric factor $\cos(2v)$ is the $m=2$ angular harmonic, and the
+exact $C_4$ isometry is compatible with a consecutive block
+$\{0,1,2\}$. This is a preference heuristic for calling $\{0,1,2\}$ the
+soft set of the radial model. It is \emph{not} a uniqueness theorem, and
+it is \emph{not} a computation of the APS index, or of the number of
+light eigenvalues, of the two-dimensional Dirac operator on the conoid.
+\end{remark}
 
-\section{Newton constant and $C_0$}
+\begin{conjecture}[Three light Dirac channels]
+\label{conj:three}
+Under a specified APS-compatible spin structure on a suitable
+compactification or truncation of the conoid, the Dirac operator has
+exactly three light channels (or index three).
+\end{conjecture}
 
-Product spectral action yields $G_N=\alpha\ell_0^2$. The regularised internal
-volume admits
-\begin{equation}
-  \widehat{\mathrm{Vol}}(U)=\pi U^2+2\pi\log U+C_0+o(1),
-\end{equation}
-with
-\begin{equation}
-  C_0=\lim_{U\to\infty}\Big(\int_0^U\!\int_0^{2\pi}(\hat f-u)\,dv\,du-2\pi\log(U+1)\Big).
-\end{equation}
-Numerically $C_0\approx 4.43$--$4.45$ (convergent). The pure prefactor in any
-normalised form of $\alpha$ is scheme-dependent; the proportionality
-$G_N\propto\ell_0^2$ is not.
+No index computation is given in this note, and the numerical Dirac
+solver of Section~\ref{sec:dirac} is a truncation, not a proof of
+Conjecture~\ref{conj:three}.
 
-\section{Residuals and non-claims}
+\section{Spectral action and $G_N$}
 
-\textbf{Residuals.}
-Edge-calculus stability is cited. Full limit-circle parametrix matching APS to a
-boundary parameter is packaged. Lorentzian signature is open. Yukawa eigenvalues
-and CKM digits are not derived in this note.
+On a product spectral triple, the Seeley--DeWitt coefficient $a_2$ of
+the spectral action~\cite{ChamseddineConnes} produces an
+Einstein--Hilbert term whose coupling involves the internal scale
+$\ell_0$. This yields the structural relation $G_N=\alpha\ell_0^2$.
 
-\textbf{Non-claims.}
-We do not claim a full Standard Model derivation, percent-level unification,
-resolution of the cosmological constant, UV-complete quantum gravity, or a proof
-of the Riemann hypothesis. Absolute uniqueness of the conoid is not claimed.
-$A_5$ is not claimed as a continuous isometry group of the locked metric.
+The pure prefactor $\alpha$ depends on normalisation conventions
+(cutoff moments, the internal volume regularisation, and any overall
+factor in the spectral action). The repository records the normalisation
+$G_N=64\pi\ell_0^2/45$, which is equivalent to fixing a single
+combination of those conventions
+(cf.\ the discussion in the project's mathematical notes). This is a
+\emph{convention}, not a scheme-free derivation. The proportionality
+$G_N\propto\ell_0^2$ is the structural statement; the number $64\pi/45$
+is not independently derived here.
+
+\section{$\omega_0$ and the exponent $4/13$}
+\label{sec:omega}
+
+The Dual-Zero generator is a definition,
+$\varepsilon(n)=\omega_0(-1)^n n^{-n}$, not a theorem. The value
+$\omega_0\approx 0.927$ and the formula
+$\omega_0=(R_{\mathrm{curv}}/D_{\mathrm{bridge}})^{4/13}$ with
+$D_{\mathrm{bridge}}=2\pi/12$ are \emph{not derived} in this note.
+
+What is missing is: (i)~a unique geometric definition of the curvature
+radius $R_{\mathrm{curv}}$; (ii)~a derivation of the exponent $4/13$ from
+the metric, the spectral action, or a closed variational problem;
+(iii)~a reason to pair that $R$ with $D_{\mathrm{bridge}}=2\pi/12$.
+
+Even granting the exponent, natural readings of $R$ at the curvature
+maximum ($u=0$, $|\cos(2v)|=1$) do not yield $0.927$ at $\ell_0=1$:
+\[
+\begin{array}{lcc}
+\hline
+R & R/D & (R/D)^{4/13}\\
+\hline
+1/|K|_{\max}=4\ell_0 & 7.639\ldots & 1.869\ldots\\
+1/\sqrt{|K|_{\max}}=2\ell_0 & 3.820\ldots & 1.510\ldots\\
+\ell_0 & 1.910\ldots & 1.220\ldots\\
+\hline
+\end{array}
+\]
+The value $0.927$ would require $R\approx 0.409\,\ell_0$, which is not
+one of these geometric prescriptions. Treating $0.927$ as an input
+parameter is honest; treating it as a derived output is not.
+
+\section{Numerical Dirac operator}
+\label{sec:dirac}
+
+A previous real-matrix assembly followed by symmetrisation
+$D\mapsto\tfrac12(D+D^T)$ is not a Dirac operator: on a flat torus the
+derivative terms cancel and the spectrum is not the analytic Dirac
+spectrum. A complex Hermitian discretisation of
+\[
+  D=i\sigma^1\bigl(\partial_u+\tfrac12\partial_u\log f\bigr)+i\sigma^2 f^{-1}\partial_v
+\]
+is implemented in \texttt{code/aps\_hermitian.py}.
+
+\begin{numobs}[Flat torus, known answer]
+On the flat torus $\mathbb{R}^2/(2\pi\mathbb{Z})^2$ with antiperiodic
+conditions in both directions, the analytic spectrum is
+$\pm\sqrt{k_u^2+k_v^2}$ with $k=n+\tfrac12$, $n\in\mathbb{Z}$. The
+lowest $\lvert\lambda\rvert$ is $\sqrt{1/2}$. At grid size $N=24$ the
+Hermitian scheme matches the eight copies of $\pm\sqrt{1/2}$ with
+maximum absolute error $\approx 0.00202$. A log--log fit of the error
+on $N\in\{8,12,16,24,32\}$ has slope $\approx-1.995$, consistent with
+second-order central differences. The operator is Hermitian to machine
+precision.
+\end{numobs}
+
+On the truncated conoid, APS is modelled by a boundary penalty. The
+resulting eigenvalues are a numerical experiment, not a continuum APS
+theorem, and are not used to support Conjecture~\ref{conj:three}.
+
+\section{Limitations}
+
+\begin{enumerate}
+\item \emph{No continuum APS index.} Conjecture~\ref{conj:three} is open.
+  Edge and $b$-calculus are cited~\cite{APS1975,MelroseAPS}, not applied
+  to a complete parametrix for this singular metric.
+\item \emph{The $m=0$ channel is limit-circle.} Monotonicity including
+  $m=0$ depends on a chosen self-adjoint realization.
+\item \emph{The soft set is a radial-model heuristic}, not a count of
+  Dirac eigenvalues.
+\item \emph{The prefactor $64\pi/45$ is a convention lock.}
+\item \emph{$\omega_0$ and $4/13$ are not derived}
+  (Section~\ref{sec:omega}).
+\item \emph{Lorentzian signature is not treated.}
+\item \emph{Yukawa eigenvalues, CKM and PMNS angles, a Higgs mass, gauge
+  unification, and the cosmological constant are not derived here.}
+  Scripts in the repository that appear to ``reproduce'' such numbers
+  largely echo hardcoded constants or rearrange definitions; they are
+  not evidence.
+\item \emph{A twelve-bridge $A_5$ module}, if used at all, is a discrete
+  labelling device inside the soft sector. It is not an isometry group
+  of $f$, and it is not used in any theorem of this note.
+\item \emph{The Dual-Zero generator is a definition.} No identification
+  of its critical points with the zeros of the Riemann zeta function is
+  claimed; a non-circular test in the repository found no such evidence.
+\end{enumerate}
+
+\section{Non-claims}
+
+We do not claim a full Standard Model derivation, percent-level
+unification, resolution of the cosmological constant, UV-complete
+quantum gravity, uniqueness of the conoid, or a proof of the Riemann
+hypothesis. We do not claim that $A_5$ is a continuous isometry group of
+the locked metric. We do not claim that $G_N=64\pi\ell_0^2/45$ or
+$\omega_0=(R/D)^{4/13}\approx 0.927$ has been derived from the geometry
+alone.
 
 \begin{thebibliography}{9}
 \bibitem{APS1975}
 M.~F. Atiyah, V.~K. Patodi and I.~M. Singer,
 Spectral asymmetry and Riemannian geometry.~I,
-\textit{Math.\ Proc.\ Cambridge Philos.\ Soc.}\ \textbf{77} (1975).
+\textit{Math.\ Proc.\ Cambridge Philos.\ Soc.}\ \textbf{77} (1975), 43--69.
 
 \bibitem{MelroseAPS}
 R.~B. Melrose,
 \textit{The Atiyah--Patodi--Singer Index Theorem},
-A.K.\ Peters / CRC Press.
+A.K.\ Peters, Wellesley, MA, 1993.
 
 \bibitem{ReedSimon}
 M.~Reed and B.~Simon,
-\textit{Methods of Modern Mathematical Physics II},
-Academic Press.
+\textit{Methods of Modern Mathematical Physics II: Fourier Analysis, Self-Adjointness},
+Academic Press, 1975.
+
+\bibitem{ChamseddineConnes}
+A.~H. Chamseddine and A.~Connes,
+The spectral action principle,
+\textit{Comm.\ Math.\ Phys.}\ \textbf{186} (1997), 731--750.
 \end{thebibliography}
 
 \end{document}

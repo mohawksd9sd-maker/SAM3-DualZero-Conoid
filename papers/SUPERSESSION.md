@@ -1,20 +1,24 @@
 # Papers directory — SUPERSESSION BANNER
 
-**Effective:** August 18, 2026  
-**Authority:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../STATUS_CLAIMS_AND_RESIDUALS.md) + [`docs/math_notes/`](../docs/math_notes/)
+**Effective:** 23 November 2026 (America/Chicago), extending the 18 August 2026 metric/RH audit.  
+**Authority:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../STATUS_CLAIMS_AND_RESIDUALS.md) + the current core paper.
+
+History is retained. Conflicting claims are withdrawn, not deleted.
 
 ---
 
 ## Rule
 
 Every `.tex` file here is historical or expanded source unless listed as current core.  
-**STATUS + `docs/math_notes/` supersede** all conflicting claims.
+**STATUS + the November 2026 core paper supersede** all conflicting claims, including older language *in this file*.
 
 ---
 
 ## Current core paper (modest)
 
-- [`SAM3_Core_Geometry_and_Spectral_Results.tex`](SAM3_Core_Geometry_and_Spectral_Results.tex)
+- [`SAM3_Core_Geometry_and_Spectral_Results.tex`](SAM3_Core_Geometry_and_Spectral_Results.tex) — **November 2026 revision**
+
+The August 2026 core draft is superseded on: the $C_0$ band $4.43$–$4.45$; an incomplete monotonicity argument; and any reading of “three light channels” or $G_N=\alpha\ell_0^2$ as stronger than the labelled statements now in the file.
 
 ---
 
@@ -26,7 +30,7 @@ $$
 
 Coefficient **4 only**. Any `16\ell_0` form is an error.
 
-**August 18, 2026 audit:** all historical papers scanned; metric-16 occurrences corrected; supersession banners added. See [`docs/AUDIT_COMPLETE_METRIC_RH.md`](../docs/AUDIT_COMPLETE_METRIC_RH.md).
+**August 18, 2026 audit:** historical papers scanned; metric-16 occurrences corrected; supersession banners added. See [`docs/AUDIT_COMPLETE_METRIC_RH.md`](../docs/AUDIT_COMPLETE_METRIC_RH.md).
 
 ---
 
@@ -35,23 +39,34 @@ Coefficient **4 only**. Any `16\ell_0` form is an error.
 | Older language | Superseded by |
 |----------------|---------------|
 | $f^2=u^2+16\ell_0^2\cos^2(\cdot)$ | **$4\ell_0^2$ only** |
-| Exact $m_H=125.1$ or $126.2$ GeV as theorem | 125 GeV **class** |
-| Percent-level unification as fact | ~$7\%$ floor |
-| RH proved / theorem | **Proposal only** |
-| $A_5$ isometries of continuum metric | **False**; $C_4$ only |
-| Full SM derived in foundations files | Not claimed in core paper |
-| Ultrafilter required for numerics | Constructive finite-$N$ |
+| $C_0\approx 4.43$–$4.45$ | **$C_0\approx 4.3551723$** (numerical observation); existence is a proposition |
+| $G_N=64\pi\ell_0^2/45$ as a scheme-free or independently derived constant | $G_N=\alpha\ell_0^2$ structural; $64\pi/45$ is a **convention lock** |
+| $\omega_0=(R/D)^{4/13}\approx 0.927$ as a derived output | **Not derived**; $\omega_0$ is an input until a derivation exists |
+| Exactly three chiral generations / APS index 3 as a theorem | **Conjecture**; soft block $\{0,1,2\}$ is a radial-model heuristic |
+| $\eta_{ij}$, CKM/PMNS angles, $m_H$ class $124$–$127\,\mathrm{GeV}$ as locked geometric results | **Not derived** in the core |
+| Exact $m_H=125.1$ or $126.2$ GeV as theorem | Not claimed |
+| Percent-level unification as fact | Not claimed |
+| RH proved / theorem | **Proposal only**; identification tests in this repo were **null** |
+| $A_5$ isometries of the continuum metric | **False**; $C_4$ only |
+| Full SM derived in foundations files | Not claimed in the core paper |
+| Spectra from `code/dirac_conoid_aps.py` as APS evidence | Legacy assembly is **not** a Dirac operator; use `code/aps_hermitian.py` |
+| Ultrafilter required for numerics | Constructive finite-$N$ (policy) |
+| August 2026 STATUS “high / locked” listings for $\omega_0$, $G_N$ prefactor, $\eta$, angles, $m_H$ | November 2026 STATUS |
 
 ---
 
-## Banner (on corrected papers)
+## Banner (on corrected or stub papers)
 
 ```tex
-% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md / docs/math_notes/
+% SUPERSEDED where conflicting: STATUS_CLAIMS_AND_RESIDUALS.md (Nov 2026)
+%   and papers/SAM3_Core_Geometry_and_Spectral_Results.tex
 % LOCKED metric: coefficient 4, not 16.
 % RH = proposal only. A5 is NOT a metric isometry (C4 only).
+% C0 ≈ 4.3551723, not 4.43--4.45. 64π/45 and ω0 are not independent derivations.
 ```
+
+Papers 11 and 15 (RH), the flagship stub, and other historical `SAM3_Paper_0*.tex` files remain in the tree as history. They are not current claims.
 
 ---
 
-*Supersession — August 18, 2026 full audit.*
+*Supersession — 18 August 2026 metric/RH audit; 23 November 2026 solidification.*
