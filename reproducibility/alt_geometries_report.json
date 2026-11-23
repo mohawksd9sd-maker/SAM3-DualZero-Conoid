@@ -1,0 +1,1294 @@
+{
+  "conoid_variants": {
+    "aps": {
+      "depends_on_ell0": false,
+      "depends_on_frequency_n": false,
+      "reason": "Index is a topological invariant of the spin Dirac operator with the stated APS conditions on an annulus; it is 0 for every n.",
+      "three_from_frequency": false,
+      "topology": "[a,b] x S^1",
+      "untwisted_APS_index_bounding_spin": 0
+    },
+    "closed_capped": {
+      "cap_tip_with_a_smooth_disk": {
+        "if_resolved_to_a_smooth_sphere": "Untwisted Dirac index on a sphere is 0; a twist of degree d gives index d.  The 2n nodes do not select d=3 (for n=2 one has 4 nodes; for n=3 one has 6).",
+        "obstruction": "The metric on the tip circle degenerates at 2n nodes, so a C^infty cap that stays regular at those points is not given by the embedding and would have to resolve the nodes.  That resolution is an extra choice, not unique.",
+        "regular_circle_would_match_a_hemisphere": "A geodesic circle of length L matches the equator of a round sphere of radius L/(2 pi) = 1.2732395447351628; k_g = 0 matches as well, away from the nodes."
+      },
+      "collapse_tip_to_a_point": {
+        "isometric": false,
+        "reason": "The tip circle has positive length 8.0 (for ell0=1.0); collapsing it is a different metric, not the completion."
+      },
+      "identify_the_two_boundary_circles": {
+        "topology": "torus",
+        "twisted_index": "the degree / flux, again a choice",
+        "untwisted_dirac_index": 0
+      },
+      "node_count": 4,
+      "reason": "No unique smooth closed surface is determined by the embedding.  Every genuine compactification that yields a closed spin surface has untwisted Dirac index 0, and index 3 still requires a degree-3 twist.  The node count is 2n, never 3.",
+      "three_comes_out_naturally": false,
+      "tip_is_a_cone_point": false,
+      "tip_is_geodesic_circle_with_nodes": true,
+      "tip_length": 8.0,
+      "verdict": "dead end"
+    },
+    "complete_total_curvature": {
+      "1": {
+        "expected_total": -6.283185307179586,
+        "outer_integral": 6.283185307179586,
+        "tip_integral": 7.922790040590897e-07,
+        "total_curvature": -6.283184514900582
+      },
+      "2": {
+        "expected_total": -6.283185307179586,
+        "outer_integral": 6.283185307179585,
+        "tip_integral": 4.1000244693962315e-07,
+        "total_curvature": -6.283184897177138
+      },
+      "3": {
+        "expected_total": -6.283185307179586,
+        "outer_integral": 6.283185307179585,
+        "tip_integral": 2.7874116503886453e-07,
+        "total_curvature": -6.28318502843842
+      }
+    },
+    "curvature_identities": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true
+    },
+    "exploratory": true,
+    "frequency_scan": {
+      "any_integer_n_produces_3": false,
+      "flag_numerology": "Setting n=3 because one wants three generations only changes the isometry to C_6 and the node count to 6; the index stays 0.  That is a name, not a derivation.",
+      "reason": "For every integer n the untwisted index is 0, the total curvature is -2 pi, and the discrete geometric counts are 2n (nodes) and 2n (isometry order).  None of these is 3.",
+      "rows": [
+        {
+          "equals_3": {
+            "isometry_order": false,
+            "nodes": false,
+            "tip_length_over_ell0": false,
+            "total_curvature_over_2pi": false
+          },
+          "isometry": "C_2",
+          "n": 1,
+          "nodes": 2,
+          "tip_length_over_ell0": 4.0,
+          "total_curvature_complete": -6.283185307179586,
+          "untwisted_APS_index": 0
+        },
+        {
+          "equals_3": {
+            "isometry_order": false,
+            "nodes": false,
+            "tip_length_over_ell0": false,
+            "total_curvature_over_2pi": false
+          },
+          "isometry": "C_4",
+          "n": 2,
+          "nodes": 4,
+          "tip_length_over_ell0": 8.0,
+          "total_curvature_complete": -6.283185307179586,
+          "untwisted_APS_index": 0
+        },
+        {
+          "equals_3": {
+            "isometry_order": false,
+            "nodes": false,
+            "tip_length_over_ell0": false,
+            "total_curvature_over_2pi": false
+          },
+          "isometry": "C_6",
+          "n": 3,
+          "nodes": 6,
+          "tip_length_over_ell0": 12.0,
+          "total_curvature_complete": -6.283185307179586,
+          "untwisted_APS_index": 0
+        },
+        {
+          "equals_3": {
+            "isometry_order": false,
+            "nodes": false,
+            "tip_length_over_ell0": false,
+            "total_curvature_over_2pi": false
+          },
+          "isometry": "C_8",
+          "n": 4,
+          "nodes": 8,
+          "tip_length_over_ell0": 16.0,
+          "total_curvature_complete": -6.283185307179586,
+          "untwisted_APS_index": 0
+        },
+        {
+          "equals_3": {
+            "isometry_order": false,
+            "nodes": false,
+            "tip_length_over_ell0": false,
+            "total_curvature_over_2pi": false
+          },
+          "isometry": "C_10",
+          "n": 5,
+          "nodes": 10,
+          "tip_length_over_ell0": 20.0,
+          "total_curvature_complete": -6.283185307179586,
+          "untwisted_APS_index": 0
+        },
+        {
+          "equals_3": {
+            "isometry_order": false,
+            "nodes": false,
+            "tip_length_over_ell0": false,
+            "total_curvature_over_2pi": false
+          },
+          "isometry": "C_12",
+          "n": 6,
+          "nodes": 12,
+          "tip_length_over_ell0": 24.0,
+          "total_curvature_complete": -6.283185307179586,
+          "untwisted_APS_index": 0
+        }
+      ],
+      "verdict": "dead end"
+    },
+    "locked_core": false,
+    "n2_isometry_order": 4,
+    "n2_nodes": 4,
+    "n2_recovers_locked_metric": true,
+    "n2_tip_length": 8.0,
+    "reason": "For every integer n the untwisted index is 0, the total curvature is -2 pi, and the discrete geometric counts are 2n (nodes) and 2n (isometry order).  None of these is 3.",
+    "verdict": "dead end"
+  },
+  "exploratory": true,
+  "finite_algebras": {
+    "c4_attempt": {
+      "coincidences": [
+        {
+          "flag": "numerology: both sides are the order of the same cyclic group",
+          "match": "4 tip nodes = 4 irreps of C4"
+        },
+        {
+          "flag": "numerology: the 12-bridge spacing is a convention (STATUS), not a theorem, and 12=3\u00d74 is an arithmetic identity",
+          "match": "12-bridge labelling 2\u03c0/12 = 3 generations \u00d7 4 nodes (or 4 irreps)"
+        },
+        {
+          "flag": "not a coincidence; it is an obstruction.  An abelian isometry group does not produce a nonabelian gauge algebra by taking its irreps.",
+          "match": "C4 cannot be SU(3), SU(2), or SU(2)\u00d7SU(2)\u00d7SU(4)"
+        }
+      ],
+      "equals_CCM_algebra": false,
+      "equals_PS_algebra": false,
+      "group_algebra": "C \u2295 C \u2295 C \u2295 C",
+      "irreps_over_C": [
+        {
+          "character_of_generator": "(1+0j)",
+          "k": 0
+        },
+        {
+          "character_of_generator": "1j",
+          "k": 1
+        },
+        {
+          "character_of_generator": "(-1+0j)",
+          "k": 2
+        },
+        {
+          "character_of_generator": "(-0-1j)",
+          "k": 3
+        }
+      ],
+      "isometry_of_locked_conoid": "C4",
+      "produces_fermion_multiplets": false,
+      "reason": "The locked isometry group is abelian of order 4.  Its representation ring and group algebra do not yield C \u2295 H \u2295 M_3(C) or H_R \u2295 H_L \u2295 M_4(C), nor the corresponding fermion representations.  Counting 4 nodes or 12 bridges against 3\u00d74 is not a derivation.",
+      "unitary_group_of_group_algebra": "U(1)^4",
+      "verdict": "dead end"
+    },
+    "ccm": {
+      "algebra": "C \u2295 H \u2295 M_3(C)",
+      "derived_from_the_conoid": false,
+      "generation_count": "input",
+      "verdict": "neutral: the classification is a real constraint on the finite algebra once one accepts the stated axioms, but those axioms and the choice N=3 are not supplied by the conoid.  Already analysed as a product in doc 45."
+    },
+    "classification_steps": [
+      {
+        "assumption": "KO-dimension 6 (mod 8), to avoid fermion doubling (Majorana-Weyl)",
+        "derived_from_the_conoid": false,
+        "output": "sign table (\u03b5, \u03b5', \u03b5'') = (1, 1, -1)",
+        "step": 1
+      },
+      {
+        "assumption": "order-zero condition and irreducibility; centre of the complexified algebra is C \u2295 C",
+        "derived_from_the_conoid": false,
+        "output": "A_C = M_k(C) \u2295 M_k(C), with dim H = k^2 (per generation, before multiplicity)",
+        "step": 2
+      },
+      {
+        "assumption": "symplectic (quaternionic) linearity on one summand: k = 2a even",
+        "derived_from_the_conoid": false,
+        "output": "M_a(H) \u2295 M_{2a}(C)",
+        "step": 3
+      },
+      {
+        "assumption": "a grading (chirality) breaks M_a(H); the case a=2 (k=4) is the one that reproduces the known fermion quantum numbers",
+        "derived_from_the_conoid": false,
+        "note": "a=2 is selected because it gives the right quantum numbers, not because a geometric principle forces a=2 uniquely without that target.  CC2008 presents it as the case that works.",
+        "output": "H_R \u2295 H_L \u2295 M_4(C)   (Pati-Salam algebra)",
+        "step": 4
+      },
+      {
+        "assumption": "first-order condition on D (CC2008); dropped in CCvS2013",
+        "derived_from_the_conoid": false,
+        "output": "maximal subalgebra C \u2295 H \u2295 M_3(C) \u2282 H_R \u2295 H_L \u2295 M_4(C)  (CCM / SM algebra)",
+        "step": 5,
+        "without_first_order": "one remains at the Pati-Salam algebra"
+      },
+      {
+        "assumption": "multiplicity N of the finite Hilbert space (generations)",
+        "derived_from_the_conoid": false,
+        "output": "N is an input (CC2008 / CCM2007: 'We will restrict ourselves to N=3')",
+        "step": 6
+      }
+    ],
+    "exploratory": true,
+    "locked_core": false,
+    "pati_salam": {
+      "algebra": "H_R \u2295 H_L \u2295 M_4(C)",
+      "derived_from_the_conoid": false,
+      "gauge_group": "SU(2)_R \u00d7 SU(2)_L \u00d7 SU(4)",
+      "generation_count": "input (N copies of the finite Hilbert space)",
+      "literature_status": "CCvS2013 introduces the algebra by dropping the first-order condition; CCvS2015 analyses one-loop gauge unification and notes that a real singlet \u03c3 can make a 125 GeV Higgs compatible and can stabilise the vacuum, with a relation involving \u03c1 = m_top / m_\u03bd and the unification scale.  That is a literature result, not a unique mass prediction, and it does not use the conoid.",
+      "one_generation_fermions": "(2,1,4) + (1,2,4)",
+      "relation_to_CCM": "CCM is the maximal first-order subalgebra of the Pati-Salam algebra",
+      "verdict": "promising as an internal-space alternative to CCM (literature); dead end as something derived from SAM-3 geometry"
+    },
+    "two_threes": {
+      "colour_3": {
+        "origin": "M_3(C) after first-order reduction of M_4(C)",
+        "status": "an output of the classification plus the first-order condition, for the k=4 case"
+      },
+      "generation_3": {
+        "origin": "multiplicity N of H_F",
+        "status": "an input in every cited paper"
+      },
+      "identifying_them": "numerology / confusion, not a derivation"
+    }
+  },
+  "locked_core_untouched": true,
+  "magnetized_torus": {
+    "exploratory": true,
+    "gram_error_N3_tau_i_grid48": 1.110223293366329e-15,
+    "index": {
+      "chiral_zero_modes": 3,
+      "dirac_index": 3,
+      "dirac_quantization": "M is an integer",
+      "flux": 3,
+      "minimal_nonzero_flux": 1,
+      "opposite_chirality_zero_modes": 0,
+      "three_is_a_choice_of_flux": true,
+      "what_selects_3": "nothing in the torus geometry; 3 is put in by hand"
+    },
+    "lepton_ratios": {
+      "mu_over_e": 206.76828200919007,
+      "tau_over_e": 3477.228280018971,
+      "tau_over_mu": 16.817029412008274
+    },
+    "locked_core": false,
+    "reason": "The Dirac index on a magnetized T^2 equals the integer flux M, so three chiral zero modes means choosing M=3.  Yukawas depend on the complex structure and on which of the (generally several) Higgs zero modes acquire a vev; they are not unique, and a sample at natural-looking moduli is not a prediction of the charged-lepton hierarchy.",
+    "sample_tau_i_higgs0_ratios": [
+      1.0,
+      1.0000000000000009,
+      8.105391148649831
+    ],
+    "verdict": "neutral as a mechanism (index = flux is clean and standard); dead end as a derivation of the number 3 or of unique mass ratios",
+    "yukawa_scan": {
+      "comment": "K=6 Higgs zero modes for two flux-3 fermion stacks.  Each slice is a 3x3 Yukawa.  Overall scale is absorbed into the Higgs vev; only ratios are compared to data.",
+      "fluxes": {
+        "I": 3,
+        "J": 3,
+        "K": 6
+      },
+      "lepton_pole_ratios_PDG2024": {
+        "mu_over_e": 206.76828200919007,
+        "tau_over_e": 3477.228280018971,
+        "tau_over_mu": 16.817029412008274
+      },
+      "matches_lepton_hierarchy_uniquely": false,
+      "samples": {
+        "tau=0.5i": {
+          "mass_ratios_by_higgs": [
+            [
+              1.0,
+              1.0000000000000004,
+              2.732050807568877
+            ],
+            [
+              1.0,
+              4.067860141305242,
+              4.067860141305242
+            ],
+            [
+              1.0,
+              1.0000000000000002,
+              2.7320508075688776
+            ],
+            [
+              1.0,
+              4.067860141305246,
+              4.067860141305247
+            ],
+            [
+              1.0,
+              1.0000000000000002,
+              2.732050807568878
+            ],
+            [
+              1.0,
+              4.067860141305244,
+              4.067860141305246
+            ]
+          ],
+          "relative_wilson_lines": "none (common zeta=0)",
+          "singular_values_by_higgs": [
+            [
+              1.1068605370943687,
+              0.40513907502302715,
+              0.405139075023027
+            ],
+            [
+              0.8533684073075652,
+              0.8533684073075651,
+              0.2097831237220824
+            ],
+            [
+              1.1068605370943698,
+              0.4051390750230274,
+              0.4051390750230273
+            ],
+            [
+              0.8533684073075652,
+              0.853368407307565,
+              0.20978312372208213
+            ],
+            [
+              1.1068605370943694,
+              0.40513907502302715,
+              0.4051390750230271
+            ],
+            [
+              0.8533684073075651,
+              0.8533684073075649,
+              0.2097831237220822
+            ]
+          ],
+          "tau": {
+            "im": 0.5,
+            "re": 0.0
+          }
+        },
+        "tau=2i": {
+          "mass_ratios_by_higgs": [
+            [
+              1.0,
+              1.0000000000000016,
+              65.94273523517066
+            ],
+            [
+              1.0,
+              2174.237329714899,
+              2174.237329714899
+            ],
+            [
+              1.0,
+              1.0000000000000002,
+              65.94273523517084
+            ],
+            [
+              1.0,
+              2174.2373297149197,
+              2174.2373297149197
+            ],
+            [
+              1.0,
+              1.0000000000000002,
+              65.94273523517077
+            ],
+            [
+              1.0,
+              2174.2373297145527,
+              2174.237329714553
+            ]
+          ],
+          "relative_wilson_lines": "none (common zeta=0)",
+          "singular_values_by_higgs": [
+            [
+              1.565084580073286,
+              0.023733995480954027,
+              0.023733995480953993
+            ],
+            [
+              0.5492191790639025,
+              0.5492191790639025,
+              0.0002526031411372741
+            ],
+            [
+              1.565084580073295,
+              0.023733995480954066,
+              0.023733995480954062
+            ],
+            [
+              0.5492191790639022,
+              0.5492191790639022,
+              0.0002526031411372715
+            ],
+            [
+              1.565084580073289,
+              0.023733995480954003,
+              0.023733995480954
+            ],
+            [
+              0.5492191790639016,
+              0.5492191790639015,
+              0.0002526031411373138
+            ]
+          ],
+          "tau": {
+            "im": 2.0,
+            "re": 0.0
+          }
+        },
+        "tau=exp(i*pi/3)": {
+          "mass_ratios_by_higgs": [
+            [
+              1.0,
+              1.0000000000000002,
+              6.160402020446451
+            ],
+            [
+              1.0,
+              18.81153652572369,
+              18.81153652572369
+            ],
+            [
+              1.0,
+              1.0000000000000002,
+              6.16040202044646
+            ],
+            [
+              1.0,
+              18.81153652572372,
+              18.811536525723724
+            ],
+            [
+              1.0,
+              1.0000000000000002,
+              6.1604020204464565
+            ],
+            [
+              1.0,
+              18.811536525723703,
+              18.811536525723703
+            ]
+          ],
+          "relative_wilson_lines": "none (common zeta=0)",
+          "singular_values_by_higgs": [
+            [
+              1.269588269115138,
+              0.20608854177070893,
+              0.2060885417707089
+            ],
+            [
+              0.8067525806454623,
+              0.8067525806454623,
+              0.04288605449864634
+            ],
+            [
+              1.2695882691151408,
+              0.20608854177070912,
+              0.20608854177070907
+            ],
+            [
+              0.8067525806454628,
+              0.8067525806454626,
+              0.042886054498646284
+            ],
+            [
+              1.2695882691151388,
+              0.20608854177070887,
+              0.20608854177070884
+            ],
+            [
+              0.806752580645462,
+              0.806752580645462,
+              0.04288605449864629
+            ]
+          ],
+          "tau": {
+            "im": 0.8660254037844386,
+            "re": 0.5000000000000001
+          }
+        },
+        "tau=i": {
+          "mass_ratios_by_higgs": [
+            [
+              1.0,
+              1.0000000000000009,
+              8.105391148649831
+            ],
+            [
+              1.0,
+              32.97159758328102,
+              32.971597583281024
+            ],
+            [
+              1.0,
+              1.0,
+              8.105391148649845
+            ],
+            [
+              1.0,
+              32.97159758328104,
+              32.97159758328107
+            ],
+            [
+              1.0,
+              1.0000000000000004,
+              8.105391148649845
+            ],
+            [
+              1.0,
+              32.971597583281316,
+              32.97159758328133
+            ]
+          ],
+          "relative_wilson_lines": "none (common zeta=0)",
+          "singular_values_by_higgs": [
+            [
+              1.3160740300941252,
+              0.16237020594784662,
+              0.16237020594784649
+            ],
+            [
+              0.7796250218708336,
+              0.7796250218708335,
+              0.023645351727395816
+            ],
+            [
+              1.3160740300941287,
+              0.16237020594784665,
+              0.16237020594784665
+            ],
+            [
+              0.7796250218708335,
+              0.7796250218708328,
+              0.023645351727395778
+            ],
+            [
+              1.3160740300941263,
+              0.16237020594784643,
+              0.16237020594784635
+            ],
+            [
+              0.7796250218708332,
+              0.7796250218708329,
+              0.023645351727395583
+            ]
+          ],
+          "tau": {
+            "im": 1.0,
+            "re": 0.0
+          }
+        },
+        "tau=i, relative Wilson lines": {
+          "mass_ratios_by_higgs": [
+            [
+              1.0,
+              8.163217538750121,
+              18.701861997762368
+            ],
+            [
+              1.0,
+              3.859985497193159,
+              10.659722538979496
+            ],
+            [
+              1.0,
+              8.163217538750088,
+              18.70186199776233
+            ],
+            [
+              1.0,
+              3.859985497193153,
+              10.659722538979478
+            ],
+            [
+              1.0,
+              8.163217538750093,
+              18.701861997762347
+            ],
+            [
+              1.0,
+              3.859985497193139,
+              10.659722538979443
+            ]
+          ],
+          "relative_wilson_lines": "zeta_I=0, zeta_J=0.2, zeta_K=0.1+0.15i",
+          "singular_values_by_higgs": [
+            [
+              0.9219691950156597,
+              0.40243239437012523,
+              0.04929825677924321
+            ],
+            [
+              0.9412652832707138,
+              0.3408409861654988,
+              0.08830110538325751
+            ],
+            [
+              0.921969195015661,
+              0.402432394370125,
+              0.04929825677924339
+            ],
+            [
+              0.9412652832707123,
+              0.3408409861654983,
+              0.08830110538325753
+            ],
+            [
+              0.9219691950156598,
+              0.40243239437012435,
+              0.04929825677924327
+            ],
+            [
+              0.9412652832707125,
+              0.34084098616549824,
+              0.08830110538325783
+            ]
+          ],
+          "tau": {
+            "im": 1.0,
+            "re": 0.0
+          }
+        }
+      }
+    }
+  },
+  "product_4d": {
+    "exploratory": true,
+    "flux": {
+      "any_attempt_selects_3": false,
+      "attempts": [
+        {
+          "attempt": "Dirac quantization",
+          "gives": "M \u2208 Z",
+          "note": "The smallest positive integer is 1, not 3.",
+          "selects_3": false
+        },
+        {
+          "attempt": "Conoid total curvature \u222b K dA = -2\u03c0, so |\u222bK| / 2\u03c0 = 1",
+          "gives": 1,
+          "note": "If this were used as a flux, it would give index 1, not 3.  Treating it as a flux at all is already an extra identification, not forced by the product construction.",
+          "selects_3": false
+        },
+        {
+          "attempt": "Four tip nodes, or C4, or 2n nodes of a frequency-n variant",
+          "gives": "4, or 2n",
+          "note": "Never 3 for integer n.  Using 4-1=3 or 12/4=3 is numerology.",
+          "selects_3": false
+        },
+        {
+          "attempt": "Hopf bundle on the S^2 factor",
+          "gives": 1,
+          "note": "The distinguished positive line bundle on the sphere has degree 1.",
+          "selects_3": false
+        },
+        {
+          "attempt": "Tangent bundle of the S^2 factor",
+          "gives": 2,
+          "note": "Dirac index 2.  The 3 holomorphic sections of O(2) are conformal Killing fields, not chiral generations (see riemann_roch.naturalness_of_three).",
+          "selects_3": false
+        },
+        {
+          "attempt": "Anomaly cancellation or supersymmetry stability on a stack of magnetized branes",
+          "gives": "linear constraints on a collection of fluxes, in models that are not uniquely fixed by the conoid",
+          "note": "Such conditions can make M=3 consistent in some models, but they do not uniquely select it, and they are not derived from the locked embedding.",
+          "selects_3": false
+        },
+        {
+          "attempt": "Minimality among fluxes that give at least three chiral zero modes",
+          "gives": "M=3 is then the smallest integer >= 3",
+          "note": "Circular: the target 'at least three' is the thing to be derived.",
+          "selects_3": false
+        }
+      ],
+      "reason": "Every 4D product that can host three chiral zero modes does so by putting in an integer flux or degree equal to 3.  No geometric invariant of the locked conoid, and no distinguished bundle on S^2 or T^2, produces that integer.",
+      "verdict": "dead end"
+    },
+    "ko_conoid_T2_F": 2,
+    "ko_matches_CCM_fermions": true,
+    "locked_core": false,
+    "options": [
+      {
+        "continuous_dimension": 2,
+        "generation_mechanism": "none (untwisted conoid APS index is 0; N on F is an input)",
+        "heat_kernel_is_4D": false,
+        "ko": 0,
+        "ko_matches_CCM": false,
+        "name": "conoid \u00d7 F",
+        "verdict": "dead end as a 4D unification model (doc 45)"
+      },
+      {
+        "continuous_dimension": 4,
+        "generation_mechanism": "N=3 is an input of F",
+        "heat_kernel_is_4D": true,
+        "ko": 2,
+        "ko_matches_CCM": true,
+        "name": "4D manifold \u00d7 F   (standard CCM)",
+        "verdict": "the standard CCM setup; 3 is not derived (doc 45)"
+      },
+      {
+        "continuous_dimension": 4,
+        "generation_mechanism": "If the T^2 factor carries an integer flux M, the Dirac index on T^2 is M.  Three generations means choosing M=3.  The conoid is then a spectator 2-factor (incomplete, with a geodesic tip boundary; doc 46) and does not determine M.",
+        "heat_kernel_is_4D": true,
+        "ko": 2,
+        "ko_matches_CCM": true,
+        "name": "conoid \u00d7 T^2 \u00d7 F",
+        "verdict": "promising as a 4D product that can host a flux; dead end as a derivation of the flux"
+      },
+      {
+        "continuous_dimension": 4,
+        "generation_mechanism": "Twisted Dirac index on S^2 equals the degree of the line bundle.  The Hopf bundle O(1) has degree 1; TS^2 = O(2) has degree 2.  Degree 3 is again a choice.  The round metric on S^2 is unique up to scale, which is tidier than a torus modulus, but uniqueness of the metric does not uniquely select the bundle.",
+        "heat_kernel_is_4D": true,
+        "ko": 2,
+        "ko_matches_CCM": true,
+        "name": "conoid \u00d7 S^2 \u00d7 F",
+        "verdict": "neutral/promising as a 4D product; dead end as a derivation of degree 3"
+      },
+      {
+        "continuous_dimension": "4 (spacetime) + 2 (internal surface)",
+        "generation_mechanism": "index = flux on T^2, with 3 chosen",
+        "heat_kernel_is_4D": "no, unless T^2 is treated as a finite/internal factor and reduced",
+        "ko": "depends on how the T^2 is treated (Riemannian factor vs internal)",
+        "ko_matches_CCM": "not the standard 4D \u00d7 F setup; this is a 6D continuous geometry times F",
+        "name": "R^{1,3} \u00d7 T^2_flux \u00d7 F   (conoid dropped)",
+        "verdict": "standard magnetized-compactification mechanism; 3 is a choice; not a SAM-3 construction"
+      }
+    ],
+    "verdict": "promising as a way to reach a 4D heat kernel and the CCM KO-dimension (conoid \u00d7 T^2 \u00d7 F or conoid \u00d7 S^2 \u00d7 F); dead end as a derivation of the flux / generation count"
+  },
+  "promising_candidates": {
+    "exploratory": true,
+    "headline": "No alternative surface or internal space examined here derives the integer 3, or unique mass ratios, from the locked conoid.  The cleanest generation *mechanism* is a chosen flux or bundle degree on a compact surface, in a 4D product with a CCM or Pati-Salam finite triple.  Pati-Salam is the more flexible internal space in the cited literature, and is not a SAM-3 output.",
+    "locked_core": false,
+    "magnetized_torus_mass_ratios": {
+      "any_slice_is_a_unique_prediction": false,
+      "lepton_pole_ratios_PDG2024": {
+        "mu_over_e": 206.76828200919007,
+        "tau_over_e": 3477.228280018971,
+        "tau_over_mu": 16.817029412008274
+      },
+      "n_slices_checked": 30,
+      "n_slices_within_factor_3": 0,
+      "rows": [
+        {
+          "higgs_slice": 0,
+          "moduli": "tau=i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000009,
+            8.105391148649831
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 1,
+          "moduli": "tau=i",
+          "predicted_ratios_ascending": [
+            1.0,
+            32.97159758328102,
+            32.971597583281024
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 2,
+          "moduli": "tau=i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0,
+            8.105391148649845
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 3,
+          "moduli": "tau=i",
+          "predicted_ratios_ascending": [
+            1.0,
+            32.97159758328104,
+            32.97159758328107
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 4,
+          "moduli": "tau=i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000004,
+            8.105391148649845
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 5,
+          "moduli": "tau=i",
+          "predicted_ratios_ascending": [
+            1.0,
+            32.971597583281316,
+            32.97159758328133
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 0,
+          "moduli": "tau=2i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000016,
+            65.94273523517066
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 1,
+          "moduli": "tau=2i",
+          "predicted_ratios_ascending": [
+            1.0,
+            2174.237329714899,
+            2174.237329714899
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 2,
+          "moduli": "tau=2i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000002,
+            65.94273523517084
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 3,
+          "moduli": "tau=2i",
+          "predicted_ratios_ascending": [
+            1.0,
+            2174.2373297149197,
+            2174.2373297149197
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 4,
+          "moduli": "tau=2i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000002,
+            65.94273523517077
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 5,
+          "moduli": "tau=2i",
+          "predicted_ratios_ascending": [
+            1.0,
+            2174.2373297145527,
+            2174.237329714553
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 0,
+          "moduli": "tau=0.5i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000004,
+            2.732050807568877
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 1,
+          "moduli": "tau=0.5i",
+          "predicted_ratios_ascending": [
+            1.0,
+            4.067860141305242,
+            4.067860141305242
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 2,
+          "moduli": "tau=0.5i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000002,
+            2.7320508075688776
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 3,
+          "moduli": "tau=0.5i",
+          "predicted_ratios_ascending": [
+            1.0,
+            4.067860141305246,
+            4.067860141305247
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 4,
+          "moduli": "tau=0.5i",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000002,
+            2.732050807568878
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 5,
+          "moduli": "tau=0.5i",
+          "predicted_ratios_ascending": [
+            1.0,
+            4.067860141305244,
+            4.067860141305246
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 0,
+          "moduli": "tau=exp(i*pi/3)",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000002,
+            6.160402020446451
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 1,
+          "moduli": "tau=exp(i*pi/3)",
+          "predicted_ratios_ascending": [
+            1.0,
+            18.81153652572369,
+            18.81153652572369
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 2,
+          "moduli": "tau=exp(i*pi/3)",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000002,
+            6.16040202044646
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 3,
+          "moduli": "tau=exp(i*pi/3)",
+          "predicted_ratios_ascending": [
+            1.0,
+            18.81153652572372,
+            18.811536525723724
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 4,
+          "moduli": "tau=exp(i*pi/3)",
+          "predicted_ratios_ascending": [
+            1.0,
+            1.0000000000000002,
+            6.1604020204464565
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 5,
+          "moduli": "tau=exp(i*pi/3)",
+          "predicted_ratios_ascending": [
+            1.0,
+            18.811536525723703,
+            18.811536525723703
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 0,
+          "moduli": "tau=i, relative Wilson lines",
+          "predicted_ratios_ascending": [
+            1.0,
+            8.163217538750121,
+            18.701861997762368
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 1,
+          "moduli": "tau=i, relative Wilson lines",
+          "predicted_ratios_ascending": [
+            1.0,
+            3.859985497193159,
+            10.659722538979496
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 2,
+          "moduli": "tau=i, relative Wilson lines",
+          "predicted_ratios_ascending": [
+            1.0,
+            8.163217538750088,
+            18.70186199776233
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 3,
+          "moduli": "tau=i, relative Wilson lines",
+          "predicted_ratios_ascending": [
+            1.0,
+            3.859985497193153,
+            10.659722538979478
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 4,
+          "moduli": "tau=i, relative Wilson lines",
+          "predicted_ratios_ascending": [
+            1.0,
+            8.163217538750093,
+            18.701861997762347
+          ],
+          "within_factor_3_of_leptons": false
+        },
+        {
+          "higgs_slice": 5,
+          "moduli": "tau=i, relative Wilson lines",
+          "predicted_ratios_ascending": [
+            1.0,
+            3.859985497193139,
+            10.659722538979443
+          ],
+          "within_factor_3_of_leptons": false
+        }
+      ],
+      "verdict": "The sample (I,J,K)=(3,3,6) Yukawas, at four values of \u03c4 and six Higgs slices each, do not uniquely reproduce the charged-lepton hierarchy.  Even a lucky slice would not be a prediction: \u03c4 and the slice are free, and the conoid does not fix them."
+    },
+    "pati_salam_oneloop": {
+      "composite_7_3_31_3": {
+        "comment": "Errors are in natural log, so 0.2 is about 20% in the scale.  A residual of this size is expected from the difference between CC2010 couplings at M_Z and whatever CCvS2015 used; it is not a claim that the literature numbers are wrong.",
+        "computed": {
+          "Lambda_GeV": 3047080307198703.0,
+          "inv_g2_at_Lambda": 3.60175935037168,
+          "inv_g2_spread_at_Lambda": 8.881784197001252e-16,
+          "m_R_GeV": 54290375835484.01,
+          "t_ln_Lambda_over_mR": 4.027592164159462
+        },
+        "found": true,
+        "literature_CCvS2015": {
+          "Lambda_GeV": 2500000000000000.0,
+          "m_R_GeV": 42500000000000.0
+        },
+        "rel_log_error_Lambda": 0.19789312393526765,
+        "rel_log_error_mR": 0.24484289470172624
+      },
+      "with_15_7_3_9": {
+        "comment": "Errors are in natural log, so 0.2 is about 20% in the scale.  A residual of this size is expected from the difference between CC2010 couplings at M_Z and whatever CCvS2015 used; it is not a claim that the literature numbers are wrong.",
+        "computed": {
+          "Lambda_GeV": 7345397682761445.0,
+          "inv_g2_at_Lambda": 3.635102721155935,
+          "inv_g2_spread_at_Lambda": 4.884981308350689e-15,
+          "m_R_GeV": 52062631319453.56,
+          "t_ln_Lambda_over_mR": 4.949381788206308
+        },
+        "found": true,
+        "literature_CCvS2015": {
+          "Lambda_GeV": 6300000000000000.0,
+          "m_R_GeV": 41000000000000.0
+        },
+        "rel_log_error_Lambda": 0.15352431809300976,
+        "rel_log_error_mR": 0.2388753755620179
+      }
+    },
+    "ranked_directions": [
+      {
+        "coupling_relations": "CCM or Pati-Salam relations of F, not derived from the surface",
+        "examples": [
+          "conoid \u00d7 T^2_{flux 3} \u00d7 F",
+          "conoid \u00d7 S^2_{degree 3} \u00d7 F",
+          "ordinary 4D spacetime \u00d7 T^2_{flux 3} (conoid dropped) \u00d7 F"
+        ],
+        "generation_count": "put in as the flux / degree",
+        "mass_ratios": "moduli-dependent; not unique; samples do not force the lepton hierarchy",
+        "name": "4D product with a magnetized compact surface, times a CCM or Pati-Salam finite triple",
+        "rank": 1,
+        "verdict": "promising as a package, with an explicit caveat",
+        "why": "This is the only setup in the survey that is simultaneously 4-dimensional (heat kernel and KO-dimension match the CCM fermionic framework) and has a clean geometric mechanism for exactly three chiral zero modes \u2014 namely an integer flux or bundle degree equal to 3.  The gauge content and coupling relations then come from F (CCM or Pati-Salam), not from the conoid.  The number 3 itself is still a choice of flux, and Yukawa mass ratios depend on moduli that are not fixed.  The locked conoid, as a factor, remains incomplete and does not determine the flux (docs 45-46 and product_4d)."
+      },
+      {
+        "coupling_relations": "g_R = g_L = g at \u039b; matching to the SM is the standard PS embedding",
+        "generation_count": "input",
+        "mass_ratios": "not uniquely predicted; Higgs mass is compatible with 125 GeV for a range of \u03c1 and \u039b (CCvS literature), not a single number",
+        "name": "Pati-Salam finite spectral triple as the internal space",
+        "rank": 2,
+        "verdict": "promising as a literature internal-space alternative; not derived from the conoid",
+        "why": "CCvS2013 obtains H_R \u2295 H_L \u2295 M_4(C) by dropping the first-order condition in the same KO-dimension-6 classification that yields the SM algebra when the condition is kept.  CCvS2015 finds one-loop unification of the three Pati-Salam couplings with an intermediate breaking scale m_R, and the extra singlet \u03c3 can make a 125 GeV Higgs compatible.  The generation count is still an input.  None of this uses the locked conoid."
+      },
+      {
+        "coupling_relations": "g3^2 = g2^2 = (5/3) g1^2 at \u039b; one-loop SM running does not unify",
+        "generation_count": "input",
+        "mass_ratios": "Higgs example ~170 GeV (CC2010), not a mass-ratio derivation",
+        "name": "CCM finite triple as classified (already in doc 45)",
+        "rank": 3,
+        "verdict": "neutral",
+        "why": "The SM algebra is tightly constrained by the stated axioms, and the spectral-action coupling relation is clear.  One-loop running of that relation does not meet at a single scale, and the CC2010 Higgs example is ~170 GeV, not 125 GeV.  N=3 is an input.  The raw product conoid \u00d7 F is 2D, not a 4D model."
+      },
+      {
+        "name": "Frequency-n conoids, caps, and 'closed' conoid-like surfaces",
+        "rank": 4,
+        "verdict": "dead end",
+        "why": "The untwisted APS index is 0 for every n.  Total curvature is always -2\u03c0.  Node count and isometry order are 2n, never 3.  No unique smooth closed surface is determined by the embedding; any genuine compact spin surface still needs a degree-3 twist to get index 3."
+      },
+      {
+        "name": "C4 representations, four nodes, or twelve-bridge labelling as a finite algebra or fermion content",
+        "rank": 5,
+        "verdict": "dead end",
+        "why": "C4 is abelian; its group algebra is C^4, with unitaries U(1)^4, not the SM or Pati-Salam algebra.  Counting 4 or 12 against 3\u00d74 is numerology."
+      },
+      {
+        "name": "Euler characteristic, Hopf bundle, or TS^2 as a source of the integer 3",
+        "rank": 6,
+        "verdict": "dead end",
+        "why": "No connected compact surface has \u03c7=3 (the maximum is 2).  The Hopf bundle has degree 1 (Dirac index 1).  O(2)=TS^2 has Dirac index 2; its three holomorphic sections are conformal Killing fields, not chiral generations."
+      }
+    ]
+  },
+  "riemann_roch": {
+    "dirac_index_formula": "d  (independent of genus)",
+    "exploratory": true,
+    "holomorphic_chi_formula": "d + 1 - g",
+    "locked_core": false,
+    "naturalness": {
+      "dirac_index_equals": "the degree d of the twisting bundle (flux)",
+      "euler_characteristic_3": {
+        "achieved_by": "the 2-sphere (g=0, no boundary)",
+        "connected_surface_can_have_chi": false,
+        "disconnected_numerology": "A disjoint union can have chi=3 (sphere \u2294 disk), but that is not a connected base and is not a derivation of three generations.",
+        "max_chi_connected_compact": 2,
+        "nonorientable_obstruction": "2 - k - b <= 1 for k >= 1, never 3",
+        "orientable_obstruction": "2 - 2g - b = 3 iff -2g - b = 1, impossible for integers g,b >= 0",
+        "target": 3,
+        "verdict": "dead end"
+      },
+      "genus_drops_out_of_dirac_index": true,
+      "hopf_bundle": {
+        "bundle": "O(1) on CP^1 (Hopf line bundle)",
+        "degree": 1,
+        "dirac_index": 1,
+        "note": "The unique degree-1 positive line bundle on the sphere gives index 1, not 3."
+      },
+      "pairs_dirac_index_3": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "pairs_holomorphic_chi_3": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "reason": "The twisted-Dirac index on any compact Riemann surface equals the degree d of the twisting line bundle and is independent of genus.  Getting 3 means choosing d=3.  Nothing in the topology of a connected compact surface (Euler characteristic cannot be 3; the Hopf bundle has degree 1; TS^2 has degree 2) produces 3 as a Dirac index without that choice.",
+      "sphere_O2": {
+        "bundle": "O(2) = TS^2",
+        "degree": 2,
+        "dirac_index": 2,
+        "flag": "numerology if sold as three generations",
+        "holomorphic_chi": 3,
+        "holomorphic_sections": "conformal Killing fields, not fermion generations"
+      },
+      "three_is_a_choice_of_degree": true,
+      "verdict": "neutral as a mechanism (index = flux is clean); dead end as a derivation of the number 3"
+    },
+    "sample_chi": {
+      "genus2_degree_3": 2,
+      "sphere_O0": 1,
+      "sphere_O1": 2,
+      "sphere_O2": 3,
+      "torus_degree_3": 3
+    },
+    "sample_dirac_index": {
+      "genus2_degree_3": 3,
+      "sphere_degree_3": 3,
+      "sphere_untwisted_or_degree_0": 0,
+      "torus_degree_3": 3
+    },
+    "verdict": "neutral as a mechanism (index = flux is clean); dead end as a derivation of the number 3"
+  }
+}
