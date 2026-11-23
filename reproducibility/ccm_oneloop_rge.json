@@ -1,0 +1,62 @@
+{
+  "inputs": "CC2010 (6.7)\u2013(6.8)",
+  "alpha_at_MZ_quoted": [
+    0.0101,
+    0.0337,
+    0.1186
+  ],
+  "alpha_at_MZ_from_g": [
+    0.010170498222769274,
+    0.033766468698220746,
+    0.1186373572570322
+  ],
+  "meeting_scales": {
+    "Lambda_alpha2_eq_alpha3_GeV": 1.2048805439796662e+17,
+    "Lambda_five_thirds_alpha1_eq_alpha2_GeV": 13332868084844.287,
+    "Lambda_five_thirds_alpha1_eq_alpha3_GeV": 309825255628792.8
+  },
+  "at_meeting_scales": {
+    "Lambda_alpha2_eq_alpha3_GeV": {
+      "scale_GeV": 1.2048805439796662e+17,
+      "alpha1_inv": 61.14392797633568,
+      "alpha2_inv": 47.22123653521941,
+      "alpha3_inv": 47.22123653521941,
+      "three_fifths_alpha1_inv": 36.68635678580141,
+      "relative_spread": 0.16067984074848612
+    },
+    "Lambda_five_thirds_alpha1_eq_alpha2_GeV": {
+      "scale_GeV": 13332868084844.287,
+      "alpha1_inv": 71.05058095170583,
+      "alpha2_inv": 42.63034857102349,
+      "alpha3_inv": 37.07295787752317,
+      "three_fifths_alpha1_inv": 42.6303485710235,
+      "relative_spread": 0.09085628468488546
+    },
+    "Lambda_five_thirds_alpha1_eq_alpha3_GeV": {
+      "scale_GeV": 309825255628792.8,
+      "alpha1_inv": 67.62936445871014,
+      "alpha2_inv": 44.21579036046052,
+      "alpha3_inv": 40.57761867522608,
+      "three_fifths_alpha1_inv": 40.577618675226084,
+      "relative_spread": 0.058038475900884054
+    }
+  },
+  "at_1e17_GeV": {
+    "alpha1_inv": 61.346627647253094,
+    "alpha2_inv": 47.127302541379635,
+    "alpha3_inv": 47.01359296988938,
+    "three_fifths_alpha1_inv": 36.807976588351856,
+    "relative_spread": 0.15674012311423888
+  },
+  "unification_exact_at_one_loop": false,
+  "higgs_example": {
+    "Lambda_GeV": 1e+17,
+    "lambda_at_Lambda": 0.356,
+    "lambda_at_MZ_CC2010": 0.241,
+    "m_H_CC2010_GeV": 170.0,
+    "m_H_observed_GeV": 125.2,
+    "agrees_with_observed_125": false,
+    "citation": "CC2010, below (6.12): \u03bb0=0.356 at 10^17 GeV gives \u03bb(MZ)~0.241 and m_H of order 170 GeV"
+  },
+  "conoid_changes_this_running": false
+}

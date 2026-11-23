@@ -1,6 +1,6 @@
 # SAM3 Hardening Layer — Index
 
-**August 2026; docs 42–44 added 23 November 2026**  
+**August 2026; docs 42–45 added 23 November 2026**  
 **SSOT:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 | Doc | Content |
@@ -21,5 +21,6 @@
 | **42** | **$\omega_0$, $64\pi/45$, Hermitian Dirac status (Nov 2026)** |
 | **43** | **APS index attempt, $C_0=2\pi\ln 2$, $\omega_0$ search, $G_N$ schemes** |
 | **44** | **Exact $E_0(m)$, truncated-conoid APS index $=0$, unification attempts (all failed)** |
+| **45** | **Almost-commutative product with the CCM finite triple $F$; 2D vs 4D; one-loop running** |
 
 Rule: derivation only, no experimental tuning, no overclaim.

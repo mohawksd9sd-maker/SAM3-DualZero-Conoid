@@ -1,0 +1,67 @@
+{
+  "algebra": "C \u2295 H \u2295 M_3(C)",
+  "KO_dim_F": 6,
+  "options": [
+    {
+      "name": "conoid \u00d7 F  (no extra spacetime)",
+      "continuous_dimension": 2,
+      "ko": 0,
+      "ko_matches_CCM_fermions": false,
+      "heat_kernel_is_4D": false,
+      "verdict": "failed as a 4D unification model",
+      "reason": "The heat kernel is two-dimensional: the spectral action has terms of type \u039b^2 Area + (curvature / boundary), not a 4D Einstein\u2013Hilbert + Yang\u2013Mills action.  KO-dimension 2+6=8\u22610, not the CCM value 2.  This is the raw product conoid \u00d7 F."
+    },
+    {
+      "name": "M^4 \u00d7 conoid \u00d7 F  (conoid as extra internal factor)",
+      "continuous_dimension": 6,
+      "ko": 4,
+      "ko_matches_CCM_fermions": false,
+      "heat_kernel_is_4D": false,
+      "note_on_dimension": "The continuous geometry is 6-dimensional, so the leading Seeley expansion is 6D (\u039b^6, \u039b^4, \u039b^2, \u2026).  If one instead treats the conoid as a \u2018compact internal\u2019 factor and expands only in the 4D directions, the 4D coefficients are multiplied by integrals over the conoid (area, \u222bK, \u2026).",
+      "verdict": "partially derived, with a dimensional hypothesis",
+      "reason": "KO-dimension 4+2+6=12\u22614, not 2, so the CCM fermionic package does not carry over unchanged.  If one ignores that and treats the conoid as a spectator Riemannian factor in front of F, every 4D gauge kinetic term is multiplied by the same internal area: the CCM ratios g3^2=g2^2=(5/3)g1^2 are unchanged.  The overall scale (the relation of F0 to g^2, and of F2 to G_N) is rescaled by that area and remains scheme-dependent.  The conoid does not fix \u03c90, \u03b1, or the generation count, and does not modify the CCM Higgs-quartic relation at \u039b, which comes from traces on F."
+    },
+    {
+      "name": "(conoid \u00d7 \u03a3^2) \u00d7 F  (extra 2-manifold to reach 4D)",
+      "continuous_dimension": 4,
+      "ko": 2,
+      "ko_matches_CCM_fermions": true,
+      "heat_kernel_is_4D": true,
+      "verdict": "partially derived, assuming a choice of \u03a3^2",
+      "reason": "This is the only product in the list whose continuous dimension is 4 and whose KO-dimension is 2, matching CCM.  The 4-geometry Y=conoid\u00d7\u03a3^2 is not unique: every statement about volumes and curvature of Y depends on a choice of \u03a3^2 that is not determined by the locked conoid.  For any such choice, F is still the CCM finite triple, so the gauge-coupling ratios and the Higgs-gauge relation at \u039b are the standard CCM ones (spectator argument).  The conoid contributes its area and its total curvature \u22122\u03c0 to the gravitational coefficients, but does not uniquely fix F0, F2, F4 or \u03b1."
+    },
+    {
+      "name": "M^4 \u00d7 F  (plain CCM; conoid unused)",
+      "continuous_dimension": 4,
+      "ko": 2,
+      "ko_matches_CCM_fermions": true,
+      "heat_kernel_is_4D": true,
+      "verdict": "derived in the literature, independent of the conoid",
+      "reason": "This is CCM2007/CC2010.  It does not use the conoid, so it cannot be a derivation of anything from the locked metric."
+    }
+  ],
+  "spectator": {
+    "ccm_ratio_preserved": true,
+    "higgs_quartic_at_Lambda_preserved": true,
+    "F0_g_relation_rescaled_by_area": true,
+    "generation_count_unchanged": true,
+    "reason": "Spectator volumes cancel in coupling ratios and in the Higgs-to-gauge relation at \u039b.  They do not cancel in G_N or in the cosmological term, which remain scheme-dependent."
+  },
+  "generations": {
+    "CCM_N": 3,
+    "CCM_N_is_input": true,
+    "citation": "CCM2007: \u201cThe multiplicity N=3 here is an input, and it corresponds to the number of particle generations in the standard model. The number of generations is not predicted by our model in its present form and has to be taken as an input datum.\u201d",
+    "conoid_APS_index_untwisted": 0,
+    "conoid_does_not_replace_the_input": true,
+    "verdict": "failed (generation count is an input of F, not a conoid derivation)"
+  },
+  "moments": {
+    "plain_CCM": "F0, F2, F4 set (g^2, G_N, Lambda_cosmo); not predicted",
+    "with_spectator_area_A": "F0 A and F2 A enter the same two relations; still two equations for three moments plus a scheme-dependent A",
+    "unique_constraint": false,
+    "verdict": "failed to uniquely fix F0, F2, F4, or \u03b1"
+  },
+  "paper09_ko_claim_is_wrong": true,
+  "paper09_claimed_ko_of_F": 4,
+  "literature_ko_of_F": 6
+}
