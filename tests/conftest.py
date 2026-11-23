@@ -1,4 +1,4 @@
-"""Put the repo code/ directory on sys.path for pytest."""
+"""Put the repo root and code/ directory on sys.path for pytest."""
 from __future__ import annotations
 
 import sys
@@ -6,5 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CODE = ROOT / "code"
-if str(CODE) not in sys.path:
-    sys.path.insert(0, str(CODE))
+for p in (ROOT, CODE):
+    s = str(p)
+    if s not in sys.path:
+        sys.path.insert(0, s)

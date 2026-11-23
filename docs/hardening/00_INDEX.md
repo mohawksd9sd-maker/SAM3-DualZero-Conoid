@@ -1,6 +1,6 @@
 # SAM3 Hardening Layer — Index
 
-**August 2026; docs 42–52 added 23 November 2026**  
+**August 2026; docs 42–54 added 23 November 2026**  
 **SSOT:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 | Doc | Content |
@@ -29,5 +29,9 @@
 | **50** | **Further candidate tests for an accidental fit of the flux, moduli, or generation count (not part of the locked core)** |
 | **51** | **Review of SAM-2, desktop math-model, and May 2026 Dual-Zero lines (exploratory; original sources not in the repo)** |
 | **52** | **Standalone Dual-Zero axiom and a selection test for flux and moduli (exploratory; honest null)** |
+| **53** | **Dual-Zero information-conserving arithmetic (exploratory numerical tool; not a core theorem)** |
+| **54** | **Dual-Zero re-run of SAM-2 / SAM-3 numerical claims (exploratory; honest null)** |
 
-Rule: derivation only, no experimental tuning, no overclaim.  Docs 47–52 are labelled exploratory surveys in `experiments/`; they do not lock new core theorems.
+A root document, [`ROADMAP_TOE_GUT.md`](../../ROADMAP_TOE_GUT.md), lists research targets for an authentic GUT and an authentic TOE.  It is not a hardening lock.
+
+Rule: derivation only, no experimental tuning, no overclaim.  Docs 47–54 are labelled exploratory surveys in `experiments/` (and, for doc 53, `dual_zero_arith/`); they do not lock new core theorems.

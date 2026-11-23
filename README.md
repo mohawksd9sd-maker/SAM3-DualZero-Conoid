@@ -6,16 +6,19 @@ Honesty rule: unproven statements are labelled as such. Null results stay null.
 
 **Start here:** [`BOTTOM_LINE.md`](BOTTOM_LINE.md) — what is proven, what the unification experiments showed, and the missing principle.
 
+**GUT / TOE targets:** [`ROADMAP_TOE_GUT.md`](ROADMAP_TOE_GUT.md) — what has been established, and what must still be found for an authentic GUT and an authentic TOE, with falsifiable tests.  Research targets, not claims.
+
 ---
 
 ## Start here (outsiders)
 
 1. **[`BOTTOM_LINE.md`](BOTTOM_LINE.md)** — short public statement of where the work stands
-2. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — proved vs numerical vs not derived
-3. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — current core paper (November 2026)
-4. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — SSOT
-5. **[`docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md`](docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md)** — audit of claims vs evidence
-6. **[`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)** — Dual-Zero as a definition
+2. **[`ROADMAP_TOE_GUT.md`](ROADMAP_TOE_GUT.md)** — research targets for an authentic GUT and an authentic TOE
+3. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — proved vs numerical vs not derived
+4. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — current core paper (November 2026)
+5. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — SSOT
+6. **[`docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md`](docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md)** — audit of claims vs evidence
+7. **[`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)** — Dual-Zero as a definition
 
 **Core-first:** unification and RH narratives are secondary. The Riemann hypothesis is a proposal only; a non-circular identification test in this repository found no evidence that Dual-Zero critical points match zeta zeros.
 
@@ -64,6 +67,8 @@ A review of the SAM-2, desktop math-model, and May 14, 2026 Dual-Zero lines is i
 
 The standalone Dual-Zero axiom, and a no-fitting selection test on magnetized \(T^2\), unfluxed \(T^2\), \(T^2/\mathbb{Z}_4\), a monopole sphere, and the Pati–Salam / CCM product, is in [`docs/hardening/52_DualZero_Axiom_Selection_Test.md`](docs/hardening/52_DualZero_Axiom_Selection_Test.md) and `experiments/dual_zero_axiom/`.  Nothing is selected without tuning.  The missing principle is unchanged.
 
+Information-conserving Dual-Zero arithmetic (paired visible + exact residual) is in `dual_zero_arith/` and [`docs/hardening/53_DualZero_Information_Conserving_Arithmetic.md`](docs/hardening/53_DualZero_Information_Conserving_Arithmetic.md).  It removes rounding and truncation loss only, not modelling error.  A re-run of the numerical claims in the model lines is in [`docs/hardening/54_DualZero_Rerun_of_All_Models.md`](docs/hardening/54_DualZero_Rerun_of_All_Models.md) and `experiments/dual_zero_toe/`.  No genuine change: exact zeros stayed zeros, fits stayed fits, and no unique flux or moduli appeared.  Research targets for an authentic GUT and an authentic TOE are in [`ROADMAP_TOE_GUT.md`](ROADMAP_TOE_GUT.md).
+
 The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
 
 ---
@@ -97,6 +102,9 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 | Further candidate tests (exploratory) | `docs/hardening/50_...` |
 | SAM-2 / May-clone Dual-Zero review (exploratory) | `docs/hardening/51_...` |
 | Dual-Zero axiom selection test (exploratory) | `docs/hardening/52_...` |
+| Dual-Zero information-conserving arithmetic (exploratory) | `docs/hardening/53_...` |
+| Dual-Zero re-run of model claims (exploratory) | `docs/hardening/54_...` |
+| GUT / TOE research targets | `ROADMAP_TOE_GUT.md` |
 | Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
 
