@@ -27,11 +27,10 @@ $r(u,v)=(u\cos v,\,u\sin v,\,\ell_0\sin(2v))$, with the induced metric
 $ds^2=du^2+f^2\,dv^2$ and $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$.
 We prove the induced-metric formulae, the exact $C_4$ isometry
 (and that $A_5$ is not an isometry of $f$), the Gaussian curvature,
-existence of a regularised volume finite part $C_0$, and a strict
+the evaluation $C_0=2\pi\ln 2$ of the regularised volume finite part, and a strict
 variational monotonicity of radial channel ground energies in the
 angular momentum $m$ (with a domain caveat at $m=0$).
-A numerical evaluation gives $C_0\approx 4.3551723$ on the unit metric
-$\ell_0=1$; an earlier draft band $4.43$--$4.45$ does not reproduce.
+On the unit metric $\ell_0=1$ we prove $C_0=2\pi\ln 2$; an earlier draft band $4.43$--$4.45$ does not reproduce.
 Claims are labelled as theorem, proposition, numerical observation,
 heuristic, convention, or conjecture. We do not claim a derivation of
 the full Standard Model, a scheme-free formula for $G_N$, a derivation
@@ -147,12 +146,44 @@ exists. Finally $\log(U+1)-\log U\to 0$.
 Hence
 $\mathrm{Vol}(U)=\pi U^2+2\pi\log U+C_0+o(1)$.
 
-\begin{numobs}[Value of $C_0$]
-\label{obs:c0}
-Adaptive evaluation of the integral in Proposition~\ref{prop:c0exists}
-gives $C_0\approx 4.3551723$ (already $C_0(U=1000)\approx 4.3551745$ and
-$C_0(U=4000)\approx 4.3551723$). An earlier draft band $4.43$--$4.45$,
-obtained from coarser Riemann sums, does not reproduce and is withdrawn.
+\begin{theorem}[$C_0=2\pi\ln 2$]
+\label{thm:c0}
+On the unit metric $\ell_0=1$, the finite part of Proposition~\ref{prop:c0exists}
+is exactly $C_0=2\pi\ln 2$.
+\end{theorem}
+
+\begin{proof}
+Write $a(v)=2\lvert\cos(2v)\rvert$, so $f=\sqrt{u^2+a(v)^2}$. For each fixed
+$a>0$,
+\[
+  \int_0^U\bigl(\sqrt{u^2+a^2}-u\bigr)\,du
+  =\frac{a^2}{4}+\frac{a^2}{2}\ln\frac{2U}{a}+o(1).
+\]
+Integrating in $v\in[0,2\pi]$ and subtracting $2\pi\log U$ therefore yields
+\begin{align*}
+  C_0
+  &=\pi+2\pi\ln 2-\frac12\int_0^{2\pi}a(v)^2\ln a(v)\,dv\\
+  &=\pi-8K,
+\end{align*}
+where the elementary identities $\int_0^{2\pi}\cos^2(2v)\,dv=\pi$ and
+$\int a^2\ln a=2\pi\ln 2+8K$ have been used, and
+\[
+  K=\int_0^{\pi/2}\cos^2 t\,\ln(\cos t)\,dt.
+\]
+The classical Fourier series
+$\ln(\cos t)=-\ln 2+\sum_{k=1}^\infty(-1)^{k+1}k^{-1}\cos(2kt)$,
+valid for $\lvert t\rvert<\pi/2$
+(equivalent to $-\ln(\cos t)=\ln 2+\sum_{k=1}^\infty(-1)^k k^{-1}\cos(2kt)$),
+gives, after integrating against $(1+\cos 2t)/2$,
+$K=\pi(1-2\ln 2)/8$. Hence $C_0=\pi-8K=2\pi\ln 2$.
+\end{proof}
+
+\begin{numobs}
+Quadrature of the original integral is consistent with the theorem:
+$C_0(U=1000)-2\pi\ln 2\approx 2.36\times 10^{-6}$ and
+$(C_0(U)-2\pi\ln 2)\,U^2$ is approximately constant, as expected from the
+$O(U^{-2})$ remainder. The earlier draft band $4.43$--$4.45$ does not
+reproduce and is withdrawn.
 \end{numobs}
 
 \section{Self-adjointness of radial channels}
@@ -319,6 +350,72 @@ precision.
 On the truncated conoid, APS is modelled by a boundary penalty. The
 resulting eigenvalues are a numerical experiment, not a continuum APS
 theorem, and are not used to support Conjecture~\ref{conj:three}.
+
+\section{APS index and the generation count}
+\label{sec:aps}
+
+The APS boundary condition is the spectral projection onto the nonnegative
+eigenspace of the induced boundary operator~\cite{APS1975,FalomirDisk}.
+For the free Dirac operator on a flat disk of radius $R$ with flux
+$\kappa=0$, there are no zero modes and the nonzero eigenvalues are
+$\pm j_{n,l}/R$, the zeros of the Bessel functions $J_n$; for
+$k<\kappa\le k+1$ the index is $k+1$~\cite{FalomirDisk}.
+
+A mode-by-mode radial discretisation with SAT enforcement of the Falomir
+conditions reproduces some of this Bessel spectrum (the $n=1$ family to
+about $0.02$ at $N=80$), but the operator is not exactly Hermitian and a
+numerical reproduction of the \emph{nonzero}-flux zero-mode count was not
+obtained. Those failures are reported as such.
+
+On a truncated conoid $u\in[u_{\min},u_{\max}]$ a Hermitian 2D Dirac
+operator with a spectral projection at both ends was implemented
+(\texttt{code/aps\_projection.py}). In the runs recorded in
+\texttt{reproducibility/} the low-lying eigenvalues come in $\pm$ pairs
+with vanishing chirality $\langle\gamma^5\rangle$, and $\lvert\lambda\rvert_{\min}$
+decreases as $u_{\max}$ grows (e.g.\ $0.123$, $0.033$, $0.014$ at
+$U=3,5,7$ on a $14\times 14$ grid, $u_{\min}=0.5$). No isolated triplet
+of chiral zero modes is seen. The discrete boundary operator as extracted
+in that implementation has a four-dimensional kernel, already in tension
+with the expected one-dimensional Dirac operator on a circle
+($h\in\{0,1\}$), so the numerical ``index'' is \emph{not} a reliable APS
+index.
+
+\begin{numobs}[Three light channels]
+Conjecture~\ref{conj:three} is \emph{not supported} by the present APS
+numerics, and it is \emph{not cleanly refuted} by a trustworthy continuum
+index. It remains open. The radial-model heuristic $\{0,1,2\}$ is
+unchanged and is not an index statement.
+\end{numobs}
+
+\section{$\omega_0$ and $4/13$, continued}
+
+The search recorded in \texttt{code/omega0\_search.py} found no unique
+geometric $R_{\mathrm{curv}}$ and no derivation of the exponent $4/13$.
+The exponents $p$ that would be needed to obtain $0.927=(R/D)^p$ from the
+natural radii of Section~\ref{sec:omega} are all negative (since those
+$R/D>1$), hence far from $4/13$. The closest simple constants,
+$\sqrt{6/7}\approx 0.9258$ and $13/14\approx 0.9286$, differ from $0.927$
+by more than $10^{-3}$ and are not derivations. Dual-Zero weights are
+linear in $\omega_0$. The parameter $\omega_0$ remains a free input.
+
+\section{Scheme table for the prefactor $\alpha$}
+\label{sec:alpha}
+
+Under the structural identification of notes~09 and~14,
+$\alpha=1/(16\pi\,C_{\mathrm{SA}}\,\phi_2\,\mathrm{Vol}_{\mathrm{reg}})$
+when $\Lambda=1/\ell_0$ and $G_N=\kappa^2/(8\pi)$. For
+$\mathrm{Vol}_{\mathrm{reg}}=C_0=2\pi\ln 2$ and $\phi_2=\tfrac12$
+(sharp cutoff or $f(v)=e^{-v^2}$), the hypothesis
+$C_{\mathrm{SA}}=1/(24\pi^2)$ gives $\alpha\approx 2.164$, about $0.484$
+times $64\pi/45$. The hypothesis $C_{\mathrm{SA}}=1/(4\pi^2)$ gives
+$\alpha\approx 0.361$. Using a truncated area $\pi U^2+2\pi\log U+C_0$
+changes $\alpha$ by a large factor. The recorded $64\pi/45$ remains a
+convention lock, equivalent to
+$C_{\mathrm{SA}}\phi_2\mathrm{Vol}_{\mathrm{reg}}=45/(1024\pi^2)$.
+No unique geometric $\alpha$ is claimed. The Chamseddine--Connes--Marcolli
+Einstein--Hilbert coefficient for the Standard Model almost-commutative
+geometry includes a finite Hilbert space that is not the conoid, and is
+not used here to produce an $\alpha$.
 
 \section{Limitations}
 
