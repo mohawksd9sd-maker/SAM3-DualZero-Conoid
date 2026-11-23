@@ -44,6 +44,8 @@ Run `python code/core_reproducibility.py` and `pytest -q`.
 
 Exploratory survey of other surfaces and internal spaces (doc 47, `experiments/alt_geometries/`): **not part of the locked core**.  No alternative examined there derives the integer 3 or unique mass ratios from the conoid.  The cleanest generation *mechanism* in that survey is a chosen flux on a compact surface, in a 4D product with a CCM or Pati–Salam finite triple.
 
+Development of that product (doc 48, `experiments/ps_conoid_product/`): **still not core**.  The Pati–Salam gauge relation at $\Lambda$ is derived; flux $=3$ and the surface moduli are not.  One-loop running with PDG inputs determines $m_R\approx 4.20\times 10^{13}\,\mathrm{GeV}$ and $\Lambda\approx 2.40\times 10^{15}\,\mathrm{GeV}$ from the measured couplings — a determination, not a prediction of those couplings.
+
 ---
 
 ## Read
@@ -57,3 +59,4 @@ Exploratory survey of other surfaces and internal spaces (doc 47, `experiments/a
 7. `docs/hardening/45_Almost_Commutative_CCM_Product.md`
 8. `docs/hardening/46_Singular_Tip_Analysis.md`
 9. `docs/hardening/47_Alternative_Geometries_Exploratory.md` (exploratory; not core)
+10. `docs/hardening/48_PS_Conoid_Product.md` (exploratory; not core)

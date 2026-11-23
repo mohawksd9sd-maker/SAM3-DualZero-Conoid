@@ -51,6 +51,8 @@ Key reproduced numbers (unit metric $\ell_0=1$):
 
 Exploratory, not core: alternative surfaces and internal spaces are surveyed in [`docs/hardening/47_Alternative_Geometries_Exploratory.md`](docs/hardening/47_Alternative_Geometries_Exploratory.md) and `experiments/alt_geometries/`.  They do not change the locked theorems.  No alternative examined there derives the integer 3 from the conoid.
 
+A follow-up, also exploratory, develops the product conoid × magnetized surface × Pati–Salam in [`docs/hardening/48_PS_Conoid_Product.md`](docs/hardening/48_PS_Conoid_Product.md) and `experiments/ps_conoid_product/`.  The flux and the surface moduli remain unfixed; the integer 3 is still a choice.
+
 The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
 
 ---

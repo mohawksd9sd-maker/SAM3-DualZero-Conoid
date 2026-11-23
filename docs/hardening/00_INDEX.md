@@ -1,6 +1,6 @@
 # SAM3 Hardening Layer — Index
 
-**August 2026; docs 42–47 added 23 November 2026**  
+**August 2026; docs 42–48 added 23 November 2026**  
 **SSOT:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 | Doc | Content |
@@ -24,5 +24,6 @@
 | **45** | **Almost-commutative product with the CCM finite triple $F$; 2D vs 4D; one-loop running** |
 | **46** | **Singular tip $u\to 0$: geodesic boundary of length $8\ell_0$ with four nodes; no index 3** |
 | **47** | **Exploratory alternative surfaces and internal spaces (not part of the locked core)** |
+| **48** | **Exploratory product: conoid × magnetized Σ × Pati–Salam (not part of the locked core)** |
 
-Rule: derivation only, no experimental tuning, no overclaim.  Doc 47 is a labelled exploratory survey in `experiments/alt_geometries/`; it does not lock new core theorems.
+Rule: derivation only, no experimental tuning, no overclaim.  Docs 47–48 are labelled exploratory surveys in `experiments/`; they do not lock new core theorems.

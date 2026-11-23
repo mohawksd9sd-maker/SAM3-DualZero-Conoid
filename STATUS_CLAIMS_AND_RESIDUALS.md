@@ -20,6 +20,7 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 | Almost-commutative product with CCM $F$, 2D vs 4D, one-loop running | [`docs/hardening/45_Almost_Commutative_CCM_Product.md`](docs/hardening/45_Almost_Commutative_CCM_Product.md) |
 | Singular tip $u\to 0$ | [`docs/hardening/46_Singular_Tip_Analysis.md`](docs/hardening/46_Singular_Tip_Analysis.md) |
 | Exploratory alternative surfaces / internal spaces (**not core**) | [`docs/hardening/47_Alternative_Geometries_Exploratory.md`](docs/hardening/47_Alternative_Geometries_Exploratory.md); code in [`experiments/alt_geometries/`](experiments/alt_geometries/) |
+| Exploratory product conoid × magnetized Σ × Pati–Salam (**not core**) | [`docs/hardening/48_PS_Conoid_Product.md`](docs/hardening/48_PS_Conoid_Product.md); code in [`experiments/ps_conoid_product/`](experiments/ps_conoid_product/) |
 | Papers supersession | [`papers/SUPERSESSION.md`](papers/SUPERSESSION.md) |
 
 ---
@@ -129,4 +130,6 @@ Reproduce: `python code/core_reproducibility.py` (writes `reproducibility/core_r
 ## Exploratory alternative geometries (not core)
 
 A survey of other surfaces and internal spaces is in doc 47 and `experiments/alt_geometries/`.  It is **not** part of the locked core and does not change the theorems in the tables above.  Headline: no alternative examined there derives the integer 3, or unique mass ratios, from the locked conoid.  The cleanest *mechanism* for three chiral zero modes is a chosen flux or bundle degree on a compact surface, in a 4D product with a CCM or Pati–Salam finite triple.  Pati–Salam is a more flexible internal space in the cited literature and is not a SAM-3 output.  Frequency-$n$ conoids, $C_4$ representation counting, Euler characteristic, the Hopf bundle, and $TS^2$ are dead ends as derivations of 3.
+
+A development of that package is in doc 48.  The 4D KO-dimension and the Pati–Salam gauge relation at $\Lambda$ are derived (spectator).  Nothing in the combined geometry fixes flux $=3$ or the moduli of $\Sigma$; the spectral action of a magnetized torus prefers smaller $|M|$, not $3$.  The RG pipeline determines $(m_R,\Lambda)$ from measured couplings (with PDG inputs, one-loop composite values $m_R=4.20\times 10^{13}\,\mathrm{GeV}$, $\Lambda=2.40\times 10^{15}\,\mathrm{GeV}$) and does not predict those couplings.  Lepton mass ratios are not derived; a labelled, underdetermined fit can accommodate them from some seeds.  The Higgs mass is not a unique prediction of the product.
 
