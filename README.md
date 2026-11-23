@@ -1,49 +1,61 @@
 # SAM3-DualZero-Conoid
 
-**Geometric / spectral research on a right conoid with Dual-Zero regulation**
+**Geometric / spectral research on a right conoid with Dual-Zero regularisation**
+
+Honesty rule: unproven statements are labelled as such. Null results stay null.
 
 ---
 
 ## Start here (outsiders)
 
-1. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — locked vs residual  
-2. **[`docs/math_notes/`](docs/math_notes/)** — generations; metric + $G_N$  
-3. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — modest paper  
-4. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — SSOT  
-5. **[`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)** — **original Dual-Zero math**
+1. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — proved vs numerical vs not derived
+2. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — current core paper (November 2026)
+3. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — SSOT
+4. **[`docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md`](docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md)** — audit of claims vs evidence
+5. **[`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)** — Dual-Zero as a definition
 
-**Core-first:** unification and RH narratives are secondary until core math is externally checked.
+**Core-first:** unification and RH narratives are secondary. The Riemann hypothesis is a proposal only; a non-circular identification test in this repository found no evidence that Dual-Zero critical points match zeta zeros.
 
 ---
 
-## Locked metric (mandatory)
+## Locked metric (from the embedding)
 
 $$
 f(u,v)=\sqrt{u^2+4\ell_0^2\cos^2(2v)}
 $$
 
-($4\ell_0^2$ only — not $16\ell_0^2$.)
+($4\ell_0^2$ only — not $16\ell_0^2$.) This, the exact $C_4$ isometry, the curvature formula, existence of $C_0$, and $E_0(m_2)>E_0(m_1)$ are proved in the core paper.
 
 ---
 
-## Dual-Zero (novel — original math)
-
-- Generator $\varepsilon(n)=\omega_0(-1)^n n^{-n}$ with geometric $\omega_0$
-- Dual average $\operatorname{Reg}_2$ on **spectral mode data**
-- Information-conserving alternative to hard UV cutoffs
-- **Not** the claim $\mathrm{st}(n^{-n})\neq 0$
-
-Canonical: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)
-
----
-
-## Reproduce
+## Reproduce the core paper
 
 ```bash
-python code/reproduce_status_locked.py
-python code/dual_zero_constructive.py
-python code/production_channel_pipeline.py
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+python code/core_reproducibility.py
+pytest -q
 ```
+
+Key reproduced numbers (unit metric $\ell_0=1$):
+
+- $C_0\approx 4.3551723$ (the older band $4.43$–$4.45$ does **not** reproduce)
+- Flat-torus Hermitian Dirac, $N=24$: $\max|\lambda-\lambda_{\mathrm{exact}}|\approx 0.00202$, convergence slope $\approx-1.995$
+- $G_N=64\pi\ell_0^2/45$ is a **convention lock**, not an independent derivation
+- $\omega_0\approx 0.927$ and the exponent $4/13$ are **not derived**
+
+The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
+
+---
+
+## Dual-Zero (definition)
+
+- Generator $\varepsilon(n)=\omega_0(-1)^n n^{-n}$
+- $\omega_0$ is an **input** until a derivation exists (it does not, as of November 2026)
+- Dual average $\operatorname{Reg}_2$ on spectral mode data is a proposed regularisation, not a theorem about $\zeta(s)$
+
+Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)
 
 ---
 
@@ -52,13 +64,14 @@ python code/production_channel_pipeline.py
 | Topic | Document |
 |-------|----------|
 | Public summary | `PUBLIC_STATUS_SUMMARY.md` |
-| Metric / ω₀ | `docs/hardening/35_...` |
-| **Dual-Zero (original)** | **`docs/hardening/18_...`** + doc 39 |
-| Pipeline | production channel pipeline |
+| SSOT | `STATUS_CLAIMS_AND_RESIDUALS.md` |
+| Core paper | `papers/SAM3_Core_Geometry_and_Spectral_Results.tex` |
+| November 2026 audit | `docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md` |
+| $\omega_0$, $G_N$ prefactor, Dirac | `docs/hardening/42_...` |
+| Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
-| Contradiction audit | `docs/AUDIT_CONTRADICTIONS.md` |
 
 **RH:** proposal only.  
-**Unification:** ~7% floor; percent-level not claimed.
+**Unification, CKM, Higgs mass:** not derived in the core.
 
-**Last update:** August 18, 2026 (metric audit + Dual-Zero novelty lock).
+**Last update:** 23 November 2026 (America/Chicago).

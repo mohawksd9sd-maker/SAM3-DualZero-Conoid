@@ -1,6 +1,6 @@
 # SAM3 Hardening Layer — Index
 
-**August 2026**  
+**August 2026; doc 42 added 23 November 2026**  
 **SSOT:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 | Doc | Content |
@@ -18,5 +18,6 @@
 | **39** | **Constructive Dual-Zero + scheme comparison** |
 | **40** | **Numerical pipeline maturity** |
 | **41** | **Unification + cosmology residuals** |
+| **42** | **$\omega_0$, $64\pi/45$, Hermitian Dirac status (Nov 2026)** |
 
 Rule: derivation only, no experimental tuning, no overclaim.

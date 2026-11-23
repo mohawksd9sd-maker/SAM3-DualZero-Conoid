@@ -1,3 +1,5 @@
+> **November 2026:** the working value $C_0\approx 4.43$–$4.45$ in this note does **not** reproduce under adaptive quadrature. The core paper now records $C_0\approx 4.3551723$. Existence of $C_0$ is unchanged.
+
 # Mathematical Note XXXI — Referee Fixes: Self-Adjointness, Soft Set, $C_0$
 
 **Date:** August 2026  

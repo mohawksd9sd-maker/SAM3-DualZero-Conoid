@@ -1,3 +1,5 @@
+> **November 2026 supersession (doc 42 / STATUS):** the locked metric $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ (coefficient 4) remains correct. The formula $\omega_0=(R_{\mathrm{curv}}/D)^{4/13}\approx 0.927$ in this file is **not derived**, and natural curvature radii do not reproduce $0.927$. Treat $\omega_0$ as an input. The $G_N=64\pi\ell_0^2/45$ normalisation mentioned here is a convention lock, not a scheme-free derivation.
+
 # 35 — Authoritative Metric, Curvature, and ω₀
 
 **Status:** SINGLE AUTHORITATIVE REFERENCE — metric / curvature / ω₀  
