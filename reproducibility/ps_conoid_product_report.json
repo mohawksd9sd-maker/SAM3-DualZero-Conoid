@@ -1,0 +1,582 @@
+{
+  "exploratory": true,
+  "flux_mechanisms": {
+    "any_attempt_fixes_flux_3": false,
+    "any_attempt_fixes_moduli_uniquely": false,
+    "attempts": [
+      {
+        "attempt": "Dirac quantization",
+        "gives": "M \u2208 Z",
+        "note": "The smallest positive integer is 1, not 3.",
+        "selects_3": false,
+        "verdict": "failed"
+      },
+      {
+        "attempt": "Anomaly cancellation",
+        "reason": "In the product with a single U(1) bundle on \u03a3, every PS representation in one generation is tensored with the same space of zero modes, so all gauge representations have the same multiplicity M.  The Pati-Salam (and SM) one-generation content is already anomaly-free; copying it M times remains anomaly-free for every integer M.  There is no condition that forces M=3.  (Relative fluxes for different representations are not part of this product: they would be an extra choice, and even then anomaly cancellation constrains linear combinations, not a unique M=3, and is not derived from the locked conoid.)",
+        "selects_3": false,
+        "verdict": "failed"
+      },
+      {
+        "attempt": "KO-dimension or the real structure J",
+        "reason": "KO-dimension of Y \u00d7 F is 2+2+6 \u2261 2, independently of the choice of connection on \u03a3.  J is the product real structure and does not see the integer flux.",
+        "selects_3": false,
+        "verdict": "failed"
+      },
+      {
+        "attempt": "Tadpole / equation of motion for the background flux",
+        "reason": "There is no string-theory tadpole condition in the spectral action of Y \u00d7 F_PS; imposing one would be an import from a different framework, not derived here.  The Maxwell equation d * F = 0 is satisfied by a constant flux on T\u00b2 or a monopole on S\u00b2, for every integer M.  That is quantization plus a classical solution, not a selection of 3.",
+        "selects_3": false,
+        "verdict": "failed"
+      },
+      {
+        "attempt": "Matching the tip length 8\u21130 or C4 to the torus lattice",
+        "coincidences": [
+          {
+            "flag": "numerology / unprincipled: the tip circle is a boundary of the conoid factor, not a cycle of the torus factor.  There is no identification of those circles in the product metric.",
+            "match": "tip length 8\u21130 = 2\u03c0 R  \u21d2  R = 4\u21130/\u03c0"
+          },
+          {
+            "flag": "The C4 of the locked conoid rotates the conoid's angular coordinate, not a coordinate of \u03a3.  The product isometry group is C4(X) \u00d7 Isom(\u03a3).  Requiring Isom(\u03a3) to contain a C4 (i.e. \u03c4=i, up to SL(2,Z)) is a symmetry wish, not a consistency condition of the product, and even then it fixes at most the shape of T\u00b2, not the flux.",
+            "match": "C4 is an isometry of the square torus \u03c4=i"
+          },
+          {
+            "flag": "numerology, already rejected in doc 47; the 12-bridge spacing is a convention",
+            "match": "12-bridge spacing 2\u03c0/12 against 3 generations"
+          }
+        ],
+        "selects_flux_3": false,
+        "selects_moduli_uniquely": false,
+        "tip_length_over_ell0": 8.0,
+        "verdict": "failed (unprincipled / numerology)"
+      },
+      {
+        "attempt": "Identify |\u222b_X K dA| / 2\u03c0 = 1 with the flux on \u03a3",
+        "flag": "Even as an identification, this would give flux 1, not 3.  Treating the curvature of the conoid as a flux on a different factor is not forced by the product connection.",
+        "gives": 1,
+        "selects_3": false,
+        "verdict": "failed"
+      },
+      {
+        "S2": "On S\u00b2 the local small-t expansion is the same in structure: the leading volume term 4\u03c0 R\u00b2 / (2\u03c0 t), a curvature term fixed by \u03c7=2, and a monopole term that costs energy ~ n\u00b2 / R\u00b2.  The distinguished bundles (Hopf, n=1; tangent, n=2) are not n=3, and the energy cost prefers smaller |n| at fixed R.  We do not invent an exact monopole-harmonic spectral action beyond this local argument and the index n.",
+        "analytic_reason": "The exact heat kernel is |M| coth(2\u03c0 t |M|/A) = A/(2\u03c0 t) + (2\u03c0 t M\u00b2)/(3A) + O(t\u00b3).  The first M-dependent term is positive and minimized, at fixed area, by the smallest |M|.  The Weyl term A/(2\u03c0 t) grows with A.  For a positive cutoff function the spectral action therefore prefers smaller |M| and has no interior minimum at M=3.  \u03c4 does not enter the spectrum of a constant-flux Dirac operator on a flat torus, so this action cannot fix the complex structure either.",
+        "attempt": "Minimization of the magnetized-T\u00b2 spectral action over (M, A)",
+        "scan": {
+          "Lambda": 1.0,
+          "all_fixed_area_prefers_minimal_M": true,
+          "any_fixed_area_prefers_M_3": false,
+          "cutoff_function": "exp(-x^2)",
+          "grid_minimum": {
+            "M": 1,
+            "area": 0.25,
+            "value": 1.0
+          },
+          "grid_minimum_is_M_3": false,
+          "minimizer_at_fixed_area": [
+            {
+              "area": 0.25,
+              "argmin_M": 1
+            },
+            {
+              "area": 0.5,
+              "argmin_M": 1
+            },
+            {
+              "area": 1.0,
+              "argmin_M": 1
+            },
+            {
+              "area": 2.0,
+              "argmin_M": 1
+            },
+            {
+              "area": 4.0,
+              "argmin_M": 1
+            },
+            {
+              "area": 8.0,
+              "argmin_M": 1
+            }
+          ],
+          "monotone_in_area": {
+            "1": {
+              "nondecreasing_in_A": true,
+              "nonincreasing_in_A": false,
+              "values": [
+                1.0,
+                1.0000000000243232,
+                1.0000069747090357,
+                1.0037418731973216,
+                1.0903314107273687,
+                1.5248686188220646
+              ]
+            },
+            "2": {
+              "nondecreasing_in_A": true,
+              "nonincreasing_in_A": false,
+              "values": [
+                2.0,
+                2.0,
+                2.0000000000486464,
+                2.0000139494180713,
+                2.007483746394643,
+                2.1806628214547374
+              ]
+            },
+            "3": {
+              "nondecreasing_in_A": true,
+              "nonincreasing_in_A": false,
+              "values": [
+                3.0,
+                3.0,
+                3.0000000000000004,
+                3.0000000390744734,
+                3.000484236183049,
+                3.054388332344381
+              ]
+            },
+            "4": {
+              "nondecreasing_in_A": true,
+              "nonincreasing_in_A": false,
+              "values": [
+                4.0,
+                4.0,
+                4.0,
+                4.000000000097293,
+                4.000027898836143,
+                4.014967492789286
+              ]
+            },
+            "5": {
+              "nondecreasing_in_A": true,
+              "nonincreasing_in_A": false,
+              "values": [
+                5.0,
+                5.0,
+                5.0,
+                5.000000000000227,
+                5.000001507017503,
+                5.0038835396418
+              ]
+            },
+            "6": {
+              "nondecreasing_in_A": true,
+              "nonincreasing_in_A": false,
+              "values": [
+                6.0,
+                6.0,
+                6.0,
+                6.000000000000001,
+                6.000000078148947,
+                6.000968472366098
+              ]
+            }
+          },
+          "table": [
+            {
+              "area": 0.25,
+              "by_flux": {
+                "1": 1.0,
+                "2": 2.0,
+                "3": 3.0,
+                "4": 4.0,
+                "5": 5.0,
+                "6": 6.0
+              }
+            },
+            {
+              "area": 0.5,
+              "by_flux": {
+                "1": 1.0000000000243232,
+                "2": 2.0,
+                "3": 3.0,
+                "4": 4.0,
+                "5": 5.0,
+                "6": 6.0
+              }
+            },
+            {
+              "area": 1.0,
+              "by_flux": {
+                "1": 1.0000069747090357,
+                "2": 2.0000000000486464,
+                "3": 3.0000000000000004,
+                "4": 4.0,
+                "5": 5.0,
+                "6": 6.0
+              }
+            },
+            {
+              "area": 2.0,
+              "by_flux": {
+                "1": 1.0037418731973216,
+                "2": 2.0000139494180713,
+                "3": 3.0000000390744734,
+                "4": 4.000000000097293,
+                "5": 5.000000000000227,
+                "6": 6.000000000000001
+              }
+            },
+            {
+              "area": 4.0,
+              "by_flux": {
+                "1": 1.0903314107273687,
+                "2": 2.007483746394643,
+                "3": 3.000484236183049,
+                "4": 4.000027898836143,
+                "5": 5.000001507017503,
+                "6": 6.000000078148947
+              }
+            },
+            {
+              "area": 8.0,
+              "by_flux": {
+                "1": 1.5248686188220646,
+                "2": 2.1806628214547374,
+                "3": 3.054388332344381,
+                "4": 4.014967492789286,
+                "5": 5.0038835396418,
+                "6": 6.000968472366098
+              }
+            }
+          ]
+        },
+        "selects_3": false,
+        "selects_a_unique_area": false,
+        "verdict": "failed",
+        "wilson_lines": "A common Wilson line is a translation and does not change eigenvalues.  Relative Wilson lines among several stacks are not present in a single-bundle product; they would be an extra choice and affect Yukawas, not the Dirac spectrum of one bundle."
+      }
+    ],
+    "exploratory": true,
+    "headline": "Nothing in the combined geometry fixes the flux to 3, or uniquely fixes the area, complex structure, or Wilson lines of \u03a3.  The spectral action of a magnetized torus prefers smaller |M|, not M=3, and does not depend on \u03c4.",
+    "locked_core": false
+  },
+  "geometry": {
+    "C0": 4.355172180607204,
+    "asymptotic_area_unit_metric_b20": {
+      "C0_unit_metric": 4.355172180607204,
+      "finite_part_C0_scaled": 4.355172180607204,
+      "leading_pi_b2": 1256.6370614359173,
+      "log_part": 18.822741005438132,
+      "sum_of_displayed_terms": 1279.8149746219626
+    },
+    "complete_int_K_conoid": -6.283185307179586,
+    "divergences": {
+      "C0_cancels_the_area_divergence": false,
+      "flux_YM_for_M_0": "vanishes",
+      "flux_YM_for_nonzero_M": "diverges as Area(X) * (2\u03c0 M)\u00b2 / Area(\u03a3)",
+      "int_R_Y_for_S2": "diverges: Area(X) * 8\u03c0 \u2192 \u221e, plus a finite piece Area(S\u00b2)*(-4\u03c0)",
+      "int_R_Y_for_T2": "finite: Area(T\u00b2) * \u222b_X R_X \u2192 -4\u03c0 Area(T\u00b2), because T\u00b2 is flat",
+      "note": "C0 is the finite part of Area(X) after subtracting \u03c0 b\u00b2 and the log term.  It does not make vol(Y) or the flux Yang-Mills integral finite for M \u2260 0.",
+      "vol_Y": "diverges as \u03c0 b\u00b2 Area(\u03a3)"
+    },
+    "exploratory": true,
+    "gauge_BCs": {
+      "at_Lambda": "g_R = g_L = g",
+      "at_unification_reduces_to": "g3^2 = g2^2 = (5/3) g1^2",
+      "changed_by_the_conoid_or_by_Sigma": false,
+      "derived_from_spectral_action_normalization": true,
+      "matching_at_m_R": {
+        "inv_g1_SM": "2/3 * 1/g^2 + 1/g_R^2",
+        "inv_g2_SM": "1/g_L^2",
+        "inv_g3_SM": "1/g^2",
+        "source": "CCvS2015 eq. (25)"
+      },
+      "verdict": "derived, assuming the CCvS spectral action on Y \u00d7 F_PS"
+    },
+    "generations": {
+      "option_A": {
+        "CCvS_Higgs_numerics_apply_off_the_shelf": true,
+        "description": "N_F = 3 as an input of F_PS; \u03a3 may be flux-free",
+        "flux_does_not_explain_generations": true,
+        "generation_count": "input, not derived"
+      },
+      "option_B": {
+        "CCvS_Higgs_numerics_apply_off_the_shelf": false,
+        "description": "N_F = 1; three chiral zero modes from flux M=3 on \u03a3",
+        "generation_count": "equal to M, and M is not derived (see flux_mechanisms)",
+        "reason": "CCvS compute the Higgs/\u03c3 potential from traces on a finite Dirac operator whose generation index already sits in D_F.  In option B the generation index is a zero-mode label on \u03a3, and the Yukawas are overlap integrals.  Those traces are not the CCvS ones.  We do not invent a replacement a4 computation."
+      },
+      "option_N_F_3_and_flux_3": {
+        "description": "N_F = 3 and flux 3",
+        "generation_count": 9,
+        "verdict": "over-counting; not used"
+      },
+      "preferred_for_this_survey": "option_B, with option_A recorded only as the literature PS model"
+    },
+    "gravity": {
+      "identification_with_Newton_constant_is_an_assumption": true,
+      "local_G_depends_on_C0_or_int_K": false,
+      "local_G_depends_on_unfixed_moments_f2_f0": true,
+      "reason": "The local Einstein-Hilbert coefficient is fixed only once the cutoff moments are chosen, and it lives on Y, not automatically in observed spacetime.  C0 and \u222bK enter integrated terms and do not uniquely determine the moments.",
+      "unique_derivation": false,
+      "verdict": "failed to uniquely derive G_N (or even G_Y) from the product"
+    },
+    "integrals_S2_example": {
+      "area_Sigma": 12.566370614359172,
+      "area_X": 1279.8200659336455,
+      "complete_int_K_X": -6.283185307179586,
+      "int_K_X": -6.265307135890983,
+      "int_R_Sigma": 25.132741228718345,
+      "int_R_X": -12.530614271781966,
+      "int_R_Y": 32007.922193466773,
+      "vol_Y": 16082.693268215782
+    },
+    "integrals_T2_example": {
+      "area_Sigma": 1.0,
+      "area_X": 1279.8200659336455,
+      "complete_int_K_X": -6.283185307179586,
+      "int_K_X": -6.265307135890983,
+      "int_R_Sigma": 0.0,
+      "int_R_X": -12.530614271781966,
+      "int_R_Y": -12.530614271781966,
+      "vol_Y": 1279.8200659336455
+    },
+    "locked_core": false,
+    "product": {
+      "F": "H_R \u2295 H_L \u2295 M_4(C)",
+      "Y": "truncated conoid X_{a,b} \u00d7 \u03a3",
+      "Y_is_Minkowski": false,
+      "continuous_dimension": 4,
+      "euclidean_to_lorentzian_is_an_extra_step": true,
+      "heat_kernel_is_4D": true,
+      "ko_Y_F": 2,
+      "ko_matches_CCM_fermions": true
+    }
+  },
+  "higgs_sigma": {
+    "exploratory": true,
+    "lambda_h_at_n0_over_g2": 1.3333333333333333,
+    "lambda_sigma_over_g2": 8.0,
+    "literature": {
+      "CC2012_quotes_a_low_scale_factor_of_order": 0.78,
+      "CC2012_tree_reduction_factor_formula": "sqrt(1 - \u03bb_h\u03c3^2 / (\u03bb_h \u03bb_\u03c3))",
+      "CCvS2015": {
+        "depends_on": "\u03c1 = m_t / m_\u03bd and \u039b (and the running of the scalar couplings)",
+        "m_H_125_compatible": true,
+        "m_sigma_order_GeV": 1000000000000.0,
+        "not_a_unique_number": true,
+        "note": "These are literature statements, not recomputed here as a unique output of the product geometry."
+      },
+      "option_A_literature_PS": {
+        "conoid_or_Sigma_fixes_n": false,
+        "formulas_apply": true,
+        "unique_Higgs_mass": false
+      },
+      "option_B_product": {
+        "formulas_apply_off_the_shelf": false,
+        "unique_Higgs_mass_from_the_product": false
+      }
+    },
+    "locked_core": false,
+    "tree_reduction_factors": {
+      "0.0": 1.0,
+      "0.25": 0.9793792286287205,
+      "0.5": 0.9198662110077999,
+      "1.0": 0.7071067811865476,
+      "2.0": NaN
+    },
+    "verdict": "The CC2012 \u03c3-extension can accommodate a 125 GeV Higgs after running, as a literature result with free parameters.  The product geometry does not uniquely predict m_H.  In the flux-generation setup the CC2012 traces do not apply off the shelf."
+  },
+  "locked_core_untouched": true,
+  "rge": {
+    "inputs": {
+      "MZ_GeV": 91.1879,
+      "alpha1_alpha2_alpha3": [
+        0.010167765548945145,
+        0.033806655128094665,
+        0.118
+      ],
+      "alpha_inv_MZ": 127.93,
+      "alpha_inv_MZ_source": "PDG 2024 recommendation 127.930(8); PDG 2026 did not recommend a new value",
+      "alpha_s": 0.118,
+      "g1_g2_g3": [
+        0.3574519690922933,
+        0.6517875095239734,
+        1.2177157847767197
+      ],
+      "other_source": "PDG 2026 Physical Constants for M_Z, \u03b1_s, sin\u00b2\u03b8_W",
+      "sin2_thetaW_MSbar": 0.23122
+    },
+    "prediction_of_MZ_couplings": {
+      "possible": false,
+      "reason": "A top-down run from \u039b through m_R to M_Z needs g(\u039b) and m_R.  Neither is fixed by the geometry.  Running down from the fitted (m_R, \u039b) only returns the inputs by construction."
+    },
+    "runs": {
+      "composite_oneloop_CC2010inputs": {
+        "computed": {
+          "Lambda_GeV": 3047080307198703.0,
+          "g_at_Lambda": 0.5269175378986667,
+          "inv_g2_at_Lambda": 3.60175935037168,
+          "inv_g2_spread_at_Lambda": 8.881784197001252e-16,
+          "m_R_GeV": 54290375835484.01,
+          "t_ln_Lambda_over_mR": 4.027592164159462
+        },
+        "found": true,
+        "honesty": "m_R and \u039b are determined by fitting the PS meeting condition to the stated M_Z inputs.  They are not predictions of the product geometry, which does not fix either scale.",
+        "literature_CCvS2015": {
+          "Lambda_GeV": 2500000000000000.0,
+          "m_R_GeV": 42500000000000.0
+        },
+        "rel_log_error_Lambda": 0.19789312393526765,
+        "rel_log_error_mR": 0.24484289470172624
+      },
+      "composite_oneloop_PDG": {
+        "computed": {
+          "Lambda_GeV": 2399486281423102.5,
+          "g_at_Lambda": 0.5281704259086892,
+          "inv_g2_at_Lambda": 3.5846919469367453,
+          "inv_g2_spread_at_Lambda": 1.0658141036401503e-14,
+          "m_R_GeV": 42045781399934.15,
+          "t_ln_Lambda_over_mR": 4.044250886056988
+        },
+        "found": true,
+        "honesty": "m_R and \u039b are determined by fitting the PS meeting condition to the stated M_Z inputs.  They are not predictions of the product geometry, which does not fix either scale.",
+        "literature_CCvS2015": {
+          "Lambda_GeV": 2500000000000000.0,
+          "m_R_GeV": 42500000000000.0
+        },
+        "rel_log_error_Lambda": 0.04103606683913968,
+        "rel_log_error_mR": 0.01074501797020633
+      },
+      "composite_sm2loop_PDG": {
+        "computed": {
+          "Lambda_GeV": 1291326560709917.8,
+          "g_at_Lambda": 0.531509023539901,
+          "inv_g2_at_Lambda": 3.5397999267936116,
+          "inv_g2_spread_at_Lambda": 2.398081733190338e-14,
+          "m_R_GeV": 37299693938246.516,
+          "t_ln_Lambda_over_mR": 3.544440189403095
+        },
+        "found": true,
+        "honesty": "m_R and \u039b are determined by fitting the PS meeting condition to the stated M_Z inputs.  They are not predictions of the product geometry, which does not fix either scale.",
+        "literature_CCvS2015": {
+          "Lambda_GeV": 2500000000000000.0,
+          "m_R_GeV": 42500000000000.0
+        },
+        "rel_log_error_Lambda": 0.6606207002460324,
+        "rel_log_error_mR": 0.1305189547232065
+      },
+      "with15_oneloop_PDG": {
+        "computed": {
+          "Lambda_GeV": 5805374447554613.0,
+          "g_at_Lambda": 0.525720995878524,
+          "inv_g2_at_Lambda": 3.618173230875659,
+          "inv_g2_spread_at_Lambda": 8.881784197001252e-15,
+          "m_R_GeV": 40313493003430.71,
+          "t_ln_Lambda_over_mR": 4.969853169471863
+        },
+        "found": true,
+        "honesty": "m_R and \u039b are determined by fitting the PS meeting condition to the stated M_Z inputs.  They are not predictions of the product geometry, which does not fix either scale.",
+        "literature_CCvS2015": {
+          "Lambda_GeV": 6300000000000000.0,
+          "m_R_GeV": 41000000000000.0
+        },
+        "rel_log_error_Lambda": 0.081765516011906,
+        "rel_log_error_mR": 0.016885839808452686
+      }
+    }
+  },
+  "verdict_headline": "The product Y \u00d7 F_PS with Y = (truncated conoid) \u00d7 \u03a3 is a consistent 4D, KO-dimension-2 almost-commutative geometry.  The Pati-Salam gauge relations at \u039b are derived (spectator).  Nothing in the combined geometry fixes flux = 3 or the moduli of \u03a3.  The one-loop (and partial two-loop) RG pipeline determines (m_R, \u039b) from measured couplings; it does not predict those couplings.  Yukawa moduli are not uniquely fixed; a labelled fit is underdetermined.  The Higgs mass is not a unique prediction of the product.",
+  "yukawas": {
+    "exploratory": true,
+    "labelled_fits": {
+      "accommodating_seed_Im_tau_2": {
+        "Im_tau": 3.5407936414772783,
+        "higgs_slice_fixed": 0,
+        "is_a_fit": true,
+        "log_error": 3.525047866183957e-05,
+        "n_continuous_parameters": 5,
+        "n_discrete_choices": 1,
+        "n_observables": 2,
+        "nfev": 92,
+        "predicted_ratios_ascending": [
+          1.0,
+          205.5443165237237,
+          3477.097818981872
+        ],
+        "success": false,
+        "target_ratios": [
+          206.76828200919007,
+          3477.228280018971
+        ],
+        "underdetermined": true,
+        "zeta_J": {
+          "im": 0.25329456835886704,
+          "re": 0.07342768849427517
+        },
+        "zeta_K": {
+          "im": 0.5051084654728708,
+          "re": 0.07830272843654797
+        }
+      },
+      "stuck_seed_Im_tau_1": {
+        "Im_tau": 0.9999870235242793,
+        "higgs_slice_fixed": 0,
+        "is_a_fit": true,
+        "log_error": 2.0694179578060705,
+        "n_continuous_parameters": 5,
+        "n_discrete_choices": 1,
+        "n_observables": 2,
+        "nfev": 92,
+        "predicted_ratios_ascending": [
+          1.0,
+          551.1377811080724,
+          1213.4841702069577
+        ],
+        "success": false,
+        "target_ratios": [
+          206.76828200919007,
+          3477.228280018971
+        ],
+        "underdetermined": true,
+        "zeta_J": {
+          "im": 0.11180391085201341,
+          "re": 0.13605489138715543
+        },
+        "zeta_K": {
+          "im": 0.21593240701098526,
+          "re": 0.046271441556251736
+        }
+      }
+    },
+    "locked_core": false,
+    "principled_scan": {
+      "best_frobenius": {
+        "Im_tau": 0.5,
+        "frobenius": 0.20402721048261924,
+        "higgs_slice": 0,
+        "ratios": [
+          1.0,
+          1.0,
+          2.951481884462274
+        ],
+        "targeted_log_error": 78.43465148927307,
+        "zeta_J": 0.2
+      },
+      "best_targeted": {
+        "Im_tau": 1.5,
+        "frobenius": 0.8546818578107507,
+        "higgs_slice": 3,
+        "ratios": [
+          1.0,
+          866.4436947660279,
+          866.443694766028
+        ],
+        "targeted_log_error": 3.9838817048859245,
+        "zeta_J": 0.2
+      },
+      "frobenius_minimizer_matches_leptons": false,
+      "n_points": 72,
+      "targeted_is_a_fit_in_disguise": true,
+      "tau_not_in_the_dirac_spectrum": "As already used in flux_mechanisms: the Dirac eigenvalues on a flat magnetized torus are independent of \u03c4, so the spectral action of D_\u03a3 cannot be the principle that fixes \u03c4.  Any remaining principle would have to come from an a4 Yukawa potential that we do not invent.",
+      "verdict": "No principled (target-blind) minimum on this grid produces the charged-lepton hierarchy.  The Frobenius minimizer is recorded; it is not a unique or physically selected point, and it does not match the lepton ratios."
+    },
+    "target_lepton_ratios": {
+      "mu_over_e": 206.76828200919007,
+      "source": "PDG 2024 pole masses",
+      "tau_over_e": 3477.228280018971
+    },
+    "verdict": "No principled minimization uniquely fixes the moduli or the lepton ratios.  A labelled 5-parameter fit (plus a discrete Higgs-slice choice) to two observables can accommodate the charged-lepton ratios from some starting points; the system is underdetermined and this is not a prediction.  Other seeds remain far from the target, so the likelihood surface is not a unique well."
+  }
+}
