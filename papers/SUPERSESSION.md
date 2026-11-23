@@ -51,6 +51,7 @@ Coefficient **4 only**. Any `16\ell_0` form is an error.
 | RH proved / theorem | **Proposal only**; identification tests in this repo were **null** |
 | $A_5$ isometries of the continuum metric | **False**; $C_4$ only |
 | Full SM derived in foundations files | Not claimed in the core paper |
+| Product of the 2D conoid with $F$ as a “dimensional lift” to 4D Einstein gravity, or KO-dimension 4 for $F$ (Paper 09) | **Incorrect.** $F$ has KO-dimension 6 (CCM2007).  Conoid $\times F$ is 2-dimensional.  See doc 45. |
 | Spectra from `code/dirac_conoid_aps.py` as APS evidence | Legacy assembly is **not** a Dirac operator; use `code/aps_hermitian.py` |
 | Ultrafilter required for numerics | Constructive finite-$N$ (policy) |
 | August 2026 STATUS “high / locked” listings for $\omega_0$, $G_N$ prefactor, $\eta$, angles, $m_H$ | November 2026 STATUS |

@@ -17,6 +17,7 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 | Dual-Zero *definition* | [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md) |
 | Reproduction | `python code/core_reproducibility.py` and `pytest -q` |
 | Exact $E_0$, truncated-conoid APS index, unification attempts | [`docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md`](docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md) |
+| Almost-commutative product with CCM $F$, 2D vs 4D, one-loop running | [`docs/hardening/45_Almost_Commutative_CCM_Product.md`](docs/hardening/45_Almost_Commutative_CCM_Product.md) |
 | Papers supersession | [`papers/SUPERSESSION.md`](papers/SUPERSESSION.md) |
 
 ---
@@ -37,6 +38,8 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 | On $(0,U)$, regular at $0$ and Dirichlet at $U$, $E_0(m;U)=(j_{\nu,1}/U)^2$ with $\nu=\sqrt{m^2+1/4}$; in particular $E_0(0)=\pi^2/U^2$ | **Theorem** (radial model operators, not the 2D Dirac operator) |
 | APS index of the *untwisted* Dirac operator on the truncated conoid $X_{a,b}=[a,b]\times S^1$ (product collar, bounding spin structure at both ends) equals $0$, independently of $a,b,\ell_0$ | **Theorem**.  In particular the index is not $3$.  The singular-tip limit $a\to 0$ is not covered. |
 | Weyl: $m=0$ limit-circle, $\|m\|\ge 1$ limit-point ($\kappa=m^2$ vs $3/4$) | **Proposition** (standard) |
+| Area of $X_{a,b}$: $\pi(b^2-a^2)+\int_a^b I$; unit-metric finite part $C_0=2\pi\ln 2$ already in this table | **Theorem** (same $C_0$) |
+| $\int_{X_{a,b}} K\,dA = \int_0^{2\pi}(a/f(a)-b/f(b))\,dv$; Gauss–Bonnet identity on the annulus; complete-surface limit $\int K=-2\pi$ | **Theorem** |
 
 ---
 
@@ -75,7 +78,7 @@ Reproduce: `python code/core_reproducibility.py` (writes `reproducibility/core_r
 | $\eta_{12}\approx 0.861$, $\eta_{13}\approx 0.544$, $\eta_{23}\approx 0.479$ | **Not derived** in the core. Earlier “locks” are withdrawn. |
 | $\theta_{12}\approx 12.85^\circ$, $\theta_{23}\approx 2.36^\circ$, $\phi=2\pi/5$, $\delta_{\mathrm{CKM}}$ | **Not derived.** Some scripts define $\theta_{12}:=\eta_{12}\cdot\pi/12$ and then “check” the same relation. |
 | $m_H$ in $124$–$127\,\mathrm{GeV}$ | **Not derived.** At least one script inserts $125\,\mathrm{GeV}$ by hand. |
-| Gauge unification, VL_Q, cosmological constant, PMNS digits | **Not derived.** Honest attempts from the locked geometry (isometries $\to$ gauge group, $E_0$ ratios $\to$ masses, spectral action $\to$ couplings) all failed; see doc 44.  A ~$7\%$ unification “floor” is not a theorem. |
+| Gauge unification, VL_Q, cosmological constant, PMNS digits | **Not derived from the conoid.** The almost-commutative product with the CCM finite triple $F$ is analysed in doc 45.  Raw conoid $\times F$ is 2D (failed as 4D unification).  A spectator conoid does not change the CCM ratios $g_3^2=g_2^2=\tfrac53 g_1^2$ or the Higgs-quartic relation at $\Lambda$.  One-loop SM running of those CCM boundary conditions does not unify at a single scale (spreads $\sim 6$–$16\%$ on CC2010 inputs) and the cutoff-function Higgs example remains $\sim 170\,\mathrm{GeV}$, not $125\,\mathrm{GeV}$.  $N=3$ is an input of $F$ (CCM2007).  Paper 09’s KO-dimension and 2D$\to$4D gravity claims are wrong. |
 | Production *numerical* APS index on a 2D grid | **Not a substitute for the theorem.** A spectral projection was implemented (doc 43): some Bessel zeros are reproduced mode-by-mode; a complete Hermitian disk solver and the nonzero-flux zero-mode count were not obtained.  The continuum result that *is* proved is the product-collar index $0$ of doc 44, which does not depend on that discretisation. |
 | Riemann hypothesis | **Variational proposal only — not a proof.** A non-circular identification test found **no evidence** that Dual-Zero / information-current critical points match zeta zeros (`RESULTS_zeta_identification.md`). |
 | Identification of SAM-3 with the Standard Model | **Not claimed.** |
@@ -112,7 +115,7 @@ Reproduce: `python code/core_reproducibility.py` (writes `reproducibility/core_r
 
 ## 8. Supersession
 
-`papers/` is historical except the November 2026 core paper. Conflicting claims of a derived $64\pi/45$, a derived $\omega_0$ or $4/13$, a computed APS generation count, digit $m_H$, percent-level unification-as-fact, RH-as-proof, the $C_0$ band $4.43$–$4.45$, or a $16\ell_0^2$ metric yield to this STATUS file and the core paper.
+`papers/` is historical except the November 2026 core paper. Conflicting claims of a derived $64\pi/45$, a derived $\omega_0$ or $4/13$, a computed APS generation count, digit $m_H$, percent-level unification-as-fact, a 2D-conoid$\times F$ “dimensional lift” to 4D gravity (Paper 09), RH-as-proof, the $C_0$ band $4.43$–$4.45$, or a $16\ell_0^2$ metric yield to this STATUS file and the core paper.
 
 ---
 

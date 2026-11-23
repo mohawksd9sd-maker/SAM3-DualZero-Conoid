@@ -29,6 +29,10 @@ code/
 ├── omega0_search.py            # search for a derivation of ω0; none found
 ├── gn_prefactor_schemes.py     # scheme table for α in G_N=α ℓ0²
 ├── unification_derivation_attempts.py  # honest attempts; all failed
+├── almost_commutative_product.py # conoid × CCM finite triple F; KO-dimensions
+├── conoid_heat_kernel.py         # area, ∫K=−2π, Gauss–Bonnet identity
+├── ccm_oneloop_rge.py            # CC2010 one-loop running of CCM boundary conditions
+├── u1_twist_and_tip.py           # natural flux is −1, not in (2,3]; tip geometry
 ├── core_reproducibility.py     # one-script reproduction of the core paper
 ├── dirac_conoid_aps.py         # LEGACY: not a Dirac operator (see header)
 ├── newton_constant_fit.py      # convention display; not a fit
