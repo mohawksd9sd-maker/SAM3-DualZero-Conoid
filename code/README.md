@@ -1,41 +1,39 @@
 # SAM3 Code
 
-Python prototypes and verification utilities for the SAM3-DualZero-Conoid framework.
+Python geometry, Dirac discretisations, and verification utilities.
 
-**Claim surface:** continuum residual and locked geometric numbers live in `docs/hardening/` and `STATUS_CLAIMS_AND_RESIDUALS.md`.
-
-## Layout (Section 2 update)
-
-```text
-code/
-├── sam3_geometry_constants.py     # Pure-geometry source of truth (omega0=0.927)
-├── master_verification_pipeline.py
-├── full_2d_dirac_conoid.py         # PROTOTYPE Dirac (not production APS)
-├── overlap_integrals.py
-├── lorentzian_spectral_action.py
-├── lorentzian_dynamical_gravity.py
-├── newton_constant_fit.py
-├── sam3_demo.py
-├── zeta_stationarity_enhanced.py
-├── verification/
-│   ├── dirac_conoid_verification.py
-│   └── zeta_stationarity.py
-└── visualization/
-    └── ...
-```
+**Claim surface:** `STATUS_CLAIMS_AND_RESIDUALS.md` and the November 2026 core paper. Do not treat older “locked” phenomenological numbers as theorems.
 
 ## Preferred commands
 
 ```bash
-# From repository root
-python code/master_verification_pipeline.py
+# From repository root, after pip install -r requirements.txt
+python code/core_reproducibility.py
+pytest -q
 
-# Dirac prototype only
-python code/full_2d_dirac_conoid.py
+# Hermitian Dirac known-answer tests (flat torus)
+python code/aps_hermitian.py
 ```
 
-## Critical policy
+`code/reproduce_status_locked.py` is a historical, largely tautological locker. It is not evidence.
 
-- **`omega0 = 0.927` geometric only.** Legacy defaults near `0.97` are forbidden.
-- Dirac script is a **prototype**. Production APS roadmap: `docs/hardening/23_Numerical_Production_Readiness.md`.
-- Do not retune locked angles or masses to experiment inside these scripts.
+## Core modules (November 2026)
+
+```text
+code/
+├── core_geometry.py            # metric, C4, curvature, C0, channel energies
+├── aps_hermitian.py            # Hermitian Dirac; torus known answers
+├── core_reproducibility.py     # one-script reproduction of the core paper
+├── dirac_conoid_aps.py         # LEGACY: not a Dirac operator (see header)
+├── newton_constant_fit.py      # convention display; not a fit
+├── volume_regularisation.py    # older Riemann sums; C0 band withdrawn
+├── verification/               # includes the tautology demo and identification test
+└── ...
+```
+
+## Policy
+
+- Metric tip coefficient is 4, not 16.
+- $\omega_0=0.927$ is an *input*, not a derived output (doc 42).
+- Do not use spectra from `dirac_conoid_aps.py` as APS evidence.
+- Do not retune leftover phenomenological constants to experiment and call that a derivation.

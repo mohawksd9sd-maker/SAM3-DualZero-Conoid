@@ -1,0 +1,213 @@
+{
+  "paper": "papers/SAM3_Core_Geometry_and_Spectral_Results.tex",
+  "metric": {
+    "tip_coefficient": 4,
+    "symbolic_ok": true,
+    "g_vv_formula": "u^2 + 4*ell0^2*cos^2(2v)",
+    "status": "proposition: follows from the locked embedding"
+  },
+  "C4_isometry": {
+    "holds": true,
+    "status": "proposition"
+  },
+  "A5_is_not_an_isometry": {
+    "f(v)": 1.8663904786229304,
+    "f(v+2pi/5)": 1.9710608301304813,
+    "equal": false,
+    "conclusion": "C5 (hence A5) is not an isometry of the locked metric",
+    "status": "proposition (counterexample)"
+  },
+  "tip_nodes": {
+    "v": [
+      0.7853981633974483,
+      2.356194490192345,
+      3.9269908169872414,
+      5.497787143782138
+    ],
+    "f_at_nodes": [
+      1.2246467991473532e-16,
+      3.6739403974420594e-16,
+      6.123233995736766e-16,
+      8.572527594031472e-16
+    ],
+    "status": "proposition"
+  },
+  "gaussian_curvature": {
+    "formula": "K = -4 ell0^2 cos^2(2v) / f^4",
+    "identity_and_FD_ok": true,
+    "K_at_curvature_max": -0.25,
+    "status": "proposition"
+  },
+  "C0": {
+    "values": {
+      "200": 4.355231083499529,
+      "400": 4.355186905999599,
+      "1000": 4.355174536057892
+    },
+    "converged_value": 4.3551723,
+    "old_paper_band_4.43_4.45": [
+      4.43,
+      4.45
+    ],
+    "old_band_reproduced": false,
+    "status": "existence is a proposition; the number is a numerical observation",
+    "note": "The band 4.43--4.45 in earlier drafts does not reproduce under adaptive quadrature."
+  },
+  "channel_energies_Dirichlet_cutoff": {
+    "E0": {
+      "0": 0.024673884800096378,
+      "1": 0.03980093658336238,
+      "2": 0.06795389173752381,
+      "3": 0.1033865444281107
+    },
+    "strictly_increasing": true,
+    "status": "numerical check of the variational theorem (m=0 indicative only)"
+  },
+  "G_N": {
+    "structural": "G_N = alpha * ell0^2, with alpha scheme-dependent",
+    "recorded_normalisation": "G_N = 64*pi*ell0^2/45",
+    "equivalent_N_cal": 0.004452591078032422,
+    "status": "convention lock, not independently derived"
+  },
+  "omega0_and_4_13": {
+    "natural_radii": {
+      "1/|K|_max": {
+        "R": 4.0,
+        "R_over_D": 7.639437268410977,
+        "omega0_if_4_13": 1.8694385343439093
+      },
+      "1/sqrt(|K|_max)": {
+        "R": 2.0,
+        "R_over_D": 3.8197186342054885,
+        "omega0_if_4_13": 1.5103812179948948
+      },
+      "ell0": {
+        "R": 1.0,
+        "R_over_D": 1.9098593171027443,
+        "omega0_if_4_13": 1.2202869373677274
+      },
+      "2*ell0": {
+        "R": 2.0,
+        "R_over_D": 3.8197186342054885,
+        "omega0_if_4_13": 1.5103812179948948
+      },
+      "required_for_0.927": {
+        "R_over_D": 0.7816442473553483,
+        "R": 0.4092679708687142,
+        "omega0": 0.927
+      }
+    },
+    "any_natural_radius_gives_0.927": false,
+    "status": "not derived",
+    "missing": [
+      "a unique geometric definition of R_curv",
+      "a derivation of the exponent 4/13",
+      "a reason to pair that R with D_bridge=2\u03c0/12"
+    ]
+  },
+  "APS_Dirac": {
+    "torus_antiperiodic_N24": {
+      "max_abs_error": 0.0020176179375899217,
+      "hermiticity_error": 0.0,
+      "numerical": [
+        -0.7050891632494211,
+        -0.7050891632494182,
+        -0.7050891632494113,
+        -0.7050891632494105,
+        0.7050891632494101,
+        0.7050891632494172,
+        0.7050891632494198,
+        0.7050891632494198
+      ],
+      "nearest_exact": [
+        -0.707106781187,
+        -0.707106781187,
+        -0.707106781187,
+        -0.707106781187,
+        0.707106781187,
+        0.707106781187,
+        0.707106781187,
+        0.707106781187
+      ]
+    },
+    "convergence": {
+      "rows": [
+        {
+          "N": 8,
+          "max_abs_error": 0.01803450502441417,
+          "hermiticity_error": 0.0
+        },
+        {
+          "N": 12,
+          "max_abs_error": 0.008049753473000743,
+          "hermiticity_error": 0.0
+        },
+        {
+          "N": 16,
+          "max_abs_error": 0.004534781045151259,
+          "hermiticity_error": 0.0
+        },
+        {
+          "N": 24,
+          "max_abs_error": 0.0020176179375899217,
+          "hermiticity_error": 0.0
+        },
+        {
+          "N": 32,
+          "max_abs_error": 0.0011353355729359915,
+          "hermiticity_error": 0.0
+        }
+      ],
+      "log_log_slope": -1.9950307131062384,
+      "expected_slope_near": -2.0,
+      "note": "Second-order central differences should give p \u2248 2 (slope \u2248 -2)."
+    },
+    "legacy_symmetrised_is_not_Dirac": true,
+    "legacy": {
+      "legacy_abs_eigs": [
+        5.965365775954267e-17,
+        1.0782305505903533e-16,
+        1.6729007653433918e-16,
+        2.6279095277953784e-16,
+        2.657189489364186e-16,
+        2.9103463946158727e-16,
+        3.2745064617977137e-16,
+        3.31417235906568e-16
+      ],
+      "legacy_frobenius_norm": 40.74366543152521,
+      "analytic_lowest_abs": [
+        0.0,
+        1.0,
+        1.0,
+        1.414213562373,
+        1.414213562373,
+        2.0,
+        2.0,
+        2.2360679775
+      ],
+      "legacy_is_essentially_zero": false,
+      "legacy_has_expected_zero_mode": true,
+      "legacy_recovers_first_nonzero_dirac_mode": false
+    },
+    "conoid_truncated_numerical": {
+      "Nu": 24,
+      "Nv": 24,
+      "u_max": 6.0,
+      "aps_strength": 8.0,
+      "hermiticity_error": 0.0,
+      "evals": [
+        -0.14347344173416485,
+        -0.14347344173414703,
+        -0.14100913311612714,
+        -0.14100913311612281,
+        0.12032535759293339,
+        0.1203253575929371,
+        0.12285833266497029,
+        0.12285833266497279
+      ],
+      "abs_min": 0.12032535759293339,
+      "note": "Numerical truncated-conoid spectrum; not a continuum APS theorem."
+    },
+    "status": "Hermitian discretisation verified on the flat torus (known answer, order \u2248 2). Conoid+APS remains truncated numerics, not a continuum index theorem."
+  }
+}

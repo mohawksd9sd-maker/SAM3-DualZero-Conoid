@@ -1,4 +1,7 @@
-# SAM3 v4.20 Dependencies
-numpy
-scipy
-matplotlib
+# SAM-3 core reproducibility (November 2026)
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+mpmath>=1.3
+sympy>=1.12
+pytest>=8.0
