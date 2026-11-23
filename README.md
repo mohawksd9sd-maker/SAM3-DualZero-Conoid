@@ -4,15 +4,18 @@
 
 Honesty rule: unproven statements are labelled as such. Null results stay null.
 
+**Start here:** [`BOTTOM_LINE.md`](BOTTOM_LINE.md) — what is proven, what the unification experiments showed, and the missing principle.
+
 ---
 
 ## Start here (outsiders)
 
-1. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — proved vs numerical vs not derived
-2. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — current core paper (November 2026)
-3. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — SSOT
-4. **[`docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md`](docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md)** — audit of claims vs evidence
-5. **[`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)** — Dual-Zero as a definition
+1. **[`BOTTOM_LINE.md`](BOTTOM_LINE.md)** — short public statement of where the work stands
+2. **[`PUBLIC_STATUS_SUMMARY.md`](PUBLIC_STATUS_SUMMARY.md)** — proved vs numerical vs not derived
+3. **[`papers/SAM3_Core_Geometry_and_Spectral_Results.tex`](papers/SAM3_Core_Geometry_and_Spectral_Results.tex)** — current core paper (November 2026)
+4. **[`STATUS_CLAIMS_AND_RESIDUALS.md`](STATUS_CLAIMS_AND_RESIDUALS.md)** — SSOT
+5. **[`docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md`](docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md)** — audit of claims vs evidence
+6. **[`docs/hardening/18_DualZero_Definition_Lock.md`](docs/hardening/18_DualZero_Definition_Lock.md)** — Dual-Zero as a definition
 
 **Core-first:** unification and RH narratives are secondary. The Riemann hypothesis is a proposal only; a non-circular identification test in this repository found no evidence that Dual-Zero critical points match zeta zeros.
 
@@ -71,6 +74,7 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 
 | Topic | Document |
 |-------|----------|
+| Bottom line | `BOTTOM_LINE.md` |
 | Public summary | `PUBLIC_STATUS_SUMMARY.md` |
 | SSOT | `STATUS_CLAIMS_AND_RESIDUALS.md` |
 | Core paper | `papers/SAM3_Core_Geometry_and_Spectral_Results.tex` |
