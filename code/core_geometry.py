@@ -173,9 +173,11 @@ def C0_finite_part(U: float = 400.0, ell0: float = 1.0) -> float:
     return float(part1 + part2)
 
 
-# Converged value from U=2000..5000 (November 2026 audit). The core paper's
-# earlier band 4.43--4.45 does not reproduce.
-C0_CONVERGED = 4.3551723
+# Exact finite part, proved in the November 2026 core paper: C0 = 2π ln 2
+# (unit metric ell0=1). The decimal 4.3551723 used earlier is this number
+# rounded; the older paper band 4.43--4.45 does not reproduce.
+C0_EXACT = 2.0 * math.pi * math.log(2.0)
+C0_CONVERGED = C0_EXACT  # kept name for callers
 C0_PAPER_BAND = (4.43, 4.45)
 
 

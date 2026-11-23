@@ -1,0 +1,372 @@
+{
+  "formula": "alpha = 1/(16 pi C_SA phi2 Vol_reg),  Lambda=1/ell0,  G_N=kappa^2/(8 pi)",
+  "C0_exact": 4.355172180607204,
+  "convention_lock": {
+    "recorded_alpha": 4.468042885105484,
+    "equivalent_product_C_SA_phi2_Vol": 0.004452591078032422,
+    "if_Vol=C0_and_phi2=1/2_then_C_SA": 0.0020447371049342237
+  },
+  "rows": [
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "C0_finite_part",
+      "Vol": 4.355172180607204,
+      "alpha": 2.164042561333445,
+      "alpha_over_64pi/45": 0.48433791191830855
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_e",
+      "Vol": 10.638357487786791,
+      "alpha": 0.8859241637244617,
+      "alpha_over_64pi/45": 0.19828013886745546
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_10",
+      "Vol": 18.822741005438136,
+      "alpha": 0.500712301043001,
+      "alpha_over_64pi/45": 0.11206524062518705
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=1",
+      "Vol": 7.4967648341969975,
+      "alpha": 1.2571793525892154,
+      "alpha_over_64pi/45": 0.28137137107168464
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=3",
+      "Vol": 39.53229065336175,
+      "alpha": 0.23840707950395265,
+      "alpha_over_64pi/45": 0.0533582791469389
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=10",
+      "Vol": 332.9820063644175,
+      "alpha": 0.028304165932782708,
+      "alpha_over_64pi/45": 0.00633480176010318
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "C0_finite_part",
+      "Vol": 4.355172180607204,
+      "alpha": 2.164042561333445,
+      "alpha_over_64pi/45": 0.48433791191830855
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_e",
+      "Vol": 10.638357487786791,
+      "alpha": 0.8859241637244617,
+      "alpha_over_64pi/45": 0.19828013886745546
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_10",
+      "Vol": 18.822741005438136,
+      "alpha": 0.500712301043001,
+      "alpha_over_64pi/45": 0.11206524062518705
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=1",
+      "Vol": 7.4967648341969975,
+      "alpha": 1.2571793525892154,
+      "alpha_over_64pi/45": 0.28137137107168464
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=3",
+      "Vol": 39.53229065336175,
+      "alpha": 0.23840707950395265,
+      "alpha_over_64pi/45": 0.0533582791469389
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=10",
+      "Vol": 332.9820063644175,
+      "alpha": 0.028304165932782708,
+      "alpha_over_64pi/45": 0.00633480176010318
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "C0_finite_part",
+      "Vol": 4.355172180607204,
+      "alpha": 1.0820212806667224,
+      "alpha_over_64pi/45": 0.24216895595915428
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "C0_plus_2pi_log_e",
+      "Vol": 10.638357487786791,
+      "alpha": 0.44296208186223085,
+      "alpha_over_64pi/45": 0.09914006943372773
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "C0_plus_2pi_log_10",
+      "Vol": 18.822741005438136,
+      "alpha": 0.2503561505215005,
+      "alpha_over_64pi/45": 0.056032620312593526
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "truncation_U=1",
+      "Vol": 7.4967648341969975,
+      "alpha": 0.6285896762946077,
+      "alpha_over_64pi/45": 0.14068568553584232
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "truncation_U=3",
+      "Vol": 39.53229065336175,
+      "alpha": 0.11920353975197633,
+      "alpha_over_64pi/45": 0.02667913957346945
+    },
+    {
+      "C_SA_name": "1/(24*pi^2)_hypothesis",
+      "C_SA": 0.004221715985097407,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "truncation_U=10",
+      "Vol": 332.9820063644175,
+      "alpha": 0.014152082966391354,
+      "alpha_over_64pi/45": 0.00316740088005159
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "C0_finite_part",
+      "Vol": 4.355172180607204,
+      "alpha": 0.3606737602222408,
+      "alpha_over_64pi/45": 0.08072298531971808
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_e",
+      "Vol": 10.638357487786791,
+      "alpha": 0.14765402728741028,
+      "alpha_over_64pi/45": 0.03304668981124258
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_10",
+      "Vol": 18.822741005438136,
+      "alpha": 0.0834520501738335,
+      "alpha_over_64pi/45": 0.01867754010419784
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=1",
+      "Vol": 7.4967648341969975,
+      "alpha": 0.20952989209820258,
+      "alpha_over_64pi/45": 0.04689522851194744
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=3",
+      "Vol": 39.53229065336175,
+      "alpha": 0.03973451325065878,
+      "alpha_over_64pi/45": 0.008893046524489818
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "sharp_[0,1]",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=10",
+      "Vol": 332.9820063644175,
+      "alpha": 0.004717360988797117,
+      "alpha_over_64pi/45": 0.0010558002933505298
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "C0_finite_part",
+      "Vol": 4.355172180607204,
+      "alpha": 0.3606737602222408,
+      "alpha_over_64pi/45": 0.08072298531971808
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_e",
+      "Vol": 10.638357487786791,
+      "alpha": 0.14765402728741028,
+      "alpha_over_64pi/45": 0.03304668981124258
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "C0_plus_2pi_log_10",
+      "Vol": 18.822741005438136,
+      "alpha": 0.0834520501738335,
+      "alpha_over_64pi/45": 0.01867754010419784
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=1",
+      "Vol": 7.4967648341969975,
+      "alpha": 0.20952989209820258,
+      "alpha_over_64pi/45": 0.04689522851194744
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=3",
+      "Vol": 39.53229065336175,
+      "alpha": 0.03973451325065878,
+      "alpha_over_64pi/45": 0.008893046524489818
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "gaussian_e^{-v^2}",
+      "phi2": 0.5,
+      "Vol_name": "truncation_U=10",
+      "Vol": 332.9820063644175,
+      "alpha": 0.004717360988797117,
+      "alpha_over_64pi/45": 0.0010558002933505298
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "C0_finite_part",
+      "Vol": 4.355172180607204,
+      "alpha": 0.1803368801111204,
+      "alpha_over_64pi/45": 0.04036149265985904
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "C0_plus_2pi_log_e",
+      "Vol": 10.638357487786791,
+      "alpha": 0.07382701364370514,
+      "alpha_over_64pi/45": 0.01652334490562129
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "C0_plus_2pi_log_10",
+      "Vol": 18.822741005438136,
+      "alpha": 0.04172602508691675,
+      "alpha_over_64pi/45": 0.00933877005209892
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "truncation_U=1",
+      "Vol": 7.4967648341969975,
+      "alpha": 0.10476494604910129,
+      "alpha_over_64pi/45": 0.02344761425597372
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "truncation_U=3",
+      "Vol": 39.53229065336175,
+      "alpha": 0.01986725662532939,
+      "alpha_over_64pi/45": 0.004446523262244909
+    },
+    {
+      "C_SA_name": "1/(4*pi^2)_hypothesis",
+      "C_SA": 0.025330295910584444,
+      "cutoff": "exponential_e^{-v}",
+      "phi2": 1.0,
+      "Vol_name": "truncation_U=10",
+      "Vol": 332.9820063644175,
+      "alpha": 0.0023586804943985587,
+      "alpha_over_64pi/45": 0.0005279001466752649
+    }
+  ],
+  "conclusion": "\u03b1 is scheme-dependent. No row is claimed to be the unique geometric value. The recorded 64\u03c0/45 is a convention lock, equivalent to fixing C_SA \u03c62 Vol = 45/(1024 \u03c0\u00b2)."
+}

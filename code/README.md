@@ -23,6 +23,10 @@ python code/aps_hermitian.py
 code/
 ├── core_geometry.py            # metric, C4, curvature, C0, channel energies
 ├── aps_hermitian.py            # Hermitian Dirac; torus known answers
+├── aps_disk_modes.py           # disk APS, Bessel known-answer attempts
+├── aps_projection.py           # APS spectral projection (conoid + disk helpers)
+├── omega0_search.py            # search for a derivation of ω0; none found
+├── gn_prefactor_schemes.py     # scheme table for α in G_N=α ℓ0²
 ├── core_reproducibility.py     # one-script reproduction of the core paper
 ├── dirac_conoid_aps.py         # LEGACY: not a Dirac operator (see header)
 ├── newton_constant_fit.py      # convention display; not a fit

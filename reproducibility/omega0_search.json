@@ -1,0 +1,103 @@
+{
+  "target": 0.927,
+  "candidates": {
+    "C0/(2*pi)": 0.6931471805599454,
+    "ln2": 0.6931471805599453,
+    "sqrt(6/7)": 0.9258200997725514,
+    "13/14": 0.9285714285714286,
+    "sqrt(13/15)": 0.9309493362512627,
+    "14/15": 0.9333333333333333,
+    "e/3": 0.9060939428196817,
+    "cos(pi/7)": 0.9009688679024191,
+    "4/pi*ln2": 0.8825424006106064,
+    "2/e": 0.7357588823428847
+  },
+  "nearest_simple_constant": {
+    "name": "sqrt(6/7)",
+    "value": 0.9258200997725514,
+    "delta": -0.001179900227448627
+  },
+  "exponents": {
+    "1/|K|_max": {
+      "R": 4.0,
+      "R_over_D": 7.639437268410977,
+      "omega0_if_4_13": 1.8694385343439093,
+      "p_required_for_0.927": -0.03727970332586426,
+      "distance_of_p_to_4_13": -0.344972011018172
+    },
+    "1/sqrt(|K|_max)": {
+      "R": 2.0,
+      "R_over_D": 3.8197186342054885,
+      "omega0_if_4_13": 1.5103812179948948,
+      "p_required_for_0.927": -0.05656098169730294,
+      "distance_of_p_to_4_13": -0.36425328938961066
+    },
+    "ell0": {
+      "R": 1.0,
+      "R_over_D": 1.9098593171027443,
+      "omega0_if_4_13": 1.2202869373677274,
+      "p_required_for_0.927": -0.11715339663522176,
+      "distance_of_p_to_4_13": -0.42484570432752944
+    },
+    "2*ell0": {
+      "R": 2.0,
+      "R_over_D": 3.8197186342054885,
+      "omega0_if_4_13": 1.5103812179948948,
+      "p_required_for_0.927": -0.05656098169730294,
+      "distance_of_p_to_4_13": -0.36425328938961066
+    },
+    "required_R_for_4_13": {
+      "R_over_D": 0.7816442473553483,
+      "R": 0.4092679708687142,
+      "omega0": 0.927
+    }
+  },
+  "sensitivity": {
+    "rows": [
+      {
+        "omega0": 0.8,
+        "sum_abs_eps_nle20": 1.033028797650131,
+        "reg2_first": 0.5,
+        "sum_over_0.927": 0.8629989212513485
+      },
+      {
+        "omega0": 0.9,
+        "sum_abs_eps_nle20": 1.1621573973563972,
+        "reg2_first": 0.5625,
+        "sum_over_0.927": 0.970873786407767
+      },
+      {
+        "omega0": 0.927,
+        "sum_abs_eps_nle20": 1.1970221192770891,
+        "reg2_first": 0.579375,
+        "sum_over_0.927": 1.0
+      },
+      {
+        "omega0": 0.95,
+        "sum_abs_eps_nle20": 1.2267216972095303,
+        "reg2_first": 0.59375,
+        "sum_over_0.927": 1.0248112189859762
+      },
+      {
+        "omega0": 1.0,
+        "sum_abs_eps_nle20": 1.2912859970626636,
+        "reg2_first": 0.625,
+        "sum_over_0.927": 1.0787486515641855
+      },
+      {
+        "omega0": 1.22,
+        "sum_abs_eps_nle20": 1.5753689164164495,
+        "reg2_first": 0.7625,
+        "sum_over_0.927": 1.3160733549083063
+      },
+      {
+        "omega0": 1.51,
+        "sum_abs_eps_nle20": 1.949841855564622,
+        "reg2_first": 0.94375,
+        "sum_over_0.927": 1.62891046386192
+      }
+    ],
+    "linearity": "sum|\u03b5| and Reg2(|\u03b5|) scale exactly as \u03c90"
+  },
+  "conclusion": "No unique geometric definition of R_curv, and no derivation of the exponent 4/13, was found. The closest simple constants (sqrt(6/7)\u22480.9258, 13/14\u22480.9286) are numerical coincidences, not derivations. \u03c90 remains a free input."
+}

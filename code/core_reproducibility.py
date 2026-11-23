@@ -109,7 +109,7 @@ def main() -> int:
             "converged_value": c0_converged,
             "old_paper_band_4.43_4.45": old_band,
             "old_band_reproduced": c0_reproduces_old_band,
-            "status": "existence is a proposition; the number is a numerical observation",
+            "status": "existence is a proposition; C0 = 2 pi ln 2 is a theorem (unit metric)",
             "note": "The band 4.43--4.45 in earlier drafts does not reproduce under adaptive quadrature.",
         },
         "channel_energies_Dirichlet_cutoff": {
@@ -153,7 +153,7 @@ def main() -> int:
     print(f"A5 is not an isometry: {not a5['equal']}")
     print(f"curvature identity: {curv_ok}")
     print(f"C0(200)={c0_values['200']:.7f}  C0(400)={c0_values['400']:.7f}  C0(1000)={c0_values['1000']:.7f}")
-    print(f"C0 converged (recorded): {c0_converged}")
+    print(f"C0 exact 2π ln 2 / recorded: {c0_converged}")
     print(f"old band 4.43--4.45 reproduced? {c0_reproduces_old_band}")
     print(f"E0(m=0,1,2,3) = " + ", ".join(f"{energies[str(m)]:.6f}" for m in (0, 1, 2, 3)))
     print(f"strictly increasing: {mono}")
