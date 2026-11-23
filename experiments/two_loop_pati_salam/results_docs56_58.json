@@ -1,0 +1,189 @@
+{
+ "doc56_finite_triple": {
+  "KO_signs": {
+   "epsilon": 1,
+   "epsilon_prime": 1,
+   "epsilon_dprime": -1
+  },
+  "KO_dim": 6,
+  "order_zero_PS": 0.0,
+  "first_order_PS_generic_D": 10.809645845942676,
+  "first_order_SM_generic_D": 0.0,
+  "first_order_SM_conj_lepton_entry": 13.643270553719363,
+  "first_order_PS_no_Majorana_lepton_eq_quark": 0.0,
+  "first_order_PS_no_Majorana_lepton_ne_quark": 3.811813999138147,
+  "maximality": {
+   "dim_A_PS": 40,
+   "dim_A_SM": 24,
+   "complement_dim": 16,
+   "linear_candidate_directions": 4,
+   "min_self_violation_on_candidates": 1.8384776310850228,
+   "A_SM_is_maximal_first_order": true
+  },
+  "isospectral": {
+   "max_eigenvalue_diff": 7.216449660063518e-16,
+   "reg2_heat_D": 24.847975185663195,
+   "reg2_heat_D2": 24.847975185663195,
+   "eps_sum_D": -0.6571121645511612,
+   "eps_sum_D2": -0.6571121645511612,
+   "first_order_SM_D": 0.0,
+   "first_order_SM_D2": 7.713989580831462,
+   "gamma_anticommutes_D2": 0.5546175681375916,
+   "JD_equals_DJ_D2": 0.4026741815835253
+  }
+ },
+ "doc57_proton": {
+  "operators": {
+   "Dirac Yukawa F_L phi F_R (top=nu_D)": {
+    "Delta_F": "0",
+    "Delta_B": "0",
+    "epsilon": "False"
+   },
+   "Majorana F_R F_R Delta Delta, nu_R nu_R <Delta_l>^2": {
+    "Delta_F": "0",
+    "Delta_B": "0",
+    "epsilon": "False"
+   },
+   "leptoquark current qbar gamma l X_mu (X carries F=0, X=4/3)": {
+    "Delta_F": "0",
+    "Delta_B": "0",
+    "epsilon": "False"
+   },
+   "Delta_3 coupling u^c e^c Delta_q <Delta_l> (from F_R F_R Delta Delta)": {
+    "Delta_F": "0",
+    "Delta_B": "0",
+    "epsilon": "False"
+   },
+   "epsilon Delta^4  (qqq l)": {
+    "Delta_F": "4",
+    "Delta_B": "1",
+    "epsilon": "True"
+   },
+   "epsilon F_L F_L Delta Delta -> qq Delta_q <Delta_l>": {
+    "Delta_F": "4",
+    "Delta_B": "1",
+    "epsilon": "True"
+   },
+   "d=6 qqql (epsilon F_L^3 F_L)": {
+    "Delta_F": "4",
+    "Delta_B": "1",
+    "epsilon": "True"
+   }
+  },
+  "generic_d6_at_Lambda_two_loop_years": 1.0852452617572761e+32,
+  "generic_d6_at_Lambda_one_loop_years": 1.8974258603512995e+33,
+  "generic_d6_at_Lambda_with15_years": 2.956854940719553e+33,
+  "generic_d6_at_m_R_years": 1.2613033905836256e+26,
+  "kappa_max_at_Lambda": 0.06724474148453531,
+  "superK_bound_years": 2.4e+34,
+  "rare_decays": {
+   "M_X_TeV_lowest_estimate": 11710389533.129896,
+   "KL_mue_bound_TeV": 1400.0,
+   "general_mixing_bound_TeV": 86.0,
+   "margin_orders_of_magnitude": 6.922443305959039,
+   "passes": true
+  }
+ },
+ "doc58_higgs_masses": {
+  "PS_n1_with_sigma": {
+   "n": 1.0,
+   "with_sigma": true,
+   "g_U": 0.531797442915942,
+   "m_R": 39034631777099.66,
+   "Lambda": 1188850297262976.8,
+   "boundary_at_Lambda": {
+    "y_t": 0.531797442915942,
+    "lambda_h": 0.2828085202919346,
+    "lambda_hs": 0.5656170405838692,
+    "lambda_s": 2.2624681623354768
+   },
+   "at_m_R": {
+    "y": 0.5661275893491426,
+    "lambda_h": 0.2503554598693526,
+    "lambda_hs": 0.3966075627510511,
+    "lambda_s": 1.181003338695805,
+    "lambda_SM_after_sigma": 0.11716569344156724,
+    "reduction_factor_sqrt": 0.6841033230801188
+   },
+   "y_t_at_mt_pred": 1.0075052308863177,
+   "y_t_at_mt_obs": 0.933804,
+   "y_t_data_at_Lambda": 0.45061565449991947,
+   "m_t_pole_pred_GeV": 185.75561706588448,
+   "lambda_at_mt": 0.23311626857464046,
+   "m_H_pred_GeV": 168.1220264974275,
+   "m_H_obs_GeV": 125.1
+  },
+  "PS_n1_no_sigma": {
+   "n": 1.0,
+   "with_sigma": false,
+   "g_U": 0.531797442915942,
+   "m_R": 39034631777099.66,
+   "Lambda": 1188850297262976.8,
+   "boundary_at_Lambda": {
+    "y_t": 0.531797442915942,
+    "lambda_h": 0.2828085202919346,
+    "lambda_hs": 0.0,
+    "lambda_s": 2.2624681623354768
+   },
+   "at_m_R": {
+    "y": 0.5661275893491426,
+    "lambda_h": 0.25868179982879214,
+    "lambda_hs": 0.0,
+    "lambda_s": 1.202782015674945,
+    "lambda_SM_after_sigma": 0.25868179982879214,
+    "reduction_factor_sqrt": 1.0
+   },
+   "y_t_at_mt_pred": 1.0075052308835288,
+   "y_t_at_mt_obs": 0.933804,
+   "y_t_data_at_Lambda": 0.45061565449991947,
+   "m_t_pole_pred_GeV": 185.7556170653829,
+   "lambda_at_mt": 0.25408318750247305,
+   "m_H_pred_GeV": 175.51987030955328,
+   "m_H_obs_GeV": 125.1
+  },
+  "mH_observed_top_with_sigma": {
+   "y_t_at_mt_check": 0.9338039999821192,
+   "m_H_pred_GeV": 150.97410205486509
+  },
+  "mH_observed_top_no_sigma": {
+   "y_t_at_mt_check": 0.9338039999815637,
+   "m_H_pred_GeV": 162.66446140730616
+  },
+  "n_scan_with_sigma": {
+   "0.0": {
+    "m_t_pole_pred_GeV": 196.0301812901787,
+    "m_H_pred_GeV": 189.13519230930825
+   },
+   "0.25": {
+    "m_t_pole_pred_GeV": 193.29853068169305,
+    "m_H_pred_GeV": 184.73615557455088
+   },
+   "0.5": {
+    "m_t_pole_pred_GeV": 190.68054934322194,
+    "m_H_pred_GeV": 179.87899052129126
+   },
+   "1.0": {
+    "m_t_pole_pred_GeV": 185.75561706588448,
+    "m_H_pred_GeV": 168.1220264974275
+   },
+   "2.0": {
+    "m_t_pole_pred_GeV": 176.97529466267974,
+    "m_H_pred_GeV": 123.30111160245208
+   },
+   "4.0": {
+    "m_t_pole_pred_GeV": 148.02995754776248,
+    "m_H_pred_GeV": 0.0
+   },
+   "8.0": {
+    "m_t_pole_pred_GeV": 88.14328711500308,
+    "m_H_pred_GeV": 0.0
+   }
+  },
+  "seesaw_M_N_eq_m_R": {
+   "m_D_GeV": 84.41789056323388,
+   "M_N_GeV": 39034631777099.66,
+   "m_nu3_eV": 0.18256558145187746,
+   "M_N_needed_for_atm_GeV": 142243118705511.62
+  }
+ }
+}

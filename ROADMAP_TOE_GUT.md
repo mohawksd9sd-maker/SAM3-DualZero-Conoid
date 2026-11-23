@@ -57,6 +57,8 @@ An authentic grand unified theory, in the sense of this repository, would derive
 **Status:** partial.  
 Pati–Salam \(\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{SU}(4)\) and the Chamseddine–Connes–Marcolli algebra that yields the Standard Model are both usable as a choice of finite triple \(F\).  \(\mathrm{SO}(10)\) and \(\mathrm{SU}(5)\) appear in earlier SAM-2 / desktop text as chain claims, not as derived finite geometries in this repository.
 
+**Update (doc 56, 23 Nov 2026).** Reproduced numerically: with a \(\nu_R\) Majorana entry the first-order condition cuts \(\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)\) to the maximal subalgebra \(\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)\); dropping it keeps PS.  The axioms (KO-6, grading, irreducibility, order zero/one) are assumed.  An isospectral counterexample proves no purely spectral regulator (Dual-Zero included) can select them.  Status: derived *from assumed axioms*; not from Dual-Zero or the conoid.
+
 **Tried in docs 44–54.**  
 Doc 45 uses the CCM finite triple with \(N=3\) and the fermion multiplicity as inputs.  Docs 47–48 develop the Pati–Salam product as the more flexible option in the cited literature.  Doc 49 surveys NCG classification and does not uniquely force PS, CCM, \(\mathrm{SO}(10)\), or \(\mathrm{SU}(5)\).  Doc 51 finds that the SAM-2 \(E_8\) descent is not a derivation.  Doc 54 does not change the verdict: the group remains a choice of \(F\).
 
@@ -85,6 +87,8 @@ A leftover light exotic with an uncancelled gauge anomaly, or an uncancelled ano
 **Status:** open as a *prediction*.  
 One-loop meeting of the Pati–Salam couplings, with measured SM couplings at \(M_Z\) as inputs, determines \(m_R\approx 4.205\times 10^{13}\,\mathrm{GeV}\) and \(\Lambda\approx 2.399\times 10^{15}\,\mathrm{GeV}\) (docs 48, 54).  That is a fit of the meeting condition, not a derivation of the scales or of the low-energy couplings.
 
+**Update (doc 55, 23 Nov 2026).** Done at two loops (Machacek–Vaughn coefficients computed exactly from group data, top Yukawa, MS-bar matching, thresholds ×/÷10): \(m_R=3.90\times10^{13}\), \(\Lambda=1.19\times10^{15}\) GeV, \(\alpha_U^{-1}=44.4\) (one loop: \(4.22\times10^{13}\), \(2.41\times10^{15}\)).  Threshold band \(\log_{10}m_R\in[12.96,14.23]\), \(\log_{10}\Lambda\in[14.77,15.39]\).  Still zero degrees of freedom: a passed consistency check, not a prediction.  Status unchanged: open as a prediction.
+
 **Tried in docs 44–54.**  
 Docs 45 and 48 run one-loop (CCM and PS).  Doc 54 confirms that float64, Dual-Zero, and `mpmath` agree at the \(10^{-17}\) level on \(\log m_R\); rounding did not invent the scales.  Two-loop running and a derived threshold set were not used as predictions.
 
@@ -98,6 +102,8 @@ The predicted \((\alpha_1,\alpha_2,\alpha_3)(M_Z)\) miss experiment by more than
 
 **Status:** open.  
 No proton-lifetime calculation appears in docs 44–54.
+
+**Update (doc 57, 23 Nov 2026).** In the spectral PS model \(B=(F+X)/4\) is exact perturbatively (no \(\varepsilon_{ABCD}\) arises from a trace); no gauge- or scalar-mediated nucleon decay, no \(n\)–\(\bar n\).  A generic \(d=6\) operator at \(\Lambda\) would give \(\tau\approx10^{32}\) yr (excluded), so exactness is load-bearing.  \(K_L\to\mu e\) passes by \(\sim10^7\).  Status: closed for this content (null prediction).
 
 **Tried in docs 44–54.**  
 The unification scales above were obtained as a PDG fit.  They were not converted into a decay rate, nor compared to Super-Kamiokande / Hyper-Kamiokande limits.
@@ -113,6 +119,8 @@ A predicted lifetime below the current experimental lower bound, with no remaini
 **Status:** partial.  
 The spectral action produces Higgs-like scalars and a potential, in the standard almost-commutative way.  A spectator conoid does not change the CCM Higgs relation at \(\Lambda\) (doc 45).  The product does not yet yield a unique Higgs mass or unique PS-breaking vacuum expectation values (docs 48, 54).
 
+**Update (doc 58, 23 Nov 2026).** Spectral boundary values with PS-fixed \(n=(y_\nu/y_t)^2=1\) and the singlet \(\sigma\), run down: \(m_H\approx168\) GeV (151 GeV with the measured top) vs 125.1.  125 GeV needs \(n\approx2\), not allowed with one bidoublet.  \(v\) and \(m_R\) remain \(f_2\Lambda^2\) inputs.  Status: prediction made; it fails in the minimal content.
+
 **Tried in docs 44–54.**  
 Doc 45 records the standard CCM relation and that the raw conoid \(\times F\) is the wrong dimension.  Doc 48 treats the Higgs and PS-breaking scalars as part of the product action, without a unique vacuum derived from the geometry.  Yukawa and vacuum-expectation-value scales are absorbed or scanned, not fixed.
 
@@ -126,6 +134,8 @@ A unique \(m_H\) from the product that disagrees with \(125\,\mathrm{GeV}\) beyo
 
 **Status:** open.  
 The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemented.  Masses and CKM / PMNS angles are not outputs.  At \(\tau=i\) and vanishing Wilson lines, many Yukawa entries are structural zeros; turning on Wilson lines fills them (docs 47–48, 54).
+
+**Update (doc 58, 23 Nov 2026).** The spectral relation \(y_t(\Lambda)=g\) (PS, \(n=1\)) predicts \(M_t\approx186\) GeV vs 172.5 (8% high).  Seesaw with \(M_N=m_R\) gives \(m_{\nu_3}\approx0.18\) eV; \(0.05\) eV needs \(M_N\approx3.6\,m_R\) (fitted Majorana coupling).
 
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
