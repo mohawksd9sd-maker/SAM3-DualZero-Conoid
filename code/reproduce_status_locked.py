@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
-"""Regenerate and verify every STATUS locked geometric number.
+"""Historical STATUS locker — largely tautological.
 
-No experimental fitting. Prototype APS is NOT claimed complete here.
+November 2026: this script mostly asserts hardcoded constants against
+ themselves (ω0, η, θ, m_H band, φ=2π/5, the G_N prefactor).
+ cabibbo_from_eta is θ12 := η12 · π/12, so the "check" is circular.
+ m_H is inserted by hand as 125 and then checked to lie in [124,127].
+
+It is retained so older documentation still has a runnable file.
+Authoritative reproduction of the core paper is:
+
+    python code/core_reproducibility.py
+    pytest -q
 """
 from __future__ import annotations
 
@@ -125,11 +134,14 @@ def assert_locked(r: Report) -> None:
 
 def main() -> None:
     r = build_report()
+    # The assertions below only check that hardcoded constants were copied
+    # consistently. They are not evidence those numbers follow from the metric.
     assert_locked(r)
-    print("STATUS locked numbers — regeneration report")
+    print("HISTORICAL STATUS locker — tautological consistency dump")
     print(json.dumps(asdict(r), indent=2))
-    print("OK — all STATUS geometric locks verified (no experimental fit).")
-    print("NOTE: production 2D APS eigensolver remains prototype (STATUS flag).")
+    print("WARNING: this script does not independently derive ω0, η, θ, m_H,")
+    print("or the 64π/45 prefactor. It echoes values stored at the top of the file.")
+    print("Use code/core_reproducibility.py and pytest for the core paper.")
 
 
 if __name__ == "__main__":

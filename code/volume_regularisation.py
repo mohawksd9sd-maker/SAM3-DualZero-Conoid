@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Regularised internal volume + C0 finite part for locked hat metric."""
+"""Regularised internal volume + C0 finite part for locked hat metric.
+
+November 2026: Riemann-sum estimates in this file produced the unstable
+band C0 ≈ 4.43--4.45 used in earlier drafts. Adaptive quadrature in
+code/core_geometry.py.C0_finite_part converges to C0 ≈ 4.3551723.
+Treat the older band as superseded. See reproducibility/core_results.json.
+"""
 from __future__ import annotations
 
 import math

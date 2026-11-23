@@ -4,11 +4,20 @@ SAM3 — Production-path 2D Dirac on the right conoid (P1–P4)
 ===========================================================
 omega0 = 0.927 geometric only. No experimental retuning.
 
+WARNING (November 2026): the assembly in this file is a real (not complex)
+first-order matrix which is then replaced by 0.5*(D+D.T). Central differences
+are antisymmetric, so that step cancels derivative terms. The raw matrix is
+not Hermitian, and the symmetrised matrix is not a Dirac operator. Known-answer
+tests on a flat torus fail (see code/aps_hermitian.py and tests/test_aps_known_answers.py).
+Do not use the spectrum from this file as evidence for APS index claims.
+Use code/aps_hermitian.py for a Hermitian discretisation.
+
 Usage:
   python code/dirac_conoid_aps.py
   python code/dirac_conoid_aps.py --gap-scan
   python code/dirac_conoid_aps.py --overlaps
 """
+
 
 from __future__ import annotations
 
