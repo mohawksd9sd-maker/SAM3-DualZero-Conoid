@@ -60,6 +60,8 @@ A broader survey of candidate principles (index theory, modular invariance, regu
 
 A further round of candidate tests (standard \(T^6\) orbifolds, tadpoles, \(T^2/\mathbb{Z}_N\) for \(N=2,3,4,6\), the product spectral action including the tip, and a declared coincidence scan) is in [`docs/hardening/50_Further_Candidate_Tests.md`](docs/hardening/50_Further_Candidate_Tests.md) and `experiments/further_candidates/`.  No accidental fit was found.  The bottom line is unchanged.
 
+A review of the SAM-2, desktop math-model, and May 14, 2026 Dual-Zero lines is in [`docs/hardening/51_SAM2_Lines_Review.md`](docs/hardening/51_SAM2_Lines_Review.md) and `experiments/sam2_review/`.  Original desktop sources are not in this repository.  The well-posed regulator is the current definition \(\varepsilon(n)=\omega_0(-1)^n n^{-n}\) with the symmetric average \(\operatorname{Reg}_2\); the SAM-2 ultrafilter entity and the May 2I / 12-bridge generation claims do not survive honest checks.  Nothing in that review derives the flux or the moduli, or changes the locked core.
+
 The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
 
 ---
@@ -91,6 +93,7 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 | Pati–Salam product (exploratory) | `docs/hardening/48_...` |
 | Missing-principle survey (exploratory) | `docs/hardening/49_...` |
 | Further candidate tests (exploratory) | `docs/hardening/50_...` |
+| SAM-2 / May-clone Dual-Zero review (exploratory) | `docs/hardening/51_...` |
 | Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
 

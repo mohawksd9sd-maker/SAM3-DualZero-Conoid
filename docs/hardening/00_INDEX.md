@@ -1,6 +1,6 @@
 # SAM3 Hardening Layer — Index
 
-**August 2026; docs 42–50 added 23 November 2026**  
+**August 2026; docs 42–51 added 23 November 2026**  
 **SSOT:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 | Doc | Content |
@@ -27,5 +27,6 @@
 | **48** | **Exploratory product: conoid × magnetized Σ × Pati–Salam (not part of the locked core)** |
 | **49** | **Exploratory survey of candidate principles for the flux, moduli, and generation count (not part of the locked core)** |
 | **50** | **Further candidate tests for an accidental fit of the flux, moduli, or generation count (not part of the locked core)** |
+| **51** | **Review of SAM-2, desktop math-model, and May 2026 Dual-Zero lines (exploratory; original sources not in the repo)** |
 
-Rule: derivation only, no experimental tuning, no overclaim.  Docs 47–50 are labelled exploratory surveys in `experiments/`; they do not lock new core theorems.
+Rule: derivation only, no experimental tuning, no overclaim.  Docs 47–51 are labelled exploratory surveys in `experiments/`; they do not lock new core theorems.
