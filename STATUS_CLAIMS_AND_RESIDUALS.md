@@ -18,6 +18,7 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 | Reproduction | `python code/core_reproducibility.py` and `pytest -q` |
 | Exact $E_0$, truncated-conoid APS index, unification attempts | [`docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md`](docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md) |
 | Almost-commutative product with CCM $F$, 2D vs 4D, one-loop running | [`docs/hardening/45_Almost_Commutative_CCM_Product.md`](docs/hardening/45_Almost_Commutative_CCM_Product.md) |
+| Singular tip $u\to 0$ | [`docs/hardening/46_Singular_Tip_Analysis.md`](docs/hardening/46_Singular_Tip_Analysis.md) |
 | Papers supersession | [`papers/SUPERSESSION.md`](papers/SUPERSESSION.md) |
 
 ---
@@ -30,16 +31,17 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 | Exact $C_4$ isometry $v\mapsto v+\pi/2$ | **Proposition** |
 | $A_5$ is not a metric isometry of $f$ | **Proposition** (counterexample) |
 | Four tip nodes $v=\pi/4+k\pi/2$ | **Proposition** |
-| $K=-4\ell_0^2\cos^2(2v)/f^4$, so $\|K\|_{\max}=1/(4\ell_0^2)$ | **Proposition** |
+| $K=-4\ell_0^2\cos^2(2v)/f^4\le 0$; $K$ is unbounded near the four nodes, with $\max_v|K(u,\cdot)|=1/(4u^2)$ for $0<u\le 2\ell_0$, and integrable ($\int|K|=2\pi$). The older claim $\|K\|_{\max}=1/(4\ell_0^2)$ is only the mid-arc value at $u=0$, not a global bound | **Theorem** (formula); the global-max claim is **withdrawn** (doc 46) |
 | $C_0=\lim(\int_0^U I(u)\,du-2\pi\log U)$ exists | **Proposition** |
 | On the unit metric, $C_0=2\pi\ln 2$ | **Theorem** |
 | $E_0(m_2)>E_0(m_1)$ for $m_2>m_1\ge 1$ (unique SA extensions); also for $m_1=0$ on a fixed Dirichlet/APS realization | **Theorem** |
 | $E_0(2)<E_0(3)$ on those realizations | **Corollary** |
 | On $(0,U)$, regular at $0$ and Dirichlet at $U$, $E_0(m;U)=(j_{\nu,1}/U)^2$ with $\nu=\sqrt{m^2+1/4}$; in particular $E_0(0)=\pi^2/U^2$ | **Theorem** (radial model operators, not the 2D Dirac operator) |
-| APS index of the *untwisted* Dirac operator on the truncated conoid $X_{a,b}=[a,b]\times S^1$ (product collar, bounding spin structure at both ends) equals $0$, independently of $a,b,\ell_0$ | **Theorem**.  In particular the index is not $3$.  The singular-tip limit $a\to 0$ is not covered. |
+| APS index of the *untwisted* Dirac operator on the truncated conoid $X_{a,b}=[a,b]\times S^1$ (product collar, bounding spin structure at both ends) equals $0$, independently of $a,b,\ell_0$ | **Theorem**.  In particular the index is not $3$.  The $a\to 0$ tip does not change this as a derived statement (doc 46): no spectral flow, no cone correction. |
 | Weyl: $m=0$ limit-circle, $\|m\|\ge 1$ limit-point ($\kappa=m^2$ vs $3/4$) | **Proposition** (standard) |
 | Area of $X_{a,b}$: $\pi(b^2-a^2)+\int_a^b I$; unit-metric finite part $C_0=2\pi\ln 2$ already in this table | **Theorem** (same $C_0$) |
 | $\int_{X_{a,b}} K\,dA = \int_0^{2\pi}(a/f(a)-b/f(b))\,dv$; Gauss–Bonnet identity on the annulus; complete-surface limit $\int K=-2\pi$ | **Theorem** |
+| Metric completion at $u=0$ is a geodesic boundary circle of length $8\ell_0$, with a $C^\infty$ metric degenerate at the four nodes; not a cone and not an incomplete edge; no curvature $\delta$-mass at the tip | **Theorem** (doc 46) |
 
 ---
 
@@ -73,8 +75,8 @@ Reproduce: `python code/core_reproducibility.py` (writes `reproducibility/core_r
 
 | Item | Honest status |
 |------|----------------|
-| $\omega_0\approx 0.927$ and the exponent $4/13$ in $\omega_0=(R_{\mathrm{curv}}/D)^{4/13}$ | **Not derived.** Natural $R\in\{1/\|K\|_{\max},\,1/\sqrt{\|K\|_{\max}},\,\ell_0,\,2\ell_0\}$ all give $\omega_0>1.22$, not $0.927$. The value $0.927$ would need $R\approx 0.409\,\ell_0$, which is not a unique geometric prescription. See doc 42. |
-| Exactly three chiral generations / APS index 3 of the *untwisted* Dirac operator on the truncated conoid | **Refuted** for that operator: the product-collar APS index is $0$ (bounding spin structure), independently of the cuts and of $\ell_0$.  See doc 44.  Index $3$ can be arranged with an auxiliary Falomir flux $\kappa\in(2,3]$, which is **not derived** from the locked metric.  The singular-tip limit $a\to 0$ remains open and is not an index-3 theorem.  The soft block $\{0,1,2\}$ is a radial-model heuristic, not an index. |
+| $\omega_0\approx 0.927$ and the exponent $4/13$ in $\omega_0=(R_{\mathrm{curv}}/D)^{4/13}$ | **Not derived.** Natural $R\in\{\ell_0,\,2\ell_0\}$ (and the older $1/\|K\|_{\max}$ prescriptions, which are **not well-defined** because $|K|$ is unbounded near the four nodes; doc 46) do not yield $0.927$. The value $0.927$ would need $R\approx 0.409\,\ell_0$, which is not a unique geometric prescription. See docs 42 and 46. |
+| Exactly three chiral generations / APS index 3 of the *untwisted* Dirac operator on the truncated conoid | **Refuted** for that operator: the product-collar APS index is $0$ (bounding spin structure), independently of the cuts and of $\ell_0$.  See doc 44.  Index $3$ can be arranged with an auxiliary Falomir flux $\kappa\in(2,3]$, which is **not derived** from the locked metric.  The singular tip is a geodesic boundary of length $8\ell_0$ with four metric-degeneracy points, not a cone (doc 46).  Every positive-cut APS index is $0$ with no spectral flow as $a\downarrow 0$; the tip does **not** give a derived index of $3$.  An extension with index $3$ would be put in by hand.  The soft block $\{0,1,2\}$ is a radial-model heuristic, not an index. |
 | $\eta_{12}\approx 0.861$, $\eta_{13}\approx 0.544$, $\eta_{23}\approx 0.479$ | **Not derived** in the core. Earlier “locks” are withdrawn. |
 | $\theta_{12}\approx 12.85^\circ$, $\theta_{23}\approx 2.36^\circ$, $\phi=2\pi/5$, $\delta_{\mathrm{CKM}}$ | **Not derived.** Some scripts define $\theta_{12}:=\eta_{12}\cdot\pi/12$ and then “check” the same relation. |
 | $m_H$ in $124$–$127\,\mathrm{GeV}$ | **Not derived.** At least one script inserts $125\,\mathrm{GeV}$ by hand. |

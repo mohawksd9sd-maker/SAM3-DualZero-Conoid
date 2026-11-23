@@ -43,6 +43,7 @@ Key reproduced numbers (unit metric $\ell_0=1$):
 - $C_0=2\pi\ln 2\approx 4.35517218$ (proved on the unit metric; the older band $4.43$–$4.45$ does **not** reproduce)
 - $E_0(m;U)=(j_{\nu,1}/U)^2$ with $\nu=\sqrt{m^2+1/4}$; $E_0(0)=\pi^2/U^2$.  At $U=20$: $0.024674,\,0.039801,\,0.067954,\,0.103387$ for $m=0,1,2,3$
 - APS index of the *untwisted* Dirac operator on the truncated conoid (bounding spin structure) is $0$, not $3$.  See doc 44.
+- The tip $u=0$ is a geodesic boundary of length $8\ell_0$ with four metric-degeneracy points, not a cone; it does not give a derived index of $3$.  $|K|$ is unbounded near the nodes (the older bound $1/(4\ell_0^2)$ is withdrawn).  See doc 46.
 - Complete-conoid total curvature $\int K\,dA=-2\pi$.  Raw conoid $\times F$ is 2D, not a 4D CCM model (doc 45).
 - Flat-torus Hermitian Dirac, $N=24$: $\max|\lambda-\lambda_{\mathrm{exact}}|\approx 0.00202$, convergence slope $\approx-1.995$
 - $G_N=64\pi\ell_0^2/45$ is a **convention lock**, not an independent derivation
@@ -73,6 +74,7 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 | $\omega_0$, $G_N$ prefactor, Dirac | `docs/hardening/42_...` |
 | Exact $E_0$, APS index $0$, unification attempts | `docs/hardening/44_...` |
 | Almost-commutative product with CCM $F$ | `docs/hardening/45_...` |
+| Singular tip $u\to 0$ | `docs/hardening/46_...` |
 | Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
 

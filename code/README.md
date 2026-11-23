@@ -33,6 +33,7 @@ code/
 ├── conoid_heat_kernel.py         # area, ∫K=−2π, Gauss–Bonnet identity
 ├── ccm_oneloop_rge.py            # CC2010 one-loop running of CCM boundary conditions
 ├── u1_twist_and_tip.py           # natural flux is −1, not in (2,3]; tip geometry
+├── singular_tip_analysis.py      # u→0: geodesic boundary, four nodes, no index 3
 ├── core_reproducibility.py     # one-script reproduction of the core paper
 ├── dirac_conoid_aps.py         # LEGACY: not a Dirac operator (see header)
 ├── newton_constant_fit.py      # convention display; not a fit

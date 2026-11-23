@@ -10,11 +10,12 @@
 |--------|-----------|
 | Metric | $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ **only** (from the locked embedding) |
 | Symmetry | $C_4$ exact; $A_5$ is **not** an isometry of $f$ |
-| Curvature | $K=-4\ell_0^2\cos^2(2v)/f^4$ |
+| Curvature | $K=-4\ell_0^2\cos^2(2v)/f^4\le 0$, integrable, but **unbounded** near the four tip nodes (the older global bound $1/(4\ell_0^2)$ is withdrawn) |
 | $C_0$ | exists, and equals $2\pi\ln 2$ on the unit metric (**theorem**) |
 | $E_0(2)<E_0(3)$ | Variational theorem on the radial model operators |
 | Exact $E_0(m;U)$ | $(j_{\nu,1}/U)^2$ with $\nu=\sqrt{m^2+1/4}$; $E_0(0)=\pi^2/U^2$ (radial model, not the 2D Dirac operator) |
-| APS index on the truncated conoid | $0$ for the *untwisted* Dirac operator, product collar, bounding spin structure.  Independent of the cuts and of $\ell_0$.  Not equal to $3$.  The singular tip $a\to 0$ is not covered. |
+| APS index on the truncated conoid | $0$ for the *untwisted* Dirac operator, product collar, bounding spin structure.  Independent of the cuts and of $\ell_0$.  Not equal to $3$. |
+| Singular tip $u=0$ | A geodesic boundary circle of length $8\ell_0$ with four metric-degeneracy points; not a cone.  Does **not** give a derived index of $3$ (doc 46). |
 | Total curvature of the complete conoid | $\int K\,dA=-2\pi$; Gauss–Bonnet on every truncation $X_{a,b}$ is an identity |
 | $G_N$ | $\propto\ell_0^2$ structurally; the prefactor $64\pi/45$ is a **convention**, not a derivation |
 
@@ -34,7 +35,7 @@ Run `python code/core_reproducibility.py` and `pytest -q`.
 ## Not derived / not claimed
 
 - $\omega_0\approx 0.927$ and the exponent $4/13$
-- Exactly three chiral generations as the APS index of the *untwisted* Dirac operator on the truncated conoid: **refuted** (the index is $0$).  Index $3$ would need an underived Falomir flux $\kappa\in(2,3]$.  The singular tip remains open.
+- Exactly three chiral generations as the APS index of the *untwisted* Dirac operator on the truncated conoid: **refuted** (the index is $0$).  Index $3$ would need an underived Falomir flux $\kappa\in(2,3]$.  The singular tip is a geodesic boundary with four nodes, not a cone, and does not give a derived index of $3$ (doc 46).
 - Gauge group, mass ratios, $\omega_0$, $4/13$, the $G_N$ prefactor $\alpha$, and coupling unification from the locked geometry: attempted honestly and **not derived** (docs 44–45)
 - Almost-commutative product with CCM $F=(\mathbb{C}\oplus\mathbb{H}\oplus M_3(\mathbb{C}))$: the raw product conoid $\times F$ is 2D, not a 4D unification model.  A spectator conoid does not change $g_3^2=g_2^2=\tfrac53 g_1^2$ or the CCM Higgs relation at $\Lambda$.  One-loop running of those conditions does not unify at one scale; the CCM Higgs example remains $\sim 170\,\mathrm{GeV}$.  $N=3$ is an input of $F$.  See doc 45.
 - CKM / PMNS / $\eta$ digits, Higgs mass, percent-level unification
@@ -52,3 +53,4 @@ Run `python code/core_reproducibility.py` and `pytest -q`.
 5. `docs/hardening/18_DualZero_Definition_Lock.md` (Dual-Zero as a *definition*)
 6. `docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md`
 7. `docs/hardening/45_Almost_Commutative_CCM_Product.md`
+8. `docs/hardening/46_Singular_Tip_Analysis.md`
