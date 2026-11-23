@@ -1,4 +1,4 @@
-> **November 2026:** the “theorem schema” in this note is **not a theorem**. An APS spectral projection was implemented; it does not currently support an index of three, and it does not cleanly refute one. See doc 43 and the core paper.
+> **November 2026 (updated):** the “theorem schema” in this note is **not a theorem**. The APS index of the *untwisted* Dirac operator on the truncated conoid (smooth compact annulus, product collar, bounding spin structure) is **0**, independently of the cut radii and of $\ell_0$.  Index 3 is therefore **refuted** for that operator.  A Falomir flux $\kappa\in(2,3]$ would give index 3 on a disk, but that flux is not derived from the locked metric.  The singular-tip limit $a\to 0$ is not covered by the theorem.  See doc 44, STATUS, and the core paper.
 
 # Mathematical Note I — Three Chiral Generations from APS + Binary Icosahedral Structure
 

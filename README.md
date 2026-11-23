@@ -24,7 +24,7 @@ $$
 f(u,v)=\sqrt{u^2+4\ell_0^2\cos^2(2v)}
 $$
 
-($4\ell_0^2$ only — not $16\ell_0^2$.) This, the exact $C_4$ isometry, the curvature formula, $C_0=2\pi\ln 2$, and $E_0(m_2)>E_0(m_1)$ are proved in the core paper.
+($4\ell_0^2$ only — not $16\ell_0^2$.) This, the exact $C_4$ isometry, the curvature formula, $C_0=2\pi\ln 2$, $E_0(m_2)>E_0(m_1)$, the exact formula $E_0(m;U)=(j_{\nu,1}/U)^2$, and the APS index $0$ of the untwisted Dirac operator on the truncated conoid, are proved in the core paper.
 
 ---
 
@@ -41,6 +41,8 @@ pytest -q
 Key reproduced numbers (unit metric $\ell_0=1$):
 
 - $C_0=2\pi\ln 2\approx 4.35517218$ (proved on the unit metric; the older band $4.43$–$4.45$ does **not** reproduce)
+- $E_0(m;U)=(j_{\nu,1}/U)^2$ with $\nu=\sqrt{m^2+1/4}$; $E_0(0)=\pi^2/U^2$.  At $U=20$: $0.024674,\,0.039801,\,0.067954,\,0.103387$ for $m=0,1,2,3$
+- APS index of the *untwisted* Dirac operator on the truncated conoid (bounding spin structure) is $0$, not $3$.  See doc 44.
 - Flat-torus Hermitian Dirac, $N=24$: $\max|\lambda-\lambda_{\mathrm{exact}}|\approx 0.00202$, convergence slope $\approx-1.995$
 - $G_N=64\pi\ell_0^2/45$ is a **convention lock**, not an independent derivation
 - $\omega_0\approx 0.927$ and the exponent $4/13$ are **not derived**
@@ -68,10 +70,11 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 | Core paper | `papers/SAM3_Core_Geometry_and_Spectral_Results.tex` |
 | November 2026 audit | `docs/AUDIT_CORE_SOLIDIFICATION_NOV2026.md` |
 | $\omega_0$, $G_N$ prefactor, Dirac | `docs/hardening/42_...` |
+| Exact $E_0$, APS index $0$, unification attempts | `docs/hardening/44_...` |
 | Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
 
 **RH:** proposal only.  
-**Unification, CKM, Higgs mass:** not derived in the core.
+**Unification, CKM, Higgs mass:** not derived in the core.  Honest attempts to derive a gauge group, mass ratios, $\omega_0$, $\alpha$, or coupling unification from the locked geometry all failed (doc 44).
 
 **Last update:** 23 November 2026 (America/Chicago).

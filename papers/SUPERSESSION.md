@@ -20,6 +20,8 @@ Every `.tex` file here is historical or expanded source unless listed as current
 
 The August 2026 core draft is superseded on: the $C_0$ band $4.43$–$4.45$; an incomplete monotonicity argument; and any reading of “three light channels” or $G_N=\alpha\ell_0^2$ as stronger than the labelled statements now in the file.
 
+As of 23 November 2026 the APS index of the *untwisted* Dirac operator on the truncated conoid (product collar, bounding spin structure) is a theorem and equals $0$; older language that leaves “three generations as an APS index” merely open, or that treats it as a locked claim, is superseded by STATUS and doc 44.  The singular-tip limit is not covered by that theorem.
+
 ---
 
 ## Metric lock (mandatory)
@@ -42,7 +44,7 @@ Coefficient **4 only**. Any `16\ell_0` form is an error.
 | $C_0\approx 4.43$–$4.45$ or $C_0\approx 4.3551723$ as a mere decimal | **$C_0=2\pi\ln 2$** (theorem, unit metric) |
 | $G_N=64\pi\ell_0^2/45$ as a scheme-free or independently derived constant | $G_N=\alpha\ell_0^2$ structural; $64\pi/45$ is a **convention lock** |
 | $\omega_0=(R/D)^{4/13}\approx 0.927$ as a derived output | **Not derived**; $\omega_0$ is an input until a derivation exists |
-| Exactly three chiral generations / APS index 3 as a theorem | **Still open**; not supported by present APS numerics, not cleanly refuted. Soft block $\{0,1,2\}$ is a radial-model heuristic |
+| Exactly three chiral generations / APS index 3 as a theorem for the *untwisted* truncated conoid | **Refuted**: the product-collar APS index is $0$ (doc 44, Theorem in the core paper).  Index $3$ needs an underived Falomir flux.  The singular tip $a\to 0$ remains open and is not an index-3 theorem.  Soft block $\{0,1,2\}$ is a radial-model heuristic |
 | $\eta_{ij}$, CKM/PMNS angles, $m_H$ class $124$–$127\,\mathrm{GeV}$ as locked geometric results | **Not derived** in the core |
 | Exact $m_H=125.1$ or $126.2$ GeV as theorem | Not claimed |
 | Percent-level unification as fact | Not claimed |

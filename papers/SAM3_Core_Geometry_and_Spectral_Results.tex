@@ -27,16 +27,19 @@ $r(u,v)=(u\cos v,\,u\sin v,\,\ell_0\sin(2v))$, with the induced metric
 $ds^2=du^2+f^2\,dv^2$ and $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$.
 We prove the induced-metric formulae, the exact $C_4$ isometry
 (and that $A_5$ is not an isometry of $f$), the Gaussian curvature,
-the evaluation $C_0=2\pi\ln 2$ of the regularised volume finite part, and a strict
-variational monotonicity of radial channel ground energies in the
-angular momentum $m$ (with a domain caveat at $m=0$).
+the evaluation $C_0=2\pi\ln 2$ of the regularised volume finite part,
+a strict variational monotonicity of radial channel ground energies in
+the angular momentum $m$ (with a domain caveat at $m=0$), the exact
+formula $E_0(m;U)=(j_{\nu,1}/U)^2$, and that the APS index of the
+untwisted Dirac operator on the truncated conoid is $0$ for the
+bounding spin structure (Theorem~\ref{thm:aps0}).
 On the unit metric $\ell_0=1$ we prove $C_0=2\pi\ln 2$; an earlier draft band $4.43$--$4.45$ does not reproduce.
 Claims are labelled as theorem, proposition, numerical observation,
 heuristic, convention, or conjecture. We do not claim a derivation of
 the full Standard Model, a scheme-free formula for $G_N$, a derivation
-of $\omega_0\approx 0.927$ or of the exponent $4/13$, an APS index
-computation yielding three generations, or a proof of the Riemann
-hypothesis.
+of $\omega_0\approx 0.927$ or of the exponent $4/13$, an APS index of
+three for the untwisted truncated conoid (that index is $0$), or a
+proof of the Riemann hypothesis.
 \end{abstract}
 
 \section{Scope and labelling}
@@ -248,11 +251,51 @@ strictly between them isolates the three channels $m\in\{0,1,2\}$ among
 the radial model operators $H_m$.
 \end{corollary}
 
+\begin{theorem}[Exact ground energies of the radial model]
+\label{thm:E0exact}
+Let $H_m=-\frac{d^2}{du^2}+m^2/u^2$ act on $(0,U)$ with the regular
+solution at $u=0$ (the unique self-adjoint extension for
+$\lvert m\rvert\ge 1$; the regular choice for $m=0$) and Dirichlet
+data at $u=U$. Then
+\[
+  E_0(m;U)=\Bigl(\frac{j_{\nu,1}}{U}\Bigr)^2,
+  \qquad \nu=\sqrt{m^2+\tfrac14},
+\]
+where $j_{\nu,1}$ is the first positive zero of the Bessel function
+$J_\nu$. In particular $j_{1/2,1}=\pi$, so $E_0(0;U)=\pi^2/U^2$.
+The ratios $E_0(m)/E_0(n)$ are independent of $U$.
+\end{theorem}
+
+\begin{proof}
+The substitution $\psi=\sqrt{u}\,y$ reduces $-\psi''+(m^2/u^2)\psi=E\psi$
+to Bessel's equation of order $\nu=\sqrt{m^2+1/4}$ in the variable
+$z=\sqrt{E}\,u$. The solution regular at the origin is $y(z)=J_\nu(z)$
+(the companion $Y_\nu$ is not square-integrable at $0$ in the relevant
+range). The condition $\psi(U)=0$ forces $J_\nu(\sqrt{E}\,U)=0$, hence
+the stated eigenvalues; the ground state is the first positive zero.
+For $m=0$ one has $J_{1/2}(z)=\sqrt{2/(\pi z)}\sin z$, whose first
+positive zero is $\pi$.
+\end{proof}
+
+The same operator also satisfies the elementary bounds
+$E_0(m)\ge\pi^2/U^2$ (Theorem~\ref{thm:mono}) and
+$E_0(m)>(m^2+1/4)/U^2$ (since $j_{\nu,1}>\nu$ for $\nu\ge 0$), together
+with the variational upper bound obtained from the trial function
+$\sin(\pi u/U)$,
+\[
+  E_0(m)\le \frac{\pi^2+2\pi m^2\int_0^\pi(\sin t/t)^2\,dt}{U^2},
+\]
+with equality at $m=0$.
+
 \begin{numobs}
-On a Dirichlet cutoff of $(0,20)$ with $400$ interior points one finds
-$E_0(0)\approx 0.02467$, $E_0(1)\approx 0.03980$, $E_0(2)\approx 0.06795$,
-$E_0(3)\approx 0.10339$, consistent with Theorem~\ref{thm:mono}. The $m=0$
-value is indicative of that cutoff.
+The exact values at $U=20$ are
+$E_0(0)=\pi^2/400\approx 0.02467401$,
+$E_0(1)\approx 0.03980128$,
+$E_0(2)\approx 0.06795432$,
+$E_0(3)\approx 0.10338722$.
+A Dirichlet finite-difference scheme with $800$ interior points agrees
+to a relative error of about $10^{-6}$. These are eigenvalues of the
+radial model operators, not of the $2$D Dirac operator on the conoid.
 \end{numobs}
 
 \begin{remark}[Soft set, heuristic]
@@ -264,16 +307,20 @@ it is \emph{not} a computation of the APS index, or of the number of
 light eigenvalues, of the two-dimensional Dirac operator on the conoid.
 \end{remark}
 
-\begin{conjecture}[Three light Dirac channels]
+\begin{remark}[Withdrawn as a truncated-untwisted conjecture]
 \label{conj:three}
-Under a specified APS-compatible spin structure on a suitable
-compactification or truncation of the conoid, the Dirac operator has
-exactly three light channels (or index three).
-\end{conjecture}
-
-No index computation is given in this note, and the numerical Dirac
-solver of Section~\ref{sec:dirac} is a truncation, not a proof of
-Conjecture~\ref{conj:three}.
+An earlier draft conjectured that, under a specified APS-compatible
+spin structure on a suitable truncation of the conoid, the Dirac
+operator would have exactly three light channels or index three.
+For the \emph{untwisted} Dirac operator on the truncated conoid
+$X_{a,b}$, with the bounding spin structure, that claim is false:
+Theorem~\ref{thm:aps0} gives index $0$. The singular-tip limit
+$a\to 0$ is not covered by that theorem and remains open; it is not
+an index-$3$ result. The numerical Dirac solver of
+Section~\ref{sec:dirac} is a truncation, not a substitute for the
+theorem. The label \texttt{conj:three} is retained only for
+cross-references.
+\end{remark}
 
 \section{Spectral action and $G_N$}
 
@@ -347,9 +394,9 @@ second-order central differences. The operator is Hermitian to machine
 precision.
 \end{numobs}
 
-On the truncated conoid, APS is modelled by a boundary penalty. The
-resulting eigenvalues are a numerical experiment, not a continuum APS
-theorem, and are not used to support Conjecture~\ref{conj:three}.
+On the truncated conoid, a boundary-penalty discretisation of APS was
+also implemented. Its eigenvalues are a numerical experiment and are
+not used as a substitute for Theorem~\ref{thm:aps0} below.
 
 \section{APS index and the generation count}
 \label{sec:aps}
@@ -365,26 +412,50 @@ A mode-by-mode radial discretisation with SAT enforcement of the Falomir
 conditions reproduces some of this Bessel spectrum (the $n=1$ family to
 about $0.02$ at $N=80$), but the operator is not exactly Hermitian and a
 numerical reproduction of the \emph{nonzero}-flux zero-mode count was not
-obtained. Those failures are reported as such.
+obtained. Those failures are reported as such. The continuum statement
+that follows does not depend on that discretisation.
 
-On a truncated conoid $u\in[u_{\min},u_{\max}]$ a Hermitian 2D Dirac
-operator with a spectral projection at both ends was implemented
-(\texttt{code/aps\_projection.py}). In the runs recorded in
-\texttt{reproducibility/} the low-lying eigenvalues come in $\pm$ pairs
-with vanishing chirality $\langle\gamma^5\rangle$, and $\lvert\lambda\rvert_{\min}$
-decreases as $u_{\max}$ grows (e.g.\ $0.123$, $0.033$, $0.014$ at
-$U=3,5,7$ on a $14\times 14$ grid, $u_{\min}=0.5$). No isolated triplet
-of chiral zero modes is seen. The discrete boundary operator as extracted
-in that implementation has a four-dimensional kernel, already in tension
-with the expected one-dimensional Dirac operator on a circle
-($h\in\{0,1\}$), so the numerical ``index'' is \emph{not} a reliable APS
-index.
+\begin{theorem}[Untwisted APS index on the truncated conoid]
+\label{thm:aps0}
+Let $X_{a,b}=[a,b]\times S^1$ with $0<a<b<\infty$ carry the locked
+right-conoid metric, and let $D$ be the untwisted $2$D Dirac operator.
+After the product-collar deformation required by the Atiyah--Patodi--Singer
+theorem, the bulk $\hat A$-density vanishes in dimension $2$, and each
+boundary operator is unitarily equivalent to the standard one-dimensional
+Dirac operator on a circle of length $L(u)=\oint f(u,\cdot)\,dv$. For the
+antiperiodic (bounding) spin structure on each end --- the structure that
+extends over a disk cap --- one has $\eta=h=0$, hence $\bar\eta=0$, at
+each boundary component. Therefore
+\[
+  \operatorname{ind} D_{\mathrm{APS}}(X_{a,b})=0.
+\]
+The value is independent of $a$, $b$, and $\ell_0$. In particular it is
+not equal to $3$.
+\end{theorem}
+
+A periodic spin structure on a boundary component contributes
+$\bar\eta=1/2$. In every standard orientation convention the resulting
+index then lies in $\{-1,0,1\}$, never $3$.
+
+The theorem applies to the truncated conoid as a smooth compact manifold
+with boundary. The singular-tip limit $a\to 0$ is not covered: the
+metric fails to be smooth at the four tip nodes, and APS as stated
+requires a smooth compact manifold with boundary.
+
+A nonzero index can be arranged by coupling to an auxiliary $U(1)$
+connection with boundary holonomy $\kappa$. By the Falomir--Pisani--Wipf
+disk calculation, index $3$ requires $\kappa\in(2,3]$. That flux is not
+determined by the locked metric: the spin connection of $f$ is already
+included in the untwisted Dirac operator and must not be counted twice.
 
 \begin{numobs}[Three light channels]
-Conjecture~\ref{conj:three} is \emph{not supported} by the present APS
-numerics, and it is \emph{not cleanly refuted} by a trustworthy continuum
-index. It remains open. The radial-model heuristic $\{0,1,2\}$ is
-unchanged and is not an index statement.
+Conjecture~\ref{conj:three}, read as the claim that the APS index of the
+untwisted Dirac operator on the truncated conoid equals $3$, is
+\emph{refuted} by Theorem~\ref{thm:aps0}. The singular-tip problem
+remains open and is not an index-$3$ theorem. The radial-model heuristic
+$\{0,1,2\}$ is unchanged and is not an index statement. A Falomir flux
+$\kappa\in(2,3]$ would give index $3$ on a disk, but is an extra input,
+not a derivation.
 \end{numobs}
 
 \section{$\omega_0$ and $4/13$, continued}
@@ -420,9 +491,14 @@ not used here to produce an $\alpha$.
 \section{Limitations}
 
 \begin{enumerate}
-\item \emph{No continuum APS index.} Conjecture~\ref{conj:three} is open.
+\item \emph{The singular tip is not treated.}
+  Theorem~\ref{thm:aps0} gives the APS index of the truncated
+  (smooth) conoid, which is $0$ for the bounding spin structure.
   Edge and $b$-calculus are cited~\cite{APS1975,MelroseAPS}, not applied
-  to a complete parametrix for this singular metric.
+  to a complete parametrix at the four singular tip nodes ($a\to 0$).
+  Conjecture~\ref{conj:three} is refuted in the truncated-untwisted
+  reading and remains open only as a singular-tip problem, without
+  an index-$3$ theorem.
 \item \emph{The $m=0$ channel is limit-circle.} Monotonicity including
   $m=0$ depends on a chosen self-adjoint realization.
 \item \emph{The soft set is a radial-model heuristic}, not a count of
@@ -450,9 +526,14 @@ We do not claim a full Standard Model derivation, percent-level
 unification, resolution of the cosmological constant, UV-complete
 quantum gravity, uniqueness of the conoid, or a proof of the Riemann
 hypothesis. We do not claim that $A_5$ is a continuous isometry group of
-the locked metric. We do not claim that $G_N=64\pi\ell_0^2/45$ or
+the locked metric, nor that the $C_4$ isometry group determines
+$\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$. We do not claim
+that $G_N=64\pi\ell_0^2/45$ or
 $\omega_0=(R/D)^{4/13}\approx 0.927$ has been derived from the geometry
-alone.
+alone, nor that the exact ratios $E_0(m)/E_0(n)$ are Standard Model mass
+ratios, nor that gauge couplings unify at a derived scale. We do not
+claim an APS index of $3$ for the untwisted Dirac operator on the
+truncated conoid; that index is $0$ (Theorem~\ref{thm:aps0}).
 
 \begin{thebibliography}{9}
 \bibitem{APS1975}
