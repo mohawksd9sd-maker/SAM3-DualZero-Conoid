@@ -24,7 +24,7 @@ $$
 f(u,v)=\sqrt{u^2+4\ell_0^2\cos^2(2v)}
 $$
 
-($4\ell_0^2$ only — not $16\ell_0^2$.) This, the exact $C_4$ isometry, the curvature formula, existence of $C_0$, and $E_0(m_2)>E_0(m_1)$ are proved in the core paper.
+($4\ell_0^2$ only — not $16\ell_0^2$.) This, the exact $C_4$ isometry, the curvature formula, $C_0=2\pi\ln 2$, and $E_0(m_2)>E_0(m_1)$ are proved in the core paper.
 
 ---
 
@@ -40,7 +40,7 @@ pytest -q
 
 Key reproduced numbers (unit metric $\ell_0=1$):
 
-- $C_0\approx 4.3551723$ (the older band $4.43$–$4.45$ does **not** reproduce)
+- $C_0=2\pi\ln 2\approx 4.35517218$ (proved on the unit metric; the older band $4.43$–$4.45$ does **not** reproduce)
 - Flat-torus Hermitian Dirac, $N=24$: $\max|\lambda-\lambda_{\mathrm{exact}}|\approx 0.00202$, convergence slope $\approx-1.995$
 - $G_N=64\pi\ell_0^2/45$ is a **convention lock**, not an independent derivation
 - $\omega_0\approx 0.927$ and the exponent $4/13$ are **not derived**

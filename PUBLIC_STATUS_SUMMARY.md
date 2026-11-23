@@ -11,7 +11,7 @@
 | Metric | $f=\sqrt{u^2+4\ell_0^2\cos^2(2v)}$ **only** (from the locked embedding) |
 | Symmetry | $C_4$ exact; $A_5$ is **not** an isometry of $f$ |
 | Curvature | $K=-4\ell_0^2\cos^2(2v)/f^4$ |
-| $C_0$ exists | $\mathrm{Vol}(U)=\pi U^2+2\pi\log U+C_0+o(1)$ |
+| $C_0$ | exists, and equals $2\pi\ln 2$ on the unit metric (**theorem**) |
 | $E_0(2)<E_0(3)$ | Variational theorem on the radial model operators |
 | $G_N$ | $\propto\ell_0^2$ structurally; the prefactor $64\pi/45$ is a **convention**, not a derivation |
 
@@ -19,7 +19,7 @@
 
 ## Numerical (reproduced)
 
-- $C_0\approx 4.3551723$ (unit metric). The older band $4.43$–$4.45$ does **not** reproduce.
+- $C_0=2\pi\ln 2\approx 4.35517218$ (unit metric, theorem). The older band $4.43$–$4.45$ does **not** reproduce.
 - Hermitian 2D Dirac on the flat torus: known-answer error $\approx 0.002$ at $N=24$, convergence order $\approx 2$.
 - The legacy symmetrised Dirac assembly fails that test.
 
@@ -30,7 +30,7 @@ Run `python code/core_reproducibility.py` and `pytest -q`.
 ## Not derived / not claimed
 
 - $\omega_0\approx 0.927$ and the exponent $4/13$
-- Exactly three chiral generations as an APS index theorem (this remains a conjecture / heuristic soft block $\{0,1,2\}$)
+- Exactly three chiral generations as an APS index theorem (still open: not supported by present numerics, not cleanly refuted)
 - CKM / PMNS / $\eta$ digits, Higgs mass, percent-level unification
 - A proof of the Riemann hypothesis (proposal only; identification tests were null)
 - A full Standard Model derivation

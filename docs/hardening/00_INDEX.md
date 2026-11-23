@@ -19,5 +19,6 @@
 | **40** | **Numerical pipeline maturity** |
 | **41** | **Unification + cosmology residuals** |
 | **42** | **$\omega_0$, $64\pi/45$, Hermitian Dirac status (Nov 2026)** |
+| **43** | **APS index attempt, $C_0=2\pi\ln 2$, $\omega_0$ search, $G_N$ schemes** |
 
 Rule: derivation only, no experimental tuning, no overclaim.

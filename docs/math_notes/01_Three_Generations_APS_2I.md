@@ -1,3 +1,5 @@
+> **November 2026:** the “theorem schema” in this note is **not a theorem**. An APS spectral projection was implemented; it does not currently support an index of three, and it does not cleanly refute one. See doc 43 and the core paper.
+
 # Mathematical Note I — Three Chiral Generations from APS + Binary Icosahedral Structure
 
 **SAM3 Dual-Zero Conoid**  

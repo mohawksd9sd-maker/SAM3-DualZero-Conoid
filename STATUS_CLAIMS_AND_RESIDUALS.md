@@ -30,6 +30,7 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 | Four tip nodes $v=\pi/4+k\pi/2$ | **Proposition** |
 | $K=-4\ell_0^2\cos^2(2v)/f^4$, so $\|K\|_{\max}=1/(4\ell_0^2)$ | **Proposition** |
 | $C_0=\lim(\int_0^U I(u)\,du-2\pi\log U)$ exists | **Proposition** |
+| On the unit metric, $C_0=2\pi\ln 2$ | **Theorem** |
 | $E_0(m_2)>E_0(m_1)$ for $m_2>m_1\ge 1$ (unique SA extensions); also for $m_1=0$ on a fixed Dirichlet/APS realization | **Theorem** |
 | $E_0(2)<E_0(3)$ on those realizations | **Corollary** |
 | Weyl: $m=0$ limit-circle, $\|m\|\ge 1$ limit-point ($\kappa=m^2$ vs $3/4$) | **Proposition** (standard) |
@@ -40,7 +41,7 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 
 | Quantity | Value | Notes |
 |----------|-------|--------|
-| $C_0$ (unit metric $\ell_0=1$) | $\approx 4.3551723$ | $C_0(1000)\approx 4.3551745$, $C_0(4000)\approx 4.3551723$. The older band $4.43$–$4.45$ **does not reproduce**. |
+| $C_0$ (unit metric) | $2\pi\ln 2\approx 4.3551721806$ | **Theorem**, confirmed by quadrature. The older band $4.43$–$4.45$ **does not reproduce**. |
 | Dirichlet $E_0(m)$ on $(0,20)$, $N=400$ | $0.02467,\ 0.03980,\ 0.06795,\ 0.10339$ for $m=0,1,2,3$ | Consistent with monotonicity; $m=0$ is cutoff-dependent. |
 | Hermitian Dirac on the antiperiodic flat torus, $N=24$ | $\max\|\lambda-\lambda_{\mathrm{exact}}\|\approx 0.00202$ | Lowest $\|\lambda\|=\sqrt{1/2}$. |
 | Convergence slope $\log\mathrm{err}/\log N$ | $\approx -1.995$ | $N\in\{8,12,16,24,32\}$; consistent with second-order differences. |
@@ -67,12 +68,12 @@ Reproduce: `python code/core_reproducibility.py` (writes `reproducibility/core_r
 | Item | Honest status |
 |------|----------------|
 | $\omega_0\approx 0.927$ and the exponent $4/13$ in $\omega_0=(R_{\mathrm{curv}}/D)^{4/13}$ | **Not derived.** Natural $R\in\{1/\|K\|_{\max},\,1/\sqrt{\|K\|_{\max}},\,\ell_0,\,2\ell_0\}$ all give $\omega_0>1.22$, not $0.927$. The value $0.927$ would need $R\approx 0.409\,\ell_0$, which is not a unique geometric prescription. See doc 42. |
-| Exactly three chiral generations / APS index 3 | **Conjecture.** The soft block $\{0,1,2\}$ is a radial-model heuristic ($\cos(2v)$ and $C_4$). No continuum index is computed. |
+| Exactly three chiral generations / APS index 3 | **Still open.** Not supported by present APS numerics (no chiral zero-mode triplet on a truncated conoid); not cleanly refuted, because the numerical boundary operator is not yet trustworthy as a continuum APS index. Soft block $\{0,1,2\}$ remains a radial-model heuristic. See doc 43. |
 | $\eta_{12}\approx 0.861$, $\eta_{13}\approx 0.544$, $\eta_{23}\approx 0.479$ | **Not derived** in the core. Earlier “locks” are withdrawn. |
 | $\theta_{12}\approx 12.85^\circ$, $\theta_{23}\approx 2.36^\circ$, $\phi=2\pi/5$, $\delta_{\mathrm{CKM}}$ | **Not derived.** Some scripts define $\theta_{12}:=\eta_{12}\cdot\pi/12$ and then “check” the same relation. |
 | $m_H$ in $124$–$127\,\mathrm{GeV}$ | **Not derived.** At least one script inserts $125\,\mathrm{GeV}$ by hand. |
 | Gauge unification, VL_Q, cosmological constant, PMNS digits | **Open / not claimed.** A ~$7\%$ unification “floor” is not a theorem. |
-| Production APS index on the conoid | **Not proved.** Hermitian discretisation is verified on the *flat torus*. Conoid + APS penalty is truncated numerics. |
+| Production APS index on the conoid | **Not proved.** A spectral projection was implemented. Disk: some Bessel zeros are reproduced mode-by-mode; a complete Hermitian disk solver and the nonzero-flux index were not obtained. Conoid: Hermitian 2D operator + projection; low modes are non-chiral $\pm$ pairs; no isolated triplet. |
 | Riemann hypothesis | **Variational proposal only — not a proof.** A non-circular identification test found **no evidence** that Dual-Zero / information-current critical points match zeta zeros (`RESULTS_zeta_identification.md`). |
 | Identification of SAM-3 with the Standard Model | **Not claimed.** |
 
