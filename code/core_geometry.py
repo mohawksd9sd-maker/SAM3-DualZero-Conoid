@@ -12,6 +12,8 @@ from typing import Callable, Tuple
 import numpy as np
 from scipy.integrate import quad
 from scipy.linalg import eigh_tridiagonal
+from scipy.optimize import brentq
+from scipy.special import jv
 
 # Locked embedding: r(u,v) = (u cos v, u sin v, ell0 sin(2v))
 # Core paper / doc 35.
@@ -226,3 +228,77 @@ def natural_curvature_radii(ell0: float = 1.0) -> dict:
     RD = target ** (13.0 / 4.0)
     out["required_for_0.927"] = {"R_over_D": RD, "R": RD * D, "omega0": target}
     return out
+
+
+def besselJ_first_zero(nu: float) -> float:
+    """First positive zero j_{ν,1} of the Bessel function J_ν, for ν ≥ 0.
+
+    scipy.special.jn_zeros is integer-order only; this uses a bracketed
+    root of jv. For ν = 1/2 the zero is π.
+    """
+    if nu < 0:
+        raise ValueError("nu must be nonnegative")
+    if abs(nu - 0.5) < 1e-14:
+        return math.pi
+    # J_ν has no positive zero in (0, ν]; the first zero lies beyond ν.
+    lo = max(nu, 0.0) + 1e-8
+    # McMahon-scale window to locate the first sign change
+    hi = max(nu + 4.0, 0.75 * math.pi + 0.5 * nu * math.pi) + 2.0
+    ngrid = 400
+    xs = [lo + (hi - lo) * i / ngrid for i in range(ngrid + 1)]
+    prev_x, prev_y = xs[0], float(jv(nu, xs[0]))
+    for x in xs[1:]:
+        y = float(jv(nu, x))
+        if prev_y == 0.0:
+            return float(prev_x)
+        if prev_y * y < 0.0:
+            return float(brentq(lambda z: float(jv(nu, z)), prev_x, x))
+        prev_x, prev_y = x, y
+    raise RuntimeError(f"failed to bracket j_{{nu,1}} for nu={nu}")
+
+
+def bessel_order_for_channel(m: float) -> float:
+    """ν = √(m² + 1/4) for the reduced Bessel equation of H_m."""
+    return math.sqrt(m * m + 0.25)
+
+
+def E0_exact(m: float, U: float) -> float:
+    """Exact ground energy of H_m = -d²/du² + m²/u² on (0, U).
+
+    Domain: the regular (limit-point, or the Dirichlet-at-0 realization
+    for m=0) solution, with Dirichlet at u=U, and V_tip=0. Then
+
+        E_0(m; U) = (j_{ν,1} / U)²,    ν = √(m² + 1/4),
+
+    where j_{ν,1} is the first positive zero of J_ν. In particular
+    E_0(0; U) = π²/U², since j_{1/2,1} = π.
+
+    This is the model operator of the core paper, not the 2D Dirac
+    operator on the conoid.
+    """
+    if U <= 0:
+        raise ValueError("U must be positive")
+    nu = bessel_order_for_channel(m)
+    j = besselJ_first_zero(nu)
+    return (j / U) ** 2
+
+
+def E0_variational_upper_bound(m: float, U: float) -> float:
+    """Upper bound from the m=0 ground state sin(π u/U) as a trial function.
+
+    E_0(m) ≤ π²/U² + m² · (2π/U²) ∫_0^π (sin t / t)² dt.
+    The integral is a fixed numerical constant (sinc² on (0,π)).
+    """
+    # Computed once to high precision; tested in the unit tests.
+    sinc2_0_pi = 1.4181515761326287  # ∫_0^π (sin t / t)² dt
+    return (math.pi ** 2 + m * m * 2.0 * math.pi * sinc2_0_pi) / (U * U)
+
+
+def E0_simple_lower_bound(m: float, U: float) -> float:
+    """Lower bounds: monotonicity and j_{ν,1} > ν (ν ≥ 0).
+
+    E_0(m) ≥ E_0(0) = π²/U², and E_0(m) > (m² + 1/4)/U².
+    The returned value is the better of the two: max(π², m²+1/4)/U²
+    (strict for the Bessel bound when used as a closed inequality).
+    """
+    return max(math.pi ** 2, m * m + 0.25) / (U * U)

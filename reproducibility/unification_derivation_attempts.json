@@ -1,0 +1,92 @@
+{
+  "attempts": [
+    {
+      "attempt": "gauge group from locked-metric isometries",
+      "verdict": "failed",
+      "isometry_group": "C4 (discrete), not a continuous U(1)",
+      "C4_check_samples": true,
+      "A5_is_isometry": false,
+      "A5_counterexample": {
+        "f(v)": 1.8663904786229304,
+        "f(v+2pi/5)": 1.9710608301304813,
+        "equal": false,
+        "conclusion": "C5 (hence A5) is not an isometry of the locked metric"
+      },
+      "target": "SU(3) \u00d7 SU(2) \u00d7 U(1)",
+      "reason": "The locked metric is not rotationally invariant.  Its exact isometry group is the discrete cyclic group C4.  That group is not the Standard Model gauge group.  Identifying C4 with a residual discrete symmetry is possible but is not a derivation of SU(3)\u00d7SU(2)\u00d7U(1)."
+    },
+    {
+      "attempt": "three generations from the APS index on the truncated conoid",
+      "verdict": "failed for the untwisted Dirac operator",
+      "untwisted_AP_AP_index": 0,
+      "untwisted_status": "theorem: index = 0 (bounding spin structure at both ends)",
+      "partial_route": "The Falomir disk index equals 3 if an auxiliary U(1) flux satisfies \u03ba \u2208 (2, 3].  That \u03ba is not determined by the locked metric (the spin connection is already included in the untwisted Dirac operator).",
+      "falomir_kappa_for_index_3": "\u03ba \u2208 (2, 3]",
+      "kappa_derived": false,
+      "analytic_disk_index_at_kappa_2.5": 3,
+      "analytic_disk_index_at_kappa_3": 3,
+      "analytic_disk_index_at_kappa_2": 2,
+      "reason": "Product-collar APS + vanishing 2D \u00c2-genus give index 0 for the bounding spin structure, independently of the cut radii and of \u2113\u2080.  Index 3 is possible only with an extra flux or a finite spectral triple that already contains three summands; neither is derived here."
+    },
+    {
+      "attempt": "SM mass ratios from exact E0(m) ratios",
+      "verdict": "failed",
+      "geometric_ratios": {
+        "E0(1)/E0(0)": 1.6130852645642673,
+        "E0(2)/E0(0)": 2.75408478724876,
+        "E0(3)/E0(0)": 4.190126228127341,
+        "E0(2)/E0(1)": 1.7073398708360925,
+        "E0(3)/E0(2)": 1.5214223786890524,
+        "E0(3)/E0(1)": 2.597585087518107
+      },
+      "E0_0_times_U2": 9.869604401089358,
+      "sm_charged_lepton_ratios_for_comparison_only": {
+        "mu/e": 206.768,
+        "tau/mu": 16.817,
+        "tau/e": 3477.0
+      },
+      "min_absolute_mismatch_to_those_SM_ratios": 15.295577621310947,
+      "reason": "The ratios E0(m)/E0(n) are exact and cutoff-independent, but they are O(1) numbers (about 1.61, 2.75, 4.19, \u2026).  The charged-lepton mass ratios are two to three orders of magnitude larger.  No identification of channel index m with a generation is made, and no match is claimed."
+    },
+    {
+      "attempt": "unique geometric derivation of omega0 and the 4/13 exponent",
+      "verdict": "failed",
+      "n_dimensionless_candidates_checked": 10,
+      "n_required_exponent_rows": 4,
+      "best_extra_geometric_mismatch_to_omega0": 0.22853115101732369,
+      "extra_comparisons": {
+        "C0/(2 pi) = ln 2": 0.6931471805599454,
+        "E0(1)/E0(0)": 1.6130852645642673,
+        "xi_infinity": 0.5,
+        "pi/e": 1.1557273497909217,
+        "1/sqrt(e)": 0.6065306597126334
+      },
+      "closest_required_q_to_4/13": 0.344972011018172,
+      "reason": "No dimensionless quantity built from (C0, C4, \u2113\u2080-free ratios, \u03be_\u221e, channel-energy ratios, or standard constants) equals \u03c9\u2080 = e^{-4/\u03c0\u00b2/\u221ae} or produces the exponent 4/13 uniquely.  Both remain free inputs of the Dual-Zero generator."
+    },
+    {
+      "attempt": "unique spectral-action derivation of the G_N prefactor \u03b1",
+      "verdict": "failed (scheme-dependent)",
+      "n_schemes_tabulated": 5,
+      "alpha_min": 0.0023586804943985587,
+      "alpha_max": 2.164042561333445,
+      "conventional_64pi_45": 4.468042885105484,
+      "C0_exact": 4.355172180607204,
+      "rewrite_with_exact_C0": "If one writes the Einstein\u2013Hilbert coefficient in terms of the exact finite part C0 = 2\u03c0 ln 2 and a cutoff moment \u03c62, then \u03b1 = 1 / (c * \u03c62 * C0) for a conventional factor c (e.g. 16\u03c0 or 32\u03c0\u00b2).  The exact C0 removes one numerical uncertainty but does not remove the scheme dependence in \u03c62 or in c.",
+      "reason": "Different admissible cutoff moments and volume identifications produce different \u03b1, already visible in the scheme table.  The conventional value 64\u03c0/45 is a choice of scheme, not a uniqueness theorem."
+    },
+    {
+      "attempt": "gauge-coupling unification from the spectral action on conoid \u00d7 F",
+      "verdict": "failed",
+      "reason": "The bosonic spectral action yields Yang\u2013Mills terms whose coefficients depend on (i) the cutoff moments of the action and (ii) the traces / KO-dimension data of a finite spectral triple F.  F is not derived from the locked conoid, and the cutoff moments are the same scheme data that leave \u03b1 in G_N unfixed.  Without those inputs there is no honest unification prediction (no unique g1:g2:g3 or unique MU)."
+    }
+  ],
+  "verdicts": {
+    "gauge group from locked-metric isometries": "failed",
+    "three generations from the APS index on the truncated conoid": "failed for the untwisted Dirac operator",
+    "SM mass ratios from exact E0(m) ratios": "failed",
+    "unique geometric derivation of omega0 and the 4/13 exponent": "failed",
+    "unique spectral-action derivation of the G_N prefactor \u03b1": "failed (scheme-dependent)",
+    "gauge-coupling unification from the spectral action on conoid \u00d7 F": "failed"
+  }
+}

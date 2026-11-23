@@ -1,0 +1,97 @@
+{
+  "xi_u_1e-4": 0.00017968245940349316,
+  "xi_u_1e4": 0.4999999950000001,
+  "xi_infinity_target": 0.5,
+  "product_collar_AP_AP": {
+    "bulk_A_hat": 0.0,
+    "spin_inner": "antiperiodic",
+    "spin_outer": "antiperiodic",
+    "inner": {
+      "h": 0.0,
+      "eta": 0.0,
+      "eta_bar": 0.0,
+      "frac": 0.5,
+      "x": -0.5
+    },
+    "outer": {
+      "h": 0.0,
+      "eta": 0.0,
+      "eta_bar": 0.0,
+      "frac": 0.5,
+      "x": -0.5
+    },
+    "eta_bar_sum": 0.0,
+    "index": 0,
+    "status": "theorem: index = 0 (bounding spin structure at both ends)",
+    "three_not_attained": true
+  },
+  "product_collar_periodic_periodic": {
+    "bulk_A_hat": 0.0,
+    "spin_inner": "periodic",
+    "spin_outer": "periodic",
+    "inner": {
+      "h": 1.0,
+      "eta": 0.0,
+      "eta_bar": 0.5,
+      "frac": 0.0,
+      "x": 0.0
+    },
+    "outer": {
+      "h": 1.0,
+      "eta": 0.0,
+      "eta_bar": 0.5,
+      "frac": 0.0,
+      "x": 0.0
+    },
+    "eta_bar_sum": 1.0,
+    "index": -1,
+    "status": "convention-dependent integer -1 (still in {-1, 0, 1}, never 3)",
+    "three_not_attained": true
+  },
+  "untwisted_index_AP_AP": 0,
+  "three_generations_from_untwisted_index": "refuted",
+  "falomir_index_3_requires": {
+    "target_index": 3,
+    "kappa_interval": [
+      2.0,
+      3.0
+    ],
+    "kappa_interval_desc": "\u03ba \u2208 (2, 3]",
+    "derived_from_conoid_metric": false
+  },
+  "xi_max_quad_error": 2.9976021664879227e-15,
+  "xi_sample": [
+    {
+      "u": 0.05,
+      "xi": 0.04038188463211666
+    },
+    {
+      "u": 0.2,
+      "xi": 0.11720782711545663
+    },
+    {
+      "u": 0.5,
+      "xi": 0.21849897654238282
+    },
+    {
+      "u": 1.0,
+      "xi": 0.3213188408865622
+    },
+    {
+      "u": 2.0,
+      "xi": 0.41731342083703665
+    },
+    {
+      "u": 6.0,
+      "xi": 0.4869174158747103
+    },
+    {
+      "u": 20.0,
+      "xi": 0.49875698279271247
+    },
+    {
+      "u": 80.0,
+      "xi": 0.49992190245390516
+    }
+  ]
+}
