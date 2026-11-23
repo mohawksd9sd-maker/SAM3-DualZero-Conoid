@@ -1,0 +1,17 @@
+FLAW IN THE ORIGINAL zeta_stationarity.py
+  model_information_current(sigma, t) ignores t and peaks at σ=1/2 by hand.
+  Midpoints and random t therefore get the same YES verdict as zeta zeros.
+  This script uses construction A (Dual-Zero spectral zeta of the conoid Dirac
+  operator) and does not insert zeros into J.
+
+Gradient of S_I at σ=1/2 (smaller would mean 'more stationary'):
+  zeros:      n=79  median |∇S_I|=7.746  mean=7.747
+  midpoints:  n=79  median |∇S_I|=7.746  mean=7.747
+  random t:   n=79  median |∇S_I|=7.748  mean=7.749
+
+Minima of S_I(1/2+it) found without zeros: n=1
+  median distance, each zero     -> nearest minimum: 57.05317070644742
+  median distance, each midpoint -> nearest minimum: 56.39817607605082
+  median distance, each random t -> nearest minimum: 74.34554143529567
+
+Wrote /workspace/sam3-work/identification_results/zeta_stationarity_corrected.json

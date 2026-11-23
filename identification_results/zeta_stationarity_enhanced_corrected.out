@@ -1,0 +1,18 @@
+FLAW IN THE ORIGINAL zeta_stationarity_enhanced.py
+  The finite-difference shift leaves k1-k2 unchanged, so ∇J is identically
+  zero when finite. Overflow, not a failed test, produced the 3/20 count.
+  This script uses a genuine 2-D gradient of S_I = |J|^2 and does not
+  insert zeros into J.
+
+=== A_dualzero_spectral_zeta ===
+  zeros      n=79  median |∇S_I|=7.746  mean=7.747
+  midpoints  n=79  median |∇S_I|=7.746  mean=7.747
+  random_t   n=79  median |∇S_I|=7.748  mean=7.749
+  line minima n=1; median dist zeros=57.05317070644742, mids=56.39817607605082, rand=74.34554143529567
+=== C_overlap_dirichlet ===
+  zeros      n=79  median |∇S_I|=0.03852  mean=0.03949
+  midpoints  n=79  median |∇S_I|=0.03804  mean=0.03914
+  random_t   n=79  median |∇S_I|=0.03887  mean=0.039
+  line minima n=22; median dist zeros=2.5797266038456996, mids=2.596177288787885, rand=2.10815627370906
+
+Wrote /workspace/sam3-work/identification_results/zeta_stationarity_enhanced_corrected.json

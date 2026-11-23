@@ -1,0 +1,32 @@
+/workspace/sam3-work/code/zeta_stationarity_enhanced.py:17: RuntimeWarning: overflow encountered in sin
+  return (np.real(delta) + eps * np.sin(12 * delta)) / (1 + np.abs(delta))
+/workspace/sam3-work/code/zeta_stationarity_enhanced.py:17: RuntimeWarning: invalid value encountered in scalar multiply
+  return (np.real(delta) + eps * np.sin(12 * delta)) / (1 + np.abs(delta))
+/workspace/sam3-work/code/zeta_stationarity_enhanced.py:17: RuntimeWarning: invalid value encountered in scalar divide
+  return (np.real(delta) + eps * np.sin(12 * delta)) / (1 + np.abs(delta))
+SAM3 v4.20 - Enhanced Information Current Stationarity Check
+
+Zero # Im(s)        |J|          |∇J|         Stationary?
+-----------------------------------------------------------------
+1      14.134725    1.47e+135    0.00e+00     YES
+2      21.022040    1.05e+206    0.00e+00     YES
+3      25.010858    1.26e+247    0.00e+00     YES
+4      30.424876    nan          nan          NO
+5      32.935062    nan          nan          NO
+6      37.586178    nan          nan          NO
+7      40.918719    nan          nan          NO
+8      43.327073    nan          nan          NO
+9      48.005151    nan          nan          NO
+10     49.773832    nan          nan          NO
+11     52.970321    nan          nan          NO
+12     56.446227    nan          nan          NO
+13     59.347044    nan          nan          NO
+14     60.831779    nan          nan          NO
+15     65.112544    nan          nan          NO
+16     67.079811    nan          nan          NO
+17     69.546479    nan          nan          NO
+18     72.067158    nan          nan          NO
+19     75.049469    nan          nan          NO
+20     77.144840    nan          nan          NO
+
+✅ 3/20 zeros stationary on Re(s) = 1/2

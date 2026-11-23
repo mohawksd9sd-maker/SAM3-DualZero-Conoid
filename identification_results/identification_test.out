@@ -1,0 +1,68 @@
+Loading Riemann zeros (comparison list only)...
+  80 zeros; 79 inside t in [5.0, 200.0]
+Computing 12-bridge overlap matrix (overlap_integrals kernel)...
+Computing conoid Dirac spectrum (full dense eigensolve on a modest grid)...
+  matrix 1536, kept 1408 of 1536 (|λ| in [0.08416, 10.32]), dropped 128 APS-penalty modes
+
+=== Construction A_dualzero_spectral_zeta ===
+Primary: Dual-Zero Reg₂ of |λ_n|^{-s} ε(n) on the ordered Dirac mode tower.
+  line minima of S_I: n=1; median dist zeros=57.05317070644742, midpoints=56.39817607605082, random=74.34554143529567
+  2D stationary pts: n=0, median σ=None
+  plots: ['/workspace/sam3-work/identification_results/A_dualzero_spectral_zeta_S_on_critical_line.png', '/workspace/sam3-work/identification_results/A_dualzero_spectral_zeta_S_strip.png']
+
+=== Construction B_plain_spectral_zeta ===
+Sensitivity: unweighted Tr|D|^{-s} on the same Dirac eigenvalues.
+  line minima of S_I: n=68; median dist zeros=0.8149384122608083, midpoints=0.7979026399188456, random=0.7439587975040354
+  2D stationary pts: n=87, median σ=0.41910281777931013
+  plots: ['/workspace/sam3-work/identification_results/B_plain_spectral_zeta_S_on_critical_line.png', '/workspace/sam3-work/identification_results/B_plain_spectral_zeta_S_strip.png']
+
+=== Construction C_overlap_dirichlet ===
+12-bridge overlaps as a Dirichlet series C_ij (1+d_ij)^{-s}, Dual-Zero / Reg₂ summed.
+  line minima of S_I: n=22; median dist zeros=2.5797266038456996, midpoints=2.596177288787885, random=2.10815627370906
+  2D stationary pts: n=0, median σ=None
+  plots: ['/workspace/sam3-work/identification_results/C_overlap_dirichlet_S_on_critical_line.png', '/workspace/sam3-work/identification_results/C_overlap_dirichlet_S_strip.png']
+
+=== Construction D_overlap_laplace ===
+Laplace–Fourier transform of the overlap matrix, Ĉ(s)=Σ C_ij exp(-s(θ_i-θ_j)).
+  line minima of S_I: n=178; median dist zeros=0.22892258350185557, midpoints=0.28812608533743855, random=0.2864091877846704
+  2D stationary pts: n=133, median σ=0.4118442374916611
+  plots: ['/workspace/sam3-work/identification_results/D_overlap_laplace_S_on_critical_line.png', '/workspace/sam3-work/identification_results/D_overlap_laplace_S_strip.png']
+
+=== Shuffled / fake-spectrum controls on construction A and B ===
+
+=== Construction A_shuffled_mode_order ===
+Control: construction A after randomly permuting the |λ_n| list (Dual-Zero still uses n).
+  line minima of S_I: n=15; median dist zeros=3.3297266038456996, midpoints=3.011857118327754, random=4.052167076219206
+  2D stationary pts: n=0, median σ=None
+  plots: ['/workspace/sam3-work/identification_results/A_shuffled_mode_order_S_on_critical_line.png', '/workspace/sam3-work/identification_results/A_shuffled_mode_order_S_strip.png']
+
+=== Construction B_fake_loguniform_spectrum ===
+Control: construction B on a fake log-uniform spectrum with the same count and range.
+  line minima of S_I: n=82; median dist zeros=0.5986559594801122, midpoints=0.599494760903525, random=0.5744380138100382
+  2D stationary pts: n=81, median σ=0.34518855131602105
+  plots: ['/workspace/sam3-work/identification_results/B_fake_loguniform_spectrum_S_on_critical_line.png', '/workspace/sam3-work/identification_results/B_fake_loguniform_spectrum_S_strip.png']
+
+=== Construction C_permuted_bridges ===
+Control: construction C after a joint permutation of bridge labels.
+  line minima of S_I: n=22; median dist zeros=2.5797266038456996, midpoints=2.596177288787885, random=2.10815627370906
+  2D stationary pts: n=0, median σ=None
+  plots: ['/workspace/sam3-work/identification_results/C_permuted_bridges_S_on_critical_line.png', '/workspace/sam3-work/identification_results/C_permuted_bridges_S_strip.png']
+
+Wrote /workspace/sam3-work/identification_results/identification_test.json
+
+===== COMPACT MATCH TABLE (median distance of each zero to nearest feature) =====
+construction                     feat                      n    d_zeros     d_mids     d_rand
+A_dualzero_spectral_zeta         line_minima_of_S          1     57.053     56.398     74.346
+A_dualzero_spectral_zeta         twoD_combined_t           0     n/a     n/a     n/a
+B_plain_spectral_zeta            line_minima_of_S         68      0.815      0.798      0.744
+B_plain_spectral_zeta            twoD_combined_t          93      0.626      0.809      0.518
+C_overlap_dirichlet              line_minima_of_S         22      2.580      2.596      2.108
+C_overlap_dirichlet              twoD_combined_t           0     n/a     n/a     n/a
+D_overlap_laplace                line_minima_of_S        178      0.229      0.288      0.286
+D_overlap_laplace                twoD_combined_t         216      0.251      0.307      0.283
+A_shuffled_mode_order            line_minima_of_S         15      3.330      3.012      4.052
+A_shuffled_mode_order            twoD_combined_t           0     n/a     n/a     n/a
+B_fake_loguniform_spectrum       line_minima_of_S         82      0.599      0.599      0.574
+B_fake_loguniform_spectrum       twoD_combined_t          88      0.783      0.831      0.843
+C_permuted_bridges               line_minima_of_S         22      2.580      2.596      2.108
+C_permuted_bridges               twoD_combined_t           0     n/a     n/a     n/a
