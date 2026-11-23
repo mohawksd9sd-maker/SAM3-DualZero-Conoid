@@ -1,6 +1,6 @@
 # SAM3 Hardening Layer — Index
 
-**August 2026; docs 42–45 added 23 November 2026**  
+**August 2026; docs 42–46 added 23 November 2026**  
 **SSOT:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 | Doc | Content |
@@ -22,5 +22,6 @@
 | **43** | **APS index attempt, $C_0=2\pi\ln 2$, $\omega_0$ search, $G_N$ schemes** |
 | **44** | **Exact $E_0(m)$, truncated-conoid APS index $=0$, unification attempts (all failed)** |
 | **45** | **Almost-commutative product with the CCM finite triple $F$; 2D vs 4D; one-loop running** |
+| **46** | **Singular tip $u\to 0$: geodesic boundary of length $8\ell_0$ with four nodes; no index 3** |
 
 Rule: derivation only, no experimental tuning, no overclaim.

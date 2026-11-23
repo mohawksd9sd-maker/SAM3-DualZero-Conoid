@@ -1,0 +1,102 @@
+{
+  "tip_length_unit": 8.0,
+  "complete_curvature": -6.283185307179586,
+  "int_abs_K_complete": 6.283185307179586,
+  "K_nonpositive": true,
+  "old_K_max_claim": {
+    "claimed": 0.25,
+    "actual_at_u=ell0/2": 1.0,
+    "ratio": 4.0
+  },
+  "max_abs_K_at_u=0.5": {
+    "exact": 1.0,
+    "numerical": 0.999999861111495
+  },
+  "inner_I_to_zero": {
+    "I(1e-6)": 3.178981530265519e-05,
+    "I(1e-8)": 4.1000244571264404e-07
+  },
+  "local_L1_mass_R=0.05": {
+    "analytic_half_disk": 0.019634954084936207,
+    "numerical_box_0.05": 0.05238347408127817
+  },
+  "area_u_le_0.01": 0.08000250503814606,
+  "area_over_a_at_0.01": 8.000250503814605,
+  "aps_along_cuts": {
+    "rows": [
+      {
+        "a": 0.0001,
+        "h": 0.0,
+        "eta_bar": 0.0
+      },
+      {
+        "a": 0.01,
+        "h": 0.0,
+        "eta_bar": 0.0
+      },
+      {
+        "a": 0.1,
+        "h": 0.0,
+        "eta_bar": 0.0
+      },
+      {
+        "a": 0.5,
+        "h": 0.0,
+        "eta_bar": 0.0
+      },
+      {
+        "a": 1.0,
+        "h": 0.0,
+        "eta_bar": 0.0
+      },
+      {
+        "a": 5.0,
+        "h": 0.0,
+        "eta_bar": 0.0
+      }
+    ],
+    "all_h_zero": true,
+    "index_of_each_truncation": 0
+  },
+  "metric_circle_ratios": [
+    {
+      "eps": 0.06,
+      "L": 0.1855365889743312,
+      "L_over_eps": 3.09227648290552,
+      "nseg": 426.0,
+      "pi": 3.141592653589793,
+      "two_pi": 6.283185307179586
+    },
+    {
+      "eps": 0.04,
+      "L": 0.12229817256251325,
+      "L_over_eps": 3.057454314062831,
+      "nseg": 324.0,
+      "pi": 3.141592653589793,
+      "two_pi": 6.283185307179586
+    },
+    {
+      "eps": 0.03,
+      "L": 0.09098518984980898,
+      "L_over_eps": 3.0328396616602995,
+      "nseg": 266.0,
+      "pi": 3.141592653589793,
+      "two_pi": 6.283185307179586
+    },
+    {
+      "eps": 0.02,
+      "L": 0.05988019843118106,
+      "L_over_eps": 2.9940099215590528,
+      "nseg": 204.0,
+      "pi": 3.141592653589793,
+      "two_pi": 6.283185307179586
+    }
+  ],
+  "verdicts": {
+    "singularity_type": "geodesic boundary circle of length 8\u21130 with four C^\u221e metric-degeneracy points; not a cone, not an incomplete edge",
+    "K_max_claim": "the global bound |K|\u22641/(4\u21130\u00b2) is false; |K| is unbounded and L\u00b9",
+    "Dirac_ESA": "failed (manifold with boundary at finite distance); APS/Friedrichs needed",
+    "index_3_from_the_tip": "failed as a derivation: every positive-cut APS index is 0, there is no spectral flow, and no Cheeger cone correction applies; an extension with index 3 would be put in by hand",
+    "conical_heat_kernel_term": "not applicable; regular-tip k_g=0; no invented node coefficients"
+  }
+}
