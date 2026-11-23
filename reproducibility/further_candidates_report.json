@@ -1,0 +1,1037 @@
+{
+  "coincidences": {
+    "exact_hits_on_integer_3": [],
+    "hits": [
+      {
+        "abs_error": 0.0013675750166167733,
+        "expression": "(pi/n_nodes)^(4/13)",
+        "kind": "ratio_to_4_13",
+        "rel_error": 0.0014752697050882128,
+        "tag": "rel_hit_0.5pct",
+        "target": "omega0_quoted",
+        "target_value": 0.927,
+        "value": 0.9283675750166168
+      },
+      {
+        "abs_error": 0.0013675750166167733,
+        "expression": "(pi/C4_order)^(4/13)",
+        "kind": "ratio_to_4_13",
+        "rel_error": 0.0014752697050882128,
+        "tag": "rel_hit_0.5pct",
+        "target": "omega0_quoted",
+        "target_value": 0.927,
+        "value": 0.9283675750166168
+      },
+      {
+        "abs_error": 0.001918185954127516,
+        "expression": "(F_rho/abs_eta_i)^(4/13)",
+        "kind": "ratio_to_4_13",
+        "rel_error": 0.0020692405114644185,
+        "tag": "rel_hit_0.5pct",
+        "target": "omega0_quoted",
+        "target_value": 0.927,
+        "value": 0.9250818140458725
+      },
+      {
+        "abs_error": 0.0006984696554938608,
+        "expression": "one_over_2e/F_rho",
+        "kind": "ratio",
+        "rel_error": 0.0022700263803550474,
+        "tag": "rel_hit_0.5pct",
+        "target": "four_thirteenths",
+        "target_value": 0.3076923076923077,
+        "value": 0.30839077734780157
+      }
+    ],
+    "look_elsewhere": "347 predeclared combinations were compared to 3 targets (1041 tests).  A hit at the 0.5% level is a coincidence until it has a derivation; the three-digit target 0.927 is particularly loose.",
+    "n_combinations": 347,
+    "n_comparisons": 1041,
+    "n_hits": 4,
+    "n_near_misses_2pct": 7,
+    "n_sources": 15,
+    "near_misses_2pct": [
+      {
+        "abs_error": 0.05696447062846133,
+        "expression": "tip_over_ell0/e",
+        "kind": "ratio",
+        "rel_error": 0.018988156876153777,
+        "tag": "near_2pct",
+        "target": "three",
+        "target_value": 3.0,
+        "value": 2.9430355293715387
+      },
+      {
+        "abs_error": 0.00855181147342976,
+        "expression": "n_nodes/C0",
+        "kind": "ratio",
+        "rel_error": 0.009225255095393485,
+        "tag": "near_2pct",
+        "target": "omega0_quoted",
+        "target_value": 0.927,
+        "value": 0.9184481885265703
+      },
+      {
+        "abs_error": 0.00855181147342976,
+        "expression": "C4_order/C0",
+        "kind": "ratio",
+        "rel_error": 0.009225255095393485,
+        "tag": "near_2pct",
+        "target": "omega0_quoted",
+        "target_value": 0.927,
+        "value": 0.9184481885265703
+      },
+      {
+        "abs_error": 0.005392413653271422,
+        "expression": "D_bridge_recorded/sqrt3",
+        "kind": "ratio",
+        "rel_error": 0.01752534437313212,
+        "tag": "near_2pct",
+        "target": "four_thirteenths",
+        "target_value": 0.3076923076923077,
+        "value": 0.3022998940390363
+      },
+      {
+        "abs_error": 0.004926064016236076,
+        "expression": "(F_i/abs_eta_i)^(4/13)",
+        "kind": "ratio_to_4_13",
+        "rel_error": 0.005313984915033523,
+        "tag": "near_2pct",
+        "target": "omega0_quoted",
+        "target_value": 0.927,
+        "value": 0.922073935983764
+      },
+      {
+        "abs_error": 0.003979968494835173,
+        "expression": "one_over_2e/F_i",
+        "kind": "ratio",
+        "rel_error": 0.012934897608214313,
+        "tag": "near_2pct",
+        "target": "four_thirteenths",
+        "target_value": 0.3076923076923077,
+        "value": 0.3116722761871429
+      },
+      {
+        "abs_error": 0.012526506231260393,
+        "expression": "(sqrt2/sqrt3)^(4/13)",
+        "kind": "ratio_to_4_13",
+        "rel_error": 0.013512951705782516,
+        "tag": "near_2pct",
+        "target": "omega0_quoted",
+        "target_value": 0.927,
+        "value": 0.9395265062312604
+      }
+    ],
+    "sources": {
+      "C0": 4.355172180607204,
+      "C4_order": 4.0,
+      "D_bridge_recorded": 0.5235987755982988,
+      "F_i": 0.590170299508048,
+      "F_rho": 0.5964501343640212,
+      "abs_eta_i": 0.7682254223260566,
+      "e": 2.718281828459045,
+      "int_K": -6.283185307179586,
+      "ln2": 0.6931471805599453,
+      "n_nodes": 4.0,
+      "one_over_2e": 0.18393972058572117,
+      "pi": 3.141592653589793,
+      "sqrt2": 1.4142135623730951,
+      "sqrt3": 1.7320508075688772,
+      "tip_over_ell0": 8.0
+    },
+    "verdict": "Any numerical proximity of a predeclared combination to the quoted \u03c90\u22480.927, to 4/13, or to 3 is a coincidence until it is derived.  The search size is reported.  No such proximity is promoted to a derivation here."
+  },
+  "euler_orbifolds": {
+    "Tian_Yau": {
+      "chi": -6,
+      "generations": 3,
+      "is_a_SAM3_derivation": false,
+      "source": "literature (free Z3 quotient of a CICY with chi=-18)",
+      "uses_C4_or_the_conoid": false
+    },
+    "c4_compatible_examples": [
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SU(4)^2",
+        "name": "Z4"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SU(2) x SU(4) x SO(5)",
+        "name": "Z4"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SU(2)^2 x SO(5)^2",
+        "name": "Z4"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "(SU(4) x SU(4))",
+        "name": "Z8-I"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SO(5) x SO(9)",
+        "name": "Z8-I"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SU(2) x SO(10)",
+        "name": "Z8-II"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SO(4) x SO(9)",
+        "name": "Z8-II"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "E6",
+        "name": "Z12-I"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SU(3) x F4",
+        "name": "Z12-I"
+      },
+      {
+        "chi": 48,
+        "generations": 24,
+        "lattice": "SO(4) x F4",
+        "name": "Z12-II"
+      },
+      {
+        "chi": 120,
+        "generations": 60,
+        "lattice": "SU(2)^2 x SO(5)^2",
+        "name": "Z2xZ4"
+      },
+      {
+        "chi": 180,
+        "generations": 90,
+        "lattice": "SO(5)^3",
+        "name": "Z4xZ4"
+      }
+    ],
+    "dhvw_Z2xZ2": {
+      "chi": 96.0,
+      "generations_chi_over_2": 48.0,
+      "group": "Z2xZ2",
+      "matches_classical_96": true,
+      "sum_of_pair_contributions": 384
+    },
+    "dhvw_Z3": {
+      "chi": 72.0,
+      "fixed_points_of_nonidentity": 27,
+      "generations_chi_over_2": 36.0,
+      "group": "Z3",
+      "matches_Dixon_et_al_72": true,
+      "sum_of_pair_contributions": 216
+    },
+    "magnetized_T2xT2xT2_index_equals_3": {
+      "forced_by_geometry": false,
+      "formula": "M1 M2 M3",
+      "note": "The only solutions are permutations of (1,1,3); the 3 is an input.",
+      "positive_solutions_up_to_order_M_le_10": [
+        [
+          1,
+          1,
+          3
+        ]
+      ]
+    },
+    "standard_abelian_census": {
+      "any_with_exactly_3_generations": false,
+      "c4_compatible_generation_values": [
+        24,
+        60,
+        90
+      ],
+      "generation_values_present": [
+        24,
+        36,
+        48,
+        60,
+        72,
+        84,
+        90
+      ],
+      "n_orbifolds_in_table": 26,
+      "smallest_generation_count": 24
+    },
+    "verdict": "No standard abelian T^6 orbifold in the Reffert/LRSS table has |chi|/2 = 3 (the smallest value in the table is 24).  The C4-compatible Z4, Z8, Z12 and Z2xZ4, Z4xZ4 entries all give 24, 60 or 90, not 3.  Direct DHVW sums give chi=72 for T^6/Z3 (36 generations) and chi=96 for T^6/(Z2xZ2) (48 generations).  The Tian\u2013Yau manifold does have three generations, but it is a different construction (a free Z3 quotient) and is not forced by the conoid or its C4.  A magnetized T^2\u00d7T^2\u00d7T^2 index equals 3 only if one flux is already 3."
+  },
+  "exploratory": true,
+  "locked_core_untouched": true,
+  "spectral_action_moduli": {
+    "coefficients_are_inputs": true,
+    "coefficients_used_for_illustration": {
+      "Lambda": 1.0,
+      "f0": 1.0,
+      "f2": 1.0,
+      "f4": 1.0,
+      "f_bdry": 1.0
+    },
+    "finite_part_linear_A_coefficient_at_M_0": -0.21119843375196723,
+    "finite_part_stationary_A_at_fixed_M": {
+      "0": null,
+      "1": null,
+      "2": null,
+      "3": null,
+      "4": null
+    },
+    "flat_direction_in_A_at_M_0": false,
+    "partial_S_partial_M_vanishes_only_at_M_0": true,
+    "tau_enters_these_terms": false,
+    "truncated_b_100_stationary_A_at_fixed_M": {
+      "0": null,
+      "1": 6.221732208579135,
+      "2": 12.44346441715827,
+      "3": 18.665196625737405,
+      "4": 24.88692883431654
+    },
+    "verdict": "The flux derivative of the spectral action (truncated or finite-part) vanishes only at M=0, for any positive area, as long as the Yang-Mills coefficient is not tuned to zero.  There is no interior extremum that selects M=3.  At fixed M\u22600 a stationary area can exist, but it is proportional to |M| and depends on the underived Wilson coefficients and on \u039b; it is not a unique geometric output.  At M=0 the action is linear in A, so A is either driven to a boundary or is a flat direction if the linear coefficient is tuned to zero.  \u03c4 does not enter.  The tip contributes a boundary term proportional to 8\u2113_0 A, which shifts the linear coefficient in A but does not create a preferred integer flux.  The four nodes are not assigned an invented Seeley contribution."
+  },
+  "tadpoles": {
+    "equations": "Marchesano-Shiu hep-th/0409132, display (14)",
+    "filler_plus_one_magnetized": {
+      "I_values": [],
+      "abs_I_values": [],
+      "all_abs_I_even": null,
+      "any_abs_I_equals_3": false,
+      "n_solutions": 0,
+      "samples": []
+    },
+    "one_stack": {
+      "n_solutions": 0,
+      "solutions": []
+    },
+    "three_is_allowed_in_this_search": false,
+    "three_is_forced_in_this_search": false,
+    "truncated_search": true,
+    "two_stacks_wrap_le_1": {
+      "I_12_values": [
+        0
+      ],
+      "abs_I_12_values": [
+        0
+      ],
+      "all_abs_I_even": true,
+      "any_abs_I_equals_1": false,
+      "any_abs_I_equals_3": false,
+      "n_solutions": 384,
+      "samples": [
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              -1,
+              1,
+              -1,
+              -1,
+              -1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              -1,
+              -1,
+              1,
+              1,
+              -1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              -1,
+              1,
+              -1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              1,
+              -1,
+              -1,
+              -1,
+              -1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              1,
+              1,
+              1,
+              -1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              1,
+              -1,
+              -1,
+              1,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              0,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              16,
+              1,
+              1,
+              1,
+              1,
+              -1,
+              0
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              -1,
+              0,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              -1,
+              0,
+              1,
+              -1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              -1,
+              0,
+              1,
+              1,
+              -1,
+              -1
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              -1,
+              0,
+              -1,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              1,
+              0,
+              -1,
+              -1,
+              -1,
+              1
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              1,
+              0,
+              1,
+              -1,
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              1,
+              0,
+              1,
+              1,
+              -1,
+              1
+            ]
+          ]
+        },
+        {
+          "I_12": 0,
+          "stacks": [
+            [
+              16,
+              -1,
+              -1,
+              1,
+              -1,
+              0,
+              -1
+            ],
+            [
+              16,
+              1,
+              0,
+              -1,
+              1,
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "wrap_max": 1
+    },
+    "verdict": "The four tadpole equations are a strong filter, but they come from Type I string theory, not from the conoid.  In the small-integer search, a single stack does not solve them.  Whether two-stack or filler-plus-one solutions exist, and whether |I|=3 occurs among them, is reported in the JSON; 3 is not a unique output of the equations.  The bare Dirac index M1 M2 M3 equals 3 only when a factor 3 is already chosen."
+  },
+  "verdict_headline": "No accidental fit: nothing tested here derives three generations, or a unique flux M=3, or a unique area, without a parameter or a construction being chosen to that end.  Standard abelian T^6 orbifolds in the Reffert table never have |chi|/2=3 (the smallest value is 24; C4-compatible ones give 24, 60 or 90).  Magnetized T^2/Z_N counts give a 3-dimensional invariant sector only after choosing a flux in a range.  Tadpole equations do not force 3.  The product spectral action, including the tip, has no interior extremum at M=3.  Numerical proximities to the quoted \u03c90 or to 4/13 are coincidences, with a look-elsewhere count.",
+  "zn_orbifolds": {
+    "minimal_positive_flux_does_not_give_3": true,
+    "summary": {
+      "Z2": {
+        "C4_compatible": true,
+        "computed": true,
+        "first_M_with_a_3-dimensional_sector": 4,
+        "first_M_with_invariant_3": 4,
+        "invariant_3_for_M": [
+          4,
+          5
+        ],
+        "invariant_at_M_1": 1,
+        "tau": "any (z -> -z)"
+      },
+      "Z3": {
+        "C4_compatible": false,
+        "computed": false,
+        "first_even_M_with_a_3-dimensional_sector": 6,
+        "first_even_M_with_invariant_3": 6,
+        "invariant_3_for_even_M": [
+          6,
+          8,
+          10
+        ],
+        "invariant_at_M_2": 1,
+        "source": "Kobayashi-Nagamoto Table 5 and eq. (89), even M",
+        "tau": "exp(2 pi i / 3)  (not C4 compatible)"
+      },
+      "Z4": {
+        "C4_compatible": true,
+        "computed": true,
+        "first_M_with_a_3-dimensional_sector": 8,
+        "first_M_with_invariant_3": 8,
+        "invariant_3_for_M": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "invariant_at_M_1": 1,
+        "tau": "i  (C4 compatible)"
+      },
+      "Z6": {
+        "C4_compatible": false,
+        "computed": false,
+        "first_even_M_with_invariant_3": 12,
+        "invariant_3_for_even_M": [
+          12,
+          14,
+          16
+        ],
+        "invariant_at_M_2": 1,
+        "source": "Kobayashi-Nagamoto Table VII",
+        "tau": "exp(2 pi i / 3)  (not C4 compatible)"
+      }
+    },
+    "verdict": "At the smallest positive flux, no Z_N in {2,3,4,6} has a 3-dimensional sector (Z2 and Z4 at M=1 have a single invariant mode).  A 3-dimensional invariant sector first appears at M=4 (Z2), M=6 (Z3, even), M=8 (Z4), and M=12 (Z6).  Those are ranges, not a unique M, and they are selected by asking for 3.  C4 compatibility picks Z2 or Z4, and still does not uniquely select 3.  Z3 and Z6 require the hexagonal modulus, in conflict with C4.",
+    "z2_mismatches_with_Table_1": [],
+    "z2_sample": {
+      "1": {
+        "+1": 1,
+        "-1": 0
+      },
+      "10": {
+        "+1": 6,
+        "-1": 4
+      },
+      "11": {
+        "+1": 6,
+        "-1": 5
+      },
+      "12": {
+        "+1": 7,
+        "-1": 5
+      },
+      "13": {
+        "+1": 7,
+        "-1": 6
+      },
+      "14": {
+        "+1": 8,
+        "-1": 6
+      },
+      "15": {
+        "+1": 8,
+        "-1": 7
+      },
+      "16": {
+        "+1": 9,
+        "-1": 7
+      },
+      "2": {
+        "+1": 2,
+        "-1": 0
+      },
+      "3": {
+        "+1": 2,
+        "-1": 1
+      },
+      "4": {
+        "+1": 3,
+        "-1": 1
+      },
+      "5": {
+        "+1": 3,
+        "-1": 2
+      },
+      "6": {
+        "+1": 4,
+        "-1": 2
+      },
+      "7": {
+        "+1": 4,
+        "-1": 3
+      },
+      "8": {
+        "+1": 5,
+        "-1": 3
+      },
+      "9": {
+        "+1": 5,
+        "-1": 4
+      }
+    },
+    "z3_sample_even": {
+      "10": {
+        "+1": 3,
+        "omega": 4,
+        "omega_bar": 3
+      },
+      "12": {
+        "+1": 5,
+        "omega": 4,
+        "omega_bar": 3
+      },
+      "14": {
+        "+1": 5,
+        "omega": 4,
+        "omega_bar": 5
+      },
+      "16": {
+        "+1": 5,
+        "omega": 6,
+        "omega_bar": 5
+      },
+      "18": {
+        "+1": 7,
+        "omega": 6,
+        "omega_bar": 5
+      },
+      "2": {
+        "+1": 1,
+        "omega": 0,
+        "omega_bar": 1
+      },
+      "4": {
+        "+1": 1,
+        "omega": 2,
+        "omega_bar": 1
+      },
+      "6": {
+        "+1": 3,
+        "omega": 2,
+        "omega_bar": 1
+      },
+      "8": {
+        "+1": 3,
+        "omega": 2,
+        "omega_bar": 3
+      }
+    },
+    "z4_sample": {
+      "1": {
+        "+1": 1,
+        "+i": 0,
+        "-1": 0,
+        "-i": 0
+      },
+      "11": {
+        "+1": 3,
+        "+i": 3,
+        "-1": 3,
+        "-i": 2
+      },
+      "12": {
+        "+1": 4,
+        "+i": 3,
+        "-1": 3,
+        "-i": 2
+      },
+      "3": {
+        "+1": 1,
+        "+i": 1,
+        "-1": 1,
+        "-i": 0
+      },
+      "4": {
+        "+1": 2,
+        "+i": 1,
+        "-1": 1,
+        "-i": 0
+      },
+      "8": {
+        "+1": 3,
+        "+i": 2,
+        "-1": 2,
+        "-i": 1
+      },
+      "9": {
+        "+1": 3,
+        "+i": 2,
+        "-1": 2,
+        "-i": 2
+      }
+    },
+    "z6_formula_sum_failures": [],
+    "z6_formula_sums_to_M": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24
+    ],
+    "z6_sample_even": {
+      "10": {
+        "+1": 2,
+        "-1": 1,
+        "e^{2 i pi/3}": 2,
+        "e^{4 i pi/3}": 2,
+        "e^{5 i pi/3}": 1,
+        "e^{i pi/3}": 2
+      },
+      "12": {
+        "+1": 3,
+        "-1": 2,
+        "e^{2 i pi/3}": 2,
+        "e^{4 i pi/3}": 2,
+        "e^{5 i pi/3}": 1,
+        "e^{i pi/3}": 2
+      },
+      "14": {
+        "+1": 3,
+        "-1": 2,
+        "e^{2 i pi/3}": 3,
+        "e^{4 i pi/3}": 2,
+        "e^{5 i pi/3}": 2,
+        "e^{i pi/3}": 2
+      },
+      "16": {
+        "+1": 3,
+        "-1": 2,
+        "e^{2 i pi/3}": 3,
+        "e^{4 i pi/3}": 3,
+        "e^{5 i pi/3}": 2,
+        "e^{i pi/3}": 3
+      },
+      "18": {
+        "+1": 4,
+        "-1": 3,
+        "e^{2 i pi/3}": 3,
+        "e^{4 i pi/3}": 3,
+        "e^{5 i pi/3}": 2,
+        "e^{i pi/3}": 3
+      },
+      "2": {
+        "+1": 1,
+        "-1": 0,
+        "e^{2 i pi/3}": 1,
+        "e^{4 i pi/3}": 0,
+        "e^{5 i pi/3}": 0,
+        "e^{i pi/3}": 0
+      },
+      "20": {
+        "+1": 4,
+        "-1": 3,
+        "e^{2 i pi/3}": 4,
+        "e^{4 i pi/3}": 3,
+        "e^{5 i pi/3}": 3,
+        "e^{i pi/3}": 3
+      },
+      "22": {
+        "+1": 4,
+        "-1": 3,
+        "e^{2 i pi/3}": 4,
+        "e^{4 i pi/3}": 4,
+        "e^{5 i pi/3}": 3,
+        "e^{i pi/3}": 4
+      },
+      "24": {
+        "+1": 5,
+        "-1": 4,
+        "e^{2 i pi/3}": 4,
+        "e^{4 i pi/3}": 4,
+        "e^{5 i pi/3}": 3,
+        "e^{i pi/3}": 4
+      },
+      "4": {
+        "+1": 1,
+        "-1": 0,
+        "e^{2 i pi/3}": 1,
+        "e^{4 i pi/3}": 1,
+        "e^{5 i pi/3}": 0,
+        "e^{i pi/3}": 1
+      },
+      "6": {
+        "+1": 2,
+        "-1": 1,
+        "e^{2 i pi/3}": 1,
+        "e^{4 i pi/3}": 1,
+        "e^{5 i pi/3}": 0,
+        "e^{i pi/3}": 1
+      },
+      "8": {
+        "+1": 2,
+        "-1": 1,
+        "e^{2 i pi/3}": 2,
+        "e^{4 i pi/3}": 1,
+        "e^{5 i pi/3}": 1,
+        "e^{i pi/3}": 1
+      }
+    }
+  }
+}

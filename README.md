@@ -58,6 +58,8 @@ A follow-up, also exploratory, develops the product conoid × magnetized surface
 
 A broader survey of candidate principles (index theory, modular invariance, regularized determinants, orbifold zero modes, NCG classification, and others), with four computations, is in [`docs/hardening/49_Missing_Principle_Survey.md`](docs/hardening/49_Missing_Principle_Survey.md) and `experiments/missing_principle/`.  Nothing tested there derives a unique flux \(M=3\) or a unique area.  Two conflicting mechanisms can fix \(\tau\): maximizing \(\det'\Delta\) selects the hexagonal torus; \(C_4\) compatibility selects the square torus.
 
+A further round of candidate tests (standard \(T^6\) orbifolds, tadpoles, \(T^2/\mathbb{Z}_N\) for \(N=2,3,4,6\), the product spectral action including the tip, and a declared coincidence scan) is in [`docs/hardening/50_Further_Candidate_Tests.md`](docs/hardening/50_Further_Candidate_Tests.md) and `experiments/further_candidates/`.  No accidental fit was found.  The bottom line is unchanged.
+
 The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
 
 ---
@@ -88,6 +90,7 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 | Alternative geometries (exploratory) | `docs/hardening/47_...` |
 | Pati–Salam product (exploratory) | `docs/hardening/48_...` |
 | Missing-principle survey (exploratory) | `docs/hardening/49_...` |
+| Further candidate tests (exploratory) | `docs/hardening/50_...` |
 | Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
 

@@ -62,4 +62,4 @@ The locked conoid is in good mathematical order, as far as the theorems above go
 
 Until that principle is found and derived — not fitted, and not imposed by counting 4 nodes or 12 bridges — three generations, the Yukawa texture, and a unique 4D product model remain choices rather than outputs of the geometry.
 
-Exploratory code for the product and the failed searches lives in `experiments/` and is documented in docs 47–48.  A broader survey of candidate principles, with computations, is in [`docs/hardening/49_Missing_Principle_Survey.md`](docs/hardening/49_Missing_Principle_Survey.md).  It is not part of the locked core.
+Exploratory code for the product and the failed searches lives in `experiments/` and is documented in docs 47–48.  A broader survey of candidate principles, with computations, is in [`docs/hardening/49_Missing_Principle_Survey.md`](docs/hardening/49_Missing_Principle_Survey.md).  A further round of tests, still with no accidental fit, is in [`docs/hardening/50_Further_Candidate_Tests.md`](docs/hardening/50_Further_Candidate_Tests.md).  It is not part of the locked core.
