@@ -59,6 +59,8 @@ Pati–Salam \(\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{SU}(4)\) and 
 
 **Update (doc 56, 23 Nov 2026).** Reproduced numerically: with a \(\nu_R\) Majorana entry the first-order condition cuts \(\mathbb H_R\oplus\mathbb H_L\oplus M_4(\mathbb C)\) to the maximal subalgebra \(\mathbb C\oplus\mathbb H\oplus M_3(\mathbb C)\); dropping it keeps PS.  The axioms (KO-6, grading, irreducibility, order zero/one) are assumed.  An isospectral counterexample proves no purely spectral regulator (Dual-Zero included) can select them.  Status: derived *from assumed axioms*; not from Dual-Zero or the conoid.
 
+**Update (doc 59).** Best lead: Chamseddine–Connes–Mukhanov quanta of geometry give \(M_2(\mathbb H)\oplus M_4(\mathbb C)\) from Clifford algebras \(Cl(5,0)\), \(Cl(0,5)\) (verified); the grading commutant is the PS algebra.  Replaces two axioms by one new one.  A Dual-Zero link would need a new operator-level axiom (proposal only).
+
 **Tried in docs 44–54.**  
 Doc 45 uses the CCM finite triple with \(N=3\) and the fermion multiplicity as inputs.  Docs 47–48 develop the Pati–Salam product as the more flexible option in the cited literature.  Doc 49 surveys NCG classification and does not uniquely force PS, CCM, \(\mathrm{SO}(10)\), or \(\mathrm{SU}(5)\).  Doc 51 finds that the SAM-2 \(E_8\) descent is not a derivation.  Doc 54 does not change the verdict: the group remains a choice of \(F\).
 
@@ -121,6 +123,8 @@ The spectral action produces Higgs-like scalars and a potential, in the standard
 
 **Update (doc 58, 23 Nov 2026).** Spectral boundary values with PS-fixed \(n=(y_\nu/y_t)^2=1\) and the singlet \(\sigma\), run down: \(m_H\approx168\) GeV (151 GeV with the measured top) vs 125.1.  125 GeV needs \(n\approx2\), not allowed with one bidoublet.  \(v\) and \(m_R\) remain \(f_2\Lambda^2\) inputs.  Status: prediction made; it fails in the minimal content.
 
+**Update (doc 59).** σ with own running, Majorana Yukawa and movable threshold: \(m_H=167\)–169 GeV; thresholds: 167–169; gravity \((\Lambda/M_{\rm Pl})^2\sim10^{-7}\).  Only a free \(n=(y_\nu/y_t)^2\) (extra Yukawa content, 1 parameter) reaches 125.1 GeV.
+
 **Tried in docs 44–54.**  
 Doc 45 records the standard CCM relation and that the raw conoid \(\times F\) is the wrong dimension.  Doc 48 treats the Higgs and PS-breaking scalars as part of the product action, without a unique vacuum derived from the geometry.  Yukawa and vacuum-expectation-value scales are absorbed or scanned, not fixed.
 
@@ -136,6 +140,8 @@ A unique \(m_H\) from the product that disagrees with \(125\,\mathrm{GeV}\) beyo
 The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemented.  Masses and CKM / PMNS angles are not outputs.  At \(\tau=i\) and vanishing Wilson lines, many Yukawa entries are structural zeros; turning on Wilson lines fills them (docs 47–48, 54).
 
 **Update (doc 58, 23 Nov 2026).** The spectral relation \(y_t(\Lambda)=g\) (PS, \(n=1\)) predicts \(M_t\approx186\) GeV vs 172.5 (8% high).  Seesaw with \(M_N=m_R\) gives \(m_{\nu_3}\approx0.18\) eV; \(0.05\) eV needs \(M_N\approx3.6\,m_R\) (fitted Majorana coupling).
+
+**Update (doc 59).** With \(n\) fitted to \(m_H\), \(M_t=175.5\)–176.4 GeV (one-loop) / 180 GeV (two-loop top running): the one remaining prediction misses by 2–5%; a full two-loop PS Higgs-sector analysis is the next calculation.  \(0\nu\beta\beta\): nonzero (Majorana); NO 1.5–3.7 meV, IO 18–48 meV.
 
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).

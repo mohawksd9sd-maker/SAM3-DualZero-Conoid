@@ -260,6 +260,9 @@ def pati_salam(scenario: str = "composite", n_gen: int = 3) -> Model:
     ]
     if scenario == "with15":
         fl.append(Field("Sigma", ("1", "1", "adj"), "cscalar"))
+    elif scenario == "with2215":
+        # complex (2,2,15) light down to m_R: lets y_nu differ from y_t (doc 59)
+        fl.append(Field("Sigma2215", ("F", "F", "adj"), "cscalar"))
     elif scenario != "composite":
         raise ValueError(scenario)
     m = Model(f"PS_{scenario}", G, fl)
@@ -296,6 +299,8 @@ def sm_components_of_heavy_fields(scenario: str = "composite") -> List[Tuple[str
         # second doublet of the complex bidoublet
         ("phi: 2nd doublet (1,2,1/2)", S("H2", Fr(1, 2), "F", "1", "cscalar"), "cscalar"),
     ]
+    if scenario == "with2215":
+        scenario = "composite"  # vectors identical; (2,2,15) thresholds not varied (doc 59)
     if scenario == "with15":
         # complex 15 = 8_0 + 3_{2/3} + 3bar_{-2/3} + 1_0, all complex
         out += [
