@@ -42,6 +42,8 @@ Run `python code/core_reproducibility.py` and `pytest -q`.
 - A proof of the Riemann hypothesis (proposal only; identification tests were null)
 - A full Standard Model derivation
 
+Exploratory survey of other surfaces and internal spaces (doc 47, `experiments/alt_geometries/`): **not part of the locked core**.  No alternative examined there derives the integer 3 or unique mass ratios from the conoid.  The cleanest generation *mechanism* in that survey is a chosen flux on a compact surface, in a 4D product with a CCM or Pati–Salam finite triple.
+
 ---
 
 ## Read
@@ -54,3 +56,4 @@ Run `python code/core_reproducibility.py` and `pytest -q`.
 6. `docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md`
 7. `docs/hardening/45_Almost_Commutative_CCM_Product.md`
 8. `docs/hardening/46_Singular_Tip_Analysis.md`
+9. `docs/hardening/47_Alternative_Geometries_Exploratory.md` (exploratory; not core)

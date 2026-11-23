@@ -49,6 +49,8 @@ Key reproduced numbers (unit metric $\ell_0=1$):
 - $G_N=64\pi\ell_0^2/45$ is a **convention lock**, not an independent derivation
 - $\omega_0\approx 0.927$ and the exponent $4/13$ are **not derived**
 
+Exploratory, not core: alternative surfaces and internal spaces are surveyed in [`docs/hardening/47_Alternative_Geometries_Exploratory.md`](docs/hardening/47_Alternative_Geometries_Exploratory.md) and `experiments/alt_geometries/`.  They do not change the locked theorems.  No alternative examined there derives the integer 3 from the conoid.
+
 The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
 
 ---

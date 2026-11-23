@@ -19,6 +19,7 @@ The August 2026 edition of this file listed several phenomenological numbers as 
 | Exact $E_0$, truncated-conoid APS index, unification attempts | [`docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md`](docs/hardening/44_E0_Exact_APS_Index_Unification_Attempts.md) |
 | Almost-commutative product with CCM $F$, 2D vs 4D, one-loop running | [`docs/hardening/45_Almost_Commutative_CCM_Product.md`](docs/hardening/45_Almost_Commutative_CCM_Product.md) |
 | Singular tip $u\to 0$ | [`docs/hardening/46_Singular_Tip_Analysis.md`](docs/hardening/46_Singular_Tip_Analysis.md) |
+| Exploratory alternative surfaces / internal spaces (**not core**) | [`docs/hardening/47_Alternative_Geometries_Exploratory.md`](docs/hardening/47_Alternative_Geometries_Exploratory.md); code in [`experiments/alt_geometries/`](experiments/alt_geometries/) |
 | Papers supersession | [`papers/SUPERSESSION.md`](papers/SUPERSESSION.md) |
 
 ---
@@ -122,3 +123,10 @@ Reproduce: `python code/core_reproducibility.py` (writes `reproducibility/core_r
 ---
 
 *SSOT — November 2026 solidification. No tuning, no overclaim.*
+
+---
+
+## Exploratory alternative geometries (not core)
+
+A survey of other surfaces and internal spaces is in doc 47 and `experiments/alt_geometries/`.  It is **not** part of the locked core and does not change the theorems in the tables above.  Headline: no alternative examined there derives the integer 3, or unique mass ratios, from the locked conoid.  The cleanest *mechanism* for three chiral zero modes is a chosen flux or bundle degree on a compact surface, in a 4D product with a CCM or Pati–Salam finite triple.  Pati–Salam is a more flexible internal space in the cited literature and is not a SAM-3 output.  Frequency-$n$ conoids, $C_4$ representation counting, Euler characteristic, the Hopf bundle, and $TS^2$ are dead ends as derivations of 3.
+
