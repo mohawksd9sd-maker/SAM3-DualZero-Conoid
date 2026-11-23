@@ -1,0 +1,325 @@
+{
+  "c4_equivariant_conoid_index": {
+    "action": "v |-> v + k pi/2,  u unchanged,  v ~ v+2 pi",
+    "character_indices": {
+      "+1": 0,
+      "+i": 0,
+      "-1": 0,
+      "-i": 0
+    },
+    "fixed_point_table": {
+      "k=0": true,
+      "k=1": false,
+      "k=2": false,
+      "k=3": false
+    },
+    "generator_acts_as_a_4-cycle_on_nodes": true,
+    "identity_has_fixed_points": true,
+    "nodes_cycled_to": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "nodes_v": [
+      0.7853981633974483,
+      2.356194490192345,
+      3.9269908169872414,
+      5.497787143782138
+    ],
+    "nonidentity_has_fixed_points": false,
+    "ordinary_APS_index_locked": 0,
+    "verdict": "The C4 action is free on the truncated and complete conoid (the four nodes are cycled, not fixed).  Together with the locked ordinary index 0, every character-valued index is 0.  This does not produce three generations."
+  },
+  "exploratory": true,
+  "kronecker_det_flat_torus": {
+    "eta_of_i_abs": 0.7682254223260566,
+    "function": "F(tau) = sqrt(Im tau) |eta(tau)|^2",
+    "grid_maximizer_distance_to_nearest_hexagonal": 0.0,
+    "literature_maximizer": "hexagonal torus, tau = exp(i pi / 3) ~ exp(2 pi i / 3)",
+    "modular_invariance_sample": {
+      "F": 0.5769756955473166,
+      "abs_F_minus_F_S": 1.1102230246251565e-16,
+      "abs_F_minus_F_T": 0.0
+    },
+    "scan": {
+      "F_at_i": 0.590170299508048,
+      "F_at_rho": 0.5964501343640211,
+      "F_at_rho_right": 0.5964501343640211,
+      "F_max_minus_F_rho": 0.0,
+      "F_max_on_grid": 0.5964501343640211,
+      "F_rect_max": 0.590170299508048,
+      "F_rho_minus_F_i": 0.006279834855973054,
+      "grid_n_x": 81,
+      "grid_n_y": 120,
+      "tau_max_im": 0.8660254037844386,
+      "tau_max_re": -0.5,
+      "y_max": 3.0,
+      "y_rect_max": 1.0
+    },
+    "verdict": "Among unit-area flat tori, extremizing det' of the Laplacian selects the hexagonal modulus tau = exp(2 pi i / 3) (up to SL(2,Z)), not a unique area and not the flux.  The square torus tau = i is only a critical point among rectangular tori.  This conflicts with a C4-compatibility requirement, which would instead select tau = i."
+  },
+  "locked_core_untouched": true,
+  "magnetized_dirac_det": {
+    "area_that_would_favour_M_3": 16.30969097075427,
+    "best_integer_at_area_1": 1,
+    "best_integer_at_that_area": 3,
+    "continuous_stationary_M": "A / (2 e)  (a maximum of log det'|D| at fixed A)",
+    "joint_critical_point_of_log_det_alone": false,
+    "log_det_abs_D": "- (M/2) log(2 M / A)",
+    "log_det_scan_area_1": [
+      [
+        1,
+        -0.34657359027997264
+      ],
+      [
+        2,
+        -1.3862943611198906
+      ],
+      [
+        3,
+        -2.6876392038420827
+      ],
+      [
+        4,
+        -4.1588830833596715
+      ],
+      [
+        5,
+        -5.756462732485115
+      ],
+      [
+        6,
+        -7.4547199493640015
+      ],
+      [
+        7,
+        -9.236700653653404
+      ],
+      [
+        8,
+        -11.090354888959125
+      ]
+    ],
+    "log_det_scan_area_for_3": [
+      [
+        1,
+        1.0493061443340548
+      ],
+      [
+        2,
+        1.4054651081081644
+      ],
+      [
+        3,
+        1.5
+      ],
+      [
+        4,
+        1.4246358550964382
+      ],
+      [
+        5,
+        1.2229359405850235
+      ],
+      [
+        6,
+        0.920558458320164
+      ],
+      [
+        7,
+        0.5344574886447874
+      ],
+      [
+        8,
+        0.07668298795309522
+      ]
+    ],
+    "spectrum_depends_on_tau": false,
+    "verdict": "The fluxed Dirac determinant is independent of tau and does not select M=3.  At fixed area, maximizing det'|D| prefers M nearest A/(2e); placing that preference at 3 is a choice of area, not a derivation.  As a function of (M, A) jointly, log det'|D| has no interior critical point.",
+    "zeta_D2_formula": "2 M (4 pi M / A)^{-s} zeta(s)",
+    "zeta_D2_prime_at_0": "M log(2 M / A)"
+  },
+  "verdict_headline": "No mechanism tested here derives the flux M=3 uniquely, or fixes the surface area.  Two genuine (and mutually conflicting) mechanisms can fix the complex structure of a flat torus: maximizing det'\u0394 selects the hexagonal modulus; requiring a C4 isometry compatible with the conoid selects the square modulus.  The Z4 orbifold produces a 3-dimensional invariant sector only after a choice of flux in a range, and the C4-equivariant index of the conoid vanishes in every sector.",
+  "z4_orbifold_zero_modes": {
+    "Scherk_Schwarz": "alpha = (0,0)  (computed); alpha = 1/2 is literature only",
+    "fluxes_with_a_3-dimensional_sector_M_le_24": {
+      "+1": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "+i": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "-1": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "-i": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    "invariant_sector_has_3_for_M": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "literature_alpha_half_note": "Abe et al., Nucl. Phys. B 890 (2015) Table 6, for alpha=(1/2,1/2): the +1 sector has dimension 3 at M=10,11,12,13.  Not recomputed in this repository.",
+    "matrix_checks": [
+      {
+        "M": 1,
+        "fourth_power_error": 0.0,
+        "trC_minus_gauss_sum": 0.0,
+        "unitarity_error": 0.0
+      },
+      {
+        "M": 3,
+        "fourth_power_error": 2.5923595955617883e-15,
+        "trC_minus_gauss_sum": 2.1777293602491023e-17,
+        "unitarity_error": 6.031639977008507e-16
+      },
+      {
+        "M": 4,
+        "fourth_power_error": 1.4633720201004616e-15,
+        "trC_minus_gauss_sum": 0.0,
+        "unitarity_error": 2.541105595495913e-16
+      },
+      {
+        "M": 8,
+        "fourth_power_error": 6.8221337506559595e-15,
+        "trC_minus_gauss_sum": 3.1401849173675503e-16,
+        "unitarity_error": 2.670559279784228e-15
+      },
+      {
+        "M": 9,
+        "fourth_power_error": 1.512909800133811e-14,
+        "trC_minus_gauss_sum": 2.222372683928833e-16,
+        "unitarity_error": 3.099691693858516e-15
+      },
+      {
+        "M": 11,
+        "fourth_power_error": 1.1647924782280467e-14,
+        "trC_minus_gauss_sum": 2.7070456182792187e-17,
+        "unitarity_error": 6.513557582499281e-15
+      },
+      {
+        "M": 12,
+        "fourth_power_error": 2.7120589317228684e-14,
+        "trC_minus_gauss_sum": 2.673771110915334e-15,
+        "unitarity_error": 7.581822794641064e-15
+      }
+    ],
+    "mismatches_with_Kobayashi_Nagamoto_Table_III": [],
+    "sample_counts_alpha0": {
+      "1": {
+        "+1": 1,
+        "+i": 0,
+        "-1": 0,
+        "-i": 0
+      },
+      "10": {
+        "+1": 3,
+        "+i": 2,
+        "-1": 3,
+        "-i": 2
+      },
+      "11": {
+        "+1": 3,
+        "+i": 3,
+        "-1": 3,
+        "-i": 2
+      },
+      "12": {
+        "+1": 4,
+        "+i": 3,
+        "-1": 3,
+        "-i": 2
+      },
+      "13": {
+        "+1": 4,
+        "+i": 3,
+        "-1": 3,
+        "-i": 3
+      },
+      "14": {
+        "+1": 4,
+        "+i": 3,
+        "-1": 4,
+        "-i": 3
+      },
+      "15": {
+        "+1": 4,
+        "+i": 4,
+        "-1": 4,
+        "-i": 3
+      },
+      "16": {
+        "+1": 5,
+        "+i": 4,
+        "-1": 4,
+        "-i": 3
+      },
+      "2": {
+        "+1": 1,
+        "+i": 0,
+        "-1": 1,
+        "-i": 0
+      },
+      "3": {
+        "+1": 1,
+        "+i": 1,
+        "-1": 1,
+        "-i": 0
+      },
+      "4": {
+        "+1": 2,
+        "+i": 1,
+        "-1": 1,
+        "-i": 0
+      },
+      "5": {
+        "+1": 2,
+        "+i": 1,
+        "-1": 1,
+        "-i": 1
+      },
+      "6": {
+        "+1": 2,
+        "+i": 1,
+        "-1": 2,
+        "-i": 1
+      },
+      "7": {
+        "+1": 2,
+        "+i": 2,
+        "-1": 2,
+        "-i": 1
+      },
+      "8": {
+        "+1": 3,
+        "+i": 2,
+        "-1": 2,
+        "-i": 1
+      },
+      "9": {
+        "+1": 3,
+        "+i": 2,
+        "-1": 2,
+        "-i": 2
+      }
+    },
+    "tau": "i  (required for a Z4 rotation of T^2)",
+    "verdict": "The Z4 orbifold redistributes the M torus zero modes into four sectors.  A 3-dimensional invariant sector occurs for a range of fluxes (M=8,9,10,11 at alpha=0), not for a unique M, and not for M=0.  This is a construction of three modes after a choice of M, not a principle that fixes the flux at 3."
+  }
+}

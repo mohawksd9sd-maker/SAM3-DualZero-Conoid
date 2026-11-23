@@ -56,6 +56,8 @@ Exploratory, not core: alternative surfaces and internal spaces are surveyed in 
 
 A follow-up, also exploratory, develops the product conoid × magnetized surface × Pati–Salam in [`docs/hardening/48_PS_Conoid_Product.md`](docs/hardening/48_PS_Conoid_Product.md) and `experiments/ps_conoid_product/`.  The flux and the surface moduli remain unfixed; the integer 3 is still a choice.
 
+A broader survey of candidate principles (index theory, modular invariance, regularized determinants, orbifold zero modes, NCG classification, and others), with four computations, is in [`docs/hardening/49_Missing_Principle_Survey.md`](docs/hardening/49_Missing_Principle_Survey.md) and `experiments/missing_principle/`.  Nothing tested there derives a unique flux \(M=3\) or a unique area.  Two conflicting mechanisms can fix \(\tau\): maximizing \(\det'\Delta\) selects the hexagonal torus; \(C_4\) compatibility selects the square torus.
+
 The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
 
 ---
@@ -83,6 +85,9 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 | Exact $E_0$, APS index $0$, unification attempts | `docs/hardening/44_...` |
 | Almost-commutative product with CCM $F$ | `docs/hardening/45_...` |
 | Singular tip $u\to 0$ | `docs/hardening/46_...` |
+| Alternative geometries (exploratory) | `docs/hardening/47_...` |
+| Pati–Salam product (exploratory) | `docs/hardening/48_...` |
+| Missing-principle survey (exploratory) | `docs/hardening/49_...` |
 | Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
 
