@@ -1,6 +1,6 @@
 # SAM3 Hardening Layer — Index
 
-**August 2026; docs 42–51 added 23 November 2026**  
+**August 2026; docs 42–52 added 23 November 2026**  
 **SSOT:** [`STATUS_CLAIMS_AND_RESIDUALS.md`](../../STATUS_CLAIMS_AND_RESIDUALS.md)
 
 | Doc | Content |
@@ -28,5 +28,6 @@
 | **49** | **Exploratory survey of candidate principles for the flux, moduli, and generation count (not part of the locked core)** |
 | **50** | **Further candidate tests for an accidental fit of the flux, moduli, or generation count (not part of the locked core)** |
 | **51** | **Review of SAM-2, desktop math-model, and May 2026 Dual-Zero lines (exploratory; original sources not in the repo)** |
+| **52** | **Standalone Dual-Zero axiom and a selection test for flux and moduli (exploratory; honest null)** |
 
-Rule: derivation only, no experimental tuning, no overclaim.  Docs 47–51 are labelled exploratory surveys in `experiments/`; they do not lock new core theorems.
+Rule: derivation only, no experimental tuning, no overclaim.  Docs 47–52 are labelled exploratory surveys in `experiments/`; they do not lock new core theorems.

@@ -62,6 +62,8 @@ A further round of candidate tests (standard \(T^6\) orbifolds, tadpoles, \(T^2/
 
 A review of the SAM-2, desktop math-model, and May 14, 2026 Dual-Zero lines is in [`docs/hardening/51_SAM2_Lines_Review.md`](docs/hardening/51_SAM2_Lines_Review.md) and `experiments/sam2_review/`.  Original desktop sources are not in this repository.  The well-posed regulator is the current definition \(\varepsilon(n)=\omega_0(-1)^n n^{-n}\) with the symmetric average \(\operatorname{Reg}_2\); the SAM-2 ultrafilter entity and the May 2I / 12-bridge generation claims do not survive honest checks.  Nothing in that review derives the flux or the moduli, or changes the locked core.
 
+The standalone Dual-Zero axiom, and a no-fitting selection test on magnetized \(T^2\), unfluxed \(T^2\), \(T^2/\mathbb{Z}_4\), a monopole sphere, and the Pati–Salam / CCM product, is in [`docs/hardening/52_DualZero_Axiom_Selection_Test.md`](docs/hardening/52_DualZero_Axiom_Selection_Test.md) and `experiments/dual_zero_axiom/`.  Nothing is selected without tuning.  The missing principle is unchanged.
+
 The older script `code/reproduce_status_locked.py` mostly asserts hardcoded constants against themselves; do not treat it as evidence.
 
 ---
@@ -94,6 +96,7 @@ Canonical definition: [`docs/hardening/18_DualZero_Definition_Lock.md`](docs/har
 | Missing-principle survey (exploratory) | `docs/hardening/49_...` |
 | Further candidate tests (exploratory) | `docs/hardening/50_...` |
 | SAM-2 / May-clone Dual-Zero review (exploratory) | `docs/hardening/51_...` |
+| Dual-Zero axiom selection test (exploratory) | `docs/hardening/52_...` |
 | Dual-Zero (definition) | `docs/hardening/18_...` |
 | Paper supersession | `papers/SUPERSESSION.md` |
 
