@@ -18,7 +18,7 @@
   - **With the extra \((2,2,15)\) field:** top 193.7 GeV, Higgs 187.4 GeV.
 - **Why it got worse.** Two-loop QCD makes the top coupling grow faster on the way down from the high scale, adding about 6–7 GeV to the predicted top mass. The calculation was checked first: it reproduces the textbook Standard Model result (the Higgs self-coupling turns negative near \(10^{10}\) GeV, and at the Planck scale it equals −0.0144 against the published −0.0143). It also reproduces the measured top when fed the measured coupling (172.54 GeV).
 - **The one-parameter fix (b).** Tuning the neutrino/top ratio to give a 125.1 GeV Higgs leaves the top at **179–180 GeV** (183 GeV with \((2,2,15)\)). That is still about **6 standard deviations** too heavy.
-- **Bottom line.** The spectral-action boundary relation for the top coupling, \(y_t(\Lambda)=g\) in Pati–Salam, is ruled out at the unification scale this model produces. It is not a small rounding-level miss. Fixing it needs new structure that changes the top coupling at \(\Lambda\) by about 15%, not better arithmetic.
+- **Bottom line.** The spectral-action boundary relation for the top coupling, \(y_t(\Lambda)=g\) in Pati–Salam, is ruled out at the unification scale this model produces. It is not a small rounding-level miss. Fixing it needs new structure that changes the top coupling at \(\Lambda\) by about 20% (0.43 needed vs 0.53 predicted), not better arithmetic.
 
 ---
 
@@ -88,14 +88,14 @@ With \(n=(y_\nu/y_t)^2\) freed by extra Yukawa content and fitted to \(m_H=125.1
 | composite + \(\sigma\), \(y_N=2g\) | 2.18 | **179.3** |
 | \((2,2,15)\) light + \(\sigma\) | 2.19 | **182.8** |
 
-Error estimate: the same budget (\(\approx1.2\) GeV), plus \(\approx0.3\) GeV from propagating the \(M_h\) error through \(n\) (\(dM_t/dn\approx-9.5\) GeV, \(dM_h/dn\approx-52\) GeV). That gives \(M_t\approx179.3\)–180.2 ± 1.3 GeV, a pull of **+5.4σ to +6.0σ**. The one-loop estimate in doc 59 (175.5–176.4 GeV) was too optimistic: two-loop running adds about 4 GeV.
+Error estimate: the same budget (\(\approx1.2\) GeV), plus \(\approx0.3\) GeV from propagating the \(M_h\) error through \(n\). That gives \(M_t\approx179.3\)–180.2 ± 1.3 GeV, a pull of **+5.4σ to +6.0σ**. The one-loop estimate in doc 59 (175.5–176.4 GeV) was too optimistic: two-loop running adds about 4 GeV.
 
 ## 4. Verdict
 
 1. **The top miss survives and grows.** At two loops with NNLO matching, the zero-parameter spectral PS model predicts \(M_t=190.4\pm1.2\) GeV, 15σ above 172.5. The one-loop number (186 GeV) underestimated the miss. The theory error (0.55 GeV) is small compared with the 18 GeV discrepancy.
 2. **The Higgs miss survives:** \(180.5\pm1.8\) GeV with \(\sigma\), 190.5 GeV without. Even taking the top from data, the quartic boundary gives 151 GeV.
 3. **Extension (b)** (one fitted parameter) fixes \(m_H\) but leaves \(M_t\approx180\) GeV, about 6σ high. Net predictions minus parameters = 1, and that prediction fails.
-4. **What would be needed.** \(y_t(\Lambda)\) must be about 15% below \(g_U\): the data give \(y_t(\Lambda)=0.427\) against \(g_U=0.531\). That needs either a larger \(\operatorname{Tr}Y^\dagger Y\) at \(\Lambda\) from other Yukawas (for example several large Dirac neutrino Yukawas: \(n\gtrsim2.5\) breaks the Higgs, as shown in doc 59), a different boundary scale (not available, since \(\Lambda\) is fixed by unification), or a modified spectral-action normalization of the fermion kinetic terms. Each costs at least one new parameter or principle.
+4. **What would be needed.** \(y_t(\Lambda)\) must be about 20% below \(g_U\): the data give \(y_t(\Lambda)=0.427\) against \(g_U=0.531\). That needs either a larger \(\operatorname{Tr}Y^\dagger Y\) at \(\Lambda\) from other Yukawas (for example several large Dirac neutrino Yukawas: \(n\gtrsim2.5\) breaks the Higgs, as shown in doc 59), a different boundary scale (not available, since \(\Lambda\) is fixed by unification), or a modified spectral-action normalization of the fermion kinetic terms. Each costs at least one new parameter or principle.
 5. **For the roadmap.** Ranked item 2 of doc 59 is done. The top miss is a real failure of the minimal spectral PS boundary conditions at the doc 55 scale, not a numerical artifact.
 
 ## 5. Approximations stated

@@ -145,7 +145,7 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 59).** With \(n\) fitted to \(m_H\), \(M_t=175.5\)–176.4 GeV (one-loop) / 180 GeV (two-loop top running): the one remaining prediction misses by 2–5%; a full two-loop PS Higgs-sector analysis is the next calculation.  \(0\nu\beta\beta\): nonzero (Majorana); NO 1.5–3.7 meV, IO 18–48 meV.
 
-**Update (doc 60).** Two-loop + NNLO matching: zero-parameter \(M_t=190.4\pm1.2\) GeV (+15σ vs 172.5); extension (b) with \(n\) fitted to \(m_H\): \(M_t\approx179\)–180 ± 1.3 GeV (≈6σ).  The top miss is real; \(y_t(\Lambda)\) must be ≈15% below \(g_U\).
+**Update (doc 60).** Two-loop + NNLO matching: zero-parameter \(M_t=190.4\pm1.2\) GeV (+15σ vs 172.5); extension (b) with \(n\) fitted to \(m_H\): \(M_t\approx179\)–180 ± 1.3 GeV (≈6σ).  The top miss is real; \(y_t(\Lambda)\) must be ≈20% below \(g_U\).
 
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
