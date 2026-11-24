@@ -1,0 +1,629 @@
+{
+ "baseline": {
+  "name": "doc 60 baseline",
+  "Mt": 190.35821818744085,
+  "dMt": 1.217538500417954,
+  "Mh": 180.50256904988004,
+  "dMh": 1.7634341496069537,
+  "pull_Mt": 12.715710386201673,
+  "pull_Mh": 31.21729787698729,
+  "pass": false,
+  "derived": true,
+  "params": 0,
+  "note": ""
+ },
+ "c1_sigma": [
+  {
+   "name": "no sigma (CCM 2007 SM-like)",
+   "Mt": 190.38661866342787,
+   "dMt": 1.217538500417954,
+   "Mh": 190.5282445779016,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.735932573190917,
+   "pull_Mh": 36.86639510737915,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": ""
+  },
+  {
+   "name": "sigma at m_R (CC 2012), lambda_sigma, lambda_h_sigma spectral",
+   "Mt": 190.35821818744085,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50256904988004,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.715710386201673,
+   "pull_Mh": 31.21729787698729,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": ""
+  },
+  {
+   "name": "sigma mass 0.1 m_R",
+   "Mt": 190.29507830378768,
+   "dMt": 1.217538500417954,
+   "Mh": 179.27054151437147,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.67075245893674,
+   "pull_Mh": 30.52309594324673,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": "m_sigma not fixed by the action"
+  },
+  {
+   "name": "sigma mass 0.01 m_R",
+   "Mt": 190.2198018509386,
+   "dMt": 1.217538500417954,
+   "Mh": 178.19157774485728,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.617152846518382,
+   "pull_Mh": 29.915139778595293,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": "m_sigma not fixed by the action"
+  },
+  {
+   "name": "Majorana Yukawa y_N = 1.0 g at Lambda",
+   "Mt": 190.3584191219961,
+   "dMt": 1.217538500417954,
+   "Mh": 180.57121486164937,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.71585345902026,
+   "pull_Mh": 31.25597725216358,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": ""
+  },
+  {
+   "name": "Majorana Yukawa y_N = 2.0 g at Lambda",
+   "Mt": 190.36032088269917,
+   "dMt": 1.217538500417954,
+   "Mh": 181.22159413618562,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.717207582823114,
+   "pull_Mh": 31.622441910651485,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": ""
+  },
+  {
+   "name": "sigma + top fixed by hand (r = 0.8026)",
+   "Mt": 172.49702670215655,
+   "dMt": 1.217538500417954,
+   "Mh": 151.37346388997204,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": -0.002117097790633187,
+   "pull_Mh": 14.804124837155046,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": "shows sigma alone cannot reach 125 either"
+  }
+ ],
+ "sigma_sector": {
+  "Lambda_boundary": {
+   "lambda": 0.2823187148975945,
+   "lambda_h_sigma": 0.564637429795189,
+   "lambda_sigma": 2.258549719180756
+  },
+  "at_m_R": {
+   "lambda": 0.2502158208229029,
+   "lambda_h_sigma": 0.3972583954194235,
+   "lambda_sigma": 1.1856899135831953,
+   "threshold_k2_over_ls": 0.13309907668379758
+  },
+  "m_sigma_GeV": 120545604048880.19,
+  "m_R_GeV": 42165699442096.37
+ },
+ "c2_no_first_order": {
+  "rows": [
+   {
+    "name": "PS scalars (1,1,15) light, first order kept",
+    "Mt": 191.17172716405753,
+    "dMt": 1.217538500417954,
+    "Mh": 181.68840559744407,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 13.294958799154081,
+    "pull_Mh": 31.885472897993914,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": ""
+   },
+   {
+    "name": "PS scalars (2,2,15) light, no mixing",
+    "Mt": 193.66370056428795,
+    "dMt": 1.217538500417954,
+    "Mh": 187.3966355750435,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 15.069335823494221,
+    "pull_Mh": 35.10184929744637,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": ""
+   },
+   {
+    "name": "(1,2,2)-(15,2,2) mixing, theta = -0.300 fitted to M_t",
+    "Mt": 172.49999914304004,
+    "dMt": 1.217538500417954,
+    "Mh": -217.60776851741858,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": -6.101871146486356e-07,
+    "pull_Mh": -193.10314806762602,
+    "pass": false,
+    "derived": false,
+    "params": 1,
+    "note": "y_nu/y_t = 1.870; lambda(M_t) < 0: vacuum unstable"
+   },
+   {
+    "name": "(1,2,2)-(15,2,2) mixing, theta = 1.347 fitted to M_t",
+    "Mt": 172.5000000261715,
+    "dMt": 1.217538500417954,
+    "Mh": -217.6076614416037,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 1.8635077995125626e-08,
+    "pull_Mh": -193.10308773436594,
+    "pass": false,
+    "derived": false,
+    "params": 1,
+    "note": "y_nu/y_t = -1.870; lambda(M_t) < 0: vacuum unstable"
+   }
+  ],
+  "fits": [
+   {
+    "theta": -0.30005763035660443,
+    "Mt": 172.49999914304004,
+    "Mh": -217.60776851741858,
+    "ynu_over_yt": 1.8699232801299288
+   },
+   {
+    "theta": 1.3472551735289708,
+    "Mt": 172.5000000261715,
+    "Mh": -217.6076614416037,
+    "ynu_over_yt": -1.8699232500324705
+   }
+  ],
+  "scan": [
+   {
+    "theta": -0.9,
+    "Mt": 21.008787794841965,
+    "Mh": -6768405136.562896
+   },
+   {
+    "theta": -0.8,
+    "Mt": 32.2410844546248,
+    "Mh": -6505015255.38174
+   },
+   {
+    "theta": -0.7,
+    "Mt": 43.57144875933159,
+    "Mh": -6669708918.210645
+   },
+   {
+    "theta": -0.6,
+    "Mt": 55.366744002561234,
+    "Mh": -6577140313.560272
+   },
+   {
+    "theta": -0.5,
+    "Mt": 68.4938917376112,
+    "Mh": -6886294182.65106
+   },
+   {
+    "theta": -0.4,
+    "Mt": 86.69052955947478,
+    "Mh": -9330408565.458002
+   },
+   {
+    "theta": -0.29999999999999993,
+    "Mt": 172.50634034033922,
+    "Mh": -216.84015233185758
+   },
+   {
+    "theta": -0.19999999999999996,
+    "Mt": 181.5376669094114,
+    "Mh": 112.39315655230986
+   },
+   {
+    "theta": -0.09999999999999998,
+    "Mt": 188.38471265561705,
+    "Mh": 164.36786512347143
+   },
+   {
+    "theta": 0.0,
+    "Mt": 193.66370056428795,
+    "Mh": 187.3966355750435
+   },
+   {
+    "theta": 0.09999999999999998,
+    "Mt": 197.6783552426366,
+    "Mh": 200.6874716854746
+   },
+   {
+    "theta": 0.20000000000000007,
+    "Mt": 200.64202010719552,
+    "Mh": 209.11002538095255
+   },
+   {
+    "theta": 0.30000000000000016,
+    "Mt": 202.70521683531337,
+    "Mh": 214.47179960833577
+   },
+   {
+    "theta": 0.4,
+    "Mt": 203.9693023396298,
+    "Mh": 217.58853635534797
+   },
+   {
+    "theta": 0.5000000000000001,
+    "Mt": 204.49495570744818,
+    "Mh": 218.85024287653286
+   },
+   {
+    "theta": 0.6,
+    "Mt": 204.30708945712445,
+    "Mh": 218.40156099031393
+   },
+   {
+    "theta": 0.7000000000000001,
+    "Mt": 203.3968215268241,
+    "Mh": 216.1918042882212
+   },
+   {
+    "theta": 0.8000000000000002,
+    "Mt": 201.72077571546112,
+    "Mh": 211.95853643878098
+   },
+   {
+    "theta": 0.9,
+    "Mt": 199.19761292440245,
+    "Mh": 205.1238378813635
+   }
+  ],
+  "theta_range_Mt": [
+   21.008787794841965,
+   204.49495570744818
+  ]
+ },
+ "c3_heat_kernel": {
+  "needed_delta_yt2_over_g2": -0.35583324000000005,
+  "moments": {
+   "flat cutoff (CC choice)": {
+    "f0": 1.0,
+    "f_m2": 0.0
+   },
+   "heat kernel e^{-u}": {
+    "f0": 1.0,
+    "f_m2": 1.0
+   },
+   "fermionic entropy h(sqrt u)": {
+    "f0": 0.6931471805599453,
+    "f_m2": 0.1249999843633276
+   },
+   "Dual-Zero weighting of a_n (eps(6)/eps(4) = -4^4/6^6 relative)": {
+    "f0": 1.0,
+    "f_m2": -0.0054869684499314125
+   }
+  },
+  "c6_estimate": -0.033,
+  "vev_over_Lambda_sq": 3.937100841191186e-26,
+  "rows": [
+   {
+    "name": "a6 correction, f = flat cutoff (CC choice)",
+    "Mt": 190.35821818744085,
+    "dMt": 1.217538500417954,
+    "Mh": 180.50256904988004,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 12.715710386201673,
+    "pull_Mh": 31.21729787698729,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": "delta(y_t^2/g^2) = -0.0000",
+    "c6_needed": Infinity
+   },
+   {
+    "name": "a6 correction, f = heat kernel e^{-u}",
+    "Mt": 189.0815040693443,
+    "dMt": 1.217538500417954,
+    "Mh": 177.77334003251673,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 11.806642818469316,
+    "pull_Mh": 29.67947830163797,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": "delta(y_t^2/g^2) = -0.0330",
+    "c6_needed": -0.35583324000000005
+   },
+   {
+    "name": "a6 correction, f = fermionic entropy h(sqrt u)",
+    "Mt": 190.13228352391354,
+    "dMt": 1.217538500417954,
+    "Mh": 180.01732001177706,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 12.554836567914602,
+    "pull_Mh": 30.9438779972459,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": "delta(y_t^2/g^2) = -0.0060",
+    "c6_needed": -1.9731587032731728
+   },
+   {
+    "name": "a6 correction, f = Dual-Zero weighting of a_n (eps(6)/eps(4) = -4^4/6^6 relative)",
+    "Mt": 190.3650635357496,
+    "dMt": 1.217538500417954,
+    "Mh": 180.51728629954442,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 12.720584526817117,
+    "pull_Mh": 31.225590502664797,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": "delta(y_t^2/g^2) = +0.0002",
+    "c6_needed": 64.85060799000001
+   }
+  ]
+ },
+ "c4_traces": [
+  {
+   "name": "PS forced y_nu = y_t (n = 1, baseline)",
+   "Mt": 190.35821818744085,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50256904988004,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.715710386201673,
+   "pull_Mh": 31.21729787698729,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": ""
+  },
+  {
+   "name": "no Dirac neutrino Yukawa (n = 0; not PS)",
+   "Mt": 201.55456043262168,
+   "dMt": 1.217538500417954,
+   "Mh": 212.73071864462247,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 20.687919252741256,
+   "pull_Mh": 49.37666779749389,
+   "pass": false,
+   "derived": false,
+   "params": 0,
+   "note": "violates PS Y_nu = Y_u"
+  },
+  {
+   "name": "PS Y_nu = Y_u full 3x3 (n = 1 + share 7e-6)",
+   "Mt": 190.35786742968244,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50163846744817,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.715460633733377,
+   "pull_Mh": 31.216773528216592,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": ""
+  },
+  {
+   "name": "product geometry F x F_2 (all traces x 2)",
+   "Mt": 190.3618608161094,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50951738108876,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.718304072240656,
+   "pull_Mh": 31.221213004549245,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": "ratios invariant"
+  },
+  {
+   "name": "product geometry F x F_4 (all traces x 4)",
+   "Mt": 190.36368194925194,
+   "dMt": 1.217538500417954,
+   "Mh": 180.51299135855103,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.719600786244934,
+   "pull_Mh": 31.223170462319125,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": "ratios invariant"
+  },
+  {
+   "name": "product geometry F x F_16 (all traces x 16)",
+   "Mt": 190.36504771984679,
+   "dMt": 1.217538500417954,
+   "Mh": 180.51559675933768,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.720573265310636,
+   "pull_Mh": 31.22463850926786,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": "ratios invariant"
+  },
+  {
+   "name": "two independent 'dials' (separate f0 per layer)",
+   "Mt": 172.49702670215655,
+   "dMt": 1.217538500417954,
+   "Mh": 151.37346388997204,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": -0.002117097790633187,
+   "pull_Mh": 14.804124837155046,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": "not a spectral action: one f per action"
+  }
+ ],
+ "c5_gravity": {
+  "Gtilde_at_Lambda": 1.0333140263852572e-08,
+  "max_shift_ln_yt": 1.0333140263852572e-07,
+  "rows": [
+   {
+    "name": "gravity corrections at Lambda (G mu^2 ~ 1e-8)",
+    "Mt": 190.35821818744085,
+    "dMt": 1.217538500417954,
+    "Mh": 180.50256904988004,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 12.715710386201673,
+    "pull_Mh": 31.21729787698729,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": ""
+   },
+   {
+    "name": "lambda(M_Pl) = 0 boundary (SW 2010), M_t input",
+    "Mt": 172.5,
+    "dMt": 0.7,
+    "Mh": 128.83836084492145,
+    "dMh": 1.5,
+    "derived": false,
+    "params": 1,
+    "note": "replaces the spectral boundary; top is input",
+    "pass": null
+   }
+  ]
+ },
+ "c6_thresholds": {
+  "dMt_per_1pct_yt": 0.7490788851104639,
+  "dln_yt_mR_log": 0.010043874941100518,
+  "dln_yt_finite": 0.005456908709544748,
+  "dMt_mR_thresholds": 0.8562377201556495,
+  "needed_pct": 19.740000000000002,
+  "rows": [
+   {
+    "name": "Lambda thresholds: boundary at 0.33 Lambda",
+    "Mt": 189.66227791965207,
+    "dMt": 1.217538500417954,
+    "Mh": 179.90187874768594,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 12.220175232670996,
+    "pull_Mh": 30.878831116023047,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": ""
+   },
+   {
+    "name": "Lambda thresholds: boundary at 3.00 Lambda",
+    "Mt": 191.00899051217047,
+    "dMt": 1.217538500417954,
+    "Mh": 181.21643133571365,
+    "dMh": 1.7634341496069537,
+    "pull_Mt": 13.179084297403888,
+    "pull_Mh": 31.619532863598675,
+    "pass": false,
+    "derived": true,
+    "params": 0,
+    "note": ""
+   }
+  ],
+  "kk_landau_towers_doc61": "M_t 190.36 for M_c/Lambda = 0.3-1 (doc 61 cand 4)"
+ },
+ "c7_cutoff": [
+  {
+   "name": "spectral cutoff = 0.01 x gauge-meeting scale",
+   "Mt": 187.09113598123437,
+   "dMt": 1.217538500417954,
+   "Mh": 180.00639369666933,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 10.389427287518819,
+   "pull_Mh": 30.937721422934178,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": "breaks g_L = g_R = g_4 at the cutoff"
+  },
+  {
+   "name": "spectral cutoff = 0.1 x gauge-meeting scale",
+   "Mt": 188.8430422047489,
+   "dMt": 1.217538500417954,
+   "Mh": 179.4608053707822,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 11.636849170720005,
+   "pull_Mh": 30.63030258695761,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": "breaks g_L = g_R = g_4 at the cutoff"
+  },
+  {
+   "name": "spectral cutoff = 5.0 x gauge-meeting scale",
+   "Mt": 191.29721858811595,
+   "dMt": 1.217538500417954,
+   "Mh": 181.5734789329848,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 13.384313324198532,
+   "pull_Mh": 31.820715974624473,
+   "pass": false,
+   "derived": false,
+   "params": 1,
+   "note": "breaks g_L = g_R = g_4 at the cutoff"
+  }
+ ],
+ "outliers": [
+  {
+   "name": "twisted spectral triple / grand symmetry (sigma from twist)",
+   "Mt": 190.35821818744085,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50256904988004,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.715710386201673,
+   "pull_Mh": 31.21729787698729,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": "same field content as cand. 1"
+  },
+  {
+   "name": "quanta of geometry (two Cliffords -> M2(H)+M4(C), PS)",
+   "Mt": 190.35821818744085,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50256904988004,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.715710386201673,
+   "pull_Mh": 31.21729787698729,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": "PS traces unchanged"
+  },
+  {
+   "name": "zeta-regularised trace normalisation",
+   "Mt": 190.35821818744085,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50256904988004,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.715710386201673,
+   "pull_Mh": 31.21729787698729,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": "a_4 = zeta-residue: same f0 ratio"
+  },
+  {
+   "name": "Dual-Zero (-1)^n n^-n weighting of heat-kernel a_n",
+   "Mt": 190.35821818744085,
+   "dMt": 1.217538500417954,
+   "Mh": 180.50256904988004,
+   "dMh": 1.7634341496069537,
+   "pull_Mt": 12.715710386201673,
+   "pull_Mh": 31.21729787698729,
+   "pass": false,
+   "derived": true,
+   "params": 0,
+   "note": "gauge and Higgs kinetic both in a_4 -> ratio unchanged; a_6 suppressed by 4^4/6^6"
+  }
+ ]
+}

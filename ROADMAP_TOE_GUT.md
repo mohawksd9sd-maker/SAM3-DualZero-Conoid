@@ -161,6 +161,8 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 66).** Coupled ripples (linear/kinetic mixing, cubic/quartic transfer, Mathieu resonance, extra dissipation, degenerate/hierarchical masses): everything still settles, and doc 65 changes only for a light partner (m₂/m₁ < 1.5×10⁻⁷) or super-gravitational damping (safe mass 94 → 9 TeV at 10³×).  Finite universe (T³, S³, Poincaré dodecahedral) vs Planck 2018 low ℓ: best Δχ² = −3.1 (T³) and −1.9 (PDS), but those sizes are excluded by matched circles and Planck+BAO Ω_k.  The allowed range gives Δχ² ≥ −1.0.  Top/Higgs unchanged.
 
+**Update (doc 67).** The y_t/g and λ/g² boundary relations are an a₄ theorem, independent of f.  Derived mechanisms tested: CC 2012 σ (M_h 190.5 → 180.5, M_t unchanged, m_σ ≈ 1.2×10¹⁴ GeV), PS without first order, a₆ moments (flat f: 0; e^{-u}: −3%; entropy f: −0.6%; need −36%), product geometries (invariant), computed thresholds (±0.9 GeV), gravity (10⁻⁸), and outliers.  None moves M_t below 189 GeV.  Mechanisms that hit 172.5 need input and fail the Higgs (151 GeV, or unstable).
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 
