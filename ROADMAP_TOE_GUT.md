@@ -153,6 +153,8 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 62).** The "Flower of Life" tested as its lattice (hexagonal \(T^2\), \(T^2/\mathbb Z_{3,6}\)) and the 4D version (\(D_4\) \(T^4\), \(T^4/\mathbb Z_3\to\) K3): neither forces 3 generations or vector-like states.  The hexagonal texture is democratic.  Its light-generation share would give \(M_t\approx172\)–174 but implies \(m_c/m_t\approx0.6\) (excluded).  \(D_4\) leaves \(M_t=190.4\) and needs \(M_c\gtrsim\Lambda\) to keep unification.
 
+**Update (doc 63).** Principle search (anomalies, KO/Poincaré duality/orientability, first order, doubling, index, quanta of geometry, Poincaré sphere): nothing forces Higgs-coupled vector-like fermions, and orientability forbids exact VL copies.  With the spectral gauge trace counted, the top needs \(\Delta a=2.20+2.07\,\Delta N\), and the fitted Higgs is 149–161 GeV.  The ω₀³ near miss gives \(M_t=171.8\), \(M_h=139\)–151 GeV and is not counted (input ω₀, post-hoc exponent, P(chance) ≈ 84%).
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 

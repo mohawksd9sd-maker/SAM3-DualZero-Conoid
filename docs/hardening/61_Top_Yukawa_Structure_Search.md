@@ -6,6 +6,8 @@
 **Tests:** `tests/test_top_yukawa_search.py`.
 **Authorized by:** Shawn: "Search for the next structure that does that while keeping dual zero intact."
 
+> **Correction (doc 63).** The vector-like rows below keep the gauge normalization fixed (\(N_{\rm eff}=3\)). In the spectral action, gauge-charged extra fermions also enter the gauge kinetic term. Counted properly, the requirement is \(\Delta a=2.20+2.07\,\Delta N\). The "x ≈ 2.1, \(M_h\approx146\)" PS-16-pair row then gives \(M_t\approx192.6\) GeV. Fitted correctly, \(M_h=149\)–161 GeV. See doc 63 §1.
+
 ---
 
 ## Plain-language summary (for Shawn)

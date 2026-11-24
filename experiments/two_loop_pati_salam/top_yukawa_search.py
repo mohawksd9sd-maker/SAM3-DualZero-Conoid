@@ -74,6 +74,12 @@ class Cand:
     kk_flux: int = 3
     kk_yukawa_factor: float = 2.0   # Weyl Yukawa couplings per Dirac level (L_k H R_k, both chiralities)
     mu_B_over_Lambda: float = 1.0
+    # doc 63: spectral gauge-trace normalisation N_eff/3 (extra gauge-charged fermions in H_F
+    # also enter the gauge kinetic term) and universal Delta b of extra states running in the PS segment
+    trace_scale: float = 1.0
+    extra_db: float = 0.0
+    sigma_trace_scale: Optional[float] = None  # scale of lambda_sigma (None: = trace_scale; 1 if nu_R/sigma copied too)
+    extra_running: bool = True   # False: extra states sit at Lambda and do not run in the PS segment
 
 
 def _kk_levels(t: float, tc: Optional[float]) -> float:
@@ -85,6 +91,13 @@ def _kk_levels(t: float, tc: Optional[float]) -> float:
 
 def _gauge(t: float, ps, c: Cand, tc: Optional[float]):
     gR, gL, g4 = ps.sol(t)[:3]
+    if c.extra_db:
+        t0 = float(ps.t[0])
+        gs = []
+        for g in (gR, gL, g4):
+            ainv = 4 * math.pi / g ** 2 - c.extra_db * (t - t0) / (2 * math.pi)
+            gs.append(math.sqrt(4 * math.pi / ainv) if ainv > 0 else float("nan"))
+        gR, gL, g4 = gs
     if tc is not None and t > tc:
         # each level = kk_flux Dirac 16's: universal Delta b = (8/3) * kk_flux per level
         db = 8.0 / 3.0 * c.kk_flux
@@ -104,8 +117,10 @@ def _rhs(t, s, ps, c: Cand, tc):
     wf = 3 * (gL * gL + gR * gR)
     g4t = 0.375 * (2 * gL ** 4 + (gL * gL + gR * gR) ** 2)
     nk = _kk_levels(t, tc)
-    extra2 = c.x * yt * yt + c.kk_yukawa_factor * nk * (3 * yt * yt + c.p * yn * yn)
-    extra4 = c.x4 * yt ** 4 + c.kk_yukawa_factor * nk * (3 * yt ** 4 + c.p * yn ** 4)
+    xr = c.x if c.extra_running else 0.0
+    xr4 = c.x4 if c.extra_running else 0.0
+    extra2 = xr * yt * yt + c.kk_yukawa_factor * nk * (3 * yt * yt + c.p * yn * yn)
+    extra4 = xr4 * yt ** 4 + c.kk_yukawa_factor * nk * (3 * yt ** 4 + c.p * yn ** 4)
     S2 = 3 * yt * yt + c.p * yn * yn + extra2
     dyt = yt * (4.5 * yt * yt + 1.5 * c.p * yn * yn + extra2 - G)
     dyn = yn * (3 * yt * yt + (2 + c.p) * yn * yn + extra2 - G)
@@ -126,13 +141,15 @@ def predict(c: Cand = Cand(), alpha_s: float = 0.1180) -> Dict[str, float]:
     st = smw.state(min(Lam * c.mu_B_over_Lambda, 1e17))
     yb, ytau = st[4], st[5]
     a0 = 3 + c.n + c.x
-    yt2 = max(4 * g * g - 3 * yb * yb - ytau * ytau, 0.0) / a0
+    G4 = 4 * g * g * c.trace_scale
+    yt2 = max(G4 - 3 * yb * yb - ytau * ytau, 0.0) / a0
     yt = math.sqrt(yt2) * c.r_yuk
     b = 3 + c.n * c.n / c.p + c.x4
     rq = c.r_yuk ** c.r_quartic_power
-    lam = 4 * g * g * b / a0 ** 2 * rq
-    kap = (4 * g * g * 2 * c.n / a0 * math.sqrt(rq)) if c.sigma else 0.0
-    bc = [yt, math.sqrt(c.n / c.p) * yt, lam, kap, 8 * g * g, c.yN_over_g * g]
+    lam = G4 * b / a0 ** 2 * rq
+    kap = (G4 * 2 * c.n / a0 * math.sqrt(rq)) if c.sigma else 0.0
+    ss = c.trace_scale if c.sigma_trace_scale is None else c.sigma_trace_scale
+    bc = [yt, math.sqrt(c.n / c.p) * yt, lam, kap, 8 * g * g * ss, c.yN_over_g * g]
     if not np.all(np.isfinite(bc)):
         return {"ok": False, "reason": "gauge Landau pole below Lambda"}
     hi = solve_ivp(_rhs, (tB, math.log(m_R)), bc, args=(ps, c, tc), rtol=1e-10, atol=1e-13, method="LSODA")
