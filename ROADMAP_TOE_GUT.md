@@ -159,6 +159,8 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 65).** "Ripple then settle" (displaced internal radion, Hubble-damped, Planck 2018 background; imagery as inspiration only): the spectral-action potential is flat in the Einstein frame, so m_φ is free.  With the natural coupling and φ_i ~ M_Pl it passes only for m_φ ≳ 100 TeV (natural Λ²/M_Pl ≈ 6×10¹¹ GeV decays at 10⁻²² s, T_RH ~ 10⁸ GeV), leaving no observable α variation.  Light versions fail EP/fifth-force tests (η ≈ 0.25κ²) or need φ_i ≲ 10⁻⁶.  It has no effect on M_t = 190.36, M_h = 180.50.
 
+**Update (doc 66).** Coupled ripples (linear/kinetic mixing, cubic/quartic transfer, Mathieu resonance, extra dissipation, degenerate/hierarchical masses): everything still settles, and doc 65 changes only for a light partner (m₂/m₁ < 1.5×10⁻⁷) or super-gravitational damping (safe mass 94 → 9 TeV at 10³×).  Finite universe (T³, S³, Poincaré dodecahedral) vs Planck 2018 low ℓ: best Δχ² = −3.1 (T³) and −1.9 (PDS), but those sizes are excluded by matched circles and Planck+BAO Ω_k.  The allowed range gives Δχ² ≥ −1.0.  Top/Higgs unchanged.
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 
