@@ -1,0 +1,7664 @@
+{
+ "fine_screen": [
+  {
+   "dI": [
+    0,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 190.3582181836589,
+   "Mh": 180.5025690448057,
+   "Lambda": 1240895060812099.2,
+   "m_R": 42165699450662.96,
+   "yt_over_g": 0.9999035976185369,
+   "yt_over_g_needed": 0.80295709610204,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    0,
+    0,
+    1
+   ],
+   "ok": true,
+   "Mt": 195.04600514700073,
+   "Mh": 188.35534455467717,
+   "Lambda": 8.27381033034877e+17,
+   "m_R": 30387298242490.133,
+   "yt_over_g": 0.9999069864310457,
+   "yt_over_g_needed": 0.7291766888447071,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    0,
+    0,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    0,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    1,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    1,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    1,
+    2
+   ],
+   "ok": true,
+   "Mt": 199.4713131252979,
+   "Mh": 199.0214573193587,
+   "Lambda": 1.4356948583196506e+18,
+   "m_R": 636252757846133.0,
+   "yt_over_g": 1.0800367042603676,
+   "yt_over_g_needed": 0.7324055527099943,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    0,
+    1,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    1,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    3,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    3,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    3,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    3,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    3,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 190.0781672854921,
+   "Mh": 179.41386900737274,
+   "Lambda": 268016594964784.78,
+   "m_R": 1735838656915.0215,
+   "yt_over_g": 0.9999017501059275,
+   "yt_over_g_needed": 0.8082139792088683,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    1,
+    0,
+    1
+   ],
+   "ok": true,
+   "Mt": 194.57544355171132,
+   "Mh": 187.0881593597138,
+   "Lambda": 1.4156884001890296e+17,
+   "m_R": 1018375387771.5773,
+   "yt_over_g": 0.9999088062999387,
+   "yt_over_g_needed": 0.7377706506666258,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    1,
+    0,
+    2
+   ],
+   "ok": true,
+   "Mt": 197.5194828216301,
+   "Mh": 193.40044912132117,
+   "Lambda": 1.903685716631349e+20,
+   "m_R": 553174234494.516,
+   "yt_over_g": 0.9999022115558724,
+   "yt_over_g_needed": 0.6761116828521045,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    1,
+    0,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    1,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    1,
+    1
+   ],
+   "ok": true,
+   "Mt": 196.0138537954134,
+   "Mh": 192.72692434854144,
+   "Lambda": 1240895060812240.5,
+   "m_R": 42165699450663.305,
+   "yt_over_g": 1.0800341990868434,
+   "yt_over_g_needed": 0.8029570961020397,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    1,
+    1,
+    2
+   ],
+   "ok": true,
+   "Mt": 199.2331512351732,
+   "Mh": 198.2596038505876,
+   "Lambda": 3.0905516822223264e+17,
+   "m_R": 31926669270616.418,
+   "yt_over_g": 1.0800381717726246,
+   "yt_over_g_needed": 0.7391067601338241,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    1,
+    1,
+    3
+   ],
+   "ok": true,
+   "Mt": 201.35996648470856,
+   "Mh": 202.88817960410103,
+   "Lambda": 1.5578938434036305e+20,
+   "m_R": 23385318126882.906,
+   "yt_over_g": 1.0800328887306603,
+   "yt_over_g_needed": 0.6820046979245931,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    1,
+    1,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    2,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 200.60483215875388,
+   "Mh": 203.56737209566177,
+   "Lambda": 4064006986205989.5,
+   "m_R": 499709752636280.7,
+   "yt_over_g": 1.1546182289671745,
+   "yt_over_g_needed": 0.7997627916614789,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    1,
+    2,
+    3
+   ],
+   "ok": true,
+   "Mt": 202.91802898085155,
+   "Mh": 207.39138360962102,
+   "Lambda": 5.60026012199397e+17,
+   "m_R": 443172299953537.8,
+   "yt_over_g": 1.1546201631110276,
+   "yt_over_g_needed": 0.741133830567924,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    1,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 204.44537495261926,
+   "Mh": 210.70077059492377,
+   "Lambda": 1.3386281460571495e+20,
+   "m_R": 388625634630040.1,
+   "yt_over_g": 1.154615808503494,
+   "yt_over_g_needed": 0.687861867350639,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    1,
+    3,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    3,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    3,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    3,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    3,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    4,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    4,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    1,
+    4,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 189.70184452304798,
+   "Mh": 178.1701368310834,
+   "Lambda": 61062315390373.03,
+   "m_R": 80223017229.52046,
+   "yt_over_g": 0.9998998522696085,
+   "yt_over_g_needed": 0.8143436625438898,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    0,
+    1
+   ],
+   "ok": true,
+   "Mt": 194.0556049615912,
+   "Mh": 185.7189442620819,
+   "Lambda": 2.5867079274987864e+16,
+   "m_R": 38911673921.28616,
+   "yt_over_g": 0.9999077746769071,
+   "yt_over_g_needed": 0.7466505425733652,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    0,
+    2
+   ],
+   "ok": true,
+   "Mt": 196.85445826313588,
+   "Mh": 191.76672330958448,
+   "Lambda": 2.6491064790912963e+19,
+   "m_R": 17012518976.136147,
+   "yt_over_g": 0.9999042278089096,
+   "yt_over_g_needed": 0.6878078756787246,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    1,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    1,
+    1
+   ],
+   "ok": true,
+   "Mt": 195.87698376045142,
+   "Mh": 191.9712842141167,
+   "Lambda": 332500958682437.5,
+   "m_R": 2718264070085.1772,
+   "yt_over_g": 1.0800327356320456,
+   "yt_over_g_needed": 0.8074052745439054,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    1,
+    2
+   ],
+   "ok": true,
+   "Mt": 198.96032872960484,
+   "Mh": 197.41405477333316,
+   "Lambda": 6.992289861094163e+16,
+   "m_R": 1770667970155.7336,
+   "yt_over_g": 1.080038913691156,
+   "yt_over_g_needed": 0.7460429023149698,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    1,
+    3
+   ],
+   "ok": true,
+   "Mt": 200.95577037465227,
+   "Mh": 201.8035435586167,
+   "Lambda": 2.8773579608992674e+19,
+   "m_R": 1095067021719.6516,
+   "yt_over_g": 1.0800344907985375,
+   "yt_over_g_needed": 0.691443202690462,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    2,
+    1,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 200.62245480764625,
+   "Mh": 203.1735480474756,
+   "Lambda": 1240895060812108.0,
+   "m_R": 42165699450663.48,
+   "yt_over_g": 1.154617052474034,
+   "yt_over_g_needed": 0.8029570961020406,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    2,
+    3
+   ],
+   "ok": true,
+   "Mt": 202.80345593722947,
+   "Mh": 206.9226977694434,
+   "Lambda": 1.495751816695866e+17,
+   "m_R": 33112151051183.34,
+   "yt_over_g": 1.1546213441752309,
+   "yt_over_g_needed": 0.7466754632749475,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 204.20520045124357,
+   "Mh": 209.99912751260777,
+   "Lambda": 3.0555517885477794e+19,
+   "m_R": 25365865243489.113,
+   "yt_over_g": 1.1546171213437855,
+   "yt_over_g_needed": 0.6957535532433227,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    2,
+    3,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    3,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    3,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    3,
+    3
+   ],
+   "ok": true,
+   "Mt": 204.3875868639344,
+   "Mh": 212.4046447053734,
+   "Lambda": 3556369945925144.0,
+   "m_R": 378352730879413.6,
+   "yt_over_g": 1.224667147211931,
+   "yt_over_g_needed": 0.8000781005743705,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    3,
+    4
+   ],
+   "ok": true,
+   "Mt": 205.9129942266398,
+   "Mh": 214.81194618734798,
+   "Lambda": 2.7267025332391267e+17,
+   "m_R": 336087220951921.75,
+   "yt_over_g": 1.2246696461008537,
+   "yt_over_g_needed": 0.747927028479286,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 189.23345119956144,
+   "Mh": 176.76848790779647,
+   "Lambda": 14630862558186.184,
+   "m_R": 4137627153.895755,
+   "yt_over_g": 0.9998978939176995,
+   "yt_over_g_needed": 0.8212600912567679,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    0,
+    1
+   ],
+   "ok": true,
+   "Mt": 193.4676927316879,
+   "Mh": 184.21902290735014,
+   "Lambda": 5027224053756261.0,
+   "m_R": 1683325546.0203416,
+   "yt_over_g": 0.9999060137744818,
+   "yt_over_g_needed": 0.7559981414214274,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    0,
+    2
+   ],
+   "ok": true,
+   "Mt": 196.13431405170235,
+   "Mh": 190.06023043758017,
+   "Lambda": 3.979793104968217e+18,
+   "m_R": 602891438.8836571,
+   "yt_over_g": 0.999906166245992,
+   "yt_over_g_needed": 0.6997176190256877,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    3,
+    0,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    1,
+    0
+   ],
+   "ok": true,
+   "Mt": 191.11651121406393,
+   "Mh": 186.18281649078747,
+   "Lambda": 890424865387.0077,
+   "m_R": 318347540168.1442,
+   "yt_over_g": 1.0800242056845948,
+   "yt_over_g_needed": 0.8812299424013641,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    1,
+    1
+   ],
+   "ok": true,
+   "Mt": 195.67204505485444,
+   "Mh": 191.0932424822206,
+   "Lambda": 92688123501927.6,
+   "m_R": 190904435034.99988,
+   "yt_over_g": 1.080031238921525,
+   "yt_over_g_needed": 0.8125114732039882,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    1,
+    2
+   ],
+   "ok": true,
+   "Mt": 198.64906734760373,
+   "Mh": 196.47835015550373,
+   "Lambda": 1.658460758789408e+16,
+   "m_R": 108024426803.57904,
+   "yt_over_g": 1.0800375266920046,
+   "yt_over_g_needed": 0.7532383648051806,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    1,
+    3
+   ],
+   "ok": true,
+   "Mt": 200.5368472084968,
+   "Mh": 200.69490552426424,
+   "Lambda": 5.625577617031782e+18,
+   "m_R": 57063558796.7427,
+   "yt_over_g": 1.0800360392035822,
+   "yt_over_g_needed": 0.7007608445753228,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    3,
+    1,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    2,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 200.58107136000004,
+   "Mh": 202.67942703262958,
+   "Lambda": 391137173933649.0,
+   "m_R": 3811146869089.8955,
+   "yt_over_g": 1.1546158562571567,
+   "yt_over_g_needed": 0.8068105270716514,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    2,
+    3
+   ],
+   "ok": true,
+   "Mt": 202.6595259203753,
+   "Mh": 206.3790284389598,
+   "Lambda": 4.14646160894168e+16,
+   "m_R": 2668165205642.418,
+   "yt_over_g": 1.154620924197225,
+   "yt_over_g_needed": 0.752455613183928,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 203.9610767609923,
+   "Mh": 209.28722299174223,
+   "Lambda": 7.287536698051708e+18,
+   "m_R": 1799842449266.7131,
+   "yt_over_g": 1.1546183953947575,
+   "yt_over_g_needed": 0.7034688265319553,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    3,
+    3,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    3,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    3,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    3,
+    3
+   ],
+   "ok": true,
+   "Mt": 204.45513429784663,
+   "Mh": 212.19284796586356,
+   "Lambda": 1240895060811658.5,
+   "m_R": 42165699450662.79,
+   "yt_over_g": 1.2246661604414866,
+   "yt_over_g_needed": 0.8029570961020446,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    3,
+    4
+   ],
+   "ok": true,
+   "Mt": 205.8807232147802,
+   "Mh": 214.55480492324875,
+   "Lambda": 8.569418591770498e+16,
+   "m_R": 34052640420402.12,
+   "yt_over_g": 1.2246703649848727,
+   "yt_over_g_needed": 0.7526369818005506,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    3,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    4,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    4,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    3,
+    4,
+    4
+   ],
+   "ok": true,
+   "Mt": 207.5930987745877,
+   "Mh": 220.12110444006925,
+   "Lambda": 3197249630776808.0,
+   "m_R": 303051123287977.75,
+   "yt_over_g": 1.2909206202902899,
+   "yt_over_g_needed": 0.8003381827249217,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 188.66225776738517,
+   "Mh": 175.18928477924283,
+   "Lambda": 3676328259323.6973,
+   "m_R": 236876462.41697413,
+   "yt_over_g": 0.9998958643471472,
+   "yt_over_g_needed": 0.8290322049682247,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    0,
+    1
+   ],
+   "ok": true,
+   "Mt": 192.78167421685686,
+   "Mh": 182.54914598971448,
+   "Lambda": 1035330709128604.0,
+   "m_R": 81922046.84679501,
+   "yt_over_g": 0.999904220805013,
+   "yt_over_g_needed": 0.7660970347960934,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    0,
+    2
+   ],
+   "ok": true,
+   "Mt": 195.30640373770618,
+   "Mh": 188.2124177682871,
+   "Lambda": 6.422314262350007e+17,
+   "m_R": 24431330.022549383,
+   "yt_over_g": 0.9999080319386956,
+   "yt_over_g_needed": 0.7123883287455326,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    0,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    1,
+    0
+   ],
+   "ok": true,
+   "Mt": 190.92994960074392,
+   "Mh": 184.69795538074976,
+   "Lambda": 293681321881.8918,
+   "m_R": 27318006759.717293,
+   "yt_over_g": 1.080022441576391,
+   "yt_over_g_needed": 0.8851127704118994,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    1,
+    1
+   ],
+   "ok": true,
+   "Mt": 195.40284545594662,
+   "Mh": 190.0900559568007,
+   "Lambda": 26828769468113.066,
+   "m_R": 14550457433.017084,
+   "yt_over_g": 1.08002970306757,
+   "yt_over_g_needed": 0.8181984074312622,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    1,
+    2
+   ],
+   "ok": true,
+   "Mt": 198.29088677029367,
+   "Mh": 195.43880578505542,
+   "Lambda": 4113797576191389.5,
+   "m_R": 7217787169.88709,
+   "yt_over_g": 1.0800361231092392,
+   "yt_over_g_needed": 0.760769823791941,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    1,
+    3
+   ],
+   "ok": true,
+   "Mt": 200.0826312625453,
+   "Mh": 199.52588322191434,
+   "Lambda": 1.1606782754185551e+18,
+   "m_R": 3292144930.667885,
+   "yt_over_g": 1.080037536832556,
+   "yt_over_g_needed": 0.710198073042106,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    1,
+    4
+   ],
+   "ok": true,
+   "Mt": 201.10129503403962,
+   "Mh": 202.2838660104792,
+   "Lambda": 6.768645582078146e+20,
+   "m_R": 1358633505.893084,
+   "yt_over_g": 1.0800321514169922,
+   "yt_over_g_needed": 0.664804145023756,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    4,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    2,
+    1
+   ],
+   "ok": true,
+   "Mt": 197.38132184761966,
+   "Mh": 198.65731465928508,
+   "Lambda": 2062517943761.7935,
+   "m_R": 561781222087.2427,
+   "yt_over_g": 1.1546089729959284,
+   "yt_over_g_needed": 0.8710920097271702,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 200.4898436200497,
+   "Mh": 202.08821191562373,
+   "Lambda": 127101954186068.2,
+   "m_R": 367951898407.7787,
+   "yt_over_g": 1.1546146367437111,
+   "yt_over_g_needed": 0.811179152246683,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    2,
+    3
+   ],
+   "ok": true,
+   "Mt": 202.4852528336338,
+   "Mh": 205.7586714734676,
+   "Lambda": 1.191079547228508e+16,
+   "m_R": 231146187896.858,
+   "yt_over_g": 1.154619784184979,
+   "yt_over_g_needed": 0.758468498206736,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 203.70261637329398,
+   "Mh": 208.54369215974802,
+   "Lambda": 1.8123303015249533e+18,
+   "m_R": 138338565793.11282,
+   "yt_over_g": 1.1546196324543403,
+   "yt_over_g_needed": 0.7111442259436531,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    3,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    3,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    3,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    3,
+    3
+   ],
+   "ok": true,
+   "Mt": 204.47915649861756,
+   "Mh": 211.90272620504697,
+   "Lambda": 443994014937527.56,
+   "m_R": 4961457730155.245,
+   "yt_over_g": 1.2246651589794098,
+   "yt_over_g_needed": 0.8063551125079125,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    3,
+    4
+   ],
+   "ok": true,
+   "Mt": 205.82414848384485,
+   "Mh": 214.23326899416338,
+   "Lambda": 2.7721229792994188e+16,
+   "m_R": 3660117471763.3613,
+   "yt_over_g": 1.2246694139062033,
+   "yt_over_g_needed": 0.7575712987993998,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    1
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    3
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    4
+   ],
+   "ok": true,
+   "Mt": 207.69572612328557,
+   "Mh": 220.05224583328368,
+   "Lambda": 1240895060811632.0,
+   "m_R": 42165699450662.62,
+   "yt_over_g": 1.2909197772120309,
+   "yt_over_g_needed": 0.8029570961020447,
+   "unif_ok": true
+  }
+ ],
+ "timing_s": {
+  "fine_screen": 47.42597723007202,
+  "catalogue": 61.54126739501953,
+  "sm_catalogue": 0.5647597312927246,
+  "higgs_coupled": 391.9891023635864,
+  "requirement": 52.277087926864624,
+  "fourth": 1.0728836059570312e-05,
+  "extra_rows": 4.549550771713257,
+  "r_sector": 29.864110469818115,
+  "screen": 129.02144646644592
+ },
+ "catalogue": [
+  {
+   "name": "PS baseline (3 generations, doc 60)",
+   "derived": true,
+   "params": 0,
+   "note": "",
+   "I": [
+    6,
+    6,
+    6
+   ],
+   "ok": true,
+   "Mt": 190.358218183658,
+   "Mh": 180.50256904480474,
+   "pull_Mt": 14.667477190682414,
+   "pull_Mh": 31.417430050990706,
+   "pass": false,
+   "yt_over_g": 0.9999035976185369,
+   "yt_over_g_needed": 0.8029570961020448,
+   "Lambda": 1240895060811640.8,
+   "m_R": 42165699450663.82,
+   "unif_ok": true
+  },
+  {
+   "name": "(1,2,4)+cc  [H_L x M4^o, VL] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    10.0,
+    8.0
+   ],
+   "entry": "(1,2,4)+cc  [H_L x M4^o, VL]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,4)+cc  [H_L x M4^o, VL] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    14.0,
+    10.0
+   ],
+   "entry": "(1,2,4)+cc  [H_L x M4^o, VL]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,4)+cc  [H_L x M4^o, VL] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    18.0,
+    12.0
+   ],
+   "entry": "(1,2,4)+cc  [H_L x M4^o, VL]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,4)+cc  [H_L x M4^o, VL] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    10.0,
+    8.0
+   ],
+   "entry": "(1,2,4)+cc  [H_L x M4^o, VL]",
+   "k": 1,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,4)+cc  [H_L x M4^o, VL] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    14.0,
+    10.0
+   ],
+   "entry": "(1,2,4)+cc  [H_L x M4^o, VL]",
+   "k": 2,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,4)+cc  [H_L x M4^o, VL] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    18.0,
+    12.0
+   ],
+   "entry": "(1,2,4)+cc  [H_L x M4^o, VL]",
+   "k": 3,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,1,4)+cc  [H_R x M4^o, VL] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    10.0,
+    6.0,
+    8.0
+   ],
+   "entry": "(2,1,4)+cc  [H_R x M4^o, VL]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 195.30640373770538,
+   "Mh": 188.2124177682852,
+   "pull_Mt": 18.73156678813561,
+   "pull_Mh": 35.78949504995814,
+   "pass": false,
+   "yt_over_g": 0.9999080319386956,
+   "yt_over_g_needed": 0.7123883287455536,
+   "Lambda": 6.422314262330842e+17,
+   "m_R": 24431330.022563323,
+   "unif_ok": true
+  },
+  {
+   "name": "(2,1,4)+cc  [H_R x M4^o, VL] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    14.0,
+    6.0,
+    10.0
+   ],
+   "entry": "(2,1,4)+cc  [H_R x M4^o, VL]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,1,4)+cc  [H_R x M4^o, VL] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    18.0,
+    6.0,
+    12.0
+   ],
+   "entry": "(2,1,4)+cc  [H_R x M4^o, VL]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,1,4)+cc  [H_R x M4^o, VL] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    10.0,
+    6.0,
+    8.0
+   ],
+   "entry": "(2,1,4)+cc  [H_R x M4^o, VL]",
+   "k": 1,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 199.55326762550976,
+   "Mh": 199.28148165664265,
+   "pull_Mt": 22.21964037787961,
+   "pull_Mh": 42.06648809266665,
+   "pass": false,
+   "yt_over_g": 0.9999054391915964,
+   "yt_over_g_needed": 0.6431031520768851,
+   "Lambda": 1.78679761551928e+19,
+   "m_R": 16361.60325776387,
+   "unif_ok": false
+  },
+  {
+   "name": "(2,1,4)+cc  [H_R x M4^o, VL] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    14.0,
+    6.0,
+    10.0
+   ],
+   "entry": "(2,1,4)+cc  [H_R x M4^o, VL]",
+   "k": 2,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,1,4)+cc  [H_R x M4^o, VL] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    18.0,
+    6.0,
+    12.0
+   ],
+   "entry": "(2,1,4)+cc  [H_R x M4^o, VL]",
+   "k": 3,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,2,1)     [H_L x H_R^o] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    7.0,
+    7.0,
+    6.0
+   ],
+   "entry": "(2,2,1)     [H_L x H_R^o]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,2,1)     [H_L x H_R^o] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    8.0,
+    8.0,
+    6.0
+   ],
+   "entry": "(2,2,1)     [H_L x H_R^o]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,2,1)     [H_L x H_R^o] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    9.0,
+    9.0,
+    6.0
+   ],
+   "entry": "(2,2,1)     [H_L x H_R^o]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,2,1)     [H_L x H_R^o] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    7.0,
+    7.0,
+    6.0
+   ],
+   "entry": "(2,2,1)     [H_L x H_R^o]",
+   "k": 1,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,2,1)     [H_L x H_R^o] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    8.0,
+    8.0,
+    6.0
+   ],
+   "entry": "(2,2,1)     [H_L x H_R^o]",
+   "k": 2,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,2,1)     [H_L x H_R^o] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    9.0,
+    9.0,
+    6.0
+   ],
+   "entry": "(2,2,1)     [H_L x H_R^o]",
+   "k": 3,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 189.7018445230479,
+   "Mh": 178.1701368310834,
+   "pull_Mt": 14.128378295341696,
+   "pull_Mh": 30.094765286762787,
+   "pass": false,
+   "yt_over_g": 0.9998998522696084,
+   "yt_over_g_needed": 0.814343662543889,
+   "Lambda": 61062315390377.15,
+   "m_R": 80223017229.5208,
+   "unif_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    10.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 188.66225776739043,
+   "Mh": 175.189284779251,
+   "pull_Mt": 13.274535270829041,
+   "pull_Mh": 28.40439762971317,
+   "pass": false,
+   "yt_over_g": 0.9998958643471472,
+   "yt_over_g_needed": 0.8290322049681536,
+   "Lambda": 3676328259343.8765,
+   "m_R": 236876462.4167387,
+   "unif_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    12.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 187.08240246654984,
+   "Mh": 171.34811917198272,
+   "pull_Mt": 11.976953879934,
+   "pull_Mh": 26.226167380443904,
+   "pass": false,
+   "yt_over_g": 0.9998915448588325,
+   "yt_over_g_needed": 0.8482398139490378,
+   "Lambda": 264792872669.394,
+   "m_R": 1041616.4972918221,
+   "unif_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 1,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 189.63453021624656,
+   "Mh": 177.9391123687993,
+   "pull_Mt": 14.073091085304206,
+   "pull_Mh": 29.963757013879114,
+   "pass": false,
+   "yt_over_g": 0.9998994423988988,
+   "yt_over_g_needed": 0.8154992079345789,
+   "Lambda": 44911274277588.01,
+   "m_R": 42383126965.12036,
+   "unif_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    10.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 2,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 188.28916072903485,
+   "Mh": 174.18352338118297,
+   "pull_Mt": 12.968099755050686,
+   "pull_Mh": 27.8340551543266,
+   "pass": false,
+   "yt_over_g": 0.999894454360508,
+   "yt_over_g_needed": 0.8340452617511861,
+   "Lambda": 1489533549543.5571,
+   "m_R": 36590929.62643967,
+   "unif_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    12.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 3,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 185.5130959586962,
+   "Mh": 168.23200184630787,
+   "pull_Mt": 10.688036521415208,
+   "pull_Mh": 24.459094123770615,
+   "pass": false,
+   "yt_over_g": 0.9998882195047224,
+   "yt_over_g_needed": 0.8655587467500291,
+   "Lambda": 45033915272.4919,
+   "m_R": 27562.43854544266,
+   "unif_ok": true
+  },
+  {
+   "name": "(1,3,1)+(1) [H_L x H_L^o] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    8.0,
+    6.0
+   ],
+   "entry": "(1,3,1)+(1) [H_L x H_L^o]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,3,1)+(1) [H_L x H_L^o] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    10.0,
+    6.0
+   ],
+   "entry": "(1,3,1)+(1) [H_L x H_L^o]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,3,1)+(1) [H_L x H_L^o] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    12.0,
+    6.0
+   ],
+   "entry": "(1,3,1)+(1) [H_L x H_L^o]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,3,1)+(1) [H_L x H_L^o] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    8.0,
+    6.0
+   ],
+   "entry": "(1,3,1)+(1) [H_L x H_L^o]",
+   "k": 1,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,3,1)+(1) [H_L x H_L^o] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    10.0,
+    6.0
+   ],
+   "entry": "(1,3,1)+(1) [H_L x H_L^o]",
+   "k": 2,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,3,1)+(1) [H_L x H_L^o] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    12.0,
+    6.0
+   ],
+   "entry": "(1,3,1)+(1) [H_L x H_L^o]",
+   "k": 3,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,15)+(1)[M4 x M4^o] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    10.0
+   ],
+   "entry": "(1,1,15)+(1)[M4 x M4^o]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,15)+(1)[M4 x M4^o] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    14.0
+   ],
+   "entry": "(1,1,15)+(1)[M4 x M4^o]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,15)+(1)[M4 x M4^o] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    18.0
+   ],
+   "entry": "(1,1,15)+(1)[M4 x M4^o]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,15)+(1)[M4 x M4^o] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    10.0
+   ],
+   "entry": "(1,1,15)+(1)[M4 x M4^o]",
+   "k": 1,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,15)+(1)[M4 x M4^o] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    14.0
+   ],
+   "entry": "(1,1,15)+(1)[M4 x M4^o]",
+   "k": 2,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,15)+(1)[M4 x M4^o] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    18.0
+   ],
+   "entry": "(1,1,15)+(1)[M4 x M4^o]",
+   "k": 3,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,4)+cc  [C x M4^o, needs C summand] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    7.0
+   ],
+   "entry": "(1,1,4)+cc  [C x M4^o, needs C summand]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 195.0460051464468,
+   "Mh": 188.3553445535881,
+   "pull_Mt": 18.517693804924644,
+   "pull_Mh": 35.87054530371146,
+   "pass": false,
+   "yt_over_g": 0.9999069864310466,
+   "yt_over_g_needed": 0.7291766888547379,
+   "Lambda": 8.273810321958058e+17,
+   "m_R": 30387298244035.562,
+   "unif_ok": true
+  },
+  {
+   "name": "(1,1,4)+cc  [C x M4^o, needs C summand] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    8.0
+   ],
+   "entry": "(1,1,4)+cc  [C x M4^o, needs C summand]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,4)+cc  [C x M4^o, needs C summand] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    9.0
+   ],
+   "entry": "(1,1,4)+cc  [C x M4^o, needs C summand]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,4)+cc  [C x M4^o, needs C summand] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    7.0
+   ],
+   "entry": "(1,1,4)+cc  [C x M4^o, needs C summand]",
+   "k": 1,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 195.7941957820712,
+   "Mh": 189.8807331283296,
+   "pull_Mt": 19.132204668743384,
+   "pull_Mh": 36.73555553110298,
+   "pass": false,
+   "yt_over_g": 0.9999059767136681,
+   "yt_over_g_needed": 0.716544197155865,
+   "Lambda": 2.4941188308040044e+18,
+   "m_R": 28745433447301.934,
+   "unif_ok": false
+  },
+  {
+   "name": "(1,1,4)+cc  [C x M4^o, needs C summand] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    8.0
+   ],
+   "entry": "(1,1,4)+cc  [C x M4^o, needs C summand]",
+   "k": 2,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,1,4)+cc  [C x M4^o, needs C summand] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    6.0,
+    9.0
+   ],
+   "entry": "(1,1,4)+cc  [C x M4^o, needs C summand]",
+   "k": 3,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,1)x2   [H_L x C^o, needs C summand] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    7.0,
+    6.0
+   ],
+   "entry": "(1,2,1)x2   [H_L x C^o, needs C summand]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,1)x2   [H_L x C^o, needs C summand] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    8.0,
+    6.0
+   ],
+   "entry": "(1,2,1)x2   [H_L x C^o, needs C summand]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,1)x2   [H_L x C^o, needs C summand] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    9.0,
+    6.0
+   ],
+   "entry": "(1,2,1)x2   [H_L x C^o, needs C summand]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,1)x2   [H_L x C^o, needs C summand] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    7.0,
+    6.0
+   ],
+   "entry": "(1,2,1)x2   [H_L x C^o, needs C summand]",
+   "k": 1,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,1)x2   [H_L x C^o, needs C summand] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    8.0,
+    6.0
+   ],
+   "entry": "(1,2,1)x2   [H_L x C^o, needs C summand]",
+   "k": 2,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(1,2,1)x2   [H_L x C^o, needs C summand] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    6.0,
+    9.0,
+    6.0
+   ],
+   "entry": "(1,2,1)x2   [H_L x C^o, needs C summand]",
+   "k": 3,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    7.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 190.07816728549793,
+   "Mh": 179.41386900738095,
+   "pull_Mt": 14.437463192715246,
+   "pull_Mh": 30.800055119430915,
+   "pass": false,
+   "yt_over_g": 0.9999017501059275,
+   "yt_over_g_needed": 0.8082139792087893,
+   "Lambda": 268016594966428.25,
+   "m_R": 1735838656914.056,
+   "unif_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 189.7018445230479,
+   "Mh": 178.1701368310834,
+   "pull_Mt": 14.128378295341696,
+   "pull_Mh": 30.094765286762787,
+   "pass": false,
+   "yt_over_g": 0.9998998522696084,
+   "yt_over_g_needed": 0.814343662543889,
+   "Lambda": 61062315390377.15,
+   "m_R": 80223017229.5208,
+   "unif_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    9.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 189.23345119956124,
+   "Mh": 176.7684879077962,
+   "pull_Mt": 13.743673151869137,
+   "pull_Mh": 29.29992476289089,
+   "pass": false,
+   "yt_over_g": 0.9998978939176995,
+   "yt_over_g_needed": 0.8212600912567687,
+   "Lambda": 14630862558185.145,
+   "m_R": 4137627153.895941,
+   "unif_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    7.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 1,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 190.06065262838112,
+   "Mh": 179.3415449565843,
+   "pull_Mt": 14.423077892282617,
+   "pull_Mh": 30.759041934553686,
+   "pass": false,
+   "yt_over_g": 0.9999016063121547,
+   "yt_over_g_needed": 0.8085719583179345,
+   "Lambda": 238792121263081.94,
+   "m_R": 1365185179439.0745,
+   "unif_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 2,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 189.63490401062356,
+   "Mh": 177.94038115276786,
+   "pull_Mt": 14.073398093564618,
+   "pull_Mh": 29.96447650996511,
+   "pass": false,
+   "yt_over_g": 0.9998994446361048,
+   "yt_over_g_needed": 0.8154928588916704,
+   "Lambda": 44986118882703.94,
+   "m_R": 42529932752.12967,
+   "unif_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "no Higgs Yukawa (Dirac/Majorana mass in D_F)",
+   "I": [
+    9.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 3,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 189.06276885816976,
+   "Mh": 176.25287500034608,
+   "pull_Mt": 13.603486750097948,
+   "pull_Mh": 29.00753340392517,
+   "pass": false,
+   "yt_over_g": 0.9998970776679804,
+   "yt_over_g_needed": 0.8238294374207075,
+   "Lambda": 8294270589610.834,
+   "m_R": 1275968490.7042167,
+   "unif_ok": true
+  }
+ ],
+ "sm_catalogue": [
+  {
+   "name": "CCM SM algebra, boundary g2=g3 (doc 61)",
+   "derived": true,
+   "params": 0,
+   "note": "",
+   "I": [
+    6,
+    6,
+    6
+   ],
+   "ok": true,
+   "Mt": 189.47994203527665,
+   "Mh": 176.5919057681632,
+   "pull_Mt": 13.946123288460951,
+   "pull_Mh": 29.19978938801887,
+   "pass": false,
+   "yt_over_g": 0.9999070987952906,
+   "yt_over_g_needed": 0.7965100814160095,
+   "Lambda": 2.917590635345489e+16,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + vector doublet (1,2,-1/2)+cc (Stephan 2007) x1, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.6,
+    7.0,
+    6.0
+   ],
+   "entry": "vector doublet (1,2,-1/2)+cc (Stephan 2007)",
+   "k": 1,
+   "mass": 10000.0,
+   "g1_mismatch": 0.208540190796912,
+   "ok": true,
+   "Mt": 191.86469205455498,
+   "Mh": 190.13747447353126,
+   "pull_Mt": 15.904788265757107,
+   "pull_Mh": 36.881147213819844,
+   "pass": false,
+   "yt_over_g": 1.080026907209287,
+   "yt_over_g_needed": 0.8793507042241133,
+   "Lambda": 221697255816.2251,
+   "m_R": 221697255816.2251,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + vector doublet (1,2,-1/2)+cc (Stephan 2007) x2, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.199999999999999,
+    8.0,
+    6.0
+   ],
+   "entry": "vector doublet (1,2,-1/2)+cc (Stephan 2007)",
+   "k": 2,
+   "mass": 10000.0,
+   "g1_mismatch": 0.5099294672929227,
+   "ok": true,
+   "Mt": 193.6476062852832,
+   "Mh": 199.8304930298121,
+   "pull_Mt": 17.369147898012002,
+   "pull_Mh": 42.37781889755767,
+   "pass": false,
+   "yt_over_g": 1.1546002896093843,
+   "yt_over_g_needed": 0.9459256038740148,
+   "Lambda": 538433311.8804649,
+   "m_R": 538433311.8804649,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + vector doublet (1,2,-1/2)+cc (Stephan 2007) x3, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.800000000000001,
+    9.0,
+    6.0
+   ],
+   "entry": "vector doublet (1,2,-1/2)+cc (Stephan 2007)",
+   "k": 3,
+   "mass": 10000.0,
+   "g1_mismatch": 0.7374077839123245,
+   "ok": true,
+   "Mt": 195.48929884815826,
+   "Mh": 210.26685683737145,
+   "pull_Mt": 18.881783894526983,
+   "pull_Mh": 48.29602333398955,
+   "pass": false,
+   "yt_over_g": 1.2246406863994548,
+   "yt_over_g_needed": 1.004479685232124,
+   "Lambda": 13947463.633323047,
+   "m_R": 13947463.633323047,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + vector doublet (1,2,-1/2)+cc (Stephan 2007) x1, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.6,
+    7.0,
+    6.0
+   ],
+   "entry": "vector doublet (1,2,-1/2)+cc (Stephan 2007)",
+   "k": 1,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 0.11115671314972131,
+   "ok": true,
+   "Mt": 191.22610784485943,
+   "Mh": 187.39952335718414,
+   "pull_Mt": 15.380300367036583,
+   "pull_Mh": 35.328522684598056,
+   "pass": false,
+   "yt_over_g": 1.0800255347093082,
+   "yt_over_g_needed": 0.8784964958828556,
+   "Lambda": 2154586914633.3103,
+   "m_R": 2154586914633.3103,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + vector doublet (1,2,-1/2)+cc (Stephan 2007) x2, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.199999999999999,
+    8.0,
+    6.0
+   ],
+   "entry": "vector doublet (1,2,-1/2)+cc (Stephan 2007)",
+   "k": 2,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 0.3655018538622059,
+   "ok": true,
+   "Mt": 192.5459923630008,
+   "Mh": 194.72500264907467,
+   "pull_Mt": 16.464360146409714,
+   "pull_Mh": 39.482621261810756,
+   "pass": false,
+   "yt_over_g": 1.1545985584386946,
+   "yt_over_g_needed": 0.9465229810964497,
+   "Lambda": 5779543233.803009,
+   "m_R": 5779543233.803009,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + vector doublet (1,2,-1/2)+cc (Stephan 2007) x3, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.800000000000001,
+    9.0,
+    6.0
+   ],
+   "entry": "vector doublet (1,2,-1/2)+cc (Stephan 2007)",
+   "k": 3,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 0.5800002431566122,
+   "ok": true,
+   "Mt": 194.16782559576455,
+   "Mh": 203.51639726585364,
+   "pull_Mt": 17.796419241220274,
+   "pull_Mh": 44.46800425370669,
+   "pass": false,
+   "yt_over_g": 1.224639084392344,
+   "yt_over_g_needed": 1.0061598481199772,
+   "Lambda": 101787702.86676762,
+   "m_R": 101787702.86676762,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + VL quark doublet (3,2,1/6)+cc x1, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.199999999999999,
+    9.0,
+    8.0
+   ],
+   "entry": "VL quark doublet (3,2,1/6)+cc",
+   "k": 1,
+   "mass": 10000.0,
+   "g1_mismatch": 0.7805490850555981,
+   "ok": true,
+   "Mt": 213.23301314677727,
+   "Mh": 234.81980640724638,
+   "pull_Mt": 33.45521569362655,
+   "pull_Mh": 62.21939528147478,
+   "pass": false,
+   "yt_over_g": 1.2246770588067502,
+   "yt_over_g_needed": 0.7597054848828741,
+   "Lambda": 2149999590977.3381,
+   "m_R": 2149999590977.3381,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + VL quark doublet (3,2,1/6)+cc x2, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.4,
+    12.0,
+    10.0
+   ],
+   "entry": "VL quark doublet (3,2,1/6)+cc",
+   "k": 2,
+   "mass": 10000.0,
+   "g1_mismatch": 1.8927758769189493,
+   "ok": true,
+   "Mt": 231.93458383417456,
+   "Mh": 283.8195603060302,
+   "pull_Mt": 48.81536297519297,
+   "pull_Mh": 90.00594682903625,
+   "pass": false,
+   "yt_over_g": 1.414161949003854,
+   "yt_over_g_needed": 0.7101330004346514,
+   "Lambda": 60842653991.09227,
+   "m_R": 60842653991.09227,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + VL quark doublet (3,2,1/6)+cc x3, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.6,
+    15.0,
+    12.0
+   ],
+   "entry": "VL quark doublet (3,2,1/6)+cc",
+   "k": 3,
+   "mass": 10000.0,
+   "g1_mismatch": 3.21113929661204,
+   "ok": true,
+   "Mt": 247.68955000943913,
+   "Mh": 329.47821198035314,
+   "pull_Mt": 61.755377742575064,
+   "pull_Mh": 115.89784173449651,
+   "pass": false,
+   "yt_over_g": 1.5810992164863964,
+   "yt_over_g_needed": 0.6519204424558284,
+   "Lambda": 9785721114.565372,
+   "m_R": 9785721114.565372,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + VL quark doublet (3,2,1/6)+cc x1, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.199999999999999,
+    9.0,
+    8.0
+   ],
+   "entry": "VL quark doublet (3,2,1/6)+cc",
+   "k": 1,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 0.4479177333243809,
+   "ok": true,
+   "Mt": 202.33341877485753,
+   "Mh": 210.08346429147815,
+   "pull_Mt": 24.5030598741776,
+   "pull_Mh": 48.192025945749016,
+   "pass": false,
+   "yt_over_g": 1.2246612290807821,
+   "yt_over_g_needed": 0.8587724556933729,
+   "Lambda": 14403546231416.121,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + VL quark doublet (3,2,1/6)+cc x2, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.4,
+    12.0,
+    10.0
+   ],
+   "entry": "VL quark doublet (3,2,1/6)+cc",
+   "k": 2,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 1.0400360526731691,
+   "ok": true,
+   "Mt": 212.20771381431456,
+   "Mh": 235.11074283602375,
+   "pull_Mt": 32.61310734788574,
+   "pull_Mh": 62.3843781524497,
+   "pass": false,
+   "yt_over_g": 1.4141370592167917,
+   "yt_over_g_needed": 0.8929723677934377,
+   "Lambda": 533997436751.5378,
+   "m_R": 533997436751.5378,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + VL quark doublet (3,2,1/6)+cc x3, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.6,
+    15.0,
+    12.0
+   ],
+   "entry": "VL quark doublet (3,2,1/6)+cc",
+   "k": 3,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 1.6010301441407409,
+   "ok": true,
+   "Mt": 220.32811549385966,
+   "Mh": 256.2474842965016,
+   "pull_Mt": 39.28263087979668,
+   "pull_Mh": 74.37050276344749,
+   "pass": false,
+   "yt_over_g": 1.5810681203973918,
+   "yt_over_g_needed": 0.9138031075905264,
+   "Lambda": 81950140080.22389,
+   "m_R": 81950140080.22389,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + VL up singlet (3,1,2/3)+cc x1, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.6,
+    6.0,
+    7.0
+   ],
+   "entry": "VL up singlet (3,1,2/3)+cc",
+   "k": 1,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL up singlet (3,1,2/3)+cc x2, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    9.2,
+    6.0,
+    8.0
+   ],
+   "entry": "VL up singlet (3,1,2/3)+cc",
+   "k": 2,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL up singlet (3,1,2/3)+cc x3, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    10.8,
+    6.0,
+    9.0
+   ],
+   "entry": "VL up singlet (3,1,2/3)+cc",
+   "k": 3,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL up singlet (3,1,2/3)+cc x1, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.6,
+    6.0,
+    7.0
+   ],
+   "entry": "VL up singlet (3,1,2/3)+cc",
+   "k": 1,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL up singlet (3,1,2/3)+cc x2, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    9.2,
+    6.0,
+    8.0
+   ],
+   "entry": "VL up singlet (3,1,2/3)+cc",
+   "k": 2,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL up singlet (3,1,2/3)+cc x3, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    10.8,
+    6.0,
+    9.0
+   ],
+   "entry": "VL up singlet (3,1,2/3)+cc",
+   "k": 3,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL down singlet (3,1,-1/3)+cc x1, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.4,
+    6.0,
+    7.0
+   ],
+   "entry": "VL down singlet (3,1,-1/3)+cc",
+   "k": 1,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL down singlet (3,1,-1/3)+cc x2, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.800000000000001,
+    6.0,
+    8.0
+   ],
+   "entry": "VL down singlet (3,1,-1/3)+cc",
+   "k": 2,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL down singlet (3,1,-1/3)+cc x3, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.199999999999999,
+    6.0,
+    9.0
+   ],
+   "entry": "VL down singlet (3,1,-1/3)+cc",
+   "k": 3,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL down singlet (3,1,-1/3)+cc x1, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.4,
+    6.0,
+    7.0
+   ],
+   "entry": "VL down singlet (3,1,-1/3)+cc",
+   "k": 1,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL down singlet (3,1,-1/3)+cc x2, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.800000000000001,
+    6.0,
+    8.0
+   ],
+   "entry": "VL down singlet (3,1,-1/3)+cc",
+   "k": 2,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL down singlet (3,1,-1/3)+cc x3, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.199999999999999,
+    6.0,
+    9.0
+   ],
+   "entry": "VL down singlet (3,1,-1/3)+cc",
+   "k": 3,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + VL charged lepton (1,1,1)+cc (Stephan 2005) x1, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.199999999999999,
+    6.0,
+    6.0
+   ],
+   "entry": "VL charged lepton (1,1,1)+cc (Stephan 2005)",
+   "k": 1,
+   "mass": 10000.0,
+   "g1_mismatch": -0.39553908274977534,
+   "ok": true,
+   "Mt": 189.65470476508878,
+   "Mh": 176.9041735387479,
+   "pull_Mt": 14.08966103264903,
+   "pull_Mh": 29.376868736660438,
+   "pass": false,
+   "yt_over_g": 0.999907648443754,
+   "yt_over_g_needed": 0.7947039771351174,
+   "Lambda": 2.9179683779817716e+16,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + VL charged lepton (1,1,1)+cc (Stephan 2005) x2, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    8.4,
+    6.0,
+    6.0
+   ],
+   "entry": "VL charged lepton (1,1,1)+cc (Stephan 2005)",
+   "k": 2,
+   "mass": 10000.0,
+   "g1_mismatch": -0.5386355183146075,
+   "ok": true,
+   "Mt": 189.85401110807527,
+   "Mh": 177.2612074064284,
+   "pull_Mt": 14.253357164572638,
+   "pull_Mh": 29.579333834526494,
+   "pass": false,
+   "yt_over_g": 0.9999082730261629,
+   "yt_over_g_needed": 0.7926425298399508,
+   "Lambda": 2.9184024257444896e+16,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + VL charged lepton (1,1,1)+cc (Stephan 2005) x3, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    9.6,
+    6.0,
+    6.0
+   ],
+   "entry": "VL charged lepton (1,1,1)+cc (Stephan 2005)",
+   "k": 3,
+   "mass": 10000.0,
+   "g1_mismatch": -0.6459849555853854,
+   "ok": true,
+   "Mt": 190.0847092091818,
+   "Mh": 177.67546458051407,
+   "pull_Mt": 14.442836266077299,
+   "pull_Mh": 29.8142488576806,
+   "pass": false,
+   "yt_over_g": 0.9999089928474549,
+   "yt_over_g_needed": 0.7902541414937742,
+   "Lambda": 2.9189091483737604e+16,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + VL charged lepton (1,1,1)+cc (Stephan 2005) x1, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    7.199999999999999,
+    6.0,
+    6.0
+   ],
+   "entry": "VL charged lepton (1,1,1)+cc (Stephan 2005)",
+   "k": 1,
+   "mass": 10000000000000.0,
+   "g1_mismatch": -0.3477624644263868,
+   "ok": true,
+   "Mt": 189.49378939951458,
+   "Mh": 176.61812624213252,
+   "pull_Mt": 13.957496533933828,
+   "pull_Mh": 29.214658371913256,
+   "pass": false,
+   "yt_over_g": 0.9999071467875011,
+   "yt_over_g_needed": 0.7963606310859455,
+   "Lambda": 2.9176235750116004e+16,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + VL charged lepton (1,1,1)+cc (Stephan 2005) x2, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    8.4,
+    6.0,
+    6.0
+   ],
+   "entry": "VL charged lepton (1,1,1)+cc (Stephan 2005)",
+   "k": 2,
+   "mass": 10000000000000.0,
+   "g1_mismatch": -0.45670987957791365,
+   "ok": true,
+   "Mt": 189.50815023419446,
+   "Mh": 176.6453026423487,
+   "pull_Mt": 13.969291507706687,
+   "pull_Mh": 29.230069437998278,
+   "pass": false,
+   "yt_over_g": 0.9999071965483711,
+   "yt_over_g_needed": 0.7962056189893658,
+   "Lambda": 2.9176577609381412e+16,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + VL charged lepton (1,1,1)+cc (Stephan 2005) x3, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    9.6,
+    6.0,
+    6.0
+   ],
+   "entry": "VL charged lepton (1,1,1)+cc (Stephan 2005)",
+   "k": 3,
+   "mass": 10000000000000.0,
+   "g1_mismatch": -0.5384220564104397,
+   "ok": true,
+   "Mt": 189.523057972585,
+   "Mh": 176.67349593862068,
+   "pull_Mt": 13.981535669501515,
+   "pull_Mh": 29.246057160748382,
+   "pass": false,
+   "yt_over_g": 0.9999072481924786,
+   "yt_over_g_needed": 0.7960446821976407,
+   "Lambda": 2.917693274624332e+16,
+   "m_R": 10000000000000.0,
+   "unif_ok": true
+  },
+  {
+   "name": "SM-alg + wino-like triplet (1,3,0) x1, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    8.0,
+    6.0
+   ],
+   "entry": "wino-like triplet (1,3,0)",
+   "k": 1,
+   "mass": 10000.0,
+   "g1_mismatch": 0.866812344964458,
+   "ok": true,
+   "Mt": 193.63300979741948,
+   "Mh": 199.83140797927322,
+   "pull_Mt": 17.357159375383187,
+   "pull_Mh": 42.378337742824066,
+   "pass": false,
+   "yt_over_g": 1.1546002570961502,
+   "yt_over_g_needed": 0.9461213466093519,
+   "Lambda": 530100864.5096588,
+   "m_R": 530100864.5096588,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + wino-like triplet (1,3,0) x2, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    10.0,
+    6.0
+   ],
+   "entry": "wino-like triplet (1,3,0)",
+   "k": 2,
+   "mass": 10000.0,
+   "g1_mismatch": 1.7399241762836102,
+   "ok": true,
+   "Mt": 197.2801896175081,
+   "Mh": 221.18662881872808,
+   "pull_Mt": 20.35269489137438,
+   "pull_Mh": 54.4883566194658,
+   "pass": false,
+   "yt_over_g": 1.2908862384067963,
+   "yt_over_g_needed": 1.0580196562009092,
+   "Lambda": 1188649.1703049808,
+   "m_R": 1188649.1703049808,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + wino-like triplet (1,3,0) x3, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    12.0,
+    6.0
+   ],
+   "entry": "wino-like triplet (1,3,0)",
+   "k": 3,
+   "mass": 10000.0,
+   "g1_mismatch": 2.472082856396989,
+   "ok": true,
+   "Mt": 200.5958556000637,
+   "Mh": 243.78740209858466,
+   "pull_Mt": 23.07594839129851,
+   "pull_Mh": 67.30469755564081,
+   "pass": false,
+   "yt_over_g": 1.4140974066824135,
+   "yt_over_g_needed": 1.1547577769965642,
+   "Lambda": 54624.69774192696,
+   "m_R": 54624.69774192696,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + wino-like triplet (1,3,0) x1, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    8.0,
+    6.0
+   ],
+   "entry": "wino-like triplet (1,3,0)",
+   "k": 1,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 0.638602224634647,
+   "ok": true,
+   "Mt": 192.5459923630008,
+   "Mh": 194.72500264907467,
+   "pull_Mt": 16.464360146409714,
+   "pull_Mh": 39.482621261810756,
+   "pass": false,
+   "yt_over_g": 1.1545985584386946,
+   "yt_over_g_needed": 0.9465229810964497,
+   "Lambda": 5779543233.803009,
+   "m_R": 5779543233.803009,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + wino-like triplet (1,3,0) x2, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    10.0,
+    6.0
+   ],
+   "entry": "wino-like triplet (1,3,0)",
+   "k": 2,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 1.4686285450324306,
+   "ok": true,
+   "Mt": 195.9512456776708,
+   "Mh": 213.61854460272488,
+   "pull_Mt": 19.261194343850743,
+   "pull_Mh": 50.19668277517168,
+   "pass": false,
+   "yt_over_g": 1.290884952768962,
+   "yt_over_g_needed": 1.0600855278053072,
+   "Lambda": 5431792.039986821,
+   "m_R": 5431792.039986821,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + wino-like triplet (1,3,0) x3, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    12.0,
+    6.0
+   ],
+   "entry": "wino-like triplet (1,3,0)",
+   "k": 3,
+   "mass": 10000000000000.0,
+   "g1_mismatch": 2.2960035956706557,
+   "ok": true,
+   "Mt": 199.7450209339962,
+   "Mh": 237.82352820721968,
+   "pull_Mt": 22.377132981539045,
+   "pull_Mh": 63.92273180846831,
+   "pass": false,
+   "yt_over_g": 1.4140968323858956,
+   "yt_over_g_needed": 1.156293324990421,
+   "Lambda": 102941.06244863618,
+   "m_R": 102941.06244863618,
+   "unif_ok": false
+  },
+  {
+   "name": "SM-alg + gluino-like octet (8,1,0) x1, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    6.0,
+    9.0
+   ],
+   "entry": "gluino-like octet (8,1,0)",
+   "k": 1,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + gluino-like octet (8,1,0) x2, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    6.0,
+    12.0
+   ],
+   "entry": "gluino-like octet (8,1,0)",
+   "k": 2,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + gluino-like octet (8,1,0) x3, mass 1e+04 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    6.0,
+    15.0
+   ],
+   "entry": "gluino-like octet (8,1,0)",
+   "k": 3,
+   "mass": 10000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + gluino-like octet (8,1,0) x1, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    6.0,
+    9.0
+   ],
+   "entry": "gluino-like octet (8,1,0)",
+   "k": 1,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + gluino-like octet (8,1,0) x2, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    6.0,
+    12.0
+   ],
+   "entry": "gluino-like octet (8,1,0)",
+   "k": 2,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  },
+  {
+   "name": "SM-alg + gluino-like octet (8,1,0) x3, mass 1e+13 GeV",
+   "derived": false,
+   "params": 1,
+   "note": "Dirac mass is a free D_F modulus",
+   "I": [
+    6.0,
+    6.0,
+    15.0
+   ],
+   "entry": "gluino-like octet (8,1,0)",
+   "k": 3,
+   "mass": 10000000000000.0,
+   "g1_mismatch": null,
+   "ok": false,
+   "reason": "no gauge boundary below 1e19 GeV"
+  }
+ ],
+ "higgs_coupled": [
+  {
+   "name": "VL 16+16bar pair, one chain L H R (doc 63), mass Lambda",
+   "derived": false,
+   "params": 1,
+   "note": "Yukawa share fitted to M_t",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 6.35277541972872,
+   "c_over_yt": 1.2602356346859027,
+   "ok": true,
+   "Mt": 172.50000000174705,
+   "Mh": 160.72391501501727,
+   "pull_Mt": 1.434906622154272e-09,
+   "pull_Mh": 20.201443316132547,
+   "pass": false,
+   "yt_over_g": 0.8024183532332747,
+   "yt_over_g_needed": 0.8029570961020459,
+   "Lambda": 1240895060811535.0,
+   "m_R": 42165699450663.99,
+   "unif_ok": true
+  },
+  {
+   "name": "VL 16+16bar pair, one chain L H R (doc 63), mass Lambda, universal y = y_t",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 4.0,
+   "ok": true,
+   "Mt": 183.25363327164902,
+   "Mh": 171.59179097190378,
+   "pull_Mt": 8.832273696443718,
+   "pull_Mh": 26.36434764647503,
+   "pass": false,
+   "yt_over_g": 0.9128181284344541,
+   "yt_over_g_needed": 0.8029570961020459,
+   "Lambda": 1240895060811535.0,
+   "m_R": 42165699450663.99,
+   "unif_ok": true
+  },
+  {
+   "name": "VL 16+16bar pair, one chain L H R (doc 63), mass mR",
+   "derived": false,
+   "params": 1,
+   "note": "Yukawa share fitted to M_t",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 6.183652644641131,
+   "c_over_yt": 1.2433475624942056,
+   "ok": true,
+   "Mt": 172.5000000002751,
+   "Mh": 160.63758492790691,
+   "pull_Mt": 2.2594252705967556e-10,
+   "pull_Mh": 20.15248765360917,
+   "pass": false,
+   "yt_over_g": 0.8090554954689466,
+   "yt_over_g_needed": 0.7876353970832777,
+   "Lambda": 1269344719220084.0,
+   "m_R": 42112071222174.414,
+   "unif_ok": true
+  },
+  {
+   "name": "VL 16+16bar pair, one chain L H R (doc 63), mass mR, universal y = y_t",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 4.0,
+   "ok": true,
+   "Mt": 182.97022199592334,
+   "Mh": 171.3326727321089,
+   "pull_Mt": 8.599499722045048,
+   "pull_Mh": 26.217408085475473,
+   "pass": false,
+   "yt_over_g": 0.912819916867878,
+   "yt_over_g_needed": 0.7876353970832777,
+   "Lambda": 1269344719220084.0,
+   "m_R": 42112071222174.414,
+   "unif_ok": true
+  },
+  {
+   "name": "VL 16+16bar pair, two chains (doc 63), mass Lambda",
+   "derived": false,
+   "params": 1,
+   "note": "Yukawa share fitted to M_t",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 6.349240524445604,
+   "c_over_yt": 0.8908732039722042,
+   "ok": true,
+   "Mt": 172.50000000171065,
+   "Mh": 151.03571887717845,
+   "pull_Mt": 1.4050034940249772e-09,
+   "pull_Mh": 14.707506306917779,
+   "pass": false,
+   "yt_over_g": 0.8025553788768595,
+   "yt_over_g_needed": 0.8029570961020459,
+   "Lambda": 1240895060811535.0,
+   "m_R": 42165699450663.99,
+   "unif_ok": true
+  },
+  {
+   "name": "VL 16+16bar pair, two chains (doc 63), mass Lambda, universal y = y_t",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 8.0,
+   "ok": true,
+   "Mt": 166.0265859048336,
+   "Mh": 144.30384196988965,
+   "pull_Mt": -5.3168044320111525,
+   "pull_Mh": 10.890024997060387,
+   "pass": false,
+   "yt_over_g": 0.7453128808755778,
+   "yt_over_g_needed": 0.8029570961020459,
+   "Lambda": 1240895060811535.0,
+   "m_R": 42165699450663.99,
+   "unif_ok": true
+  },
+  {
+   "name": "VL 16+16bar pair, two chains (doc 63), mass mR",
+   "derived": false,
+   "params": 1,
+   "note": "Yukawa share fitted to M_t",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 6.180256904917393,
+   "c_over_yt": 0.8789380598851515,
+   "ok": true,
+   "Mt": 172.50000000025895,
+   "Mh": 150.86521701604525,
+   "pull_Mt": 2.1268337266667055e-10,
+   "pull_Mh": 14.610818907974524,
+   "pass": false,
+   "yt_over_g": 0.8091904190198353,
+   "yt_over_g_needed": 0.7876353970832777,
+   "Lambda": 1269344719220084.0,
+   "m_R": 42112071222174.414,
+   "unif_ok": true
+  },
+  {
+   "name": "VL 16+16bar pair, two chains (doc 63), mass mR, universal y = y_t",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa",
+   "I": [
+    10.0,
+    10.0,
+    10.0
+   ],
+   "share": 8.0,
+   "ok": true,
+   "Mt": 165.06414899798764,
+   "Mh": 143.13205283850007,
+   "pull_Mt": -6.107282028009622,
+   "pull_Mh": 10.225532290229939,
+   "pass": false,
+   "yt_over_g": 0.7453143411253534,
+   "yt_over_g_needed": 0.7876353970832777,
+   "Lambda": 1269344719220084.0,
+   "m_R": 42112071222174.414,
+   "unif_ok": true
+  },
+  {
+   "name": "electroweakino-like (2,2,1)+singlet, y psi Phi S, mass Lambda",
+   "derived": false,
+   "params": 1,
+   "ok": false,
+   "reason": "no Yukawa share reaches M_t = 172.5 (perturbative range)"
+  },
+  {
+   "name": "electroweakino-like (2,2,1)+singlet, y psi Phi S, mass mR",
+   "derived": false,
+   "params": 1,
+   "ok": false,
+   "reason": "no Yukawa share reaches M_t = 172.5 (perturbative range)"
+  },
+  {
+   "name": "(2,2,1)+(3,1,1)+(1,3,1), y psi Phi T, mass Lambda",
+   "derived": false,
+   "params": 1,
+   "ok": false,
+   "reason": "no Yukawa share reaches M_t = 172.5 (perturbative range)"
+  },
+  {
+   "name": "(2,2,1)+(3,1,1)+(1,3,1), y psi Phi T, mass mR",
+   "derived": false,
+   "params": 1,
+   "ok": false,
+   "reason": "no Yukawa share reaches M_t = 172.5 (perturbative range)"
+  },
+  {
+   "name": "VL lepton-like (1,2,1)x2 + C-singlets, y L H E, mass Lambda",
+   "derived": false,
+   "params": 1,
+   "ok": false,
+   "reason": "no Yukawa share reaches M_t = 172.5 (perturbative range)"
+  },
+  {
+   "name": "VL lepton-like (1,2,1)x2 + C-singlets, y L H E, mass mR",
+   "derived": false,
+   "params": 1,
+   "ok": false,
+   "reason": "no Yukawa share reaches M_t = 172.5 (perturbative range)"
+  }
+ ],
+ "requirement": [
+  {
+   "dN": 0,
+   "da_needed": 2.2080368401488477,
+   "Mh": 146.6188648976251
+  },
+  {
+   "dN": 1,
+   "da_needed": 4.279947315977935,
+   "Mh": 153.65519153870906
+  },
+  {
+   "dN": 2,
+   "da_needed": 6.352775417455014,
+   "Mh": 160.72391502253868
+  },
+  {
+   "dN": 3,
+   "da_needed": 8.42579010086282,
+   "Mh": 166.53934240300657
+  },
+  {
+   "dN": 4,
+   "da_needed": 10.498643127257765,
+   "Mh": 171.13629705409545
+  },
+  {
+   "dN": 6,
+   "da_needed": 14.643357777607806,
+   "Mh": 177.69088056287143
+  }
+ ],
+ "fourth": {
+  "dI": [
+   2,
+   2,
+   2
+  ],
+  "share_needed_note": "from requirement_curve at dN=1",
+  "status": "excluded: a chiral 4th generation gets its mass only from v; LHC Higgs rates (gg->h x~9) and direct searches exclude it (e.g. Djouadi-Lenz PLB 715 (2012) 310; Eberhardt et al. PRL 109 (2012) 241802)"
+ },
+ "extra_rows": [
+  {
+   "name": "1 VL 16-pair(s), 1 chain(s), universal y = y_t (masses at Lambda)",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa on the new block",
+   "I": [
+    10,
+    10,
+    10
+   ],
+   "share": 4.0,
+   "ok": true,
+   "Mt": 183.25363327165024,
+   "Mh": 171.59179097190471,
+   "pull_Mt": 8.832273696444721,
+   "pull_Mh": 26.36434764647556,
+   "pass": false,
+   "yt_over_g": 0.9128181284344542,
+   "yt_over_g_needed": 0.8029570961020447,
+   "Lambda": 1240895060811632.0,
+   "m_R": 42165699450662.62,
+   "unif_ok": true
+  },
+  {
+   "name": "1 VL 16-pair(s), 2 chain(s), universal y = y_t (masses at Lambda)",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa on the new block",
+   "I": [
+    10,
+    10,
+    10
+   ],
+   "share": 8.0,
+   "ok": true,
+   "Mt": 166.0265859048337,
+   "Mh": 144.30384196988976,
+   "pull_Mt": -5.316804432011082,
+   "pull_Mh": 10.890024997060452,
+   "pass": false,
+   "yt_over_g": 0.7453128808755778,
+   "yt_over_g_needed": 0.8029570961020447,
+   "Lambda": 1240895060811632.0,
+   "m_R": 42165699450662.62,
+   "unif_ok": true
+  },
+  {
+   "name": "2 VL 16-pair(s), 1 chain(s), universal y = y_t (masses at Lambda)",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa on the new block",
+   "I": [
+    14,
+    14,
+    14
+   ],
+   "share": 8.0,
+   "ok": true,
+   "Mt": 180.45154728397276,
+   "Mh": 168.20658058996872,
+   "pull_Mt": 6.530838475533355,
+   "pull_Mh": 24.444678356476548,
+   "pass": false,
+   "yt_over_g": 0.8818806680165268,
+   "yt_over_g_needed": 0.8029570961020397,
+   "Lambda": 1240895060812240.5,
+   "m_R": 42165699450663.305,
+   "unif_ok": true
+  },
+  {
+   "name": "2 VL 16-pair(s), 2 chain(s), universal y = y_t (masses at Lambda)",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa on the new block",
+   "I": [
+    14,
+    14,
+    14
+   ],
+   "share": 16.0,
+   "ok": true,
+   "Mt": 158.19141024684157,
+   "Mh": 134.49113837068714,
+   "pull_Mt": -11.75206348566933,
+   "pull_Mh": 5.32548287826926,
+   "pass": false,
+   "yt_over_g": 0.6831018281140561,
+   "yt_over_g_needed": 0.8029570961020397,
+   "Lambda": 1240895060812240.5,
+   "m_R": 42165699450663.305,
+   "unif_ok": true
+  },
+  {
+   "name": "3 VL 16-pair(s), 1 chain(s), universal y = y_t (masses at Lambda)",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa on the new block",
+   "I": [
+    18,
+    18,
+    18
+   ],
+   "share": 12.0,
+   "ok": true,
+   "Mt": 178.95139814562089,
+   "Mh": 166.45195891313097,
+   "pull_Mt": 5.298722088382637,
+   "pull_Mh": 23.449675692368654,
+   "pass": false,
+   "yt_over_g": 0.865997575708283,
+   "yt_over_g_needed": 0.8029570961020446,
+   "Lambda": 1240895060811658.5,
+   "m_R": 42165699450662.79,
+   "unif_ok": true
+  },
+  {
+   "name": "3 VL 16-pair(s), 2 chain(s), universal y = y_t (masses at Lambda)",
+   "derived": true,
+   "params": 0,
+   "note": "hypothesis: universal D_F Yukawa on the new block",
+   "I": [
+    18,
+    18,
+    18
+   ],
+   "share": 24.0,
+   "ok": true,
+   "Mt": 154.30597391098877,
+   "Mh": 129.9182614751751,
+   "pull_Mt": -14.943286050310217,
+   "pull_Mh": 2.7323172097177655,
+   "pass": false,
+   "yt_over_g": 0.6546326346596991,
+   "yt_over_g_needed": 0.8029570961020446,
+   "Lambda": 1240895060811658.5,
+   "m_R": 42165699450662.79,
+   "unif_ok": true
+  },
+  {
+   "name": "4th PS generation, y_u4 = y_nu4 = y_t, y_d4 = y_e4 = 0 (formal)",
+   "derived": false,
+   "params": 0,
+   "note": "excluded: chiral 4th generation (LHC h rates, direct searches)",
+   "I": [
+    8,
+    8,
+    8
+   ],
+   "share": 4.0,
+   "ok": true,
+   "Mt": 173.9758993918276,
+   "Mh": 155.1207321027479,
+   "pull_Mt": 1.21219936069451,
+   "pull_Mh": 17.024016524483848,
+   "pass": false,
+   "yt_over_g": 0.8164375474780132,
+   "yt_over_g_needed": 0.8029570961020406,
+   "Lambda": 1240895060812108.0,
+   "m_R": 42165699450663.48,
+   "unif_ok": true
+  },
+  {
+   "name": "4th PS generation, all Yukawas = y_t (formal)",
+   "derived": false,
+   "params": 0,
+   "note": "excluded: chiral 4th generation (LHC h rates, direct searches)",
+   "I": [
+    8,
+    8,
+    8
+   ],
+   "share": 8.0,
+   "ok": true,
+   "Mt": 155.96358478909994,
+   "Mh": 129.58538368089233,
+   "pull_Mt": -13.58184172839173,
+   "pull_Mh": 2.543550425113449,
+   "pass": false,
+   "yt_over_g": 0.6666184660568159,
+   "yt_over_g_needed": 0.8029570961020406,
+   "Lambda": 1240895060812108.0,
+   "m_R": 42165699450663.48,
+   "unif_ok": true
+  },
+  {
+   "name": "SO(10)-like 10_H: y_t = y_b = y_tau = y_nu, one light Higgs (formal)",
+   "derived": false,
+   "params": 0,
+   "note": "inadmissible (Lizzi-Mangano-Miele-Sparano 1996) and m_b = m_t at tree level",
+   "I": [
+    6,
+    6,
+    6
+   ],
+   "share": 4.0,
+   "ok": true,
+   "Mt": 161.3060049723565,
+   "Mh": 135.02049837797244,
+   "pull_Mt": -9.193955693229286,
+   "pull_Mh": 5.625669878392453,
+   "pass": false,
+   "yt_over_g": 0.7070386144088924,
+   "yt_over_g_needed": 0.80295709610204,
+   "Lambda": 1240895060812099.2,
+   "m_R": 42165699450662.96,
+   "unif_ok": true
+  }
+ ],
+ "r_sector": [
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 189.7018445230479,
+   "Mh": 178.1701368310834,
+   "pull_Mt": 14.128378295341696,
+   "pull_Mh": 30.094765286762787,
+   "pass": false,
+   "yt_over_g": 0.9998998522696084,
+   "yt_over_g_needed": 0.814343662543889,
+   "Lambda": 61062315390377.15,
+   "m_R": 80223017229.5208,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    10.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 188.66225776739043,
+   "Mh": 175.189284779251,
+   "pull_Mt": 13.274535270829041,
+   "pull_Mh": 28.40439762971317,
+   "pass": false,
+   "yt_over_g": 0.9998958643471472,
+   "yt_over_g_needed": 0.8290322049681536,
+   "Lambda": 3676328259343.8765,
+   "m_R": 236876462.4167387,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    12.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 187.08240246654984,
+   "Mh": 171.34811917198272,
+   "pull_Mt": 11.976953879934,
+   "pull_Mh": 26.226167380443904,
+   "pass": false,
+   "yt_over_g": 0.9998915448588325,
+   "yt_over_g_needed": 0.8482398139490378,
+   "Lambda": 264792872669.394,
+   "m_R": 1041616.4972918221,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x4, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    14.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 4,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 1,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 189.63453021624656,
+   "Mh": 177.9391123687993,
+   "pull_Mt": 14.073091085304206,
+   "pull_Mh": 29.963757013879114,
+   "pass": false,
+   "yt_over_g": 0.9998994423988988,
+   "yt_over_g_needed": 0.8154992079345789,
+   "Lambda": 44911274277588.01,
+   "m_R": 42383126965.12036,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    10.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 2,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 188.28916072903485,
+   "Mh": 174.18352338118297,
+   "pull_Mt": 12.968099755050686,
+   "pull_Mh": 27.8340551543266,
+   "pass": false,
+   "yt_over_g": 0.999894454360508,
+   "yt_over_g_needed": 0.8340452617511861,
+   "Lambda": 1489533549543.5571,
+   "m_R": 36590929.62643967,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    12.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 3,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 185.5130959586962,
+   "Mh": 168.23200184630787,
+   "pull_Mt": 10.688036521415208,
+   "pull_Mh": 24.459094123770615,
+   "pass": false,
+   "yt_over_g": 0.9998882195047224,
+   "yt_over_g_needed": 0.8655587467500291,
+   "Lambda": 45033915272.4919,
+   "m_R": 27562.43854544266,
+   "unif_ok": true,
+   "leptoquark_bound_ok": false
+  },
+  {
+   "name": "(3,1,1)+(1) [H_R x H_R^o] x4, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    14.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(3,1,1)+(1) [H_R x H_R^o]",
+   "k": 4,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x1, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    7.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 1,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 190.07816728549793,
+   "Mh": 179.41386900738095,
+   "pull_Mt": 14.437463192715246,
+   "pull_Mh": 30.800055119430915,
+   "pass": false,
+   "yt_over_g": 0.9999017501059275,
+   "yt_over_g_needed": 0.8082139792087893,
+   "Lambda": 268016594966428.25,
+   "m_R": 1735838656914.056,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x2, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 2,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 189.7018445230479,
+   "Mh": 178.1701368310834,
+   "pull_Mt": 14.128378295341696,
+   "pull_Mh": 30.094765286762787,
+   "pass": false,
+   "yt_over_g": 0.9998998522696084,
+   "yt_over_g_needed": 0.814343662543889,
+   "Lambda": 61062315390377.15,
+   "m_R": 80223017229.5208,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x3, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    9.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 3,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 189.23345119956124,
+   "Mh": 176.7684879077962,
+   "pull_Mt": 13.743673151869137,
+   "pull_Mh": 29.29992476289089,
+   "pass": false,
+   "yt_over_g": 0.9998978939176995,
+   "yt_over_g_needed": 0.8212600912567687,
+   "Lambda": 14630862558185.145,
+   "m_R": 4137627153.895941,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x4, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    10.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 4,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 188.66225776739043,
+   "Mh": 175.189284779251,
+   "pull_Mt": 13.274535270829041,
+   "pull_Mh": 28.40439762971317,
+   "pass": false,
+   "yt_over_g": 0.9998958643471472,
+   "yt_over_g_needed": 0.8290322049681536,
+   "Lambda": 3676328259343.8765,
+   "m_R": 236876462.4167387,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x5, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    11.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 5,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 187.9616739809799,
+   "Mh": 173.39840978497475,
+   "pull_Mt": 12.699125305419292,
+   "pull_Mh": 27.38883660370297,
+   "pass": false,
+   "yt_over_g": 0.9998937521368497,
+   "yt_over_g_needed": 0.8378815552377826,
+   "Lambda": 966084795685.6267,
+   "m_R": 14978920.4988201,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x6, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    12.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 6,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 187.08240246654984,
+   "Mh": 171.34811917198272,
+   "pull_Mt": 11.976953879934,
+   "pull_Mh": 26.226167380443904,
+   "pass": false,
+   "yt_over_g": 0.9998915448588325,
+   "yt_over_g_needed": 0.8482398139490378,
+   "Lambda": 264792872669.394,
+   "m_R": 1041616.4972918221,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x7, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    13.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 7,
+   "mass": "Lambda",
+   "ok": true,
+   "Mt": 185.93580869608314,
+   "Mh": 168.9814479523557,
+   "pull_Mt": 11.035222862743911,
+   "pull_Mh": 24.884086520688225,
+   "pass": false,
+   "yt_over_g": 0.9998892286504898,
+   "yt_over_g_needed": 0.8609027042168125,
+   "Lambda": 75494035049.96126,
+   "m_R": 79342.77375734969,
+   "unif_ok": true,
+   "leptoquark_bound_ok": false
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x8, mass Lambda",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    14.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 8,
+   "mass": "Lambda",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x1, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    7.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 1,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 190.06065262838112,
+   "Mh": 179.3415449565843,
+   "pull_Mt": 14.423077892282617,
+   "pull_Mh": 30.759041934553686,
+   "pass": false,
+   "yt_over_g": 0.9999016063121547,
+   "yt_over_g_needed": 0.8085719583179345,
+   "Lambda": 238792121263081.94,
+   "m_R": 1365185179439.0745,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x2, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    8.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 2,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 189.63490401062356,
+   "Mh": 177.94038115276786,
+   "pull_Mt": 14.073398093564618,
+   "pull_Mh": 29.96447650996511,
+   "pass": false,
+   "yt_over_g": 0.9998994446361048,
+   "yt_over_g_needed": 0.8154928588916704,
+   "Lambda": 44986118882703.94,
+   "m_R": 42529932752.12967,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x3, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    9.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 3,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 189.06276885816976,
+   "Mh": 176.25287500034608,
+   "pull_Mt": 13.603486750097948,
+   "pull_Mh": 29.00753340392517,
+   "pass": false,
+   "yt_over_g": 0.9998970776679804,
+   "yt_over_g_needed": 0.8238294374207075,
+   "Lambda": 8294270589610.834,
+   "m_R": 1275968490.7042167,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x4, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    10.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 4,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 188.29107242539038,
+   "Mh": 174.18851893856265,
+   "pull_Mt": 12.969669887210678,
+   "pull_Mh": 27.836888011669643,
+   "pass": false,
+   "yt_over_g": 0.9998944611460466,
+   "yt_over_g_needed": 0.834020283567469,
+   "Lambda": 1495864325794.1736,
+   "m_R": 36912881.95363234,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x5, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    11.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 5,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 187.20185066128522,
+   "Mh": 171.59555593260944,
+   "pull_Mt": 12.07506017775898,
+   "pull_Mh": 26.366482662804675,
+   "pass": false,
+   "yt_over_g": 0.999891538214654,
+   "yt_over_g_needed": 0.8470888404383152,
+   "Lambda": 263679246333.34476,
+   "m_R": 1031911.4571132201,
+   "unif_ok": true,
+   "leptoquark_bound_ok": true
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x6, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    12.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 6,
+   "mass": "mR",
+   "ok": true,
+   "Mt": 185.52161492037283,
+   "Mh": 168.24694606539194,
+   "pull_Mt": 10.69503339393604,
+   "pull_Mh": 24.467568621719632,
+   "pass": false,
+   "yt_over_g": 0.9998882343489579,
+   "yt_over_g_needed": 0.8654686628855847,
+   "Lambda": 45371312407.046486,
+   "m_R": 27985.948884648704,
+   "unif_ok": true,
+   "leptoquark_bound_ok": false
+  },
+  {
+   "name": "(2,1,1)x2   [H_R x C^o, needs C summand] x7, mass mR",
+   "derived": true,
+   "params": 0,
+   "note": "integer multiplicity k is a discrete choice",
+   "I": [
+    13.0,
+    6.0,
+    6.0
+   ],
+   "entry": "(2,1,1)x2   [H_R x C^o, needs C summand]",
+   "k": 7,
+   "mass": "mR",
+   "ok": false,
+   "reason": "no unification solution (alpha_a^-1/I_a never meet below 1e21 GeV)"
+  }
+ ],
+ "screen": [
+  {
+   "dI": [
+    0,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 190.3582181836589,
+   "Mh": 180.5025690448057,
+   "Lambda": 1240895060812099.2,
+   "m_R": 42165699450662.96,
+   "yt_over_g": 0.9999035976185369,
+   "yt_over_g_needed": 0.80295709610204,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    0,
+    0,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    0,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    0,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    0,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    0,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    2,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    4,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    6,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    6,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    6,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    6,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    6,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    6,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    6,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    8,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    8,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    8,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    8,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    8,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    8,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    8,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    10,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    10,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    10,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    10,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    10,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    10,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    12,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    12,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    12,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    12,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    12,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    12,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    0,
+    12,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 189.70184452304798,
+   "Mh": 178.1701368310834,
+   "Lambda": 61062315390373.03,
+   "m_R": 80223017229.52046,
+   "yt_over_g": 0.9998998522696085,
+   "yt_over_g_needed": 0.8143436625438898,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    0,
+    2
+   ],
+   "ok": true,
+   "Mt": 196.85445826313588,
+   "Mh": 191.76672330958448,
+   "Lambda": 2.6491064790912963e+19,
+   "m_R": 17012518976.136147,
+   "yt_over_g": 0.9999042278089096,
+   "yt_over_g_needed": 0.6878078756787246,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    0,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 200.62245480764625,
+   "Mh": 203.1735480474756,
+   "Lambda": 1240895060812108.0,
+   "m_R": 42165699450663.48,
+   "yt_over_g": 1.154617052474034,
+   "yt_over_g_needed": 0.8029570961020406,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    2,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 204.20520045124357,
+   "Mh": 209.99912751260777,
+   "Lambda": 3.0555517885477794e+19,
+   "m_R": 25365865243489.113,
+   "yt_over_g": 1.1546171213437855,
+   "yt_over_g_needed": 0.6957535532433227,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    2,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    4,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    6,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    6,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    6,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    6,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    6,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    6,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    6,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    8,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    8,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    8,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    8,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    8,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    8,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    8,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    10,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    10,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    10,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    10,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    10,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    10,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    12,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    12,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    12,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    12,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    12,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    12,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    2,
+    12,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 188.66225776738517,
+   "Mh": 175.18928477924283,
+   "Lambda": 3676328259323.6973,
+   "m_R": 236876462.41697413,
+   "yt_over_g": 0.9998958643471472,
+   "yt_over_g_needed": 0.8290322049682247,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    0,
+    2
+   ],
+   "ok": true,
+   "Mt": 195.30640373770618,
+   "Mh": 188.2124177682871,
+   "Lambda": 6.422314262350007e+17,
+   "m_R": 24431330.022549383,
+   "yt_over_g": 0.9999080319386956,
+   "yt_over_g_needed": 0.7123883287455326,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    0,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    0,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    0,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    0,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 200.4898436200497,
+   "Mh": 202.08821191562373,
+   "Lambda": 127101954186068.2,
+   "m_R": 367951898407.7787,
+   "yt_over_g": 1.1546146367437111,
+   "yt_over_g_needed": 0.811179152246683,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 203.70261637329398,
+   "Mh": 208.54369215974802,
+   "Lambda": 1.8123303015249533e+18,
+   "m_R": 138338565793.11282,
+   "yt_over_g": 1.1546196324543403,
+   "yt_over_g_needed": 0.7111442259436531,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    2,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    2,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    2,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    2,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    4
+   ],
+   "ok": true,
+   "Mt": 207.69572612328557,
+   "Mh": 220.05224583328368,
+   "Lambda": 1240895060811632.0,
+   "m_R": 42165699450662.62,
+   "yt_over_g": 1.2909197772120309,
+   "yt_over_g_needed": 0.8029570961020447,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    4,
+    6
+   ],
+   "ok": true,
+   "Mt": 209.01205253759633,
+   "Mh": 222.25893671295552,
+   "Lambda": 3.39759371630212e+18,
+   "m_R": 28310783978959.574,
+   "yt_over_g": 1.2909213991937927,
+   "yt_over_g_needed": 0.71556859490364,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    4,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    6,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    6,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    6,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    6,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    6,
+    8
+   ],
+   "ok": true,
+   "Mt": 212.79715759892102,
+   "Mh": 232.30851321873243,
+   "Lambda": 5.185429638414615e+18,
+   "m_R": 1041735352397154.2,
+   "yt_over_g": 1.4141464557711474,
+   "yt_over_g_needed": 0.7207624701505626,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    4,
+    6,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    6,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    8,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    8,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    8,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    8,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    8,
+    8
+   ],
+   "ok": true,
+   "Mt": 216.09422833821395,
+   "Mh": 242.24376863443047,
+   "Lambda": 1.9618436652181656e+16,
+   "m_R": 1.3343937825182394e+16,
+   "yt_over_g": 1.5274641382724572,
+   "yt_over_g_needed": 0.797098754255034,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    4,
+    8,
+    10
+   ],
+   "ok": true,
+   "Mt": 215.66321435966273,
+   "Mh": 240.03901551093458,
+   "Lambda": 7.028625357788188e+18,
+   "m_R": 1.4086268781292606e+16,
+   "yt_over_g": 1.5274628214525081,
+   "yt_over_g_needed": 0.7259871914220976,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    4,
+    8,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    10,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    10,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    10,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    10,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    10,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    10,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    12,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    12,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    12,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    12,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    12,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    12,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    4,
+    12,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    0,
+    0
+   ],
+   "ok": true,
+   "Mt": 187.08240246656084,
+   "Mh": 171.3481191720005,
+   "Lambda": 264792872672.36203,
+   "m_R": 1041616.4972887866,
+   "yt_over_g": 0.9998915448588325,
+   "yt_over_g_needed": 0.8482398139488935,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    0,
+    2
+   ],
+   "ok": true,
+   "Mt": 192.94583175234882,
+   "Mh": 183.807036087779,
+   "Lambda": 2.032759178988452e+16,
+   "m_R": 58409.079446229465,
+   "yt_over_g": 0.9999083067844822,
+   "yt_over_g_needed": 0.7437594062556836,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    0,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    0,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    0,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    0,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    2,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 200.1652741503128,
+   "Mh": 200.59933471549073,
+   "Lambda": 14630862558184.729,
+   "m_R": 4137627153.8957887,
+   "yt_over_g": 1.1546121130467948,
+   "yt_over_g_needed": 0.8212600912567697,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 203.09638270926266,
+   "Mh": 206.88185274541183,
+   "Lambda": 1.2608548837078133e+17,
+   "m_R": 1025252343.9351889,
+   "yt_over_g": 1.1546220024447764,
+   "yt_over_g_needed": 0.7269121332369705,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    2,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    2,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    2,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    2,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    4,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    4,
+    4
+   ],
+   "ok": true,
+   "Mt": 207.8061730655121,
+   "Mh": 219.72750055656854,
+   "Lambda": 198550878750490.5,
+   "m_R": 930109654035.5509,
+   "yt_over_g": 1.290918055556951,
+   "yt_over_g_needed": 0.8093753942237125,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    4,
+    6
+   ],
+   "ok": true,
+   "Mt": 208.87941616065106,
+   "Mh": 221.71998515523308,
+   "Lambda": 3.865685325761124e+17,
+   "m_R": 463546302113.1188,
+   "yt_over_g": 1.2909231316318661,
+   "yt_over_g_needed": 0.7266996173908856,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    4,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    4,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    4,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    6,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    6,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    6,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    6,
+    6
+   ],
+   "ok": true,
+   "Mt": 212.8826994532994,
+   "Mh": 233.0718923198055,
+   "Lambda": 1240895060812099.2,
+   "m_R": 42165699450662.96,
+   "yt_over_g": 1.414145397238379,
+   "yt_over_g_needed": 0.80295709610204,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    6,
+    8
+   ],
+   "ok": true,
+   "Mt": 212.88567622446334,
+   "Mh": 232.37819439378512,
+   "Lambda": 8.27381033034877e+17,
+   "m_R": 30387298242490.133,
+   "yt_over_g": 1.4141477933772038,
+   "yt_over_g_needed": 0.7291766888447071,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    6,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    6,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    8,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    8,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    8,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    8,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    8,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    8,
+    10
+   ],
+   "ok": true,
+   "Mt": 215.87478044281767,
+   "Mh": 240.4761776988816,
+   "Lambda": 1.4356948583196506e+18,
+   "m_R": 636252757846133.0,
+   "yt_over_g": 1.5274638945704289,
+   "yt_over_g_needed": 0.7324055527099943,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    6,
+    8,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    10,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    10,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    10,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    10,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    10,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    10,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    12,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    12,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    12,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    12,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    12,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    12,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    6,
+    12,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    0,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    0,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    0,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    0,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    0,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    0,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    2,
+    0
+   ],
+   "ok": true,
+   "Mt": 192.20004699268802,
+   "Mh": 191.0056702465726,
+   "Lambda": 1469165671.2802112,
+   "m_R": 255512645.77676997,
+   "yt_over_g": 1.154595623883979,
+   "yt_over_g_needed": 0.9528942037498727,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 199.61880697845217,
+   "Mh": 198.62890736625855,
+   "Lambda": 1874372310414.9468,
+   "m_R": 58847451.20948284,
+   "yt_over_g": 1.1546094504369393,
+   "yt_over_g_needed": 0.833301336300888,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 202.259158855671,
+   "Mh": 204.84269772351303,
+   "Lambda": 1.0137331670818436e+16,
+   "m_R": 10079462.832316149,
+   "yt_over_g": 1.1546201523233914,
+   "yt_over_g_needed": 0.74438573981394,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    2,
+    6
+   ],
+   "ok": true,
+   "Mt": 202.41361302252807,
+   "Mh": 206.8609534966584,
+   "Lambda": 3.726335201389576e+20,
+   "m_R": 1165733.0670832884,
+   "yt_over_g": 1.1546159652970858,
+   "yt_over_g_needed": 0.6742332641764391,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    8,
+    2,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    2,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    2,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    4,
+    2
+   ],
+   "ok": true,
+   "Mt": 204.51842141975442,
+   "Mh": 217.74699842952205,
+   "Lambda": 67686749420.53307,
+   "m_R": 55628344820.9936,
+   "yt_over_g": 1.2909075550695663,
+   "yt_over_g_needed": 0.9147199923796279,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    4,
+    4
+   ],
+   "ok": true,
+   "Mt": 207.80611400684455,
+   "Mh": 219.14277100467433,
+   "Lambda": 34278062162933.938,
+   "m_R": 24193385276.384712,
+   "yt_over_g": 1.2909162755212322,
+   "yt_over_g_needed": 0.8170151508150323,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    4,
+    6
+   ],
+   "ok": true,
+   "Mt": 208.68392010117316,
+   "Mh": 221.0288247010082,
+   "Lambda": 4.848640056801551e+16,
+   "m_R": 9194074693.82863,
+   "yt_over_g": 1.290923639318123,
+   "yt_over_g_needed": 0.7381437520853232,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    4,
+    8
+   ],
+   "ok": true,
+   "Mt": 208.33006780792655,
+   "Mh": 220.75864680444442,
+   "Lambda": 2.5082471749715054e+20,
+   "m_R": 2945432471.04683,
+   "yt_over_g": 1.2909187386828602,
+   "yt_over_g_needed": 0.6713077265140054,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    8,
+    4,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    4,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    6,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    6,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    6,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    6,
+    6
+   ],
+   "ok": true,
+   "Mt": 213.11427759751916,
+   "Mh": 233.2110669420635,
+   "Lambda": 268016594964784.78,
+   "m_R": 1735838656915.0215,
+   "yt_over_g": 1.4141440909132623,
+   "yt_over_g_needed": 0.8082139792088683,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    6,
+    8
+   ],
+   "ok": true,
+   "Mt": 212.94239278278513,
+   "Mh": 232.35467193395215,
+   "Lambda": 1.4156884001890296e+17,
+   "m_R": 1018375387771.5773,
+   "yt_over_g": 1.4141490801595737,
+   "yt_over_g_needed": 0.7377706506666258,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    6,
+    10
+   ],
+   "ok": true,
+   "Mt": 212.12775388932357,
+   "Mh": 230.54189060222762,
+   "Lambda": 1.903685716631349e+20,
+   "m_R": 553174234494.516,
+   "yt_over_g": 1.4141444171916546,
+   "yt_over_g_needed": 0.6761116828521045,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    8,
+    6,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    8,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    8,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    8,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    8,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    8,
+    8
+   ],
+   "ok": true,
+   "Mt": 216.85711291458472,
+   "Mh": 243.4071373529958,
+   "Lambda": 1240895060812240.5,
+   "m_R": 42165699450663.305,
+   "yt_over_g": 1.5274621232174062,
+   "yt_over_g_needed": 0.8029570961020397,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    8,
+    10
+   ],
+   "ok": true,
+   "Mt": 216.06064543045574,
+   "Mh": 240.836316897279,
+   "Lambda": 3.0905516822223264e+17,
+   "m_R": 31926669270616.418,
+   "yt_over_g": 1.5274649322169789,
+   "yt_over_g_needed": 0.7391067601338241,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    8,
+    12
+   ],
+   "ok": true,
+   "Mt": 214.94367953336638,
+   "Mh": 238.0269753586457,
+   "Lambda": 1.5578938434036305e+20,
+   "m_R": 23385318126882.906,
+   "yt_over_g": 1.527461196694227,
+   "yt_over_g_needed": 0.6820046979245931,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    8,
+    10,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    10,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    10,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    10,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    10,
+    10
+   ],
+   "ok": true,
+   "Mt": 219.64482627680863,
+   "Mh": 251.12501273236995,
+   "Lambda": 4064006986205989.5,
+   "m_R": 499709752636280.7,
+   "yt_over_g": 1.6329349613492352,
+   "yt_over_g_needed": 0.7997627916614789,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    10,
+    12
+   ],
+   "ok": true,
+   "Mt": 218.4674750179948,
+   "Mh": 247.46327421272105,
+   "Lambda": 5.60026012199397e+17,
+   "m_R": 443172299953537.8,
+   "yt_over_g": 1.6329363289472951,
+   "yt_over_g_needed": 0.741133830567924,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    8,
+    12,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    12,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    12,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    12,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    12,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    12,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    8,
+    12,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    0,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    0,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    0,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    0,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    0,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    0,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    2,
+    0
+   ],
+   "ok": true,
+   "Mt": 191.5346401907931,
+   "Mh": 186.88682149922445,
+   "Lambda": 287753581.94976807,
+   "m_R": 5973268.409037549,
+   "yt_over_g": 1.1545916771020843,
+   "yt_over_g_needed": 0.9627832633468993,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 198.7354868864844,
+   "Mh": 196.02750374973283,
+   "Lambda": 264792872672.35074,
+   "m_R": 1041616.4972887951,
+   "yt_over_g": 1.154606614745263,
+   "yt_over_g_needed": 0.8482398139488944,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    2,
+    4
+   ],
+   "ok": true,
+   "Mt": 200.93538646343717,
+   "Mh": 202.2346509808777,
+   "Lambda": 928686738300226.6,
+   "m_R": 128765.38684244156,
+   "yt_over_g": 1.1546178380575922,
+   "yt_over_g_needed": 0.7660051583308529,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    2,
+    6
+   ],
+   "ok": true,
+   "Mt": 200.2363468590498,
+   "Mh": 204.05002591615315,
+   "Lambda": 1.890978769461266e+19,
+   "m_R": 10139.756607724166,
+   "yt_over_g": 1.154618585492057,
+   "yt_over_g_needed": 0.7064794459549648,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    10,
+    2,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    2,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    2,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    4,
+    2
+   ],
+   "ok": true,
+   "Mt": 204.53536090688087,
+   "Mh": 215.28139163142075,
+   "Lambda": 15914390681.216997,
+   "m_R": 2092184158.5605397,
+   "yt_over_g": 1.290905246159675,
+   "yt_over_g_needed": 0.9202994687004996,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    4,
+    4
+   ],
+   "ok": true,
+   "Mt": 207.6883677579735,
+   "Mh": 218.2620333723569,
+   "Lambda": 6352663727954.994,
+   "m_R": 734710978.8138608,
+   "yt_over_g": 1.2909144232704652,
+   "yt_over_g_needed": 0.8258102737577393,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    4,
+    6
+   ],
+   "ok": true,
+   "Mt": 208.38249266714826,
+   "Mh": 220.12187213858078,
+   "Lambda": 6656720787293872.0,
+   "m_R": 218222800.3732987,
+   "yt_over_g": 1.290922011986504,
+   "yt_over_g_needed": 0.750355314054219,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    4,
+    8
+   ],
+   "ok": true,
+   "Mt": 207.79854741878717,
+   "Mh": 219.64184199213176,
+   "Lambda": 2.342732267591064e+19,
+   "m_R": 52518091.70059505,
+   "yt_over_g": 1.290920610760859,
+   "yt_over_g_needed": 0.6872781960755319,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    10,
+    4,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    4,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    6,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    6,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    6,
+    4
+   ],
+   "ok": true,
+   "Mt": 212.31613684673448,
+   "Mh": 234.5104705782698,
+   "Lambda": 298247040680.5333,
+   "m_R": 151878775191.8649,
+   "yt_over_g": 1.4141363376071443,
+   "yt_over_g_needed": 0.8949751139356432,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    6,
+    6
+   ],
+   "ok": true,
+   "Mt": 213.27672168535062,
+   "Mh": 233.17672293049046,
+   "Lambda": 61062315390373.03,
+   "m_R": 80223017229.52046,
+   "yt_over_g": 1.4141427490068974,
+   "yt_over_g_needed": 0.8143436625438898,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    6,
+    8
+   ],
+   "ok": true,
+   "Mt": 212.95662821772257,
+   "Mh": 232.2188480199869,
+   "Lambda": 2.5867079274987864e+16,
+   "m_R": 38911673921.28616,
+   "yt_over_g": 1.4141483507253843,
+   "yt_over_g_needed": 0.7466505425733652,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    6,
+    10
+   ],
+   "ok": true,
+   "Mt": 211.9835910283001,
+   "Mh": 230.17168001229726,
+   "Lambda": 2.6491064790912963e+19,
+   "m_R": 17012518976.136147,
+   "yt_over_g": 1.4141458428288545,
+   "yt_over_g_needed": 0.6878078756787246,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    10,
+    6,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    8,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    8,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    8,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    8,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    8,
+    8
+   ],
+   "ok": true,
+   "Mt": 217.1503388905998,
+   "Mh": 243.83216178348718,
+   "Lambda": 332500958682437.5,
+   "m_R": 2718264070085.1772,
+   "yt_over_g": 1.5274610884417013,
+   "yt_over_g_needed": 0.8074052745439054,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    8,
+    10
+   ],
+   "ok": true,
+   "Mt": 216.22074513391354,
+   "Mh": 241.12031652397388,
+   "Lambda": 6.992289861094163e+16,
+   "m_R": 1770667970155.7336,
+   "yt_over_g": 1.5274654568119828,
+   "yt_over_g_needed": 0.7460429023149698,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    8,
+    12
+   ],
+   "ok": true,
+   "Mt": 214.96905357959096,
+   "Mh": 238.06033690250513,
+   "Lambda": 2.8773579608992674e+19,
+   "m_R": 1095067021719.6516,
+   "yt_over_g": 1.527462329480214,
+   "yt_over_g_needed": 0.691443202690462,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    10,
+    10,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    10,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    10,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    10,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    10,
+    10
+   ],
+   "ok": true,
+   "Mt": 220.00396084469196,
+   "Mh": 251.80551975455677,
+   "Lambda": 1240895060812108.0,
+   "m_R": 42165699450663.48,
+   "yt_over_g": 1.6329341294728208,
+   "yt_over_g_needed": 0.8029570961020406,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    10,
+    12
+   ],
+   "ok": true,
+   "Mt": 218.7059581045892,
+   "Mh": 247.9967816331208,
+   "Lambda": 1.495751816695866e+17,
+   "m_R": 33112151051183.34,
+   "yt_over_g": 1.6329371640569486,
+   "yt_over_g_needed": 0.7466754632749475,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    10,
+    12,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    12,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    12,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    12,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    12,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    12,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    10,
+    12,
+    12
+   ],
+   "ok": true,
+   "Mt": 222.19849469421308,
+   "Mh": 257.99544261868346,
+   "Lambda": 3556369945925144.0,
+   "m_R": 378352730879413.6,
+   "yt_over_g": 1.7319958491463567,
+   "yt_over_g_needed": 0.8000781005743705,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    0,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    0,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    0,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    0,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    0,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    0,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    0,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    2,
+    0
+   ],
+   "ok": true,
+   "Mt": 190.4450433138207,
+   "Mh": 182.53102585520554,
+   "Lambda": 60373699.97624336,
+   "m_R": 166309.66695587692,
+   "yt_over_g": 1.1545873209623276,
+   "yt_over_g_needed": 0.9762675976927796,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    2,
+    2
+   ],
+   "ok": true,
+   "Mt": 197.23025199096216,
+   "Mh": 192.60341093458317,
+   "Lambda": 40874437189.1692,
+   "m_R": 22635.263063281433,
+   "yt_over_g": 1.1546035663774117,
+   "yt_over_g_needed": 0.8685303097566385,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    2,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    2,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    2,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    2,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    2,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    4,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    4,
+    2
+   ],
+   "ok": true,
+   "Mt": 204.39937184627144,
+   "Mh": 213.06251425340233,
+   "Lambda": 3945529924.9180527,
+   "m_R": 89409318.43689953,
+   "yt_over_g": 1.2909027816126308,
+   "yt_over_g_needed": 0.9274225425738706,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    4,
+    4
+   ],
+   "ok": true,
+   "Mt": 207.41752414524666,
+   "Mh": 217.02208243657867,
+   "Lambda": 1257750947456.5828,
+   "m_R": 25818378.078518335,
+   "yt_over_g": 1.2909124840215302,
+   "yt_over_g_needed": 0.8360086528208476,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    4,
+    6
+   ],
+   "ok": true,
+   "Mt": 207.90164242012054,
+   "Mh": 218.92169692232775,
+   "Lambda": 993618959645577.8,
+   "m_R": 6131196.399965666,
+   "yt_over_g": 1.2909203503178046,
+   "yt_over_g_needed": 0.7640472317460133,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    4,
+    8
+   ],
+   "ok": true,
+   "Mt": 207.01815553348715,
+   "Mh": 218.29950982600013,
+   "Lambda": 2.4370100787196774e+18,
+   "m_R": 1140828.9151518226,
+   "yt_over_g": 1.2909223982683566,
+   "yt_over_g_needed": 0.7052080405651546,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    12,
+    4,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    4,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    6,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    6,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    6,
+    4
+   ],
+   "ok": true,
+   "Mt": 212.52088080459092,
+   "Mh": 233.4184652472264,
+   "Lambda": 84903613814.12811,
+   "m_R": 9154595720.812754,
+   "yt_over_g": 1.4141346946184346,
+   "yt_over_g_needed": 0.8995434105324015,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    6,
+    6
+   ],
+   "ok": true,
+   "Mt": 213.36828306921348,
+   "Mh": 232.94983457104348,
+   "Lambda": 14630862558186.184,
+   "m_R": 4137627153.895755,
+   "yt_over_g": 1.4141413643130063,
+   "yt_over_g_needed": 0.8212600912567679,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    6,
+    8
+   ],
+   "ok": true,
+   "Mt": 212.91044514594302,
+   "Mh": 231.94378727148074,
+   "Lambda": 5027224053756261.0,
+   "m_R": 1683325546.0203416,
+   "yt_over_g": 1.4141471056373074,
+   "yt_over_g_needed": 0.7559981414214274,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    6,
+    10
+   ],
+   "ok": true,
+   "Mt": 211.78069347012104,
+   "Mh": 229.72541753074114,
+   "Lambda": 3.979793104968217e+18,
+   "m_R": 602891438.8836571,
+   "yt_over_g": 1.4141472134458835,
+   "yt_over_g_needed": 0.6997176190256877,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    12,
+    6,
+    12
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    8,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    8,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    8,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    8,
+    6
+   ],
+   "ok": true,
+   "Mt": 217.7722777184265,
+   "Mh": 247.43652040762998,
+   "Lambda": 890424865387.0077,
+   "m_R": 318347540168.1442,
+   "yt_over_g": 1.5274550571232224,
+   "yt_over_g_needed": 0.8812299424013641,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    8,
+    8
+   ],
+   "ok": true,
+   "Mt": 217.39779253062832,
+   "Mh": 244.13769653364398,
+   "Lambda": 92688123501927.6,
+   "m_R": 190904435034.99988,
+   "yt_over_g": 1.5274600301523542,
+   "yt_over_g_needed": 0.8125114732039882,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    8,
+    10
+   ],
+   "ok": true,
+   "Mt": 216.3506085521414,
+   "Mh": 241.320980922841,
+   "Lambda": 1.658460758789408e+16,
+   "m_R": 108024426803.57904,
+   "yt_over_g": 1.5274644760941738,
+   "yt_over_g_needed": 0.7532383648051806,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    8,
+    12
+   ],
+   "ok": true,
+   "Mt": 214.97638330327183,
+   "Mh": 238.06590882363076,
+   "Lambda": 5.625577617031782e+18,
+   "m_R": 57063558796.7427,
+   "yt_over_g": 1.5274634243232232,
+   "yt_over_g_needed": 0.7007608445753228,
+   "unif_ok": false
+  },
+  {
+   "dI": [
+    12,
+    10,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    10,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    10,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    10,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    10,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    10,
+    10
+   ],
+   "ok": true,
+   "Mt": 220.32752037649388,
+   "Mh": 252.40753304193845,
+   "Lambda": 391137173933649.0,
+   "m_R": 3811146869089.8955,
+   "yt_over_g": 1.6329332836505541,
+   "yt_over_g_needed": 0.8068105270716514,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    10,
+    12
+   ],
+   "ok": true,
+   "Mt": 218.92422505220057,
+   "Mh": 248.47046496373534,
+   "Lambda": 4.14646160894168e+16,
+   "m_R": 2668165205642.418,
+   "yt_over_g": 1.632936867097864,
+   "yt_over_g_needed": 0.752455613183928,
+   "unif_ok": true
+  },
+  {
+   "dI": [
+    12,
+    12,
+    0
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    12,
+    2
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    12,
+    4
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    12,
+    6
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    12,
+    8
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    12,
+    10
+   ],
+   "ok": false
+  },
+  {
+   "dI": [
+    12,
+    12,
+    12
+   ],
+   "ok": true,
+   "Mt": 222.55989830879406,
+   "Mh": 258.762928065532,
+   "Lambda": 1240895060811658.5,
+   "m_R": 42165699450662.79,
+   "yt_over_g": 1.731995151416566,
+   "yt_over_g_needed": 0.8029570961020446,
+   "unif_ok": true
+  }
+ ]
+}
