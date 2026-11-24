@@ -163,6 +163,13 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 67).** The y_t/g and λ/g² boundary relations are an a₄ theorem, independent of f.  Derived mechanisms tested: CC 2012 σ (M_h 190.5 → 180.5, M_t unchanged, m_σ ≈ 1.2×10¹⁴ GeV), PS without first order, a₆ moments (flat f: 0; e^{-u}: −3%; entropy f: −0.6%; need −36%), product geometries (invariant), computed thresholds (±0.9 GeV), gravity (10⁻⁸), and outliers.  None moves M_t below 189 GeV.  Mechanisms that hit 172.5 need input and fail the Higgs (151 GeV, or unstable).
 
+**Update (doc 68/69).**
+- **Matter content (68).** Higgs-blind content gives y_t/g = √(I_L/6) ≥ 1, so the best zero-parameter top is 187.1 GeV. Fixing the top with Higgs-coupled content always leaves M_h = 147–161 GeV.
+- **Multistage PS → LR → SM.** The top is flat at 191.2 GeV.
+- **SUSY spectral (S0 traces).** The top is 179–185 GeV, with tan β fixed at ≈ 57. The BvdBvS traces fail unification.
+- **Combination.** SUSY + 1 VL pair with universal y gives M_t = 168.4. With the share fitted, it gives 172.5 / 124 at M_S = 10 TeV, but that is 2 parameters for 2 observables.
+- **Verdict: no-go for derived solutions.** The minimal extra assumption is a VL pair with c ≈ 0.88 y_t (+ SUSY at ~10 TeV for the Higgs).
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 
