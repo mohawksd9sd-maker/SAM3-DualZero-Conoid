@@ -151,6 +151,8 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 61).** Structure search, Dual-Zero untouched: an extra Higgs-coupled fermion trace \(x\approx2.1\) in \(F\) (1 parameter) fits \(M_t\).  Ruled out: a large \(y_\nu\) alone (Higgs destabilised), PS chains and \(\Lambda\) shifts (187–194 GeV), the SM-group/Boyle–Farnsworth variant (185–190), and twisted/grand symmetry (190–194).  Flux towers preserve \(y_t/g\) exactly (no-go).  ω₀-type factors are numerology.
 
+**Update (doc 62).** The "Flower of Life" tested as its lattice (hexagonal \(T^2\), \(T^2/\mathbb Z_{3,6}\)) and the 4D version (\(D_4\) \(T^4\), \(T^4/\mathbb Z_3\to\) K3): neither forces 3 generations or vector-like states.  The hexagonal texture is democratic.  Its light-generation share would give \(M_t\approx172\)–174 but implies \(m_c/m_t\approx0.6\) (excluded).  \(D_4\) leaves \(M_t=190.4\) and needs \(M_c\gtrsim\Lambda\) to keep unification.
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 
