@@ -125,6 +125,8 @@ The spectral action produces Higgs-like scalars and a potential, in the standard
 
 **Update (doc 59).** σ with own running, Majorana Yukawa and movable threshold: \(m_H=167\)–169 GeV; thresholds: 167–169; gravity \((\Lambda/M_{\rm Pl})^2\sim10^{-7}\).  Only a free \(n=(y_\nu/y_t)^2\) (extra Yukawa content, 1 parameter) reaches 125.1 GeV.
 
+**Update (doc 60).** Full two-loop SM running below \(m_R\) with NNLO matching (Buttazzo et al.): \(m_H=180.5\pm1.8\) GeV with σ, 190.5 GeV without (vs 125.1).  Benchmark reproduced (\(\lambda(M_{\rm Pl})=-0.0144\)).
+
 **Tried in docs 44–54.**  
 Doc 45 records the standard CCM relation and that the raw conoid \(\times F\) is the wrong dimension.  Doc 48 treats the Higgs and PS-breaking scalars as part of the product action, without a unique vacuum derived from the geometry.  Yukawa and vacuum-expectation-value scales are absorbed or scanned, not fixed.
 
@@ -142,6 +144,8 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 **Update (doc 58, 23 Nov 2026).** The spectral relation \(y_t(\Lambda)=g\) (PS, \(n=1\)) predicts \(M_t\approx186\) GeV vs 172.5 (8% high).  Seesaw with \(M_N=m_R\) gives \(m_{\nu_3}\approx0.18\) eV; \(0.05\) eV needs \(M_N\approx3.6\,m_R\) (fitted Majorana coupling).
 
 **Update (doc 59).** With \(n\) fitted to \(m_H\), \(M_t=175.5\)–176.4 GeV (one-loop) / 180 GeV (two-loop top running): the one remaining prediction misses by 2–5%; a full two-loop PS Higgs-sector analysis is the next calculation.  \(0\nu\beta\beta\): nonzero (Majorana); NO 1.5–3.7 meV, IO 18–48 meV.
+
+**Update (doc 60).** Two-loop + NNLO matching: zero-parameter \(M_t=190.4\pm1.2\) GeV (+15σ vs 172.5); extension (b) with \(n\) fitted to \(m_H\): \(M_t\approx179\)–180 ± 1.3 GeV (≈6σ).  The top miss is real; \(y_t(\Lambda)\) must be ≈15% below \(g_U\).
 
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
