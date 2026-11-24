@@ -127,6 +127,8 @@ The spectral action produces Higgs-like scalars and a potential, in the standard
 
 **Update (doc 60).** Full two-loop SM running below \(m_R\) with NNLO matching (Buttazzo et al.): \(m_H=180.5\pm1.8\) GeV with σ, 190.5 GeV without (vs 125.1).  Benchmark reproduced (\(\lambda(M_{\rm Pl})=-0.0144\)).
 
+**Update (doc 61).** With the top fixed by extra Higgs-coupled fermions in \(F\), \(m_H=140\)–159 GeV for any multiplet (PS 16 pair: 146).  Reaching 125.1 needs a second parameter (larger \(y_\nu\)), which forces \(\sum m_\nu\ge0.18\) eV in the minimal seesaw.
+
 **Tried in docs 44–54.**  
 Doc 45 records the standard CCM relation and that the raw conoid \(\times F\) is the wrong dimension.  Doc 48 treats the Higgs and PS-breaking scalars as part of the product action, without a unique vacuum derived from the geometry.  Yukawa and vacuum-expectation-value scales are absorbed or scanned, not fixed.
 
@@ -146,6 +148,8 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 **Update (doc 59).** With \(n\) fitted to \(m_H\), \(M_t=175.5\)–176.4 GeV (one-loop) / 180 GeV (two-loop top running): the one remaining prediction misses by 2–5%; a full two-loop PS Higgs-sector analysis is the next calculation.  \(0\nu\beta\beta\): nonzero (Majorana); NO 1.5–3.7 meV, IO 18–48 meV.
 
 **Update (doc 60).** Two-loop + NNLO matching: zero-parameter \(M_t=190.4\pm1.2\) GeV (+15σ vs 172.5); extension (b) with \(n\) fitted to \(m_H\): \(M_t\approx179\)–180 ± 1.3 GeV (≈6σ).  The top miss is real; \(y_t(\Lambda)\) must be ≈20% below \(g_U\).
+
+**Update (doc 61).** Structure search, Dual-Zero untouched: an extra Higgs-coupled fermion trace \(x\approx2.1\) in \(F\) (1 parameter) fits \(M_t\).  Ruled out: a large \(y_\nu\) alone (Higgs destabilised), PS chains and \(\Lambda\) shifts (187–194 GeV), the SM-group/Boyle–Farnsworth variant (185–190), and twisted/grand symmetry (190–194).  Flux towers preserve \(y_t/g\) exactly (no-go).  ω₀-type factors are numerology.
 
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
