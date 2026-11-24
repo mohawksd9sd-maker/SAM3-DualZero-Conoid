@@ -170,6 +170,12 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 - **Combination.** SUSY + 1 VL pair with universal y gives M_t = 168.4. With the share fitted, it gives 172.5 / 124 at M_S = 10 TeV, but that is 2 parameters for 2 observables.
 - **Verdict: no-go for derived solutions.** The minimal extra assumption is a VL pair with c ≈ 0.88 y_t (+ SUSY at ~10 TeV for the Higgs).
 
+**Update (doc 70).** One-loop SUSY thresholds (BGSS 1407.4081) and two-loop MSSM Yukawa RGEs were added for candidate #10.
+- Δy_t and Δ_b at tan β ≈ 67 together give +2 GeV.
+- With M_S fitted to M_h = 125.1 (degenerate spectrum, X_t = 0, μ > 0), M_t = 170.5 GeV, which is −1.6σ.
+- Reaching 172.5 needs X_t ≈ −(1.6…2.4) M_S, a second fitted number.
+- Across all scanned spectra, M_t at M_h = 125.1 spans 166.1–172.9 GeV.
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 
