@@ -1,0 +1,642 @@
+{
+ "flavour": {
+  "A4": {
+   "order": 12,
+   "assignments": {
+    "L=3, R=3, H=1": {
+     "n_invariants": 1,
+     "random_H": {
+      "s2_min": 0.9999999999999992,
+      "s2_max": 1.0,
+      "s3_max": 1.0,
+      "forced_degenerate": true,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.9999999999999987,
+      "share_min": 1.999999999999997
+     }
+    },
+    "L=3, R=1+1'+1'', H=1": {
+     "n_invariants": 0
+    },
+    "L=3, R=1+1'+1'', H=3": {
+     "n_invariants": 3,
+     "H=1,0,0": {
+      "s2_min": 0.0,
+      "s2_max": 0.0,
+      "s3_max": 0.0,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.0,
+      "share_min": 0.0
+     },
+     "H=1,1,1": {
+      "s2_min": 0.13591615109969465,
+      "s2_max": 0.9940323921066014,
+      "s3_max": 0.9270031503646049,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.6759186025420618,
+      "share_min": 0.03313724981748247
+     },
+     "random_H": {
+      "s2_min": 0.11511069615733348,
+      "s2_max": 0.9015711225047357,
+      "s3_max": 0.6745481218216025,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.35687210262252256,
+      "share_min": 0.013696679037480314
+     }
+    },
+    "L=3, R=3, H=3": {
+     "n_invariants": 2,
+     "H=1,0,0": {
+      "s2_min": 0.055771301463585686,
+      "s2_max": 0.998325135626218,
+      "s3_max": 5.194673425541673e-31,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": false,
+      "share_median": 0.37087425861391904,
+      "share_min": 0.003110438066942155
+     },
+     "H=1,1,1": {
+      "s2_min": 0.5113407325068074,
+      "s2_max": 0.9973873479284313,
+      "s3_max": 0.9330992265319987,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.8045539028793227,
+      "share_min": 0.5007670967344817
+     },
+     "random_H": {
+      "s2_min": 0.3151115451481434,
+      "s2_max": 0.9788552589520533,
+      "s3_max": 0.8380139823811151,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.6922295755571461,
+      "share_min": 0.10391614903782498
+     }
+    },
+    "L=1+1'+1'', R=1+1'+1'', H=1": {
+     "n_invariants": 3,
+     "random_H": {
+      "s2_min": 0.1606576997392165,
+      "s2_max": 0.9990839810744581,
+      "s3_max": 0.9327478744635095,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.6383668690539219,
+      "share_min": 0.03152003947243535
+     }
+    }
+   }
+  },
+  "S4": {
+   "order": 24,
+   "assignments": {
+    "L=3, R=3, H=1": {
+     "n_invariants": 1,
+     "random_H": {
+      "s2_min": 0.9999999999999991,
+      "s2_max": 1.0,
+      "s3_max": 1.0,
+      "forced_degenerate": true,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.9999999999999984,
+      "share_min": 1.9999999999999964
+     }
+    },
+    "L=3, R=3', H=1": {
+     "n_invariants": 0
+    },
+    "L=2+1, R=2+1, H=1": {
+     "n_invariants": 2,
+     "random_H": {
+      "s2_min": 0.03644472352540049,
+      "s2_max": 1.0,
+      "s3_max": 0.9968450355294651,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.0475683331038987,
+      "share_min": 0.0026564357456857596
+     }
+    },
+    "L=3, R=3, H=3": {
+     "n_invariants": 1,
+     "H=1,0,0": {
+      "s2_min": 0.9999999999999988,
+      "s2_max": 0.9999999999999999,
+      "s3_max": 4.0656611917202575e-32,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999987,
+      "share_min": 0.9999999999999976
+     },
+     "H=1,1,1": {
+      "s2_min": 0.9999999999999988,
+      "s2_max": 1.0,
+      "s3_max": 2.6134388372749864e-16,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999991,
+      "share_min": 0.9999999999999976
+     },
+     "random_H": {
+      "s2_min": 0.9999999999999987,
+      "s2_max": 1.0,
+      "s3_max": 4.64906672566417e-16,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999992,
+      "share_min": 0.9999999999999973
+     }
+    }
+   }
+  },
+  "O_h": {
+   "order": 48,
+   "assignments": {
+    "L=3-, R=3-, H=1+": {
+     "n_invariants": 1,
+     "random_H": {
+      "s2_min": 0.9999999999999991,
+      "s2_max": 1.0,
+      "s3_max": 1.0,
+      "forced_degenerate": true,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.9999999999999984,
+      "share_min": 1.9999999999999964
+     }
+    },
+    "L=3-, R=3+, H=1+": {
+     "n_invariants": 0
+    },
+    "L=3-, R=3-, H=3+": {
+     "n_invariants": 1,
+     "H=1,0,0": {
+      "s2_min": 0.9999999999999991,
+      "s2_max": 1.0,
+      "s3_max": 1.5549627103939682e-32,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999998,
+      "share_min": 0.9999999999999982
+     },
+     "H=1,1,1": {
+      "s2_min": 0.9999999999999989,
+      "s2_max": 1.0,
+      "s3_max": 2.1456191632364337e-16,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999996,
+      "share_min": 0.9999999999999978
+     },
+     "random_H": {
+      "s2_min": 0.9999999999999991,
+      "s2_max": 1.0,
+      "s3_max": 4.4186510426586875e-16,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999996,
+      "share_min": 0.9999999999999982
+     }
+    }
+   }
+  },
+  "Delta27": {
+   "order": 27,
+   "assignments": {
+    "L=3, R=3, H=1_00": {
+     "n_invariants": 1,
+     "random_H": {
+      "s2_min": 0.9999999999999994,
+      "s2_max": 1.0,
+      "s3_max": 1.0,
+      "forced_degenerate": true,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.999999999999999,
+      "share_min": 1.9999999999999976
+     }
+    },
+    "L=3, R=3b, H=3b": {
+     "n_invariants": 3,
+     "H=1,0,0": {
+      "s2_min": 0.16065769973921645,
+      "s2_max": 0.9989257647568814,
+      "s3_max": 0.9420923879500672,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.6476891567276928,
+      "share_min": 0.031520039472435334
+     },
+     "H=1,1,1": {
+      "s2_min": 0.06833439951779548,
+      "s2_max": 0.9985715472253647,
+      "s3_max": 0.972915788297216,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.6740417345385405,
+      "share_min": 0.008733925232980545
+     },
+     "random_H": {
+      "s2_min": 0.40878622823755156,
+      "s2_max": 0.9777592616379273,
+      "s3_max": 0.6264536083906713,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.6690303542119153,
+      "share_min": 0.18399510820597015
+     }
+    },
+    "L=3, R=3b, H=3": {
+     "n_invariants": 0
+    }
+   }
+  },
+  "T'": {
+   "order": 24,
+   "assignments": {
+    "L=2+1, R=2+1, H=1": {
+     "n_invariants": 2,
+     "random_H": {
+      "s2_min": 0.03644472352540048,
+      "s2_max": 1.0,
+      "s3_max": 0.9968450355294651,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.0475683331038983,
+      "share_min": 0.0026564357456857583
+     }
+    },
+    "L=2+1, R=2+1, H=3": {
+     "n_invariants": 1,
+     "H=1,0,0": {
+      "s2_min": 0.9999999999999992,
+      "s2_max": 1.0,
+      "s3_max": 0.0,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999996,
+      "share_min": 0.9999999999999984
+     },
+     "H=1,1,1": {
+      "s2_min": 0.9999999999999993,
+      "s2_max": 1.0,
+      "s3_max": 0.0,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 0.9999999999999998,
+      "share_min": 0.9999999999999987
+     },
+     "random_H": {
+      "s2_min": 0.029227851268337376,
+      "s2_max": 0.9634784639469973,
+      "s3_max": 0.0,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": false,
+      "share_median": 0.1639327543439461,
+      "share_min": 0.0008542672897640508
+     }
+    }
+   }
+  },
+  "T7": {
+   "order": 21,
+   "assignments": {
+    "L=3, R=3, H=1": {
+     "n_invariants": 1,
+     "random_H": {
+      "s2_min": 1.0,
+      "s2_max": 1.0,
+      "s3_max": 1.0,
+      "forced_degenerate": true,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.9999999999999996,
+      "share_min": 1.9999999999999984
+     }
+    },
+    "L=3, R=3b, H=3": {
+     "n_invariants": 1,
+     "H=1,0,0": {
+      "s2_min": 3.462550733786785e-16,
+      "s2_max": 4.85701742470753e-16,
+      "s3_max": 3.798482340490942e-31,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": true,
+      "share_median": 1.619414224297597e-31,
+      "share_min": 1.1989257584047403e-31
+     },
+     "H=1,1,1": {
+      "s2_min": 0.9999999999999991,
+      "s2_max": 1.0,
+      "s3_max": 1.0,
+      "forced_degenerate": true,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": true,
+      "share_median": 1.9999999999999984,
+      "share_min": 1.9999999999999964
+     },
+     "random_H": {
+      "s2_min": 0.08817755210166496,
+      "s2_max": 0.9997091362675203,
+      "s3_max": 0.9636316963915872,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.5968724793576836,
+      "share_min": 0.010186649530611049
+     }
+    },
+    "L=3, R=3b, H=3b": {
+     "n_invariants": 2,
+     "H=1,0,0": {
+      "s2_min": 0.07802743099839476,
+      "s2_max": 0.9872679790819747,
+      "s3_max": 2.1924069449791304e-31,
+      "forced_degenerate": false,
+      "forced_rank_le_2": true,
+      "forced_equal_pair": false,
+      "share_median": 0.3461501507784499,
+      "share_min": 0.006088279988209256
+     },
+     "H=1,1,1": {
+      "s2_min": 0.518106967131655,
+      "s2_max": 0.9997581557478851,
+      "s3_max": 0.9806185867857057,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.7933086853680447,
+      "share_min": 0.5042224538061725
+     },
+     "random_H": {
+      "s2_min": 0.30112549115817416,
+      "s2_max": 0.9887838594672426,
+      "s3_max": 0.7489282929654106,
+      "forced_degenerate": false,
+      "forced_rank_le_2": false,
+      "forced_equal_pair": false,
+      "share_median": 0.7070901665502238,
+      "share_min": 0.09572286025201585
+     }
+    }
+   }
+  }
+ },
+ "a4_mixing": {
+  "prediction_sin2": {
+   "s12": 0.33333333333333254,
+   "s13": 2.993526098485738e-31,
+   "s23": 0.5000000000000001
+  },
+  "spread_over_random_couplings": {
+   "s13": 6.8629016108170945e-28,
+   "s12": 4.1050496335515163e-13,
+   "s23": 2.7977620220553945e-14
+  },
+  "data_NuFIT6_NO": {
+   "s12": [
+    0.307,
+    0.012
+   ],
+   "s13": [
+    0.02215,
+    0.00057
+   ],
+   "s23": [
+    0.47,
+    0.015
+   ]
+  },
+  "pulls_sigma": {
+   "s12": 2.1944444444443785,
+   "s13": -38.85964912280702,
+   "s23": 2.0000000000000093
+  },
+  "pati_salam_consequence": "Y_u, Y_d share the T-aligned flavon -> both diagonal in the same basis -> V_CKM = 1 (V_us = 0 vs 0.2250)"
+ },
+ "pipeline": {
+  "data-consistent texture (share 7e-6)": {
+   "Mt": 190.35821818744085,
+   "Mh": 180.50256904988004,
+   "free_params": "Yukawas fitted to data"
+  },
+  "Y ~ 1 (degenerate, any cube group, 1 parameter)": {
+   "x": 8.0,
+   "Mt": 141.09684213049414,
+   "Mh": 110.70548534070592,
+   "mc_over_mt": 1.0
+  },
+  "rank-2 degenerate (S4/O_h/T' with Higgs triplet)": {
+   "x": 4.0,
+   "Mt": 160.11497711882194,
+   "Mh": 133.50750258788477,
+   "mc_over_mt": 1.0
+  }
+ },
+ "seven_d": {
+  "T3 constant modes (no orbifold)": [
+   4,
+   4
+  ],
+  "T3/Z2 rotation (twist +1)": [
+   2,
+   2
+  ],
+  "T3/Z2 rotation (twist -1)": [
+   2,
+   2
+  ],
+  "T2 x S1/Z2 reflection, no flux (eta +1)": [
+   2,
+   2
+  ],
+  "T2 x S1/Z2 reflection, no flux (eta -1)": [
+   2,
+   2
+  ],
+  "magnetized T2 x S1/Z2 (per flux unit, eta +1)": [
+   2,
+   0
+  ],
+  "magnetized T2 x S1/Z2 (per flux unit, eta -1)": [
+   0,
+   2
+  ],
+  "reflections x2 and x3 anticommute": true,
+  "2O invariants on internal spinor": 0
+ },
+ "cubic_shells": {
+  "1": 6,
+  "2": 12,
+  "3": 8
+ },
+ "kk7_unification_shift": {
+  "1.0": {
+   "Mc_over_Lambda": 1.0,
+   "states": 0,
+   "delta_alpha_inv": 0.0
+  },
+  "0.9": {
+   "Mc_over_Lambda": 0.9,
+   "states": 6,
+   "delta_alpha_inv": 0.6372085811988559
+  },
+  "0.7": {
+   "Mc_over_Lambda": 0.7,
+   "states": 18,
+   "delta_alpha_inv": 2.279313763255244
+  }
+ },
+ "square_texture": {
+  "stats": {
+   "basis_higgs_ratios": [
+    [
+     1.0,
+     0.1233746751588391,
+     0.1233746751588391
+    ],
+    [
+     1.0,
+     1.0,
+     0.030329133960650716
+    ],
+    [
+     1.0,
+     0.12337467515883893,
+     0.12337467515883893
+    ],
+    [
+     1.0,
+     0.9999999999999996,
+     0.030329133960650723
+    ],
+    [
+     1.0,
+     0.12337467515883914,
+     0.1233746751588391
+    ],
+    [
+     1.0,
+     1.0,
+     0.030329133960650616
+    ]
+   ],
+   "sigma2_over_sigma1_median": 0.632390582617095,
+   "sigma2_over_sigma1_min": 0.23924616298568607,
+   "light_share_median": 0.49302730141290163,
+   "light_share_min": 0.059261804710169265,
+   "fraction_with_sigma2_below_0.01": 0.0
+  },
+  "Mt_range_by_higgs_direction": [
+   160.09362545422658,
+   189.15685822366
+  ],
+  "rows": [
+   [
+    0.030442620941098137,
+    189.15685822366,
+    177.6484141656039
+   ],
+   [
+    1.0009198563668031,
+    160.09362545422658,
+    133.46696534857267
+   ],
+   [
+    0.030442620941098057,
+    189.1568582236593,
+    177.6484141656032
+   ],
+   [
+    1.0009198563668023,
+    160.09362545422658,
+    133.46696534857267
+   ],
+   [
+    0.030442620941098147,
+    189.15685822365998,
+    177.6484141656039
+   ],
+   [
+    1.0009198563668031,
+    160.09362545422658,
+    133.46696534857267
+   ]
+  ]
+ },
+ "ark": {
+  "numbers_tried": 13,
+  "values": {
+   "(W/L)": 0.16666666666666666,
+   "(W/L)^1/2": 0.408248290463863,
+   "(W/L)^1/4": 0.6389431042462724,
+   "(W/L)^2": 0.027777777777777776,
+   "(W/H)^1/4": 1.1362193664674993,
+   "(H/L)": 0.1,
+   "(H/L)^1/2": 0.31622776601683794,
+   "(H/L)^1/4": 0.5623413251903491,
+   "(H/L)^2": 0.010000000000000002,
+   "(H/W)": 0.6,
+   "(H/W)^1/2": 0.7745966692414834,
+   "(H/W)^1/4": 0.8801117367933934,
+   "(H/W)^2": 0.36
+  },
+  "band": [
+   0.7914045046575796,
+   0.8140820050321739
+  ],
+  "hits": {},
+  "expected_chance_hits": 0.24567292072477118,
+  "nearest": {
+   "name": "(H/W)^1/2",
+   "value": 0.7745966692414834,
+   "Mt": 169.4125096933678,
+   "Mh": 147.3024543264409
+  },
+  "W/L=1/6 as y_t^2/4g^2": {
+   "Mt": 173.97101538669696,
+   "Mh": 153.41448331390887
+  }
+ },
+ "fano": {
+  "singular_values": [
+   1.0000000000000002,
+   1.0,
+   1.0,
+   1.0,
+   0.9999999999999999,
+   0.9999999999999999,
+   3.8646920656943625e-17
+  ],
+  "pattern": "three degenerate pairs + one zero for any v (antisymmetric, G2-covariant)"
+ }
+}

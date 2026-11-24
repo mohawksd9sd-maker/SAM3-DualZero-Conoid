@@ -155,6 +155,8 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 63).** Principle search (anomalies, KO/Poincaré duality/orientability, first order, doubling, index, quanta of geometry, Poincaré sphere): nothing forces Higgs-coupled vector-like fermions, and orientability forbids exact VL copies.  With the spectral gauge trace counted, the top needs \(\Delta a=2.20+2.07\,\Delta N\), and the fitted Higgs is 149–161 GeV.  The ω₀³ near miss gives \(M_t=171.8\), \(M_h=139\)–151 GeV and is not counted (input ω₀, post-hoc exponent, P(chance) ≈ 84%).
 
+**Update (doc 64).** Cube-inspired structures (A₄, S₄, O_h, Δ(27), T′, T₇ flavour groups; T³ cube and its orbifolds; Ezekiel, ark and seven-fold notes; scripture used as inspiration only): parameter-free textures are degenerate (m_c = m_t, M_t 141 or 160), fitted textures leave M_t = 190.36, M_h = 180.50.  The A₄ TBM prediction (s₁₃ = 0) is excluded at 39σ and forces V_CKM = 1 in PS.  Cube internal spaces are vector-like unless magnetized (then m_c/m_t ≥ 0.12); KK shells below Λ spoil unification.
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 
