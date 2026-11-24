@@ -79,3 +79,16 @@ def test_multistage_limit_and_flatness():
     assert a["ok"] and abs(a["Mt"] - 191.2) < 0.3
     b = mst.predict(2.0)
     assert b["ok"] and abs(b["Mt"] - a["Mt"]) < 1.5
+
+
+def test_combo_susy_plus_vl_pair_needs_a_fitted_share():
+    # universal y = y_t on both chains (da = 8): ratio 0.745, top lands ~4 GeV low, flat in M_S
+    r = ss.solve(3e3, n=1.0, dI=4.0, da_u=8.0)
+    assert r["ok"] and abs(r["yt_over_g"] - math.sqrt(5 / 9)) < 1e-6
+    assert 167.5 < r["Mt"] < 169.5 and abs(r["unif_mismatch"]) < 0.01
+    # no VL Yukawa share: the trace alone raises the top above the SUSY baseline
+    r0 = ss.solve(3e3, n=1.0, dI=4.0, da_u=0.0)
+    assert r0["ok"] and r0["Mt"] > 185.0
+    # the share that hits 172.5 is between, i.e. a continuous fit
+    rf = ss.solve(1e4, n=1.0, dI=4.0, da_u=6.1946)
+    assert rf["ok"] and abs(rf["Mt"] - 172.5) < 0.3 and 118 < rf["Mh"] < 132

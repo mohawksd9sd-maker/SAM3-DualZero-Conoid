@@ -118,7 +118,7 @@ def boundary_scale(hi, I, which: str) -> Optional[float]:
 
 def solve(M_S: float, trace: str = "S0 SM fermions only (CCM traces)", which: str = "12", n: float = 0.0,
           Delta_b: float = 0.0, X_hat: float = 0.0, alpha_s: float = 0.1180,
-          dI: float = 0.0, da_u: float = 0.0) -> Dict[str, object]:
+          dI: float = 0.0, da_u: float = 0.0, da_d: Optional[float] = None) -> Dict[str, object]:
     """Solve (M_t, tan beta) from the two spectral Higgs normalisations; then M_h.
     dI: universal extra gauge trace (heavy Higgs-blind or H_u-coupled VL states at Lambda);
     da_u: extra H_u-coupled Yukawa trace (units y_t^2) -- the combination route (SUSY + extra content)."""
@@ -133,7 +133,8 @@ def solve(M_S: float, trace: str = "S0 SM fermions only (CCM traces)", which: st
             return None
         g1, g2, g3, yt, yb, ytau, _ = hi.sol(tB)
         K = (2 / 3) * I[1] * g2 * g2
-        return yt - math.sqrt(K / (3 + n + da_u)), yb * yb - (K - ytau * ytau) / 3
+        dd = da_u if da_d is None else da_d   # H_d-coupled share (units y_b^2) of the same extra block
+        return yt - math.sqrt(K / (3 + n + da_u)), (3 + dd) * yb * yb + ytau * ytau - K
 
     def mt_of(tanb):
         f = lambda Mt: (lambda r: float("nan") if r is None else r[0])(at(Mt, tanb))
@@ -193,8 +194,8 @@ def needed_yt_over_g(M_S: float, tanb: float, trace="S0 SM fermions only (CCM tr
 
 def combo_fit(M_S: float, dI: float = 4.0, n: float = 1.0) -> Dict[str, object]:
     """SUSY + one VL 16-pair worth of trace (dI = 4) with an H_u-coupled share da_u fitted to M_t = 172.5."""
-    f = lambda x: (lambda r: r["Mt"] if r.get("ok") else float("nan"))(solve(M_S, n=n, dI=dI, da_u=x))
-    x = _bracket_root(f, 0.0, 12.0, 7)
+    f = lambda x: (lambda r: r["Mt"] - 172.5 if r.get("ok") else float("nan"))(solve(M_S, n=n, dI=dI, da_u=x))
+    x = _bracket_root(f, 0.0, 16.0, 9)
     if x != x:
         return {"ok": False, "M_S": M_S, "dI": dI}
     r = solve(M_S, n=n, dI=dI, da_u=x)
