@@ -176,6 +176,12 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 - Reaching 172.5 needs X_t ≈ −(1.6…2.4) M_S, a second fitted number.
 - Across all scanned spectra, M_t at M_h = 125.1 spans 166.1–172.9 GeV.
 
+**Update (doc 71).** Shawn's idea "time as a medium with reflecting banks" was tested against real data.
+- Planck TT echo search: the best Δχ² is 5.9 (linear) and 8.6 (log), with look-elsewhere p = 0.98 and 0.59. Excluded as a detection (A ≲ 1.2%).
+- CCC rings (WMAP 9-yr): consistent with Gaussian sims (p 0.2–0.8). GW echoes: none in GWTC-2/3.
+- Dispersion: |Δv/c| < 10⁻¹⁵ (GW170817) and |n−1| < 3.3×10⁻¹⁹ (GRB 090510). α drift: |ε| ≲ 3×10⁻⁸ (clocks). A future bank is untestable.
+- No effect on Dual-Zero, M_t or M_h.
+
 **Tried in docs 44–54.**  
 Docs 47–48 compute Yukawa tensors as functions of \(\tau\) and Wilson lines and label scans as underdetermined fits.  Doc 51 rejects May fitted CKM figures as claims.  Doc 54 confirms that the tiny entries at vanishing Wilson lines are not rounding artefacts (grid refinement changes them by at most \(8\times 10^{-16}\); Dual-Zero does not lift them to \(O(1)\)).
 

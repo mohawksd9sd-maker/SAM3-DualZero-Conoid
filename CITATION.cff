@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use or build on this work, please cite it as below."
+title: "SAM-3 Dual-Zero Conoid"
+authors:
+  - family-names: Dykes
+    given-names: Shawn
+abstract: "SAM-3 / Dual-Zero framework, originated by Shawn Dykes: geometric and spectral research on a right conoid with Dual-Zero regularisation."
+repository-code: "https://github.com/mohawksd9sd-maker/SAM3-DualZero-Conoid"
+date-released: 2026-11-24
+type: software

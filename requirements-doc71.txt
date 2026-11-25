@@ -1,0 +1,3 @@
+# Optional extras for doc 71 (time-as-a-medium tests)
+camb>=1.5
+healpy>=1.16
