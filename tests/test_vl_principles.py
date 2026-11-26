@@ -1,3 +1,4 @@
+# erratum 2026-11-26: doc 60 baseline M_t 190.36 -> 190.61 after fixing the Buttazzo v4 reference point (173.10 -> 173.34).
 """Tests for doc 63: principles that could force vector-like Higgs-coupled fermions."""
 
 from __future__ import annotations
@@ -55,7 +56,7 @@ def test_poincare_sphere():
 
 def test_full_copies_leave_top_invariant():
     r = vp.full_copies_invariance(2)
-    assert abs(r["at_Lambda"]["Mt"] - 190.36) < 0.05 and abs(r["at_Lambda"]["Mh"] - 180.5) < 0.1
+    assert abs(r["at_Lambda"]["Mt"] - 190.61) < 0.05 and abs(r["at_Lambda"]["Mh"] - 180.5) < 0.1
 
 
 def test_gauge_trace_correction():

@@ -1,3 +1,4 @@
+# erratum 2026-11-26: doc 60 baseline M_t 190.36 -> 190.61 after fixing the Buttazzo v4 reference point (173.10 -> 173.34).
 """Tests for doc 61: structures that lower the spectral top Yukawa."""
 
 from __future__ import annotations
@@ -16,7 +17,7 @@ from report_61 import kk_identity  # noqa: E402
 
 def test_reduces_to_doc60():
     r = ts.predict(ts.Cand())
-    assert abs(r["Mt"] - 190.36) < 0.05 and abs(r["Mh"] - 180.50) < 0.05
+    assert abs(r["Mt"] - 190.61) < 0.05 and abs(r["Mh"] - 180.50) < 0.05
     assert abs(r["yt_B"] / r["yt_B_data"] - 1.245) < 0.01
 
 
