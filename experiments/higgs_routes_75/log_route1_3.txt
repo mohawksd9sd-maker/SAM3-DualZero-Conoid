@@ -1,0 +1,66 @@
+{'xt': -2.449, 'sgn': 1.0, 'mode': 'doc60'} Mt=172.83 Mh73=124.09 (re 124.09)
+   R1 derived|tracking dlam=0.00000 Mh=124.09 dMh=+0.00 pull=-0.57
+   R1 derived|frozen dlam=0.00000 Mh=124.09 dMh=+0.00 pull=-0.57
+   R1 x=1 [C]|tracking dlam=0.00551 Mh=126.33 dMh=+2.24 pull=+0.70
+   R1 x=1 [C]|frozen dlam=0.01212 Mh=129.01 dMh=+4.92 pull=+2.22
+   R1 x->inf [C]|tracking dlam=0.01102 Mh=128.56 dMh=+4.47 pull=+1.96
+   R1 x->inf [C]|frozen dlam=0.02424 Mh=133.88 dMh=+9.80 pull=+4.98
+   R1 x_derived=3.92e-26
+   R3 model: k(L)=0.519 dmh2=4.374e-24 GeV^2 dMh=1.762e-26 GeV
+   R3 [C] TeV VL Xk=0 k=0.799 dmh2=596 Mh_pipe=126.09 Mh_quad=126.46
+   R3 [C] TeV VL Xk max k=0.799 dmh2=4496 Mh_pipe=139.00 Mh_quad=141.05
+{'xt': -2.2, 'sgn': 1.0, 'mode': 'doc60'} Mt=172.80 Mh73=124.32 (re 124.32)
+   R1 derived|tracking dlam=0.00000 Mh=124.32 dMh=+0.00 pull=-0.44
+   R1 derived|frozen dlam=0.00000 Mh=124.32 dMh=+0.00 pull=-0.44
+   R1 x=1 [C]|tracking dlam=0.00551 Mh=126.56 dMh=+2.24 pull=+0.83
+   R1 x=1 [C]|frozen dlam=0.01212 Mh=129.24 dMh=+4.92 pull=+2.35
+   R1 x->inf [C]|tracking dlam=0.01102 Mh=128.79 dMh=+4.47 pull=+2.09
+   R1 x->inf [C]|frozen dlam=0.02424 Mh=134.11 dMh=+9.79 pull=+5.11
+   R1 x_derived=3.92e-26
+   R3 model: k(L)=0.519 dmh2=4.371e-24 GeV^2 dMh=1.758e-26 GeV
+   R3 [C] TeV VL Xk=0 k=0.799 dmh2=597 Mh_pipe=126.32 Mh_quad=126.70
+   R3 [C] TeV VL Xk max k=0.799 dmh2=4509 Mh_pipe=139.27 Mh_quad=141.29
+{'xt': -2.0, 'sgn': 1.0, 'mode': 'doc60'} Mt=172.77 Mh73=124.02 (re 124.02)
+   R1 derived|tracking dlam=0.00000 Mh=124.02 dMh=+0.00 pull=-0.61
+   R1 derived|frozen dlam=0.00000 Mh=124.02 dMh=+0.00 pull=-0.61
+   R1 x=1 [C]|tracking dlam=0.00551 Mh=126.26 dMh=+2.24 pull=+0.66
+   R1 x=1 [C]|frozen dlam=0.01212 Mh=128.94 dMh=+4.92 pull=+2.18
+   R1 x->inf [C]|tracking dlam=0.01102 Mh=128.50 dMh=+4.47 pull=+1.93
+   R1 x->inf [C]|frozen dlam=0.02424 Mh=133.82 dMh=+9.80 pull=+4.94
+   R1 x_derived=3.92e-26
+   R3 model: k(L)=0.519 dmh2=4.373e-24 GeV^2 dMh=1.763e-26 GeV
+   R3 [C] TeV VL Xk=0 k=0.800 dmh2=599 Mh_pipe=126.03 Mh_quad=126.41
+   R3 [C] TeV VL Xk max k=0.800 dmh2=4520 Mh_pipe=139.01 Mh_quad=141.07
+{'xt': -1.5, 'sgn': 1.0, 'mode': 'doc60'} Mt=172.65 Mh73=122.16 (re 122.16)
+   R1 derived|tracking dlam=0.00000 Mh=122.16 dMh=+0.00 pull=-1.67
+   R1 derived|frozen dlam=0.00000 Mh=122.16 dMh=+0.00 pull=-1.67
+   R1 x=1 [C]|tracking dlam=0.00551 Mh=124.41 dMh=+2.25 pull=-0.39
+   R1 x=1 [C]|frozen dlam=0.01212 Mh=127.10 dMh=+4.93 pull=+1.13
+   R1 x->inf [C]|tracking dlam=0.01102 Mh=126.65 dMh=+4.49 pull=+0.88
+   R1 x->inf [C]|frozen dlam=0.02424 Mh=131.99 dMh=+9.82 pull=+3.91
+   R1 x_derived=3.94e-26
+   R3 model: k(L)=0.519 dmh2=4.395e-24 GeV^2 dMh=1.799e-26 GeV
+   R3 [C] TeV VL Xk=0 k=0.801 dmh2=602 Mh_pipe=124.19 Mh_quad=124.60
+   R3 [C] TeV VL Xk max k=0.801 dmh2=4546 Mh_pipe=137.29 Mh_quad=139.54
+{'xt': -1.0, 'sgn': 1.0, 'mode': 'doc60'} Mt=172.47 Mh73=119.80 (re 119.80)
+   R1 derived|tracking dlam=0.00000 Mh=119.80 dMh=+0.00 pull=-3.01
+   R1 derived|frozen dlam=0.00000 Mh=119.80 dMh=+0.00 pull=-3.01
+   R1 x=1 [C]|tracking dlam=0.00551 Mh=122.05 dMh=+2.26 pull=-1.73
+   R1 x=1 [C]|frozen dlam=0.01212 Mh=124.75 dMh=+4.95 pull=-0.20
+   R1 x->inf [C]|tracking dlam=0.01102 Mh=124.30 dMh=+4.51 pull=-0.45
+   R1 x->inf [C]|frozen dlam=0.02423 Mh=129.65 dMh=+9.86 pull=+2.58
+   R1 x_derived=3.99e-26
+   R3 model: k(L)=0.519 dmh2=4.443e-24 GeV^2 dMh=1.855e-26 GeV
+   R3 [C] TeV VL Xk=0 k=0.802 dmh2=606 Mh_pipe=121.84 Mh_quad=122.30
+   R3 [C] TeV VL Xk max k=0.802 dmh2=4574 Mh_pipe=135.07 Mh_quad=137.57
+{'xt': 0.0, 'sgn': 1.0, 'mode': 'doc60'} Mt=171.92 Mh73=117.13 (re 117.13)
+   R1 derived|tracking dlam=0.00000 Mh=117.13 dMh=+0.00 pull=-4.52
+   R1 derived|frozen dlam=0.00000 Mh=117.13 dMh=+0.00 pull=-4.52
+   R1 x=1 [C]|tracking dlam=0.00551 Mh=119.39 dMh=+2.27 pull=-3.24
+   R1 x=1 [C]|frozen dlam=0.01210 Mh=122.09 dMh=+4.96 pull=-1.71
+   R1 x->inf [C]|tracking dlam=0.01102 Mh=121.65 dMh=+4.52 pull=-1.96
+   R1 x->inf [C]|frozen dlam=0.02421 Mh=127.01 dMh=+9.88 pull=+1.08
+   R1 x_derived=4.17e-26
+   R3 model: k(L)=0.519 dmh2=4.641e-24 GeV^2 dMh=1.981e-26 GeV
+   R3 [C] TeV VL Xk=0 k=0.804 dmh2=612 Mh_pipe=119.21 Mh_quad=119.71
+   R3 [C] TeV VL Xk max k=0.804 dmh2=4623 Mh_pipe=132.61 Mh_quad=135.43
