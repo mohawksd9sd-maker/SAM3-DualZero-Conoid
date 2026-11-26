@@ -184,6 +184,15 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 - A full threshold scan hits both masses only with M_S fitted and X_t chosen (a fit).
 - No admissible finite space beyond PS lowers y_t/g.
 
+**Update (doc 76).** Doc 75's open problems were followed up.
+
+- Two-loop soft running barely moves the result: M_t +0.02 GeV, M_h −0.02 to −0.19 GeV.
+- One-loop-tadpole EWSB lifts m_A from 0.1–0.3 M_S to about 0.45 M_S, about 8 TeV, which is beyond the Run-2 A/H → ττ reach. The light-m_A problem was a tree-level artefact.
+- Re-solved: M_t = 171.4–171.7 GeV and M_h = 125.8–126.7 GeV, both within 1σ at all five points.
+- The M_h theory error from matching scale, two-loop soft terms and EWSB is about ±0.5 GeV. The matching-scheme spread of about 1.6 GeV is not reduced.
+- Stau LSP: R-parity violation is excluded by the BvdBvS R-grading [D]. A gravitino LSP is consistent but assumed [U] and chosen [C], and it needs T_R ≲ 2×10⁶ GeV.
+- All of this is conditional, as in doc 75. Originator: Shawn Dykes.
+
 **Update (doc 75).** For candidate #10, X_t is no longer hand-picked. A universal soft-breaking boundary at Λ (the structure the spectral action allows, per Beenakker–van den Broek–van Suijlekom) is run down to M_S.
 - The running gives X̂_t ≈ −1.0 ± 0.2 over the whole viable window. Exact unification then fixes M_S ≈ 13–30 TeV.
 - Result: **M_t ≈ 171.3–171.7 GeV and M_h ≈ 126.3–127.2 GeV (Buttazzo matching) or 125.0 GeV (SMDR)**, all within about 1σ.
