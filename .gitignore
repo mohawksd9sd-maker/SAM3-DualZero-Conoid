@@ -9,3 +9,7 @@ pipeline_output/
 # doc 71: public maps (download with experiments/time_medium/data/fetch.sh) and rebuildable caches
 experiments/time_medium/data/*.fits
 experiments/time_medium/templates_doc71.npz
+# doc 74: public Planck maps and rebuildable caches
+experiments/time_medium_sound/data/
+experiments/time_medium_sound/fastcls_doc74.npz
+experiments/time_medium_sound/log_*.txt

@@ -1,6 +1,7 @@
 # Roadmap: what must be found for an authentic GUT and an authentic TOE
 
 **Date:** 23 November 2026 (America/Chicago)  
+**Originator:** the SAM-3 / Dual-Zero framework is by Shawn Dykes.  
 **Status:** research targets, not claims.  Nothing in this file is a derivation, a fit presented as a result, or a change to the locked core.
 
 Honesty rule: unproven statements are labelled.  Null results stay null.  Dual-Zero is to be preserved in the well-posed form of docs 18 and 52 — the generator \(\varepsilon(n)=\omega_0(-1)^n n^{-n}\) with \(\omega_0\) an input, and the symmetric average \(\operatorname{Reg}_2\) acting on functions of a spectral parameter.  It is not a uniqueness theorem, not a heat-trace weight \(\sum\varepsilon(n)e^{-t\lambda_n^2}\), and not the SAM-2 ultrafilter entity.  Information-conserving Dual-Zero arithmetic (doc 53) may be used in computations; it removes rounding loss only.
@@ -147,7 +148,7 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 59).** With \(n\) fitted to \(m_H\), \(M_t=175.5\)–176.4 GeV (one-loop) / 180 GeV (two-loop top running): the one remaining prediction misses by 2–5%; a full two-loop PS Higgs-sector analysis is the next calculation.  \(0\nu\beta\beta\): nonzero (Majorana); NO 1.5–3.7 meV, IO 18–48 meV.
 
-**Update (doc 60).** Two-loop + NNLO matching: zero-parameter \(M_t=190.4\pm1.2\) GeV (+15σ vs 172.5); extension (b) with \(n\) fitted to \(m_H\): \(M_t\approx179\)–180 ± 1.3 GeV (≈6σ).  The top miss is real; \(y_t(\Lambda)\) must be ≈20% below \(g_U\).
+**Update (doc 60).** Two-loop + NNLO matching: zero-parameter \(M_t=190.6\pm1.2\) GeV (+15σ vs 172.5; 190.4 before the 26 Nov 2026 erratum); extension (b) with \(n\) fitted to \(m_H\): \(M_t\approx179.6\)–180.5 ± 1.3 GeV (≈6σ).  The top miss is real; \(y_t(\Lambda)\) must be ≈20% below \(g_U\).
 
 **Update (doc 61).** Structure search, Dual-Zero untouched: an extra Higgs-coupled fermion trace \(x\approx2.1\) in \(F\) (1 parameter) fits \(M_t\).  Ruled out: a large \(y_\nu\) alone (Higgs destabilised), PS chains and \(\Lambda\) shifts (187–194 GeV), the SM-group/Boyle–Farnsworth variant (185–190), and twisted/grand symmetry (190–194).  Flux towers preserve \(y_t/g\) exactly (no-go).  ω₀-type factors are numerology.
 
@@ -172,9 +173,27 @@ The Cremades–Ibáñez–Marchesano overlap mechanism exists and was implemente
 
 **Update (doc 70).** One-loop SUSY thresholds (BGSS 1407.4081) and two-loop MSSM Yukawa RGEs were added for candidate #10.
 - Δy_t and Δ_b at tan β ≈ 67 together give +2 GeV.
-- With M_S fitted to M_h = 125.1 (degenerate spectrum, X_t = 0, μ > 0), M_t = 170.5 GeV, which is −1.6σ.
-- Reaching 172.5 needs X_t ≈ −(1.6…2.4) M_S, a second fitted number.
-- Across all scanned spectra, M_t at M_h = 125.1 spans 166.1–172.9 GeV.
+- With M_S fitted to M_h = 125.1 (degenerate spectrum, X_t = 0, μ > 0), M_t = 170.8 GeV, which is −1.4σ (corrected 26 Nov 2026; was 170.5).
+- Reaching 172.5 needs X_t ≈ −(1.3…2.45) M_S, a second fitted number.
+- Across all scanned spectra, M_t at M_h = 125.1 spans 166.3–173.3 GeV.
+
+**Erratum (26 Nov 2026).** Two pipeline bugs were fixed in place: the Buttazzo v4 reference top mass (173.10 → 173.34) in `two_loop_higgs.py`, and the −X_t⁵/4 → −X_t⁵ two-loop quartic threshold in `susy_thresholds.py`. All M_t values from docs 60–70 move up by about +0.24 GeV. Docs 60 and 70 were rerun. Docs 61–69 are not individually rerun, so read their M_t as about +0.25 GeV. M_h is unchanged except at large stop mixing. No verdict changes.
+
+**Update (doc 72).** Open routes on candidate #10.
+- Three-loop SM and MSSM running, two-loop SQCD and O(α_t²) thresholds, and SMDR matching move M_t by ≲ 0.3 GeV.
+- A full threshold scan hits both masses only with M_S fitted and X_t chosen (a fit).
+- No admissible finite space beyond PS lowers y_t/g.
+
+**Update (doc 75).** For candidate #10, X_t is no longer hand-picked. A universal soft-breaking boundary at Λ (the structure the spectral action allows, per Beenakker–van den Broek–van Suijlekom) is run down to M_S.
+- The running gives X̂_t ≈ −1.0 ± 0.2 over the whole viable window. Exact unification then fixes M_S ≈ 13–30 TeV.
+- Result: **M_t ≈ 171.3–171.7 GeV and M_h ≈ 126.3–127.2 GeV (Buttazzo matching) or 125.0 GeV (SMDR)**, all within about 1σ.
+- **Conditional, not a derivation.** It assumes SUSY, universal soft terms at Λ (borrowed from a noncommutative MSSM that is not exactly supersymmetric), μ > 0, one-loop soft running and tree-level EWSB.
+- Open problems: the lightest superpartner is a charged stau, and m_A is light (0.1–0.3 M_S). The M_h theory error (±~2 GeV) is as large as the distance to 125.1.
+- The Pati–Salam D-term and the vector-like-pair thresholds are both zero at their model values (suppressed by (M_S/Λ)²).
+
+**Update (doc 73).** Exact gauge unification fixes M_S at about 2–4 TeV with no Higgs or top input, and gives a conditional derived **M_t ≈ 171.9 GeV** (X_t = 0) to 172.8 (X̂_t ≈ −2), within 1σ.
+- This assumes SUSY, y = y_t and μ > 0.
+- M_h is not derived: 117 GeV at X_t = 0, and 122–124 only with X_t ≈ −2 M_S chosen.
 
 **Update (doc 71).** Shawn's idea "time as a medium with reflecting banks" was tested against real data.
 - Planck TT echo search: the best Δχ² is 5.9 (linear) and 8.6 (log), with look-elsewhere p = 0.98 and 0.59. Excluded as a detection (A ≲ 1.2%).
