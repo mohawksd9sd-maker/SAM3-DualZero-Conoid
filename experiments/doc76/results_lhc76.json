@@ -1,0 +1,37 @@
+[
+ {
+  "tag": "r2_0.5_0",
+  "mA_doc75_tree": 4300.3232820533485,
+  "mA_doc76_loopEWSB": 8782.274560842567,
+  "doc75": "beyond Run-2 tautau reach",
+  "doc76": "beyond Run-2 tautau reach"
+ },
+ {
+  "tag": "r2_0.75_-0.2",
+  "mA_doc75_tree": 2629.186764287676,
+  "mA_doc76_loopEWSB": 8317.429997582014,
+  "doc75": "inside CMS range only (needs recast)",
+  "doc76": "beyond Run-2 tautau reach"
+ },
+ {
+  "tag": "b2_0.3_-0.6",
+  "mA_doc75_tree": 5014.005255549801,
+  "mA_doc76_loopEWSB": 7913.045070564776,
+  "doc75": "beyond Run-2 tautau reach",
+  "doc76": "beyond Run-2 tautau reach"
+ },
+ {
+  "tag": "b2_0.8_-0.6",
+  "mA_doc75_tree": 2572.817579257104,
+  "mA_doc76_loopEWSB": 7649.7278371512275,
+  "doc75": "inside CMS range only (needs recast)",
+  "doc76": "beyond Run-2 tautau reach"
+ },
+ {
+  "tag": "b2_0_0",
+  "mA_doc75_tree": 5306.668694336139,
+  "mA_doc76_loopEWSB": 9083.666376986368,
+  "doc75": "beyond Run-2 tautau reach",
+  "doc76": "beyond Run-2 tautau reach"
+ }
+]
