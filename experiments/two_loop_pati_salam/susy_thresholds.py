@@ -191,7 +191,7 @@ def thresholds(sm: Dict[str, float], tanb: float, sp: Spectrum, yt_mssm_guess: O
     l_2l = 0.0
     if sp.two_loop_lam:
         # eq. (36): valid for M3 = m_Q = m_U = M_S; used for all r3 (uncertainty quoted)
-        l_2l = a3 * t2 * t2 / (96 * math.pi ** 4) * (-12 * Xt - 6 * X2 + 14 * Xt ** 3 + X2 * X2 / 2 - Xt ** 5 / 4)
+        l_2l = a3 * t2 * t2 / (96 * math.pi ** 4) * (-12 * Xt - 6 * X2 + 14 * Xt ** 3 + X2 * X2 / 2 - Xt ** 5)  # erratum 2026-11-26: was -Xt**5/4; BGSS 1407.4081 eq. (36) has -X_t^5/M_S^5
     lam_bgss = lam_tree + (K * (l_reg + l_phi + l_sb + l_chi1 + l_chi2) + l_2l if sp.lam_thr else 0.0)
     if not sp.yuk_thr:
         dyt, d_ne_b, fg3, fg2 = 0.0, 0.0, 1.0, 1.0
