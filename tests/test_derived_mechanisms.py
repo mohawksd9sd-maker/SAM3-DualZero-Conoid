@@ -20,7 +20,8 @@ def test_sigma_moves_higgs_not_top():
     assert abs(no["Mt"] - yes["Mt"]) < 0.1
     assert 8 < no["Mh"] - yes["Mh"] < 12
     hand = [r for r in dm.c1_sigma() if "by hand" in r["name"]][0]
-    assert abs(hand["Mt"] - 172.5) < 0.05 and hand["Mh"] > 145
+    # erratum 2026-11-26 (doc 60 M_t reference 173.10 -> 173.34): r = 0.8026 was tuned pre-fix, now gives 172.75
+    assert abs(hand["Mt"] - 172.75) < 0.05 and hand["Mh"] > 145
 
 
 def test_sigma_sector():
@@ -32,7 +33,7 @@ def test_sigma_sector():
 
 def test_mixed_bidoublet_orthogonality_and_limits():
     r0 = dm.mixed_bidoublet(0.0, scenario="composite")
-    assert abs(r0["Mt"] - 190.36) < 0.05            # theta = 0 is the baseline boundary
+    assert abs(r0["Mt"] - 190.61) < 0.05            # theta = 0 is the baseline boundary
     c2 = dm.c2_no_first_order()
     assert len(c2["fits"]) == 2
     for f in c2["fits"]:
@@ -53,7 +54,7 @@ def test_heat_kernel_moments_and_needed():
 def test_product_geometry_invariant():
     for r in dm.c4_traces():
         if r["name"].startswith("product geometry"):
-            assert abs(r["Mt"] - 190.36) < 0.05 and abs(r["Mh"] - 180.5) < 0.1
+            assert abs(r["Mt"] - 190.61) < 0.05 and abs(r["Mh"] - 180.5) < 0.1
 
 
 def test_gravity_and_SW():
@@ -65,7 +66,7 @@ def test_gravity_and_SW():
 def test_thresholds_too_small():
     t = dm.c6_thresholds()
     assert t["dMt_mR_thresholds"] < 3 and t["needed_pct"] > 15
-    assert all(abs(r["Mt"] - 190.36) < 1.5 for r in t["rows"])
+    assert all(abs(r["Mt"] - 190.61) < 1.5 for r in t["rows"])
 
 
 def test_nothing_derived_passes():

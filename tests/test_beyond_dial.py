@@ -1,3 +1,4 @@
+# erratum 2026-11-26: doc 60 baseline M_t 190.36 -> 190.61 after fixing the Buttazzo v4 reference point (173.10 -> 173.34).
 """Docs 68-69: matter-content search, multi-stage breaking, SUSY spectral boundary (exploratory)."""
 
 import math
@@ -19,8 +20,8 @@ import two_loop_higgs as th  # noqa: E402
 def test_engine_reproduces_doc60_baseline():
     r = ce.predict_ps(ce.Content("base"))
     assert r["ok"]
-    assert abs(r["Mt"] - 190.36) < 0.02 and abs(r["Mh"] - 180.50) < 0.02
-    assert abs(r["m_R"] / 4.2166e13 - 1) < 1e-3 and abs(r["Lambda"] / 1.2409e15 - 1) < 1e-3
+    assert abs(r["Mt"] - 190.61) < 0.02 and abs(r["Mh"] - 180.50) < 0.02
+    assert abs(r["m_R"] / 4.2433e13 - 1) < 1e-3 and abs(r["Lambda"] / 1.2474e15 - 1) < 1e-3
 
 
 def test_trace_index_reproduces_bvdbvs_coupling_relations():

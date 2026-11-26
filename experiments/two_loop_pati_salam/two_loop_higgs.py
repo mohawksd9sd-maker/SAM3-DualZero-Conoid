@@ -47,9 +47,12 @@ class Phys:
     mtau: float = 1.77686
 
 
+MT_REF = 173.34  # erratum 2026-11-26: Buttazzo et al. 1307.3536v4 fits are expanded around M_t = 173.34 (v2 used 173.10)
+
+
 def msbar_at_Mt(p: Phys = Phys()) -> Dict[str, float]:
-    """NNLO MS-bar couplings at mu = M_t (Buttazzo et al. eqs. 57-60 fits)."""
-    dt = p.Mt - 173.10
+    """NNLO MS-bar couplings at mu = M_t (Buttazzo et al. v4 eqs. 57-60 fits)."""
+    dt = p.Mt - MT_REF
     da = (p.alpha_s - 0.1184) / 0.0007
     dw = (p.MW - 80.384) / 0.014
     v = 246.22
@@ -71,12 +74,12 @@ MATCH_ERR = {"yt": 0.00050, "lambda": 0.00030}  # Buttazzo theory errors
 
 def Mt_from_yt(yt: float, alpha_s: float = 0.1180) -> float:
     da = (alpha_s - 0.1184) / 0.0007
-    return 173.10 + (yt - 0.93690 + 0.00042 * da) / 0.00556
+    return MT_REF + (yt - 0.93690 + 0.00042 * da) / 0.00556
 
 
 def Mh_from_lambda(lam: float, Mt: float) -> float:
     """Higgs pole mass from lambda(M_t) (NNLO threshold, inverse of the fit)."""
-    return 125.15 + (lam - 0.12604 + 0.00004 * (Mt - 173.10)) / 0.00206
+    return 125.15 + (lam - 0.12604 + 0.00004 * (Mt - MT_REF)) / 0.00206
 
 
 # ------------------------------------------------------------------ SM betas
@@ -131,10 +134,10 @@ def run_sm(s0, mu0: float, mu1: float, loops=2, qcd3=False, dense=False):
 
 
 def benchmark(loops=2, qcd3=True) -> Dict[str, float]:
-    """Run the Buttazzo M_t couplings (Mt=173.10, Mh=125.15, as=0.1184) up."""
-    m = msbar_at_Mt(Phys(Mt=173.10, Mh=125.15, alpha_s=0.1184))
+    """Run the Buttazzo M_t couplings (Mt=173.34, Mh=125.15, as=0.1184) up."""
+    m = msbar_at_Mt(Phys(Mt=MT_REF, Mh=125.15, alpha_s=0.1184))
     s0 = [m["gY"], m["g2"], m["g3"], m["yt"], m["yb"], m["ytau"], m["lambda"]]
-    sol = run_sm(s0, 173.10, MPL_RED, loops, qcd3, dense=True)
+    sol = run_sm(s0, MT_REF, MPL_RED, loops, qcd3, dense=True)
     f = lambda lm: sol.sol(lm * math.log(10))[6]
     lm0 = brentq(f, 4.0, 18.0) if f(4.0) * f(18.0) < 0 else float("nan")
     end = sol.y[:, -1]
