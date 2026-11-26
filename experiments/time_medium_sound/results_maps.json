@@ -1,0 +1,460 @@
+{
+ "lowell": {
+  "Planck_SMICA_inpainted": {
+   "per_ell": {
+    "2": {
+     "planarity": 0.9959401160279151,
+     "p_planarity_ge": 0.1894,
+     "f0_max": 0.7993433636235266,
+     "p_f0max_ge": 0.8176
+    },
+    "3": {
+     "planarity": 0.9458573560485142,
+     "p_planarity_ge": 0.1,
+     "f0_max": 0.6445772177207268,
+     "p_f0max_ge": 0.9687
+    },
+    "4": {
+     "planarity": 0.684487996244544,
+     "p_planarity_ge": 0.621,
+     "f0_max": 0.7415186788478374,
+     "p_f0max_ge": 0.3101
+    },
+    "5": {
+     "planarity": 0.48660434525431484,
+     "p_planarity_ge": 0.9897,
+     "f0_max": 0.6330091702970284,
+     "p_f0max_ge": 0.4936
+    },
+    "6": {
+     "planarity": 0.7961328991055394,
+     "p_planarity_ge": 0.0485,
+     "f0_max": 0.5317230807239496,
+     "p_f0max_ge": 0.764
+    },
+    "7": {
+     "planarity": 0.5909161219660827,
+     "p_planarity_ge": 0.5364,
+     "f0_max": 0.5766741450779049,
+     "p_f0max_ge": 0.3134
+    },
+    "8": {
+     "planarity": 0.5467532736849734,
+     "p_planarity_ge": 0.6493,
+     "f0_max": 0.4909055529906951,
+     "p_f0max_ge": 0.5558
+    },
+    "9": {
+     "planarity": 0.5751039407028585,
+     "p_planarity_ge": 0.408,
+     "f0_max": 0.6055911773137824,
+     "p_f0max_ge": 0.0479
+    },
+    "10": {
+     "planarity": 0.4968169199211187,
+     "p_planarity_ge": 0.7692,
+     "f0_max": 0.4110602212414074,
+     "p_f0max_ge": 0.693
+    }
+   },
+   "S_common_axis_2_10": 0.2290486460151912,
+   "p_S_common_2_10_ge": 0.5043,
+   "S_common_axis_2_3": 0.6525012144187962,
+   "p_S_common_2_3_ge": 0.2256,
+   "angle_planar_axes_2_3_deg": 8.066325930406133,
+   "p_angle23_le": 0.0098,
+   "p_quad_oct_planar_and_aligned": 0.0006,
+   "common_axis_2_10_galactic_lb": [
+    157.5,
+    7.180755781458274
+   ],
+   "planar_axis_2_galactic_lb": [
+    240.00803663757011,
+    55.142534239339376
+   ],
+   "planar_axis_3_galactic_lb": [
+    238.76380310932555,
+    63.18399881491359
+   ]
+  },
+  "WMAP9_ILC": {
+   "per_ell": {
+    "2": {
+     "planarity": 0.9480815867390262,
+     "p_planarity_ge": 0.6338,
+     "f0_max": 0.9137350320439577,
+     "p_f0max_ge": 0.3681
+    },
+    "3": {
+     "planarity": 0.9331517247574677,
+     "p_planarity_ge": 0.1336,
+     "f0_max": 0.6397346393831999,
+     "p_f0max_ge": 0.9756
+    },
+    "4": {
+     "planarity": 0.7281132665839087,
+     "p_planarity_ge": 0.4778,
+     "f0_max": 0.7547362036530562,
+     "p_f0max_ge": 0.2649
+    },
+    "5": {
+     "planarity": 0.48455650455086186,
+     "p_planarity_ge": 0.9908,
+     "f0_max": 0.610237153105701,
+     "p_f0max_ge": 0.6046
+    },
+    "6": {
+     "planarity": 0.8103832673345379,
+     "p_planarity_ge": 0.0342,
+     "f0_max": 0.5322820859452759,
+     "p_f0max_ge": 0.7608
+    },
+    "7": {
+     "planarity": 0.5936677017701164,
+     "p_planarity_ge": 0.523,
+     "f0_max": 0.5249731035629761,
+     "p_f0max_ge": 0.5697
+    },
+    "8": {
+     "planarity": 0.532018888886645,
+     "p_planarity_ge": 0.7232,
+     "f0_max": 0.5110071546163887,
+     "p_f0max_ge": 0.4423
+    },
+    "9": {
+     "planarity": 0.5454747975883946,
+     "p_planarity_ge": 0.5669,
+     "f0_max": 0.5988373808422643,
+     "p_f0max_ge": 0.0542
+    },
+    "10": {
+     "planarity": 0.5173244178568167,
+     "p_planarity_ge": 0.6522,
+     "f0_max": 0.396907500937633,
+     "p_f0max_ge": 0.7854
+    }
+   },
+   "S_common_axis_2_10": 0.2616973824572704,
+   "p_S_common_2_10_ge": 0.1335,
+   "S_common_axis_2_3": 0.7348325549972121,
+   "p_S_common_2_3_ge": 0.0755,
+   "angle_planar_axes_2_3_deg": 3.1684475577545625,
+   "p_angle23_le": 0.0022,
+   "p_quad_oct_planar_and_aligned": 0.0003,
+   "common_axis_2_10_galactic_lb": [
+    157.5,
+    7.180755781458274
+   ],
+   "planar_axis_2_galactic_lb": [
+    240.3408279705684,
+    59.92061585083544
+   ],
+   "planar_axis_3_galactic_lb": [
+    238.13963582746516,
+    62.90938755635564
+   ]
+  },
+  "parity": [
+   {
+    "lmax": 5,
+    "R_even_over_odd": 0.37649618124967965,
+    "p_le": 0.03625,
+    "sims_median": 1.034516161088431
+   },
+   {
+    "lmax": 6,
+    "R_even_over_odd": 0.4034360893262939,
+    "p_le": 0.02255,
+    "sims_median": 1.0175798743219957
+   },
+   {
+    "lmax": 7,
+    "R_even_over_odd": 0.410925611789485,
+    "p_le": 0.0133,
+    "sims_median": 1.0343063358152
+   },
+   {
+    "lmax": 8,
+    "R_even_over_odd": 0.43680741732446593,
+    "p_le": 0.0097,
+    "sims_median": 1.0166506468593435
+   },
+   {
+    "lmax": 9,
+    "R_even_over_odd": 0.48765367191028214,
+    "p_le": 0.01285,
+    "sims_median": 1.0291468631601075
+   },
+   {
+    "lmax": 10,
+    "R_even_over_odd": 0.5400210627478237,
+    "p_le": 0.01725,
+    "sims_median": 1.0162533450260005
+   },
+   {
+    "lmax": 11,
+    "R_even_over_odd": 0.5612393429390411,
+    "p_le": 0.0161,
+    "sims_median": 1.0207661554426135
+   },
+   {
+    "lmax": 12,
+    "R_even_over_odd": 0.5911282542066568,
+    "p_le": 0.01795,
+    "sims_median": 1.0126350877318269
+   },
+   {
+    "lmax": 13,
+    "R_even_over_odd": 0.6355558288141459,
+    "p_le": 0.02475,
+    "sims_median": 1.016370652189436
+   },
+   {
+    "lmax": 14,
+    "R_even_over_odd": 0.6650695429879101,
+    "p_le": 0.0292,
+    "sims_median": 1.012126444409051
+   },
+   {
+    "lmax": 15,
+    "R_even_over_odd": 0.6589386415464921,
+    "p_le": 0.0207,
+    "sims_median": 1.01227073103358
+   },
+   {
+    "lmax": 16,
+    "R_even_over_odd": 0.6567553673915524,
+    "p_le": 0.0149,
+    "sims_median": 1.0137577843659455
+   },
+   {
+    "lmax": 17,
+    "R_even_over_odd": 0.6511386009833964,
+    "p_le": 0.01145,
+    "sims_median": 1.009917370460224
+   },
+   {
+    "lmax": 18,
+    "R_even_over_odd": 0.6555174259650215,
+    "p_le": 0.00895,
+    "sims_median": 1.0137810702514969
+   },
+   {
+    "lmax": 19,
+    "R_even_over_odd": 0.6574056700030787,
+    "p_le": 0.007,
+    "sims_median": 1.00709533934001
+   },
+   {
+    "lmax": 20,
+    "R_even_over_odd": 0.6594066388853497,
+    "p_le": 0.00485,
+    "sims_median": 1.012871125971244
+   },
+   {
+    "lmax": 21,
+    "R_even_over_odd": 0.6856010427030269,
+    "p_le": 0.0079,
+    "sims_median": 1.0049988717279272
+   },
+   {
+    "lmax": 22,
+    "R_even_over_odd": 0.6820082483894655,
+    "p_le": 0.00475,
+    "sims_median": 1.0131619745749199
+   },
+   {
+    "lmax": 23,
+    "R_even_over_odd": 0.6947052587235697,
+    "p_le": 0.00525,
+    "sims_median": 1.0035669136189123
+   },
+   {
+    "lmax": 24,
+    "R_even_over_odd": 0.7138718052982667,
+    "p_le": 0.0062,
+    "sims_median": 1.0122138838865165
+   },
+   {
+    "lmax": 25,
+    "R_even_over_odd": 0.7207601801543685,
+    "p_le": 0.0072,
+    "sims_median": 1.0011858091241708
+   },
+   {
+    "lmax": 26,
+    "R_even_over_odd": 0.7348805129266283,
+    "p_le": 0.0066,
+    "sims_median": 1.0111789259809876
+   },
+   {
+    "lmax": 27,
+    "R_even_over_odd": 0.7291505802504389,
+    "p_le": 0.0054,
+    "sims_median": 1.0000261171789258
+   },
+   {
+    "lmax": 28,
+    "R_even_over_odd": 0.7665284814786941,
+    "p_le": 0.011,
+    "sims_median": 1.0107742690937696
+   },
+   {
+    "lmax": 29,
+    "R_even_over_odd": 0.7628814110115887,
+    "p_le": 0.0113,
+    "sims_median": 0.9993763208599873
+   },
+   {
+    "lmax": 30,
+    "R_even_over_odd": 0.7917188999576698,
+    "p_le": 0.0157,
+    "sims_median": 1.0111727257452636
+   }
+  ],
+  "nsim": 10000
+ },
+ "_timing_s": {
+  "lowell": 39.399210691452026,
+  "focus": 26.630332946777344,
+  "rings": 221.11256647109985,
+  "rings_obs": 357.3704948425293
+ },
+ "focus": {
+  "n_centres": 1818,
+  "kappas": [
+   15,
+   25,
+   40,
+   60,
+   90
+  ],
+  "best": {
+   "z": 4.255669735336528,
+   "kappa": 40,
+   "galactic_lon_lat": [
+    320.625,
+    -32.79716829582364
+   ]
+  },
+  "max_abs_z_data": 4.255669735336528,
+  "p_global": 0.12666666666666668,
+  "sims_max_abs_z_median": 3.845157627182836,
+  "sims_max_abs_z_95": 4.501796459292965,
+  "per_kappa": {
+   "15": {
+    "max_abs_z": 3.456912334823683,
+    "p_global_within_kappa": 0.3233333333333333
+   },
+   "25": {
+    "max_abs_z": 3.5113049914830885,
+    "p_global_within_kappa": 0.48
+   },
+   "40": {
+    "max_abs_z": 4.255669735336528,
+    "p_global_within_kappa": 0.03
+   },
+   "60": {
+    "max_abs_z": 3.8402049037214776,
+    "p_global_within_kappa": 0.17
+   },
+   "90": {
+    "max_abs_z": 3.4642369414313876,
+    "p_global_within_kappa": 0.5733333333333334
+   }
+  },
+  "nsim": 300
+ },
+ "rings": {
+  "map": "Planck PR3 SMICA, 1 deg, common mask",
+  "data": {
+   "n_low": 697.0,
+   "n_family3": 19.0,
+   "z_min": -2.884061688832583,
+   "n_family5": 1.0
+  },
+  "sims": {
+   "n_low": {
+    "sims_mean": 922.54,
+    "sims_std": 160.50921593478674,
+    "p_ge": 0.96,
+    "p_le": 0.045
+   },
+   "n_family3": {
+    "sims_mean": 56.315,
+    "sims_std": 25.271046179372945,
+    "p_ge": 0.985,
+    "p_le": 0.015
+   },
+   "z_min": {
+    "sims_mean": -2.933165404346553,
+    "sims_std": 0.16293243127775536,
+    "p_ge": 0.42,
+    "p_le": 0.58
+   },
+   "n_family5": {
+    "sims_mean": 4.355,
+    "sims_std": 5.252520823376144,
+    "p_ge": 0.865,
+    "p_le": 0.32
+   }
+  },
+  "nsim": 200,
+  "n_centres": 2358,
+  "hawking_like": {
+   "n_discs": 8903,
+   "threshold_var_uK2": 7074.912076483976,
+   "n_high_data": 3,
+   "sims_mean": 8.905,
+   "p_ge": 0.905,
+   "max_var_data": 7298.078176899919,
+   "p_maxvar_ge": 0.975
+  }
+ },
+ "rings_observed_low_ell": {
+  "map": "Planck PR3 SMICA, 1 deg, common mask",
+  "data": {
+   "n_low": 697.0,
+   "n_family3": 19.0,
+   "z_min": -2.884061688832583,
+   "n_family5": 1.0
+  },
+  "sims": {
+   "n_low": {
+    "sims_mean": 792.955,
+    "sims_std": 131.51198795166925,
+    "p_ge": 0.75,
+    "p_le": 0.255
+   },
+   "n_family3": {
+    "sims_mean": 40.36,
+    "sims_std": 19.285756402070415,
+    "p_ge": 0.92,
+    "p_le": 0.095
+   },
+   "z_min": {
+    "sims_mean": -2.970964076785989,
+    "sims_std": 0.15832870246826375,
+    "p_ge": 0.31,
+    "p_le": 0.69
+   },
+   "n_family5": {
+    "sims_mean": 2.295,
+    "sims_std": 3.161957463344502,
+    "p_ge": 0.715,
+    "p_le": 0.535
+   }
+  },
+  "nsim": 200,
+  "n_centres": 2358,
+  "hawking_like": {
+   "n_discs": 8903,
+   "threshold_var_uK2": 6871.711483504183,
+   "n_high_data": 6,
+   "sims_mean": 8.905,
+   "p_ge": 0.695,
+   "max_var_data": 7298.078176899919,
+   "p_maxvar_ge": 0.91
+  }
+ }
+}
