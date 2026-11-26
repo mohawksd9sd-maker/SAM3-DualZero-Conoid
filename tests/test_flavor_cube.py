@@ -1,3 +1,4 @@
+# erratum 2026-11-26: doc 60 baseline M_t 190.36 -> 190.61 after fixing the Buttazzo v4 reference point (173.10 -> 173.34).
 """Tests for doc 64: cube flavour groups, cube internal spaces, and the brief notes."""
 
 from __future__ import annotations
@@ -68,7 +69,7 @@ def test_a4_tribimaximal_and_theta13_exclusion():
 def test_pipeline_rows():
     p = fc.pipeline()
     base = p["data-consistent texture (share 7e-6)"]
-    assert abs(base["Mt"] - 190.36) < 0.05 and abs(base["Mh"] - 180.50) < 0.05
+    assert abs(base["Mt"] - 190.61) < 0.05 and abs(base["Mh"] - 180.50) < 0.05
     y1 = p["Y ~ 1 (degenerate, any cube group, 1 parameter)"]
     assert 135 < y1["Mt"] < 147 and y1["mc_over_mt"] == 1.0
     assert 155 < p["rank-2 degenerate (S4/O_h/T' with Higgs triplet)"]["Mt"] < 165

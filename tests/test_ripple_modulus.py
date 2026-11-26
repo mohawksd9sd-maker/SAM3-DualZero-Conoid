@@ -1,3 +1,4 @@
+# erratum 2026-11-26: doc 60 baseline M_t 190.36 -> 190.61 after fixing the Buttazzo v4 reference point (173.10 -> 173.34).
 """Tests for doc 65: a displaced internal modulus that rings and settles ('stone in a still pond')."""
 
 from __future__ import annotations
@@ -88,6 +89,6 @@ def test_alpha_variation_scaling_and_oklo():
 
 def test_top_higgs_unchanged():
     th = rm.top_higgs()
-    assert abs(th["settled_minimum"]["Mt"] - 190.36) < 0.05
+    assert abs(th["settled_minimum"]["Mt"] - 190.61) < 0.05
     sc = th["boundary_scale_shift_scan"]
     assert min(v["Mt"] for v in sc.values()) > 188.0
