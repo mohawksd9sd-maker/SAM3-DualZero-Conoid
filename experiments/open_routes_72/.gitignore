@@ -1,0 +1,7 @@
+# third-party sources/builds kept local only (fetch/build as described in README.md)
+refs/
+smdr/
+fs_ext/
+pre_erratum/
+log_*.txt
+__pycache__/
