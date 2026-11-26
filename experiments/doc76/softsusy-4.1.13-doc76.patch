@@ -1,0 +1,31 @@
+--- a/src/softpars.cpp	2023-01-31 08:15:22.000000000 -0600
++++ b/src/softpars.cpp	2026-11-26 17:29:51.629595528 -0600
+@@ -1,3 +1,4 @@
++#include <cstdlib>
+ 
+ /** \file softpars.cpp
+     - Project:     SOFTSUSY 
+@@ -394,7 +395,7 @@
+   // two-loop contributions. I got these from hep-ph/9311340. WIth respect to
+   // their notation, the Yukawas and h's are TRANSPOSED. Gaugino masses are
+   // identical, as are soft masses. B(mV) = mu(BBO) B(BBO)
+-  if (xx.displayMssmApprox().displayLoops() > 1) {
++  if (xx.displayMssmApprox().displayLoops() > 1 && !getenv("SS_SOFT_1LOOP")) {
+     static DoubleVector dmG2(1, 3);
+     static DoubleMatrix dmq2(3, 3), dmu2(3, 3), dmd2(3, 3), dme2(3, 3), 
+       dml2(3, 3);
+--- a/src/softpoint.cpp	2023-01-31 08:33:21.000000000 -0600
++++ b/src/softpoint.cpp	2026-11-26 17:28:45.090508944 -0600
+@@ -1,3 +1,4 @@
++#include <cstdlib>
+ /** \file softpoint.cpp
+     - Project:     SOFTSUSY 
+    - Authors:     Ben Allanach, Markus Bernhardt 
+@@ -1464,6 +1465,7 @@
+       if (useThreeLoopRge) {
+ 	r->setLoops(3); k.setLoops(3); nmssm.setLoops(3);
+       }
++      if (getenv("SS_RGE_LOOPS")) { int nl = atoi(getenv("SS_RGE_LOOPS")); r->setLoops(nl); k.setLoops(nl); }
+ 
+       /// Run to scale at which MSUSY and QEDxQCD are matched: by default it's
+       /// mt for MSSM, MZ for NMSSM
